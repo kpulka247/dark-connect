@@ -255,19 +255,15 @@ for (const [key, value] of Object.entries(newColors)) {
 
 const darkScrollbar = `
   ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #555;
-    border-radius: 6px;
+    width: 9px;
+    height: 5px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #333;
-    border-radius: 6px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #333;
+    background-color: #888;
+    border-color: #1a1a1a;
+    border-width: 0 2px;
+    border-height: 0 2px;
+    border-style: solid;
   }
 `;
 
