@@ -1,6 +1,10 @@
-<h1 align="center">Dark Connect</h1>
+<div align="center">
+
+# Dark Connect
 
 ![banner](static/images/banner.png)
+
+</div>
 
 ## Overview
 
@@ -44,8 +48,6 @@ To install the extension, follow these simple steps:
 ## Usage
 
 Once installed, the extension will immediately apply dark mode to any visit to `connect.garmin.com`. You don’t need to enable or disable it manually — it works automatically whenever you visit the site.
-
-If you notice any issues with the colors or display, feel free to report them via the feedback form on the extension's page.
 
 ## Contributing
 
