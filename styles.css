@@ -119,6 +119,8 @@ table[class*="Tab_table_"] td,
 [class*="WeightsTables_weightsTable_"] td,
 div[class*="FactorsCardsCommon_card_"],
 button[class*="ExercisePicker_dropdownToggle_"],
+button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
+button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
 div[class*="DayView_dayViewColumn_"] > * {
     border-color: #555 !important;
 }
@@ -540,7 +542,7 @@ li.leaderboard-row:hover {
 
 /* Courses */
 
-div[class*="CourseCard_collapseButton_"] {
+button[class*="CourseCard_collapseButton_"] {
     background-color: #252525 !important;
     border-color: #252525 !important; 
 }
