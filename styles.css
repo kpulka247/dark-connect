@@ -82,7 +82,7 @@ hr,
 .header-nav-menu,
 .header-nav-menu-section,
 .page.activity-list .edit-btn,
-.dropdown-menu .divider,
+.divider,
 .dropdown-container div span,
 .page.activity-detail .activity-charts-container .btn-customize-charts,
 .modal .modal-load-focus .load-focus-metrics-container .load-focus-metric-row,
@@ -121,6 +121,7 @@ div[class*="FactorsCardsCommon_card_"],
 button[class*="ExercisePicker_dropdownToggle_"],
 button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
 button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
+div[class*="SecondaryStatCard_secondaryStatFooter_"],
 div[class*="DayView_dayViewColumn_"] > * {
     border-color: #555 !important;
 }
@@ -142,7 +143,7 @@ div[class*="ProgressBar_barWrapper_"] {
 }
 
 .timeInZonesProgressBar {
-    border-color: #555 !important;
+    border-color: #444 !important;
 }
 
 div[class*="ProgressBar_bar_"][style*="background: rgb(0, 0, 0);"], div[class*="ProgressBar_bar_"][style*="background: black"] {
@@ -165,7 +166,9 @@ div[class*="SelectionDropdown_mapFilterDetail_"], button[class*="SelectionDropdo
     box-shadow: inset 0 0 0 1px #555 !important;
 }
 
-.dropdown-menu, ul[class*="Dropdown_dropdownMenu_"], .connection-button-dropdown-menu {
+.dropdown-menu,
+.connection-button-dropdown-menu,
+ul[class*="Dropdown_dropdownMenu_"] {
     background: #1a1a1a !important;
     color: #fff !important;
     border-color: #555 !important;
@@ -192,8 +195,10 @@ li[class*="ExercisePicker_optionGroup_"] {
     color: #fff !important;
 }
 
-div[class*="ExercisePicker_divider_"] {
+div[class*="ExercisePicker_divider_"],
+div[class*="ReportImageDropdown_dropdownMenu_"] {
     background-color: #555 !important;
+    border-color: #555 !important;
 }
 
 /* Secondary stats */
@@ -255,6 +260,10 @@ div[class*="LoadFocusSecondaryStatCard_legendOptimalRange_"], div[class*="Second
     border-color: #fff !important;
 }
 
+path.recharts-radial-bar-background-sector {
+    fill: #444 !important;
+}
+
 /* Newsfeed */
 
 .main-body.dashboard,
@@ -286,7 +295,7 @@ path.highcharts-alternate-grid[fill="#F6F6F6"] {
     fill: #333 !important;
 }
 
-.highcharts-graph[stroke="#222"], .highcharts-graph[stroke="#222222"] {
+.highcharts-graph[stroke="#222"], .highcharts-graph[stroke="#222222"], .highcharts-graph[stroke="#000000"], .highcharts-graph[stroke="rgb(0,0,0)"] {
     stroke: #fff;
 }
 
@@ -374,6 +383,10 @@ circle[fill="#000000"], path[fill="#000000"], path[fill="#222"] {
 
 circle[class="highcharts-pivot"] {
     fill: #252525 !important;
+    stroke: #252525 !important;
+}
+
+circle[stroke="white"], circle[stroke="#ffffff"] {
     stroke: #252525 !important;
 }
 
@@ -603,7 +616,7 @@ span[class*="MapLayersProvider_layerTileStyleLabel_"] {
     color: #fff !important;
 }
 
-div[class*="SegmentLeaderboardView_headerStyle_"] {
+div[class*="SegmentLeaderboardView_headerStyle_"], div[class*="SegmentsList_footer_"] {
     background-color: #1a1a1a !important;
     color: #fff !important;
 }
@@ -612,7 +625,7 @@ div[class*="SegmentLeaderboardView_headerStyle_"] {
     border-color: #555 !important;
 }
 
-div[class*="MapZoom_zoomButton_"][class*="MapZoom_course_"] {
+div[class*="MapZoom_zoomButton_"][class*="MapZoom_course_"], .map-fitness .map-search button {
     background-color: #252525 !important;
     border-color: #555 !important;
 }
@@ -627,13 +640,17 @@ div[class*="MapZoom_zoomButton_"][class*="MapZoom_course_"] {
     box-shadow: 0 -1px 0 0 #555 !important;
 }
 
-.map-list tfoot td {
+.map-list tfoot td, .map-fitness .map-search .icon-search {
     color: #fff !important;
 }
 
 div[class*="SegmentsListCard_stravaCard_"] {
     background-color: #252525 !important;
     border-color: #555 !important;
+}
+
+.map-filter-detail {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .15), 0 1px 0 0 #555 !important;
 }
 
 /* Heatmap */
@@ -676,6 +693,10 @@ div[class*="PlanCard_planDescription__"] {
 div[class*="SecondaryStatCard_arrowContainer_"], g[fill="#101010"] {
     color: #fff !important;
     fill: #fff !important;
+}
+
+span[class*=icon-pointer-] {
+    color: #fff !important;
 }
 
 .icon-remove {
@@ -1137,7 +1158,10 @@ thead tr th {
     padding: 5px 10px !important;
 }
 
-img[class*="Activity_avatar__"], img[class*="ConnectionLeaderboard_avatar_"], .leaderboard .avatar, .avatar {
+img[class*="Activity_avatar__"],
+img[class*="ConnectionLeaderboard_avatar_"],
+.leaderboard .avatar, .avatar,
+div[class*="GroupItem_groupWrapper_"] img {
     box-shadow: 0 0 0 3px #252525, 0 0 0 4px #555 !important;
 }
 
@@ -1217,7 +1241,8 @@ div[class*="FactorsCardsCommon_header_"],
 div[class*="FactorsCardsCommon_status_"],
 div[class*="FitnessAgeFactorModal_vigorousSubtitle_"],
 div[class*="FitnessAgeFactorModal_recommendationTitle_"],
-div[class*="FitnessAgeFactorModal_secondaryTitle_"] {
+div[class*="FitnessAgeFactorModal_secondaryTitle_"],
+h4[class*="ErrorState_heading_"] {
   color: #fff !important;
 }
 
@@ -1247,12 +1272,12 @@ div[class*="BodyBatteryGauge_gaugeCenter_"] {
     color: #fff !important;
 }
 
-i[class*="GearsTrackingPage_avatarLogo_"] {
-    background-color: #1a1a1a !important;
-    box-shadow: 0px 0px 0px 3px #202020, 0px 0px 0px 4px #1a1a1a !important;
+div[class*="SortableTable_iconContainer_"] {
+    fill: #fff !important;
 }
 
-div[class*="HealthSnapshotList_header_"] {
+div[class*="HealthSnapshotList_header_"],
+div[class*="Gc5style_caloriesBurnedBarIndicator_"] {
     background: #252525 !important;
 }
 
@@ -1272,6 +1297,12 @@ span[class*="EditorTable_addOn_"] {
     background-color: #1a1a1a !important;
     border-color: #555 !important;
     text-shadow: 0 1px 0 #111 !important;
+}
+
+.autosuggestMenu {
+    background-color: #1a1a1a !important;
+    border-color: #555 !important;
+    color: #fff !important;
 }
 
 .privacy-overlay {
