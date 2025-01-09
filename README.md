@@ -14,7 +14,7 @@ This is a simple browser extension designed to turn the Garmin Connect website i
 
 - **Dark mode for Garmin Connect**: Instantly changes the theme of the Garmin Connect website to dark mode.
 - **Preserved brand colors**: Retains the original colors of key elements, such as charts and recognizable brand features, while switching the background and other components to dark mode.
-- **No impact on other websites**: The extension only affects connect.garmin.com, other pages remain unaffected.
+- **No impact on other websites**: The extension only affects `connect.garmin.com`, other pages remain unaffected.
 
 ## Screenshots
 
@@ -35,11 +35,10 @@ Here are some screenshots of the extension in action:
 To install the extension, follow these simple steps:
 
 1. **Download the extension** from your browser's extension store:
-    - 🌐 [Google Chrome](link-to-chrome-store)
-    - 🌀 [Microsoft Edge](link-to-edge-store)
-    - 🦊 [Mozilla Firefox](link-to-firefox-store)
-    - 🦁 [Brave](link-to-brave-store)
-    - 🔴 [Opera](link-to-opera-store)
+    - 🌐 [**Google Chrome / Brave**](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob) 🦁
+    - 🦊 [**Mozilla Firefox**](https://addons.mozilla.org/en-US/firefox/addon/dark-connect/)
+    - 🌀 **Microsoft Edge** *pending approval...*
+    - 🔴 **Opera** *pending approval...*
 
 2. **Add the extension to your browser**: Once added, the extension will automatically turn your Garmin Connect page into dark mode.
 
@@ -47,8 +46,4 @@ To install the extension, follow these simple steps:
 
 ## Usage
 
-Once installed, the extension will immediately apply dark mode to any visit to `connect.garmin.com`. You don’t need to enable or disable it manually — it works automatically whenever you visit the site.
-
-## Contributing
-
-If you have suggestions for improvements or have found any bugs, feel free to report them through the feedback form. Contributions and suggestions are always welcome!
+Once installed, the extension will immediately apply dark mode to any visit to `connect.garmin.com`. You don’t need to enable or disable it manually — it works automatically whenever you visit the site. If you have suggestions for improvements or have found any bugs, feel free to report them through the issues form.
