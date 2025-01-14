@@ -1435,7 +1435,12 @@ h4[class*="ErrorState_heading_"],
 span[class*="PowerGuidanceCreateStrategy_selectOptionTypeText_"],
 p[class*="SelectCourseType_activityTypeName_"],
 p[class*="SelectCourseType_groupTitle_"],
-label[class*="RoutingOptions_turnNotificationLabel_"] {
+label[class*="RoutingOptions_turnNotificationLabel_"],
+div[class*="HealthSnapshotHelpModal_healthSnapshotDescription_"],
+p[class*="HealthSnapshotHelpModal_factorDescription_"],
+p[class*="HealthSnapshotHelpModal_detailsSubtitle_"],
+p[class*="HealthSnapshotHelpModal_detailsParagraph_"],
+div[class*="HealthSnapshotHelpModal_legendItemContent_"] {
   color: #fff !important;
 }
 
