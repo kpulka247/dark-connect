@@ -428,6 +428,10 @@ path[stroke="#ededed"],
     stroke: #555 !important;
 }
 
+.highcharts-plot-line[stroke="black"] {
+    stroke: #fff !important;
+}
+
 .table-subhead > td {
     background-color: #202020 !important;
     color: #fff !important;
