@@ -35,10 +35,9 @@ Here are some screenshots of the extension in action:
 To install the extension, follow these simple steps:
 
 1. **Download the extension** from your browser's extension store:
-    - 🌐 [**Google Chrome / Brave**](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob) 🦁
-    - 🦊 [**Mozilla Firefox**](https://addons.mozilla.org/en-US/firefox/addon/dark-connect/)
-    - 🌀 **Microsoft Edge** *pending approval...*
-    - 🔴 **Opera** *pending approval...*
+    - [**Chrome Web Store**](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob) (Google Chrome 🌐, Brave 🦁, Opera 🔴, Microsoft Edge 🌀)
+    - [**Mozilla Firefox**](https://addons.mozilla.org/en-US/firefox/addon/dark-connect/) 🦊
+    - [**Microsoft Edge Add-ons**](https://microsoftedge.microsoft.com/addons/detail/dark-connect/hnckjkhlhafbecddeacdgnjogokoejhm) 🌀
 
 2. **Add the extension to your browser**: Once added, the extension will automatically turn your Garmin Connect page into dark mode.
 

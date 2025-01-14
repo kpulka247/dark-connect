@@ -134,7 +134,7 @@ const newColors = {
   "--color-415": "#7b27d2",
   "--color-414": "#3f148a",
   "--color-413": "#49d894",
-  "--color-412": "#29d8c6",
+  "--color-412": "#50b012",
   "--color-411": "#110b13",
   "--color-410": "#d59b88",
   "--color-409": "#f0a11d",
@@ -252,6 +252,8 @@ const root = document.documentElement;
 for (const [key, value] of Object.entries(newColors)) {
   root.style.setProperty(key, value);
 }
+
+// Scrollbar
 
 const darkScrollbar = `
   ::-webkit-scrollbar {
