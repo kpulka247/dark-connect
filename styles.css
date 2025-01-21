@@ -1623,7 +1623,7 @@ li[class*="RunningLactateThresholdHelpBody_paragraph_"] {
 
 .page.activity-detail,
 .chart-toggle-options,
-button,
+button:not([class*="InlineEdit_saveIcon_"]):not([class*="InlineEdit_closeIcon_"]),
 .page.activity-detail,
 .activity-charts-container,
 .btn-customize-charts{
