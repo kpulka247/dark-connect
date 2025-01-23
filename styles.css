@@ -133,7 +133,6 @@ button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
 button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
 div[class*="SecondaryStatCard_secondaryStatFooter_"],
 img[class*="CommentLikeSection_profileImage_"],
-img[class*="GroupMemberAvatars_groupMembersAvatars_"],
 div[class*="DailySummaryPageHeader_staticHeaderContainer_"],
 div[class*="TrainingPlanHeader_container_"],
 div[class*="HealthDetailsPageHeader_pageHeader_"],
@@ -144,6 +143,7 @@ div[class*="PrimaryBenefitItem_ruler_"],
 div[class*="ProgressSummary_reportFilter_"],
 table[class*="CyclingFTPRatings_table_"] tbody th,
 table[class*="CyclingFTPRatings_table_"] tbody td,
+div[class*="SleepPage_sleepScoreTabContainer_"],
 div[class*="DayView_dayViewColumn_"] > * {
     border-color: #555 !important;
 }
@@ -221,6 +221,20 @@ div[class*="ExercisePicker_divider_"],
 div[class*="ReportImageDropdown_dropdownMenu_"] {
     background-color: #555 !important;
     border-color: #555 !important;
+}
+
+.dropdown-menu>li>label {
+    color: #fff !important;
+}
+
+.dropdown-menu>li.disabled,
+.dropdown-menu>li.disabled label,
+.dropdown-menu>li.disabled label:hover {
+    color: #999 !important;
+}
+
+.dropdown-menu .divider {
+    background-color: #555 !important;
 }
 
 /* Secondary stats */
@@ -569,6 +583,10 @@ path[class*="highcharts-halo"][fill="#f98925"] {
 
 path.highcharts-point[fill="#f98925"] {
     stroke: #252525 !important;
+}
+
+.recharts-legend-icon[stroke="#000000"] {
+    stroke: #fff !important;
 }
 
 /* Connections */
@@ -1771,6 +1789,11 @@ div[class*="ProgressSummary_customizePopover_"] {
     background-color: #252525 !important;
     border-color: #555 !important;
     box-shadow: 1px 2px 10px #555 !important;
+}
+
+div[class*="GroupMemberAvatars_groupMembersAvatars_"] img {
+    border-color: #252525 !important;
+    background-color: #252525 !important;
 }
 
 /* Livetrack */
