@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Dark Connect",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A dark mode extension for connect.garmin.com that replaces light colors with their dark theme.",
   "content_scripts": [
     {
