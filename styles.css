@@ -1,4 +1,4 @@
-/* Connect */
+/* CONNECT */
 
 /* Header */
 
@@ -444,7 +444,7 @@ rect.highcharts-plot-background[fill*="url(#highcharts-"],
     stroke: #222 !important;
 }
 
-.reports .highcharts-container .highcharts-series-0 rect.highcharts-point,
+.reports .highcharts-container .highcharts-series-0 rect.highcharts-point:not([fill="#6f42f3"]),
 div[class*="PulseOxGauge_donutCenter_"] {
     fill: #252525 !important;
     stroke: #252525 !important;
@@ -799,6 +799,10 @@ path[class*="CourseMap_polyLineNoHover_"] {
     stroke: #000 !important;
 }
 
+.course-pt-lap {
+    background: #000 !important;
+}
+
 /* Segments */
 
 a[class*="SegmentsListCard_btnMapListToggle_"],
@@ -1099,6 +1103,10 @@ div[class*="Components_dataTypeButton_"]:active,
     background: #202020 !important;
 }
 
+button[class*="ExercisePicker_dropdownToggle_"] svg {
+    fill: #fff !important;
+}
+
 /* Link button */
 
 .colored, a.colored,
@@ -1147,6 +1155,15 @@ span[class*="HomeSettings_linkButton_"] {
     background: #202020 !important;
 }
 
+.page.activity-list .activity-list-filters {
+    background: #252525 !important;
+    border-color: #555 !important;
+}
+
+.page.activity-list .filter-label {
+    color: #fff !important;
+}
+
 /* Compare */
 
 div[class="player"] {
@@ -1161,7 +1178,7 @@ div[class="player"] {
 
 .page.activity-detail .weather .map-control-item,
 .map-enlarge-btn {
-    background: #252525 !important;
+    background: rgb(37, 37, 37, 0.9) !important;
     border-color: #555 !important;
 }
 
@@ -1209,7 +1226,7 @@ div[class*="CommentEditor_editorTextField_"] {
 }
 
 .map-controls .map-control-item {
-    background: #252525 !important;
+    background: rgb(37, 37, 37, 0.9) !important;
     color: #fff !important;
 }
 
@@ -1341,6 +1358,94 @@ div[class*="WorkoutStep_stepEditOpenContent_"] {
 div[class*="WorkoutRepeatStep_repeatStepWrapper_"] {
     background-color: #1a1a1a !important;
     border-color: #555 !important;
+}
+
+/* Spinner */
+
+div[class*="Spinner_spinner_"]:before,
+div[class*="Spinner_spinner_"]:after,
+div[class*="Spinner_spinner_"] > div:before,
+div[class*="Spinner_spinner_"] > div:after {
+    box-shadow: 0 3.5em rgba(255, 255, 255, 0.2) !important;
+}
+
+div[class*="Spinner_spinner_"]:before {
+    background: #fff !important;
+    opacity: 0.8 !important;
+}
+
+div[class*="Spinner_spinner_"]:after {
+    background: #fff !important;
+    opacity: 0.65 !important;
+}
+
+div[class*="Spinner_spinner_"] > div:before {
+    background: #fff !important;
+    opacity: 0.5 !important;
+}
+
+div[class*="Spinner_spinner_"] > div:after {
+    background: #fff !important;
+    opacity: 0.35 !important;
+}
+
+/* Time and date picker */
+
+.ui-datepicker,
+.ui-timepicker-wrapper,
+div[class*="DayPickerWrapper_DayPickerInputOverlay_"],
+div[class*="DayPickerWrapper_dayPickerWrapperNoInput_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+ul.ui-timepicker-list li,
+.ui-datepicker .ui-datepicker-title,
+div[class*="DayPickerWrapper_DayPickerCaption_"] div,
+div[class*="DayPickerWrapper_DayPickerWeekday_"] abbr,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    color: #fff !important;
+}
+
+.ui-state-hover:not(.ui-datepicker td .ui-state-highlight):not(.ui-datepicker td .ui-state-active),
+.calendar-workouts .calendar td:hover:not(.outside-current-date) {
+    background: #1a1a1a !important;
+}
+
+.ui-datepicker td .ui-state-active {
+    background: #1976d2 !important;
+    color: #000 !important;
+}
+
+.ui-datepicker td .ui-state-highlight,
+div[class*="DayPickerWrapper_DayPickerDaySelected_"]:not([class*="DayPickerWrapper_DayPickerDayDisabled_"]):not([class*="DayPickerWrapper_DayPickerDayOutside_"]) {
+    color: #000 !important;
+}
+
+.ui-state-default .ui-priority-secondary {
+    color: #bbbbbb !important;
+}
+
+ul.ui-timepicker-list li:hover {
+    background: #1976d2 !important;
+}
+
+.ui-widget.ui-widget-content,
+.calendar-workouts .calendar td:not(.current-day) {
+    border-color: #555 !important;
+}
+
+.ui-datepicker td {
+    border-color: #555 !important;
+}
+
+.calendar-workouts .calendar .outside-current-date {
+    background: #202020 !important;
 }
 
 /* Footer */
@@ -1635,13 +1740,30 @@ h4[class*="RunningLactateThresholdHelpBody_title_"],
 p[class*="RunningLactateThresholdHelpBody_paragraph_"],
 p[class*="RunningLactateThresholdHelpBody_sectionSummary_"],
 h4[class*="RunningLactateThresholdHelpBody_sectionTitle_"],
-li[class*="RunningLactateThresholdHelpBody_paragraph_"] {
+li[class*="RunningLactateThresholdHelpBody_paragraph_"],
+table[class*="EditorTable_table_"] thead,
+span[class*="ReorderSelectedStats_dragHandle_"],
+div[class*="ReorderSelectedStats_reorderListItem_"] label,
+div[class*="BodyBatterySecondaryStatCard_bodyBatteryValue_"],
+div[class*="SleepSecondaryStatCard_scoreText_"],
+div[class*="SleepSecondaryStatCard_durationValue_"],
+div[class*="Gc5DetailCard_cardDetail_SubText_"],
+div[class*="ExercisePicker_exerciseCount_"],
+ul[class*="ExercisePicker_exerciseOptions_"] li,
+div[class*="ExercisePickerFilter_filterDropdown_"] label > span,
+.restricted-content-main-info p,
+span[class*="ReorderActivityList_dragHandle_"],
+p[class*="WorkoutRepeatStep_repeatStepEmptyBlock_"],
+div[class*="WorkoutRepeatStep_numRepeats_"],
+div[class*="WorkoutRepeatStep_repeatStepTitleLeft_"] i,
+div[class*="WorkoutStep_dragIcon_"] i,
+span[class*="ExercisePickerFilter_filterName_"] {
   color: #fff !important;
 }
 
 .page.activity-detail,
 .chart-toggle-options,
-button:not([class*="InlineEdit_saveIcon_"]):not([class*="InlineEdit_closeIcon_"]),
+button:not([class*="InlineEdit_saveIcon_"]):not([class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"]):not([class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel),
 .page.activity-detail,
 .activity-charts-container,
 .btn-customize-charts{
@@ -1796,7 +1918,15 @@ div[class*="GroupMemberAvatars_groupMembersAvatars_"] img {
     background-color: #252525 !important;
 }
 
-/* Livetrack */
+table[class*="EnduranceScoreHelpModal_table_"] tbody td {
+    border-color: #555 !important;
+}
+
+div[class*="WorkoutName_edit_"] {
+    background-color: #252525 !important;
+}
+
+/* LIVETRACK */
 
 /* Text */
 
