@@ -157,7 +157,7 @@ const newColors = {
   "--color-301": "#ff0035",
   "--color-300": "#bf0f24",
   "--color-228": "#7ed9ff",
-  "--color-227": "#54a9fe",
+  "--color-227": "#1976d2",
   "--color-226": "#1976d2",
   "--color-225": "#26b2f1",
   "--color-224": "#10a9ed",
