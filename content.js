@@ -134,7 +134,7 @@ const newColors = {
   "--color-415": "#94d82d",
   "--color-414": "#c0eb75",
   "--color-413": "#b6d56b",
-  "--color-412": "#d6ff32",
+  "--color-412": "#50b012",
   "--color-411": "#110b13",
   "--color-410": "#31d9c8",
   "--color-409": "#90e71b",

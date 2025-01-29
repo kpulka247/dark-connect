@@ -20,12 +20,9 @@ header {
   color: #c7c7c7 !important;
 }
 
-.header-nav-item.notifications .notification-item:hover {
-    background: #1a1a1a;
-}
-
+.header-nav-item.notifications .notification-item:hover,
 .header-nav-item.notifications .notification-item a:hover {
-    background-color: #1a1a1a !important;
+    background: #202020;
 }
 
 /* Body */
@@ -148,6 +145,15 @@ div[class*="DayView_dayViewColumn_"] > * {
     border-color: #555 !important;
 }
 
+/* Alerts */
+
+div[class*="Alert_info_"],
+div[class*="Alert_success_"],
+div[class*="Alert_warning_"],
+div[class*="Alert_alert_"] span a {
+    color: #000 !important;
+}
+
 /* Card */
 
 .card {
@@ -193,9 +199,9 @@ ul[class*="Dropdown_dropdownMenu_"] {
     border-color: #555 !important;
 }
 
-.dropdown-menu>li.active>a,
-.dropdown-menu>li.active.multiple>a {
-    background-color: #252525 !important;
+.dropdown-menu>li.active>a:not(:hover),
+.dropdown-menu>li.active.multiple>a:not(:hover) {
+    background-color: #555 !important;
     color: #fff !important;
 }
 
@@ -223,7 +229,8 @@ div[class*="ReportImageDropdown_dropdownMenu_"] {
     border-color: #555 !important;
 }
 
-.dropdown-menu>li>label {
+.dropdown-menu>li>label,
+div[class*="Menu_menuItems_"] {
     color: #fff !important;
 }
 
@@ -331,9 +338,9 @@ div[class*="CommentLikeSection_socialButtonWrapper_"]:hover {
 
 .highcharts-plot-band,
 .highcharts-color-0[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
-.highcharts-color-1,
-.highcharts-color-2,
-.highcharts-color-3 {
+.highcharts-color-1 path,
+.highcharts-color-2 path,
+.highcharts-color-3 path {
     stroke: #252525 !important;
 }
 
@@ -389,8 +396,13 @@ path.highcharts-alternate-grid[fill="#F6F6F6"] {
     stroke: #fff !important;
 }
 
-.highcharts-label-box,
-.highcharts-tooltip-box {
+.highcharts-label-box[fill="#ffffff"],
+.highcharts-tooltip-box[fill="#ffffff"] {
+    fill: #252525 !important;
+}
+
+.highcharts-label-box:not([fill="#ffffff"]),
+.highcharts-tooltip-box:not([fill="#ffffff"]) {
     fill: #1a1a1a !important;
 }
 
@@ -677,6 +689,18 @@ p[class*="SleepCoachFactorModal_feedbackString_"] {
     color: #fff !important;
 }
 
+.widget .leaderboard li.highlight,
+.page ol.leaderboard li.highlight,
+.connections-inline-list .connection:nth-child(2n),
+.page ol.leaderboard li:hover:not(.page ol.leaderboard li.leaderboard-header) {
+    background-color: #202020 !important;
+}
+
+.challenge-summary {
+    background: #202020 !important;
+    border-color: #555 !important;
+}
+
 /* Sleep */
 
 div[class*="SleepGauge_donutCenter_"] {
@@ -687,7 +711,11 @@ div[class*="SleepScoreFactorCard_factorCardContainer_"] {
     border-color: #555 !important;
 }
 
-span[class*="AddNapView_timeText_"], h6[class*="AddNapView_addNap_"] {
+span[class*="AddNapView_timeText_"],
+h6[class*="AddNapView_addNap_"],
+p[class*="NapsTableView_tableTitle_"],
+p[class*="NapsTableView_napTip_"],
+div[class*="NapsTable_label_"] {
     color: #fff !important;
 }
 
@@ -703,6 +731,11 @@ path.highcharts-point[fill="rgb(0,0,0)"], path.highcharts-point-hover[fill="rgb(
     fill: #fff !important;
 }
 
+div[class*="SleepCoachGraphic_sleepBar_"],
+div[class*="SleepCoachGraphic_legendSleepNeedDot_"] {
+    background-image: repeating-linear-gradient(-45deg, rgb(59, 151, 243), rgb(59, 151, 243) 2px, #252525 3px, #252525 5px) !important;
+}
+
 /* Leaderboard */
 
 .leaderboard .avatar,
@@ -716,7 +749,7 @@ path.highcharts-point[fill="rgb(0,0,0)"], path.highcharts-point-hover[fill="rgb(
 .page-sidebar .leaderboard li.highlight {
     background-color: #fff;
     padding: 10px 0;
-    background: #1a1a1a !important;
+    background: #202020 !important;
 
 }
 
@@ -727,7 +760,7 @@ path.highcharts-point[fill="rgb(0,0,0)"], path.highcharts-point-hover[fill="rgb(
 }
 
 li.leaderboard-row:hover {
-    background: #1a1a1a !important;
+    background: #202020 !important;
 }
 
 /* Courses */
@@ -1204,6 +1237,11 @@ div[class*="CommentInput_textArea_"] {
     box-shadow: inset 0 3px #555;
     border-color: #555;
 }
+
+textarea[readonly=readonly] {
+    box-shadow: none !important;
+    background: none !important;
+}
   
 textarea[class*="LogNotes_textArea_"] {
     background-color: #252525 !important;
@@ -1524,6 +1562,10 @@ g[class="recharts-layer recharts-reference-line"] line[stroke="white"][class="re
     stroke: #252525 !important;
 }
 
+path[class*="recharts-sector"][stroke="#ffffff"] {
+    stroke: #252525 !important;
+}
+
 div[class*="ImportDataPageView_dropzone_"] {
     background-color: #252525 !important;
     color: #fff !important;
@@ -1556,22 +1598,37 @@ div.recharts-tooltip-wrapper,
 
 div[class*="HillScoreReportChartView_tooltipText_"],
 div[class*="TotalCaloriesChart_tooltip_"],
-div[class*="BodyBatteryReports_tooltipContainer_"],
 div[class*="HeartRateReportView_tooltip_"],
 div[class*="RespirationChart_tooltip_"],
 div[class*="PulseOxChart_tooltip_"],
-div[class*="SleepScoreReport_tooltipContainer_"],
 div[class*="EnduranceScoreReportChartView_tooltipText_"],
 div[class*="MovementReportChart_tooltip_"],
 div[class*="FloorsDataReport_tooltip_"],
-div[class*="SleepChart_tooltip_"],
-div[class*="HrvStatusReportChart_tooltipContainer_"] {
-    background: #1a1a1a !important;
+div[class*="SleepChart_tooltip_"] {
+    background: #252525 !important;
     border-color: #555 !important;
+}
+
+div[class*="HrvStatusReportChart_tooltipContainer_"],
+div[class*="BodyBatteryReports_tooltipContainer_"],
+div[class*="SleepScoreReport_tooltipContainer_"],
+div[class*="ActivityHistoryChartAndStats_tooltipContainer_"] {
+    background: #202020 !important;
+    border-color: #555 !important;
+}
+
+div[class*="HRVTimelineChart_tooltip_"] {
+    background: #252525 !important;
+    border-color: #555 !important;
+    box-shadow: none !important;
 }
 
 ul > li > a > span[data-value] {
     color: #444;
+}
+
+ul[class*="ActivityGearStatusView_gearList_"] li:hover {
+    background-color: #202020 !important;
 }
 
 a,
@@ -1626,10 +1683,6 @@ div[class*="GroupItem_groupWrapper_"] img {
 
 img[class*="InviteesView_playerAvatar_"] {
     border-color: #555 !important;
-}
-
-span[class*="SecondaryStatCard_secondaryStatsTitle_"] {
-  color: #fff !important;
 }
 
 div[class*="EmptyStateCard_mainText_"],
@@ -1757,7 +1810,12 @@ p[class*="WorkoutRepeatStep_repeatStepEmptyBlock_"],
 div[class*="WorkoutRepeatStep_numRepeats_"],
 div[class*="WorkoutRepeatStep_repeatStepTitleLeft_"] i,
 div[class*="WorkoutStep_dragIcon_"] i,
-span[class*="ExercisePickerFilter_filterName_"] {
+span[class*="ExercisePickerFilter_filterName_"],
+h3[class*="BloodPressureSecondaryStatCard_latestReading_"],
+span[class*="SecondaryStatCard_secondaryStatsTitle_"],
+li[class*="HydrationChart_legendItem_"],
+span[class*="HydrationChart_legendItem_"],
+div[class*="Step3Duration_monthPickerTitle_"] {
   color: #fff !important;
 }
 
@@ -1922,7 +1980,10 @@ table[class*="EnduranceScoreHelpModal_table_"] tbody td {
     border-color: #555 !important;
 }
 
-div[class*="WorkoutName_edit_"] {
+div[class*="WorkoutName_edit_"],
+.inline-edit-text-field .inline-edit-editable-text,
+.inline-edit-text-field .inline-edit-editable-text:focus,
+.inline-edit-text-field .inline-edit-editable-text:active {
     background-color: #252525 !important;
 }
 
