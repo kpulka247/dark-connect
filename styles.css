@@ -92,6 +92,7 @@ hr,
 .divider,
 .dropdown-container div span,
 .page .calendar-wrapper .calendar-view.calendar-year,
+.page.activity-detail .border-bottom,
 .page.activity-detail .activity-charts-container .btn-customize-charts,
 .modal .modal-load-focus .load-focus-metrics-container .load-focus-metric-row,
 div[class*="Gc5Card_card_"],
@@ -627,7 +628,7 @@ li[class*="ConnectionLeaderboard_showMoreBtn"] button {
 li[class*="ConnectionLeaderboard_highlight_"],
 li[class*="ConnectionLeaderboard_leaderboardRow_"]:hover,
 li[class*="ConnectionLeaderboard_leaderboardRow_"]:active {
-    background-color: #1a1a1a !important;
+    background-color: #202020 !important;
 }
 
 div[class*="ConnectionsPage_newsFeedLink_"] > a {
@@ -1627,7 +1628,8 @@ ul > li > a > span[data-value] {
     color: #444;
 }
 
-ul[class*="ActivityGearStatusView_gearList_"] li:hover {
+ul[class*="ActivityGearStatusView_gearList_"] li:hover,
+.gear-list li:hover {
     background-color: #202020 !important;
 }
 
