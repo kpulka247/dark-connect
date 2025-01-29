@@ -192,7 +192,7 @@ const newColors = {
   "--color-144": "#aeaeae",
   "--color-143": "#939393",
   "--color-142": "#1a1a1a",
-  "--color-141": "rgba(5, 5, 5, 0.1)",
+  "--color-141": "rgb(37, 37, 37, 0.9)",
   "--color-140": "#191919",
   "--color-139": "#b5b5b5",
   "--color-138": "#1f1f1f",
