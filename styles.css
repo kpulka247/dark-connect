@@ -180,6 +180,7 @@ div[class*="GolfUnity_showUnity_"],
 ul[class*="GolfStatsTabApproach_lineMarker_"],
 div[class*="GolfCourseStatsPageMain_headerItem_"],
 div[class*="ScorecardComponent_scorecardSection_"],
+div[class*="ImportDataPageView_previewComponentWrapper_"],
 div[class*="DayView_dayViewColumn_"] > * {
     border-color: #555 !important;
 }
@@ -2128,6 +2129,10 @@ div[class*="WorkoutName_edit_"],
 .page.activity-detail .swim-length .first.last .type,
 .page.activity-detail .swim-rest .type {
     color: #000 !important;
+}
+
+div[class*="ImportDataPageView_previewItem_"] {
+    background-color: #202020 !important;
 }
 
 /* LIVETRACK */
