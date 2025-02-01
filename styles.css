@@ -8,6 +8,12 @@ header {
 }
 
 .header-nav-menu {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1) !important;
+}
+
+.undo-section {
   background-color: #252525 !important;
 }
 
@@ -21,8 +27,13 @@ header {
 }
 
 .header-nav-item.notifications .notification-item:hover,
-.header-nav-item.notifications .notification-item a:hover {
-    background: #202020;
+.header-nav-item.notifications .notification-item a:hover,
+.header-nav-item.notifications .notification-item:has(.icon-dismiss:hover) {
+    background: #202020 !important;
+}
+
+.undo-section button:hover {
+    background-color: #1a1a1a !important;
 }
 
 /* Body */
@@ -86,7 +97,6 @@ hr,
 .border-wrapper,
 .table th, .table td,
 .header,
-.header-nav-menu,
 .header-nav-menu-section,
 .page.activity-list .edit-btn,
 .divider,
@@ -98,6 +108,8 @@ hr,
 .page.activity-detail .chart-toggle-options button,
 .page.activity-detail .customize-charts-controls .reorder-widgets-set,
 .page.activity-detail .customize-charts-controls .reorder-widgets-cancel,
+.page .calendar-wrapper .calendar-year-key .calendar-data,
+.table-row-child.last,
 div[class*="Gc5Card_card_"],
 div[class*="CommentLikeSection_likeCommentContainer_"],
 div[class*="FactorListCard_card_"],
@@ -145,6 +157,29 @@ div[class*="ProgressSummary_reportFilter_"],
 table[class*="CyclingFTPRatings_table_"] tbody th,
 table[class*="CyclingFTPRatings_table_"] tbody td,
 div[class*="SleepPage_sleepScoreTabContainer_"],
+div[class*="CalendarSyncCompatDialog_device_"],
+div[class*="CalendarSyncCompatDialog_syncTitle_"],
+div[class*="WorkoutBenefit_workoutBenefitContainer_"],
+table[class*="ActivityClassHelpModal_table_"],
+table[class*="ActivityClassHelpModal_table_"] th,
+table[class*="ActivityClassHelpModal_table_"] td,
+div[class*="GroupPageHeader_groupMetadata_"],
+div[class*="ConfirmTrip_itineraryContainer_"] li:first-child,
+li[class*="ConfirmTrip_flightContainer_"],
+div[class*="JetLagTripsList_tripList_"] li:first-child,
+li[class*="JetLagTrip_tripContainer_"],
+div[class*="GolfList_listItem_"],
+div[class*="GolfScorecardPage_scorecardSection_"],
+div[class*="ScorecardComponent_parRow_"],
+div[class*="ScorecardComponent_totalRowItem_"],
+div[class*="ScorecardComponent_textRowItem_"],
+ul[class*="GolfStatsTabOverview_lineMarker_"],
+tr[class*="GolfStatsTrends_trendTableRow_"],
+div[class*="GolfStatsFairwayHit_tableRow_"],
+div[class*="GolfUnity_showUnity_"],
+ul[class*="GolfStatsTabApproach_lineMarker_"],
+div[class*="GolfCourseStatsPageMain_headerItem_"],
+div[class*="ScorecardComponent_scorecardSection_"],
 div[class*="DayView_dayViewColumn_"] > * {
     border-color: #555 !important;
 }
@@ -303,7 +338,7 @@ div[class*="IntensityMinutesPageOneYearView_vigorousMultiplierBadge_"] {
 }
 
 div[class*="WeightPage_actionButtonsContainer_"] {
-    background-color: #1a1a1a !important;
+    background-color: #202020 !important;
     border-color: #555 !important;
 }
 
@@ -975,6 +1010,11 @@ div[class*="AltitudeAcclimationSecondaryStatCard_trendIcon_"] {
     background-color: #252525 !important;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 /* Table */
 
 .table-striped tbody > tr:nth-child(odd) > td,
@@ -1013,6 +1053,18 @@ div[class*="AltitudeAcclimationSecondaryStatCard_trendIcon_"] {
 div[class*="AndrogynousModel_overlay_"] {
     background-color: #1a1a1a !important;
     opacity: 0.75 !important;
+}
+
+.table-row-child {
+    background-color: #202020 !important;
+}
+
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(1),
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(5),
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(6),
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(7),
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(8) {
+    background-color: #202020 !important;
 }
 
 /* Calendar */
@@ -1230,6 +1282,11 @@ div[class="player"] {
 .photo-carousel .delete-overlay,
 .photo-carousel {
     background-color: #252525 !important;
+}
+
+.edit-carousel-content .delete-photo-icon {
+    background-color: #252525 !important;
+    border-color: #555 !important;
 }
 
 /* Notes */
@@ -1488,6 +1545,52 @@ ul.ui-timepicker-list li:hover {
 
 .calendar-workouts .calendar .outside-current-date {
     background: #202020 !important;
+}
+
+/* Golf */
+
+div[class*="GolfList_divider_"] {
+    background: #202020 !important;
+}
+
+div[class*="GolfScorecardPage_fairwayRow_"],
+div[class*="GolfScorecardPage_puttsRow_"] {
+    background-color: #202020 !important;
+}
+
+div[class*="GolfScorecardPage_fairwayEditItem_"] {
+    color: #555 !important;
+}
+
+div[class*="GolfScorecardPage_fairwayDirectionSelector_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+div[class*="GolfScorecardPage_fairwayDirectionSelector_"] > div {
+    background-color: #1a1a1a !important;
+}
+
+div[class*="GolfScorecardPage_fairwayDirectionSelector_"] div div i,
+div[class*="ScorecardComponent_holeItem_"] div i,
+span:has(div[class*="GolfStatsTabApproach_gaugeContainer_"]) {
+    color: #fff !important;
+}
+
+div[class*="GolfStatsTabApproach_noData_"],
+div[class*="GolfStatsTabApproach_candyCane_"] {
+    border-color: #fff !important;
+    color: #6c6c6c !important;
+}
+
+div[class*="GolfCourseStatsPageMain_headerContainer_"] {
+    background-color: #252525 !important;
+}
+
+div[class*="GolfCourseStatsPageFeed_smallFeedItem_"],
+div[class*="GolfCourseScorecardsPageFeed_scorecard_"] {
+    background: #252525 !important;
+    border-color: #555 !important;
 }
 
 /* Footer */
@@ -1820,7 +1923,17 @@ h3[class*="BloodPressureSecondaryStatCard_latestReading_"],
 span[class*="SecondaryStatCard_secondaryStatsTitle_"],
 li[class*="HydrationChart_legendItem_"],
 span[class*="HydrationChart_legendItem_"],
-div[class*="Step3Duration_monthPickerTitle_"] {
+div[class*="Step3Duration_monthPickerTitle_"],
+.table .sortable-header-row .icon-pointer-up,
+.table .sortable-header-row .icon-pointer-down,
+div[class*="CrossSellAd_textWrapper_"],
+div[class*="JetLagTrip_tripDetailsContainer_"] div div,
+div[class*="CrossSellAd_imageWrapper_"],
+div[class*="JetLagManageTripsPage_jetLagContainer_"],
+div[class*="HelpModal_helpContent_"] p,
+div[class*="JetLagTrip_dropdownMenu_"] i,
+div[class*="JetLagTrip_editButton_"] i,
+div[class*="GolfScorecardPage_actionButtonsContainer_"] i {
   color: #fff !important;
 }
 
@@ -1990,6 +2103,26 @@ div[class*="WorkoutName_edit_"],
 .inline-edit-text-field .inline-edit-editable-text:focus,
 .inline-edit-text-field .inline-edit-editable-text:active {
     background-color: #252525 !important;
+}
+
+.page.activity-detail .swim-length {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+.page.activity-detail .swim-rest {
+    background-color: #444 !important;
+    border-color: #555 !important;
+}
+
+.page.activity-detail .swim-length .number {
+    background: #1a1a1a !important;
+}
+
+.page.activity-detail .swim-length .type,
+.page.activity-detail .swim-length .first.last .type,
+.page.activity-detail .swim-rest .type {
+    color: #000 !important;
 }
 
 /* LIVETRACK */
