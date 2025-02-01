@@ -64,7 +64,7 @@ const newColors = {
   "--color-blue-dark-2": "#0a59b2",
   "--color-blue-dark-3": "#004ba0",
   "--color-white": "#000000",
-  "--color-lightui-surface-1": "#040404",
+  "--color-lightui-surface-1": "#202020",
   "--color-lightui-surface-2": "#202020",
   "--color-lightui-surface-3": "#101010",
   "--color-lightui-surface-4": "#555",
@@ -190,13 +190,13 @@ const newColors = {
   "--color-146": "#939393",
   "--color-145": "#0b0b0b",
   "--color-144": "#aeaeae",
-  "--color-143": "#939393",
+  "--color-143": "#555",
   "--color-142": "#1a1a1a",
   "--color-141": "rgb(37, 37, 37, 0.9)",
   "--color-140": "#191919",
   "--color-139": "#b5b5b5",
   "--color-138": "#1f1f1f",
-  "--color-137": "rgba(255, 255, 255, 0.9)",
+  "--color-137": "rgba(255, 255, 255, 0.1)",
   "--color-136": "#2c2c2c",
   "--color-135": "rgba(145, 122, 107, 0.2)",
   "--color-134": "#917a6b",
@@ -227,7 +227,7 @@ const newColors = {
   "--color-109": "#555",
   "--color-108": "#555",
   "--color-107": "#555",
-  "--color-106": "#252525",
+  "--color-106": "#1a1a1a",
   "--color-105": "#202020",
   "--color-104": "#202020",
   "--color-103": "#555",
@@ -260,7 +260,8 @@ const darkScrollbar = `
     width: 9px;
     height: 5px;
   }
-  ::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb,
+  .header-nav-menu::-webkit-scrollbar-thumb {
     background-color: #888;
     border-color: #1a1a1a;
     border-width: 0 2px;
