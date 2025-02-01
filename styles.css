@@ -1015,6 +1015,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
+.header-logo img,
+li[class*="LocationAutoComplete_suggestion_"] div img {
+    filter: invert(1) grayscale(1) brightness(2);
+}
+
 /* Table */
 
 .table-striped tbody > tr:nth-child(odd) > td,
