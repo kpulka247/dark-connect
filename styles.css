@@ -378,6 +378,9 @@ div[class*="CommentLikeSection_socialButtonWrapper_"]:hover {
 
 .highcharts-plot-band,
 .highcharts-color-0[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-1[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-2[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-3[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
 .highcharts-color-1 path,
 .highcharts-color-2 path,
 .highcharts-color-3 path {
@@ -397,7 +400,10 @@ path[class="highcharts-point"]:not([stroke="#be5142"])
     stroke: #fff !important;
 }
 
-g[class^="highcharts-legend-item highcharts-column-series highcharts-color-undefined"] text {
+g[class^="highcharts-legend-item highcharts-column-series highcharts-color-undefined"] text,
+g[class^="highcharts-legend-item highcharts-spline-series highcharts-color-undefined"] text,
+g[class^="highcharts-legend-item highcharts-line-series highcharts-color-undefined"] text,
+g[class^="highcharts-legend-item highcharts-areaspline-series highcharts-color-undefined"] text{
     color: #fff !important;
     fill: #fff !important;
 }
@@ -443,7 +449,7 @@ path.highcharts-alternate-grid[fill="#F6F6F6"] {
 
 .highcharts-label-box:not([fill="#ffffff"]),
 .highcharts-tooltip-box:not([fill="#ffffff"]) {
-    fill: #1a1a1a !important;
+    fill: #202020 !important;
 }
 
 .highcharts-container {
@@ -582,6 +588,10 @@ path[fill="#000"] {
 div[class*="AcclimationTooltip_tooltip_"] {
     background: #1a1a1a !important;
     border-color: #555 !important;
+}
+
+span[class*="IconTooltip_container_"] span {
+    color: #000 !important;
 }
 
 .highcharts-tooltip span {
@@ -847,7 +857,7 @@ label[class*="MapAdditionalOptionsSelection_optionLabel_"] {
 }
 
 div[class*="SearchWhenMoveMap_buttonContainer_"] label {
-    background: #202020 !important;
+    background: #252525 !important;
 }
 
 div[class*="MapProviderContainer__controlDialogOpen_"] {
@@ -859,7 +869,7 @@ div[class*="MapAdditionalOptionsSelection_optionLabel_"][class*="MapAdditionalOp
 }
 
 a[class^="leaflet-control-zoom"] {
-    background: #202020 !important;
+    background: #252525 !important;
     border-color: #555 !important;
 }
 
@@ -1017,7 +1027,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .header-logo img,
-li[class*="LocationAutoComplete_suggestion_"] div img {
+li[class*="LocationAutoComplete_suggestion_"] div img,
+.mobile .header a.logo[title="Garmin Connect"] {
     filter: invert(1) grayscale(1) brightness(2);
 }
 
@@ -1939,7 +1950,9 @@ div[class*="JetLagManageTripsPage_jetLagContainer_"],
 div[class*="HelpModal_helpContent_"] p,
 div[class*="JetLagTrip_dropdownMenu_"] i,
 div[class*="JetLagTrip_editButton_"] i,
-div[class*="GolfScorecardPage_actionButtonsContainer_"] i {
+div[class*="GolfScorecardPage_actionButtonsContainer_"] i,
+div[class*="TEGaugeChart_teScore_"],
+div[class*="MoveIQModal_moveIqDescription_"] {
   color: #fff !important;
 }
 
@@ -1948,7 +1961,7 @@ div[class*="GolfScorecardPage_actionButtonsContainer_"] i {
 button:not([class*="InlineEdit_saveIcon_"]):not([class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"]):not([class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel),
 .page.activity-detail,
 .activity-charts-container,
-.btn-customize-charts{
+.btn-customize-charts {
   color: #fff !important;
 }
 
