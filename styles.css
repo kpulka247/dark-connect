@@ -292,7 +292,7 @@ div[class*="Menu_customComponentMenu_"] {
 }
 
 div[class*="Menu_menuItemsSelected_"]:not(div[class*="Menu_menuItemsSelected_"]:hover) {
-    background-color: #202020 !important;
+    background-color: #555 !important;
 }
 
 div[class*="Menu_menuItems_"]:hover {
@@ -1301,7 +1301,8 @@ div[class*="ActivityListItem_selected_"] div[class*="ActivityListItem_activityIc
 }
 
 .page.activity-list .activity-list-filters,
-ul[class*="InlineEditDropdown_dropdownContainer_"] {
+ul[class*="InlineEditDropdown_dropdownContainer_"],
+div[class*="AdvancedSearch_advancedSearchContainer_"] {
     background: #252525 !important;
     border-color: #555 !important;
 }
@@ -1815,7 +1816,7 @@ ul[class*="ActivityGearStatusView_gearList_"] li:hover,
     background-color: #202020 !important;
 }
 
-a:not(.leaflet-container a),
+a,
 a p,
 h5,
 div[class*="IntensityMinutesGauge_imValue_"],
@@ -1823,6 +1824,13 @@ div[class*="IntensityMinutesGauge_imValue_"],
 .activity-detail span:not(.course-pt-lap),
 .te-metrics span {
     color: #fff !important;
+}
+
+.gm-style .gm-style-cc a,
+.gm-style .gm-style-cc button,
+.gm-style .gm-style-cc span,
+.leaflet-control-attribution a {
+    color: #000 !important;
 }
 
 .header-nav-menu-bottom a, .header-nav-menu-bottom a:hover {
@@ -2021,7 +2029,7 @@ span[class*="PrivacyMenu_selectOptionTypeText_"] {
 
 .page.activity-detail,
 .chart-toggle-options,
-button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"], [class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel):not([class*="InlineEditActivityName_editSave_"], [class*="InlineEditActivityName_editCancel_"]),
+button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"], [class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel):not([class*="InlineEditActivityName_editSave_"], [class*="InlineEditActivityName_editCancel_"]):not(.gm-style-cc button),
 .page.activity-detail,
 .activity-charts-container,
 .btn-customize-charts {
@@ -2030,7 +2038,7 @@ button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):no
 
 .primaryDeviceLabel,
 div[class*="Button_btn_"][class*="Button_btnSecondary_"] {
-    background-color: #1a1a1a !important;
+    background-color: #444 !important;
 }
 
 div[class*="FactorListCard_status_"] {
