@@ -60,13 +60,13 @@ const newColors = {
   "--color-blue-light-3": "#2a88e6",
   "--color-blue-primary": "#1976d2",
   "--color-blue-dark-0": "#ffffff",
-  "--color-blue-dark-1": "#1265c2",
+  "--color-blue-dark-1": "#1976d2",
   "--color-blue-dark-2": "#0a59b2",
   "--color-blue-dark-3": "#004ba0",
   "--color-white": "#000000",
   "--color-lightui-surface-1": "#202020",
   "--color-lightui-surface-2": "#202020",
-  "--color-lightui-surface-3": "#101010",
+  "--color-lightui-surface-3": "#1a1a1a",
   "--color-lightui-surface-4": "#555",
   "--color-lightui-accent-1": "#1a1a1a",
   "--color-lightui-accent-2": "#555",
@@ -232,7 +232,7 @@ const newColors = {
   "--color-104": "#202020",
   "--color-103": "#555",
   "--color-102": "#777777",
-  "--color-101": "#ffffff",
+  "--color-101": "#6c6c6c",
   "--color-100": "#dddddd",
   "--color-icon-secondary-hover:": "var(--color-white)",
   "--color-icon-secondary-dark:": "var(--color-lightui-surface-3)",
@@ -257,17 +257,21 @@ for (const [key, value] of Object.entries(newColors)) {
 
 const darkScrollbar = `
   ::-webkit-scrollbar {
-    width: 9px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
   }
   ::-webkit-scrollbar-thumb,
   .header-nav-menu::-webkit-scrollbar-thumb {
     background-color: #888;
-    border-color: #1a1a1a;
-    border-width: 0 2px;
-    border-height: 0 2px;
-    border-style: solid;
+    border-radius: 4px;
   }
+  ::-webkit-scrollbar-thumb:hover,
+  .header-nav-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #c7c7c7;
+  }
+  ::-webkit-scrollbar-corner {
+  background-color: #252525;
+}
 `;
 
 const style = document.createElement("style");
