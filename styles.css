@@ -1746,6 +1746,10 @@ footer {
     background: #252525;
 }
 
+div[class*="SessionEndedPage_sessionEndedPage__"] footer {
+    background: #111;
+}
+
 div[class*="Dialog_dialog__"],
 [class*="Dialog_dialogFooter"] {
     background-color: #252525;
