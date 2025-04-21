@@ -933,6 +933,12 @@ div[class*="CourseMap_contextMenuContainerForPoint_"] {
     border-color: #555 !important;
 }
 
+div[class*="FilterCourses_inputAppendContainer_"] span[class*="FilterCourses_addOn_"] {
+    background-color: #202020 !important;
+    border-color: #555 !important;
+    color: #fff !important;
+}
+
 /* Segments */
 
 a[class*="SegmentsListCard_btnMapListToggle_"],
@@ -2102,7 +2108,8 @@ p[class*="UserSubscription_subOptions_"],
 p[class*="UserSubscription_subFeature_"],
 span[class*="UserSubscription_subFeature_"],
 p[class*="UserSubscription_darkText_"],
-div[class*="ProfileHeader_profileHeaderBanner_"] {
+div[class*="ProfileHeader_profileHeaderBanner_"],
+.js-desktop-place-holder div .table th {
   color: #fff !important;
 }
 

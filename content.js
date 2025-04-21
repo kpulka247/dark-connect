@@ -73,7 +73,7 @@ const newColors = {
   "--color-darkui-accent-3": "#595959",
   "--color-darkui-accent-2": "#6c6c6c",
   "--color-darkui-accent-1": "#aeaeae",
-  "--color-darkui-surface-4": "#c4c4c4",
+  "--color-darkui-surface-4": "#6c6c6c",
   "--color-darkui-surface-3": "#ffffff",
   "--color-darkui-surface-2": "#e2e2e2",
   "--color-darkui-surface-1": "#efefef",
