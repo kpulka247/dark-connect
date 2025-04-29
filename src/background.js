@@ -6,7 +6,7 @@ chrome.runtime.onInstalled.addListener((details) => {
         type: 'basic',
         iconUrl: 'icons/icon128.png',
         title: 'Dark Connect',
-        message: `Updated to version ${version}. Click here to see what's new!`,
+        message: `Updated to version ${version}. Click here to see what's new! 🌙🏃‍♂️✨`,
         priority: 2
       });
     }
