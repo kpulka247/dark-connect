@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Dark Connect",
   "version": "1.2.1",
-  "description": "Dark mode extension for Garmin Connect website that replaces light colors with their dark theme. Finally you can stop being blinded by the site!",
+  "description": "Dark mode for Garmin Connect website that replaces light colors with their dark theme.",
   "permissions": ["notifications"],
   "background": {
     "service_worker": "background.js"
