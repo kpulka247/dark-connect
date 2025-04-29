@@ -5,7 +5,7 @@
   "description": "Dark mode for Garmin Connect website that replaces light colors with their dark theme.",
   "permissions": ["notifications"],
   "background": {
-    "service_worker": "src/background.js"
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
@@ -14,20 +14,20 @@
         "https://livetrack.garmin.com/*",
         "https://live.garmin.com/*"
       ],
-      "js": ["src/content.js"],
-      "css": ["src/styles.css"]
+      "js": ["content.js"],
+      "css": ["styles.css"]
     }
   ],
   "action": {
     "default_icon": {
-      "16": "src/icons/icon16.png",
-      "48": "src/icons/icon48.png",
-      "128": "src/icons/icon128.png"
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
   },
   "icons": {
-    "16": "src/icons/icon16.png",
-    "48": "src/icons/icon48.png",
-    "128": "src/icons/icon128.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }
