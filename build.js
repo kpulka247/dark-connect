@@ -3,9 +3,9 @@ const path = require('path');
 const fse = require('fs-extra');
 const AdmZip = require('adm-zip');
 
-const target = process.argv[2]; // 'chrome' or 'mozilla'
-if (!['chrome', 'mozilla'].includes(target)) {
-  console.error('Usage: node build.js chrome|mozilla');
+const target = process.argv[2]; // 'chrome' or 'firefox'
+if (!['chrome', 'firefox'].includes(target)) {
+  console.error('Usage: node build.js chrome|firefox');
   process.exit(1);
 }
 
