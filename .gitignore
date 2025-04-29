@@ -1,7 +1,6 @@
 # Node dependencies
 node_modules/
 npm-debug.log
-package-lock.json
 
 # Build files
 manifest.json
