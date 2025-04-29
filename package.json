@@ -1,5 +1,14 @@
 {
+  "name": "dark-connect",
+  "version": "1.2.1",
+  "scripts": {
+    "build:chrome": "node build.js chrome",
+    "build:mozilla": "node build.js mozilla",
+    "build:all": "npm run build:chrome && npm run build:mozilla"
+
+  },
   "devDependencies": {
+    "adm-zip": "^0.5.16",
     "fs-extra": "^11.3.0"
   }
 }
