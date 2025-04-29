@@ -909,8 +909,13 @@ a[class="leaflet-control-toggle-toggle"] {
     color: #fff !important;
 }
 
-div[class*="MapProviderContainer__layerControlButtonContainer_"] {
+div[class*="MapProviderContainer__layerControlButtonContainer_"],
+.leaflet-control>button {
     background-color: #252525 !important;
+}
+
+.leaflet-control>button:enabled:not(.leaflet-disabled):hover {
+    background-color: #202020 !important;
 }
 
 div[class*="CreateCourseOptionsBanner_optionsBanner_"] {
@@ -2113,7 +2118,10 @@ p[class*="UserSubscription_subFeature_"],
 span[class*="UserSubscription_subFeature_"],
 p[class*="UserSubscription_darkText_"],
 div[class*="ProfileHeader_profileHeaderBanner_"],
-.js-desktop-place-holder div .table th {
+.js-desktop-place-holder div .table th,
+div[class*="HeatAltitudeAcclimationModal_value_"],
+p[class*="HeatAltitudeAcclimationModal_detail_"],
+span[class*="MenuItem_menuItemText_"] {
   color: #fff !important;
 }
 
@@ -2124,6 +2132,18 @@ button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):no
 .activity-charts-container,
 .btn-customize-charts {
   color: #fff !important;
+}
+
+li[class*="MainSidebar_groupBottomBorder_"]:not(:only-child) {
+    border-bottom-color: #000 !important;
+}
+
+li[class*="MenuItem_menuItem_"][class*="MenuItem_openMenuItem_"] {
+    background-color: #252525 !important;
+}
+
+a[class*="MenuItem_menuItemLinkChild_"][class*="MenuItem_activeChild_"] {
+    background-color: #333 !important;
 }
 
 span[class*="ChartLegend_legendLine_"][style="background: rgb(0, 0, 0);"],
