@@ -2630,7 +2630,8 @@ g.highcharts-series path.highcharts-point[stroke="#ffffff"] {
 }
 
 [class*="Menu_smallMenu_"],
-[class*="Menu_menuItemWrapper_"] {
+[class*="Menu_menuItemWrapper_"],
+[class*="Carousel_controlButton_"] {
     background-color: #555 !important;
     border-color: #555 !important;
 }
@@ -2655,7 +2656,8 @@ g.highcharts-series path.highcharts-point[stroke="#ffffff"] {
 [class*="FormControl_inputWrapper_"] input,
 [class*="FormControl_inputWrapper_"] select,
 [class*="FormControl_inputWrapper_"] textarea,
-[class*="LivetrackInfoBanner_bannerTitle_"] {
+[class*="LivetrackInfoBanner_bannerTitle_"],
+[class*="Carousel_carouselHeader_"] {
     color: #fff !important;
 }
 
