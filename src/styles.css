@@ -342,7 +342,7 @@ div[class*="FitnessAgeSecondaryStatCard_mainContainer_"] {
 }
 
 [class*="CaloriesPageReport_tableContainer_"][data-banded-row='true'] table>tbody>tr:nth-child(odd)>td {
-    background-color: #1a1a1a !important;
+    background-color: #202020 !important;
 }
 
 div[class*="EditSecondaryStatCard_editCard__"],
@@ -653,7 +653,7 @@ g.recharts-layer.recharts-line path[stroke="black"] {
 }
 
 .optimal-range-legend .load-focus-optimal-range {
-    border-color: #6c6c6c !important;
+    border-color: #fff !important;
 }
 
 text.recharts-text.recharts-label {
@@ -891,6 +891,8 @@ div[class*="SearchWhenMoveMap_buttonContainer_"] label {
 
 div[class*="MapProviderContainer__controlDialogOpen_"] {
     background-color: #252525 !important;
+    border-color: #555 !important;
+    box-shadow: 0 0 2px #555 !important;
 }
 
 div[class*="MapAdditionalOptionsSelection_optionLabel_"][class*="MapAdditionalOptionsSelection_disabled_"] {
@@ -1392,7 +1394,7 @@ div[class="player"] {
 
 .metric:nth-child(2n + 1),
 .lap:nth-child(2n + 1) {
-    background: #1a1a1a !important;
+    background: #202020 !important;
 }
 
 .page.activity-detail .weather .map-control-item,
@@ -1610,29 +1612,37 @@ div[class*="WorkoutRepeatStep_repeatStepWrapper_"] {
 
 /* Spinner */
 
-div[class*="Spinner_spinner_"]:before,
-div[class*="Spinner_spinner_"]:after,
-div[class*="Spinner_spinner_"]>div:before,
-div[class*="Spinner_spinner_"]>div:after {
+[class*="Spinner_spinner_"]:before,
+[class*="Spinner_spinner_"]:after,
+[class*="Spinner_spinner_"]>div:before,
+[class*="Spinner_spinner_"]>div:after,
+.spinner:before,
+.spinner:after,
+.spinner>div:before,
+.spinner>div:after {
     box-shadow: 0 3.5em rgba(255, 255, 255, 0.2) !important;
 }
 
-div[class*="Spinner_spinner_"]:before {
+[class*="Spinner_spinner_"]:before,
+.spinner:before {
     background: #fff !important;
     opacity: 0.8 !important;
 }
 
-div[class*="Spinner_spinner_"]:after {
+[class*="Spinner_spinner_"]:after,
+.spinner:after {
     background: #fff !important;
     opacity: 0.65 !important;
 }
 
-div[class*="Spinner_spinner_"]>div:before {
+[class*="Spinner_spinner_"]>div:before,
+.spinner>div:before {
     background: #fff !important;
     opacity: 0.5 !important;
 }
 
-div[class*="Spinner_spinner_"]>div:after {
+[class*="Spinner_spinner_"]>div:after,
+.spinner>div:after {
     background: #fff !important;
     opacity: 0.35 !important;
 }
@@ -2122,7 +2132,8 @@ div[class*="ProfileHeader_profileHeaderBanner_"],
 .js-desktop-place-holder div .table th,
 div[class*="HeatAltitudeAcclimationModal_value_"],
 p[class*="HeatAltitudeAcclimationModal_detail_"],
-span[class*="MenuItem_menuItemText_"] {
+span[class*="MenuItem_menuItemText_"],
+div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
     color: #fff !important;
 }
 
@@ -2258,7 +2269,7 @@ button[class*="ImageSlider_dot_"] {
 }
 
 div[class*="EllipsisMenu_iconWrapper_"]:hover,
-div[class*="PrivacyMenu_menuContainer_"]:hover {
+div[class*="PrivacyMenu_menuContainer_"]:hover:not([class*="PrivacyMenu_smallPrivacyListClass_"]) {
     background: #1a1a1a !important;
 }
 
@@ -2369,7 +2380,8 @@ div[class*="AnchoredBanner_banner_"] {
 
 html {
     color-scheme: dark;
-    scrollbar-color: #888 #1a1a1a; /* Firefox */
+    scrollbar-color: #888 #1a1a1a;
+    /* Firefox */
 }
 
 /* LIVETRACK */
@@ -2517,4 +2529,191 @@ div[class*="AdvancedReportingPage_genesisWrapper_"] {
 
 div[class*="AdvancedReportingChartStyles_mainChart_"] svg.recharts-surface g text[fill="#808080"] {
     fill: #6c6c6c !important;
+}
+
+/* content.js */
+
+div[class*="Dialog_dialogBackdrop_"] {
+    background-color: #1a1a1a !important;
+}
+
+[class*="Tabs_navTabs_"]>li>[class*="Tabs_tabTitle_"]:hover,
+[class*="Tabs_navTabs_"]>li>[class*="Tabs_tabTitle_"]:focus,
+[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"],
+[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"]:hover,
+[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"]:focus {
+    color: #fff !important;
+}
+
+[class*="Tabs_navTabs_"] {
+    border-bottom-color: #555 !important;
+}
+
+div[class*="SecondaryStatCard_emptyStateTitle_"],
+[class*="challengesFeature_badgeChallengeRules_"],
+[class*="challengesFeature_rewardRule_"],
+[class*="Dialog_dialogHeader_"],
+[class*="Dropdown_dataDiv_"],
+[class*="VirtualPartner_sectionHeader_"],
+[class*="CourseDetails_sectionSubtitle_"],
+[class*="RespirationPage_timelineTitle_"],
+[class*="RespirationPage_reportTitle_"] {
+    color: #fff !important;
+}
+
+[class*="Dialog_dialogFooter_"],
+[class*="Notes_notes_"],
+[class*="ListTable_alternating_"] [class*="ListTable_tableRow_"]:nth-child(odd),
+[class*="SortableTable_tableRowAlternating_"]:nth-child(odd),
+[class*="Carousel_emptySlide_"] {
+    background-color: #202020 !important;
+    border-color: #555 !important;
+}
+
+[class*="SecondaryStatCard_emptyStateIconContainer_"] {
+    background-color: #202020 !important;
+}
+
+[class*="Chip_buttonSelected_"],
+[class*="Chip_dataTypeButton_"]:hover,
+[class*="Chip_dataTypeButton_"]:active {
+    background-color: #1a1a1a !important;
+}
+
+[class*="ActivityListItem_listItem_"],
+[class*="DefaultCustomTooltip_tooltipContainer_"],
+[class*="Alert_info_"] {
+    background-color: #202020 !important;
+}
+
+[class*="ActivityListItem_selected_"] {
+    background-color: #6c6c6c !important;
+}
+
+[class*="PillGroup_pill_"],
+[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(:hover),
+[class*="FlexInput_flexInputContainer_"],
+[class*="ListTable_tableRow_"],
+[class*="SortableTable_tableRow_"],
+[class*="ActivityPageCommentSection_container_"],
+[class*="Dropdown_fullDropdown_"],
+[class*="Accordion_accordionItemContainer_"],
+[class*="FlexInput_flexInputContainer_"] [class*="FlexInput_appendedLabel_"],
+[class*="BadgeChallenges2_buttonsAndList_"],
+[class*="BadgeChallengeCard2_badgeChallengeContainer_"],
+[class*="DragDrop_dndGroup_"]:not(:last-of-type),
+[class*="ImageSelectModal_divider_"] {
+    border-color: #555 !important;
+}
+
+[class*="SleepReportTable_anchor_"] {
+    color: #1976d2 !important;
+}
+
+[class*="MapZoom_zoomInIcon_"] path,
+[class*="MapZoom_zoomOutIcon_"] path {
+    stroke: #fff !important;
+}
+
+g.highcharts-point path.highcharts-partfill-original[stroke="#ffffff"],
+g.highcharts-series path.highcharts-point[stroke="#ffffff"] {
+    stroke: #252525 !important;
+}
+
+[class*="Dropdown_dropdownMenu_"] {
+    box-shadow: 0 2px 5px #555, inset 0px 0px 0px 1px #555 !important;
+}
+
+[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not([class*="NavigateToUserLocationButton_loadingStateButton_"]):hover,
+[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not([class*="SearchForUserProvidedLocationData_loadingStateButton_"]):hover {
+    background-color: #1a1a1a !important;
+}
+
+[class*="Menu_smallMenu_"],
+[class*="Menu_menuItemWrapper_"] {
+    background-color: #555 !important;
+    border-color: #555 !important;
+}
+
+[class*="GroupItem_groupWrapper_"] img {
+    box-shadow: 0 0 0 4px #252525, 0 0 0 5px #555 !important;
+}
+
+[class*="AdvancedReportingHeader_headerTitle_"],
+[class*="AdvancedReportingHeader_headerSubtitle_"],
+[class*="AdvancedReportingHeader_limitWarning_"],
+[class*="CardContentNormal_chartNameContainer_"],
+[class*="ChartStateMessage_messageTextContainer_"],
+[class*="AdvancedReportingCard_cornerContent_"],
+[class*="CardContentEdit_chartInfo_"] div:not(div[class*="CardContentEdit_chartDetail_"]),
+[class*="ChartMenu_chartMenuTitle_"],
+[class*="ChartMenu_chartFilterTitle_"],
+[class*="ChartResult_chartDataContainer_"],
+[class*="ExpandedCardModal_titleRow_"],
+[class*="ChartFilterModal_sectionLabel_"],
+[class*="UserOptions_userOptionsMenu_"],
+[class*="FormControl_inputWrapper_"] input,
+[class*="FormControl_inputWrapper_"] select,
+[class*="FormControl_inputWrapper_"] textarea,
+[class*="LivetrackInfoBanner_bannerTitle_"] {
+    color: #fff !important;
+}
+
+[class*="AdvancedReportingCard_cardContainer_"],
+[class*="DateRangePickerDropdown_dropdownContent_"],
+[class*="ExpandableMenu_toggleButton_"],
+[class*="ExpandableMenu_expandableMenuContentContainer_"],
+[class*="ChartResult_chartResult_"],
+[class*="UnifiedDropdown_dropdownContainer_"],
+[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_grouped_"]:first-child:not([class*="UnifiedDropdown_groupHeader_"]):not([class*="UnifiedDropdown_multiselectCheckboxContainer_"]):not(li),
+li[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_ungrouped_"]:first-child,
+[class*="UserOptions_userOptionsMenu_"] > li:not(:first-child),
+[class*="CompletedSession_session_"],
+[class*="FormControl_inputWrapper_"][class*="FormControl_outlined_"],
+[class*="FormControl_inputWrapper_"][class*="FormControl_outlined_"],
+[class*="ExpandableCard_footer_"],
+.leaflet-control:not(:last-child)>button,
+[class*="Table_table_"] thead > tr:last-child,
+[class*="ChartChip_chip_"],
+[class*="ActiveSessionBanner_activeSessionBanner_"],
+[class*="AnchoredBanner_banner_"] {
+    border-color: #555 !important;
+}
+
+[class*="ChartChip_chip_"]:hover:not([class*="ChartChip_selectedChip_"]) {
+    background-color: #202020 !important;
+}
+
+button[class*="DateRangePickerDropdown_dateRangePickerButton_"],
+[class*="UnifiedDropdown_numberSelectedDisplay_"],
+[class*="AnchoredBanner_bannerCloseBtn_"] {
+    background-color: #1a1a1a !important;
+}
+
+[class*="DropdownStyles_dropdown_"],
+[class*="DropdownStyles_selectionDropdown_"],
+[class*="UnifiedDropdown_dropdownContainer_"][class*="UnifiedDropdown_bottomShadow_"] {
+    box-shadow: 0 2px 0 #555 !important;
+}
+
+[class*="Dropdown_dropdownMenu_"] [class*="Dropdown_divider_"],
+[class*="NewsFeedFilter_feedFilterDetail_"] li[class*="NewsFeedFilter_divider_"] {
+    background-color: #555 !important;
+}
+
+[class*="ActivityCard_card_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+[class*="Table_table_"] tbody > tr:nth-child(odd) {
+    background-color: #202020 !important;
+}
+
+[class*="SessionOptions_sessionOptionsContainer_"] [class*="Menu_smallMenu_"] > [class*="Menu_menuItemsSelected_"]:not(:hover) {
+    background-color: #6c6c6c !important;
+}
+
+body {
+    color: #fff !important;
 }
