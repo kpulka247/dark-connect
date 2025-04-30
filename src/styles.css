@@ -16,16 +16,16 @@ header {
 }
 
 .undo-section {
-  background-color: #252525 !important;
+    background-color: #252525 !important;
 }
 
 .header-nav-item[class^='icon-'],
 .header-nav-item[class*=' icon-'] {
     color: #fff !important;
-  }
+}
 
 .header-nav-link:hover {
-  color: #c7c7c7 !important;
+    color: #c7c7c7 !important;
 }
 
 .header-nav-item.notifications .notification-item:hover,
@@ -60,7 +60,7 @@ header {
 }
 
 div[class*="Gc5PageWrapper_pageWrapper_"] {
-  background-color: #111 !important;
+    background-color: #111 !important;
 }
 
 #consent #truste-consent-button,
@@ -73,11 +73,11 @@ div[class*="Gc5PageWrapper_pageWrapper_"] {
 
 div[class*="Gc5PageWrapper_contentContainer_"] {
     background: #252525 !important;
-  }
+}
 
 div[class*="Homepage_placeholderCard_"] {
     background-color: #202020 !important;
-  }
+}
 
 div.inFocusCard {
     color: #fff !important;
@@ -98,7 +98,8 @@ hr,
 .page.map-segments .detail-profile,
 .map-card-footer,
 .border-wrapper,
-.table th, .table td,
+.table th,
+.table td,
 .header-nav-menu-section,
 .page.activity-list .edit-btn,
 .divider,
@@ -186,7 +187,7 @@ div[class*="ImportDataPageView_previewComponentWrapper_"],
 div[class*="UserSubscription_featureCard_"],
 div[class*="UserSubscription_card_"],
 label[class*="UserSubscription_miniCard_"],
-div[class*="DayView_dayViewColumn_"] > * {
+div[class*="DayView_dayViewColumn_"]>* {
     border-color: #555 !important;
 }
 
@@ -209,7 +210,7 @@ div[class*="Alert_alert_"] span a {
     background-color: #1a1a1a !important;
     border: 1px solid #1a1a1a !important;
     color: #c7c7c7 !important;
-  }
+}
 
 div[class*="ProgressBar_barWrapper_"],
 div[class*="FitnessAgeFactorModal_bar_"],
@@ -289,7 +290,7 @@ div[class*="ReportImageDropdown_dropdownMenu_"] {
 
 .dropdown-menu>li>label,
 div[class*="Menu_menuItems_"],
-.reportImageDropdown .dropdown-menu > li.clearfix > i,
+.reportImageDropdown .dropdown-menu>li.clearfix>i,
 .chosen-container .chosen-results {
     color: #fff !important;
 }
@@ -340,7 +341,7 @@ div[class*="FitnessAgeSecondaryStatCard_mainContainer_"] {
     color: #fff;
 }
 
-[class*="CaloriesPageReport_tableContainer_"][data-banded-row='true'] table > tbody > tr:nth-child(odd) > td {
+[class*="CaloriesPageReport_tableContainer_"][data-banded-row='true'] table>tbody>tr:nth-child(odd)>td {
     background-color: #1a1a1a !important;
 }
 
@@ -420,23 +421,14 @@ g[class="highcharts-series highcharts-series-0 highcharts-columnrange-series hig
     stroke: #252525 !important;
 }
 
-path[class="highcharts-point"]:not([stroke="#be5142"])
-:not([stroke="#75a1cb"])
-:not([stroke="#24ea59"])
-:not([stroke="#503dac"])
-:not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path)
-:not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path)
-:not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path)
-:not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover)
-:not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover)
-:not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover) {
+path[class="highcharts-point"]:not([stroke="#be5142"]):not([stroke="#75a1cb"]):not([stroke="#24ea59"]):not([stroke="#503dac"]):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover) {
     stroke: #fff !important;
 }
 
 g[class^="highcharts-legend-item highcharts-column-series highcharts-color-undefined"] text,
 g[class^="highcharts-legend-item highcharts-spline-series highcharts-color-undefined"] text,
 g[class^="highcharts-legend-item highcharts-line-series highcharts-color-undefined"] text,
-g[class^="highcharts-legend-item highcharts-areaspline-series highcharts-color-undefined"] text{
+g[class^="highcharts-legend-item highcharts-areaspline-series highcharts-color-undefined"] text {
     color: #fff !important;
     fill: #fff !important;
 }
@@ -494,7 +486,7 @@ path.highcharts-alternate-grid[fill="#F6F6F6"] {
     color: #fff;
 }
 
-rect.highcharts-background{
+rect.highcharts-background {
     fill: transparent;
     stroke: transparent;
 }
@@ -556,7 +548,8 @@ path[stroke="#ededed"],
     stroke: #555 !important;
 }
 
-.highcharts-plot-line[stroke="black"], .highcharts-plot-line[stroke="#888"] {
+.highcharts-plot-line[stroke="black"],
+.highcharts-plot-line[stroke="#888"] {
     stroke: #fff !important;
 }
 
@@ -566,7 +559,7 @@ span[class="highcharts-subtitle"] div div {
     color: #fff !important;
 }
 
-.table-subhead > td {
+.table-subhead>td {
     background-color: #202020 !important;
     color: #fff !important;
 }
@@ -713,7 +706,7 @@ li[class*="ConnectionLeaderboard_leaderboardRow_"]:active {
     background-color: #202020 !important;
 }
 
-div[class*="ConnectionsPage_newsFeedLink_"] > a {
+div[class*="ConnectionsPage_newsFeedLink_"]>a {
     color: #1976d2 !important;
 }
 
@@ -744,7 +737,8 @@ div[class*="EventSearchFilter_activityListFilters_"] {
     border-color: #555 !important;
 }
 
-legend[class*="FilterModal_label_"], label[class*="FilterModal_label_"],
+legend[class*="FilterModal_label_"],
+label[class*="FilterModal_label_"],
 label[class*="Cards_checkboxLabel_"] {
     color: #fff !important;
 }
@@ -810,7 +804,8 @@ div[class*="SleepStageStatus_barTick_"] {
     background-color: #fff !important;
 }
 
-path.highcharts-point[fill="rgb(0,0,0)"], path.highcharts-point-hover[fill="rgb(25,25,25)"] {
+path.highcharts-point[fill="rgb(0,0,0)"],
+path.highcharts-point-hover[fill="rgb(25,25,25)"] {
     fill: #fff !important;
 }
 
@@ -850,7 +845,7 @@ li.leaderboard-row:hover {
 
 button[class*="CourseCard_collapseButton_"] {
     background-color: #252525 !important;
-    border-color: #252525 !important; 
+    border-color: #252525 !important;
 }
 
 div[class*="CourseCard_cardContainerInner_"],
@@ -1050,7 +1045,8 @@ g[fill="#101010"] {
     fill: #fff !important;
 }
 
-span[class*=icon-pointer-], i[class*="icon-arrow-"],
+span[class*=icon-pointer-],
+i[class*="icon-arrow-"],
 .page.activity-list .favorite:hover [class^='icon-'],
 div[class*="ProfileImage_iconWrapper_"] i {
     color: #fff !important;
@@ -1107,27 +1103,27 @@ img[alt="Garmin LiveTrack"] {
 
 /* Table */
 
-.table-striped tbody > tr:nth-child(odd) > td,
-.table-striped tbody > tr:nth-child(odd) > th {
+.table-striped tbody>tr:nth-child(odd)>td,
+.table-striped tbody>tr:nth-child(odd)>th {
     background-color: #333;
     border: none;
 }
 
-.table-striped tbody > tr:first-child > td:first-child {
+.table-striped tbody>tr:first-child>td:first-child {
     border-top-left-radius: 5px !important;
 }
 
 
-.table-striped tbody > tr:first-child > td:last-child {
+.table-striped tbody>tr:first-child>td:last-child {
     border-top-right-radius: 5px !important;
 }
 
-.table-striped tbody > tr:last-child > td:first-child {
+.table-striped tbody>tr:last-child>td:first-child {
     border-bottom-left-radius: 5px !important;
 }
 
 
-.table-striped tbody > tr:last-child > td:last-child {
+.table-striped tbody>tr:last-child>td:last-child {
     border-bottom-right-radius: 5px !important;
 }
 
@@ -1222,7 +1218,8 @@ tbody[id="setsRoundExercise"] tr.exercises:hover td {
 
 /* Button */
 
-button[style*="background-color: rgb(255, 255, 255);"], .btn.btn-reverse {
+button[style*="background-color: rgb(255, 255, 255);"],
+.btn.btn-reverse {
     background-color: #252525 !important;
 }
 
@@ -1305,7 +1302,8 @@ button[class*="ExercisePicker_dropdownToggle_"] svg {
 
 /* Link button */
 
-.colored, a.colored,
+.colored,
+a.colored,
 div[class*="Homepage_sectionButton_"],
 div[class*="HomeSettings_linkButton_"],
 div[class*="DayView_dayViewLabel_"],
@@ -1318,8 +1316,7 @@ div[class*="CompareFilters_linkWrapper_"],
 div[class*="Activity_activityTitle_"],
 .like,
 .like a,
-.like
-.like-link,
+.like .like-link,
 [class*="DailySummaryPageHeader_calendar_"] h3,
 span[class*="HomeSettings_linkButton_"],
 menu[class*="UserOptions_userOptionsMenu_"] li a,
@@ -1411,7 +1408,7 @@ div[class="player"] {
 .dropzone.dz-clickable * {
     background-color: #252525;
 }
-  
+
 .photo-carousel .delete-overlay,
 .photo-carousel {
     background-color: #252525 !important;
@@ -1436,7 +1433,7 @@ textarea[readonly=readonly] {
     box-shadow: none !important;
     background: none !important;
 }
-  
+
 textarea[class*="LogNotes_textArea_"] {
     background-color: #252525 !important;
     color: #fff !important;
@@ -1579,8 +1576,8 @@ div[class*="TrainingStatusKeyStatsCard_textStatus_"],
 div[class*="TrainingStatusKeyStatsCard_loadFocusText_"],
 div[class*="TrainingStatusKeyStatsCard_secondContentText_"],
 div[class*="DayItem_today_"],
-div[class*="WorkoutStep_stepDeleteIcon_"] > div > button > i,
-div[class*="WorkoutRepeatStep_repeatStepTitleRight_"] > div > button > i,
+div[class*="WorkoutStep_stepDeleteIcon_"]>div>button>i,
+div[class*="WorkoutRepeatStep_repeatStepTitleRight_"]>div>button>i,
 div[class*="WorkoutRepeatStep_grabIcon_"] i {
     color: #fff !important;
 }
@@ -1615,8 +1612,8 @@ div[class*="WorkoutRepeatStep_repeatStepWrapper_"] {
 
 div[class*="Spinner_spinner_"]:before,
 div[class*="Spinner_spinner_"]:after,
-div[class*="Spinner_spinner_"] > div:before,
-div[class*="Spinner_spinner_"] > div:after {
+div[class*="Spinner_spinner_"]>div:before,
+div[class*="Spinner_spinner_"]>div:after {
     box-shadow: 0 3.5em rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -1630,12 +1627,12 @@ div[class*="Spinner_spinner_"]:after {
     opacity: 0.65 !important;
 }
 
-div[class*="Spinner_spinner_"] > div:before {
+div[class*="Spinner_spinner_"]>div:before {
     background: #fff !important;
     opacity: 0.5 !important;
 }
 
-div[class*="Spinner_spinner_"] > div:after {
+div[class*="Spinner_spinner_"]>div:after {
     background: #fff !important;
     opacity: 0.35 !important;
 }
@@ -1719,7 +1716,7 @@ div[class*="GolfScorecardPage_fairwayDirectionSelector_"] {
     border-color: #555 !important;
 }
 
-div[class*="GolfScorecardPage_fairwayDirectionSelector_"] > div {
+div[class*="GolfScorecardPage_fairwayDirectionSelector_"]>div {
     background-color: #1a1a1a !important;
 }
 
@@ -1774,7 +1771,9 @@ div[class*="BPPage_actionButtonsContainer_"] {
     border-color: #555 !important;
 }
 
-.c0164, .c0127, .c0122 {
+.c0164,
+.c0127,
+.c0122 {
     background-color: #252525 !important;
 }
 
@@ -1782,7 +1781,7 @@ div[class*="BPPage_actionButtonsContainer_"] {
     color: #000 !important;
 }
 
-div[class*="Footer_cancelLink_"] > button {
+div[class*="Footer_cancelLink_"]>button {
     color: #fff !important;
 }
 
@@ -1890,7 +1889,7 @@ div[class*="HRVTimelineChart_tooltip_"] {
     box-shadow: none !important;
 }
 
-ul > li > a > span[data-value] {
+ul>li>a>span[data-value] {
     color: #444;
 }
 
@@ -1926,7 +1925,8 @@ div[class*="IntensityMinutesGauge_imValue_"],
     color: #000 !important;
 }
 
-.header-nav-menu-bottom a, .header-nav-menu-bottom a:hover {
+.header-nav-menu-bottom a,
+.header-nav-menu-bottom a:hover {
     color: inherit !important;
 }
 
@@ -1990,7 +1990,8 @@ div[class*="FactorListCard_header_"],
 div[class*="VO2MaxGaugeChart_value_"],
 div[class*="VO2MaxModal_infoContainer_"],
 [class*="SharedModalStyles_chartContainer_"] span[class*='avgValue'],
-div[class*="SharedModalStyles_value_"], div[class*="SharedModalStyles_infoContainer_"] div,
+div[class*="SharedModalStyles_value_"],
+div[class*="SharedModalStyles_infoContainer_"] div,
 div[class*="AcuteTrainingLoadChart_loadRatio_"],
 div[class*="SharedModalStyles_acuteTextColor_"],
 div[class*="FindAPlanTab_adaptiveCoachTitle_"],
@@ -2080,7 +2081,7 @@ div[class*="SleepSecondaryStatCard_durationValue_"],
 div[class*="Gc5DetailCard_cardDetail_SubText_"],
 div[class*="ExercisePicker_exerciseCount_"],
 ul[class*="ExercisePicker_exerciseOptions_"] li,
-div[class*="ExercisePickerFilter_filterDropdown_"] label > span,
+div[class*="ExercisePickerFilter_filterDropdown_"] label>span,
 .restricted-content-main-info p,
 span[class*="ReorderActivityList_dragHandle_"],
 p[class*="WorkoutRepeatStep_repeatStepEmptyBlock_"],
@@ -2122,7 +2123,7 @@ div[class*="ProfileHeader_profileHeaderBanner_"],
 div[class*="HeatAltitudeAcclimationModal_value_"],
 p[class*="HeatAltitudeAcclimationModal_detail_"],
 span[class*="MenuItem_menuItemText_"] {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 .page.activity-detail,
@@ -2131,7 +2132,7 @@ button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):no
 .page.activity-detail,
 .activity-charts-container,
 .btn-customize-charts {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 li[class*="MainSidebar_groupBottomBorder_"]:not(:only-child) {
@@ -2222,7 +2223,8 @@ span[class*="EditorTable_addOn_"] {
     color: #fff !important;
 }
 
-.privacy-overlay, div[class*="CourseCreate_overlay_"] {
+.privacy-overlay,
+div[class*="CourseCreate_overlay_"] {
     background-color: #111 !important;
 }
 
@@ -2361,6 +2363,13 @@ div[class*="ImportDataPageView_previewItem_"] {
 
 div[class*="AnchoredBanner_banner_"] {
     background-color: #252525 !important;
+}
+
+/* Scrollbar */
+
+html {
+    color-scheme: dark;
+    scrollbar-color: #888 #1a1a1a; /* Firefox */
 }
 
 /* LIVETRACK */
