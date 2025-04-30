@@ -252,28 +252,3 @@ const root = document.documentElement;
 for (const [key, value] of Object.entries(newColors)) {
   root.style.setProperty(key, value);
 }
-
-// Scrollbar
-
-const darkScrollbar = `
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-thumb,
-  .header-nav-menu::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-thumb:hover,
-  .header-nav-menu::-webkit-scrollbar-thumb:hover {
-    background-color: #c7c7c7;
-  }
-  ::-webkit-scrollbar-corner {
-  background-color: #252525;
-}
-`;
-
-const style = document.createElement("style");
-style.textContent = darkScrollbar;
-document.head.appendChild(style);
