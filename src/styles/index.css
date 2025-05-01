@@ -1,3 +1,8 @@
+html {
+    color-scheme: dark;
+    scrollbar-color: #888888 #1a1a1a;
+}
+
 /* ===== Base ===== */
 @import './base/variables.css';
 @import './base/resets.css';
