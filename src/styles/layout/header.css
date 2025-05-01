@@ -1,0 +1,35 @@
+.header,
+header {
+    background-color: var(--color-bg-dark) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+.header-nav-menu {
+    background-color: var(--color-bg-dark) !important;
+    border-color: var(--color-border) !important;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1) !important;
+}
+
+.undo-section {
+    background-color: var(--color-bg-dark) !important;
+}
+
+.undo-section button:hover {
+    background-color: var(--color-bg-darker) !important;
+}
+
+.header-nav-item[class^='icon-'],
+.header-nav-item[class*=' icon-'] {
+    color: var(--color-text-primary) !important;
+}
+
+.header-nav-link:hover {
+    color: var(--color-text-secondary) !important;
+}
+
+.header-nav-item.notifications .notification-item:hover,
+.header-nav-item.notifications .notification-item a:hover,
+.header-nav-item.notifications .notification-item:has(.icon-dismiss:hover) {
+    background: var(--color-bg-light) !important;
+}
