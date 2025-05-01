@@ -5,7 +5,6 @@ html {
 
 /* ===== Base ===== */
 @import './base/variables.css';
-@import './base/resets.css';
 
 /* ===== Layout ===== */
 @import './layout/body.css';
