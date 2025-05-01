@@ -1,0 +1,35 @@
+/* ===== Base ===== */
+@import './base/variables.css';
+@import './base/resets.css';
+
+/* ===== Layout ===== */
+@import './layout/body.css';
+@import './layout/header.css';
+@import './layout/footer.css';
+
+/* ===== Components ===== */
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/daypickers.css';
+@import './components/dropdowns.css';
+@import './components/forms.css';
+@import './components/icons.css';
+@import './components/modals.css';
+@import './components/tables.css';
+
+/* ===== Charts ===== */
+@import './charts/highcharts.css';
+@import './charts/misc-charts.css';
+@import './charts/recharts.css';
+
+/* ===== Modules ===== */
+@import './modules/activity.css';
+@import './modules/calendar.css';
+@import './modules/challange.css';
+@import './modules/courses.css';
+@import './modules/heatmap.css';
+@import './modules/homepage.css';
+@import './modules/leaderboard.css';
+@import './modules/segments.css';
+@import './modules/sleep.css';
+@import './modules/training.css';
