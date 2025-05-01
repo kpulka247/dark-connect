@@ -1,17 +1,10 @@
-html {
-    color-scheme: dark;
-    scrollbar-color: #888888 #1a1a1a;
-}
-
-/* ===== Base ===== */
+@import './base/scrollbar.css';
 @import './base/variables.css';
 
-/* ===== Layout ===== */
 @import './layout/body.css';
 @import './layout/header.css';
 @import './layout/footer.css';
 
-/* ===== Components ===== */
 @import './components/buttons.css';
 @import './components/cards.css';
 @import './components/daypickers.css';
@@ -21,12 +14,10 @@ html {
 @import './components/modals.css';
 @import './components/tables.css';
 
-/* ===== Charts ===== */
 @import './charts/highcharts.css';
 @import './charts/misc-charts.css';
 @import './charts/recharts.css';
 
-/* ===== Modules ===== */
 @import './modules/activity.css';
 @import './modules/calendar.css';
 @import './modules/challange.css';

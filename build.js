@@ -19,15 +19,46 @@ const pkg = require('./package.json');
 fse.removeSync(distDir);
 fse.ensureDirSync(distDir);
 
-// Copy source files
-fse.copySync('src', distDir);
+// Copy all files from src except src/styles
+fse.copySync('src', distDir, {
+  filter: (src) => {
+    const rel = path.relative(path.resolve(__dirname, 'src/styles'), src);
+    return !src.includes(path.join('src', 'styles')) || rel.startsWith('..');
+  }
+});
 
-// Load and inject version into manifest
+// Inject version into manifest
 const manifest = JSON.parse(fs.readFileSync(manifestSrc, 'utf-8'));
 manifest.version = pkg.version;
 fs.writeFileSync(manifestDest, JSON.stringify(manifest, null, 2));
 
-// Create ZIP
+// ===== BUILD CSS =====
+const indexCssPath = path.join(__dirname, 'src/styles/index.css');
+const indexCssDir = path.dirname(indexCssPath);
+const indexCssOut = path.join(distDir, 'styles/main.css');
+fse.ensureDirSync(path.dirname(indexCssOut));
+
+let finalCss = '';
+const rawLines = fs.readFileSync(indexCssPath, 'utf-8').split('\n');
+
+for (const line of rawLines) {
+  const importMatch = line.match(/@import\s+['"](.+)['"];/);
+  if (importMatch) {
+    const importPath = path.resolve(indexCssDir, importMatch[1]);
+    if (fs.existsSync(importPath)) {
+      const importedContent = fs.readFileSync(importPath, 'utf-8');
+      finalCss += `\n/* === ${importMatch[1]} === */\n` + importedContent + '\n';
+    } else {
+      console.warn(`⚠️ Skipped missing import: ${importMatch[1]}`);
+    }
+  } else {
+    finalCss += line + '\n';
+  }
+}
+
+fs.writeFileSync(indexCssOut, finalCss);
+
+// ===== ZIP OUTPUT =====
 const zip = new AdmZip();
 zip.addLocalFolder(distDir);
 zip.writeZip(zipOutput);

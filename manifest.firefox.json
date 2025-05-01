@@ -3,9 +3,13 @@
   "name": "Dark Connect",
   "version": "1.2.1",
   "description": "Dark mode for Garmin Connect website that replaces light colors with their dark theme.",
-  "permissions": ["notifications"],
+  "permissions": [
+    "notifications"
+  ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
   "content_scripts": [
     {
@@ -14,8 +18,9 @@
         "https://livetrack.garmin.com/*",
         "https://live.garmin.com/*"
       ],
-      "js": ["content.js"],
-      "css": ["styles.css"]
+      "css": [
+        "styles/main.css"
+      ]
     }
   ],
   "action": {
