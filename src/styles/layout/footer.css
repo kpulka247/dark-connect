@@ -1,0 +1,40 @@
+footer {
+    background: var(--color-bg-dark);
+}
+
+div[class*="SessionEndedPage_sessionEndedPage__"] footer {
+    background: var(--color-bg-darkest);
+}
+
+div[class*="Dialog_dialog__"],
+[class*="Dialog_dialogFooter"],
+.modal-footer {
+    background-color: var(--color-bg-dark) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.modal-footer {
+    background-color: var(--color-bg-light) !important;
+}
+
+.widget-footer,
+div[class*="Card_card_"],
+div[class*="BPPage_actionButtonsContainer_"] {
+    border-color: var(--color-border) !important;
+    background: var(--color-bg-dark);
+}
+
+.c0164,
+.c0127,
+.c0122 {
+    background-color: var(--color-bg-dark) !important;
+}
+
+.c015 p {
+    color: var(--color-text-dark) !important;
+}
+
+div[class*="Footer_cancelLink_"]>button {
+    color: var(--color-text-primary) !important;
+}
