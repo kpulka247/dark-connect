@@ -2376,14 +2376,6 @@ div[class*="AnchoredBanner_banner_"] {
     background-color: #252525 !important;
 }
 
-/* Scrollbar */
-
-html {
-    color-scheme: dark;
-    scrollbar-color: #888 #1a1a1a;
-    /* Firefox */
-}
-
 /* LIVETRACK */
 
 /* Text */
