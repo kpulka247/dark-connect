@@ -2686,7 +2686,8 @@ li[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_ungrouped_"]:
 [class*="ChartChip_chip_"],
 [class*="ActiveSessionBanner_activeSessionBanner_"],
 [class*="AnchoredBanner_banner_"],
-[class*="NearbyGolfCoursesModal_courseListItem_"] {
+[class*="NearbyGolfCoursesModal_courseListItem_"],
+[class*="DayPickerWrapper_DayPickerDay_"] {
     border-color: #555 !important;
 }
 
