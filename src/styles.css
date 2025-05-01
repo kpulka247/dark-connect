@@ -2566,12 +2566,15 @@ div[class*="SecondaryStatCard_emptyStateTitle_"],
 [class*="ListTable_alternating_"] [class*="ListTable_tableRow_"]:nth-child(odd),
 [class*="SortableTable_tableRowAlternating_"]:nth-child(odd),
 [class*="Carousel_emptySlide_"],
-[class*="InvitePlayersModal_invitedPlayersSection_"] {
+[class*="InvitePlayersModal_invitedPlayersSection_"],
+[class*="ChallengeAlternateAwards_container_"] {
     background-color: #202020 !important;
     border-color: #555 !important;
 }
 
-[class*="SecondaryStatCard_emptyStateIconContainer_"] {
+[class*="SecondaryStatCard_emptyStateIconContainer_"],
+[class*="ChallengeDetailPageLeaderboard_tableRow_"][class*="ChallengeDetailPageLeaderboard_highlight_"],
+[class*="ChallengeDetailPageLeaderboard_tableRow_"]:hover {
     background-color: #202020 !important;
 }
 
@@ -2603,7 +2606,9 @@ div[class*="SecondaryStatCard_emptyStateTitle_"],
 [class*="BadgeChallenges2_buttonsAndList_"],
 [class*="BadgeChallengeCard2_badgeChallengeContainer_"],
 [class*="DragDrop_dndGroup_"]:not(:last-of-type),
-[class*="ImageSelectModal_divider_"] {
+[class*="ImageSelectModal_divider_"],
+[class*="ChallengeDetailPageDesc_container_"],
+[class*="ChallengeDetailPageCommentSection_container_"] {
     border-color: #555 !important;
 }
 
@@ -2658,7 +2663,8 @@ g.highcharts-series path.highcharts-point[stroke="#ffffff"] {
 [class*="FormControl_inputWrapper_"] select,
 [class*="FormControl_inputWrapper_"] textarea,
 [class*="LivetrackInfoBanner_bannerTitle_"],
-[class*="Carousel_carouselHeader_"] {
+[class*="Carousel_carouselHeader_"],
+[class*="ChallengeDetailPageDesc_desc_"] {
     color: #fff !important;
 }
 
