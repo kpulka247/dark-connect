@@ -1,0 +1,30 @@
+:root {
+    /* Background */
+    --color-bg-dark: #252525;
+    --color-bg-darker: #1a1a1a;
+    --color-bg-darkest: #111111;
+    --color-bg-light: #202020;
+    --color-bg-lightest: #333333;
+  
+    /* Border */
+    --color-border: #555555;
+    --color-border-subtle: #6c6c6c;
+    --color-border-light: #dadada;
+  
+    /* Text */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #c7c7c7;
+    --color-text-muted: #6c6c6c;
+    --color-text-dark: #000000;
+  
+    /* Links and actions */
+    --color-link: #1976d2;
+    --color-link-hover: #c7c7c7;
+  
+    /* Special */
+    --color-highlight: #444444;
+    --color-danger: rgb(211, 32, 32);
+  
+    /* Accents and charts */
+    --color-accent-blue: rgb(59, 151, 243);
+  }
