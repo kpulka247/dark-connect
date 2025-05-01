@@ -1,0 +1,24 @@
+.body {
+    background: var(--color-bg-darker) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.page-feature {
+    color: var(--color-text-muted) !important;
+}
+
+.main-body,
+.content {
+    background-color: var(--color-bg-dark) !important;
+    color: var(--color-text-primary) !important;
+}
+
+div[class*="Gc5PageWrapper_pageWrapper_"] {
+    background-color: var(--color-bg-darkest) !important;
+}
+
+#consent #truste-consent-button,
+#consent #truste-consent-required,
+#consent #truste-show-consent {
+    background-color: var(--color-bg-darker) !important;
+}
