@@ -2565,7 +2565,8 @@ div[class*="SecondaryStatCard_emptyStateTitle_"],
 [class*="Notes_notes_"],
 [class*="ListTable_alternating_"] [class*="ListTable_tableRow_"]:nth-child(odd),
 [class*="SortableTable_tableRowAlternating_"]:nth-child(odd),
-[class*="Carousel_emptySlide_"] {
+[class*="Carousel_emptySlide_"],
+[class*="InvitePlayersModal_invitedPlayersSection_"] {
     background-color: #202020 !important;
     border-color: #555 !important;
 }
@@ -2678,7 +2679,8 @@ li[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_ungrouped_"]:
 [class*="Table_table_"] thead > tr:last-child,
 [class*="ChartChip_chip_"],
 [class*="ActiveSessionBanner_activeSessionBanner_"],
-[class*="AnchoredBanner_banner_"] {
+[class*="AnchoredBanner_banner_"],
+[class*="NearbyGolfCoursesModal_courseListItem_"] {
     border-color: #555 !important;
 }
 
@@ -2714,6 +2716,14 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"],
 
 [class*="SessionOptions_sessionOptionsContainer_"] [class*="Menu_smallMenu_"] > [class*="Menu_menuItemsSelected_"]:not(:hover) {
     background-color: #6c6c6c !important;
+}
+
+[class*="SecondaryStatStackedBarChart_stackedBarIndicator_"] {
+    border-color: #252525 !important;
+}
+
+[class*="NearbyGolfCoursesModal_courseListItem_"]:hover {
+    background-color: #202020 !important;
 }
 
 body {
