@@ -1,0 +1,171 @@
+/* Text */
+.athleteUserName,
+.splitsNavigation,
+.splitsContainer table td,
+.splitsContainer th,
+.expired-msg {
+    color: #fff !important;
+}
+
+.splitsContainer table td:first-of-type {
+    /* First column slightly dimmer */
+    color: #6c6c6c !important;
+}
+
+/* Header */
+.header-settings div.select {
+    /* Dropdown text color */
+    color: #6c6c6c !important;
+}
+
+menu[class*="UserOptions_userOptionsMenu_"] li div a {
+    /* User options link color */
+    color: #6c6c6c !important;
+}
+
+img[alt="Garmin LiveTrack"] {
+    /* Logo filter */
+    filter: invert(1) grayscale(1) brightness(2);
+}
+
+[class*="LivetrackInfoBanner_bannerTitle_"] {
+    /* Banner text */
+    color: #fff !important;
+}
+
+/* Body */
+#appPlaceholder {
+    /* Main container background */
+    background: #111 !important;
+}
+
+div[class*="PageContainer_container_"] {
+    /* Page container background */
+    background: #111 !important;
+}
+
+div[class*="PageContainer_paper_"] {
+    /* Paper background */
+    background-color: #252525 !important;
+}
+
+/* Chip Buttons */
+div[class*="Chip_dataTypeButton_"] {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Modal */
+.modal-curtain {
+    /* Backdrop */
+    background: #1a1a1a !important;
+    opacity: 0.8 !important;
+}
+
+#map-settings .modal {
+    /* Map settings modal border/shadow */
+    border-color: #555 !important;
+    box-shadow: 0 2px 0 1px rgba(26, 26, 26, 0.5) !important;
+}
+
+#map-settings .block:not(:last-child) {
+    /* Settings block border */
+    border-color: #555 !important;
+}
+
+.session-unavailable-user-avatar {
+    /* Avatar border */
+    border-color: #555 !important;
+}
+
+/* Details Section */
+.athleteDetails {
+    /* Container background/border */
+    background: #252525 !important;
+    border-color: #555 !important;
+}
+
+img.athleteUserImage {
+    /* Avatar image border */
+    border-color: #555 !important;
+}
+
+.athleteDetailsStatus {
+    /* Status background/border */
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+.athleteDetailsInner .pill-section-title {
+    /* Pill title text */
+    color: #fff !important;
+}
+
+div[class*="AthleteDetails_athleteDetailsInfo_"] div strong a {
+    /* Link text */
+    color: #1976d2 !important;
+}
+
+
+/* Charts */
+path[class="highcharts-axis-line"] {
+    /* Axis line override */
+    stroke: #252525 !important;
+}
+
+g.highcharts-axis.highcharts-xaxis .highcharts-axis-line {
+    /* X-axis line override */
+    stroke: #555 !important;
+}
+
+.chartLegend {
+    /* Legend box */
+    background: #1a1a1a !important;
+    border-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+.highcharts-legend-item-hidden .chartLegend {
+    /* Hidden legend box */
+    background: #252525 !important;
+    border-color: #555 !important;
+}
+
+/* Splits Table */
+.splitsContainer table thead {
+    /* Header background */
+    background: #202020 !important;
+}
+
+/* Notification Bar */
+.msg-bar .msg {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+    color: #fff !important;
+}
+
+/* Session Ended Page */
+div[class*="SessionEndedPage_sessionEndedPage__"] footer {
+    background: #111;
+}
+
+[class*="CompletedSession_session_"] {
+    /* Session card border */
+    border-color: #555 !important;
+}
+
+h2[class*="CompletedSession_title_"] span a {
+    /* Link text */
+    color: #1976d2 !important;
+}
+
+/* Session Options Menu */
+[class*="SessionOptions_sessionOptionsContainer_"] [class*="Menu_smallMenu_"]>[class*="Menu_menuItemsSelected_"]:not(:hover) {
+    background-color: #6c6c6c !important;
+    /* Selected item background */
+}
+
+/* Active Session Banner */
+[class*="ActiveSessionBanner_activeSessionBanner_"] {
+    border-color: #555 !important;
+}
