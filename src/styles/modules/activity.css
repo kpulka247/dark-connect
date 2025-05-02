@@ -70,6 +70,11 @@ div[class*="ActivityListItem_selected_"] {
     background-color: #6c6c6c !important;
 }
 
+div[class*="ActivityListItem_editButtonsVisible_"],
+[class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
+    border-color: #a6a6a6 !important;
+}
+
 div[class*="ActivityListItem_selected_"],
 div[class*="ActivityListItem_activityType_"] button span,
 div[class*="ActivityListItem_activityTypeText_"],

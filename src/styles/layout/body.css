@@ -145,9 +145,8 @@ div[class*="AnchoredBanner_banner_"] {
     /* Added based on similar elements */
 }
 
-div[class*="AnchoredBanner_banner_"] {
-    /* Duplicate from original, keep one */
-    background-color: #252525 !important;
+div[class*="AnchoredBanner_bannerHeader_"] {
+    color: #fff !important;
 }
 
 /* Cross-sell ad styling */

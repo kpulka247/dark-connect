@@ -145,16 +145,20 @@ button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):no
     color: #fff !important;
 }
 
-/* Map Zoom Buttons */
+/* Map Buttons */
 .btn-map-zoom {
     background-color: #252525 !important;
     color: #fff !important;
 }
 
-/* Map Enlarge Button */
 .map-enlarge-btn {
     background: rgb(37, 37, 37, 0.9) !important;
     border-color: #555 !important;
+}
+
+[class*="ButtonIcon_btnMap_"],
+[class*="MapZoom_zoomButton_"][class*="MapZoom_activity_"] {
+    background: rgb(37, 37, 37, 0.9) !important;
 }
 
 /* Course specific buttons */
