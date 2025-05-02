@@ -1,0 +1,305 @@
+/* Plot Bands / Grid */
+.highcharts-plot-band,
+path.highcharts-plot-band[fill="#F9F9F9"],
+path.highcharts-plot-band[fill="#f9f9f9"],
+path.highcharts-plot-band[fill="#FAFAFA"],
+path.highcharts-plot-band[fill="#fafafa"] {
+    fill: #1a1a1a;
+    /* Adjusted original fill */
+}
+
+path.highcharts-alternate-grid[fill="#F6F6F6"] {
+    fill: #333 !important;
+}
+
+.highcharts-grid-line:not([stroke="transparent"]) {
+    stroke: #555 !important;
+}
+
+.highcharts-grid-line:not([stroke="#e6e6e6"]):not([opacity="1"]) {
+    /* More specific grid line */
+    stroke: #555 !important;
+}
+
+g[class="highcharts-plot-bands-0"] path[fill="#d8d8d8"] {
+    /* Specific plot band fill */
+    fill: #444 !important;
+}
+
+.highcharts-plot-band[fill="#e6e9ff"] {
+    /* Specific plot band fill */
+    fill: #202020 !important;
+}
+
+
+/* Axis / Ticks */
+.highcharts-tick {
+    stroke: #1a1a1a !important;
+}
+
+.highcharts-tick[stroke="#c3c3c3"] {
+    /* Specific tick stroke */
+    stroke: #555 !important;
+}
+
+.highcharts-axis-line {
+    stroke: #fff !important;
+    /* Default axis line */
+}
+
+path[class="highcharts-axis-line"] {
+    /* LiveTrack axis line */
+    stroke: #252525 !important;
+    /* Override for LiveTrack */
+}
+
+g.highcharts-axis.highcharts-xaxis .highcharts-axis-line {
+    /* LiveTrack x-axis line */
+    stroke: #555 !important;
+    /* Specific override for LiveTrack x-axis */
+}
+
+
+/* Series Colors / Strokes */
+.highcharts-color-0[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-1[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-2[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-3[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-1 path,
+/* Assuming these are fills needing stroke */
+.highcharts-color-2 path,
+.highcharts-color-3 path,
+g[class="highcharts-series highcharts-series-0 highcharts-columnrange-series highcharts-tracker"] path {
+    stroke: #252525 !important;
+    /* Default stroke for colored series */
+}
+
+path[class="highcharts-point"]:not([stroke="#be5142"]):not([stroke="#75a1cb"]):not([stroke="#24ea59"]):not([stroke="#503dac"]):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover) {
+    stroke: #fff !important;
+    /* Default point stroke if not colored */
+}
+
+.highcharts-graph[stroke="#222"],
+.highcharts-graph[stroke="#222222"],
+.highcharts-graph[stroke="#000000"],
+.highcharts-graph[stroke="rgb(0,0,0)"] {
+    stroke: #fff;
+    /* Override dark strokes */
+}
+
+g[class*="highcharts-series highcharts-series-0 highcharts-line-series"] path[class="highcharts-graph"][stroke="#252525"],
+g[class*="highcharts-series highcharts-series-1 highcharts-line-series"] path[class="highcharts-graph"][stroke="#252525"],
+g[class*="highcharts-series highcharts-series-2 highcharts-line-series"] path[class="highcharts-graph"][stroke="#252525"],
+g[class*="highcharts-series highcharts-series-3 highcharts-line-series"] path[class="highcharts-graph"][stroke="#252525"] {
+    stroke: #fff !important;
+    /* Override specific dark line strokes */
+}
+
+path[stroke="#000000"],
+path[stroke="#3b3b3b"] {
+    stroke: #fff !important;
+}
+
+path[stroke="#ededed"] {
+    /* Specific light stroke override */
+    stroke: #555 !important;
+}
+
+path[class*="highcharts-halo"][fill="#f98925"] {
+    /* Halo fill/stroke */
+    fill: #f98925 !important;
+    stroke: #252525 !important;
+}
+
+path.highcharts-point[fill="#f98925"] {
+    /* Point stroke */
+    stroke: #252525 !important;
+}
+
+/* Column / Bar Strokes */
+g.recharts-layer .recharts-bar-rectangle,
+/* Includes Recharts temporarily, move later */
+g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path,
+g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path,
+g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path,
+g[class="highcharts-series highcharts-series-3 highcharts-column-series highcharts-tracker"] path,
+g[class="highcharts-series highcharts-series-4 highcharts-column-series highcharts-tracker"] path,
+g[class="highcharts-series highcharts-series-5 highcharts-column-series highcharts-tracker"] path,
+g[class="highcharts-series highcharts-series-6 highcharts-column-series highcharts-tracker"] path,
+g[class="highcharts-series highcharts-series-7 highcharts-column-series highcharts-tracker"] path,
+path.highcharts-point-hover:not([fill="transparent"]):not([fill="none"]),
+g.highcharts-series-hover path:not([fill="transparent"]):not([fill="none"]):not([fill="#2caffe"]),
+g.highcharts-series-inactive path:not([fill="transparent"]):not([fill="none"]) {
+    stroke: #252525 !important;
+}
+
+.reports .highcharts-container rect.highcharts-point {
+    /* Specific report column stroke */
+    stroke: #222 !important;
+}
+
+g.highcharts-point path.highcharts-partfill-original[stroke="#ffffff"],
+g.highcharts-series path.highcharts-point[stroke="#ffffff"] {
+    stroke: #252525 !important;
+}
+
+
+/* Series Fill */
+circle[fill="#000000"],
+path[fill="#000000"],
+path[fill="#222"] {
+    fill: #fff !important;
+    /* Override black fills */
+}
+
+path[fill="#000"] {
+    /* Another black fill override */
+    fill: #fff !important;
+    stroke: #000 !important;
+    /* Keep stroke black */
+}
+
+path.highcharts-point[fill="rgb(0,0,0)"],
+path.highcharts-point-hover[fill="rgb(25,25,25)"] {
+    fill: #fff !important;
+}
+
+.reports .highcharts-container .highcharts-series-0 rect.highcharts-point:not([fill="#6f42f3"]) {
+    /* Report column fill */
+    fill: #252525 !important;
+    stroke: #252525 !important;
+    /* Also set stroke */
+}
+
+/* Legend */
+g[class^="highcharts-legend-item highcharts-column-series highcharts-color-undefined"] text,
+g[class^="highcharts-legend-item highcharts-spline-series highcharts-color-undefined"] text,
+g[class^="highcharts-legend-item highcharts-line-series highcharts-color-undefined"] text,
+g[class^="highcharts-legend-item highcharts-areaspline-series highcharts-color-undefined"] text {
+    color: #fff !important;
+    fill: #fff !important;
+    /* Legend text color */
+}
+
+.highcharts-legend-item-hidden .chartLegend {
+    /* LiveTrack hidden legend */
+    background: #252525 !important;
+    border-color: #555 !important;
+}
+
+/* Tooltip (see components/tooltips.css) */
+
+/* Container / Background */
+.highcharts-container {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+rect.highcharts-background {
+    fill: transparent;
+    stroke: transparent;
+}
+
+rect.highcharts-background[fill="#ffffff"],
+rect.highcharts-plot-background[fill="#ffffff"],
+rect.highcharts-plot-background[fill*="url(#highcharts-"],
+.highcharts-pane[fill="#ffffff"] {
+    fill: #252525 !important;
+    /* White backgrounds to dark */
+}
+
+.highcharts-pane[stroke="#e6e6e6"] {
+    /* Pane stroke */
+    stroke: #444 !important;
+}
+
+/* Specific widget backgrounds (make transparent) */
+.sleep .highcharts-container rect,
+.steps .highcharts-container rect,
+.widget-floorsascended .highcharts-container rect,
+.widget-intensity-minutes .highcharts-container rect,
+.widget-heart-rate .highcharts-container rect {
+    fill: transparent !important;
+    stroke: transparent !important;
+}
+
+/* Title / Subtitle */
+.highcharts-title * {
+    color: #fff;
+}
+
+span[class="highcharts-subtitle"] div div {
+    /* Specific subtitle text */
+    color: #fff !important;
+}
+
+/* Plot Lines */
+.highcharts-plot-line {
+    stroke: #555 !important;
+    /* Default plot line */
+}
+
+g.highcharts-plot-lines-3 path.highcharts-plot-line[stroke="#222222"] {
+    /* Specific plot line */
+    stroke: #fff !important;
+}
+
+.highcharts-plot-line[stroke="black"],
+.highcharts-plot-line[stroke="#888"] {
+    stroke: #fff !important;
+}
+
+.highcharts-plot-line-label {
+    /* Plot line label text */
+    fill: #fff !important;
+    color: #fff !important;
+}
+
+/* Crosshair */
+.highcharts-crosshair,
+.highcharts-crosshair-category {
+    stroke: #fff !important;
+}
+
+/* Gauge / Solid Gauge Specifics */
+circle[class="highcharts-pivot"] {
+    /* Gauge pivot point */
+    fill: #252525 !important;
+    stroke: #252525 !important;
+}
+
+circle[stroke="white"],
+circle[stroke="#ffffff"] {
+    stroke: #252525 !important;
+}
+
+svg.highcharts-root circle {
+    /* General circle stroke override */
+    stroke: #252525 !important;
+}
+
+/* Text / Labels */
+text[style*="color: rgb(51, 51, 51);"],
+div[style*="color: rgb(199, 199, 199);"],
+/* Should likely be #c7c7c7 */
+span[style*="color: rgb(51, 51, 51);"] {
+    fill: #fff !important;
+    color: #fff !important;
+}
+
+span[style*="color: rgb(34, 34, 34);"] {
+    /* Another dark text override */
+    color: #fff !important;
+}
+
+text[color="#101010"] {
+    /* Specific text fill override */
+    fill: #fff !important;
+}
+
+/* LiveTrack Chart Legend Box */
+.chartLegend {
+    background: #1a1a1a !important;
+    border-color: #1a1a1a !important;
+    color: #fff !important;
+}
