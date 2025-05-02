@@ -1,0 +1,221 @@
+/* Style override for white background buttons */
+button[style*="background-color: rgb(255, 255, 255);"],
+.btn.btn-reverse {
+    background-color: #252525 !important;
+}
+
+/* Pill button group */
+.btn-group-pill {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+.btn-group-pill .btn {
+    border-color: #555 !important;
+}
+
+/* Specific button borders */
+.page.activity-detail .activity-charts-container .btn-customize-charts,
+.page.activity-detail .chart-toggle-options button,
+.page.activity-detail .customize-charts-controls .reorder-widgets-set,
+.page.activity-detail .customize-charts-controls .reorder-widgets-cancel,
+button[class*="ExercisePicker_dropdownToggle_"],
+button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
+button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
+.find-plan-filters .btn-pill {
+    /* From Plans */
+    border-color: #555 !important;
+}
+
+/* Navigation buttons / icons */
+div[class*="NavigationComponent_datePickerContainer_"],
+/* This might fit better in datepickers? */
+div[class*="NavigationComponent_buttonIcon_"] {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+div[class*="NavigationComponent_buttonIcon_"] i {
+    color: #fff !important;
+}
+
+/* Generic Button Components */
+button[class*="PillGroup_pill_"] {
+    background-color: #252525;
+}
+
+button[class*="PillGroup_active_"] {
+    background: #1976d2 !important;
+    border-color: #1976d2 !important;
+}
+
+button[class*="Button_btn_"][class*="Button_btnReverse_"],
+button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:hover,
+button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
+    background-color: #252525 !important;
+}
+
+/* Secondary Button Style */
+div[class*="Button_btn_"][class*="Button_btnSecondary_"] {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+
+/* Add Comment Button */
+button[class*="AddComment_container_"],
+button[class*="AddComment_button_"][disabled] {
+    background-color: #252525 !important;
+}
+
+/* Input Append/Prepend Add-on (acts like part of a button/input group) */
+.input-append .add-on,
+.input-prepend .add-on,
+span[class*="BPPage_addOnInput_"] {
+    text-shadow: 0 1px 0 #111 !important;
+    background-color: #202020 !important;
+    border-color: #555 !important;
+    color: #fff !important;
+}
+
+/* Chip Buttons */
+div[class*="Components_buttonSelected_"],
+div[class*="Components_dataTypeButton_"]:hover,
+div[class*="Components_dataTypeButton_"]:active {
+    background: #202020 !important;
+}
+
+/* Chip Buttons from content.js */
+[class*="Chip_buttonSelected_"],
+[class*="Chip_dataTypeButton_"]:hover,
+[class*="Chip_dataTypeButton_"]:active {
+    background-color: #1a1a1a !important;
+}
+
+[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(:hover) {
+    border-color: #555 !important;
+}
+
+div[class*="Chip_dataTypeButton_"] {
+    /* LiveTrack */
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Chart Chip */
+[class*="ChartChip_chip_"] {
+    border-color: #555 !important;
+}
+
+[class*="ChartChip_chip_"]:hover:not([class*="ChartChip_selectedChip_"]) {
+    background-color: #202020 !important;
+}
+
+
+/* Generic Exercise Picker Button Icon */
+button[class*="ExercisePicker_dropdownToggle_"] svg {
+    fill: #fff !important;
+}
+
+/* Link Button Style */
+.colored,
+a.colored,
+div[class*="Homepage_sectionButton_"],
+div[class*="HomeSettings_linkButton_"],
+div[class*="DayView_dayViewLabel_"],
+.accordion a.active,
+.accordion a:active,
+.accordion a:focus,
+.accordion-inner a:hover,
+div[class*="LinkButton_link_"],
+div[class*="CompareFilters_linkWrapper_"],
+.like,
+.like a,
+.like .like-link,
+span[class*="HomeSettings_linkButton_"],
+button[class*="LinkButton_link_"] {
+    /* Added based on name */
+    color: #1976d2 !important;
+}
+
+/* General button text color (catch-all for many standard buttons) */
+button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"], [class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel):not([class*="InlineEditActivityName_editSave_"], [class*="InlineEditActivityName_editCancel_"]):not(.gm-style-cc button):not([class*="Notification_close_"]):not([class*="Tab_inlineEditSave_"], [class*="Tab_inlineEditCancel_"]):not([class*="LinkButton_link_"]):not([class*="InlineEdit_saveButton_"], [class*="InlineEdit_cancelButton_"]) {
+    color: #fff !important;
+}
+
+/* Map Zoom Buttons */
+.btn-map-zoom {
+    background-color: #252525 !important;
+    color: #fff !important;
+}
+
+/* Map Enlarge Button */
+.map-enlarge-btn {
+    background: rgb(37, 37, 37, 0.9) !important;
+    border-color: #555 !important;
+}
+
+/* Course specific buttons */
+button[class*="CourseCard_collapseButton_"] {
+    background-color: #252525 !important;
+    border-color: #252525 !important;
+}
+
+/* Course map view close button */
+button[class*="ActivityMapView_closeButton_"] {
+    background: #252525 !important;
+    box-shadow: 0 0 2px #555 !important;
+}
+
+/* Course select type button */
+button[class*="SelectCourseType_selectCourseTypeButton_"] {
+    background: #252525 !important;
+    border-color: #555 !important;
+}
+
+
+/* Plan Filter Buttons */
+.find-plan-filters .btn-pill {
+    background-color: #202020 !important;
+}
+
+.find-plan-filters .btn-pill.filter-active,
+.find-plan-filters .btn-pill:active {
+    background-color: #1a1a1a !important;
+    border-color: #555 !important;
+    /* Applied border here */
+}
+
+/* Chart Result Button (Adv Reporting) */
+button[class*="ChartResult_chartResult_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+/* Expandable Menu Toggle Button (Adv Reporting) */
+button[class*="ExpandableMenu_toggleButton_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+/* Date Range Picker Button (Adv Reporting) */
+button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
+    background-color: #1a1a1a !important;
+}
+
+/* Search Button hover states */
+[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not([class*="NavigateToUserLocationButton_loadingStateButton_"]):hover,
+[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not([class*="SearchForUserProvidedLocationData_loadingStateButton_"]):hover {
+    background-color: #1a1a1a !important;
+}
+
+/* Carousel Control Button */
+[class*="Carousel_controlButton_"] {
+    background-color: #555 !important;
+    border-color: #555 !important;
+}
+
+/* Anchored Banner Close Button */
+[class*="AnchoredBanner_bannerCloseBtn_"] {
+    background-color: #1a1a1a !important;
+}
