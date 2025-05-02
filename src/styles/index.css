@@ -2,6 +2,7 @@
 @import './base/variables.css';
 @import './base/base.css';
 @import './base/scrollbar.css';
+@import './base/other.css';
 
 /* Layout */
 @import './layout/body.css';
