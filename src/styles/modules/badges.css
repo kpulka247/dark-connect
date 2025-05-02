@@ -1,0 +1,41 @@
+.page.badges .badge-filters {
+    /* Filter border */
+    border-color: #555 !important;
+}
+
+.badge-detail.badge-earned {
+    /* Earned badge text */
+    color: #fff;
+}
+
+.badge-earned-msg a {
+    /* Link in earned message */
+    color: #fff !important;
+}
+
+.badge-detail .badge-status-msg {
+    /* Status message background */
+    background-color: #252525 !important;
+}
+
+.page.badges .user-card .card-action-button {
+    /* Button background */
+    background: #252525 !important;
+}
+
+.page.badges .user-card .avatar {
+    /* Avatar styling */
+    background: #252525 !important;
+    box-shadow: 0 0 0 4px #252525, 0 0 0 5px #555 !important;
+}
+
+/* Badge Challenge Styles */
+[class*="challengesFeature_badgeChallengeRules_"],
+[class*="challengesFeature_rewardRule_"] {
+    color: #fff !important;
+}
+
+[class*="BadgeChallenges2_buttonsAndList_"],
+[class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
+    border-color: #555 !important;
+}
