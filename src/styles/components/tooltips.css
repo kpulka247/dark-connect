@@ -1,0 +1,78 @@
+/* Highcharts Tooltip */
+.highcharts-tooltip span {
+    color: #fff !important;
+}
+
+.highcharts-tooltip text {
+    /* SVG text color */
+    fill: #fff !important;
+    color: #fff !important;
+}
+
+.highcharts-label-box[fill="#ffffff"],
+/* Background for default */
+.highcharts-tooltip-box[fill="#ffffff"] {
+    fill: #252525 !important;
+}
+
+.highcharts-label-box:not([fill="#ffffff"]),
+/* Background for others */
+.highcharts-tooltip-box:not([fill="#ffffff"]) {
+    fill: #202020 !important;
+}
+
+/* Specific Highcharts tooltip content */
+.hrv-reports-tooltip-container .hrv-status-date-category {
+    color: #fff !important;
+}
+
+/* Recharts Tooltip Wrapper */
+div.recharts-tooltip-wrapper {
+    color: #fff;
+    /* Background is likely handled by specific tooltips below */
+}
+
+/* Specific Recharts Tooltips */
+div[class*="HillScoreReportChartView_tooltipText_"],
+div[class*="TotalCaloriesChart_tooltip_"],
+div[class*="HeartRateReportView_tooltip_"],
+div[class*="RespirationChart_tooltip_"],
+div[class*="PulseOxChart_tooltip_"],
+div[class*="EnduranceScoreReportChartView_tooltipText_"],
+div[class*="MovementReportChart_tooltip_"],
+div[class*="FloorsDataReport_tooltip_"],
+div[class*="SleepChart_tooltip_"],
+div[class*="HRVTimelineChart_tooltip_"] {
+    /* Uses different background */
+    background: #252525 !important;
+    border-color: #555 !important;
+}
+
+div[class*="HRVTimelineChart_tooltip_"] {
+    /* Remove shadow for this one */
+    box-shadow: none !important;
+}
+
+div[class*="HrvStatusReportChart_tooltipContainer_"],
+div[class*="BodyBatteryReports_tooltipContainer_"],
+div[class*="SleepScoreReport_tooltipContainer_"],
+div[class*="ActivityHistoryChartAndStats_tooltipContainer_"] {
+    background: #202020 !important;
+    border-color: #555 !important;
+}
+
+/* Other Tooltips */
+div[class*="AcclimationTooltip_tooltip_"] {
+    background: #1a1a1a !important;
+    border-color: #555 !important;
+}
+
+span[class*="IconTooltip_container_"] span {
+    /* Icon Tooltip text (needs fixing?) */
+    color: #000 !important;
+    /* Original style was black, might need changing */
+}
+
+[class*="DefaultCustomTooltip_tooltipContainer_"] {
+    background-color: #202020 !important;
+}
