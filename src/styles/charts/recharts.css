@@ -1,0 +1,73 @@
+/* Reference Lines */
+.recharts-reference-line-line {
+    stroke: #fff !important;
+    /* Default reference line */
+}
+
+g[class="recharts-layer recharts-reference-line"] line[stroke="white"][class="recharts-reference-line-line"] {
+    stroke: #252525 !important;
+    /* Override white reference line */
+}
+
+/* Axis */
+.recharts-cartesian-axis-line:not(div[class*="AdvancedReportingChartStyles_mainChart_"] svg.recharts-surface g line.recharts-cartesian-axis-line) {
+    stroke: #fff !important;
+    /* Default axis line */
+}
+
+.recharts-surface g g g text {
+    /* Axis text fill */
+    fill: #fff !important;
+}
+
+/* Advanced Reporting Axis text */
+div[class*="AdvancedReportingChartStyles_mainChart_"] svg.recharts-surface g text[fill="#808080"] {
+    fill: #6c6c6c !important;
+}
+
+
+/* Legend */
+.recharts-legend-icon[stroke="#000000"] {
+    /* Legend icon stroke */
+    stroke: #fff !important;
+}
+
+text.recharts-text.recharts-label {
+    /* Legend text */
+    fill: #fff !important;
+}
+
+.optimal-range-legend .load-focus-optimal-range {
+    /* Specific legend item border */
+    border-color: #fff !important;
+}
+
+span[class*="ChartLegend_legendLine_"][style="background: rgb(0, 0, 0);"],
+/* Legend line marker */
+span[class*="ChartLegend_legendBullet_"][style="background: rgb(0, 0, 0);"] {
+    /* Legend bullet marker */
+    background: #fff !important;
+}
+
+
+/* Bars / Sectors */
+g.recharts-layer .recharts-bar-rectangle {
+    /* Bar stroke */
+    stroke: #252525 !important;
+}
+
+path[class*="recharts-sector"][stroke="#ffffff"] {
+    /* Sector stroke */
+    stroke: #252525 !important;
+}
+
+path.recharts-radial-bar-background-sector {
+    /* Radial bar background */
+    fill: #444 !important;
+}
+
+/* Lines */
+g.recharts-layer.recharts-line path[stroke="black"] {
+    /* Black line stroke override */
+    stroke: #fff !important;
+}
