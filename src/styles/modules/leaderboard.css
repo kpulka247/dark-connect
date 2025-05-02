@@ -1,0 +1,57 @@
+.widget .leaderboard li.highlight,
+.page ol.leaderboard li.highlight,
+.page ol.leaderboard li:hover:not(.page ol.leaderboard li.leaderboard-header) {
+    background-color: #202020 !important;
+}
+
+.leaderboard .avatar,
+/* Avatar base style */
+.leaderboard .active .avatar,
+.leaderboard .highlight .avatar {
+    box-shadow: 0 0 0 0px #fff, 0 0 0 0px #c7c7c7;
+    /* Remove default shadow */
+    width: 38px;
+    height: 38px;
+}
+
+.page-sidebar .leaderboard li.highlight {
+    /* Sidebar highlight padding/background */
+    background-color: #fff;
+    /* Original style - likely overridden */
+    padding: 10px 0;
+    background: #202020 !important;
+    /* Ensure override */
+}
+
+.widget .leaderboard li.active {
+    /* Widget active row style */
+    border: none;
+    padding: 5px 0 5px 16px;
+    background-color: #fff;
+    /* Original style - maybe keep light? */
+}
+
+li.leaderboard-row:hover {
+    /* General row hover */
+    background: #202020 !important;
+}
+
+/* Connection Leaderboard Specifics */
+li[class*="ConnectionLeaderboard_highlight_"],
+li[class*="ConnectionLeaderboard_leaderboardRow_"]:hover,
+li[class*="ConnectionLeaderboard_leaderboardRow_"]:active {
+    background-color: #202020 !important;
+}
+
+li[class*="ConnectionLeaderboard_showMoreBtn"] button {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    background-color: #fff !important;
+}
+
+/* Challenge Leaderboard Specifics */
+[class*="ChallengeDetailPageLeaderboard_tableRow_"][class*="ChallengeDetailPageLeaderboard_highlight_"],
+[class*="ChallengeDetailPageLeaderboard_tableRow_"]:hover {
+    background-color: #202020 !important;
+}
