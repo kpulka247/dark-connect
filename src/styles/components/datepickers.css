@@ -1,0 +1,88 @@
+.ui-datepicker,
+.ui-timepicker-wrapper,
+div[class*="DayPickerWrapper_DayPickerInputOverlay_"],
+div[class*="DayPickerWrapper_dayPickerWrapperNoInput_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
+
+/* Text colors within pickers */
+ul.ui-timepicker-list li,
+.ui-datepicker .ui-datepicker-title,
+div[class*="DayPickerWrapper_DayPickerCaption_"] div,
+div[class*="DayPickerWrapper_DayPickerWeekday_"] abbr,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    color: #fff !important;
+}
+
+.ui-state-default .ui-priority-secondary {
+    /* Disabled/secondary text */
+    color: #bbbbbb !important;
+}
+
+/* Hover states */
+.ui-state-hover:not(.ui-datepicker td .ui-state-highlight):not(.ui-datepicker td .ui-state-active) {
+    background: #1a1a1a !important;
+}
+
+ul.ui-timepicker-list li:hover {
+    background: #1976d2 !important;
+}
+
+/* Active/Selected states */
+.ui-datepicker td .ui-state-active {
+    background: #1976d2 !important;
+    color: #000 !important;
+}
+
+.ui-datepicker td .ui-state-highlight,
+/* Highlighted day (e.g., today) */
+div[class*="DayPickerWrapper_DayPickerDaySelected_"]:not([class*="DayPickerWrapper_DayPickerDayDisabled_"]):not([class*="DayPickerWrapper_DayPickerDayOutside_"]) {
+    color: #000 !important;
+    /* Text color for highlighted */
+}
+
+/* Borders */
+.ui-widget.ui-widget-content {
+    border-color: #555 !important;
+}
+
+.ui-datepicker td {
+    border-color: #555 !important;
+}
+
+[class*="DayPickerWrapper_DayPickerDay_"] {
+    border-color: #555 !important;
+}
+
+/* Date/Time Input Appearance */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* Challenge Duration Pickers */
+div[class*="Step3Duration_datepickersContainer_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+    color: #fff !important;
+}
+
+div[class*="Step3Duration_datepickers_"] {
+    color: #fff !important;
+}
+
+div[class*="Step3Duration_monthPickerTitle_"] {
+    color: #fff !important;
+}
+
+/* Date Range Picker (Adv Reporting) */
+div[class*="DateRangePickerDropdown_dropdownContent_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+}
