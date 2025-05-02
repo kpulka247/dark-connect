@@ -1,0 +1,61 @@
+/* Tab Navigation */
+.nav-tabs {
+    border-color: #555 !important;
+}
+
+ul[class*="NavigationTabs_navigationTabs_"] {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+div[class*="NavigationTabs_tabTitle_"] {
+    color: #fff !important;
+}
+
+li[class*="NavigationTabs_activeTab_"],
+li[class*="NavigationTabs_activeTab_"]:hover,
+li[class*="NavigationTabs_activeTab_"]:focus,
+ul[class*="NavigationTabs_navigationTabs_"] li:hover,
+ul[class*="NavigationTabs_navigationTabs_"] li:focus {
+    background-color: #252525 !important;
+    color: #fff !important;
+}
+
+/* Tabs Component from content.js */
+[class*="Tabs_navTabs_"] {
+    border-bottom-color: #555 !important;
+}
+
+[class*="Tabs_navTabs_"]>li>[class*="Tabs_tabTitle_"]:hover,
+[class*="Tabs_navTabs_"]>li>[class*="Tabs_tabTitle_"]:focus,
+[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"],
+[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"]:hover,
+[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"]:focus {
+    color: #fff !important;
+}
+
+/* Breadcrumb Navigation (Event Page) */
+div[class*="BreadcrumbForm_header_"],
+div[class*="BreadcrumbForm_navBar_"],
+div[class*="BreadcrumbForm_footerContainer_"],
+/* Might fit better in footer? */
+div[class*="BreadcrumbForm_mainContainer_"] {
+    color: #fff !important;
+    background-color: #252525 !important;
+}
+
+/* Accordion Navigation */
+.accordion a.active,
+.accordion a:active,
+.accordion a:focus {
+    color: #1976d2 !important;
+    /* Uses link button style */
+}
+
+.accordion-inner a:hover {
+    color: #1976d2 !important;
+}
+
+[class*="Accordion_accordionItemContainer_"] {
+    border-color: #555 !important;
+}
