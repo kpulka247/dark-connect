@@ -1,0 +1,81 @@
+.page .calendar-wrapper .calendar-view.calendar-year {
+    /* Year view border */
+    border-color: #555 !important;
+}
+
+.page .calendar-wrapper .calendar-year-key .calendar-data {
+    /* Year key border */
+    border-color: #555 !important;
+}
+
+.page .calendar-wrapper .calendar-footer {
+    /* Footer border */
+    border-color: #555 !important;
+}
+
+.page .calendar-wrapper .calendar-sidebar.calendar-sidebar-add {
+    /* Add sidebar background */
+    background: #252525 !important;
+}
+
+.page .calendar-wrapper.show-sidebar-add .calendar-sidebar-add {
+    /* Add sidebar border */
+    border-color: #555 !important;
+}
+
+/* Calendar Body/Grid */
+.page .calendar-wrapper .calendar-body table {
+    background: #1a1a1a;
+    /* Main background */
+    color: #fff;
+}
+
+.page .calendar-wrapper .calendar-body table {
+    /* Grid background (duplicate, refine) */
+    background: #555 !important;
+}
+
+.page .calendar-wrapper .calendar-body table td {
+    /* Cell background */
+    background-color: #252525 !important;
+    color: #fff !important;
+    /* Cell text */
+}
+
+.page .calendar-wrapper .calendar-body table .outside-current-date {
+    /* Outside month cell background */
+    background-color: #202020 !important;
+}
+
+/* Calendar Item / Day Cell */
+.calendar-item {
+    background-color: #1a1a1a;
+    border-color: #555 !important;
+    color: #c7c7c7 !important;
+}
+
+.current-day {
+    /* Current day border highlight */
+    border-color: #fff !important;
+}
+
+.calendar-workouts .calendar td:hover:not(.outside-current-date) {
+    /* Hover state */
+    background: #1a1a1a !important;
+}
+
+.calendar-workouts .calendar td:not(.current-day) {
+    /* Non-current day border */
+    border-color: #555 !important;
+}
+
+.calendar-workouts .calendar .outside-current-date {
+    /* Outside month background (workout calendar) */
+    background: #202020 !important;
+}
+
+/* Calendar Sync Dialog */
+div[class*="CalendarSyncCompatDialog_device_"],
+div[class*="CalendarSyncCompatDialog_syncTitle_"] {
+    border-color: #555 !important;
+}
