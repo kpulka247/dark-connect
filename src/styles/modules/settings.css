@@ -1,0 +1,135 @@
+/* Navigation Menu */
+[class*="SettingsPage_navMenu_"] li[class*="SettingsPage_active_"],
+ul[class*="SettingsPage_navMenu_"] li:hover {
+    color: #fff !important;
+}
+
+div[class*="SettingsNav_settingsNav_"] a {
+    /* Default link color */
+    color: #6c6c6c !important;
+}
+
+div[class*="SettingsNav_settingsNav_"] a[class*="SettingsNav_active_"],
+div[class*="SettingsNav_settingsNav_"] a:hover {
+    color: #fff !important;
+}
+
+
+/* Form Control Readonly State */
+div[class*="FormControl_inputWrapper_"]:has(input:read-only),
+div[class*="FormControl_inputWrapper_"]:has(textarea:read-only) {
+    background-color: #252525 !important;
+}
+
+/* Device Backups */
+li[class*="DeviceBackupsListItem_listItem_"] {
+    box-shadow: 0px 1px 0px #555 !important;
+}
+
+span[class*="DeviceBackupsListItem_deviceDisplayName_"] {
+    color: #fff !important;
+}
+
+/* User Subscription Page */
+div[class*="UserSubscription_featureCard_"],
+div[class*="UserSubscription_card_"],
+label[class*="UserSubscription_miniCard_"] {
+    border-color: #555 !important;
+}
+
+label[class*="UserSubscription_selectCard_"] {
+    /* Selected card border */
+    border-color: #fff !important;
+}
+
+p[class*="UserSubscription_paragraph_"],
+span[class*="UserSubscription_featureCardBodyTitle_"],
+div[class*="UserSubscription_featureCard_"],
+p[class*="UserSubscription_subOptions_"],
+p[class*="UserSubscription_subFeature_"],
+span[class*="UserSubscription_subFeature_"],
+p[class*="UserSubscription_darkText_"] {
+    color: #fff !important;
+}
+
+/* Profile Header (if part of settings/profile page) */
+div[class*="ProfileHeader_profileHeaderBanner_"] {
+    color: #fff !important;
+}
+
+/* Data Import/Export */
+div[class*="ImportDataPageView_previewComponentWrapper_"] {
+    border-color: #555 !important;
+}
+
+div[class*="ImportDataPageView_dropzone_"] {
+    background-color: #252525 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+div[class*="ImportDataPageView_previewItem_"] {
+    background-color: #202020 !important;
+}
+
+/* Home Screen Settings (Homepage module also has these) */
+div[class*="HomeSettings_linkButton_"],
+span[class*="HomeSettings_linkButton_"] {
+    color: #1976d2 !important;
+}
+
+h6[class*="HomeSettingsModal_"],
+p[class*="HomeSettingsModal_"] {
+    color: #fff !important;
+}
+
+/* Edit Secondary Stats Page */
+div[class*="AllSecondaryStatsPage_titleContainer_"],
+label[class*="AddAvailableSecondaryStatCard_availableCardItem_"],
+div[class*="EditSecondaryStatsPage_title_"],
+div[class*="EditSecondaryStatsPage_modalMainText_"],
+div[class*="EditSecondaryStatsPage_modalText_"],
+div[class*="EditSecondaryStatCard_title_"] {
+    color: #fff !important;
+}
+
+div[class*="EditSecondaryStatCard_editCard__"],
+div[class*="AddAvailableSecondaryStatCard_addCard_"] {
+    border-color: #555 !important;
+    background: #252525 !important;
+}
+
+span[class*="ReorderSelectedStats_dragHandle_"],
+div[class*="ReorderSelectedStats_reorderListItem_"] label {
+    color: #fff !important;
+}
+
+/* Primary Device Label */
+.primaryDeviceLabel {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+/* User Options Menu (Header also has this) */
+menu[class*="UserOptions_userOptionsMenu_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1) !important;
+}
+
+menu[class*="UserOptions_userOptionsMenu_"] li a {
+    color: #1976d2 !important;
+}
+
+[class*="UserOptions_userOptionsMenu_"] {
+    color: #fff !important;
+}
+
+[class*="UserOptions_userOptionsMenu_"]>li:not(:first-child) {
+    border-color: #555 !important;
+}
+
+/* Generic Settings Text */
+div[class*="ProfileImage_userWrapper_"] {
+    color: #fff !important;
+}
