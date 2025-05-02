@@ -1,0 +1,111 @@
+.challenge-card {
+    /* Card dimensions */
+    width: 13vw;
+    min-height: 276px !important;
+}
+
+div[class*="ChallengeCard_container_"] {
+    /* Card border */
+    border-color: #555 !important;
+}
+
+/* Challenge Creation Steps */
+div[class*="CreateChallengePageIndex_sidebar_"],
+div[class*="CreateChallengePageIndex_stepOptions_"],
+div[class*="CreateChallengePageIndex_actions_"],
+div[class*="Step2Participant_participantContainer_"],
+div[class*="Step3Duration_datepickersContainer_"],
+/* Datepicker container */
+div[class*="Step4Summary_container_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+    color: #fff !important;
+}
+
+label[class*="CreateChallengePageIndex_stepOption_"] {
+    /* Step option border */
+    border-color: #555 !important;
+}
+
+div[class*="CreateChallengePageIndex_step_"][aria-current='true'] {
+    /* Current step text */
+    color: #fff !important;
+}
+
+/* Step 3 Duration Datepicker */
+div[class*="Step3Duration_datepickers_"] {
+    color: #fff !important;
+}
+
+div[class*="Step3Duration_monthPickerTitle_"] {
+    color: #fff !important;
+}
+
+/* Participant Selection */
+label[class*="ConnectionParticipant_connection_"],
+div[class*="ConnectionParticipant_connection_"] {
+    border-color: #555 !important;
+}
+
+label[class*="ConnectionParticipant_connection_"][data-dialog='true']:nth-child(2n) {
+    background-color: #1a1a1a !important;
+    /* Alternating background */
+}
+
+/* Step 4 Summary */
+div[class*="Step4Summary_subContainer_"],
+div[class*="Step4Summary_participants_"] {
+    border-color: #555 !important;
+}
+
+/* Challenge Summary (Leaderboard page?) */
+.challenge-summary {
+    background: #202020 !important;
+    border-color: #555 !important;
+}
+
+/* Challenge Detail Page */
+[class*="ChallengeDetailPageLeaderboard_tableRow_"][class*="ChallengeDetailPageLeaderboard_highlight_"],
+[class*="ChallengeDetailPageLeaderboard_tableRow_"]:hover {
+    background-color: #202020 !important;
+}
+
+[class*="ChallengeDetailPageDesc_container_"] {
+    border-color: #555 !important;
+}
+
+[class*="ChallengeDetailPageDesc_desc_"] {
+    color: #fff !important;
+}
+
+[class*="ChallengeDetailPageCommentSection_container_"] {
+    border-color: #555 !important;
+}
+
+[class*="ChallengeAlternateAwards_container_"] {
+    background-color: #202020 !important;
+    border-color: #555 !important;
+}
+
+
+/* Invite Players Modal */
+[class*="InvitePlayersModal_invitedPlayersSection_"] {
+    background-color: #202020 !important;
+    border-color: #555 !important;
+}
+
+img[class*="InviteesView_playerAvatar_"] {
+    /* Avatar border */
+    border-color: #555 !important;
+}
+
+/* Badge Challenge Specifics */
+[class*="challengesFeature_badgeChallengeRules_"],
+[class*="challengesFeature_rewardRule_"] {
+    color: #fff !important;
+}
+
+[class*="BadgeChallenges2_buttonsAndList_"],
+[class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
+    border-color: #555 !important;
+}
