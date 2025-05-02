@@ -1,0 +1,26 @@
+/* Gear List */
+.gear-list li:hover {
+    background-color: #202020 !important;
+}
+
+ul[class*="ActivityGearStatusView_gearList_"] li:hover {
+    /* Activity detail view */
+    background-color: #202020 !important;
+}
+
+ul[class*="ActivityGearEditModal_gearList_"] li:hover {
+    /* Edit modal view */
+    background-color: #202020 !important;
+}
+
+/* Gear Icon/Avatar */
+i[class*="GearsTrackingPage_avatarLogo_"] {
+    box-shadow: 0px 0px 0px 3px #252525, 0px 0px 0px 4px #555 !important;
+    background-color: #202020 !important;
+}
+
+div[class*="ActivityGearList_gearImages_"] i {
+    /* Activity detail view */
+    box-shadow: 0px 0px 0px 3px #252525, 0px 0px 0px 4px #555 !important;
+    background-color: #202020 !important;
+}
