@@ -1,0 +1,49 @@
+/* Base element styles */
+hr {
+    border-color: #555 !important;
+}
+
+body {
+    color: #fff !important;
+}
+
+/* Very generic selectors */
+ul>li>a>span[data-value] {
+    color: #444;
+}
+
+a,
+a p,
+h5 {
+    color: #fff !important;
+}
+
+/* Default link color for map attributions (overridden from general 'a' rule) */
+.gm-style .gm-style-cc a,
+.gm-style .gm-style-cc button,
+.gm-style .gm-style-cc span,
+.leaflet-control-attribution a {
+    color: #000 !important;
+}
+
+/* Ensure header/nav bottom links inherit color correctly if needed */
+.header-nav-menu-bottom a,
+.header-nav-menu-bottom a:hover {
+    color: inherit !important;
+}
+
+/* Generic username link */
+span.username-link {
+    color: #fff !important;
+}
+
+/* Generic H3/H2 data bits */
+h3.data-bit a,
+.h2.data-bit {
+    color: #fff;
+}
+
+/* Generic body color */
+body {
+    color: #fff !important;
+}
