@@ -1,35 +1,126 @@
 .header,
 header {
-    background-color: var(--color-bg-dark) !important;
-    color: var(--color-text-primary) !important;
-    border-color: var(--color-border) !important;
+    background-color: #252525 !important;
+    color: #fff !important;
+    border-color: #555 !important;
 }
 
 .header-nav-menu {
-    background-color: var(--color-bg-dark) !important;
-    border-color: var(--color-border) !important;
+    background-color: #252525 !important;
+    border-color: #555 !important;
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1) !important;
 }
 
 .undo-section {
-    background-color: var(--color-bg-dark) !important;
-}
-
-.undo-section button:hover {
-    background-color: var(--color-bg-darker) !important;
+    /* Part of header UI */
+    background-color: #252525 !important;
 }
 
 .header-nav-item[class^='icon-'],
 .header-nav-item[class*=' icon-'] {
-    color: var(--color-text-primary) !important;
+    color: #fff !important;
 }
 
 .header-nav-link:hover {
-    color: var(--color-text-secondary) !important;
+    color: #c7c7c7 !important;
 }
 
 .header-nav-item.notifications .notification-item:hover,
 .header-nav-item.notifications .notification-item a:hover,
 .header-nav-item.notifications .notification-item:has(.icon-dismiss:hover) {
-    background: var(--color-bg-light) !important;
+    background: #202020 !important;
+}
+
+.undo-section button:hover {
+    background-color: #1a1a1a !important;
+}
+
+.header-logo img,
+.mobile .header a.logo[title="Garmin Connect"] {
+    /* Header specific image styling */
+    filter: invert(1) grayscale(1) brightness(2);
+}
+
+/* Header Borders */
+.header-nav-menu-section {
+    border-color: #555 !important;
+}
+
+/* Header-like elements in specific pages */
+div[class*="DailySummaryPageHeader_staticHeaderContainer_"],
+div[class*="TrainingPlanHeader_container_"],
+div[class*="HealthDetailsPageHeader_pageHeader_"],
+div[class*="GroupPageHeader_groupMetadata_"] {
+    border-color: #555 !important;
+}
+
+/* User options menu (often in header) */
+menu[class*="UserOptions_userOptionsMenu_"] {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1) !important;
+}
+
+menu[class*="UserOptions_userOptionsMenu_"] li a {
+    /* Link color within menu */
+    color: #1976d2 !important;
+}
+
+button[class*="UserOptions_userOptionsButton_"] svg[fill="#101010"] {
+    /* Icon styling */
+    filter: invert(1);
+}
+
+[class*="UserOptions_userOptionsMenu_"] {
+    /* Text color */
+    color: #fff !important;
+}
+
+/* Border for user options menu items */
+[class*="UserOptions_userOptionsMenu_"]>li:not(:first-child) {
+    border-color: #555 !important;
+}
+
+/* Daily Summary Header (Calendar Link) */
+[class*="DailySummaryPageHeader_calendar_"] h3 {
+    color: #1976d2 !important;
+}
+
+/* Training Plan Header Specific Icon Color */
+i[class*="TrainingPlanHeader_selection_"] {
+    color: #252525 !important;
+}
+
+/* Training Plan Title (often in header context) */
+div[class*="TrainingPlanTitle_title_"] {
+    color: #fff !important;
+}
+
+/* Device Selection */
+.js-select-device {
+    text-transform: capitalize;
+}
+
+/* Main Sidebar (part of overall layout/navigation) */
+li[class*="MainSidebar_groupBottomBorder_"]:not(:only-child) {
+    border-bottom-color: #000 !important;
+    /* This is unusual, maybe specific override? */
+}
+
+li[class*="MenuItem_menuItem_"][class*="MenuItem_openMenuItem_"] {
+    background-color: #252525 !important;
+}
+
+a[class*="MenuItem_menuItemLinkChild_"][class*="MenuItem_activeChild_"] {
+    background-color: #333 !important;
+}
+
+span[class*="MenuItem_menuItemText_"] {
+    color: #fff !important;
+}
+
+/* Workout Page Header */
+div[class*="WorkoutPageHeader_headerWrapper_"] {
+    box-shadow: 9px 0 #252525, -9px 0 #252525 !important;
+    background-color: #252525 !important;
 }
