@@ -1,0 +1,35 @@
+/* Event Breadcrumb Form */
+div[class*="BreadcrumbForm_header_"],
+div[class*="BreadcrumbForm_navBar_"],
+div[class*="BreadcrumbForm_cardContainer_"],
+div[class*="BreadcrumbForm_footerContainer_"],
+div[class*="BreadcrumbForm_mainContainer_"] {
+    color: #fff !important;
+    background-color: #252525 !important;
+}
+
+/* Event Search */
+tr[class*="EventSearchResults_row_"] {
+    /* Row background */
+    background: #202020 !important;
+}
+
+div[class*="EventSearchFilter_activityListFilters_"] {
+    /* Filter background/border */
+    background: #252525 !important;
+    border-color: #555 !important;
+}
+
+div[class*="TableHeader_header_"],
+div[class*="EventSearchResults_month_"],
+div[class*="EventSearchResults_day_"],
+div[class*="EventSearchResults_info_"] {
+    color: #fff !important;
+}
+
+/* Event Modal */
+div[class*="EventModal_eventTitle_"],
+div[class*="EventWeather_detail_"],
+div[class*="EventModal_title_"] {
+    color: #fff !important;
+}
