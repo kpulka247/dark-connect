@@ -1,0 +1,248 @@
+/* Training Plan Overview / Find Plan */
+div[class*="SidebarNavigation_navBar_"],
+/* Sidebar Navigation */
+div[class*="SidebarNavigation_pageContainer_"] {
+    background-color: #252525 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+div[class*="SidebarNavigation_header_"] {
+    /* Sidebar Header Text */
+    color: #fff !important;
+}
+
+div[class*="FindPlanCard_card_"] {
+    /* Plan Card Border */
+    border-color: #555 !important;
+}
+
+.find-plan-filters .btn-pill {
+    /* Filter Buttons */
+    background-color: #202020 !important;
+    border-color: #555 !important;
+}
+
+.find-plan-filters .btn-pill.filter-active,
+.find-plan-filters .btn-pill:active {
+    background-color: #1a1a1a !important;
+    border-color: #555 !important;
+}
+
+.new-plan a.plan-info {
+    /* Plan Info Link */
+    background-color: #1a1a1a !important;
+    border-color: #555 !important;
+}
+
+.plan-specs .plan-duration,
+.plan-specs .plan-frequency {
+    color: #fff !important;
+}
+
+div[class*="PlanCard_headerContainer_"],
+div[class*="PlanCard_title_"] {
+    color: #fff !important;
+}
+
+div[class*="PlanCard_container__"],
+div[class*="PlanCard_description__"],
+div[class*="PlanCard_planDescription__"] {
+    background-color: #1a1a1a !important;
+    border-color: #555 !important;
+    color: #fff !important;
+}
+
+div[class*="TrainingPlanHeader_container_"] {
+    /* Training Plan Header Border */
+    border-color: #555 !important;
+}
+
+i[class*="TrainingPlanHeader_selection_"] {
+    /* Header Icon Color */
+    color: #252525 !important;
+}
+
+div[class*="TrainingPlanTitle_title_"] {
+    /* Title Text */
+    color: #fff !important;
+}
+
+div[class*="FindAPlanTab_adaptiveCoachTitle_"],
+div[class*="FindAPlanTab_browseAllPlansTitle_"],
+.plan-section-label {
+    color: #fff !important;
+}
+
+div[class*="HowItWorksModal_title_"],
+div[class*="HowItWorksModal_content_"] {
+    color: #fff !important;
+}
+
+
+/* Adaptive Training Plan */
+.adaptive-plan .plan-schedule.open {
+    /* Open Schedule Shadow */
+    box-shadow: inset 0 0 0 1px #555 !important;
+}
+
+.adaptive-plan .plan-schedule {
+    /* Schedule Background */
+    background: #252525 !important;
+}
+
+div[class*="plan-icon plan-icon-reverse"] span,
+.plan-item-title,
+.adaptive-plan .adaptive-plan-status-score,
+.adaptive-plan .plan-item-date {
+    color: #fff !important;
+}
+
+div[class*="AdaptiveCoachingTrainingPlanDetails_contentContainer_"] {
+    /* Details Background */
+    background: #252525 !important;
+}
+
+
+/* Workouts */
+div[class*="WorkoutStep_workoutStepDataValue_"] {
+    /* Step Data Text */
+    color: #fff !important;
+}
+
+span[class*="WorkoutModal_workoutStepContainer_"] {
+    /* Modal Step Container */
+    background: #252525 !important;
+    color: #fff !important;
+    border-top-color: #555 !important;
+    border-right-color: #555 !important;
+    border-bottom-color: #555 !important;
+}
+
+div[class*="WorkoutStep_workoutStepInnerTitle_"] {
+    /* Step Inner Title Background */
+    background: #202020 !important;
+}
+
+.workout-step-note {
+    /* Step Note Border */
+    border-color: #555 !important;
+}
+
+div[class*="WorkoutStep_stepEditOpenContent_"] {
+    /* Edit Step Background */
+    background: #252525 !important;
+}
+
+div[class*="WorkoutRepeatStep_repeatStepWrapper_"] {
+    /* Repeat Step Background/Border */
+    background-color: #1a1a1a !important;
+    border-color: #555 !important;
+}
+
+/* Workout Step Text/Icons */
+div[class*="WorkoutStep_stepDeleteIcon_"]>div>button>i,
+div[class*="WorkoutRepeatStep_repeatStepTitleRight_"]>div>button>i,
+div[class*="WorkoutRepeatStep_grabIcon_"] i,
+div[class*="BenchmarkExerciseDetailsPage_titleText_"],
+div[class*="BenchmarkExerciseDetailsPage_regularText_"],
+div[class*="WorkoutStep_stepTitle_"],
+p[class*="WorkoutRepeatStep_repeatStepEmptyBlock_"],
+div[class*="WorkoutRepeatStep_numRepeats_"],
+div[class*="WorkoutRepeatStep_repeatStepTitleLeft_"] i,
+div[class*="WorkoutStep_dragIcon_"] i {
+    color: #fff !important;
+}
+
+div[class*="WorkoutPageHeader_headerWrapper_"] {
+    /* Header Background/Shadow */
+    box-shadow: 9px 0 #252525, -9px 0 #252525 !important;
+    background-color: #252525 !important;
+}
+
+div[class*="WorkoutStep_stepTitleWrapper_"] {
+    /* Step Title Background */
+    background-color: #202020 !important;
+}
+
+div[class*="WorkoutStep_stepFieldsWrapper_"] {
+    /* Step Fields Background */
+    background-color: #252525 !important;
+}
+
+div[class*="WorkoutStep_stepReadOnlyWrapper_"] {
+    /* Readonly Step Border */
+    border-top-color: #555 !important;
+    border-right-color: #555 !important;
+    border-bottom-color: #555 !important;
+}
+
+div[class*="WorkoutName_edit_"] {
+    /* Inline Edit Name Background */
+    background-color: #252525 !important;
+}
+
+
+/* Training Status / Load / Readiness */
+div[class*="TrainingStatusKeyStatsCard_textStatus_"],
+div[class*="TrainingStatusKeyStatsCard_loadFocusText_"],
+div[class*="TrainingStatusKeyStatsCard_secondContentText_"],
+div[class*="TrainingReadinessKeyStat_primaryBigText_"],
+div[class*="TrainingReadinessKeyStat_primaryFeedback_"],
+div[class*="TrainingReadinessKeyStat_dataField_"] {
+    color: #fff !important;
+}
+
+.page.reports .ts-hrv-status-chart-container .hrv-baseline-score,
+.page.reports .ts-hrv-status-chart-container .hrv-status-sub-title-container .hrv-status-avg-score {
+    color: #fff !important;
+}
+
+.page.reports .chronicLoadChipContainer .chronicLoadChip.selected,
+.page.reports .chronicLoadChipContainer .chronicLoadChip:hover,
+.page.reports .chronicLoadChipContainer .chronicLoadChip:active {
+    background: #202020 !important;
+}
+
+div[class*="AcuteTrainingLoadChart_loadRatio_"] {
+    /* Acute Load Text */
+    color: #fff !important;
+}
+
+div[class*="KeyStatsSection_cardTitle_"] {
+    /* Key Stats Title Text */
+    color: #fff !important;
+}
+
+
+/* Training Effect */
+div[class*="TrainingEffectModal_modalHeader_"] h4,
+.reports .training-effect-empty-state h4 {
+    color: #fff !important;
+}
+
+div[class*="TEGaugeChart_teScore_"] {
+    color: #fff !important;
+}
+
+
+/* Setup Pages */
+div[class*="Setup_header_"],
+div[class*="Setup_details_"] {
+    color: #fff !important;
+}
+
+/* Benchmark Exercise */
+div[class*="BenchmarkExerciseDetailsPage_titleText_"],
+div[class*="BenchmarkExerciseDetailsPage_regularText_"] {
+    color: #fff !important;
+}
+
+/* Strength Training Table */
+table[class*="StrengthTable_table_"] {
+    color: #fff !important;
+}
+
+table[class*="StrengthTable_table_"] thead tr {
+    border-color: #555 !important;
+}
