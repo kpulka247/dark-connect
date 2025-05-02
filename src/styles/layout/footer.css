@@ -1,40 +1,62 @@
 footer {
-    background: var(--color-bg-dark);
+    background: #252525;
 }
 
+/* Specific page footer background */
 div[class*="SessionEndedPage_sessionEndedPage__"] footer {
-    background: var(--color-bg-darkest);
+    background: #111;
 }
 
-div[class*="Dialog_dialog__"],
-[class*="Dialog_dialogFooter"],
+/* Widget Footer */
+.widget-footer {
+    border-color: #555 !important;
+    background: #252525;
+}
+
+/* Modal Footer */
 .modal-footer {
-    background-color: var(--color-bg-dark) !important;
-    border-color: var(--color-border) !important;
-    color: var(--color-text-primary) !important;
+    background-color: #202020 !important;
+    border-color: #555 !important;
 }
 
-.modal-footer {
-    background-color: var(--color-bg-light) !important;
+/* Dialog Footer */
+[class*="Dialog_dialogFooter"] {
+    background-color: #252525;
+    border-color: #555;
+    color: #fff;
 }
 
-.widget-footer,
-div[class*="Card_card_"],
-div[class*="BPPage_actionButtonsContainer_"] {
-    border-color: var(--color-border) !important;
-    background: var(--color-bg-dark);
+[class*="Dialog_dialogFooter_"] {
+    /* From content.js */
+    background-color: #202020 !important;
+    border-color: #555 !important;
 }
 
-.c0164,
-.c0127,
-.c0122 {
-    background-color: var(--color-bg-dark) !important;
+
+/* Map card footer */
+.map-card-footer {
+    border-color: #555 !important;
 }
 
-.c015 p {
-    color: var(--color-text-dark) !important;
+/* Specific component footers needing border */
+div[class*="CourseListItem_detailsFooter_"],
+div[class*="SecondaryStatCard_secondaryStatFooter_"] {
+    border-color: #555 !important;
+}
+
+/* Training specific footers */
+div[class*="Footer_footerContainer_"] {
+    background-color: #252525 !important;
+    color: #fff !important;
+    border-color: #555 !important;
 }
 
 div[class*="Footer_cancelLink_"]>button {
-    color: var(--color-text-primary) !important;
+    /* Specific button color in footer */
+    color: #fff !important;
+}
+
+/* Expandable card footer (LiveTrack) */
+[class*="ExpandableCard_footer_"] {
+    border-color: #555 !important;
 }
