@@ -1,0 +1,241 @@
+/* General Table Cell Borders */
+.table th,
+.table td,
+.table-row-child.last,
+table[class*="StrengthTable_table_"] thead tr,
+tr[class*="ReportTableComponent_tableRow_"],
+table[class*="Tab_table_"] tr:last-child th,
+table[class*="Tab_table_"] tr:last-child td,
+table[class*="Tab_table_"] th,
+table[class*="Tab_table_"] td,
+[class*="WeightsTables_weightsTable_"] th,
+[class*="WeightsTables_weightsTable_"] td,
+table[class*="BPTables_bloodPressureTable_"] td,
+table[class*="BPTables_bloodPressureTable_"] th,
+table[class*="CyclingFTPRatings_table_"] tbody th,
+table[class*="CyclingFTPRatings_table_"] tbody td,
+tr[class*="GolfStatsTrends_trendTableRow_"],
+table[class*="EnduranceScoreHelpModal_table_"] tbody td,
+tr[class*="Tab_previousPR_"] td,
+tr[class*="Tab_isNew_"] th {
+    border-color: #555 !important;
+}
+
+/* Table Header Background & Text */
+thead tr th {
+    background-color: #252525 !important;
+    color: #fff !important;
+}
+
+/* Specific Header Backgrounds */
+.table-subhead>td {
+    /* Subheader row */
+    background-color: #202020 !important;
+    color: #fff !important;
+}
+
+div[class*="TableHeader_header_"] {
+    /* Event Search Header Text */
+    color: #fff !important;
+}
+
+.splitsContainer table thead {
+    /* LiveTrack splits header */
+    background: #202020 !important;
+}
+
+table[class*="EditorTable_table_"] thead {
+    color: #fff !important;
+}
+
+.js-desktop-place-holder div .table th {
+    color: #fff !important;
+}
+
+[class*="Table_table_"] thead>tr:last-child {
+    border-color: #555 !important;
+}
+
+
+/* Striped Tables */
+.table-striped tbody>tr:nth-child(odd)>td,
+.table-striped tbody>tr:nth-child(odd)>th {
+    background-color: #333;
+    border: none;
+    /* Remove default borders for striped rows */
+}
+
+/* Rounded corners for striped tables */
+.table-striped tbody>tr:first-child>td:first-child {
+    border-top-left-radius: 5px !important;
+}
+
+.table-striped tbody>tr:first-child>td:last-child {
+    border-top-right-radius: 5px !important;
+}
+
+.table-striped tbody>tr:last-child>td:first-child {
+    border-bottom-left-radius: 5px !important;
+}
+
+.table-striped tbody>tr:last-child>td:last-child {
+    border-bottom-right-radius: 5px !important;
+}
+
+/* Specific Striped/Alternating Row Backgrounds */
+[class*="CaloriesPageReport_tableContainer_"][data-banded-row='true'] table>tbody>tr:nth-child(odd)>td {
+    /* Calories Report */
+    background-color: #202020 !important;
+}
+
+[class*="DetailTable_detailTable_"] tbody tr:nth-child(odd) {
+    /* Generic Detail Table */
+    background-color: #212121 !important;
+    color: #fff !important;
+}
+
+.metric:nth-child(2n + 1),
+.lap:nth-child(2n + 1) {
+    background: #202020 !important;
+}
+
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(1),
+/* Activity Class Help */
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(5),
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(6),
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(7),
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(8) {
+    background-color: #202020 !important;
+}
+
+.rounds-table tr.roundsAlternatingRow {
+    background-color: #202020 !important;
+}
+
+tr[class*="EventSearchResults_row_"] {
+    background: #202020 !important;
+}
+
+td[class*="ReportTableComponent_dateOnlyRow_"] {
+    background: #202020 !important;
+}
+
+tr[class*="WeightsTables_dateOnlyRow_"] {
+    background-color: #202020 !important;
+}
+
+tr[class*="BPTables_dateOnlyRow_"] td {
+    background: #202020 !important;
+}
+
+[class*="ListTable_alternating_"] [class*="ListTable_tableRow_"]:nth-child(odd),
+[class*="SortableTable_tableRowAlternating_"]:nth-child(odd) {
+    background-color: #202020 !important;
+    border-color: #555 !important;
+    /* Added border */
+}
+
+[class*="Table_table_"] tbody>tr:nth-child(odd) {
+    background-color: #202020 !important;
+}
+
+
+/* Row Hover/Active States */
+tbody[id="setsRoundExercise"] tr.rounds:hover td,
+tbody[id="setsRoundExercise"] tr.exercises:hover td {
+    background-color: #1a1a1a !important;
+}
+
+[class*="DetailTable_detailTable_"] tbody tr[aria-selected='true'] {
+    /* Detail Table Selected */
+    background-color: #1a1a1a !important;
+}
+
+.clickable-table .active {
+    /* Generic clickable active row */
+    background-color: #50b012 !important;
+    /* Original green color */
+}
+
+
+/* Table Row Child / Expanded Row */
+.table-row-child {
+    background-color: #202020 !important;
+}
+
+/* Specific Table Cell Text Colors */
+tr.rounds td {
+    color: #fff !important;
+}
+
+.splitsContainer table td,
+/* LiveTrack Splits */
+.splitsContainer th {
+    color: #fff !important;
+}
+
+.splitsContainer table td:first-of-type {
+    /* LiveTrack Splits first column */
+    color: #6c6c6c !important;
+}
+
+table[class*="StrengthTable_table_"] {
+    color: #fff !important;
+}
+
+span[class*="CaloriesPageReport_tableData_"] {
+    color: #fff !important;
+}
+
+span[class*="IntensityMinutesPageReportTable_tableData_"] {
+    color: #fff !important;
+}
+
+
+/* Table Borders Specifics */
+table[class*="ActivityClassHelpModal_table_"] {
+    border-color: #555 !important;
+}
+
+/* PR Table New/Previous Row Borders */
+tr[class*="Tab_isNew_"] td {
+    background-color: #252525 !important;
+    border-color: #fff !important;
+    border-bottom-color: #555 !important;
+    /* Override bottom border */
+}
+
+tr[class*="Tab_previousPR_"] td,
+tr[class*="Tab_isNew_"] th {
+    background-color: #252525 !important;
+    border-color: #fff !important;
+}
+
+/* List Table Row Borders */
+[class*="ListTable_tableRow_"],
+[class*="SortableTable_tableRow_"] {
+    border-color: #555 !important;
+}
+
+
+/* Table Sort Indicator */
+.caret {
+    /* Used in dropdowns too */
+    border-top-color: #fff !important;
+}
+
+.table .sortable-header-row .icon-pointer-up,
+.table .sortable-header-row .icon-pointer-down {
+    color: #fff !important;
+}
+
+/* PR Table Marker */
+span[class*="Tab_prNewMarker_"] {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+/* Table Inline Edit Text */
+span[class*="Tab_inlineEditEditableText_"] {
+    background-color: #252525 !important;
+}
