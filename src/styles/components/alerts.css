@@ -1,0 +1,19 @@
+div[class*="Alert_info_"],
+div[class*="Alert_success_"],
+div[class*="Alert_warning_"],
+div[class*="Alert_alert_"] span a {
+    color: #000 !important;
+    /* Text color inside alerts */
+}
+
+/* Alert background */
+[class*="Alert_info_"] {
+    background-color: #202020 !important;
+}
+
+/* LiveTrack Message Bar */
+.msg-bar .msg {
+    background-color: #252525 !important;
+    border-color: #555 !important;
+    color: #fff !important;
+}
