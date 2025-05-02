@@ -1,0 +1,40 @@
+div[class*="Gc5PageWrapper_contentContainer_"] {
+    /* Content container background */
+    background: #252525 !important;
+}
+
+div[class*="Homepage_placeholderCard_"] {
+    /* Placeholder card background */
+    background-color: #202020 !important;
+}
+
+div.inFocusCard {
+    /* In focus card text */
+    color: #fff !important;
+}
+
+span[class*="Carousel_carouselHighlightedDot_"] {
+    /* Carousel dot */
+    background-color: #fff !important;
+}
+
+div[class*="Homepage_sectionButton_"] {
+    /* Section button link style */
+    color: #1976d2 !important;
+}
+
+div[class*="Homepage_sectionLabel_"] {
+    /* Section label text */
+    color: #fff !important;
+}
+
+/* Home Settings */
+div[class*="HomeSettings_linkButton_"],
+span[class*="HomeSettings_linkButton_"] {
+    color: #1976d2 !important;
+}
+
+h6[class*="HomeSettingsModal_"],
+p[class*="HomeSettingsModal_"] {
+    color: #fff !important;
+}
