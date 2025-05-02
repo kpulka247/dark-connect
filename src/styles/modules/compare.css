@@ -1,0 +1,30 @@
+.compare-activities-item {
+    /* Item border */
+    border-color: #555 !important;
+}
+
+div[class="player"] {
+    /* Player overlay background */
+    background: #1a1a1a !important;
+    opacity: 0.9 !important;
+}
+
+.metric {
+    /* Metric border */
+    border-color: #555 !important;
+}
+
+.metric:nth-child(2n + 1) {
+    /* Alternating metric background */
+    background: #202020 !important;
+}
+
+div[class*="CompareFilters_linkWrapper_"] {
+    /* Link style */
+    color: #1976d2 !important;
+}
+
+span[class*="CompareFilters_dropdown_"] {
+    /* Dropdown text */
+    color: #fff !important;
+}
