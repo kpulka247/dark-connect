@@ -1,0 +1,43 @@
+[class*="Spinner_spinner_"]:before,
+[class*="Spinner_spinner_"]:after,
+[class*="Spinner_spinner_"]>div:before,
+[class*="Spinner_spinner_"]>div:after,
+.spinner:before,
+.spinner:after,
+.spinner>div:before,
+.spinner>div:after {
+    /* Use box-shadow for the dots/segments with varying opacity */
+    box-shadow: 0 3.5em rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Individual segment styling using pseudo-elements */
+[class*="Spinner_spinner_"]:before,
+.spinner:before {
+    background: #fff !important;
+    opacity: 0.8 !important;
+}
+
+[class*="Spinner_spinner_"]:after,
+.spinner:after {
+    background: #fff !important;
+    opacity: 0.65 !important;
+}
+
+[class*="Spinner_spinner_"]>div:before,
+.spinner>div:before {
+    background: #fff !important;
+    opacity: 0.5 !important;
+}
+
+[class*="Spinner_spinner_"]>div:after,
+.spinner>div:after {
+    background: #fff !important;
+    opacity: 0.35 !important;
+}
+
+/* Specific Preloader (Activity List) */
+.page.activity-list .list-preloader {
+    background: #1a1a1a !important;
+    opacity: 0.8 !important;
+    /* Consistent with modal backdrop */
+}
