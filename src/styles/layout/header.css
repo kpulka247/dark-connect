@@ -118,9 +118,3 @@ a[class*="MenuItem_menuItemLinkChild_"][class*="MenuItem_activeChild_"] {
 span[class*="MenuItem_menuItemText_"] {
     color: #fff !important;
 }
-
-/* Workout Page Header */
-div[class*="WorkoutPageHeader_headerWrapper_"] {
-    box-shadow: 9px 0 #252525, -9px 0 #252525 !important;
-    background-color: #252525 !important;
-}

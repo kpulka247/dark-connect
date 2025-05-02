@@ -18,7 +18,7 @@ div[class*="CourseListItem_deleteItemText_"] {
 
 /* Course Card */
 div[class*="CourseCard_courseCard_"] {
-    /* Card border */
+    background-color: #252525 !important;
     border-color: #555 !important;
 }
 
@@ -36,7 +36,8 @@ div[class*="CourseCardFooter_actionsContainer_"] {
 }
 
 h6[class*="CourseCard_cardHeader_"],
-p[class*="CourseCard_locationFilterLabel_"] {
+p[class*="CourseCard_locationFilterLabel_"],
+[class*="CourseDetails_sectionSubtitle_"] {
     color: #fff !important;
 }
 

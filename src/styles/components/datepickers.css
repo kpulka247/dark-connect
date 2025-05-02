@@ -1,7 +1,8 @@
 .ui-datepicker,
 .ui-timepicker-wrapper,
 div[class*="DayPickerWrapper_DayPickerInputOverlay_"],
-div[class*="DayPickerWrapper_dayPickerWrapperNoInput_"] {
+div[class*="DayPickerWrapper_dayPickerWrapperNoInput_"],
+[class*="InlineEdit_dropdown_"] {
     background-color: #252525 !important;
     border-color: #555 !important;
 }
@@ -16,7 +17,8 @@ div[class*="DayPickerWrapper_DayPickerWeekday_"] abbr,
 .ui-widget-header .ui-state-default,
 .ui-button,
 html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
+html .ui-button.ui-state-disabled:active,
+[class*="InlineEdit_dropdown_"] div {
     color: #fff !important;
 }
 
@@ -30,7 +32,8 @@ html .ui-button.ui-state-disabled:active {
     background: #1a1a1a !important;
 }
 
-ul.ui-timepicker-list li:hover {
+ul.ui-timepicker-list li:hover,
+[class*="InlineEdit_dropdown_"] div:hover {
     background: #1976d2 !important;
 }
 

@@ -11,8 +11,6 @@
 .modal-backdrop {
     /* Background overlay */
     background-color: #1a1a1a !important;
-    opacity: 0.8 !important;
-    /* Ensure consistent opacity */
 }
 
 /* Modal specific content backgrounds */

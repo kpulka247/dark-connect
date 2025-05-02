@@ -68,7 +68,8 @@ div[class*="SleepChart_tooltip_"] {
     border-color: #555 !important;
 }
 
-div[class*="SleepScoreReport_tooltipContainer_"] {
+div[class*="SleepScoreReport_tooltipContainer_"],
+div[class*="Notes_notes_"] {
     /* Tooltip background */
     background: #202020 !important;
     border-color: #555 !important;

@@ -114,3 +114,8 @@ div[class*="EllipsisMenu_iconWrapper_"]:hover {
 div[class*="SortableTable_iconContainer_"] {
     fill: #fff !important;
 }
+
+/* Timeline Activity Icon */
+[class*="TimelineLayerChart_activityIconContainer_"] {
+    box-shadow: 0 0 0 1px #252525 !important;
+}

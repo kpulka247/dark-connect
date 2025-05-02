@@ -65,6 +65,10 @@ table[class*="EditorTable_table_"] thead {
     /* Remove default borders for striped rows */
 }
 
+.table-striped tbody>tr:nth-child(odd)>td {
+    background-color: #202020 !important;
+}
+
 /* Rounded corners for striped tables */
 .table-striped tbody>tr:first-child>td:first-child {
     border-top-left-radius: 5px !important;
@@ -88,6 +92,11 @@ table[class*="EditorTable_table_"] thead {
     background-color: #202020 !important;
 }
 
+[class*="CaloriesPageReport_tableSection_"] {
+    background-color: #202020 !important;
+    color: #fff !important;
+}
+
 [class*="DetailTable_detailTable_"] tbody tr:nth-child(odd) {
     /* Generic Detail Table */
     background-color: #212121 !important;
@@ -99,8 +108,8 @@ table[class*="EditorTable_table_"] thead {
     background: #202020 !important;
 }
 
-table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(1),
 /* Activity Class Help */
+table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(1),
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(5),
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(6),
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(7),
@@ -134,11 +143,6 @@ tr[class*="BPTables_dateOnlyRow_"] td {
     border-color: #555 !important;
     /* Added border */
 }
-
-[class*="Table_table_"] tbody>tr:nth-child(odd) {
-    background-color: #202020 !important;
-}
-
 
 /* Row Hover/Active States */
 tbody[id="setsRoundExercise"] tr.rounds:hover td,
