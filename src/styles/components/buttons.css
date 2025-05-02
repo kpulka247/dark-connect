@@ -133,7 +133,9 @@ div[class*="CompareFilters_linkWrapper_"],
 .like a,
 .like .like-link,
 span[class*="HomeSettings_linkButton_"],
-button[class*="LinkButton_link_"] {
+button[class*="LinkButton_link_"],
+[class*="BPTables_oneWeekLink_"],
+[class*="BPTables_oneMonthLink_"] {
     /* Added based on name */
     color: #1976d2 !important;
 }
@@ -218,4 +220,9 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 /* Anchored Banner Close Button */
 [class*="AnchoredBanner_bannerCloseBtn_"] {
     background-color: #1a1a1a !important;
+}
+
+/* Toggle Button switch inner */
+[class*="Toggle_btnSwitchInner_"]:after {
+    background-color: #6c6c6c !important;
 }

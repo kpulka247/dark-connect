@@ -5,7 +5,9 @@ ul[class*="Dropdown_dropdownMenu_"],
 div[class*="ActivityPhotoDropdown_dropdownMenu_"],
 div[class*="ReportImageDropdown_dropdownMenu_"],
 ul[class*="InlineEditDropdown_dropdownContainer_"],
-div[class*="UnifiedDropdown_dropdownMenu_"] {
+div[class*="UnifiedDropdown_dropdownMenu_"],
+[class*="Dropdown_fullDropdown_"],
+[class*="Dropdown_dropdown_"] {
     background: #252525 !important;
     color: #fff !important;
     border-color: #555 !important;

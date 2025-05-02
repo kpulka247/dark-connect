@@ -4,8 +4,12 @@ path.highcharts-plot-band[fill="#F9F9F9"],
 path.highcharts-plot-band[fill="#f9f9f9"],
 path.highcharts-plot-band[fill="#FAFAFA"],
 path.highcharts-plot-band[fill="#fafafa"] {
-    fill: #1a1a1a;
-    /* Adjusted original fill */
+    /* Adjusted original stroke */
+    stroke: #252525 !important;
+}
+
+div div div .highcharts-root .highcharts-plot-bands-0 .highcharts-plot-band[fill="#f9f9f9"] {
+    fill: #1a1a1a !important;
 }
 
 path.highcharts-alternate-grid[fill="#F6F6F6"] {
@@ -74,7 +78,7 @@ g[class="highcharts-series highcharts-series-0 highcharts-columnrange-series hig
     /* Default stroke for colored series */
 }
 
-path[class="highcharts-point"]:not([stroke="#be5142"]):not([stroke="#75a1cb"]):not([stroke="#24ea59"]):not([stroke="#503dac"]):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover) {
+path[class="highcharts-point"]:not([stroke="#ffffff"]):not([stroke="#be5142"]):not([stroke="#75a1cb"]):not([stroke="#24ea59"]):not([stroke="#503dac"]):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover) {
     stroke: #fff !important;
     /* Default point stroke if not colored */
 }

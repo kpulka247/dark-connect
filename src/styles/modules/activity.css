@@ -32,7 +32,8 @@
     border-color: #555 !important;
 }
 
-.page.activity-list .filter-label {
+.page.activity-list .filter-label,
+[class*="AdvancedSearch_filterLabel_"] {
     /* Filter label text */
     color: #fff !important;
 }

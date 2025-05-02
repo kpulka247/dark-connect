@@ -53,7 +53,8 @@ div[class*="PlanCard_planDescription__"] {
     color: #fff !important;
 }
 
-div[class*="TrainingPlanHeader_container_"] {
+div[class*="TrainingPlanHeader_container_"],
+[class*="AudioRecorder_container_"] {
     /* Training Plan Header Border */
     border-color: #555 !important;
 }
@@ -157,6 +158,7 @@ div[class*="WorkoutStep_dragIcon_"] i {
 div[class*="WorkoutPageHeader_headerWrapper_"] {
     /* Header Background/Shadow */
     box-shadow: 9px 0 #252525, -9px 0 #252525 !important;
+    border-color: #555 !important;
     background-color: #252525 !important;
 }
 
@@ -228,8 +230,16 @@ div[class*="TEGaugeChart_teScore_"] {
 
 /* Setup Pages */
 div[class*="Setup_header_"],
-div[class*="Setup_details_"] {
+div[class*="Setup_details_"],
+[class*="cards_header_"],
+[class*="cards_subHeader_"],
+[class*="cards_infoContainer_"]>label,
+[class*="cards_label_"] {
     color: #fff !important;
+}
+
+[class*="TimeDurationInput_timeDurationInput_"] [class*="TimeDurationInput_appendedLabel_"] {
+    border-color: #555 !important;
 }
 
 /* Benchmark Exercise */

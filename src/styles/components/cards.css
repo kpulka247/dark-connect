@@ -92,6 +92,7 @@ div[class*="AddAvailableSecondaryStatCard_addCard_"] {
 }
 
 /* Text within cards */
+div[class*="Card_card_"],
 div.inFocusCard {
     color: #fff !important;
 }
@@ -125,6 +126,10 @@ span[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
     color: #fff;
+}
+
+[class*="SecondaryStatCard_emptyStateLink_"] {
+    color: #1976d2 !important;
 }
 
 /* Secondary Stat Card Optimal Range */
