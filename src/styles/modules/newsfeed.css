@@ -1,0 +1,35 @@
+.main-body.dashboard,
+.page.newsfeed {
+    background: #111 !important;
+    color: #fff !important;
+}
+
+div[class*="NewsFeedFilter_feedFilterTrigger_"],
+div[class*="NewsFeedFilter_feedFilterDetail_"] {
+    background: #1a1a1a !important;
+    color: #fff !important;
+}
+
+[class*="NewsFeedFilter_feedFilterDetail_"] li[class*="NewsFeedFilter_divider_"] {
+    /* Filter divider */
+    background-color: #555 !important;
+}
+
+
+/* Comment/Like Section (Shared with Activity) */
+div[class*="CommentLikeSection_divider_"] {
+    background: #555 !important;
+}
+
+div[class*="CommentLikeSection_socialButtonWrapper_"]:hover {
+    background-color: #1a1a1a !important;
+}
+
+div[class*="CommentLikeSection_likeCommentContainer_"] {
+    border-color: #555 !important;
+}
+
+div[class*="CommentLikeSection_profileImage_"],
+img[class*="CommentLikeSection_profileImage_"] {
+    border-color: #555 !important;
+}
