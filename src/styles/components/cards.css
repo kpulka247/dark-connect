@@ -23,36 +23,44 @@ div[class*="CourseCard_courseCard_"] {
 div[class*="Homepage_placeholderCard_"] {
     background-color: #202020 !important;
 }
+
 div[class*="Card_card__"] {
     background: #252525;
 }
+
 div[class*="BreadcrumbForm_cardContainer_"],
 div[class*="Card_container_"] {
     color: #fff !important;
     background-color: #252525 !important;
 }
+
 div[class*="CourseCard_cardContainerInner_"],
 div[class*="CourseCardFooter_actionsContainer_"] {
     background-color: #252525 !important;
     border-color: #555 !important;
 }
+
 .map-card {
     background-color: #252525 !important;
     color: #fff !important;
 }
+
 .map-fitness .map-card {
     border-color: #555 !important;
     opacity: .95 !important;
 }
+
 div[class*="SegmentsListCard_stravaCard_"] {
     background-color: #252525 !important;
     border-color: #555 !important;
 }
+
 div[class*="Card_container_"] {
     background-color: #252525 !important;
     color: #fff !important;
     border-color: #555 !important;
 }
+
 div[class*="PlanCard_container__"],
 div[class*="PlanCard_description__"],
 div[class*="PlanCard_planDescription__"] {
@@ -60,16 +68,20 @@ div[class*="PlanCard_planDescription__"] {
     border-color: #555 !important;
     color: #fff !important;
 }
+
 div[class*="Card_card_"] {
     border-color: #555 !important;
-    background: #252525; /* Duplicates general .widget */
+    background: #252525;
+    /* Duplicates general .widget */
 }
+
 .challenge-card {
     width: 13vw;
     min-height: 276px !important;
 }
+
 div[class*="SleepScoreFactorCard_factorCardContainer_"] {
-     border-color: #555 !important;
+    border-color: #555 !important;
 }
 
 /* Secondary Stat Cards */
@@ -80,9 +92,10 @@ div[class*="AddAvailableSecondaryStatCard_addCard_"] {
 }
 
 /* Text within cards */
-div.inFocusCard { 
+div.inFocusCard {
     color: #fff !important;
 }
+
 /* Secondary stat text colors */
 div[class*="HeartRateSecondaryStatCard_mainText"],
 div[class*="WeightSecondaryStatCard_weightDataField_"],
@@ -113,34 +126,41 @@ div[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
     color: #fff;
 }
+
 /* Secondary Stat Card Optimal Range */
 div[class*="LoadFocusSecondaryStatCard_legendOptimalRange_"],
 div[class*="SecondaryStatCard_optimalRangeHorizontalBar_"] {
     border-color: #6c6c6c !important;
 }
+
 /* Factor list card text */
 div[class*="FactorListCard_header_"],
 div[class*="FactorListCard_status_"] {
     color: #fff !important;
 }
+
 /* Factors common card text */
 div[class*="FactorsCardsCommon_header_"],
 div[class*="FactorsCardsCommon_status_"] {
     color: #fff !important;
 }
+
 /* Empty state within cards */
 div[class*="SecondaryStatCard_emptyStateTitle_"] {
     color: #fff !important;
 }
+
 [class*="SecondaryStatCard_emptyStateIconContainer_"] {
     background-color: #202020 !important;
 }
+
 /* Card content titles */
 h6[class*="PersonalRecordsStat_statsHeading_"],
 h6[class*="ProfileComponent_statsHeading_"],
 h6[class*="LifetimeTotals_statsHeading_"] {
     border-color: #555 !important;
 }
+
 /* Plan card titles */
 div[class*="PlanCard_headerContainer_"],
 div[class*="PlanCard_title_"] {
@@ -151,6 +171,7 @@ div[class*="PlanCard_title_"] {
 .page.badges .user-card .card-action-button {
     background: #252525 !important;
 }
+
 .page.badges .user-card .avatar {
     background: #252525 !important;
     box-shadow: 0 0 0 4px #252525, 0 0 0 5px #555 !important;
@@ -160,9 +181,11 @@ div[class*="PlanCard_title_"] {
 label[class*="UserSubscription_selectCard_"] {
     border-color: #fff !important;
 }
+
 label[class*="UserSubscription_miniCard_"] {
     border-color: #555 !important;
 }
+
 p[class*="UserSubscription_paragraph_"],
 span[class*="UserSubscription_featureCardBodyTitle_"],
 div[class*="UserSubscription_featureCard_"],
@@ -179,9 +202,11 @@ div[class*="AdvancedReportingGenesis_innerCard_"],
 div[class*="AdvancedReportingCard_cardContainer_"] {
     background-color: #252525 !important;
 }
+
 div[class*="AdvancedReportingCard_cardContainer_"] {
     border-color: #555 !important;
 }
+
 [class*="CardContentNormal_chartNameContainer_"],
 [class*="ChartStateMessage_messageTextContainer_"],
 [class*="AdvancedReportingCard_cornerContent_"],
@@ -194,6 +219,7 @@ h3[class*="ActivityCard_heading_"],
 a[class*="ActivityCard_card_"] svg[class*="exterior-link-directional_exteriorLink_"] {
     color: #1976d2 !important;
 }
+
 [class*="ActivityCard_card_"] {
     background-color: #252525 !important;
     border-color: #555 !important;
@@ -202,5 +228,5 @@ a[class*="ActivityCard_card_"] svg[class*="exterior-link-directional_exteriorLin
 /* Badge Challenge Card */
 [class*="BadgeChallenges2_buttonsAndList_"],
 [class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
-     border-color: #555 !important;
+    border-color: #555 !important;
 }
