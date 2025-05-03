@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Connect",
+  "version": "1.2.1",
+  "description": "Dark mode for Garmin Connect website that replaces light colors with their dark theme.",
+  "permissions": ["notifications"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://connect.garmin.com/*",
+        "https://livetrack.garmin.com/*",
+        "https://live.garmin.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dark-connect@kpulka.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}
