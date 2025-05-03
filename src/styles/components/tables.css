@@ -56,6 +56,11 @@ table[class*="EditorTable_table_"] thead {
     border-color: var(--border-default) !important;
 }
 
+/* LiveTrack splits table */
+div[class*="AthleteDetails_athleteDetailsInnerContent_"] div [class*="Table_table_"] tbody>tr:nth-child(odd) {
+    background-color: var(--background-secondary) !important;
+}
+
 
 /* Striped Tables */
 .table-striped tbody>tr:nth-child(odd)>td,
