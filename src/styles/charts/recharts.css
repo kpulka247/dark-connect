@@ -52,8 +52,15 @@ span[class*="ChartLegend_legendBullet_"][style="background: rgb(0, 0, 0);"] {
 
 /* Bars / Sectors */
 g.recharts-layer .recharts-bar-rectangle {
-    /* Bar stroke */
     stroke: var(--color-gray-dark) !important;
+}
+
+g.recharts-layer .recharts-bar-rectangle path.recharts-rectangle[fill="#d8d8d8"] {
+    fill: var(--color-gray-lighter) !important;
+}
+
+g.recharts-bar .recharts-label-list g circle[fill="#3b3b3b"] {
+    fill: var(--color-white) !important;
 }
 
 path[class*="recharts-sector"][stroke="#ffffff"] {
