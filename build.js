@@ -71,7 +71,6 @@ async function build() {
 
   // 4. Process and Optimize CSS (using PostCSS for imports and optimization)
   console.log(`🎨 Processing CSS from ${indexCssPath}...`);
-  // Nie potrzebujemy już concatenateCss
   const optimizedCss = await optimizeCss(indexCssPath, indexCssOut);
   await fs.promises.writeFile(indexCssOut, optimizedCss);
 
