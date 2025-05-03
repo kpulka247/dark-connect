@@ -15,17 +15,18 @@
   --color-gray-icon: #dadada;
 
   /* --- Base White --- */
-  --color-white: #ffffff;
+  --color-white: #ffffff !important;
 
   /* --- Accent Colors --- */
-  --color-blue-primary: #1976d2;
+  --color-blue-primary: #1976d2 !important;
+  --color-blue-secondary: #99c8ff;
   --color-orange-accent: #f98925;
   --color-green-active: #50b012;
   --color-red-remove: rgb(211, 32, 32);
   --color-blue-sleep: rgb(59, 151, 243);
 
   /* --- Functional Colors --- */
-  --color-black: #000;
+  --color-black: #000 !important;
   --color-transparent: transparent;
 
   /* --- Opacity / RGBA --- */
@@ -52,8 +53,8 @@
   --background-lighter: var(--color-gray-lighter);
   --background-medium: var(--color-gray-medium);
   --text-primary: var(--color-white);
-  --text-secondary: var(--color-gray-lighter);
+  --text-secondary: var(--color-gray-lighter) !important;
   --text-subtle: var(--color-gray-subtle);
   --text-disabled: var(--color-gray-disabled);
-  --link-color: var(--color-blue-primary);
+  --link-color: var(--color-blue-secondary);
 }
