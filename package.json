@@ -5,10 +5,13 @@
     "build:chrome": "node build.js chrome",
     "build:firefox": "node build.js firefox",
     "build:all": "npm run build:chrome && npm run build:firefox"
-
   },
   "devDependencies": {
     "adm-zip": "^0.5.16",
-    "fs-extra": "^11.3.0"
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "fs-extra": "^11.3.0",
+    "postcss": "^8.5.3",
+    "postcss-import": "^16.1.0"
   }
 }
