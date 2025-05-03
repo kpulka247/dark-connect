@@ -19,12 +19,6 @@ div[id="activityPhotosPlaceholder"] .modal {
     background-color: var(--color-black) !important;
 }
 
-/* Modal Footer */
-.modal-footer {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
-}
-
 /* Specific Modal Text */
 h6[class*="HomeSettingsModal_"],
 p[class*="HomeSettingsModal_"],

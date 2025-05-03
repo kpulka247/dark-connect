@@ -72,7 +72,7 @@ div[class*="PlanCard_planDescription__"] {
 div[class*="Card_card_"] {
     border-color: var(--border-default) !important;
     background: var(--background-primary);
-    /* Duplicates general .widget */
+    color: var(--text-primary) !important;
 }
 
 .challenge-card {
@@ -92,7 +92,6 @@ div[class*="AddAvailableSecondaryStatCard_addCard_"] {
 }
 
 /* Text within cards */
-div[class*="Card_card_"],
 div.inFocusCard {
     color: var(--text-primary) !important;
 }
