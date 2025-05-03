@@ -7,7 +7,8 @@ div[class*="ReportImageDropdown_dropdownMenu_"],
 ul[class*="InlineEditDropdown_dropdownContainer_"],
 div[class*="UnifiedDropdown_dropdownMenu_"],
 [class*="Dropdown_fullDropdown_"],
-[class*="Dropdown_dropdown_"] {
+[class*="Dropdown_dropdown_"],
+[class*="ReportProfileDropdown_dropdownMenu_"] {
     background: var(--background-primary) !important;
     color: var(--text-primary) !important;
     border-color: var(--border-default) !important;
