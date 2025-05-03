@@ -1,46 +1,46 @@
 /* Golf List */
 div[class*="GolfList_listItem_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="GolfList_divider_"] {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 /* Golf Scorecard Page */
 div[class*="GolfScorecardPage_scorecardSection_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="GolfScorecardPage_fairwayRow_"],
 div[class*="GolfScorecardPage_puttsRow_"] {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 div[class*="GolfScorecardPage_fairwayEditItem_"] {
-    color: #555 !important;
+    color: var(--color-gray-light) !important;
     /* Edit item text */
 }
 
 div[class*="GolfScorecardPage_fairwayDirectionSelector_"] {
     /* Direction selector container */
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="GolfScorecardPage_fairwayDirectionSelector_"]>div {
     /* Inner selector background */
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 div[class*="GolfScorecardPage_fairwayDirectionSelector_"] div div i {
     /* Icon color */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="GolfScorecardPage_actionButtonsContainer_"] i {
     /* Icon color */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 
@@ -49,67 +49,67 @@ div[class*="ScorecardComponent_parRow_"],
 div[class*="ScorecardComponent_totalRowItem_"],
 div[class*="ScorecardComponent_textRowItem_"],
 div[class*="ScorecardComponent_scorecardSection_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="ScorecardComponent_holeItem_"] div i {
     /* Icon color */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Golf Stats */
 ul[class*="GolfStatsTabOverview_lineMarker_"],
 ul[class*="GolfStatsTabApproach_lineMarker_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 tr[class*="GolfStatsTrends_trendTableRow_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="GolfStatsFairwayHit_tableRow_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="GolfUnity_showUnity_"] {
     /* Unity border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Approach Tab */
 span:has(div[class*="GolfStatsTabApproach_gaugeContainer_"]) {
     /* Gauge text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="GolfStatsTabApproach_noData_"],
 div[class*="GolfStatsTabApproach_candyCane_"] {
-    border-color: #fff !important;
+    border-color: var(--color-white) !important;
     /* White border for candy cane */
-    color: #6c6c6c !important;
+    color: var(--text-secondary) !important;
     /* Text color */
 }
 
 /* Golf Course Stats Page */
 div[class*="GolfCourseStatsPageMain_headerItem_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="GolfCourseStatsPageMain_headerContainer_"] {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 div[class*="GolfCourseStatsPageFeed_smallFeedItem_"],
 div[class*="GolfCourseScorecardsPageFeed_scorecard_"] {
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Nearby Golf Courses Modal */
 [class*="NearbyGolfCoursesModal_courseListItem_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 [class*="NearbyGolfCoursesModal_courseListItem_"]:hover {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }

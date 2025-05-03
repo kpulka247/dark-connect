@@ -1,81 +1,81 @@
 .page .calendar-wrapper .calendar-view.calendar-year {
     /* Year view border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page .calendar-wrapper .calendar-year-key .calendar-data {
     /* Year key border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page .calendar-wrapper .calendar-footer {
     /* Footer border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page .calendar-wrapper .calendar-sidebar.calendar-sidebar-add {
     /* Add sidebar background */
-    background: #252525 !important;
+    background: var(--background-primary) !important;
 }
 
 .page .calendar-wrapper.show-sidebar-add .calendar-sidebar-add {
     /* Add sidebar border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Calendar Body/Grid */
 .page .calendar-wrapper .calendar-body table {
-    background: #1a1a1a;
+    background: var(--background-soft);
     /* Main background */
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .page .calendar-wrapper .calendar-body table {
     /* Grid background (duplicate, refine) */
-    background: #555 !important;
+    background: var(--background-light) !important;
 }
 
 .page .calendar-wrapper .calendar-body table td {
     /* Cell background */
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
     /* Cell text */
 }
 
 .page .calendar-wrapper .calendar-body table .outside-current-date {
     /* Outside month cell background */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 /* Calendar Item / Day Cell */
 .calendar-item {
-    background-color: #1a1a1a;
-    border-color: #555 !important;
-    color: #c7c7c7 !important;
+    background-color: var(--background-soft);
+    border-color: var(--border-default) !important;
+    color: var(--text-subtle) !important;
 }
 
 .current-day {
     /* Current day border highlight */
-    border-color: #fff !important;
+    border-color: var(--color-white) !important;
 }
 
 .calendar-workouts .calendar td:hover:not(.outside-current-date) {
     /* Hover state */
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
 }
 
 .calendar-workouts .calendar td:not(.current-day) {
     /* Non-current day border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .calendar-workouts .calendar .outside-current-date {
     /* Outside month background (workout calendar) */
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 /* Calendar Sync Dialog */
 div[class*="CalendarSyncCompatDialog_device_"],
 div[class*="CalendarSyncCompatDialog_syncTitle_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }

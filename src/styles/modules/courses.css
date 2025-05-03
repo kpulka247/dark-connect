@@ -1,63 +1,63 @@
 /* Course List Item */
 a[class*="CourseListItem_wrapper_"] {
     /* Wrapper border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="CourseListItem_detailsFooter_"] {
     /* Footer border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 span[class*="CourseListItem_title_"],
 div[class*="CourseListItem_value_"],
 span[class*="CourseListItem_sendToDeviceText_"],
 div[class*="CourseListItem_deleteItemText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Course Card */
 div[class*="CourseCard_courseCard_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 button[class*="CourseCard_collapseButton_"] {
     /* Button style */
-    background-color: #252525 !important;
-    border-color: #252525 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--color-gray-dark) !important;
     /* Should match background */
 }
 
 div[class*="CourseCard_cardContainerInner_"],
 div[class*="CourseCardFooter_actionsContainer_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 h6[class*="CourseCard_cardHeader_"],
 p[class*="CourseCard_locationFilterLabel_"],
 [class*="CourseDetails_sectionSubtitle_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Course Filters */
 div[class*="FilterCourses_dropdownContainer_"] {
     /* Dropdown background/border */
     background-color: rgb(32, 32, 32, 0.95) !important;
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 h3[class*="FilterCourses_filterNoContentText_"],
 p[class*="FilterCourses_filterNoContentText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="FilterCourses_inputAppendContainer_"] span[class*="FilterCourses_addOn_"] {
     /* Input addon style */
-    background-color: #202020 !important;
-    border-color: #555 !important;
-    color: #fff !important;
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Course Detail / Edit */
@@ -67,42 +67,42 @@ div[class*="RoutingOptions_selectContainer_"],
 p[class*="CourseDetailsSection_sectionTitle_"],
 label[class*="AddCoursePoint_pointNameLabel_"],
 p[class*="AddCoursePoint_sectionInfoText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="Course_elevationExpandedChartContainer_"] {
     /* Chart container background/border */
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 .course-pt,
 /* Course point border */
 .course-pt-lap {
     /* Course point lap border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .course-pt-lap {
-    color: #555 !important;
+    color: var(--color-gray-light) !important;
 }
 
 div[class*="LapMarker_marker_"] {
-    color: #555 !important;
+    color: var(--color-gray-light) !important;
 }
 
 p[class*="ConfirmSaveCourseModal_saveCourseTitle_"],
 label[class*="ConfirmSaveCourseModal_courseNameLabel_"],
 div[class*="ConfirmSaveCourseModal_privacyContainer_"] p {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 
 /* Climbs Sheet */
 div[class*="ClimbsSheet_sheetWrapper_"] {
     /* Background/border */
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="ClimbsSheet_closeSheet_"] {
@@ -112,112 +112,112 @@ div[class*="ClimbsSheet_closeSheet_"] {
 
 div[class*="ClimbsToken_climbCategory_"] {
     /* Climb token text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="ClimbsToken_climbToken_"] {
     /* Climb token border/text */
-    color: #fff !important;
-    border-color: #555 !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 
 /* Map Related Styles within Courses */
 div[class*="SearchWhenMoveMap_buttonContainer_"] label {
     /* Button background */
-    background: #252525 !important;
+    background: var(--background-primary) !important;
 }
 
 div[class*="MapProviderContainer__controlDialogOpen_"] {
     /* Dialog background/border */
-    background-color: #252525 !important;
-    border-color: #555 !important;
-    box-shadow: 0 0 2px #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+    box-shadow: 0 0 2px var(--color-gray-light) !important;
 }
 
 div[class*="MapAdditionalOptionsSelection_optionLabel_"],
 div[class*="MapAdditionalOptionsSelection_layersSection_"] p,
 label[class*="MapAdditionalOptionsSelection_optionLabel_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="MapAdditionalOptionsSelection_optionLabel_"][class*="MapAdditionalOptionsSelection_disabled_"] {
     /* Disabled label text */
-    color: #6C6C6C !important;
+    color: var(--text-secondary) !important;
 }
 
 path[class*="CourseMap_polyLineNoHover_"] {
     /* Map line stroke */
-    stroke: #000 !important;
+    stroke: var(--color-black) !important;
     /* Keep black for visibility? */
 }
 
 div[class*="CourseMap_contextMenuContainerForPoint_"] {
     /* Context menu background/border */
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="CreateCourseOptionsBanner_optionsBanner_"] {
     /* Banner background/border */
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 h6[class*="ElevationChart_sectionTitle_"] {
     /* Elevation chart title text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Power Guidance */
 .power-guidance-header {
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 span[class*="PowerGuidanceCreateStrategy_selectOptionTypeText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 i[class*="PowerGuidanceSelectCourse_terrainType_"] {
-    color: #fff !important;
-    fill: #fff !important;
+    color: var(--text-primary) !important;
+    fill: var(--color-white) !important;
 }
 
 /* Select Course Type */
 p[class*="SelectCourseType_activityTypeName_"],
 p[class*="SelectCourseType_groupTitle_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 button[class*="SelectCourseType_selectCourseTypeButton_"] {
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Routing Options */
 label[class*="RoutingOptions_turnNotificationLabel_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Privacy Menu */
 span[class*="PrivacyMenu_labelText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="PrivacyMenu_menuContainer_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 span[class*="PrivacyMenu_selectOptionTypeText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="PrivacyMenu_menuContainer_"]:hover:not([class*="PrivacyMenu_smallPrivacyListClass_"]) {
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
 }
 
 /* Course creation overlay */
 div[class*="CourseCreate_overlay_"] {
-    background-color: #111 !important;
+    background-color: var(--background-deep) !important;
 }

@@ -3,8 +3,8 @@
 div[class*="DayPickerWrapper_DayPickerInputOverlay_"],
 div[class*="DayPickerWrapper_dayPickerWrapperNoInput_"],
 [class*="InlineEdit_dropdown_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Text colors within pickers */
@@ -19,7 +19,7 @@ div[class*="DayPickerWrapper_DayPickerWeekday_"] abbr,
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active,
 [class*="InlineEdit_dropdown_"] div {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .ui-state-default .ui-priority-secondary {
@@ -29,38 +29,38 @@ html .ui-button.ui-state-disabled:active,
 
 /* Hover states */
 .ui-state-hover:not(.ui-datepicker td .ui-state-highlight):not(.ui-datepicker td .ui-state-active) {
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
 }
 
 ul.ui-timepicker-list li:hover,
 [class*="InlineEdit_dropdown_"] div:hover {
-    background: #1976d2 !important;
+    background: var(--color-blue-primary) !important;
 }
 
 /* Active/Selected states */
 .ui-datepicker td .ui-state-active {
-    background: #1976d2 !important;
-    color: #000 !important;
+    background: var(--color-blue-primary) !important;
+    color: var(--color-black) !important;
 }
 
 .ui-datepicker td .ui-state-highlight,
 /* Highlighted day (e.g., today) */
 div[class*="DayPickerWrapper_DayPickerDaySelected_"]:not([class*="DayPickerWrapper_DayPickerDayDisabled_"]):not([class*="DayPickerWrapper_DayPickerDayOutside_"]) {
-    color: #000 !important;
+    color: var(--color-black) !important;
     /* Text color for highlighted */
 }
 
 /* Borders */
 .ui-widget.ui-widget-content {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .ui-datepicker td {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 [class*="DayPickerWrapper_DayPickerDay_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Date/Time Input Appearance */
@@ -71,21 +71,21 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /* Challenge Duration Pickers */
 div[class*="Step3Duration_datepickersContainer_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="Step3Duration_datepickers_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="Step3Duration_monthPickerTitle_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Date Range Picker (Adv Reporting) */
 div[class*="DateRangePickerDropdown_dropdownContent_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }

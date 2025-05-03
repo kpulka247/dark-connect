@@ -1,62 +1,62 @@
 footer {
-    background: #252525;
+    background: var(--background-primary);
 }
 
 /* Specific page footer background */
 div[class*="SessionEndedPage_sessionEndedPage__"] footer {
-    background: #111;
+    background: var(--background-deep);
 }
 
 /* Widget Footer */
 .widget-footer {
-    border-color: #555 !important;
-    background: #252525;
+    border-color: var(--border-default) !important;
+    background: var(--background-primary);
 }
 
 /* Modal Footer */
 .modal-footer {
-    background-color: #202020 !important;
-    border-color: #555 !important;
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Dialog Footer */
 [class*="Dialog_dialogFooter"] {
-    background-color: #252525;
-    border-color: #555;
-    color: #fff;
+    background-color: var(--background-primary);
+    border-color: var(--border-default);
+    color: var(--text-primary);
 }
 
 [class*="Dialog_dialogFooter_"] {
     /* From content.js */
-    background-color: #202020 !important;
-    border-color: #555 !important;
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
 }
 
 
 /* Map card footer */
 .map-card-footer {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Specific component footers needing border */
 div[class*="CourseListItem_detailsFooter_"],
 div[class*="SecondaryStatCard_secondaryStatFooter_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Training specific footers */
 div[class*="Footer_footerContainer_"] {
-    background-color: #252525 !important;
-    color: #fff !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="Footer_cancelLink_"]>button {
     /* Specific button color in footer */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Expandable card footer (LiveTrack) */
 [class*="ExpandableCard_footer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }

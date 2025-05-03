@@ -1,17 +1,17 @@
 /* Style override for white background buttons */
 button[style*="background-color: rgb(255, 255, 255);"],
 .btn.btn-reverse {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 /* Pill button group */
 .btn-group-pill {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 .btn-group-pill .btn {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Specific button borders */
@@ -24,97 +24,97 @@ button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
 button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
 .find-plan-filters .btn-pill {
     /* From Plans */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Navigation buttons / icons */
 div[class*="NavigationComponent_datePickerContainer_"],
 /* This might fit better in datepickers? */
 div[class*="NavigationComponent_buttonIcon_"] {
-    background-color: #1a1a1a !important;
-    color: #fff !important;
+    background-color: var(--background-soft) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="NavigationComponent_buttonIcon_"] i {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Generic Button Components */
 button[class*="PillGroup_pill_"] {
-    background-color: #252525;
+    background-color: var(--background-primary);
 }
 
 button[class*="PillGroup_active_"] {
-    background: #1976d2 !important;
-    border-color: #1976d2 !important;
+    background: var(--color-blue-primary) !important;
+    border-color: var(--color-blue-primary) !important;
 }
 
 button[class*="Button_btn_"][class*="Button_btnReverse_"],
 button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:hover,
 button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 /* Secondary Button Style */
 div[class*="Button_btn_"][class*="Button_btnSecondary_"] {
-    background-color: #444 !important;
-    color: #fff !important;
+    background-color: var(--background-medium) !important;
+    color: var(--text-primary) !important;
 }
 
 
 /* Add Comment Button */
 button[class*="AddComment_container_"],
 button[class*="AddComment_button_"][disabled] {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 /* Input Append/Prepend Add-on (acts like part of a button/input group) */
 .input-append .add-on,
 .input-prepend .add-on,
 span[class*="BPPage_addOnInput_"] {
-    text-shadow: 0 1px 0 #111 !important;
-    background-color: #202020 !important;
-    border-color: #555 !important;
-    color: #fff !important;
+    text-shadow: 0 1px 0 var(--color-black-deep) !important;
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Chip Buttons */
 div[class*="Components_buttonSelected_"],
 div[class*="Components_dataTypeButton_"]:hover,
 div[class*="Components_dataTypeButton_"]:active {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 /* Chip Buttons from content.js */
 [class*="Chip_buttonSelected_"],
 [class*="Chip_dataTypeButton_"]:hover,
 [class*="Chip_dataTypeButton_"]:active {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 [class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(:hover) {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="Chip_dataTypeButton_"] {
     /* LiveTrack */
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: var(--color-black) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Chart Chip */
 [class*="ChartChip_chip_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 [class*="ChartChip_chip_"]:hover:not([class*="ChartChip_selectedChip_"]) {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 
 /* Generic Exercise Picker Button Icon */
 button[class*="ExercisePicker_dropdownToggle_"] svg {
-    fill: #fff !important;
+    fill: var(--color-white) !important;
 }
 
 /* Link Button Style */
@@ -137,96 +137,96 @@ button[class*="LinkButton_link_"],
 [class*="BPTables_oneWeekLink_"],
 [class*="BPTables_oneMonthLink_"] {
     /* Added based on name */
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 /* General button text color (catch-all for many standard buttons) */
 button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"], [class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel):not([class*="InlineEditActivityName_editSave_"], [class*="InlineEditActivityName_editCancel_"]):not(.gm-style-cc button):not([class*="Notification_close_"]):not([class*="Tab_inlineEditSave_"], [class*="Tab_inlineEditCancel_"]):not([class*="LinkButton_link_"]):not([class*="InlineEdit_saveButton_"], [class*="InlineEdit_cancelButton_"]) {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Map Buttons */
 .btn-map-zoom {
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 .map-enlarge-btn {
-    background: rgb(37, 37, 37, 0.9) !important;
-    border-color: #555 !important;
+    background: var(--color-overlay-dark-90) !important;
+    border-color: var(--border-default) !important;
 }
 
 [class*="ButtonIcon_btnMap_"],
 [class*="MapZoom_zoomButton_"][class*="MapZoom_activity_"] {
-    background: rgb(37, 37, 37, 0.9) !important;
+    background: var(--color-overlay-dark-90) !important;
 }
 
 /* Course specific buttons */
 button[class*="CourseCard_collapseButton_"] {
-    background-color: #252525 !important;
-    border-color: #252525 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--color-gray-dark) !important;
 }
 
 /* Course map view close button */
 button[class*="ActivityMapView_closeButton_"] {
-    background: #252525 !important;
-    box-shadow: 0 0 2px #555 !important;
+    background: var(--background-primary) !important;
+    box-shadow: 0 0 2px var(--color-gray-light) !important;
 }
 
 /* Course select type button */
 button[class*="SelectCourseType_selectCourseTypeButton_"] {
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 
 /* Plan Filter Buttons */
 .find-plan-filters .btn-pill {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 .find-plan-filters .btn-pill.filter-active,
 .find-plan-filters .btn-pill:active {
-    background-color: #1a1a1a !important;
-    border-color: #555 !important;
+    background-color: var(--background-soft) !important;
+    border-color: var(--border-default) !important;
     /* Applied border here */
 }
 
 /* Chart Result Button (Adv Reporting) */
 button[class*="ChartResult_chartResult_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Expandable Menu Toggle Button (Adv Reporting) */
 button[class*="ExpandableMenu_toggleButton_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Date Range Picker Button (Adv Reporting) */
 button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 /* Search Button hover states */
 [class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not([class*="NavigateToUserLocationButton_loadingStateButton_"]):hover,
 [class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not([class*="SearchForUserProvidedLocationData_loadingStateButton_"]):hover {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 /* Carousel Control Button */
 [class*="Carousel_controlButton_"] {
-    background-color: #555 !important;
-    border-color: #555 !important;
+    background-color: var(--background-light) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Anchored Banner Close Button */
 [class*="AnchoredBanner_bannerCloseBtn_"] {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 /* Toggle Button switch inner */
 [class*="Toggle_btnSwitchInner_"]:after {
-    background-color: #6c6c6c !important;
+    background-color: var(--background-lighter) !important;
 }

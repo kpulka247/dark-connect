@@ -1,21 +1,21 @@
 /* Base element styles */
 hr {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 body {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Very generic selectors */
 ul>li>a>span[data-value] {
-    color: #444;
+    color: var(--color-gray-medium);
 }
 
 a,
 a p,
 h5 {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Default link color for map attributions (overridden from general 'a' rule) */
@@ -23,7 +23,7 @@ h5 {
 .gm-style .gm-style-cc button,
 .gm-style .gm-style-cc span,
 .leaflet-control-attribution a {
-    color: #000 !important;
+    color: var(--color-black) !important;
 }
 
 /* Ensure header/nav bottom links inherit color correctly if needed */
@@ -34,16 +34,16 @@ h5 {
 
 /* Generic username link */
 span.username-link {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Generic H3/H2 data bits */
 h3.data-bit a,
 .h2.data-bit {
-    color: #fff;
+    color: var(--text-primary);
 }
 
 /* Generic body color */
 body {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }

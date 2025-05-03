@@ -2,18 +2,18 @@ div[class*="Alert_info_"],
 div[class*="Alert_success_"],
 div[class*="Alert_warning_"],
 div[class*="Alert_alert_"] span a {
-    color: #fff !important;
+    color: var(--text-primary) !important;
     /* Text color inside alerts */
 }
 
 /* Alert background */
 [class*="Alert_info_"] {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 /* LiveTrack Message Bar */
 .msg-bar .msg {
-    background-color: #252525 !important;
-    border-color: #555 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+    color: var(--text-primary) !important;
 }

@@ -18,55 +18,55 @@ tr[class*="GolfStatsTrends_trendTableRow_"],
 table[class*="EnduranceScoreHelpModal_table_"] tbody td,
 tr[class*="Tab_previousPR_"] td,
 tr[class*="Tab_isNew_"] th {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Table Header Background & Text */
 thead tr th {
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Specific Header Backgrounds */
 .table-subhead>td {
     /* Subheader row */
-    background-color: #202020 !important;
-    color: #fff !important;
+    background-color: var(--background-secondary) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="TableHeader_header_"] {
     /* Event Search Header Text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .splitsContainer table thead {
     /* LiveTrack splits header */
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 table[class*="EditorTable_table_"] thead {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .js-desktop-place-holder div .table th {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 [class*="Table_table_"] thead>tr:last-child {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 
 /* Striped Tables */
 .table-striped tbody>tr:nth-child(odd)>td,
 .table-striped tbody>tr:nth-child(odd)>th {
-    background-color: #333;
+    background-color: var(--color-gray-medium-dark);
     border: none;
     /* Remove default borders for striped rows */
 }
 
 .table-striped tbody>tr:nth-child(odd)>td {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 /* Rounded corners for striped tables */
@@ -89,23 +89,23 @@ table[class*="EditorTable_table_"] thead {
 /* Specific Striped/Alternating Row Backgrounds */
 [class*="CaloriesPageReport_tableContainer_"][data-banded-row='true'] table>tbody>tr:nth-child(odd)>td {
     /* Calories Report */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 [class*="CaloriesPageReport_tableSection_"] {
-    background-color: #202020 !important;
-    color: #fff !important;
+    background-color: var(--background-secondary) !important;
+    color: var(--text-primary) !important;
 }
 
 [class*="DetailTable_detailTable_"] tbody tr:nth-child(odd) {
     /* Generic Detail Table */
     background-color: #212121 !important;
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .metric:nth-child(2n + 1),
 .lap:nth-child(2n + 1) {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 /* Activity Class Help */
@@ -114,132 +114,132 @@ table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(5),
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(6),
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(7),
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(8) {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 .rounds-table tr.roundsAlternatingRow {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 tr[class*="EventSearchResults_row_"] {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 td[class*="ReportTableComponent_dateOnlyRow_"] {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 tr[class*="WeightsTables_dateOnlyRow_"] {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 tr[class*="BPTables_dateOnlyRow_"] td {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 [class*="ListTable_alternating_"] [class*="ListTable_tableRow_"]:nth-child(odd),
 [class*="SortableTable_tableRowAlternating_"]:nth-child(odd) {
-    background-color: #202020 !important;
-    border-color: #555 !important;
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
     /* Added border */
 }
 
 /* Row Hover/Active States */
 tbody[id="setsRoundExercise"] tr.rounds:hover td,
 tbody[id="setsRoundExercise"] tr.exercises:hover td {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 [class*="DetailTable_detailTable_"] tbody tr[aria-selected='true'] {
     /* Detail Table Selected */
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 .clickable-table .active {
     /* Generic clickable active row */
-    background-color: #50b012 !important;
+    background-color: var(--color-green-active) !important;
     /* Original green color */
 }
 
 
 /* Table Row Child / Expanded Row */
 .table-row-child {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 /* Specific Table Cell Text Colors */
 tr.rounds td {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .splitsContainer table td,
 /* LiveTrack Splits */
 .splitsContainer th {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .splitsContainer table td:first-of-type {
     /* LiveTrack Splits first column */
-    color: #6c6c6c !important;
+    color: var(--text-secondary) !important;
 }
 
 table[class*="StrengthTable_table_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 span[class*="CaloriesPageReport_tableData_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 span[class*="IntensityMinutesPageReportTable_tableData_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 
 /* Table Borders Specifics */
 table[class*="ActivityClassHelpModal_table_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* PR Table New/Previous Row Borders */
 tr[class*="Tab_isNew_"] td {
-    background-color: #252525 !important;
-    border-color: #fff !important;
-    border-bottom-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--color-white) !important;
+    border-bottom-color: var(--border-default) !important;
     /* Override bottom border */
 }
 
 tr[class*="Tab_previousPR_"] td,
 tr[class*="Tab_isNew_"] th {
-    background-color: #252525 !important;
-    border-color: #fff !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--color-white) !important;
 }
 
 /* List Table Row Borders */
 [class*="ListTable_tableRow_"],
 [class*="SortableTable_tableRow_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 
 /* Table Sort Indicator */
 .caret {
     /* Used in dropdowns too */
-    border-top-color: #fff !important;
+    border-top-color: var(--color-white) !important;
 }
 
 .table .sortable-header-row .icon-pointer-up,
 .table .sortable-header-row .icon-pointer-down {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* PR Table Marker */
 span[class*="Tab_prNewMarker_"] {
-    background-color: #444 !important;
-    color: #fff !important;
+    background-color: var(--background-medium) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Table Inline Edit Text */
 span[class*="Tab_inlineEditEditableText_"] {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }

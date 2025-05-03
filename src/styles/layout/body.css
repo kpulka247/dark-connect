@@ -1,105 +1,105 @@
 .body {
-    color: #fff !important;
-    background: #1a1a1a !important;
+    color: var(--text-primary) !important;
+    background: var(--background-soft) !important;
 }
 
 .page-feature {
-    color: #6c6c6c !important;
+    color: var(--text-secondary) !important;
 }
 
 .main-body {
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 .content {
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="Gc5PageWrapper_pageWrapper_"] {
-    background-color: #111 !important;
+    background-color: var(--background-deep) !important;
 }
 
 #consent #truste-consent-button,
 #consent #truste-consent-required,
 #consent #truste-show-consent {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 /* Newsfeed specific body background (overrides general) */
 .main-body.dashboard,
 .page.newsfeed {
-    background: #111 !important;
-    color: #fff !important;
+    background: var(--background-deep) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Generic widget/card backgrounds */
 .widget,
 .minimize-main-nav .dailySummaryHeader {
-    background: #252525;
-    color: #fff;
+    background: var(--background-primary);
+    color: var(--text-primary);
 }
 
 /* Page wrapper */
 div[class*="PageContainer_container_"] {
-    background: #111 !important;
+    background: var(--background-deep) !important;
 }
 
 div[class*="PageContainer_paper_"] {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 /* Advanced Reporting Page background */
 div[class*="AdvancedReportingPage_genesisWrapper_"] {
-    background-color: #111 !important;
+    background-color: var(--background-deep) !important;
 }
 
 /* Session Ended Page background */
 div[class*="SessionEndedPage_sessionEndedPage__"] footer {
-    background: #111;
+    background: var(--background-deep);
 }
 
 /* Generic privacy overlay */
 .privacy-overlay,
 div[class*="CourseCreate_overlay_"] {
-    background-color: #111 !important;
+    background-color: var(--background-deep) !important;
 }
 
 /* Generic border applied to many elements */
 .border-wrapper {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .divider {
     /* Could also be base.css */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Page Specific Layouts */
 .page.activity-detail {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .page.activity-detail .activity-charts-container {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Sidebar Navigation Structure (Training, Settings etc.) */
 div[class*="SidebarNavigation_navBar_"],
 div[class*="SidebarNavigation_pageContainer_"] {
-    background-color: #252525 !important;
-    color: #fff !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="SidebarNavigation_header_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Specific text elements often found in body content */
 .te-metrics span {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .activity-tracking-disclaimer {
@@ -122,41 +122,41 @@ div[class*="NoResults_message2_"],
 div[class*="NoResults_noResultsFoundText_"],
 h4[class*="ErrorState_heading_"],
 .restricted-content-main-info p {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Generic detail text */
 div[class*="Gc5DetailCard_cardDetail_MainText_"],
 div[class*="Gc5DetailCard_cardDetail_SubText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Generic profile related */
 div[class*="ProfileImage_userWrapper_"],
 div[class*="ProfileHeader_profileHeaderBanner_"] {
     /* This might be better in header.css if it's part of the main header */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Generic banner */
 div[class*="AnchoredBanner_banner_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
     /* Added based on similar elements */
 }
 
 div[class*="AnchoredBanner_bannerHeader_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Cross-sell ad styling */
 div[class*="CrossSellAd_textWrapper_"],
 div[class*="CrossSellAd_imageWrapper_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Specific Y-axis labels with text shadow */
 .page .y-axis-label,
 .widget .y-axis-label {
-    text-shadow: 1px 0 1px #111, -1px 0 1px #111, 0 1px 1px #111, 0 -1px 1px #111 !important;
+    text-shadow: 1px 0 1px var(--color-black-deep), -1px 0 1px var(--color-black-deep), 0 1px 1px var(--color-black-deep), 0 -1px 1px var(--color-black-deep) !important;
 }

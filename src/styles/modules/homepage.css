@@ -1,40 +1,40 @@
 div[class*="Gc5PageWrapper_contentContainer_"] {
     /* Content container background */
-    background: #252525 !important;
+    background: var(--background-primary) !important;
 }
 
 div[class*="Homepage_placeholderCard_"] {
     /* Placeholder card background */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 div.inFocusCard {
     /* In focus card text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 span[class*="Carousel_carouselHighlightedDot_"] {
     /* Carousel dot */
-    background-color: #fff !important;
+    background-color: var(--color-white) !important;
 }
 
 div[class*="Homepage_sectionButton_"] {
     /* Section button link style */
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 div[class*="Homepage_sectionLabel_"] {
     /* Section label text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Home Settings */
 div[class*="HomeSettings_linkButton_"],
 span[class*="HomeSettings_linkButton_"] {
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 h6[class*="HomeSettingsModal_"],
 p[class*="HomeSettingsModal_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }

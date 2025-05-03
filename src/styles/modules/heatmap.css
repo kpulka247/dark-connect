@@ -1,28 +1,28 @@
 div[class*="FlexInput_flexInputContainer_"] {
     /* Input container background/text */
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 a[class*="DropDownComponent_trigger_"] {
     /* Dropdown trigger background/text */
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="DropDownComponent_detail_"] {
     /* Dropdown detail background/text/shadow */
-    background-color: #202020 !important;
-    color: #fff !important;
-    box-shadow: inset 0 0 0 1px #555 !important;
+    background-color: var(--background-secondary) !important;
+    color: var(--text-primary) !important;
+    box-shadow: inset 0 0 0 1px var(--color-gray-light) !important;
 }
 
 /* Heat Acclimation */
 div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="HeatAltitudeAcclimationModal_value_"],
 p[class*="HeatAltitudeAcclimationModal_detail_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
