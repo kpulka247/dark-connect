@@ -2,8 +2,8 @@
 div[class*="SecondaryStatCard_arrowContainer_"],
 g[fill="#101010"] {
     /* SVG fill override */
-    color: #fff !important;
-    fill: #fff !important;
+    color: var(--text-primary) !important;
+    fill: var(--color-white) !important;
 }
 
 span[class*=icon-pointer-],
@@ -16,34 +16,34 @@ i[style="color: rgb(16, 16, 16);"],
 .icon-drag,
 div[class*="ProfileImage_iconWrapper_"] i {
     /* Profile image icon wrapper */
-    color: #fff !important;
-    fill: #fff !important;
+    color: var(--text-primary) !important;
+    fill: var(--color-white) !important;
     /* Ensure SVG fill is also white */
 }
 
 /* Specific Icon Colors */
 .icon-remove {
-    color: rgb(211, 32, 32) !important;
+    color: var(--color-red-remove) !important;
 }
 
 .icon-add-secondary-stats,
 div[class*="PersonalRecordsPageView_header_"] button i {
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 .page.activity-list .favorite:hover [class^='icon-'] {
     /* Favorite icon hover */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .page.activity-detail .segments-table .icon-eye.active {
     /* Active eye icon */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Icon Backgrounds/Filters */
 div[class*="AltitudeAcclimationSecondaryStatCard_trendIcon_"] {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 div[class*="ClimbsSheet_closeSheet_"],
@@ -55,26 +55,26 @@ div[class*="MapProviderContainer__layerControlButton_"] {
 div[class*="MapProviderContainer_centerMapIcon_"] {
     /* Map center icon */
     filter: invert(1);
-    background-color: #dadada !important;
-    border-color: #dadada !important;
+    background-color: var(--color-gray-icon) !important;
+    border-color: var(--color-gray-icon) !important;
 }
 
 /* Map control item icons */
 .map-controls .player .pause span {
     /* Pause icon part */
-    background: #fff !important;
+    background: var(--color-white) !important;
 }
 
 /* Table sort icons */
 .table .sortable-header-row .icon-pointer-up,
 .table .sortable-header-row .icon-pointer-down {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Reorder/Drag handle icons */
 span[class*="ReorderActivityList_dragHandle_"],
 span[class*="ReorderSelectedStats_dragHandle_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Workout step icons */
@@ -83,39 +83,39 @@ div[class*="WorkoutRepeatStep_repeatStepTitleRight_"]>div>button>i,
 div[class*="WorkoutRepeatStep_grabIcon_"] i,
 div[class*="WorkoutRepeatStep_repeatStepTitleLeft_"] i,
 div[class*="WorkoutStep_dragIcon_"] i {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Jet Lag Trip icons */
 div[class*="JetLagTrip_dropdownMenu_"] i,
 div[class*="JetLagTrip_editButton_"] i {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Golf icons */
 div[class*="GolfScorecardPage_actionButtonsContainer_"] i,
 div[class*="GolfScorecardPage_fairwayDirectionSelector_"] div div i,
 div[class*="ScorecardComponent_holeItem_"] div i {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Map Zoom Icons */
 [class*="MapZoom_zoomInIcon_"] path,
 [class*="MapZoom_zoomOutIcon_"] path {
-    stroke: #fff !important;
+    stroke: var(--color-white) !important;
 }
 
 /* Ellipsis Menu Icon Hover */
 div[class*="EllipsisMenu_iconWrapper_"]:hover {
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
 }
 
 /* Sortable Table Icon Container */
 div[class*="SortableTable_iconContainer_"] {
-    fill: #fff !important;
+    fill: var(--color-white) !important;
 }
 
 /* Timeline Activity Icon */
 [class*="TimelineLayerChart_activityIconContainer_"] {
-    box-shadow: 0 0 0 1px #252525 !important;
+    box-shadow: 0 0 0 1px var(--color-gray-dark) !important;
 }

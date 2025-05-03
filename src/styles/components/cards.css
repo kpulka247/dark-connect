@@ -1,7 +1,7 @@
 .card {
-    background-color: #1a1a1a !important;
-    border: 1px solid #1a1a1a !important;
-    color: #c7c7c7 !important;
+    background-color: var(--background-soft) !important;
+    border: 1px solid var(--color-black-soft) !important;
+    color: var(--text-subtle) !important;
 }
 
 /* Generic Card Borders */
@@ -16,62 +16,62 @@ div[class*="SleepCoachFactorCard_factorCardContainer_"],
 div[class*="UserSubscription_featureCard_"],
 div[class*="UserSubscription_card_"],
 div[class*="CourseCard_courseCard_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Generic Card Backgrounds */
 div[class*="Homepage_placeholderCard_"] {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 div[class*="Card_card__"] {
-    background: #252525;
+    background: var(--background-primary);
 }
 
 div[class*="BreadcrumbForm_cardContainer_"],
 div[class*="Card_container_"] {
-    color: #fff !important;
-    background-color: #252525 !important;
+    color: var(--text-primary) !important;
+    background-color: var(--background-primary) !important;
 }
 
 div[class*="CourseCard_cardContainerInner_"],
 div[class*="CourseCardFooter_actionsContainer_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 .map-card {
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 .map-fitness .map-card {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
     opacity: .95 !important;
 }
 
 div[class*="SegmentsListCard_stravaCard_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="Card_container_"] {
-    background-color: #252525 !important;
-    color: #fff !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="PlanCard_container__"],
 div[class*="PlanCard_description__"],
 div[class*="PlanCard_planDescription__"] {
-    background-color: #1a1a1a !important;
-    border-color: #555 !important;
-    color: #fff !important;
+    background-color: var(--background-soft) !important;
+    border-color: var(--border-default) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="Card_card_"] {
-    border-color: #555 !important;
-    background: #252525;
+    border-color: var(--border-default) !important;
+    background: var(--background-primary);
     /* Duplicates general .widget */
 }
 
@@ -81,20 +81,20 @@ div[class*="Card_card_"] {
 }
 
 div[class*="SleepScoreFactorCard_factorCardContainer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Secondary Stat Cards */
 div[class*="EditSecondaryStatCard_editCard__"],
 div[class*="AddAvailableSecondaryStatCard_addCard_"] {
-    border-color: #555 !important;
-    background: #252525 !important;
+    border-color: var(--border-default) !important;
+    background: var(--background-primary) !important;
 }
 
 /* Text within cards */
 div[class*="Card_card_"],
 div.inFocusCard {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Secondary stat text colors */
@@ -125,70 +125,70 @@ h3[class*="BloodPressureSecondaryStatCard_latestReading_"],
 span[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
-    color: #fff;
+    color: var(--text-primary);
 }
 
 [class*="SecondaryStatCard_emptyStateLink_"] {
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 /* Secondary Stat Card Optimal Range */
 div[class*="LoadFocusSecondaryStatCard_legendOptimalRange_"],
 div[class*="SecondaryStatCard_optimalRangeHorizontalBar_"] {
-    border-color: #6c6c6c !important;
+    border-color: var(--color-gray-lighter) !important;
 }
 
 /* Factor list card text */
 div[class*="FactorListCard_header_"],
 div[class*="FactorListCard_status_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Factors common card text */
 div[class*="FactorsCardsCommon_header_"],
 div[class*="FactorsCardsCommon_status_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Empty state within cards */
 div[class*="SecondaryStatCard_emptyStateTitle_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 [class*="SecondaryStatCard_emptyStateIconContainer_"] {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 /* Card content titles */
 h6[class*="PersonalRecordsStat_statsHeading_"],
 h6[class*="ProfileComponent_statsHeading_"],
 h6[class*="LifetimeTotals_statsHeading_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Plan card titles */
 div[class*="PlanCard_headerContainer_"],
 div[class*="PlanCard_title_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Badge Card */
 .page.badges .user-card .card-action-button {
-    background: #252525 !important;
+    background: var(--background-primary) !important;
 }
 
 .page.badges .user-card .avatar {
-    background: #252525 !important;
-    box-shadow: 0 0 0 4px #252525, 0 0 0 5px #555 !important;
+    background: var(--background-primary) !important;
+    box-shadow: 0 0 0 4px var(--color-gray-dark), 0 0 0 5px var(--color-gray-light) !important;
 }
 
 /* User Subscription Cards */
 label[class*="UserSubscription_selectCard_"] {
-    border-color: #fff !important;
+    border-color: var(--color-white) !important;
 }
 
 label[class*="UserSubscription_miniCard_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 p[class*="UserSubscription_paragraph_"],
@@ -198,40 +198,40 @@ p[class*="UserSubscription_subOptions_"],
 p[class*="UserSubscription_subFeature_"],
 span[class*="UserSubscription_subFeature_"],
 p[class*="UserSubscription_darkText_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Advanced Reporting Cards */
 div[class*="AdvancedReportingGenesis_advancedReportingProfileCard_"],
 div[class*="AdvancedReportingGenesis_innerCard_"],
 div[class*="AdvancedReportingCard_cardContainer_"] {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 div[class*="AdvancedReportingCard_cardContainer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 [class*="CardContentNormal_chartNameContainer_"],
 [class*="ChartStateMessage_messageTextContainer_"],
 [class*="AdvancedReportingCard_cornerContent_"],
 [class*="CardContentEdit_chartInfo_"] div:not(div[class*="CardContentEdit_chartDetail_"]) {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Activity Card */
 h3[class*="ActivityCard_heading_"],
 a[class*="ActivityCard_card_"] svg[class*="exterior-link-directional_exteriorLink_"] {
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 [class*="ActivityCard_card_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Badge Challenge Card */
 [class*="BadgeChallenges2_buttonsAndList_"],
 [class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }

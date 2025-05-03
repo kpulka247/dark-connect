@@ -1,22 +1,21 @@
 :root {
   /* --- Base Grays & Blacks --- */
-  --color-black-deep: #111;
+  --color-black-deep: #111111;
   --color-black-soft: #1a1a1a;
   --color-gray-darker: #202020;
   --color-gray-dark: #252525;
-  --color-gray-medium-dark: #333;
-  --color-gray-medium: #444;
-  --color-gray-light: #555;
+  --color-gray-medium-dark: #333333;
+  --color-gray-medium: #444444;
+  --color-gray-light: #555555;
   --color-gray-lighter: #6c6c6c;
   --color-gray-scroll: #888888;
-  --color-gray-disabled: #999;
+  --color-gray-disabled: #999999;
   --color-gray-placeholder: #bbbbbb;
   --color-gray-subtle: #c7c7c7;
-  --color-gray-icon-bg: #dadada;
+  --color-gray-icon: #dadada;
 
   /* --- Base White --- */
-  --color-white: #fff;
-  --color-white-pure: #ffffff;
+  --color-white: #ffffff;
 
   /* --- Accent Colors --- */
   --color-blue-primary: #1976d2;
@@ -26,17 +25,18 @@
   --color-blue-sleep: rgb(59, 151, 243);
 
   /* --- Functional Colors --- */
-  --color-black-text-on-light: #000;
+  --color-black: #000;
   --color-transparent: transparent;
 
   /* --- Opacity / RGBA --- */
   --color-overlay-dark-90: rgba(37, 37, 37, 0.9);
   --color-overlay-dark-80: rgba(26, 26, 26, 0.8);
   --color-shadow-dark-50: rgba(26, 26, 26, 0.5);
+  --color-shadow-dark-15: rgba(0, 0, 0, .15);
   --color-shadow-light-10: rgba(255, 255, 255, 0.1);
 
   /* --- Spinner Colors (Opacity based) --- */
-  --color-spinner-base: var(--color-white);
+  --spinner-base: var(--color-white);
 
   /* --- Scrollbar --- */
   --scrollbar-thumb-color: var(--color-gray-scroll);
@@ -44,22 +44,16 @@
 
   /* --- Specific Component Colors --- */
   --border-default: var(--color-gray-light);
-  --background-primary: var(--color-black-soft);
+  --background-primary: var(--color-gray-dark);
   --background-secondary: var(--color-gray-darker);
-  --background-tertiary: var(--color-gray-dark);
-  --component-background: var(--color-gray-dark);
+  --background-deep: var(--color-black-deep);
+  --background-soft: var(--color-black-soft);
+  --background-light: var(--color-gray-light);
+  --background-lighter: var(--color-gray-lighter);
+  --background-medium: var(--color-gray-medium);
   --text-primary: var(--color-white);
   --text-secondary: var(--color-gray-lighter);
-  --text-tertiary: var(--color-gray-subtle);
+  --text-subtle: var(--color-gray-subtle);
   --text-disabled: var(--color-gray-disabled);
   --link-color: var(--color-blue-primary);
-  --button-primary-bg: var(--color-gray-lighter);
-  --button-secondary-bg: var(--color-gray-medium);
-  --modal-background: var(--color-gray-dark);
-  --modal-footer-background: var(--color-gray-darker);
-  --card-background: var(--component-background);
-  --input-background: var(--color-gray-dark);
-  --input-border: var(--border-default);
-  --table-header-bg: var(--color-gray-dark);
-  --table-row-odd-bg: var(--color-gray-darker);
 }

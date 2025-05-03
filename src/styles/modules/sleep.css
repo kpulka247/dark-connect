@@ -1,31 +1,31 @@
 /* Sleep Gauge */
 div[class*="SleepGauge_donutCenter_"] {
-    background-color: transparent;
+    background-color: var(--color-transparent);
     /* Donut center is transparent */
 }
 
 /* Sleep Score / Factor Cards */
 div[class*="SleepScoreFactorCard_factorCardContainer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="SleepCoachFactorCard_factorCardContainer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="SleepPage_sleepScoreTabContainer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Sleep Stages */
 span[class*="SleepStageStatus_optimalRangeCircle_"] {
     /* Optimal range marker */
-    border-color: #fff !important;
+    border-color: var(--color-white) !important;
 }
 
 div[class*="SleepStageStatus_barTick_"] {
     /* Bar tick marker */
-    background-color: #fff !important;
+    background-color: var(--color-white) !important;
 }
 
 /* Sleep Naps */
@@ -34,24 +34,24 @@ h6[class*="AddNapView_addNap_"],
 p[class*="NapsTableView_tableTitle_"],
 p[class*="NapsTableView_napTip_"],
 div[class*="NapsTable_label_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Sleep Coach */
 p[class*="SleepCoachFactorModal_feedbackString_"] {
     /* Modal text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="SleepCoachFactors_noFactorsText_"] {
     /* No factors text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Sleep Coach Graphic */
 div[class*="SleepCoachGraphic_sleepBar_"],
 div[class*="SleepCoachGraphic_legendSleepNeedDot_"] {
-    background-image: repeating-linear-gradient(-45deg, rgb(59, 151, 243), rgb(59, 151, 243) 2px, #252525 3px, #252525 5px) !important;
+    background-image: repeating-linear-gradient(-45deg, var(--color-blue-sleep), var(--color-blue-sleep) 2px, var(--color-gray-dark) 3px, var(--color-gray-dark) 5px) !important;
 }
 
 /* Sleep Chart Specifics */
@@ -59,29 +59,29 @@ path.highcharts-point[fill="rgb(0,0,0)"],
 /* Point fill */
 path.highcharts-point-hover[fill="rgb(25,25,25)"] {
     /* Hover fill */
-    fill: #fff !important;
+    fill: var(--color-white) !important;
 }
 
 div[class*="SleepChart_tooltip_"] {
     /* Tooltip background */
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="SleepScoreReport_tooltipContainer_"],
 div[class*="Notes_notes_"] {
     /* Tooltip background */
-    background: #202020 !important;
-    border-color: #555 !important;
+    background: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Sleep Secondary Stat Card */
 div[class*="SleepSecondaryStatCard_scoreText_"],
 div[class*="SleepSecondaryStatCard_durationValue_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Sleep Report Table Link */
 [class*="SleepReportTable_anchor_"] {
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }

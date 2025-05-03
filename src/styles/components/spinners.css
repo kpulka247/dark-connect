@@ -7,37 +7,37 @@
 .spinner>div:before,
 .spinner>div:after {
     /* Use box-shadow for the dots/segments with varying opacity */
-    box-shadow: 0 3.5em rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 3.5em rgba(var(--color-white), 0.2) !important;
 }
 
 /* Individual segment styling using pseudo-elements */
 [class*="Spinner_spinner_"]:before,
 .spinner:before {
-    background: #fff !important;
+    background: var(--spinner-base) !important;
     opacity: 0.8 !important;
 }
 
 [class*="Spinner_spinner_"]:after,
 .spinner:after {
-    background: #fff !important;
+    background: var(--spinner-base) !important;
     opacity: 0.65 !important;
 }
 
 [class*="Spinner_spinner_"]>div:before,
 .spinner>div:before {
-    background: #fff !important;
+    background: var(--spinner-base) !important;
     opacity: 0.5 !important;
 }
 
 [class*="Spinner_spinner_"]>div:after,
 .spinner>div:after {
-    background: #fff !important;
+    background: var(--spinner-base) !important;
     opacity: 0.35 !important;
 }
 
 /* Specific Preloader (Activity List) */
 .page.activity-list .list-preloader {
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
     opacity: 0.8 !important;
     /* Consistent with modal backdrop */
 }

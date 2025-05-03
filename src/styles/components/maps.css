@@ -1,80 +1,80 @@
 /* Map Controls Container */
 .map-controls .map-control-item {
-    background: rgb(37, 37, 37, 0.9) !important;
-    color: #fff !important;
+    background: var(--color-overlay-dark-90) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Specific Map Controls */
 .activity-map-view-container {
     /* Map container background */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 .page.activity-detail .weather .map-control-item {
     /* Weather overlay control */
-    background: rgb(37, 37, 37, 0.9) !important;
-    border-color: #555 !important;
+    background: var(--color-overlay-dark-90) !important;
+    border-color: var(--border-default) !important;
 }
 
 button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
 button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="MapProviderContainer_centerMapIcon_"] {
     /* Center map button icon styling */
     filter: invert(1);
-    background-color: #dadada !important;
-    border-color: #dadada !important;
+    background-color: var(--color-gray-icon) !important;
+    border-color: var(--color-gray-icon) !important;
 }
 
 /* Leaflet Controls */
 a[class^="leaflet-control-zoom"],
 a[class="leaflet-control-toggle-toggle"] {
-    background: #252525 !important;
-    border-color: #555 !important;
-    color: #fff !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="MapProviderContainer__layerControlButtonContainer_"],
 .leaflet-control>button {
     /* Generic leaflet button */
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 .leaflet-control>button:enabled:not(.leaflet-disabled):hover {
     /* Leaflet button hover */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 .leaflet-control:not(:last-child)>button {
     /* Border between leaflet buttons */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 
 /* Map Layer Selection / Legend */
 .map-layer {
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 .layer-tile-style.active {
-    box-shadow: inset 0 0 0 2px #252525 !important;
+    box-shadow: inset 0 0 0 2px var(--color-gray-dark) !important;
 }
 
 span[class*="MapLayersProvider_layerTileStyleLabel_"] {
-    background-color: #252525 !important;
-    color: #fff !important;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="ActivityMapView_mapLayerLegend_"] {
-    background: #252525 !important;
+    background: var(--background-primary) !important;
 }
 
 div[class*="GarminMapLegend_legendModal_"] {
     /* General Legend Modal */
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 div[class*="MapProviderContainer__layerControlButton_"] {
@@ -89,45 +89,45 @@ div[class*="GarminMapLegend_legendIcon_"] {
 
 div[class*="LegendItems_title_"] {
     /* Legend title text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 
 /* Map Search */
 .map-fitness .map-search button {
     /* Segments search button */
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 .map-fitness .map-search .icon-search {
     /* Segments search icon */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Map Popups / Dialogs / Context Menus */
 div[class*="MapProviderContainer__controlDialogOpen_"] {
-    background-color: #252525 !important;
-    border-color: #555 !important;
-    box-shadow: 0 0 2px #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+    box-shadow: 0 0 2px var(--color-gray-light) !important;
 }
 
 div[class*="CourseMap_contextMenuContainerForPoint_"] {
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Map Lines / Paths */
 path[class*="CourseMap_polyLineNoHover_"],
 path[class="leaflet-interactive"][stroke="#000000"] {
-    stroke: #000 !important;
+    stroke: var(--color-black) !important;
     /* Keep black for visibility? Or change? Original had #000 */
 }
 
 /* Map Markers */
 .course-pt-lap,
 div[class*="LapMarker_marker_"] {
-    color: #555 !important;
+    color: var(--color-gray-light) !important;
 }
 
 /* Map Attribution */
@@ -135,6 +135,6 @@ div[class*="LapMarker_marker_"] {
 .gm-style .gm-style-cc button,
 .gm-style .gm-style-cc span,
 .leaflet-control-attribution a {
-    color: #000 !important;
+    color: var(--color-black) !important;
     /* Keep default light attribution on dark map */
 }

@@ -1,73 +1,73 @@
 /* Activity List Page */
 .page.activity-list .list-item {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 .page.activity-list .config-bar ul li {
     /* Config bar items */
-    background: #202020 !important;
-    color: #fff !important;
+    background: var(--background-secondary) !important;
+    color: var(--text-primary) !important;
 }
 
 .page.activity-list .config-bar ul {
     /* Config bar container */
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 .page.activity-list .metric-config-options ul li {
     /* Metric options */
-    background: #202020 !important;
-    color: #fff !important;
-    border-color: #555 !important;
+    background: var(--background-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-list .label,
 .page.activity-list .activity-type {
-    color: #c7c7c7 !important;
+    color: var(--text-subtle) !important;
 }
 
 .page.activity-list .activity-list-filters {
     /* Filter bar */
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-list .filter-label,
 [class*="AdvancedSearch_filterLabel_"] {
     /* Filter label text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .page.activity-list .edit-btn {
     /* Edit button border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-list .list-preloader {
     /* Loading overlay */
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
     opacity: 0.8 !important;
 }
 
 .page.activity-list .favorite:hover [class^='icon-'] {
     /* Favorite icon hover */
-    color: #fff !important;
+    color: var(--text-primary) !important;
     /* Belongs in components/icons? */
 }
 
 /* Activity List Item Component (Newer Style) */
 [class*="ActivityListItem_listItem_"] {
-    background-color: #202020 !important;
-    border-color: #555 !important;
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
     /* Added border */
 }
 
 div[class*="ActivityListItem_listItem_"]:hover:not(div[class*="ActivityListItem_selected_"]) {
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
 }
 
 div[class*="ActivityListItem_selected_"] {
-    background-color: #6c6c6c !important;
+    background-color: var(--background-lighter) !important;
 }
 
 div[class*="ActivityListItem_editButtonsVisible_"],
@@ -82,201 +82,201 @@ div[class*="ActivityListItem_metricLabel_"],
 span[class*="ActivityListItem_activityDate_"],
 span[class*="ActivityListItem_activityDateYear_"],
 div[class*="ActivityListItem_selected_"] div[class*="ActivityListItem_activityIconContainer_"] i {
-    color: #fff !important;
+    color: var(--text-primary) !important;
     /* Text color for selected item */
 }
 
 ul[class*="InlineEditDropdown_dropdownContainer_"] {
     /* Inline edit dropdown */
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="InlineDelete_activityCover_"] {
     /* Inline delete overlay */
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 span[class*="ReorderActivityList_dragHandle_"] {
     /* Reorder handle text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 
 /* Activity Detail Page */
 .page.activity-detail {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .page.activity-detail .border-bottom {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .activity-charts-container {
     /* Chart container */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .page.activity-detail .activity-charts-container .btn-customize-charts {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .chart-toggle-options {
     /* Chart toggle */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .page.activity-detail .chart-toggle-options button {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .customize-charts-controls .reorder-widgets-set,
 .page.activity-detail .customize-charts-controls .reorder-widgets-cancel {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .stats h3 {
     /* Stats header border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .segments-table .icon-eye.active {
     /* Segment eye icon */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 .activity-detail span:not(.course-pt-lap) {
     /* Generic span text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 [class*="Activity_activityTitle_"] {
     /* Activity title link style */
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 .page.activity-detail .weather .map-control-item {
     /* Weather map control */
-    background: rgb(37, 37, 37, 0.9) !important;
-    border-color: #555 !important;
+    background: var(--color-overlay-dark-90) !important;
+    border-color: var(--border-default) !important;
 }
 
 .activity-map-view-container {
     /* Map container background */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 button[class*="ActivityMapView_closeButton_"] {
     /* Map close button */
-    background: #252525 !important;
-    box-shadow: 0 0 2px #555 !important;
+    background: var(--background-primary) !important;
+    box-shadow: 0 0 2px var(--color-gray-light) !important;
 }
 
 div[class*="ActivityMapView_mapLayerLegend_"] {
     /* Map legend */
-    background: #252525 !important;
+    background: var(--background-primary) !important;
 }
 
 /* Swim Specific Styles */
 .page.activity-detail .swim-length {
-    background-color: #252525 !important;
-    border-color: #555 !important;
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .swim-rest {
-    background-color: #444 !important;
-    border-color: #555 !important;
+    background-color: var(--background-medium) !important;
+    border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .swim-length .number {
-    background: #1a1a1a !important;
+    background: var(--background-soft) !important;
 }
 
 .page.activity-detail .swim-length .type,
 .page.activity-detail .swim-length .first.last .type,
 .page.activity-detail .swim-rest .type {
-    color: #000 !important;
+    color: var(--color-black) !important;
     /* Original style, seems wrong? */
 }
 
 
 /* Activity Comments/Notes */
 .note-container textarea {
-    background-color: #252525 !important;
-    color: #fff !important;
-    box-shadow: inset 0 3px #555;
-    border-color: #555;
+    background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
+    box-shadow: inset 0 3px var(--color-gray-light);
+    border-color: var(--border-default);
 }
 
 div[class*="CommentLikeSection_likeCommentContainer_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="CommentLikeSection_profileImage_"],
 img[class*="CommentLikeSection_profileImage_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="CommentLikeSection_divider_"] {
-    background: #555 !important;
+    background: var(--background-light) !important;
 }
 
 div[class*="CommentLikeSection_socialButtonWrapper_"]:hover {
-    background-color: #1a1a1a !important;
+    background-color: var(--background-soft) !important;
 }
 
 div[class*="CommentInput_textArea_"] {
     /* Input background/text */
-    background: #444 !important;
-    color: #fff !important;
+    background: var(--background-medium) !important;
+    color: var(--text-primary) !important;
 }
 
 button[class*="AddComment_container_"],
 button[class*="AddComment_button_"][disabled] {
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 div[class*="AddComment_editorTextArea_"],
 div[class*="CommentEditor_editorTextField_"] {
-    background: #444 !important;
-    color: #fff !important;
+    background: var(--background-medium) !important;
+    color: var(--text-primary) !important;
 }
 
 div[class*="CommentItem_commentBlock_"]:hover {
     /* Comment hover background */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 [class*="ActivityPageCommentSection_container_"] {
     /* Container border */
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 
 /* Activity Gear */
 ul[class*="ActivityGearStatusView_gearList_"] li:hover {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 ul[class*="ActivityGearEditModal_gearList_"] li:hover {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 div[class*="ActivityGearList_gearImages_"] i {
     /* Gear icon styling */
-    box-shadow: 0px 0px 0px 3px #252525, 0px 0px 0px 4px #555 !important;
-    background-color: #202020 !important;
+    box-shadow: 0px 0px 0px 3px var(--color-gray-dark), 0px 0px 0px 4px var(--color-gray-light) !important;
+    background-color: var(--background-secondary) !important;
 }
 
 /* Activity Laps */
 .lap,
 .lap span:not(:last-child) {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 .lap:nth-child(2n + 1) {
     /* Alternating background */
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 /* Activity Photos */
@@ -284,42 +284,42 @@ div[id="activityPhotosPlaceholder"] .modal,
 /* Modal background */
 .modal-body .photo-carousel,
 .modal-body .photo-carousel .active-photo-container {
-    background-color: #000 !important;
+    background-color: var(--color-black) !important;
 }
 
 div[class*="ActivityPhotoDropdown_dropdownMenu_"] {
     /* Dropdown background */
-    background: #252525 !important;
-    color: #fff !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Activity Advanced Search */
 div[class*="AdvancedSearch_advancedSearchContainer_"] {
-    background: #252525 !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 /* Real Time Stamina */
 h4[class*="RealTimeStaminaModal_staminaModalHeader_"],
 p[class*="RealTimeStaminaModal_runRideStaminaContext_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Workout Execution Metrics */
 div[class*="WorkoutExecutionMetrics_wrapper_"] {
-    background: #202020 !important;
+    background: var(--background-secondary) !important;
 }
 
 div[class*="WorkoutExecutionMetrics_statsSectionExecutionScore_"] div {
-    background: #252525 !important;
+    background: var(--background-primary) !important;
 }
 
 p[class*="WorkoutExecutionMetrics_sectionParagraph_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 /* MoveIQ */
 div[class*="MoveIQModal_moveIqDescription_"] {
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }

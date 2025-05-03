@@ -1,23 +1,23 @@
 .connection-button-dropdown-menu {
     /* Dropdown background */
-    background: #252525 !important;
-    color: #fff !important;
-    border-color: #555 !important;
+    background: var(--background-primary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="ConnectionList"],
 a[class*="ConnectionList"] {
     /* List background */
-    background-color: #252525 !important;
+    background-color: var(--background-primary) !important;
 }
 
 div[class*="ConnectionList_itemContainer_"][class*="ConnectionList_card_"] {
-    border-color: #555 !important;
+    border-color: var(--border-default) !important;
 }
 
 div[class*="ConnectionList_nameWrapper_"] {
     /* Name text */
-    color: #fff !important;
+    color: var(--text-primary) !important;
 }
 
 li[class*="ConnectionLeaderboard_showMoreBtn"] button {
@@ -25,21 +25,21 @@ li[class*="ConnectionLeaderboard_showMoreBtn"] button {
     margin: 0 auto;
     text-align: center;
     width: 90%;
-    background-color: #fff !important;
+    background-color: var(--color-white) !important;
 }
 
 li[class*="ConnectionLeaderboard_highlight_"],
 li[class*="ConnectionLeaderboard_leaderboardRow_"]:hover,
 li[class*="ConnectionLeaderboard_leaderboardRow_"]:active {
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
 
 div[class*="ConnectionsPage_newsFeedLink_"]>a {
     /* Newsfeed link color */
-    color: #1976d2 !important;
+    color: var(--link-color) !important;
 }
 
 .connections-inline-list .connection:nth-child(2n) {
     /* Alternating background */
-    background-color: #202020 !important;
+    background-color: var(--background-secondary) !important;
 }
