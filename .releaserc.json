@@ -12,6 +12,12 @@
             }
         ],
         [
+            "@semantic-release/npm",
+            {
+                "npmPublish": false
+            }
+        ],
+        [
             "@semantic-release/exec",
             {
                 "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version}"

@@ -34,7 +34,7 @@
 
 
 
-# [1.2.0](https://github.com/kpulka247/dark-connect/compare/v1.1.7...v1.2.0) (2025-04-17)
+## [1.2.0](https://github.com/kpulka247/dark-connect/compare/v1.1.7...v1.2.0) (2025-04-17)
 
 
 ### Features
@@ -113,7 +113,7 @@
 
 
 
-# [1.1.0](https://github.com/kpulka247/dark-connect/compare/v1.0.10...v1.1.0) (2025-01-23)
+## [1.1.0](https://github.com/kpulka247/dark-connect/compare/v1.0.10...v1.1.0) (2025-01-23)
 
 
 ### Bug Fixes
