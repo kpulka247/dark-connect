@@ -2,8 +2,8 @@
   "name": "dark-connect",
   "version": "1.2.1",
   "scripts": {
-    "build:chrome": "node build.js chrome",
-    "build:firefox": "node build.js firefox",
+    "build:chrome": "node scripts/build.js chrome",
+    "build:firefox": "node scripts/build.js firefox",
     "build:all": "npm run build:chrome && npm run build:firefox"
   },
   "devDependencies": {
