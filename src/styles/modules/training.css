@@ -151,7 +151,9 @@ div[class*="WorkoutStep_stepTitle_"],
 p[class*="WorkoutRepeatStep_repeatStepEmptyBlock_"],
 div[class*="WorkoutRepeatStep_numRepeats_"],
 div[class*="WorkoutRepeatStep_repeatStepTitleLeft_"] i,
-div[class*="WorkoutStep_dragIcon_"] i {
+div[class*="WorkoutStep_dragIcon_"] i,
+[class*="WorkoutsPillsFilter_avatar_"],
+[class*="WorkoutCard_card_"] h3 {
     color: var(--text-primary) !important;
 }
 
@@ -184,6 +186,27 @@ div[class*="WorkoutName_edit_"] {
     background-color: var(--background-primary) !important;
 }
 
+/* Find Workout Card */
+button[class*="WorkoutsSearch_searchButton_"] {
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="WorkoutsFilter_trigger_"] {
+    background-color: rgba(var(--background-primary), 0.95) !important;
+    border-color: var(--border-default) !important;
+    box-shadow: 0 2px 0 0 var(--color-gray-dark) !important;
+}
+
+[class*="WorkoutsFilter_detail_"] {
+    background-color: var(--background-primary) !important;
+    box-shadow: inset 0 0 0 1px rgba(var(--color-gray-light), 0.15) !important;
+    color: var(--text-primary) !important;
+}
+
+[class*="WorkoutCard_workoutLevel_"] span {
+    background-color: var(--background-medium) !important;
+}
 
 /* Training Status / Load / Readiness */
 div[class*="TrainingStatusKeyStatsCard_textStatus_"],

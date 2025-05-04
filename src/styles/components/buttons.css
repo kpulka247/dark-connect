@@ -88,11 +88,14 @@ div[class*="Components_dataTypeButton_"]:active {
 /* Chip Buttons from content.js */
 [class*="Chip_buttonSelected_"],
 [class*="Chip_dataTypeButton_"]:hover,
-[class*="Chip_dataTypeButton_"]:active {
+[class*="Chip_dataTypeButton_"]:active,
+[class*="WorkoutsPillsFilter_pill_"][class*="WorkoutsPillsFilter_active_"] {
     background-color: var(--background-soft) !important;
+    border-color: var(--color-black-soft) !important;
 }
 
-[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(:hover) {
+[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(:hover),
+[class*="WorkoutsPillsFilter_pill_"]:not([class*="WorkoutsPillsFilter_active_"]) {
     border-color: var(--border-default) !important;
 }
 

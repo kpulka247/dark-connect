@@ -1,9 +1,13 @@
 div[class*="Alert_info_"],
-div[class*="Alert_success_"],
-div[class*="Alert_warning_"],
 div[class*="Alert_alert_"] span a {
     color: var(--text-primary) !important;
     /* Text color inside alerts */
+}
+
+div[class*="Alert_success_"],
+div[class*="Alert_warning_"] {
+    color: var(--color-black) !important;
+    /* Text color inside success/warning alerts */
 }
 
 /* Alert background */

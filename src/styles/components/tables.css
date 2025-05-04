@@ -66,29 +66,10 @@ div[class*="AthleteDetails_athleteDetailsInnerContent_"] div [class*="Table_tabl
 .table-striped tbody>tr:nth-child(odd)>td,
 .table-striped tbody>tr:nth-child(odd)>th {
     background-color: var(--color-gray-medium-dark);
-    border: none;
-    /* Remove default borders for striped rows */
 }
 
 .table-striped tbody>tr:nth-child(odd)>td {
     background-color: var(--background-secondary) !important;
-}
-
-/* Rounded corners for striped tables */
-.table-striped tbody>tr:first-child>td:first-child {
-    border-top-left-radius: 5px !important;
-}
-
-.table-striped tbody>tr:first-child>td:last-child {
-    border-top-right-radius: 5px !important;
-}
-
-.table-striped tbody>tr:last-child>td:first-child {
-    border-bottom-left-radius: 5px !important;
-}
-
-.table-striped tbody>tr:last-child>td:last-child {
-    border-bottom-right-radius: 5px !important;
 }
 
 /* Specific Striped/Alternating Row Backgrounds */
