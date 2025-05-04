@@ -7,6 +7,9 @@
     "build:all": "npm run build:chrome && npm run build:firefox"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.2",
     "adm-zip": "^0.5.16",
     "autoprefixer": "^10.4.21",
     "conventional-changelog": "^6.0.0",
@@ -14,6 +17,7 @@
     "cssnano": "^7.0.6",
     "fs-extra": "^11.3.0",
     "postcss": "^8.5.3",
-    "postcss-import": "^16.1.0"
+    "postcss-import": "^16.1.0",
+    "semantic-release": "^24.2.3"
   }
 }
