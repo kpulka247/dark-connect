@@ -1,3 +1,23 @@
+## [2.0.0](https://github.com/kpulka247/dark-connect/compare/v1.2.1...v2.0.0) (2025-05-04)
+
+### ⚠ BREAKING CHANGES
+
+* **release:** Migrated to semantic-release, versioning and build process are now automated.
+
+### Bug Fixes
+
+* Fix auto-challange page ([c878f5b](https://github.com/kpulka247/dark-connect/commit/c878f5b3c93b8f5170a76aa2609499095a2a917d))
+* Fix carousel header ([2353f06](https://github.com/kpulka247/dark-connect/commit/2353f06d4ca12b37a6845783c9873bd6b3b0027b))
+* Fix day picker border ([b994700](https://github.com/kpulka247/dark-connect/commit/b99470009489096bb63a0dc31894a26200f8509a))
+* Fix find training card ([28e2e0c](https://github.com/kpulka247/dark-connect/commit/28e2e0cee11ad9099138acba2808a11d9ee77a5a))
+* Fix LiveTrack odd table bg ([75a991a](https://github.com/kpulka247/dark-connect/commit/75a991a08d32a2dbbc85a8fac7fef99cdded102d))
+* Fix minor color bugs ([a248298](https://github.com/kpulka247/dark-connect/commit/a248298ca43dc458841066232bb043b3899100e9))
+* Fix text bugs ([b096144](https://github.com/kpulka247/dark-connect/commit/b096144418b2590339c480fd16d480ae7f74683b))
+
+### Miscellaneous Chores
+
+* **release:** Configure semantic-release and build automation ([b5b4846](https://github.com/kpulka247/dark-connect/commit/b5b4846f371de0c9009f753c3b4e3b14431835e1))
+
 ## [1.2.1](https://github.com/kpulka247/dark-connect/compare/v1.2.0...v1.2.1) (2025-04-29)
 
 
@@ -164,6 +184,3 @@
 ### Bug Fixes
 
 * Add images for README.md and small fixes ([e196236](https://github.com/kpulka247/dark-connect/commit/e196236302399b65aeef399ba0c303324a81fb6c))
-
-
-
