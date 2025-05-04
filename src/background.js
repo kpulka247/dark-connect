@@ -13,5 +13,5 @@ chrome.runtime.onInstalled.addListener((details) => {
   });
   
   chrome.notifications.onClicked.addListener(() => {
-    chrome.tabs.create({ url: 'https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob' });
+    chrome.tabs.create({ url: 'https://github.com/kpulka247/dark-connect/blob/main/CHANGELOG.md' });
   });
