@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/kpulka247/dark-connect/compare/v2.0.0...v2.0.1) (2025-05-04)
+
+### Bug Fixes
+
+* Update release config to include package.json version bump ([31d1e76](https://github.com/kpulka247/dark-connect/commit/31d1e760f9a33cc7ca4ecb1121eddad8dc81ac1f))
+
 ## [2.0.0](https://github.com/kpulka247/dark-connect/compare/v1.2.1...v2.0.0) (2025-05-04)
 
 ### ⚠ BREAKING CHANGES
