@@ -38,13 +38,13 @@ div[class*="NapsTable_label_"] {
 }
 
 /* Sleep Coach */
-p[class*="SleepCoachFactorModal_feedbackString_"] {
-    /* Modal text */
+p[class*="SleepCoachFactorModal_feedbackString_"],
+div[class*="SleepCoachFactors_noFactorsText_"] {
     color: var(--text-primary) !important;
 }
 
-div[class*="SleepCoachFactors_noFactorsText_"] {
-    /* No factors text */
+/* Sleep Help */
+[class*="SleepHelp_mainTitle_"] {
     color: var(--text-primary) !important;
 }
 
@@ -77,11 +77,13 @@ div[class*="Notes_notes_"] {
 
 /* Sleep Secondary Stat Card */
 div[class*="SleepSecondaryStatCard_scoreText_"],
-div[class*="SleepSecondaryStatCard_durationValue_"] {
+div[class*="SleepSecondaryStatCard_durationValue_"],
+[class*="Gc5SleepChart_xAxisLabel_"] {
     color: var(--text-primary) !important;
 }
 
 /* Sleep Report Table Link */
-[class*="SleepReportTable_anchor_"] {
+[class*="SleepReportTable_anchor_"],
+div[class*="SleepScoreFactorCard_factorCardContainer_"]:hover div div[class*="SleepScoreFactorCard_sleepStageLabel_"] {
     color: var(--link-color) !important;
 }
