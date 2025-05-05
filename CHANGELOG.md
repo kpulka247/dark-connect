@@ -1,3 +1,12 @@
+## [2.0.2](https://github.com/kpulka247/dark-connect/compare/v2.0.1...v2.0.2) (2025-05-05)
+
+### Bug Fixes
+
+* Fix minor color bugs ([93cb282](https://github.com/kpulka247/dark-connect/commit/93cb28295019775d8b279d20362b19119fdde6af))
+* Fix sleep card text issues ([6fa0806](https://github.com/kpulka247/dark-connect/commit/6fa0806b2f3fb50eb8c47deb2265c58d5a82f045))
+* Fix stat card elements ([7d3a5ef](https://github.com/kpulka247/dark-connect/commit/7d3a5efc90d58ddc9924ef5326c77b66d444a565))
+* Fix workout chart and related bugs ([1f7d8f3](https://github.com/kpulka247/dark-connect/commit/1f7d8f3488abc72cba55a84a5dccbbb2b3e1f01e))
+
 ## [2.0.1](https://github.com/kpulka247/dark-connect/compare/v2.0.0...v2.0.1) (2025-05-04)
 
 ### Bug Fixes
