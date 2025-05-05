@@ -12,9 +12,10 @@ This is a simple browser extension designed to turn the Garmin Connect website i
 
 ## Features
 
-- **Dark mode for Garmin Connect**: Instantly changes the theme of the Garmin Connect website to dark mode.
-- **Preserved brand colors**: Retains the original colors of key elements, such as charts and recognizable brand features, while switching the background and other components to dark mode.
-- **No impact on other websites**: The extension only affects `connect.garmin.com`, other pages remain unaffected.
+- 🌙 **Dark mode for Garmin Connect** — Applies a clean, modern dark theme
+- 🎨 **Preserves brand identity** — Original Garmin colors and charts remain intact for visual consistency
+- 🚫 **Scope-limited** — Affects only `connect.garmin.com`, `livetrack.garmin.com`, and `live.garmin.com`
+- 🛠️ **Modular and maintainable styles** — Powered by organized CSS modules with support for variables
 
 ## Screenshots
 
@@ -30,29 +31,24 @@ Here are some screenshots of the extension in action:
 
 ## Installation
 
-### Chrome, Edge, Brave, Opera, Firefox
+### 🌐 [Google Chrome](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🦁 [Brave](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🔴 [Opera](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🌀 [Microsoft Edge](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🦊 [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/dark-connect/)
 
-To install the extension, follow these simple steps:
-
-1. **Download the extension** from your browser's extension store:
-    - [**Chrome Web Store**](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob) (Google Chrome 🌐, Brave 🦁, Opera 🔴, Microsoft Edge 🌀)
-    - [**Mozilla Firefox**](https://addons.mozilla.org/en-US/firefox/addon/dark-connect/) 🦊
-
-2. **Add the extension to your browser**: Once added, the extension will automatically turn your Garmin Connect page into dark mode.
-
-3. **That's it!** No further configuration is required. Just browse Garmin Connect website in dark mode.
+To install the extension, click on your browser and then add the extension to your browser.
 
 ## Usage
 
-Once installed, the extension will immediately apply dark mode to any visit to `connect.garmin.com`. You don’t need to enable or disable it manually — it works automatically whenever you visit the site. If you have suggestions for improvements or have found any bugs, feel free to report them through the issues form.
+Once installed, the extension will immediately apply dark mode to any visit to Garmin Connect website. You don’t need to enable or disable it manually — it works automatically whenever you visit the site. If you have suggestions for improvements or have found any bugs, feel free to report them through the issues form.
 
 ## Development & Build
 
-This project uses a build system powered by Node.js to generate browser-specific builds for Chrome and Firefox, and to automatically version and package the extension.
+This project uses Node.js for its build system and leverages Conventional Commits with `semantic-release` for automated versioning and releases.
 
 ### 🚀 Getting started
 
-Make sure you have [Node.js](https://nodejs.org) installed on your system.
+Make sure you have:
+
+- [Node.js](https://nodejs.org) (LTS version recommended) installed on your system
+- [Git](https://git-scm.com/) for version control
 
 Then install dependencies:
 
@@ -61,46 +57,63 @@ npm install
 ```
 ### 🔧 How to build the extension
 
-Builds are created using a single command:
+Builds are created using npm scripts which invoke the build.js script:
 
 ```bash
+# Build both Chrome and Firefox versions
 npm run build:all
+
+# Build only for Chrome (and compatible browsers)
+npm run build:chrome
+
+# Build only for Firefox
+npm run build:firefox
 ```
-This will:
-- Compile both Chrome and Firefox builds into `dist-chrome/` and `dist-firefox/`
-- Inject the current version from `package.json` into the built `manifest.json`
-- Package both builds into `chrome.zip` and `firefox.zip` (ready to publish)
 
-You can also build them individually:
-
-```bash
-npm run build:chrome   # Build for Chrome, Brave, Opera, Edge
-npm run build:firefox  # Build for Firefox
-```
-### 🏷️ Versioning
-
-Version is controlled via `package.json`. To update the version:
-
-```bash
-npm version patch     # e.g. 1.1.0 → 1.1.1
-npm version minor     # e.g. 1.1.1 → 1.2.1
-npm version major     # e.g. 1.2.1 → 2.0.0
-```
-This will:
-- Bump the version in package.json
-- Tag the commit in Git (e.g. v2.0.0)
-- Inject the version into `manifest.json` during the next build
+- Generates browser-specific unpacked builds in the `dist/chrome/` and `dist/firefox/` directories.
+- Combines and optimises CSS using PostCSS (`postcss-import`, `autoprefixer`, `cssnano`).
+- Packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/chrome.zip`, `dist/firefox.zip`), ready for upload or distribution.
 
 ### 🧪 Local testing (e.g. in Chrome)
 
 To test the extension locally in a browser:
 
-1. Run `npm run build:chrome`
+1. Run npm run `build:chrome` to create the build in `dist/chrome/`
+2. Open Chrome and navigate to `chrome://extensions`
+3. Enable "Developer mode" (usually a toggle in the top-right corner)
+4. Click "Load unpacked"
+5. Select the `dist/chrome/` folder generated in step 1
+6. The extension will now appear in your list and function on the relevant Garmin pages
 
-2. Open `chrome://extensions`
+### 🏷️ Versioning and Releases (Automated)
 
-3. Enable “Developer mode”
+This project uses [semantic-release](https://github.com/semantic-release/semantic-release) and [Conventional Commits](https://www.conventionalcommits.org/) for automated version management and release publishing.
 
-4. Click “Load unpacked” and select the `dist-chrome/` folder
+- **How it works:** When commits following the Conventional Commits specification (e.g., `feat: ...`, `fix: ...`, `perf: ...`, commits with `BREAKING CHANGE: ...`) are merged into the `main` branch, a GitHub Actions workflow automatically:
 
-5. The extension will now appear and function like a normal installed one
+    1. Analyzes the commits since the last release
+    2. Determines the next semantic version number (patch, minor, or major)
+    3. Updates the `version` in `package.json` and `manifest.*.json` files
+    4. Generates/updates the `CHANGELOG.md` file
+    5. Commits these updated files
+    6. Creates a Git tag for the new version (e.g., `v2.1.0`)
+    7. Creates a GitHub Release with the generated changelog notes
+- **Developers generally do not need to manually bump versions** using `npm version` for standard releases. The automation handles it based on commit messages.
+
+## Development Notes
+
+### 🗂️ Manifests
+
+- `manifest.json`: Used only for local development. Not in the remote repository. Includes a full list of modular CSS files for easier debugging.
+- `manifest.chrome.json` / `manifest.firefox.json`: Used during build. These use a single, compiled `styles/main.css` for faster loading and better performance.
+
+### 🧰 Tools & Scripts
+
+- `scripts/build.js`: Merges and compiles CSS, injects version into manifests.
+- `scripts/update-manifest-version.js`: Replaces placeholders in manifests with the current version.
+- `.releaserc.json`: Configures `semantic-release` pipeline.
+- `release.yml`: GitHub Actions workflow to run the release pipeline automatically.
+
+## Changelog
+
+Changes for each release are automatically documented in the [CHANGELOG.md](./CHANGELOG.md) file.

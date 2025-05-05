@@ -1,6 +1,8 @@
 /* General Icon Colors */
 div[class*="SecondaryStatCard_arrowContainer_"],
-g[fill="#101010"] {
+g[fill="#101010"],
+button[class*="ByGroupTable_toggleButton_"]>svg,
+button[type="button"] svg {
     /* SVG fill override */
     color: var(--text-primary) !important;
     fill: var(--color-white) !important;

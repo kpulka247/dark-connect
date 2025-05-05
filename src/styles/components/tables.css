@@ -2,6 +2,7 @@
 .table th,
 .table td,
 .table-row-child.last,
+.table-bordered,
 table[class*="StrengthTable_table_"] thead tr,
 tr[class*="ReportTableComponent_tableRow_"],
 table[class*="Tab_table_"] tr:last-child th,
@@ -24,6 +25,11 @@ tr[class*="Tab_isNew_"] th {
 /* Table Header Background & Text */
 thead tr th {
     background-color: var(--background-primary) !important;
+    color: var(--text-primary) !important;
+}
+
+.table th,
+.table td {
     color: var(--text-primary) !important;
 }
 
@@ -141,7 +147,8 @@ tbody[id="setsRoundExercise"] tr.exercises:hover td {
     background-color: var(--background-soft) !important;
 }
 
-.clickable-table .active {
+.clickable-table .active,
+.vo2-estimates-table .highlight {
     /* Generic clickable active row */
     background-color: var(--color-green-active) !important;
     /* Original green color */
@@ -149,7 +156,8 @@ tbody[id="setsRoundExercise"] tr.exercises:hover td {
 
 
 /* Table Row Child / Expanded Row */
-.table-row-child {
+.table-row-child,
+tr[class*="ByGroupTable_group1_"] {
     background-color: var(--background-secondary) !important;
 }
 

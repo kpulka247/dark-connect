@@ -271,6 +271,16 @@ div[class*="BenchmarkExerciseDetailsPage_regularText_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="BenchmarkExerciseDetailsPage_topDiv_"] {
+    border-color: var(--border-default) !important;
+}
+
+[class*="BenchmarkExerciseDetailsPage_unitBox_"] {
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
+    color: var(--text-primary) !important;
+}
+
 /* Strength Training Table */
 table[class*="StrengthTable_table_"] {
     color: var(--text-primary) !important;

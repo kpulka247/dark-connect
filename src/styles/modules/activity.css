@@ -102,6 +102,12 @@ span[class*="ReorderActivityList_dragHandle_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="EditorTable_inputAppend_"] [class*="EditorTable_addOn_"] {
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
+    text-shadow: 0 1px 0 var(--color-gray-light) !important;
+}
+
 
 /* Activity Detail Page */
 .page.activity-detail {
