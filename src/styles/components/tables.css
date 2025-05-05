@@ -149,7 +149,8 @@ tbody[id="setsRoundExercise"] tr.exercises:hover td {
 
 
 /* Table Row Child / Expanded Row */
-.table-row-child {
+.table-row-child,
+tr[class*="ByGroupTable_group1_"] {
     background-color: var(--background-secondary) !important;
 }
 

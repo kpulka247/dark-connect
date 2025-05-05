@@ -65,10 +65,10 @@ g.highcharts-axis.highcharts-xaxis .highcharts-axis-line {
 
 
 /* Series Colors / Strokes */
-.highcharts-color-0[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
-.highcharts-color-1[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
-.highcharts-color-2[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
-.highcharts-color-3[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]),
+.highcharts-color-0[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]):not([stroke="#544fc5"]),
+.highcharts-color-1[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]):not([stroke="#544fc5"]),
+.highcharts-color-2[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]):not([stroke="#544fc5"]),
+.highcharts-color-3[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]):not([stroke="#544fc5"]),
 .highcharts-color-1 path,
 /* Assuming these are fills needing stroke */
 .highcharts-color-2 path,
