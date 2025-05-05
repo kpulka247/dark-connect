@@ -55,11 +55,14 @@ g.recharts-layer .recharts-bar-rectangle {
     stroke: var(--color-gray-dark) !important;
 }
 
-g.recharts-layer .recharts-bar-rectangle path.recharts-rectangle[fill="#d8d8d8"] {
+g.recharts-layer .recharts-bar-rectangle path.recharts-rectangle[fill="#d8d8d8"],
+g.highcharts-series-group g.highcharts-columnrange-series path.highcharts-point[fill="#d8d8d8"] {
     fill: var(--color-gray-lighter) !important;
 }
 
-g.recharts-bar .recharts-label-list g circle[fill="#3b3b3b"] {
+g.recharts-bar .recharts-label-list g circle[fill="#3b3b3b"],
+path.recharts-symbols[fill="#3b3b3b"],
+g.highcharts-markers.highcharts-scatter-series[label*="respiration"] path.highcharts-point[fill="#000000"] {
     fill: var(--color-white) !important;
 }
 

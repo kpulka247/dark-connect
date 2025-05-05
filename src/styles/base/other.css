@@ -92,7 +92,8 @@ div[class*="BodyBatterySecondaryStatCard_bodyBatteryValue_"] {
 }
 
 /* VO2 Max */
-div[class*="VO2MaxGaugeChart_value_"] {
+div[class*="VO2MaxGaugeChart_value_"],
+[class*="PulseOxHelp_mainTitle_"] {
     color: var(--text-primary) !important;
 }
 
@@ -214,6 +215,13 @@ li[class*="JetLagTrip_tripContainer_"] {
     border-color: var(--border-default) !important;
 }
 
+/* FTP */
+[class*="LatestFTP_staleStateContainer_"] h4,
+[class*="LatestFTP_ftpStaleState_"],
+[class*="LatestFTP_staleStateWatts_"] {
+    color: var(--text-primary) !important;
+}
+
 /* Progress Summary */
 div[class*="ProgressSummary_customizePopover_"] {
     background-color: var(--background-primary) !important;
@@ -250,6 +258,7 @@ div[class*="Tag_tag_"] {
 
 /* Training Header (Generic) */
 div[class*="TrainingHeader_planName_"],
-div[class*="TrainingHeader_planDetail_"] {
+div[class*="TrainingHeader_planDetail_"],
+div[class*="TrainingStatus_modalHeader_"] h4 {
     color: var(--text-primary) !important;
 }
