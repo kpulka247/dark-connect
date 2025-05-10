@@ -29,7 +29,6 @@ div[class*="Card_card__"] {
     background: var(--background-primary);
 }
 
-div[class*="BreadcrumbForm_cardContainer_"],
 div[class*="Card_container_"] {
     color: var(--text-primary) !important;
     background-color: var(--background-primary) !important;

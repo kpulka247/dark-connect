@@ -1,7 +1,5 @@
 /* Training Plan Overview / Find Plan */
-div[class*="SidebarNavigation_navBar_"],
-/* Sidebar Navigation */
-div[class*="SidebarNavigation_pageContainer_"] {
+div[class*="SidebarNavigation_navBar_"] {
     background-color: var(--background-primary) !important;
     color: var(--text-primary) !important;
     border-color: var(--border-default) !important;
@@ -41,16 +39,52 @@ div[class*="FindPlanCard_card_"] {
 }
 
 div[class*="PlanCard_headerContainer_"],
-div[class*="PlanCard_title_"] {
+div[class*="PlanCard_title_"],
+[class*="PlanCard_detailContainer_"],
+[class*="PlanCard_header_"],
+[class*="SharedPlanReviewCard_header_"],
+[class*="SharedPlanReviewCard_name_"],
+[class*="SharedPlanReviewCard_title_"],
+[class*="CreateEventCard_subHeader_"] {
     color: var(--text-primary) !important;
 }
 
-div[class*="PlanCard_container__"],
-div[class*="PlanCard_description__"],
-div[class*="PlanCard_planDescription__"] {
+div[class*="PlanCard_container_"],
+div[class*="PlanCard_description_"],
+div[class*="PlanCard_planDescription_"] {
     background-color: var(--background-soft) !important;
     border-color: var(--border-default) !important;
     color: var(--text-primary) !important;
+}
+
+/* Training Plan Setup */
+div[class*="PlanCard_cardContainer_"],
+div[class*="DraggableWorkoutSteps_workoutItems_"],
+[class*="DraggableWorkoutSteps_label_"],
+[class*="DraggableWorkoutSteps_cardItems_"] {
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+}
+
+div[class*="DraggableWorkoutSteps_exerciseCard_"],
+div[class*="DraggableWorkoutSteps_warmUpCard_"] {
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="DraggableWorkoutSteps_addExercise_"],
+[class*="SetCustomTrainingDaysCard_editStepLink_"] {
+    color: var(--link-color) !important;
+}
+
+[class*="EquipmentPreferenceModal_title_"],
+[class*="EquipmentPreferenceModal_subtitle_"],
+[class*="EquipmentPreferenceModal_radioLabel_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="EquipmentPreferenceModal_exerciseSection_"] {
+    border-color: var(--border-default) !important;
 }
 
 div[class*="TrainingPlanHeader_container_"],
