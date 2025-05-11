@@ -1,3 +1,9 @@
+## [2.0.3](https://github.com/kpulka247/dark-connect/compare/v2.0.2...v2.0.3) (2025-05-11)
+
+### Bug Fixes
+
+* Fix training plan setup card ([182325b](https://github.com/kpulka247/dark-connect/commit/182325be63dd8a4876f9acf78c9026b835e92090))
+
 ## [2.0.2](https://github.com/kpulka247/dark-connect/compare/v2.0.1...v2.0.2) (2025-05-05)
 
 ### Bug Fixes
