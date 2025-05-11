@@ -2,6 +2,13 @@
 
 # Dark Connect
 
+![GitHub Release](https://img.shields.io/github/v/release/kpulka247/dark-connect?logo=github&logoColor=white&link=https%3A%2F%2Fgithub.com%2Fkpulka247%2Fdark-connect%2Freleases)
+![Chrome Web Store Stars](https://img.shields.io/chrome-web-store/stars/nadhhgppikppmjacnkebagbgcibnfnob?logo=google%20chrome&logoColor=white&link=https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fdark-connect%2Fnadhhgppikppmjacnkebagbgcibnfnob)
+![Mozilla Add-on Stars](https://img.shields.io/amo/stars/dark-connect?logo=firefox&logoColor=white&label=rating&link=https%3A%2F%2Faddons.mozilla.org%2Fpl%2Ffirefox%2Faddon%2Fdark-connect%2F)
+
+![GitHub License](https://img.shields.io/github/license/kpulka247/dark-connect?color=%23252525&link=https%3A%2F%2Fgithub.com%2Fkpulka247%2Fdark-connect%2Fblob%2Fmain%2FLICENSE)
+![Chrome Web Store Size](https://img.shields.io/chrome-web-store/size/nadhhgppikppmjacnkebagbgcibnfnob)
+
 ![banner](static/images/banner.png)
 
 </div>
@@ -31,9 +38,14 @@ Here are some screenshots of the extension in action:
 
 ## Installation
 
-### 🌐 [Google Chrome](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🦁 [Brave](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🔴 [Opera](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🌀 [Microsoft Edge](https://chromewebstore.google.com/detail/nadhhgppikppmjacnkebagbgcibnfnob), 🦊 [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/dark-connect/)
+<div align="center">
 
-To install the extension, click on your browser and then add the extension to your browser.
+![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/nadhhgppikppmjacnkebagbgcibnfnob?style=for-the-badge&logo=google%20chrome&logoColor=white&labelColor=%23252525&link=https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fdark-connect%2Fnadhhgppikppmjacnkebagbgcibnfnob)
+![Mozilla Add-on Version](https://img.shields.io/amo/v/dark-connect?style=for-the-badge&logo=firefox&logoColor=white&labelColor=%23252525&color=red&link=https%3A%2F%2Faddons.mozilla.org%2Fpl%2Ffirefox%2Faddon%2Fdark-connect%2F)
+
+</div>
+
+To install the extension, click on your browser store and then add the extension to your browser. For 🦁 Brave, 🔴 Opera or 🌀 Microsoft Edge select Chrome Web Store.
 
 ## Usage
 
@@ -78,7 +90,7 @@ npm run build:firefox
 
 To test the extension locally in a browser:
 
-1. Run npm run `build:chrome` to create the build in `dist/chrome/`
+1. Run `npm run build:chrome` to create the build in `dist/chrome/`
 2. Open Chrome and navigate to `chrome://extensions`
 3. Enable "Developer mode" (usually a toggle in the top-right corner)
 4. Click "Load unpacked"
