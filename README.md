@@ -2,12 +2,12 @@
 
 # Dark Connect
 
-![GitHub Release](https://img.shields.io/github/v/release/kpulka247/dark-connect?logo=github&logoColor=white&link=https%3A%2F%2Fgithub.com%2Fkpulka247%2Fdark-connect%2Freleases)
-![Chrome Web Store Stars](https://img.shields.io/chrome-web-store/stars/nadhhgppikppmjacnkebagbgcibnfnob?logo=google%20chrome&logoColor=white&link=https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fdark-connect%2Fnadhhgppikppmjacnkebagbgcibnfnob)
-![Mozilla Add-on Stars](https://img.shields.io/amo/stars/dark-connect?logo=firefox&logoColor=white&label=rating&link=https%3A%2F%2Faddons.mozilla.org%2Fpl%2Ffirefox%2Faddon%2Fdark-connect%2F)
+<a href="https://github.com/kpulka247/dark-connect/releases" title="GitHub Release"><img src="https://img.shields.io/github/v/release/kpulka247/dark-connect?logo=github&logoColor=white"></a>
+<a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Stars"><img src="https://img.shields.io/chrome-web-store/stars/nadhhgppikppmjacnkebagbgcibnfnob?logo=google%20chrome&logoColor=white"></a>
+<a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Stars"><img src="https://img.shields.io/amo/stars/dark-connect?logo=firefox&logoColor=white"></a>
 
-![GitHub License](https://img.shields.io/github/license/kpulka247/dark-connect?color=%23252525&link=https%3A%2F%2Fgithub.com%2Fkpulka247%2Fdark-connect%2Fblob%2Fmain%2FLICENSE)
-![Chrome Web Store Size](https://img.shields.io/chrome-web-store/size/nadhhgppikppmjacnkebagbgcibnfnob)
+<a href="https://github.com/kpulka247/dark-connect/blob/main/LICENSE" title="GitHub License"><img src="https://img.shields.io/github/license/kpulka247/dark-connect?color=%23252525"></a>
+<a title="Chrome Web Store Size"><img src="https://img.shields.io/chrome-web-store/size/nadhhgppikppmjacnkebagbgcibnfnob"></a>
 
 ![banner](static/images/banner.png)
 
@@ -40,8 +40,8 @@ Here are some screenshots of the extension in action:
 
 <div align="center">
 
-![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/nadhhgppikppmjacnkebagbgcibnfnob?style=for-the-badge&logo=google%20chrome&logoColor=white&labelColor=%23252525&link=https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fdark-connect%2Fnadhhgppikppmjacnkebagbgcibnfnob)
-![Mozilla Add-on Version](https://img.shields.io/amo/v/dark-connect?style=for-the-badge&logo=firefox&logoColor=white&labelColor=%23252525&color=red&link=https%3A%2F%2Faddons.mozilla.org%2Fpl%2Ffirefox%2Faddon%2Fdark-connect%2F)
+<a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Version"><img src="https://img.shields.io/chrome-web-store/v/nadhhgppikppmjacnkebagbgcibnfnob?style=for-the-badge&logo=google%20chrome&logoColor=white&labelColor=%23252525"></a>
+<a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Version"><img src="https://img.shields.io/amo/v/dark-connect?style=for-the-badge&logo=firefox&logoColor=white&labelColor=%23252525&color=red"></a>
 
 </div>
 
