@@ -262,3 +262,9 @@ div[class*="TrainingHeader_planDetail_"],
 div[class*="TrainingStatus_modalHeader_"] h4 {
     color: var(--text-primary) !important;
 }
+
+/* Power Guidance */
+[class*="PowerGuidanceCreateStrategy_editValues_"],
+[class*="PowerGuidanceCreateStrategy_courseLink_"] a {
+    color: var(--link-color) !important;
+}

@@ -16,7 +16,10 @@ i[class*="PowerGuidanceSelectCourse_terrainType_"],
 i[style="font-size: 20px; color: rgb(16, 16, 16);"],
 i[style="color: rgb(16, 16, 16);"],
 .icon-drag,
-div[class*="ProfileImage_iconWrapper_"] i {
+div[class*="ProfileImage_iconWrapper_"] i,
+i.icon-drag-handle,
+svg[data-library="ui-icons"][fill="#101010"],
+i[class*="icon-activity-"][class*="PlanCard_selection_"] {
     /* Profile image icon wrapper */
     color: var(--text-primary) !important;
     fill: var(--color-white) !important;

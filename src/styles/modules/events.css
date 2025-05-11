@@ -1,11 +1,14 @@
 /* Event Breadcrumb Form */
 div[class*="BreadcrumbForm_header_"],
 div[class*="BreadcrumbForm_navBar_"],
-div[class*="BreadcrumbForm_cardContainer_"],
-div[class*="BreadcrumbForm_footerContainer_"],
 div[class*="BreadcrumbForm_mainContainer_"] {
     color: var(--text-primary) !important;
     background-color: var(--background-primary) !important;
+}
+
+div[class*="BreadcrumbForm_cardContainer_"],
+div[class*="BreadcrumbForm_footerContainer_"] {
+    background-color: var(--background-secondary) !important;
 }
 
 /* Event Search */
