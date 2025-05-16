@@ -8,8 +8,8 @@ if (!newVersion) {
 }
 
 const manifestFiles = [
-    path.join(__dirname, '..', 'manifest.chrome.json'),
-    path.join(__dirname, '..', 'manifest.firefox.json')
+    path.join(__dirname, '..', 'public', 'manifest.chrome.json'),
+    path.join(__dirname, '..', 'public', 'manifest.firefox.json')
 ];
 
 console.log(`🔧 Updating manifests to version: ${newVersion}`);
