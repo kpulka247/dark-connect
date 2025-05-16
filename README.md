@@ -69,28 +69,29 @@ npm install
 ```
 ### 🔧 How to build the extension
 
-Builds are created using npm scripts which invoke the build.js script:
+The extension is built using Webpack, managed via npm scripts:
 
 ```bash
-# Build both Chrome and Firefox versions
-npm run build:all
+# Build both Chrome and Firefox versions for production (minified, no source maps, with ZIPs)
+npm run build
 
-# Build only for Chrome (and compatible browsers)
-npm run build:chrome
-
-# Build only for Firefox
-npm run build:firefox
+# Build both Chrome and Firefox versions for development (unminified, with source maps, no ZIPs)
+npm run dev
 ```
 
 - Generates browser-specific unpacked builds in the `dist/chrome/` and `dist/firefox/` directories.
-- Combines and optimises CSS using PostCSS (`postcss-import`, `autoprefixer`, `cssnano`).
-- Packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/chrome.zip`, `dist/firefox.zip`), ready for upload or distribution.
+- Processes css:
+    - Resolves `@import` statements (via `css-loader`).
+    - Minifies CSS in production mode (via `css-minimizer-webpack-plugin`).
+    - Extracts CSS into a single `styles/main.css` file for each browser build.
+- Copies necessary files like `manifest.json` (browser-specific), `background.js`, and icons.
+- In production mode (`npm run build`), packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/chrome.zip`, `dist/firefox.zip`), ready for upload or distribution.
 
 ### 🧪 Local testing (e.g. in Chrome)
 
 To test the extension locally in a browser:
 
-1. Run `npm run build:chrome` to create the build in `dist/chrome/`
+1. Run `npm run dev` - this will build the extension and watch for file changes
 2. Open Chrome and navigate to `chrome://extensions`
 3. Enable "Developer mode" (usually a toggle in the top-right corner)
 4. Click "Load unpacked"
@@ -116,12 +117,14 @@ This project uses [semantic-release](https://github.com/semantic-release/semanti
 
 ### 🗂️ Manifests
 
-- `manifest.json`: Used only for local development. Not in the remote repository. Includes a full list of modular CSS files for easier debugging.
-- `manifest.chrome.json` / `manifest.firefox.json`: Used during build. These use a single, compiled `styles/main.css` for faster loading and better performance.
+- `manifest.chrome.json` / `manifest.firefox.json`: These are the source manifest files located in the root of the project.
+    - They are updated with the correct version number by `semantic-release` during the release process.
+    - The Webpack build process copies the appropriate source manifest (e.g., `manifest.chrome.json`) to `dist/chrome/manifest.json` for each build.
+    - These manifests should reference the single, compiled `styles/main.css` and `background.js`.
 
 ### 🧰 Tools & Scripts
 
-- `scripts/build.js`: Merges and compiles CSS, injects version into manifests.
+- `webpack.config.js`: Configures the Webpack build process, handling CSS compilation, minification, file copying, and ZIP packaging.
 - `scripts/update-manifest-version.js`: Replaces placeholders in manifests with the current version.
 - `.releaserc.json`: Configures `semantic-release` pipeline.
 - `release.yml`: GitHub Actions workflow to run the release pipeline automatically.

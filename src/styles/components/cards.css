@@ -235,3 +235,17 @@ a[class*="ActivityCard_card_"] svg[class*="exterior-link-directional_exteriorLin
 [class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
     border-color: var(--border-default) !important;
 }
+
+/* Promo Card */
+div[class*="PromoCard_cardWrapper_"] {
+    background-color: var(--background-secondary) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="PromoCard_cardTitle_"] {
+    color: var(--text-primary) !important;
+}
+
+div[class*="PromoCard_cardImage_"][style*="background-image"] {
+    background-image: linear-gradient(to left, transparent 80%, var(--background-secondary) 100%), url(https://connect.garmin.com/images/promos/ios/persmsg-promo_3x.jpg) !important;
+}
