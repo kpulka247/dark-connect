@@ -14,7 +14,8 @@ const createConfig = (browser, mode) => {
         mode: mode,
         devtool: isProduction ? false : 'cheap-module-source-map',
         entry: {
-            styles: './src/styles/index.css',
+            main_styles: './src/styles/index.css',
+            popup_styles: './src/styles/popup.css',
             background: './src/background.js',
         },
         output: {
@@ -35,7 +36,15 @@ const createConfig = (browser, mode) => {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'styles/main.css',
+                filename: (pathData) => {
+                    if (pathData.chunk.name === 'main_styles') {
+                        return 'styles/main.css';
+                    }
+                    if (pathData.chunk.name === 'popup_styles') {
+                        return 'styles/popup.css';
+                    }
+                    return 'styles/[name].css';
+                },
             }),
             new CopyPlugin({
                 patterns: [
@@ -47,6 +56,10 @@ const createConfig = (browser, mode) => {
                         from: path.resolve(__dirname, 'public/icons'),
                         to: path.join(browserOutputDir, 'icons'),
                         noErrorOnMissing: true,
+                    },
+                    {
+                        from: 'src/popup/popup.html',
+                        to: 'popup.html',
                     },
                 ],
             }),
