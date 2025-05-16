@@ -61,7 +61,6 @@ div[class*="Button_btn_"][class*="Button_btnSecondary_"] {
     color: var(--text-primary) !important;
 }
 
-
 /* Add Comment Button */
 button[class*="AddComment_container_"],
 button[class*="AddComment_button_"][disabled] {
@@ -113,7 +112,6 @@ div[class*="Chip_dataTypeButton_"] {
 [class*="ChartChip_chip_"]:hover:not([class*="ChartChip_selectedChip_"]) {
     background-color: var(--background-secondary) !important;
 }
-
 
 /* Generic Exercise Picker Button Icon */
 button[class*="ExercisePicker_dropdownToggle_"] svg {
@@ -182,7 +180,6 @@ button[class*="SelectCourseType_selectCourseTypeButton_"] {
     border-color: var(--border-default) !important;
 }
 
-
 /* Plan Filter Buttons */
 .find-plan-filters .btn-pill {
     background-color: var(--background-secondary) !important;
@@ -225,7 +222,8 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 }
 
 /* Anchored Banner Close Button */
-[class*="AnchoredBanner_bannerCloseBtn_"] {
+[class*="AnchoredBanner_bannerCloseBtn_"],
+[class*="PromoCard_cardDismissIcon_"] {
     background-color: var(--background-soft) !important;
 }
 
