@@ -1,3 +1,13 @@
+## [2.1.0](https://github.com/kpulka247/dark-connect/compare/v2.0.3...v2.1.0) (2025-05-16)
+
+### Features
+
+* Add informational popup ([f2ddee2](https://github.com/kpulka247/dark-connect/commit/f2ddee22a717c873df07e358da1e6479c3ffed03))
+
+### Bug Fixes
+
+* Fix promo card color ([b4860ad](https://github.com/kpulka247/dark-connect/commit/b4860ad52faf59d53a2ac94aa6e75673283f344d))
+
 ## [2.0.3](https://github.com/kpulka247/dark-connect/compare/v2.0.2...v2.0.3) (2025-05-11)
 
 ### Bug Fixes
