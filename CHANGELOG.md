@@ -1,3 +1,9 @@
+## [2.2.1](https://github.com/kpulka247/dark-connect/compare/v2.2.0...v2.2.1) (2025-05-22)
+
+### Bug Fixes
+
+* Fix some global text color schemes ([fba6b61](https://github.com/kpulka247/dark-connect/commit/fba6b610b48b984630a4d82485744acf248a7bd0))
+
 ## [2.2.0](https://github.com/kpulka247/dark-connect/compare/v2.1.0...v2.2.0) (2025-05-22)
 
 ### Features
