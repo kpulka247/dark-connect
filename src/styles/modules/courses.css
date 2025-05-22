@@ -147,7 +147,7 @@ div[class*="MapAdditionalOptionsSelection_optionLabel_"][class*="MapAdditionalOp
     color: var(--text-secondary) !important;
 }
 
-path[class*="CourseMap_polyLineNoHover_"] {
+path[class*="CourseMap_polyLineNoHover_"]:not([stroke="#c21515"]):not([stroke="#2a88e6"]) {
     /* Map line stroke */
     stroke: var(--color-black) !important;
     /* Keep black for visibility? */
