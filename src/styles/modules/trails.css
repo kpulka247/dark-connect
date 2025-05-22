@@ -9,7 +9,8 @@
 }
 
 /* Trail Card */
-[class*="TrailCard_cardContainerInner_"] {
+[class*="TrailCard_cardContainerInner_"],
+[class*="TrailCard_collapseButton_"] {
     background-color: var(--background-primary) !important;
     border-color: var(--background-primary) !important;
 }
@@ -48,6 +49,10 @@
 [class*="ReviewListItem_markAsHelpfulButton_"] {
     color: var(--link-color) !important;
     border-color: var(--link-color) !important;
+}
+
+[class*="ReviewListItem_showMoreText_"] {
+    color: var(--link-color) !important;
 }
 
 /* Suggest Edit Modal */
