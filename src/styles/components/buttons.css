@@ -223,11 +223,25 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 
 /* Anchored Banner Close Button */
 [class*="AnchoredBanner_bannerCloseBtn_"],
-[class*="PromoCard_cardDismissIcon_"] {
-    background-color: var(--background-soft) !important;
+[class*="PromoCard_cardDismissIcon_"],
+[class*="WhatsNewCard_cardDismissIcon_"] {
+    background-color: var(--background-light) !important;
 }
 
 /* Toggle Button switch inner */
 [class*="Toggle_btnSwitchInner_"]:after {
     background-color: var(--background-lighter) !important;
+}
+
+[class*="Toggle_toggleDial_"] {
+    background-color: var(--color-white) !important;
+}
+
+[class*="Toggle_toggle_"] {
+    outline-color: var(--color-gray-lighter) !important;
+}
+
+[class*="Toggle_toggle_"]:has([class*="Toggle_checked_"]) {
+    outline-color: var(--color-blue-primary) !important;
+    background-color: var(--color-blue-primary) !important;
 }

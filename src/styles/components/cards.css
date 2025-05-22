@@ -21,7 +21,8 @@ div[class*="CourseCard_courseCard_"],
 }
 
 /* Generic Card Backgrounds */
-div[class*="Homepage_placeholderCard_"] {
+div[class*="Homepage_placeholderCard_"],
+[class*="InFocusCard_errorIconContainer_"] {
     background-color: var(--background-secondary) !important;
 }
 
@@ -106,7 +107,6 @@ div[class*="HRVStatusSecondaryStatCard_statusText_"],
 div[class*="HRVStatusSecondaryStatCard_valueText_"],
 div[class*="IntensityMinutesSecondaryStatCard_weekGoal_"],
 div[class*="SecondaryStatWeeklyGoalChart_currentDay_"],
-div[class*="SecondaryStatWeeklyGoalChart_checkMark_"],
 div[class*="EnduranceScoreSecondaryStat_status_"],
 div[class*="runningLactateThresholdDataSmallCell"],
 div[class*="RespirationSecondaryStatCard_respirationDataField_"],
@@ -125,7 +125,7 @@ h3[class*="BloodPressureSecondaryStatCard_latestReading_"],
 span[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
 }
 
 [class*="SecondaryStatCard_emptyStateLink_"] {
@@ -136,6 +136,10 @@ div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
 div[class*="LoadFocusSecondaryStatCard_legendOptimalRange_"],
 div[class*="SecondaryStatCard_optimalRangeHorizontalBar_"] {
     border-color: var(--color-gray-lighter) !important;
+}
+
+g[class*="SecondaryStatWeeklyGoalChart_checkMark_"] path[fill="#101010"] {
+    fill: var(--color-white) !important;
 }
 
 /* Factor list card text */
