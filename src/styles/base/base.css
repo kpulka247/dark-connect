@@ -5,6 +5,7 @@ hr {
 
 body {
     color: var(--text-primary) !important;
+    background-color: var(--background-deep) !important;
 }
 
 /* Very generic selectors */

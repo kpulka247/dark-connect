@@ -19,7 +19,8 @@ i[style="color: rgb(16, 16, 16);"],
 div[class*="ProfileImage_iconWrapper_"] i,
 i.icon-drag-handle,
 svg[data-library="ui-icons"][fill="#101010"],
-i[class*="icon-activity-"][class*="PlanCard_selection_"] {
+i[class*="icon-activity-"][class*="PlanCard_selection_"],
+i.icon-photos {
     /* Profile image icon wrapper */
     color: var(--text-primary) !important;
     fill: var(--color-white) !important;

@@ -2,8 +2,8 @@
 node_modules/
 npm-debug.log
 
-# Build files
-manifest.json
+# Debug files
+.vscode
 
 # Build directories
 dist/
