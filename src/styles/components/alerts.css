@@ -21,3 +21,8 @@ div[class*="Alert_warning_"] {
     border-color: var(--border-default) !important;
     color: var(--text-primary) !important;
 }
+
+/* Close */
+[class*="Alert_closeBtn_"] {
+    color: var(--text-primary) !important;
+}

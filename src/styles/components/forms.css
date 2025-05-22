@@ -1,4 +1,4 @@
-textarea,
+textarea:not([class*="Textarea_disabled_"]),
 input[type=text],
 input[type=password],
 input[type=datetime],

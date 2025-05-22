@@ -8,7 +8,9 @@ path.highcharts-plot-band[fill="#fafafa"] {
     stroke: var(--color-gray-dark) !important;
 }
 
-div div div .highcharts-root .highcharts-plot-bands-0 .highcharts-plot-band[fill="#f9f9f9"] {
+div div div .highcharts-root .highcharts-plot-bands-0 .highcharts-plot-band[fill="#f9f9f9"],
+div[class*="PulseOxView_pulseOxChart_"] div div div .highcharts-root g .highcharts-plot-band[fill="#F9F9F9"],
+div[class*="PulseOxView_pulseOxChart_"] div div div .highcharts-root .highcharts-series-group g.highcharts-series.highcharts-series-6.highcharts-column-series.highcharts-tracker path[fill="#FAFAFA"] {
     fill: var(--color-black-soft) !important;
 }
 

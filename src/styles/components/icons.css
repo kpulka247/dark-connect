@@ -10,7 +10,6 @@ button[type="button"] svg {
 
 span[class*=icon-pointer-],
 i[class*="icon-arrow-"],
-.icon-help,
 i[class^="icon-ellipsis"],
 i[class*="PowerGuidanceSelectCourse_terrainType_"],
 i[style="font-size: 20px; color: rgb(16, 16, 16);"],
@@ -45,6 +44,17 @@ div[class*="PersonalRecordsPageView_header_"] button i {
 .page.activity-detail .segments-table .icon-eye.active {
     /* Active eye icon */
     color: var(--text-primary) !important;
+}
+
+.icon-help,
+[class*="HelpIcon_helpIcon_"] svg {
+    color: var(--color-blue-primary) !important;
+    fill: var(--color-blue-primary) !important;
+}
+
+.icon-speech-bubble span,
+.edit-gear-tracking span {
+    color: var(--background-primary) !important;
 }
 
 /* Icon Backgrounds/Filters */
@@ -110,6 +120,17 @@ div[class*="ScorecardComponent_holeItem_"] div i {
 [class*="MapZoom_zoomInIcon_"] path,
 [class*="MapZoom_zoomOutIcon_"] path {
     stroke: var(--color-white) !important;
+}
+
+/* Icon Hover */
+a:hover [class*=icon]:not([class*="MainSidebar_menuItem_"] a i):not([class*="icon-"]),
+[class*=icon] a:hover,
+[class^=icon]:hover:not([class*="MainSidebar_menuItem_"] a i):not([class*="icon-"]),
+[class*=" icon"]:hover:not([class*="icon-"]),
+[class*="ActivityListItem_buttonDelete_"]:hover,
+[class*="ActivityListItem_buttonEdit_"]:hover,
+[class*="ButtonIcon_btnIcon_"]:not([disabled]):hover {
+    color: var(--text-primary) !important;
 }
 
 /* Ellipsis Menu Icon Hover */

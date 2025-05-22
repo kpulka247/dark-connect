@@ -151,12 +151,19 @@ span[class*="ReorderActivityList_dragHandle_"] {
     color: var(--text-primary) !important;
 }
 
-.activity-detail span:not(.course-pt-lap) {
+.activity-detail span:not(.course-pt-lap):not([class*="ActivityPhotosCarousel_carouselActions_"] div span):not(.notification-count):not(.edit-gear-tracking span) {
     /* Generic span text */
     color: var(--text-primary) !important;
 }
 
-[class*="Activity_activityTitle_"] {
+.notification-count {
+    color: var(--background-primary) !important;
+}
+
+[class*="Activity_activityTitle_"],
+[class*="ActivityMetaInfo_"] a,
+[class*="ActivityPhotosCarousel_carouselActions_"] div,
+[class*="ActivityPhotosCarousel_carouselActions_"] div span {
     /* Activity title link style */
     color: var(--link-color) !important;
 }

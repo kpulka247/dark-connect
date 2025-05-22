@@ -30,7 +30,8 @@ div[class*="Homepage_sectionLabel_"] {
 
 /* Home Settings */
 div[class*="HomeSettings_linkButton_"],
-span[class*="HomeSettings_linkButton_"] {
+span[class*="HomeSettings_linkButton_"],
+div[class*="cardOrganizer_"] button {
     color: var(--link-color) !important;
 }
 

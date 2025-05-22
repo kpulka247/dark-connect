@@ -148,6 +148,10 @@ div[class*="FactorListCard_status_"] {
     color: var(--text-primary) !important;
 }
 
+div[class*="FactorListCard_card_"]:hover div div[class*="FactorListCard_header_"] {
+    color: var(--link-color) !important;
+}
+
 /* Factors common card text */
 div[class*="FactorsCardsCommon_header_"],
 div[class*="FactorsCardsCommon_status_"] {

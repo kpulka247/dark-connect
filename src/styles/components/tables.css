@@ -40,7 +40,7 @@ thead tr th {
     color: var(--text-primary) !important;
 }
 
-div[class*="TableHeader_header_"] {
+[class*="TableHeader_header_"] {
     /* Event Search Header Text */
     color: var(--text-primary) !important;
 }
