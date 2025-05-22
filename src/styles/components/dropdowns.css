@@ -35,14 +35,6 @@ div[class*="UnifiedDropdown_dropdownMenu_"],
     color: var(--text-primary) !important;
 }
 
-[class*="Menu_menuItems_"]:hover,
-[class*="Menu_menuItems_"]:hover div div span,
-[class*="Menu_menuItemsSelected_"]:hover,
-[class*="Menu_menuItemsSelected_"]:hover div div span {
-    /* Specific hover color */
-    color: var(--color-black) !important;
-}
-
 [class*="Menu_inlineWrapper_"]:hover {
     color: var(--color-white) !important;
 }

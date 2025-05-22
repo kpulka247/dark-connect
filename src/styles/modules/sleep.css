@@ -84,6 +84,7 @@ div[class*="SleepSecondaryStatCard_durationValue_"],
 
 /* Sleep Report Table Link */
 [class*="SleepReportTable_anchor_"],
-div[class*="SleepScoreFactorCard_factorCardContainer_"]:hover div div[class*="SleepScoreFactorCard_sleepStageLabel_"] {
+div[class*="SleepScoreFactorCard_factorCardContainer_"]:hover div div[class*="SleepScoreFactorCard_sleepStageLabel_"],
+div[class*="SleepCoachFactorCard_factorCardContainer_"]:hover div div[class*="SleepCoachFactorCard_factorCardTitle_"] {
     color: var(--link-color) !important;
 }

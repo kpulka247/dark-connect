@@ -77,6 +77,10 @@ div[class*="Course_elevationExpandedChartContainer_"] {
     border-color: var(--border-default) !important;
 }
 
+[class*="expandCollapseButton_"] button {
+    color: var(--link-color) !important;
+}
+
 .course-pt,
 /* Course point border */
 .course-pt-lap {
