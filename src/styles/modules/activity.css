@@ -183,6 +183,10 @@ div[class*="ActivityMapView_mapLayerLegend_"] {
     background: var(--background-primary) !important;
 }
 
+[class*="ActivityDetailsHeaderDropDown_menuItem_"][class*="ActivityDetailsHeaderDropDown_active_"] {
+    background-color: var(--background-light) !important;
+}
+
 /* Swim Specific Styles */
 .page.activity-detail .swim-length {
     background-color: var(--background-primary) !important;
@@ -297,6 +301,10 @@ div[class*="ActivityPhotoDropdown_dropdownMenu_"] {
     /* Dropdown background */
     background: var(--background-primary) !important;
     color: var(--text-primary) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="ActivityPhotos_emptyStateContent_"] {
     border-color: var(--border-default) !important;
 }
 

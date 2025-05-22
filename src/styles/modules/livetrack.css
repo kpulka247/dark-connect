@@ -23,11 +23,6 @@ menu[class*="UserOptions_userOptionsMenu_"] li div a {
     color: var(--text-secondary) !important;
 }
 
-img[alt="Garmin LiveTrack"] {
-    /* Logo filter */
-    filter: invert(1) grayscale(1) brightness(2);
-}
-
 [class*="LivetrackInfoBanner_bannerTitle_"] {
     /* Banner text */
     color: var(--text-primary) !important;

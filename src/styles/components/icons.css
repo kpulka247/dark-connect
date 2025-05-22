@@ -19,7 +19,8 @@ i[style="color: rgb(16, 16, 16);"],
 div[class*="ProfileImage_iconWrapper_"] i,
 i.icon-drag-handle,
 svg[data-library="ui-icons"][fill="#101010"],
-i[class*="icon-activity-"][class*="PlanCard_selection_"] {
+i[class*="icon-activity-"][class*="PlanCard_selection_"],
+i.icon-photos {
     /* Profile image icon wrapper */
     color: var(--text-primary) !important;
     fill: var(--color-white) !important;
@@ -53,7 +54,8 @@ div[class*="AltitudeAcclimationSecondaryStatCard_trendIcon_"] {
 
 div[class*="ClimbsSheet_closeSheet_"],
 div[class*="GarminMapLegend_legendIcon_"],
-div[class*="MapProviderContainer__layerControlButton_"] {
+div[class*="MapProviderContainer__layerControlButton_"],
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthTanitaIcons_"] {
     filter: invert(1);
 }
 
@@ -123,4 +125,30 @@ div[class*="SortableTable_iconContainer_"] {
 /* Timeline Activity Icon */
 [class*="TimelineLayerChart_activityIconContainer_"] {
     box-shadow: 0 0 0 1px var(--color-gray-dark) !important;
+}
+
+/* Weight Information Modals Icons */
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="line"],
+[class*="WeightsInformationModals_healthLegendFooter_"] [class*="WeightsInformationModals_chartLegend_"] [class*="WeightsInformationModals_legendFat_"] [class*="WeightsInformationModals_legendBit_"] {
+    background-color: var(--color-white) !important;
+}
+
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointUp_"] {
+    /*  Point up */
+    border-bottom-color: var(--color-white) !important;
+}
+
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointDown_"] {
+    /* Point down */
+    border-top-color: var(--color-white) !important;
+}
+
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointLeft_"] {
+    /* Point left */
+    border-right-color: var(--color-white) !important;
+}
+
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointRight_"] {
+    /* Point right */
+    border-left-color: var(--color-white) !important;
 }

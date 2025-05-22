@@ -2,6 +2,7 @@
 
 # Dark Connect
 
+<a href="https://github.com/kpulka247/dark-connect/actions" title="GitHub Actions Workflow Status"><img src="https://img.shields.io/github/actions/workflow/status/kpulka247/dark-connect/release.yml"></a>
 <a href="https://github.com/kpulka247/dark-connect/releases" title="GitHub Release"><img src="https://img.shields.io/github/v/release/kpulka247/dark-connect?logo=github&logoColor=white"></a>
 <a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Stars"><img src="https://img.shields.io/chrome-web-store/stars/nadhhgppikppmjacnkebagbgcibnfnob?logo=google%20chrome&logoColor=white"></a>
 <a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Stars"><img src="https://img.shields.io/amo/stars/dark-connect?logo=firefox&logoColor=white"></a>

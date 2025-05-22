@@ -1,0 +1,81 @@
+/* Trails List */
+[class*="ComCourses_noDataWrapper_"] p,
+[class*="TrailsListItem_sendToDeviceText_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="TrailsListItem_wrapper_"] {
+    border-color: var(--border-default) !important;
+}
+
+/* Trail Card */
+[class*="TrailCard_cardContainerInner_"],
+[class*="TrailCard_collapseButton_"] {
+    background-color: var(--background-primary) !important;
+    border-color: var(--background-primary) !important;
+}
+
+[class*="TrailCard_cardHeaderSmallTitle_"],
+[class*="TrailDetails_sectionTitle_"],
+[class*="TrailDetails_trailDescription_"],
+[class*="TrailDetails_reviewTitle_"],
+[class*="ReviewListItem_reviewerName_"],
+[class*="ReviewListItem_reviewComment_"],
+[class*="ReviewListItem_reviewConditionsTitle_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="TrailDetails_showMoreText_"] {
+    color: var(--link-color) !important;
+}
+
+[class*="TrailDetails_elevationExpandedChartContainer_"],
+[class*="TrailDetails_footerSection_"] {
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="Menu_customComponentMenu_"] {
+    border-color: var(--border-default) !important;
+}
+
+/* Trail Reviews */
+[class*="TrailDetails_reviewTitle_"],
+[class*="ReviewList_sortSectionWithBorder_"],
+[class*="ReviewListItem_reviewItem_"] {
+    border-color: var(--border-default) !important;
+}
+
+[class*="ReviewListItem_markAsHelpfulButton_"] {
+    color: var(--link-color) !important;
+    border-color: var(--link-color) !important;
+}
+
+[class*="ReviewListItem_showMoreText_"] {
+    color: var(--link-color) !important;
+}
+
+/* Suggest Edit Modal */
+[class*="SuggestEditModal_title_"],
+[class*="SuggestEditModal_describeTrailTitle_"],
+[class*="SuggestEditModal_exitPromptContent_"] {
+    color: var(--text-primary) !important;
+}
+
+/* Trail Photos */
+[class*="Dots_dot_"][class*="Dots_active_"] {
+    background-color: var(--color-white) !important;
+}
+
+[class*="PhotoCarousel_smallMenu_"] {
+    background-color: var(--background-light) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="PhotoCarousel_menuItem_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="PhotoCarousel_menuItem_"]:hover {
+    color: var(--color-black) !important;
+}

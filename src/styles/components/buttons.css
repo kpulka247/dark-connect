@@ -142,7 +142,7 @@ button[class*="LinkButton_link_"],
 }
 
 /* General button text color (catch-all for many standard buttons) */
-button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"], [class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel):not([class*="InlineEditActivityName_editSave_"], [class*="InlineEditActivityName_editCancel_"]):not(.gm-style-cc button):not([class*="Notification_close_"]):not([class*="Tab_inlineEditSave_"], [class*="Tab_inlineEditCancel_"]):not([class*="LinkButton_link_"]):not([class*="InlineEdit_saveButton_"], [class*="InlineEdit_cancelButton_"]) {
+button:not([class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]):not([class*="WorkoutName_inlineEditSave_"], [class*="WorkoutName_inlineEditCancel_"]):not(.inline-edit-save, .inline-date-edit-save, a.inline-edit-save, .inline-edit-cancel, .inline-date-edit-cancel, a.inline-edit-cancel):not([class*="InlineEditActivityName_editSave_"], [class*="InlineEditActivityName_editCancel_"]):not(.gm-style-cc button):not([class*="Notification_close_"]):not([class*="Tab_inlineEditSave_"], [class*="Tab_inlineEditCancel_"]):not([class*="LinkButton_link_"]):not([class*="InlineEdit_saveButton_"], [class*="InlineEdit_cancelButton_"]):not([class*="TrailDetails_showMoreText_"]):not([class*="TrailDetails_iconButton_"]):not([class*="ReviewListItem_markAsHelpfulButton_"]) {
     color: var(--text-primary) !important;
 }
 
@@ -223,11 +223,25 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 
 /* Anchored Banner Close Button */
 [class*="AnchoredBanner_bannerCloseBtn_"],
-[class*="PromoCard_cardDismissIcon_"] {
-    background-color: var(--background-soft) !important;
+[class*="PromoCard_cardDismissIcon_"],
+[class*="WhatsNewCard_cardDismissIcon_"] {
+    background-color: var(--background-light) !important;
 }
 
 /* Toggle Button switch inner */
 [class*="Toggle_btnSwitchInner_"]:after {
     background-color: var(--background-lighter) !important;
+}
+
+[class*="Toggle_toggleDial_"] {
+    background-color: var(--color-white) !important;
+}
+
+[class*="Toggle_toggle_"] {
+    outline-color: var(--color-gray-lighter) !important;
+}
+
+[class*="Toggle_toggle_"]:has([class*="Toggle_checked_"]) {
+    outline-color: var(--color-blue-primary) !important;
+    background-color: var(--color-blue-primary) !important;
 }

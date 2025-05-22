@@ -73,6 +73,16 @@ span[class*="IconTooltip_container_"] span {
     /* Original style was black, might need changing */
 }
 
-[class*="DefaultCustomTooltip_tooltipContainer_"] {
+[class*="DefaultCustomTooltip_tooltipContainer_"],
+[class*="ElevationChart_mainElevationAndDistanceContainer_"] {
     background-color: var(--background-secondary) !important;
+}
+
+[class*="ElevationChart_elevationAndDistanceItem_"],
+[class*="ElevationChart_sectionLabel_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="ElevationChart_distanceContainer_"] {
+    color: var(--text-secondary) !important;
 }

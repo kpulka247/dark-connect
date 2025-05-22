@@ -1,5 +1,6 @@
 /* Reference Lines */
-.recharts-reference-line-line {
+.recharts-reference-line-line,
+.recharts-curve.recharts-tooltip-cursor {
     stroke: var(--color-white) !important;
     /* Default reference line */
 }

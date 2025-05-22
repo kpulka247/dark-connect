@@ -66,11 +66,6 @@ menu[class*="UserOptions_userOptionsMenu_"] li a {
     color: var(--link-color) !important;
 }
 
-button[class*="UserOptions_userOptionsButton_"] svg[fill="#101010"] {
-    /* Icon styling */
-    filter: invert(1);
-}
-
 [class*="UserOptions_userOptionsMenu_"] {
     /* Text color */
     color: var(--text-primary) !important;
