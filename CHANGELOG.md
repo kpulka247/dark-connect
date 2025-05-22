@@ -1,3 +1,17 @@
+## [2.2.0](https://github.com/kpulka247/dark-connect/compare/v2.1.0...v2.2.0) (2025-05-22)
+
+### Features
+
+* Add Garmin Trails support ([85a4dd3](https://github.com/kpulka247/dark-connect/commit/85a4dd3ae6bbc41c3b6efaed6ac23f00d8820706))
+
+### Bug Fixes
+
+* Fix activity page bugs ([965c6f0](https://github.com/kpulka247/dark-connect/commit/965c6f09ecd1b08c6bd48d5bf274ce5e9c60d0d9))
+* Fix course page bugs ([2c1b2a1](https://github.com/kpulka247/dark-connect/commit/2c1b2a1e11bce77d254f60ed9b0dcb69cfb8c418))
+* Fix Garmin Trails additional items ([d4c727c](https://github.com/kpulka247/dark-connect/commit/d4c727cb4fa3e2063fc0d0f3a3865ad761828df4))
+* Fix home page icon bugs ([be05f99](https://github.com/kpulka247/dark-connect/commit/be05f996b8b6080f99caeb4435b89107fbdaba96))
+* Fix minor color bugs ([42c96f9](https://github.com/kpulka247/dark-connect/commit/42c96f9e97dd94685e920092cab7cb50f1ca94c1))
+
 ## [2.1.0](https://github.com/kpulka247/dark-connect/compare/v2.0.3...v2.1.0) (2025-05-16)
 
 ### Features
