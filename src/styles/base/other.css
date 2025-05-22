@@ -43,6 +43,15 @@ div[class*="WeightPage_actionButtonsContainer_"] {
     border-color: var(--border-default) !important;
 }
 
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthLegendVisceralTable_"] td {
+    border-color: var(--background-primary) !important;
+}
+
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthRange_"] {
+    color: var(--color-black-deep) !important;
+    background-color: var(--color-white) !important;
+}
+
 /* BP Page Action Buttons */
 div[class*="BPPage_actionButtonsContainer_"] {
     border-color: var(--border-default) !important;

@@ -106,14 +106,14 @@ img[class*="CommentLikeSection_profileImage_"] {
     border-color: var(--border-default) !important;
 }
 
-img[alt="Garmin LiveTrack"] {
-    /* Logo filter */
+img[alt="Garmin LiveTrack"],
+li[class*="LocationAutoComplete_suggestion_"] div img,
+[class*="WeightsInformationModals_iconPeopleFemale_"] {
     filter: invert(1) grayscale(1) brightness(2);
 }
 
-li[class*="LocationAutoComplete_suggestion_"] div img {
-    /* Autocomplete image filter */
-    filter: invert(1) grayscale(1) brightness(2);
+[class*="WeightsInformationModals_healthBodyFatTable_"] tbody tr td img {
+    filter: invert(1) grayscale(1);
 }
 
 img[class*="InviteesView_playerAvatar_"] {
