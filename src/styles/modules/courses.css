@@ -66,7 +66,8 @@ div[class*="RoutingOptions_sectionHeader_"],
 div[class*="RoutingOptions_selectContainer_"],
 p[class*="CourseDetailsSection_sectionTitle_"],
 label[class*="AddCoursePoint_pointNameLabel_"],
-p[class*="AddCoursePoint_sectionInfoText_"] {
+p[class*="AddCoursePoint_sectionInfoText_"],
+[class*="CourseDetails_lapPointsLabel_"] {
     color: var(--text-primary) !important;
 }
 
