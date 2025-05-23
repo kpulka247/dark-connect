@@ -168,6 +168,10 @@ div[class*="PrimaryMusclePicker_dropdownMenuItem_"]:hover {
     background-color: var(--background-soft) !important;
 }
 
+[class*="ReportExercisePicker_dropdownMenuItem_"] button {
+    color: var(--text-primary) !important;
+}
+
 /* Menu Component Styles */
 div[class*="Menu_customComponentMenu_"] {
     background-color: var(--background-primary) !important;

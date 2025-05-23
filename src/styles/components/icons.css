@@ -8,18 +8,18 @@ button[type="button"] svg {
     fill: var(--color-white) !important;
 }
 
-span[class*=icon-pointer-],
-i[class*="icon-arrow-"],
-i[class^="icon-ellipsis"],
-i[class*="PowerGuidanceSelectCourse_terrainType_"],
+[class*=icon-pointer-],
+[class*="icon-arrow-"],
+[class^="icon-ellipsis"],
+[class*="PowerGuidanceSelectCourse_terrainType_"],
 i[style="font-size: 20px; color: rgb(16, 16, 16);"],
 i[style="color: rgb(16, 16, 16);"],
 .icon-drag,
 div[class*="ProfileImage_iconWrapper_"] i,
-i.icon-drag-handle,
+.icon-drag-handle,
 svg[data-library="ui-icons"][fill="#101010"],
-i[class*="icon-activity-"][class*="PlanCard_selection_"],
-i.icon-photos {
+[class*="icon-activity-"][class*="PlanCard_selection_"],
+.icon-photos {
     /* Profile image icon wrapper */
     color: var(--text-primary) !important;
     fill: var(--color-white) !important;
@@ -55,6 +55,12 @@ div[class*="PersonalRecordsPageView_header_"] button i {
 .icon-speech-bubble span,
 .edit-gear-tracking span {
     color: var(--background-primary) !important;
+}
+
+.page-navigation-action:hover,
+.page-navigation-action:focus,
+.page-navigation-action:active {
+    color: var(--text-primary) !important;
 }
 
 /* Icon Backgrounds/Filters */

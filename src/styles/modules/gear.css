@@ -8,11 +8,6 @@ ul[class*="ActivityGearStatusView_gearList_"] li:hover {
     background-color: var(--background-secondary) !important;
 }
 
-ul[class*="ActivityGearEditModal_gearList_"] li:hover {
-    /* Edit modal view */
-    background-color: var(--background-secondary) !important;
-}
-
 /* Gear Icon/Avatar */
 i[class*="GearsTrackingPage_avatarLogo_"] {
     box-shadow: 0px 0px 0px 3px var(--color-gray-dark), 0px 0px 0px 4px var(--color-gray-light) !important;

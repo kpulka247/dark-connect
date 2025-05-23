@@ -55,6 +55,22 @@
     /* Belongs in components/icons? */
 }
 
+[class*="DragDropList_draggableListItem_"] {
+    /* Activity list config */
+    background-color: var(--background-secondary) !important;
+    color: var(--text-subtle) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="DragDropList_listItem_"] {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-subtle) !important;
+}
+
+[class*="DragDropList_droppable_"] {
+    background-color: var(--background-soft) !important;
+}
+
 /* Activity List Item Component (Newer Style) */
 [class*="ActivityListItem_listItem_"] {
     background-color: var(--background-secondary) !important;
@@ -151,7 +167,7 @@ span[class*="ReorderActivityList_dragHandle_"] {
     color: var(--text-primary) !important;
 }
 
-.activity-detail span:not(.course-pt-lap):not([class*="ActivityPhotosCarousel_carouselActions_"] div span):not(.notification-count):not(.edit-gear-tracking span) {
+.activity-detail span:not(.course-pt-lap):not([class*="ActivityPhotosCarousel_carouselActions_"] div span):not(.notification-count):not(.edit-gear-tracking span):not(.icon-help) {
     /* Generic span text */
     color: var(--text-primary) !important;
 }
@@ -190,7 +206,8 @@ div[class*="ActivityMapView_mapLayerLegend_"] {
     background: var(--background-primary) !important;
 }
 
-[class*="ActivityDetailsHeaderDropDown_menuItem_"][class*="ActivityDetailsHeaderDropDown_active_"] {
+[class*="ActivityDetailsHeaderDropDown_menuItem_"][class*="ActivityDetailsHeaderDropDown_active_"],
+[class*="InlineEditDropdown_currentDropdownItem_"] {
     background-color: var(--background-light) !important;
 }
 
@@ -216,6 +233,10 @@ div[class*="ActivityMapView_mapLayerLegend_"] {
     /* Original style, seems wrong? */
 }
 
+[class*="ActivityListItem_iconPencil_"]:hover,
+[class*="ActivityListItem_iconPointerDown_"]:hover {
+    color: var(--text-primary) !important;
+}
 
 /* Activity Comments/Notes */
 .note-container textarea {
@@ -285,6 +306,10 @@ div[class*="ActivityGearList_gearImages_"] i {
     background-color: var(--background-secondary) !important;
 }
 
+[class*="ActivityGearEditModal_gearList_"] [class*="ActivityGearEditModal_gearStatus_"]:after {
+    color: var(--background-primary) !important;
+}
+
 /* Activity Laps */
 .lap,
 .lap span:not(:last-child) {
@@ -338,6 +363,10 @@ div[class*="WorkoutExecutionMetrics_statsSectionExecutionScore_"] div {
 
 p[class*="WorkoutExecutionMetrics_sectionParagraph_"] {
     color: var(--text-primary) !important;
+}
+
+.page.activity-detail .multisport-nav > li:first-child:after {
+    border-color: var(--border-default) !important;
 }
 
 /* MoveIQ */

@@ -131,37 +131,37 @@ button[class*="ExercisePicker_dropdownToggle_"] svg {
 }
 
 /* Link Button Style */
-.colored,
-a.colored,
-a[class*="Homepage_sectionButton_"],
-div[class*="HomeSettings_linkButton_"],
-div[class*="DayView_dayViewLabel_"],
+button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(:has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]),
 .accordion a.active,
 .accordion a:active,
 .accordion a:focus,
 .accordion-inner a:hover,
+.edit-gear-tracking {
+    /* Added based on name */
+    color: var(--link-color);
+}
+
+.colored,
+a.colored,
+[class*="ChallengeCard_challengeName_"] a,
+div[class*="GroupSettings_selectPhotoLink_"],
+button[class*="GroupSettings_advanceToggle_"],
 div[class*="LinkButton_link_"],
 div[class*="CompareFilters_linkWrapper_"],
 span[class*="HomeSettings_linkButton_"],
 button[class*="LinkButton_link_"],
 [class*="BPTables_oneWeekLink_"],
 [class*="BPTables_oneMonthLink_"],
-.edit-gear-tracking {
-    /* Added based on name */
-    color: var(--link-color) !important;
-}
-
-button:not(>i[class*="icon-"]) {
-    color: var(--link-color) !important;
-}
-
-div[class*="GroupSettings_selectPhotoLink_"],
-button[class*="GroupSettings_advanceToggle_"] {
+a[class*="Homepage_sectionButton_"],
+div[class*="HomeSettings_linkButton_"],
+div[class*="DayView_dayViewLabel_"],
+[class*="ImportDataPageView_browse_"] {
     color: var(--link-color) !important;
 }
 
 /* General button text color (catch-all for many standard buttons) */
-button[type="button"]:not(>.icon-pencil) {
+button[type="button"]:not(:has(> .icon-pencil)),
+button[class*="Button_btn_"] {
     color: var(--text-primary) !important;
 }
 
