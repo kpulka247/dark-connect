@@ -1,3 +1,12 @@
+## [2.2.2](https://github.com/kpulka247/dark-connect/compare/v2.2.1...v2.2.2) (2025-05-23)
+
+### Bug Fixes
+
+* Exclude wrong paths from theming on connect.garmin.com ([80cbbf9](https://github.com/kpulka247/dark-connect/commit/80cbbf978e5dd48936b557674e4486b724630075))
+* Fix bugs caused by the latest update ([c00796e](https://github.com/kpulka247/dark-connect/commit/c00796e55fe32a7204025587633a64caec730f32))
+* Fix colors for new account ([85d668c](https://github.com/kpulka247/dark-connect/commit/85d668c34135b965fb819abf3269a0afb9fe88a4))
+* Fix group label color ([49c2bfa](https://github.com/kpulka247/dark-connect/commit/49c2bfabaa38d4e35dd77408f4f19657533e7961))
+
 ## [2.2.1](https://github.com/kpulka247/dark-connect/compare/v2.2.0...v2.2.1) (2025-05-22)
 
 ### Bug Fixes
