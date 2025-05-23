@@ -58,23 +58,10 @@ div[class*="BPPage_actionButtonsContainer_"] {
     background: var(--background-primary);
 }
 
-
 /* Androgynous Model Overlay */
 div[class*="AndrogynousModel_overlay_"] {
     background-color: var(--background-soft) !important;
     opacity: 0.75 !important;
-}
-
-/* Garmin C-prefix classes (likely third-party or old) */
-.c0164,
-.c0127,
-.c0122 {
-    background-color: var(--background-primary) !important;
-}
-
-.c015 p {
-    /* Needs checking - black text on dark? */
-    color: var(--color-black) !important;
 }
 
 /* Body Battery */
