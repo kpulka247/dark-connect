@@ -26,3 +26,8 @@ div[class*="Alert_warning_"] {
 [class*="Alert_closeBtn_"] {
     color: var(--text-primary) !important;
 }
+
+/* Permissions */
+[class*="GdprLimitedFeatureAlert_limitedFeatureAlertText_"] a {
+    color: var(--link-color) !important;
+}

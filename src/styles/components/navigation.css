@@ -3,6 +3,16 @@
     border-color: var(--border-default) !important;
 }
 
+.nav-tabs>.active>a,
+.nav-tabs li a:hover,
+.nav-tabs li a:focus {
+    color: var(--text-primary) !important;
+}
+
+.nav-tabs>li>a {
+    color: var(--text-secondary) !important;
+}
+
 ul[class*="NavigationTabs_navigationTabs_"] {
     background-color: var(--background-soft) !important;
     color: var(--text-primary) !important;

@@ -39,3 +39,9 @@ h6[class*="HomeSettingsModal_"],
 p[class*="HomeSettingsModal_"] {
     color: var(--text-primary) !important;
 }
+
+/* Welcome Page */
+[class*="WelcomeGC5Page_welcomeTitle_"],
+[class*="WelcomeGC5Page_welcomeDescription_"] {
+    color: var(--text-primary) !important;
+}

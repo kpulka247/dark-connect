@@ -18,6 +18,13 @@
         "https://livetrack.garmin.com/*",
         "https://live.garmin.com/*"
       ],
+      "exclude_matches": [
+        "https://connect.garmin.com/",
+        "https://connect.garmin.com/signin/*",
+        "https://connect.garmin.com/start/*",
+        "https://connect.garmin.com/support/*",
+        "https://connect.garmin.com/status/*"
+      ],
       "css": [
         "styles/main.css"
       ]

@@ -58,23 +58,10 @@ div[class*="BPPage_actionButtonsContainer_"] {
     background: var(--background-primary);
 }
 
-
 /* Androgynous Model Overlay */
 div[class*="AndrogynousModel_overlay_"] {
     background-color: var(--background-soft) !important;
     opacity: 0.75 !important;
-}
-
-/* Garmin C-prefix classes (likely third-party or old) */
-.c0164,
-.c0127,
-.c0122 {
-    background-color: var(--background-primary) !important;
-}
-
-.c015 p {
-    /* Needs checking - black text on dark? */
-    color: var(--color-black) !important;
 }
 
 /* Body Battery */
@@ -115,8 +102,14 @@ h4[class*="PersonalRecordsPageView_helpHeading_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="PersonalRecordsPageView_header_"] {
+    border-color: var(--border-default) !important;
+}
+
 tr[class*="Tab_previousPR_"] td,
-tr[class*="Tab_isNew_"] th {
+tr[class*="Tab_isNew_"] th,
+[class*="Tab_table_"] [class*="Tab_previousPR_"] th:last-child,
+[class*="Tab_table_"] [class*="Tab_previousPR_"] td:last-child {
     background-color: var(--background-primary) !important;
     border-color: var(--color-white) !important;
 }

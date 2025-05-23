@@ -5,8 +5,6 @@
 .table-bordered,
 table[class*="StrengthTable_table_"] thead tr,
 tr[class*="ReportTableComponent_tableRow_"],
-table[class*="Tab_table_"] tr:last-child th,
-table[class*="Tab_table_"] tr:last-child td,
 table[class*="Tab_table_"] th,
 table[class*="Tab_table_"] td,
 [class*="WeightsTables_weightsTable_"] th,

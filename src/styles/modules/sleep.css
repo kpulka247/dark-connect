@@ -68,6 +68,10 @@ div[class*="SleepChart_tooltip_"] {
     border-color: var(--border-default) !important;
 }
 
+[class*="SleepChartTooltipColumn_tooltipBullet_"][style="background-color: rgb(0, 0, 0);"] {
+    background-color: var(--color-white) !important;
+}
+
 div[class*="SleepScoreReport_tooltipContainer_"],
 div[class*="Notes_notes_"] {
     /* Tooltip background */

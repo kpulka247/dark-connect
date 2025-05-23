@@ -10,9 +10,18 @@ div[class*="SidebarNavigation_header_"] {
     color: var(--text-primary) !important;
 }
 
-div[class*="FindPlanCard_card_"] {
+div[class*="FindPlanCard_card_"],
+.plan-detail .bio,
+.plan-detail .bio .bio-created,
+.plan-detail .disclaimer {
     /* Plan Card Border */
     border-color: var(--border-default) !important;
+}
+
+.training-plan-preview:after {
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            var(--background-primary) 100%) !important;
 }
 
 .find-plan-filters .btn-pill {
