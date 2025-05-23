@@ -156,6 +156,10 @@ div[class*="AnchoredBanner_bannerHeader_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="AnchoredBanner_bannerBody_"] {
+    color: var(--text-secondary) !important;
+}
+
 /* Cross-sell ad styling */
 div[class*="CrossSellAd_textWrapper_"],
 div[class*="CrossSellAd_imageWrapper_"] {

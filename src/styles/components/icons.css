@@ -31,8 +31,7 @@ svg[data-library="ui-icons"][fill="#101010"],
     color: var(--color-red-remove) !important;
 }
 
-.icon-add-secondary-stats,
-div[class*="PersonalRecordsPageView_header_"] button i {
+.icon-add-secondary-stats {
     color: var(--link-color) !important;
 }
 
@@ -50,11 +49,6 @@ div[class*="PersonalRecordsPageView_header_"] button i {
 [class*="HelpIcon_helpIcon_"] svg {
     color: var(--color-blue-primary) !important;
     fill: var(--color-blue-primary) !important;
-}
-
-.icon-speech-bubble span,
-.edit-gear-tracking span {
-    color: var(--background-primary) !important;
 }
 
 .page-navigation-action:hover,

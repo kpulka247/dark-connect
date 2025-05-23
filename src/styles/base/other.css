@@ -115,8 +115,14 @@ h4[class*="PersonalRecordsPageView_helpHeading_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="PersonalRecordsPageView_header_"] {
+    border-color: var(--border-default) !important;
+}
+
 tr[class*="Tab_previousPR_"] td,
-tr[class*="Tab_isNew_"] th {
+tr[class*="Tab_isNew_"] th,
+[class*="Tab_table_"] [class*="Tab_previousPR_"] th:last-child,
+[class*="Tab_table_"] [class*="Tab_previousPR_"] td:last-child {
     background-color: var(--background-primary) !important;
     border-color: var(--color-white) !important;
 }
