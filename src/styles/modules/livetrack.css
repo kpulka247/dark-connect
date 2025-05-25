@@ -3,7 +3,8 @@
 .splitsNavigation,
 .splitsContainer table td,
 .splitsContainer th,
-.expired-msg {
+.expired-msg,
+span[class*="UserOptions_username_"] {
     color: var(--text-primary) !important;
 }
 
@@ -47,6 +48,10 @@ div[class*="PageContainer_paper_"] {
 /* Chip Buttons */
 div[class*="Chip_dataTypeButton_"] {
     background-color: var(--color-black) !important;
+    color: var(--text-primary) !important;
+}
+
+[class*="ChartChip_chip_"] {
     color: var(--text-primary) !important;
 }
 
