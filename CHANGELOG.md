@@ -1,3 +1,9 @@
+## [2.2.3](https://github.com/kpulka247/dark-connect/compare/v2.2.2...v2.2.3) (2025-05-25)
+
+### Bug Fixes
+
+* Fix LiveTrack buttons text color ([619b941](https://github.com/kpulka247/dark-connect/commit/619b94191e9de40dc343a58815e3269c63ddcce6))
+
 ## [2.2.2](https://github.com/kpulka247/dark-connect/compare/v2.2.1...v2.2.2) (2025-05-23)
 
 ### Bug Fixes
