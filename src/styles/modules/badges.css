@@ -39,3 +39,13 @@
 [class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
     border-color: var(--border-default) !important;
 }
+
+/* Badge Details */
+.badge-detail a {
+    color: var(--link-color) !important;
+}
+
+.badge-detail .badge-earned-msg-list li:first-child,
+.badge-detail .badge-earned-msg-list li {
+    border-color: var(--border-default) !important;
+}
