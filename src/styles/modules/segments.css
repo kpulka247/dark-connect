@@ -129,3 +129,8 @@ div[class*="SegmentsListCard_stravaCard_"] {
 [class*="VirtualPartner_sectionHeader_"] {
     color: var(--text-primary) !important;
 }
+
+/* Privacy Menu */
+[class*="SegmentsPrivacyMenu_editPrivacyLabel_"] {
+    color: var(--link-color) !important;
+}
