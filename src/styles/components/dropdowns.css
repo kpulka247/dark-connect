@@ -30,7 +30,8 @@ div[class*="UnifiedDropdown_dropdownMenu_"],
 /* Dropdown Menu Content/Text */
 .dropdown-menu>li>label,
 [class*="Menu_menuItems_"],
-.reportImageDropdown .dropdown-menu>li.clearfix>i {
+.reportImageDropdown .dropdown-menu>li.clearfix>i,
+[class*="ShareButton_shareButton_"] {
     /* Also icons */
     color: var(--text-primary) !important;
 }
