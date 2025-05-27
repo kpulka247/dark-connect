@@ -96,7 +96,6 @@ div[class*="Components_dataTypeButton_"]:active {
     background: var(--background-secondary) !important;
 }
 
-/* Chip Buttons from content.js */
 [class*="Chip_buttonSelected_"],
 [class*="Chip_dataTypeButton_"]:hover,
 [class*="Chip_dataTypeButton_"]:active,
@@ -131,7 +130,7 @@ button[class*="ExercisePicker_dropdownToggle_"] svg {
 }
 
 /* Link Button Style */
-button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(:has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]),
+button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(:has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not([class*="InlineEdit_editIcon_"], [class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"]),
 .accordion a.active,
 .accordion a:active,
 .accordion a:focus,
@@ -163,11 +162,12 @@ div[class*="DayView_dayViewLabel_"],
 
 /* General button text color (catch-all for many standard buttons) */
 button[type="button"]:not(:has(> .icon-pencil)),
-button[class*="Button_btn_"] {
+button[class*="Button_btn_"],
+[class*="InlineEdit_editIcon_"]:hover {
     color: var(--text-primary) !important;
 }
 
-button svg {
+button svg:not([class*="InlineEdit_editIcon_"] svg, [class*="InlineEdit_saveIcon_"] svg, [class*="InlineEdit_closeIcon_"] svg) {
     fill: var(--color-white);
 }
 

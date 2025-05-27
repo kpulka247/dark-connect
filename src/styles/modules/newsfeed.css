@@ -15,6 +15,16 @@ div[class*="NewsFeedFilter_feedFilterDetail_"] {
     background-color: var(--background-light) !important;
 }
 
+[class*="NewsFeedFilter_filterOnlyText_"] {
+    color: var(--link-color) !important;
+}
+
+[class*="Menu_StandardMenuBtn_"]:hover,
+.dropdown-trigger:hover,
+.inline-edit-select button,
+[class*="ActivityMapView_closeButton_"] {
+    color: var(--text-primary) !important;
+}
 
 /* Comment/Like Section (Shared with Activity) */
 div[class*="CommentLikeSection_divider_"] {
