@@ -1,3 +1,13 @@
+## [2.2.4](https://github.com/kpulka247/dark-connect/compare/v2.2.3...v2.2.4) (2025-05-27)
+
+### Bug Fixes
+
+* Fix badge details colors ([0d57028](https://github.com/kpulka247/dark-connect/commit/0d570288ccabdd9f22d13fb7afd4d46eca89815c))
+* Fix newsfeed elements ([548a66c](https://github.com/kpulka247/dark-connect/commit/548a66cfd6ee9a3d8a442de67c1313260b068a61))
+* Fix PacePro highcharts point color ([1e27002](https://github.com/kpulka247/dark-connect/commit/1e27002f1ecf5d8d15a3448c650f834af10dd5d0))
+* Fix profile share dropdown text color ([cca613c](https://github.com/kpulka247/dark-connect/commit/cca613c10832097bab3a7c5567771a153ed77376))
+* Fix segments privacy link color ([cdaa0c2](https://github.com/kpulka247/dark-connect/commit/cdaa0c2f0963df0aaffdde1401d89a639e16ae20))
+
 ## [2.2.3](https://github.com/kpulka247/dark-connect/compare/v2.2.2...v2.2.3) (2025-05-25)
 
 ### Bug Fixes
