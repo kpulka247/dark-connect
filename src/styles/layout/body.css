@@ -25,6 +25,7 @@ div[class*="Gc5PageWrapper_pageWrapper_"] {
 #consent #truste-consent-required,
 #consent #truste-show-consent {
     background-color: var(--background-soft) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Newsfeed specific body background (overrides general) */
