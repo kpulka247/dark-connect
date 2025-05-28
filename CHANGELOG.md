@@ -1,3 +1,9 @@
+## [2.2.5](https://github.com/kpulka247/dark-connect/compare/v2.2.4...v2.2.5) (2025-05-28)
+
+### Bug Fixes
+
+* Fix truste consent button color ([bd1b132](https://github.com/kpulka247/dark-connect/commit/bd1b13245be9e8d40c21c94433f65edbbec530c6))
+
 ## [2.2.4](https://github.com/kpulka247/dark-connect/compare/v2.2.3...v2.2.4) (2025-05-27)
 
 ### Bug Fixes
