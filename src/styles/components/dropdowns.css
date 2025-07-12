@@ -40,6 +40,10 @@ div[class*="UnifiedDropdown_dropdownMenu_"],
     color: var(--color-white) !important;
 }
 
+[class*="Dropdown_dropdownMenu_"] li:not([class*="Dropdown_divider_"]):hover {
+    background-color: var(--background-secondary) !important;
+}
+
 /* Dropdown Dividers */
 .dropdown-menu .divider,
 div[class*="ExercisePicker_divider_"],
