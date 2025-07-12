@@ -67,8 +67,38 @@ button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
     background-color: var(--background-primary) !important;
 }
 
+.btn:focus:not([class*=search]) {
+    box-shadow: 0 0 0 2px var(--background-primary), 0 0 0 4px var(--color-blue-primary) !important;
+}
+
 /* Secondary Button Style */
 div[class*="Button_btn_"][class*="Button_btnSecondary_"] {
+    background-color: var(--background-medium) !important;
+    color: var(--text-primary) !important;
+}
+
+[class*="Button_btn_"][class*="Button_secondary_"],
+[class*="Button_btn_"][class*="Button_secondary_"][disabled]:hover,
+[class*="Button_btn_"][class*="Button_secondary_"][disabled]:focus {
+    background-color: var(--background-medium) !important;
+    color: var(--text-primary) !important;
+}
+
+.btn.btn-secondary,
+.btn.btn-secondary[disabled]:hover,
+.btn.btn-secondary[disabled]:focus,
+.btn.btn-secondary.disabled,
+.btn.btn-secondary.disabled:hover,
+.btn.btn-secondary.disabled:focus {
+    background-color: var(--background-light) !important;
+    color: var(--text-primary) !important;
+}
+
+[class*="Button_btn_"][class*="Button_secondary_"]:hover {
+    background-color: var(--background-light) !important;
+}
+
+.btn.btn-secondary:hover {
     background-color: var(--background-medium) !important;
     color: var(--text-primary) !important;
 }
@@ -113,6 +143,19 @@ div[class*="Chip_dataTypeButton_"] {
     /* LiveTrack */
     background-color: var(--color-black) !important;
     color: var(--text-primary) !important;
+}
+
+/* Chip */
+[class*="Chip_chip_"] {
+    background-color: var(--background-primary) !important;
+}
+
+[class*="Chip_chip_"]:hover {
+    background-color: var(--background-secondary) !important;
+}
+
+[class*="Chip_chip_"][class*="Chip_selected_"] {
+    background-color: var(--background-light) !important;
 }
 
 /* Chart Chip */
