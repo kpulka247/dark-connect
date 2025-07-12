@@ -1,3 +1,9 @@
+## [2.2.6](https://github.com/kpulka247/dark-connect/compare/v2.2.5...v2.2.6) (2025-07-12)
+
+### Bug Fixes
+
+* Fix light button with light text background color ([6e671d7](https://github.com/kpulka247/dark-connect/commit/6e671d74af9a4d63c9298df3356f779b86ca151f))
+
 ## [2.2.5](https://github.com/kpulka247/dark-connect/compare/v2.2.4...v2.2.5) (2025-05-28)
 
 ### Bug Fixes
