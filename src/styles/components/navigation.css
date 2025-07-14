@@ -57,7 +57,9 @@ div[class*="BreadcrumbForm_mainContainer_"] {
 /* Accordion Navigation */
 .accordion a.active,
 .accordion a:active,
-.accordion a:focus {
+.accordion a:focus,
+[class*="ReportSelector_accordionItemsDetailList_"] li:hover,
+[class*="ReportSelector_accordionItemsDetailList_"] li[class*="ReportSelector_selected_"] {
     color: var(--link-color) !important;
     /* Uses link button style */
 }

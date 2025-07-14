@@ -39,7 +39,8 @@ button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
 /* Navigation buttons / icons */
 div[class*="NavigationComponent_datePickerContainer_"],
 /* This might fit better in datepickers? */
-div[class*="NavigationComponent_buttonIcon_"] {
+div[class*="NavigationComponent_buttonIcon_"],
+div[class*="Report_datePickerContainer_"]{
     background-color: var(--background-soft) !important;
     color: var(--text-primary) !important;
 }
@@ -72,11 +73,7 @@ button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
 }
 
 /* Secondary Button Style */
-div[class*="Button_btn_"][class*="Button_btnSecondary_"] {
-    background-color: var(--background-medium) !important;
-    color: var(--text-primary) !important;
-}
-
+div[class*="Button_btn_"][class*="Button_btnSecondary_"],
 [class*="Button_btn_"][class*="Button_secondary_"],
 [class*="Button_btn_"][class*="Button_secondary_"][disabled]:hover,
 [class*="Button_btn_"][class*="Button_secondary_"][disabled]:focus {
@@ -84,21 +81,22 @@ div[class*="Button_btn_"][class*="Button_btnSecondary_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="Button_btn_"][class*="Button_secondary_"]:hover,
 .btn.btn-secondary,
 .btn.btn-secondary[disabled]:hover,
 .btn.btn-secondary[disabled]:focus,
 .btn.btn-secondary.disabled,
 .btn.btn-secondary.disabled:hover,
-.btn.btn-secondary.disabled:focus {
+.btn.btn-secondary.disabled:focus,
+[class*="Report_buttonIcon_"],
+[class*="NavigationComponent_buttonIcon_"] {
     background-color: var(--background-light) !important;
     color: var(--text-primary) !important;
 }
 
-[class*="Button_btn_"][class*="Button_secondary_"]:hover {
-    background-color: var(--background-light) !important;
-}
-
-.btn.btn-secondary:hover {
+.btn.btn-secondary:hover,
+[class*="Report_buttonIcon_"]:hover:not([disabled]),
+[class*="NavigationComponent_buttonIcon_"]:hover:not([disabled]) {
     background-color: var(--background-medium) !important;
     color: var(--text-primary) !important;
 }

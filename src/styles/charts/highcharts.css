@@ -133,6 +133,8 @@ path.highcharts-point[fill="#cc6300"] {
 
 /* Column / Bar Strokes */
 g.recharts-layer .recharts-bar-rectangle,
+g.recharts-layer .recharts-bar-rectangle path[class*="TrainingStatusChart_barchartBarSeg_"],
+g.recharts-layer .recharts-bar-rectangle rect[class*="TrainingStatusChart_barchartBarSeg_"],
 /* Includes Recharts temporarily, move later */
 g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path,
 g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path,
