@@ -124,7 +124,8 @@ div[class*="SleepSecondaryStatCard_durationValue_"],
 h3[class*="BloodPressureSecondaryStatCard_latestReading_"],
 span[class*="SecondaryStatCard_secondaryStatsTitle_"],
 div[class*="SecondaryStatCard_secondaryStatsTitle_"],
-div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"] {
+div[class*="HeatAcclimationSecondaryStatCard_acclimationValue_"],
+div[class*="RunningLactateThresholdSecondaryStatCard_runningLactateThresholdDataLargeCell_"] {
     color: var(--text-primary) !important;
 }
 
