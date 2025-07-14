@@ -261,7 +261,8 @@ div[class*="Tag_tag_"] {
 /* Training Header (Generic) */
 div[class*="TrainingHeader_planName_"],
 div[class*="TrainingHeader_planDetail_"],
-div[class*="TrainingStatus_modalHeader_"] h4 {
+div[class*="TrainingStatus_modalHeader_"] h4,
+[class*="TrainingStatusChart_legendText_"] {
     color: var(--text-primary) !important;
 }
 

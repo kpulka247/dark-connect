@@ -82,3 +82,18 @@ g.recharts-layer.recharts-line path[stroke="black"] {
     /* Black line stroke override */
     stroke: var(--color-white) !important;
 }
+
+/* Cartesian grid background */
+.recharts-cartesian-grid-bg[fill="#f4f4f4"] {
+    fill: var(--background-secondary) !important;
+}
+
+.recharts-cartesian-grid-bg[fill="#ffffff"] {
+    fill: var(--background-primary) !important;
+}
+
+.recharts-cartesian-grid-vertical line[stroke="#ccc"],
+.recharts-cartesian-grid-horizontal line[stroke="#ccc"] {
+    /* Vertical grid lines */
+    stroke: var(--color-gray-light) !important;
+}
