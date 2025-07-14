@@ -1,3 +1,10 @@
+## [2.2.7](https://github.com/kpulka247/dark-connect/compare/v2.2.6...v2.2.7) (2025-07-14)
+
+### Bug Fixes
+
+* Fix running lactate secondary stat card text color ([d0e41ae](https://github.com/kpulka247/dark-connect/commit/d0e41ae806c29cc28461dbe284f175111725a77d)), closes [#13](https://github.com/kpulka247/dark-connect/issues/13)
+* Fix training status report page update issues ([eb23bf9](https://github.com/kpulka247/dark-connect/commit/eb23bf9016b2a85588865cd65013fe4c2f03685e))
+
 ## [2.2.6](https://github.com/kpulka247/dark-connect/compare/v2.2.5...v2.2.6) (2025-07-12)
 
 ### Bug Fixes
