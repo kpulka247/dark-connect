@@ -208,7 +208,7 @@ button[class*="Button_btn_"],
     color: var(--text-primary) !important;
 }
 
-button svg:not([class*="InlineEdit_editIcon_"] svg, [class*="InlineEdit_saveIcon_"] svg, [class*="InlineEdit_closeIcon_"] svg) {
+button svg:not([class*="InlineEdit_editIcon_"] svg, [class*="InlineEdit_saveIcon_"] svg, [class*="InlineEdit_closeIcon_"] svg, [class*="MainSidebar_menuItemLink_"] svg) {
     fill: var(--color-white);
 }
 
