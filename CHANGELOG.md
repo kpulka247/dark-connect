@@ -1,3 +1,9 @@
+## [2.2.8](https://github.com/kpulka247/dark-connect/compare/v2.2.7...v2.2.8) (2025-07-15)
+
+### Bug Fixes
+
+* Fix sidebar menu icon color ([7b4378d](https://github.com/kpulka247/dark-connect/commit/7b4378d0f6277ed748d63a6d679edb71de3aa41c))
+
 ## [2.2.7](https://github.com/kpulka247/dark-connect/compare/v2.2.6...v2.2.7) (2025-07-14)
 
 ### Bug Fixes
