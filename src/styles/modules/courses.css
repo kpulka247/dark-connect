@@ -67,7 +67,8 @@ div[class*="RoutingOptions_selectContainer_"],
 p[class*="CourseDetailsSection_sectionTitle_"],
 label[class*="AddCoursePoint_pointNameLabel_"],
 p[class*="AddCoursePoint_sectionInfoText_"],
-[class*="CourseDetails_lapPointsLabel_"] {
+[class*="CourseDetails_lapPointsLabel_"],
+[class*="GarminInputWrapper_label_"] {
     color: var(--text-primary) !important;
 }
 
@@ -77,7 +78,8 @@ div[class*="Course_elevationExpandedChartContainer_"] {
     border-color: var(--border-default) !important;
 }
 
-[class*="expandCollapseButton_"] button {
+[class*="expandCollapseButton_"] button,
+[class*="VirtualPartner_leanMoreLink_"] {
     color: var(--link-color) !important;
 }
 
