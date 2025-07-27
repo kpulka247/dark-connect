@@ -15,7 +15,8 @@ div[class*="NewsFeedFilter_feedFilterDetail_"] {
     background-color: var(--background-light) !important;
 }
 
-[class*="NewsFeedFilter_filterOnlyText_"] {
+[class*="NewsFeedFilter_filterOnlyText_"],
+[class*="NewsFeedSuggestedConnections_seeAllLink_"] {
     color: var(--link-color) !important;
 }
 
@@ -42,4 +43,18 @@ div[class*="CommentLikeSection_likeCommentContainer_"] {
 div[class*="CommentLikeSection_profileImage_"],
 img[class*="CommentLikeSection_profileImage_"] {
     border-color: var(--border-default) !important;
+}
+
+/* News Feed Connection Card */
+[class*="NewsFeedConnectionCard_cardContainer_"] {
+    border-color: var(--border-default) !important;
+}
+
+button[class*="Button_btn_"][class*="Button_secondary_"][class*="Button_small_"][class*="Button_iconButton_"] {
+    color: var(--text-primary) !important;
+    background-color: var(--background-primary) !important;
+}
+
+button[class*="Button_btn_"][class*="Button_secondary_"][class*="Button_small_"][class*="Button_iconButton_"]:hover {
+    background-color: var(--background-soft) !important;
 }

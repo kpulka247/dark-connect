@@ -67,7 +67,8 @@ div[class*="RoutingOptions_selectContainer_"],
 p[class*="CourseDetailsSection_sectionTitle_"],
 label[class*="AddCoursePoint_pointNameLabel_"],
 p[class*="AddCoursePoint_sectionInfoText_"],
-[class*="CourseDetails_lapPointsLabel_"] {
+[class*="CourseDetails_lapPointsLabel_"],
+[class*="GarminInputWrapper_label_"] {
     color: var(--text-primary) !important;
 }
 
@@ -77,13 +78,15 @@ div[class*="Course_elevationExpandedChartContainer_"] {
     border-color: var(--border-default) !important;
 }
 
-[class*="expandCollapseButton_"] button {
+[class*="expandCollapseButton_"] button,
+[class*="VirtualPartner_leanMoreLink_"] {
     color: var(--link-color) !important;
 }
 
 .course-pt,
 /* Course point border */
-.course-pt-lap {
+.course-pt-lap,
+[class*="CourseDetails_borderedLink_"] {
     /* Course point lap border */
     border-color: var(--border-default) !important;
 }
@@ -161,6 +164,16 @@ div[class*="CourseMap_contextMenuContainerForPoint_"] {
     /* Context menu background/border */
     background: var(--background-primary) !important;
     border-color: var(--border-default) !important;
+}
+
+div[class*="CourseMap_contextMenuContainerForPoint_"] button {
+    /* Context menu button text */
+    color: var(--text-primary) !important;
+}
+
+div[class*="CourseMap_contextMenuContainerForPoint_"] button:hover {
+    /* Context menu button background */
+    background: var(--background-soft) !important;
 }
 
 div[class*="CreateCourseOptionsBanner_optionsBanner_"] {
