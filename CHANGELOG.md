@@ -1,3 +1,14 @@
+## [2.2.9](https://github.com/kpulka247/dark-connect/compare/v2.2.8...v2.2.9) (2025-07-27)
+
+### Bug Fixes
+
+* Fix badges name and details text color ([de3e4fd](https://github.com/kpulka247/dark-connect/commit/de3e4fd056da0f6e082f1a093d9a0d2a47dbda25))
+* Fix course details border ([cc7edcf](https://github.com/kpulka247/dark-connect/commit/cc7edcf568a9d3bcf0d7b55ad9df4a3df9901571))
+* Fix course edit label colors ([9b6b318](https://github.com/kpulka247/dark-connect/commit/9b6b3189d7eda6a1bd7fabf1f905ab272a609f59))
+* Fix course edit point delete container ([5a5491d](https://github.com/kpulka247/dark-connect/commit/5a5491db68229be1120ced343cd23b28e6ac8d4a))
+* Fix course edit point delete container ([26afa09](https://github.com/kpulka247/dark-connect/commit/26afa09e732f17ff1462daf617d41611201508ad))
+* Fix newsfeed connection card ([4193bb4](https://github.com/kpulka247/dark-connect/commit/4193bb43675819d61e65eb748773ea4076a1ed78))
+
 ## [2.2.8](https://github.com/kpulka247/dark-connect/compare/v2.2.7...v2.2.8) (2025-07-15)
 
 ### Bug Fixes
