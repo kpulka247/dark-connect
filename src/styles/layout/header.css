@@ -54,7 +54,7 @@ div[class*="GroupPageHeader_groupMetadata_"] {
     border-color: var(--border-default) !important;
 }
 
-/* User options menu (often in header) */
+/* User options menu */
 menu[class*="UserOptions_userOptionsMenu_"] {
     background-color: var(--background-primary) !important;
     border-color: var(--border-default) !important;
