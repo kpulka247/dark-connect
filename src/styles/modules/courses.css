@@ -165,6 +165,16 @@ div[class*="CourseMap_contextMenuContainerForPoint_"] {
     border-color: var(--border-default) !important;
 }
 
+div[class*="CourseMap_contextMenuContainerForPoint_"] button {
+    /* Context menu button text */
+    color: var(--text-primary) !important;
+}
+
+div[class*="CourseMap_contextMenuContainerForPoint_"] button:hover {
+    /* Context menu button background */
+    background: var(--background-medium) !important;
+}
+
 div[class*="CreateCourseOptionsBanner_optionsBanner_"] {
     /* Banner background/border */
     background-color: var(--background-primary) !important;
