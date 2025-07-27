@@ -173,7 +173,7 @@ div[class*="CourseMap_contextMenuContainerForPoint_"] button {
 
 div[class*="CourseMap_contextMenuContainerForPoint_"] button:hover {
     /* Context menu button background */
-    background: var(--background-medium) !important;
+    background: var(--background-soft) !important;
 }
 
 div[class*="CreateCourseOptionsBanner_optionsBanner_"] {
