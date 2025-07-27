@@ -11,6 +11,12 @@ a[class*="ConnectionList"] {
     background-color: var(--background-primary) !important;
 }
 
+div[class*="ConnectionList"]:hover,
+a[class*="ConnectionList"]:hover {
+    /* List background */
+    border-color: var(--color-white) !important;
+}
+
 div[class*="ConnectionList_itemContainer_"][class*="ConnectionList_card_"] {
     border-color: var(--border-default) !important;
 }
