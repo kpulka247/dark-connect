@@ -3,7 +3,8 @@
     border-color: var(--border-default) !important;
 }
 
-.badge-detail.badge-earned {
+.badge-detail.badge-earned,
+.badge-earned .badge-thumbnail .badge-name {
     /* Earned badge text */
     color: var(--text-primary);
 }
@@ -41,6 +42,12 @@
 }
 
 /* Badge Details */
+.badge-summary .badge-name,
+.badge-criteria,
+.badge-points {
+    color: var(--text-primary) !important;
+}
+
 .badge-detail a {
     color: var(--link-color) !important;
 }
