@@ -85,7 +85,8 @@ div[class*="Course_elevationExpandedChartContainer_"] {
 
 .course-pt,
 /* Course point border */
-.course-pt-lap {
+.course-pt-lap,
+[class*="CourseDetails_borderedLink_"] {
     /* Course point lap border */
     border-color: var(--border-default) !important;
 }
