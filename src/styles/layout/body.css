@@ -142,8 +142,16 @@ div[class*="Gc5DetailCard_cardDetail_SubText_"] {
 /* Generic profile related */
 div[class*="ProfileImage_userWrapper_"],
 div[class*="ProfileHeader_profileHeaderBanner_"] {
-    /* This might be better in header.css if it's part of the main header */
     color: var(--text-primary) !important;
+}
+
+.socialButtons a button[class*="Button_btn_"][class*="Button_primary_"][class*="Button_medium_"][class*="Button_iconButton_"],
+[class*="UserStats_viewMore_"] {
+    color: var(--link-color) !important;
+}
+
+.socialButtons a button[class*="Button_btn_"][class*="Button_primary_"][class*="Button_medium_"][class*="Button_iconButton_"]:hover {
+    background-color: var(--background-soft) !important;
 }
 
 /* Generic banner */
