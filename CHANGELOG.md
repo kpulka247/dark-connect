@@ -1,3 +1,9 @@
+## [2.2.10](https://github.com/kpulka247/dark-connect/compare/v2.2.9...v2.2.10) (2025-07-27)
+
+### Bug Fixes
+
+* Fix edit profile button color ([bd05326](https://github.com/kpulka247/dark-connect/commit/bd05326a8969e263ddbc1205dcdcdcbff4de8c68))
+
 ## [2.2.9](https://github.com/kpulka247/dark-connect/compare/v2.2.8...v2.2.9) (2025-07-27)
 
 ### Bug Fixes
