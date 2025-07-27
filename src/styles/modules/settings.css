@@ -52,7 +52,7 @@ p[class*="UserSubscription_darkText_"] {
     color: var(--text-primary) !important;
 }
 
-/* Profile Header (if part of settings/profile page) */
+/* Profile Header */
 div[class*="ProfileHeader_profileHeaderBanner_"] {
     color: var(--text-primary) !important;
 }
@@ -107,29 +107,5 @@ div[class*="ReorderSelectedStats_reorderListItem_"] label {
 /* Primary Device Label */
 .primaryDeviceLabel {
     background-color: var(--background-medium) !important;
-    color: var(--text-primary) !important;
-}
-
-/* User Options Menu (Header also has this) */
-menu[class*="UserOptions_userOptionsMenu_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    box-shadow: 0 5px 10px var(--color-shadow-light-10) !important;
-}
-
-menu[class*="UserOptions_userOptionsMenu_"] li a {
-    color: var(--link-color) !important;
-}
-
-[class*="UserOptions_userOptionsMenu_"] {
-    color: var(--text-primary) !important;
-}
-
-[class*="UserOptions_userOptionsMenu_"]>li:not(:first-child) {
-    border-color: var(--border-default) !important;
-}
-
-/* Generic Settings Text */
-div[class*="ProfileImage_userWrapper_"] {
     color: var(--text-primary) !important;
 }
