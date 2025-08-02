@@ -1,3 +1,12 @@
+## [2.2.11](https://github.com/kpulka247/dark-connect/compare/v2.2.10...v2.2.11) (2025-08-02)
+
+### Bug Fixes
+
+* Fix export button color ([0cfeefa](https://github.com/kpulka247/dark-connect/commit/0cfeefaf2ff339cf91768a82650269eeb5805b0e))
+* Fix notification close button color ([fe62ee7](https://github.com/kpulka247/dark-connect/commit/fe62ee76a5ec95e6f265c519e54286e6f75e91da))
+* Fix report tooltip background color ([1da453c](https://github.com/kpulka247/dark-connect/commit/1da453c07b8be3c2bcc859ab9a25c8e0d4b4dd2b))
+* Fix workout card empty background color ([29dcf14](https://github.com/kpulka247/dark-connect/commit/29dcf14a69b7ea453887ea4dc57835adf913cc71))
+
 ## [2.2.10](https://github.com/kpulka247/dark-connect/compare/v2.2.9...v2.2.10) (2025-07-27)
 
 ### Bug Fixes
