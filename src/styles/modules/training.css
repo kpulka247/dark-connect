@@ -154,6 +154,10 @@ div[class*="WorkoutStep_workoutStepDataValue_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="WorkoutCard_cardImage_"] {
+    background-color: var(--background-secondary) !important;
+}
+
 span[class*="WorkoutModal_workoutStepContainer_"] {
     /* Modal Step Container */
     background: var(--background-primary) !important;
