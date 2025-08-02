@@ -42,7 +42,8 @@ div[class*="EnduranceScoreReportChartView_tooltipText_"],
 div[class*="MovementReportChart_tooltip_"],
 div[class*="FloorsDataReport_tooltip_"],
 div[class*="SleepChart_tooltip_"],
-div[class*="HRVTimelineChart_tooltip_"] {
+div[class*="HRVTimelineChart_tooltip_"],
+div[class*="Report_reportChartTooltipWrapper_"] {
     /* Uses different background */
     background: var(--background-primary) !important;
     border-color: var(--border-default) !important;
