@@ -149,7 +149,8 @@ div[class*="AdaptiveCoachingTrainingPlanDetails_contentContainer_"] {
 
 
 /* Workouts */
-div[class*="WorkoutStep_workoutStepDataValue_"] {
+div[class*="WorkoutStep_workoutStepDataValue_"],
+[class*="WorkoutModal_notesHeader_"] {
     /* Step Data Text */
     color: var(--text-primary) !important;
 }
@@ -182,10 +183,16 @@ div[class*="WorkoutStep_stepEditOpenContent_"] {
     background: var(--background-primary) !important;
 }
 
-div[class*="WorkoutRepeatStep_repeatStepWrapper_"] {
+div[class*="WorkoutRepeatStep_repeatStepWrapper_"],
+[class*="WorkoutStep_workoutModalStepContainer_"] [class*="WorkoutStep_newWorkoutStepRepeat_"] {
     /* Repeat Step Background/Border */
     background-color: var(--background-soft) !important;
     border-color: var(--border-default) !important;
+}
+
+[class*="WorkoutStep_newWorkoutStepRepeat_"] [class*="WorkoutStep_newWorkoutStepRepeatHeader_"] {
+    background-color: var(--background-soft) !important;
+    color: var(--text-primary) !important;
 }
 
 /* Workout Step Text/Icons */
