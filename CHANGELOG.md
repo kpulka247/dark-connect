@@ -1,3 +1,9 @@
+## [2.2.12](https://github.com/kpulka247/dark-connect/compare/v2.2.11...v2.2.12) (2025-08-07)
+
+### Bug Fixes
+
+* Fix workout calendar modal ([8963b45](https://github.com/kpulka247/dark-connect/commit/8963b453abe25ab637653500c6514d0f3f20ee7f))
+
 ## [2.2.11](https://github.com/kpulka247/dark-connect/compare/v2.2.10...v2.2.11) (2025-08-02)
 
 ### Bug Fixes
