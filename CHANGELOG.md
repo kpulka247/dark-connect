@@ -1,3 +1,9 @@
+## [2.2.13](https://github.com/kpulka247/dark-connect/compare/v2.2.12...v2.2.13) (2025-08-13)
+
+### Bug Fixes
+
+* Fix minor sleep coach bugs ([399158b](https://github.com/kpulka247/dark-connect/commit/399158b3a85287a9b3d69bf0ba5c15a82dec2deb))
+
 ## [2.2.12](https://github.com/kpulka247/dark-connect/compare/v2.2.11...v2.2.12) (2025-08-07)
 
 ### Bug Fixes
