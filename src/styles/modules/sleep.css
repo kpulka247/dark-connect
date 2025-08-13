@@ -31,9 +31,9 @@ div[class*="SleepStageStatus_barTick_"] {
 /* Sleep Naps */
 span[class*="AddNapView_timeText_"],
 h6[class*="AddNapView_addNap_"],
-p[class*="NapsTableView_tableTitle_"],
-p[class*="NapsTableView_napTip_"],
-div[class*="NapsTable_label_"] {
+[class*="NapsTableView_tableTitle_"],
+div[class*="NapsTable_label_"],
+[class*="NapsTableView_napTip_"] {
     color: var(--text-primary) !important;
 }
 
