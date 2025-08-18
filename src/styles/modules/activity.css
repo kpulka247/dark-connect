@@ -325,6 +325,15 @@ div[id="activityPhotosPlaceholder"] .modal,
     background-color: var(--color-black) !important;
 }
 
+[class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"] {
+    background-color: var(--color-overlay-dark-90) !important;
+}
+
+[class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"] [class*="ActivityPhotosDropzone_exceedLimitText_"],
+[class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"] [class*="ActivityPhotosDropzone_dropPhotosText_"] {
+    color: var(--link-color) !important;
+}
+
 div[class*="ActivityPhotoDropdown_dropdownMenu_"] {
     /* Dropdown background */
     background: var(--background-primary) !important;
