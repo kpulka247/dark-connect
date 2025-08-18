@@ -1,3 +1,9 @@
+## [2.2.14](https://github.com/kpulka247/dark-connect/compare/v2.2.13...v2.2.14) (2025-08-18)
+
+### Bug Fixes
+
+* Fix activity photo upload hover color ([3caf276](https://github.com/kpulka247/dark-connect/commit/3caf27670b7c9b9a98cef774dc1c0826c4911def))
+
 ## [2.2.13](https://github.com/kpulka247/dark-connect/compare/v2.2.12...v2.2.13) (2025-08-13)
 
 ### Bug Fixes
