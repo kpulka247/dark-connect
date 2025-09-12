@@ -239,3 +239,11 @@ div[class*="PrivacyMenu_menuContainer_"]:hover:not([class*="PrivacyMenu_smallPri
 div[class*="CourseCreate_overlay_"] {
     background-color: var(--background-deep) !important;
 }
+
+/* Nutrition and hydration */
+[class*="NutritionAndHydration_nutritionAndHydrationTitle_"],
+[class*="NutritionAndHydration_helpStrategies_"],
+[class*="NutritionAndHydration_helpStrategiesText_"],
+[class*="NutritionAndHydration_helpModalTextDescription_"] {
+    color: var(--text-primary) !important;
+}
