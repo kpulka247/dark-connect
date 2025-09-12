@@ -213,12 +213,13 @@ div[class*="DayView_dayViewLabel_"],
 }
 
 /* General button text color (catch-all for many standard buttons) */
+[class*=icon-]>*,
 button[type="button"]:not(:has(> .icon-pencil)),
 button[class*="Button_btn_"],
 [class*="InlineEdit_editIcon_"]:hover,
-button .icon-gear,
-button .icon-sync,
-button .icon-trash,
+[class*="PowerGuidanceCreateStrategy_headerMenu_"] div div button .icon-gear,
+[class*="StrategiesList_iconContainer_"] button .icon-sync,
+[class*="StrategiesList_iconContainer_"] button .icon-trash,
 .icon-power-guidance {
     color: var(--text-primary) !important;
 }
