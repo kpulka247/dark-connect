@@ -370,7 +370,7 @@ p[class*="WorkoutExecutionMetrics_sectionParagraph_"] {
     color: var(--text-primary) !important;
 }
 
-.page.activity-detail .multisport-nav > li:first-child:after {
+.page.activity-detail .multisport-nav>li:first-child:after {
     border-color: var(--border-default) !important;
 }
 

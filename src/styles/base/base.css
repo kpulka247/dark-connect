@@ -15,7 +15,9 @@ ul>li>a>span[data-value] {
 
 a,
 a p,
-h5 {
+h5,
+h6,
+p {
     color: var(--text-primary) !important;
 }
 
