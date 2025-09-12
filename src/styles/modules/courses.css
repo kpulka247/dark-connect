@@ -247,3 +247,19 @@ div[class*="CourseCreate_overlay_"] {
 [class*="NutritionAndHydration_helpModalTextDescription_"] {
     color: var(--text-primary) !important;
 }
+
+/* Strategies */
+[class*="GarminInputWrapper_validationErrorText_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="StrategiesList_strategiesTable_"] table tr td {
+    background-color: var(--background-secondary) !important;
+}
+
+[class*="NutritionAndHydration_labelText"],
+[class*="NutritionAndHydration_feedbackPhrase"],
+[class*="NutritionAndHydration_temperatureText"],
+[class*="NutritionAndHydration_dataField_"] {
+    color: var(--text-primary) !important;
+}
