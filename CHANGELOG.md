@@ -1,3 +1,17 @@
+## [2.2.15](https://github.com/kpulka247/dark-connect/compare/v2.2.14...v2.2.15) (2025-09-12)
+
+### Bug Fixes
+
+* Fix activity advanced settings confirmation dialog ([30a2b83](https://github.com/kpulka247/dark-connect/commit/30a2b8320113bcfbcfcae9bb1add7a2691695f06))
+* Fix activity climb details ([f40f7f3](https://github.com/kpulka247/dark-connect/commit/f40f7f31c919d47da9d080bc01eae1067100d1f5))
+* Fix activity list elements color ([80c50c3](https://github.com/kpulka247/dark-connect/commit/80c50c33cfb5b6049ff6ce93dd6941c5bdce1c9b))
+* Fix courses automatic routing box color ([8866c28](https://github.com/kpulka247/dark-connect/commit/8866c28dd21f12e8377ed620347b442359994307))
+* Fix courses nutrition and hydration element ([445d727](https://github.com/kpulka247/dark-connect/commit/445d727f9477cbd80c1fe1049ff70eaed3a14b6b))
+* Fix courses strategies tab ([7cb316f](https://github.com/kpulka247/dark-connect/commit/7cb316f45ae0f323f8228fa04c1bf3f29491d23a))
+* Fix device page ([a01b10e](https://github.com/kpulka247/dark-connect/commit/a01b10e934572f549103b92fb43f4787e08066cc))
+* Fix device priority tab ([62e3423](https://github.com/kpulka247/dark-connect/commit/62e3423104929ba891c9f9c7294dea7206508ecc))
+* Fix some icons ([9a6d85b](https://github.com/kpulka247/dark-connect/commit/9a6d85b4cd46672a2bf329eed95b188a1b7adf6e))
+
 ## [2.2.14](https://github.com/kpulka247/dark-connect/compare/v2.2.13...v2.2.14) (2025-08-18)
 
 ### Bug Fixes
