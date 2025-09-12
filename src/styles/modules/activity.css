@@ -391,3 +391,29 @@ p[class*="WorkoutExecutionMetrics_sectionParagraph_"] {
 div[class*="MoveIQModal_moveIqDescription_"] {
     color: var(--text-primary) !important;
 }
+
+/* Climb Details */
+[class*="Pagination_arrows_"] button,
+[class*="Pagination_dropdown_"] {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+[class*="DataBlock_small_"] [class*="DataBlock_dataField_"],
+[class*="ActivityClimbTab_helpTitle_"],
+[class*="ActivityClimbTab_aboutTitle_"],
+[class*="ActivityClimbTab_bigTextBlock_"],
+[class*="ActivityClimbTab_smallTextBlock_"],
+[class*="ActivityClimbTab_smallTitle_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="ActivityClimbTab_performanceTitle_"] {
+    border-color: var(--border-default) !important;
+}
+
+/* Cycling Dynamics */
+.power-phase,
+.cycling-dynamics .seated-standing {
+    border-color: var(--border-default) !important;
+}
