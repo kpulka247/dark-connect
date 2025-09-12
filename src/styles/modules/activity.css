@@ -72,23 +72,36 @@
 }
 
 /* Activity List Item Component (Newer Style) */
-[class*="ActivityListItem_listItem_"] {
+[class*="ActivityListItem_listItem_"],
+[class*="ActivityListItem_tabletListItem_"] {
     background-color: var(--background-secondary) !important;
     border-color: var(--border-default) !important;
     /* Added border */
 }
 
-div[class*="ActivityListItem_listItem_"]:hover:not(div[class*="ActivityListItem_selected_"]) {
+[class*="ActivityListItem_activityDetails_"],
+[class*="ActivityListItem_activityListItemDetails_"],
+[class*="ActivityListItem_activityNameContainer_"],
+div[class*="ActivityListItem_editButtonsVisible_"],
+[class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
+    border-color: var(--border-default) !important;
+}
+
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityDetails_"],
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityListItemDetails_"],
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityNameContainer_"],
+[class*="ActivityListItem_selected_"] div[class*="ActivityListItem_editButtonsVisible_"],
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
+    border-color: var(--color-white) !important;
+}
+
+div[class*="ActivityListItem_listItem_"]:hover:not(div[class*="ActivityListItem_selected_"]),
+[class*="ActivityListItem_hovered_"]:hover:not([class*="ActivityListItem_selected_"]) {
     background: var(--background-soft) !important;
 }
 
 div[class*="ActivityListItem_selected_"] {
     background-color: var(--background-lighter) !important;
-}
-
-div[class*="ActivityListItem_editButtonsVisible_"],
-[class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
-    border-color: #a6a6a6 !important;
 }
 
 div[class*="ActivityListItem_selected_"],
