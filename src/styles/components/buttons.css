@@ -203,7 +203,9 @@ a[class*="Homepage_sectionButton_"],
 div[class*="HomeSettings_linkButton_"],
 div[class*="DayView_dayViewLabel_"],
 [class*="ImportDataPageView_browse_"],
-[class*="StrategiesList_RowAnchor_"] {
+[class*="StrategiesList_RowAnchor_"],
+.page.devices .join-beta,
+[class*="SolarTimeLineChart_dateTextStyle_"] {
     color: var(--link-color) !important;
 }
 

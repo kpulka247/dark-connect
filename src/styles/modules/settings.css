@@ -115,3 +115,12 @@ div[class*="ReorderSelectedStats_reorderListItem_"] label {
 [class*="PrimaryWearableHelpModal_helpHeader_"] {
     color: var(--text-primary) !important;
 }
+
+/* Device */
+[class*="Button_btn_"][class*="Button_iconButton_"]:hover:not([class*="Button_isLoading_"]:hover) {
+    background-color: var(--background-secondary) !important;
+}
+
+.device-item .avatar {
+    box-shadow: 0 0 0 3px var(--color-gray-dark), 0 0 0 4px var(--color-gray-light) !important;
+}
