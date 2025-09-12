@@ -109,3 +109,9 @@ div[class*="ReorderSelectedStats_reorderListItem_"] label {
     background-color: var(--background-medium) !important;
     color: var(--text-primary) !important;
 }
+
+/* Device priority */
+[class*="DevicePriorityTabView_verticalAlign_"],
+[class*="PrimaryWearableHelpModal_helpHeader_"] {
+    color: var(--text-primary) !important;
+}
