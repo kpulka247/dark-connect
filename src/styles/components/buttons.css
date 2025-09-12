@@ -40,7 +40,7 @@ button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
 div[class*="NavigationComponent_datePickerContainer_"],
 /* This might fit better in datepickers? */
 div[class*="NavigationComponent_buttonIcon_"],
-div[class*="Report_datePickerContainer_"]{
+div[class*="Report_datePickerContainer_"] {
     background-color: var(--background-soft) !important;
     color: var(--text-primary) !important;
 }
@@ -113,6 +113,7 @@ button[class*="AddComment_button_"][disabled] {
 
 /* Input Append/Prepend Add-on (acts like part of a button/input group) */
 .input-append .add-on,
+div .add-on,
 .input-prepend .add-on,
 span[class*="BPPage_addOnInput_"] {
     text-shadow: 0 1px 0 var(--color-black-deep) !important;
@@ -201,18 +202,27 @@ button[class*="LinkButton_link_"],
 a[class*="Homepage_sectionButton_"],
 div[class*="HomeSettings_linkButton_"],
 div[class*="DayView_dayViewLabel_"],
-[class*="ImportDataPageView_browse_"] {
+[class*="ImportDataPageView_browse_"],
+[class*="StrategiesList_RowAnchor_"],
+.page.devices .join-beta,
+[class*="SolarTimeLineChart_dateTextStyle_"] {
     color: var(--link-color) !important;
 }
 
-.modal-calendar .delete-item, .modal-calendar .remove-calendar-item {
+.modal-calendar .delete-item,
+.modal-calendar .remove-calendar-item {
     color: var(--color-red-remove) !important;
 }
 
 /* General button text color (catch-all for many standard buttons) */
+[class*=icon-]>*,
 button[type="button"]:not(:has(> .icon-pencil)),
 button[class*="Button_btn_"],
-[class*="InlineEdit_editIcon_"]:hover {
+[class*="InlineEdit_editIcon_"]:hover,
+[class*="PowerGuidanceCreateStrategy_headerMenu_"] div div button .icon-gear,
+[class*="StrategiesList_iconContainer_"] button .icon-sync,
+[class*="StrategiesList_iconContainer_"] button .icon-trash,
+.icon-power-guidance {
     color: var(--text-primary) !important;
 }
 

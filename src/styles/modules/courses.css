@@ -68,7 +68,8 @@ p[class*="CourseDetailsSection_sectionTitle_"],
 label[class*="AddCoursePoint_pointNameLabel_"],
 p[class*="AddCoursePoint_sectionInfoText_"],
 [class*="CourseDetails_lapPointsLabel_"],
-[class*="GarminInputWrapper_label_"] {
+[class*="GarminInputWrapper_label_"],
+[class*="RoutingOptions_halfContainerSize_"] label {
     color: var(--text-primary) !important;
 }
 
@@ -238,4 +239,28 @@ div[class*="PrivacyMenu_menuContainer_"]:hover:not([class*="PrivacyMenu_smallPri
 /* Course creation overlay */
 div[class*="CourseCreate_overlay_"] {
     background-color: var(--background-deep) !important;
+}
+
+/* Nutrition and hydration */
+[class*="NutritionAndHydration_nutritionAndHydrationTitle_"],
+[class*="NutritionAndHydration_helpStrategies_"],
+[class*="NutritionAndHydration_helpStrategiesText_"],
+[class*="NutritionAndHydration_helpModalTextDescription_"] {
+    color: var(--text-primary) !important;
+}
+
+/* Strategies */
+[class*="GarminInputWrapper_validationErrorText_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="StrategiesList_strategiesTable_"] table tr td {
+    background-color: var(--background-secondary) !important;
+}
+
+[class*="NutritionAndHydration_labelText"],
+[class*="NutritionAndHydration_feedbackPhrase"],
+[class*="NutritionAndHydration_temperatureText"],
+[class*="NutritionAndHydration_dataField_"] {
+    color: var(--text-primary) !important;
 }

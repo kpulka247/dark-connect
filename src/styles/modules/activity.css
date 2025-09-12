@@ -72,23 +72,36 @@
 }
 
 /* Activity List Item Component (Newer Style) */
-[class*="ActivityListItem_listItem_"] {
+[class*="ActivityListItem_listItem_"],
+[class*="ActivityListItem_tabletListItem_"] {
     background-color: var(--background-secondary) !important;
     border-color: var(--border-default) !important;
     /* Added border */
 }
 
-div[class*="ActivityListItem_listItem_"]:hover:not(div[class*="ActivityListItem_selected_"]) {
+[class*="ActivityListItem_activityDetails_"],
+[class*="ActivityListItem_activityListItemDetails_"],
+[class*="ActivityListItem_activityNameContainer_"],
+div[class*="ActivityListItem_editButtonsVisible_"],
+[class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
+    border-color: var(--border-default) !important;
+}
+
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityDetails_"],
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityListItemDetails_"],
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityNameContainer_"],
+[class*="ActivityListItem_selected_"] div[class*="ActivityListItem_editButtonsVisible_"],
+[class*="ActivityListItem_selected_"] [class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
+    border-color: var(--color-white) !important;
+}
+
+div[class*="ActivityListItem_listItem_"]:hover:not(div[class*="ActivityListItem_selected_"]),
+[class*="ActivityListItem_hovered_"]:hover:not([class*="ActivityListItem_selected_"]) {
     background: var(--background-soft) !important;
 }
 
 div[class*="ActivityListItem_selected_"] {
     background-color: var(--background-lighter) !important;
-}
-
-div[class*="ActivityListItem_editButtonsVisible_"],
-[class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
-    border-color: #a6a6a6 !important;
 }
 
 div[class*="ActivityListItem_selected_"],
@@ -370,11 +383,37 @@ p[class*="WorkoutExecutionMetrics_sectionParagraph_"] {
     color: var(--text-primary) !important;
 }
 
-.page.activity-detail .multisport-nav > li:first-child:after {
+.page.activity-detail .multisport-nav>li:first-child:after {
     border-color: var(--border-default) !important;
 }
 
 /* MoveIQ */
 div[class*="MoveIQModal_moveIqDescription_"] {
     color: var(--text-primary) !important;
+}
+
+/* Climb Details */
+[class*="Pagination_arrows_"] button,
+[class*="Pagination_dropdown_"] {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+[class*="DataBlock_small_"] [class*="DataBlock_dataField_"],
+[class*="ActivityClimbTab_helpTitle_"],
+[class*="ActivityClimbTab_aboutTitle_"],
+[class*="ActivityClimbTab_bigTextBlock_"],
+[class*="ActivityClimbTab_smallTextBlock_"],
+[class*="ActivityClimbTab_smallTitle_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="ActivityClimbTab_performanceTitle_"] {
+    border-color: var(--border-default) !important;
+}
+
+/* Cycling Dynamics */
+.power-phase,
+.cycling-dynamics .seated-standing {
+    border-color: var(--border-default) !important;
 }
