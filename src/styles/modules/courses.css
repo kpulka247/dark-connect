@@ -68,7 +68,8 @@ p[class*="CourseDetailsSection_sectionTitle_"],
 label[class*="AddCoursePoint_pointNameLabel_"],
 p[class*="AddCoursePoint_sectionInfoText_"],
 [class*="CourseDetails_lapPointsLabel_"],
-[class*="GarminInputWrapper_label_"] {
+[class*="GarminInputWrapper_label_"],
+[class*="RoutingOptions_halfContainerSize_"] label {
     color: var(--text-primary) !important;
 }
 

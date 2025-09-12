@@ -113,6 +113,7 @@ button[class*="AddComment_button_"][disabled] {
 
 /* Input Append/Prepend Add-on (acts like part of a button/input group) */
 .input-append .add-on,
+div .add-on,
 .input-prepend .add-on,
 span[class*="BPPage_addOnInput_"] {
     text-shadow: 0 1px 0 var(--color-black-deep) !important;
