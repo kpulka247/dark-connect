@@ -1,3 +1,9 @@
+## [2.2.16](https://github.com/kpulka247/dark-connect/compare/v2.2.15...v2.2.16) (2025-09-16)
+
+### Bug Fixes
+
+* Fix personal records activity text color ([bdc8009](https://github.com/kpulka247/dark-connect/commit/bdc800932782ea369d38c847f0dd55d7ce61269b))
+
 ## [2.2.15](https://github.com/kpulka247/dark-connect/compare/v2.2.14...v2.2.15) (2025-09-12)
 
 ### Bug Fixes
