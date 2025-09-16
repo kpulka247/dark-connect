@@ -60,11 +60,11 @@ jobs:
         run: |
           npx web-ext sign \
             --source-dir=dist/darkconnect-firefox \
-            --artifacts-dir=dist \
-            --id=$FIREFOX_EXTENSION_ID \
-            --api-key=$AMO_JWT_ISSUER \
-            --api-secret=$AMO_JWT_SECRET
+            --artifacts-dir=web-ext-artifacts \
+            --api-key=$AMO_API_KEY \
+            --api-secret=$AMO_API_SECRET \
+            --channel=listed \
+            --no-input
         env:
-          FIREFOX_EXTENSION_ID: ${{ secrets.FIREFOX_EXTENSION_ID }}
           AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
           AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
