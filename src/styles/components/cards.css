@@ -9,7 +9,6 @@ div[class*="Gc5Card_card_"],
 div[class*="FactorListCard_card_"],
 div[class*="ChallengeCard_container_"],
 div[class*="ConnectionList_itemContainer_"][class*="ConnectionList_card_"],
-div[class*="FindPlanCard_card_"],
 div[class*="Card_container_"],
 div[class*="FactorsCardsCommon_card_"],
 div[class*="SleepCoachFactorCard_factorCardContainer_"],
@@ -64,7 +63,8 @@ div[class*="Card_container_"] {
 
 div[class*="PlanCard_container__"],
 div[class*="PlanCard_description__"],
-div[class*="PlanCard_planDescription__"] {
+div[class*="PlanCard_planDescription__"],
+[class*="PlanCard_wrapper_"] {
     background-color: var(--background-soft) !important;
     border-color: var(--border-default) !important;
     color: var(--text-primary) !important;
