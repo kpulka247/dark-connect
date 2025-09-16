@@ -58,7 +58,9 @@ div[class*="PlanCard_title_"],
 [class*="PlanOverviewCard_planTitle_"],
 [class*="PlanOverviewCard_title_"],
 [class*="PlanOverviewCard_featureSet_"],
-[class*="PlanOverviewCard_description_"] {
+[class*="PlanOverviewCard_description_"],
+[class*="AdaptiveListItem_planName_"],
+[class*="AdaptiveListItem_planDetails_"] {
     color: var(--text-primary) !important;
 }
 
@@ -86,7 +88,8 @@ div[class*="DraggableWorkoutSteps_warmUpCard_"] {
 }
 
 [class*="DraggableWorkoutSteps_addExercise_"],
-[class*="SetCustomTrainingDaysCard_editStepLink_"] {
+[class*="SetCustomTrainingDaysCard_editStepLink_"],
+[class*="KeyStatsSection_learnMoreButton_"] {
     color: var(--link-color) !important;
 }
 
@@ -96,7 +99,10 @@ div[class*="DraggableWorkoutSteps_warmUpCard_"] {
     color: var(--text-primary) !important;
 }
 
-[class*="EquipmentPreferenceModal_exerciseSection_"] {
+[class*="EquipmentPreferenceModal_exerciseSection_"],
+[class*="AdaptiveListItem_wrapper_"],
+[class*="AdaptiveListItem_icon_"],
+[class*="WorkoutCard_workoutCard_"] {
     border-color: var(--border-default) !important;
 }
 
@@ -114,8 +120,14 @@ i[class*="TrainingPlanHeader_selection_"] {
 [class*="TrainingPlansPage_title_"],
 [class*="BrowseAllPlans_browseAllPlansTitle_"],
 [class*="BrowseAllPlans_plansLabel_"],
-div[class*="TrainingPlanTitle_title_"] {
-    /* Title Text */
+div[class*="TrainingPlanTitle_title_"],
+[class*="PlanOverview_title_"],
+[class*="PlanOverview_description_"],
+[class*="KeyStatsSection_emptyStateTitle_"],
+[class*="KeyStatsSection_emptyStateText_"],
+[class*="DayItem_today_"],
+[class*="PlanDetailsModal_title_"],
+[class*="PlanDetailsModal_description_"] {
     color: var(--text-primary) !important;
 }
 
@@ -130,6 +142,18 @@ div[class*="HowItWorksModal_content_"] {
     color: var(--text-primary) !important;
 }
 
+[class*="SimpleNoDataView_title_"],
+[class*="SimpleNoDataView_noDataSubtext_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="DayItem_item_"] {
+    background-color: var(--background-secondary) !important;
+}
+
+[class*="DayItem_todayIcon_"] {
+    background-color: var(--background-soft) !important;
+}
 
 /* Adaptive Training Plan */
 .adaptive-plan .plan-schedule.open {

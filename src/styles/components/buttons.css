@@ -38,7 +38,7 @@ button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
 
 /* Navigation buttons / icons */
 div[class*="NavigationComponent_datePickerContainer_"],
-/* This might fit better in datepickers? */
+[class*="NavigationDatePicker_datePickerContainer_"],
 div[class*="NavigationComponent_buttonIcon_"],
 div[class*="Report_datePickerContainer_"] {
     background-color: var(--background-soft) !important;
@@ -89,7 +89,9 @@ div[class*="Button_btn_"][class*="Button_btnSecondary_"],
 .btn.btn-secondary.disabled:hover,
 .btn.btn-secondary.disabled:focus,
 [class*="Report_buttonIcon_"],
-[class*="NavigationComponent_buttonIcon_"] {
+[class*="NavigationComponent_buttonIcon_"],
+[class*="NavigationDatePicker_buttonIcon_"],
+[class*="WeekPagination_btn_"] {
     background-color: var(--background-light) !important;
     color: var(--text-primary) !important;
 }
@@ -176,7 +178,7 @@ button[class*="ExercisePicker_dropdownToggle_"] svg {
 }
 
 /* Link Button Style */
-button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(:has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not([class*="InlineEdit_editIcon_"], [class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"], [class*="Notification_close_"], div[class*="ActivityListPage_rightMenu_"] button),
+button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(:has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not([class*="InlineEdit_editIcon_"], [class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"], [class*="Notification_close_"], div[class*="ActivityListPage_rightMenu_"] button, [class*="WorkoutCard_workoutCard_"]),
 .accordion a.active,
 .accordion a:active,
 .accordion a:focus,
