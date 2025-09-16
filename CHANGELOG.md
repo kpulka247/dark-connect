@@ -1,3 +1,11 @@
+## [2.2.17](https://github.com/kpulka247/dark-connect/compare/v2.2.16...v2.2.17) (2025-09-16)
+
+### Bug Fixes
+
+* Fix Garmin Coach home page card ([a331581](https://github.com/kpulka247/dark-connect/commit/a331581defde7d781ffd6ee5e3108ffa2cf290fc))
+* Fix Garmin Coach plan dashboard ([f3995ea](https://github.com/kpulka247/dark-connect/commit/f3995eae3742199d78539953e3f82b831e4642fc))
+* Fix Garmin Coach plans page ([fd2584e](https://github.com/kpulka247/dark-connect/commit/fd2584eae654419ec5dcc83ad938a178168154de))
+
 ## [2.2.16](https://github.com/kpulka247/dark-connect/compare/v2.2.15...v2.2.16) (2025-09-16)
 
 ### Bug Fixes
