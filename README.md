@@ -23,6 +23,7 @@ This is a simple browser extension designed to turn the Garmin Connect website i
 - 🌙 **Dark mode for Garmin Connect** — Applies a clean, modern dark theme
 - 🎨 **Preserves brand identity** — Original Garmin colors and charts remain intact for visual consistency
 - 🚫 **Scope-limited** — Affects only `connect.garmin.com`, `livetrack.garmin.com`, and `live.garmin.com`
+- ⚡ **Automatic updates** — New versions are published directly via GitHub Actions to Chrome Web Store and Firefox Add-ons
 - 🛠️ **Modular and maintainable styles** — Powered by organized CSS modules with support for variables
 
 ## Screenshots
@@ -54,7 +55,7 @@ Once installed, the extension will immediately apply dark mode to any visit to G
 
 ## Development & Build
 
-This project uses Node.js for its build system and leverages Conventional Commits with `semantic-release` for automated versioning and releases.
+This project uses Node.js for its build system and leverages Conventional Commits with `semantic-release` for automated versioning, packaging and publishing.
 
 ### 🚀 Getting started
 
@@ -80,13 +81,13 @@ npm run build
 npm run dev
 ```
 
-- Generates browser-specific unpacked builds in the `dist/chrome/` and `dist/firefox/` directories.
+- Generates browser-specific unpacked builds in the `dist/darkconnect-chrome/` and `dist/darkconnect-firefox/` directories.
 - Processes css:
     - Resolves `@import` statements (via `css-loader`).
     - Minifies CSS in production mode (via `css-minimizer-webpack-plugin`).
     - Extracts CSS into a single `styles/main.css` file for each browser build.
 - Copies necessary files like `manifest.json` (browser-specific), `background.js`, and icons.
-- In production mode (`npm run build`), packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/chrome.zip`, `dist/firefox.zip`), ready for upload or distribution.
+- In production mode (`npm run build`), packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/darkconnect-2.1.0-chrome.zip`, `dist/darkconnect-2.1.0-firefox.zip`).
 
 ### 🧪 Local testing (e.g. in Chrome)
 
@@ -96,7 +97,7 @@ To test the extension locally in a browser:
 2. Open Chrome and navigate to `chrome://extensions`
 3. Enable "Developer mode" (usually a toggle in the top-right corner)
 4. Click "Load unpacked"
-5. Select the `dist/chrome/` folder generated in step 1
+5. Select the `dist/darkconnect-chrome/` folder generated in step 1
 6. The extension will now appear in your list and function on the relevant Garmin pages
 
 ### 🏷️ Versioning and Releases (Automated)
@@ -111,7 +112,9 @@ This project uses [semantic-release](https://github.com/semantic-release/semanti
     4. Generates/updates the `CHANGELOG.md` file
     5. Commits these updated files
     6. Creates a Git tag for the new version (e.g., `v2.1.0`)
-    7. Creates a GitHub Release with the generated changelog notes
+    7. Creates a GitHub Release with changelog notes and attaches .zip assets
+    8. Publishes the new Chrome build directly to the Chrome Web Store
+    9. Publishes the new Firefox build directly to Mozilla Add-ons (AMO) via automated signing/upload
 - **Developers generally do not need to manually bump versions** using `npm version` for standard releases. The automation handles it based on commit messages.
 
 ## Development Notes
@@ -120,7 +123,7 @@ This project uses [semantic-release](https://github.com/semantic-release/semanti
 
 - `manifest.chrome.json` / `manifest.firefox.json`: These are the source manifest files located in the root of the project.
     - They are updated with the correct version number by `semantic-release` during the release process.
-    - The Webpack build process copies the appropriate source manifest (e.g., `manifest.chrome.json`) to `dist/chrome/manifest.json` for each build.
+    - The Webpack build process copies the appropriate source manifest (e.g., `manifest.chrome.json`) to `dist/darkconnect-chrome/manifest.json` for each build.
     - These manifests should reference the single, compiled `styles/main.css` and `background.js`.
 
 ### 🧰 Tools & Scripts
