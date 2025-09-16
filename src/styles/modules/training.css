@@ -54,7 +54,11 @@ div[class*="PlanCard_title_"],
 [class*="SharedPlanReviewCard_header_"],
 [class*="SharedPlanReviewCard_name_"],
 [class*="SharedPlanReviewCard_title_"],
-[class*="CreateEventCard_subHeader_"] {
+[class*="CreateEventCard_subHeader_"],
+[class*="PlanOverviewCard_planTitle_"],
+[class*="PlanOverviewCard_title_"],
+[class*="PlanOverviewCard_featureSet_"],
+[class*="PlanOverviewCard_description_"] {
     color: var(--text-primary) !important;
 }
 
@@ -107,6 +111,9 @@ i[class*="TrainingPlanHeader_selection_"] {
     color: var(--color-gray-dark) !important;
 }
 
+[class*="TrainingPlansPage_title_"],
+[class*="BrowseAllPlans_browseAllPlansTitle_"],
+[class*="BrowseAllPlans_plansLabel_"],
 div[class*="TrainingPlanTitle_title_"] {
     /* Title Text */
     color: var(--text-primary) !important;
