@@ -5,7 +5,8 @@ button[style*="background-color: rgb(255, 255, 255);"],
 }
 
 /* Pill button group */
-.btn-group-pill {
+.btn-group-pill,
+[class*="SegmentedButton_segmentedButton"] {
     background-color: var(--background-primary) !important;
     border-color: var(--border-default) !important;
 }
@@ -14,12 +15,16 @@ button[style*="background-color: rgb(255, 255, 255);"],
     border-color: var(--border-default) !important;
 }
 
+[class*="SegmentedButton_segmentedButton"][class*="SegmentedButton_active"] {
+    background-color: var(--background-light) !important;
+}
 
 .page.activity-detail .chart-toggle-options button,
 .page.activity-detail .customize-charts-controls .reorder-widgets-set,
 .page.activity-detail .customize-charts-controls .reorder-widgets-cancel,
 .page.activity-detail .activity-charts-container .btn-customize-charts,
-.btn-group-pill .btn {
+.btn-group-pill .btn,
+[class*="SegmentedButton_segmentedButton_"] {
     color: var(--text-primary) !important;
 }
 

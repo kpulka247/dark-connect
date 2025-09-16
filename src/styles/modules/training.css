@@ -127,7 +127,11 @@ div[class*="TrainingPlanTitle_title_"],
 [class*="KeyStatsSection_emptyStateText_"],
 [class*="DayItem_today_"],
 [class*="PlanDetailsModal_title_"],
-[class*="PlanDetailsModal_description_"] {
+[class*="PlanDetailsModal_description_"],
+[class*="DetailsHeaderConfirmPauseDialog_content_"],
+[class*="DetailsHeaderQuitPlanDialog_content_"],
+[class*="ProgressReportCard_title_"],
+[class*="WorkoutModal_blockText_"] {
     color: var(--text-primary) !important;
 }
 
@@ -153,6 +157,17 @@ div[class*="HowItWorksModal_content_"] {
 
 [class*="DayItem_todayIcon_"] {
     background-color: var(--background-soft) !important;
+}
+
+/* Help Modal */
+[class*="DswHelpModal_section_"] {
+    background-color: var(--background-primary) !important;
+    border-color: var(--border-default) !important;
+}
+
+[class*="DswHelpModal_title_"],
+[class*="DswHelpModal_content_"] {
+    color: var(--text-primary) !important;
 }
 
 /* Adaptive Training Plan */
@@ -379,7 +394,7 @@ table[class*="StrengthTable_table_"] thead tr {
 
 [class*="Gc5TrainingCard_icon_"],
 div[class*="Gc5CardCalendar_cardCalendarDayTile_"] .icon-activity-cycling,
-div[class*="Gc5CardCalendar_currentDay_"] .icon-activity-cycling {
+div[class*="Gc5CardCalendar_cardCalendarDayTile_"] .icon-activity-running {
     color: var(--text-primary) !important;
 }
 
