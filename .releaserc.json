@@ -20,7 +20,8 @@
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version}"
+                "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version} && npm run build",
+                "successCmd": "echo \"nextReleaseVersion=${nextRelease.version}\" >> $GITHUB_OUTPUT"
             }
         ],
         [
@@ -34,7 +35,21 @@
                 "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
         ],
-        "@semantic-release/github"
+        [
+            "@semantic-release/github",
+            {
+                "assets": [
+                    {
+                        "path": "dist/darkconnect-*-chrome.zip",
+                        "label": "Dark Connect Chrome"
+                    },
+                    {
+                        "path": "dist/darkconnect-*-firefox.zip",
+                        "label": "Dark Connect Firefox"
+                    }
+                ]
+            }
+        ]
     ],
     "preset": "conventionalcommits"
 }

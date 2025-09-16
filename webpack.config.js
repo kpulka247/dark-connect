@@ -8,7 +8,7 @@ const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 const createConfig = (browser, mode) => {
     const isProduction = mode === 'production';
     const distBaseDir = path.resolve(__dirname, 'dist');
-    const browserOutputDir = path.resolve(distBaseDir, browser);
+    const browserOutputDir = path.resolve(distBaseDir, `darkconnect-${browser}`);
 
     return {
         mode: mode,
@@ -66,7 +66,7 @@ const createConfig = (browser, mode) => {
             new RemoveEmptyScriptsPlugin(),
             isProduction && new ZipPlugin({
                 path: distBaseDir,
-                filename: `${browser}-${require('./package.json').version}.zip`,
+                filename: `darkconnect-${require('./package.json').version}-${browser}.zip`,
             }),
         ].filter(Boolean),
         optimization: {

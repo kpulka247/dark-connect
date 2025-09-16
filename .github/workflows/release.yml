@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: Create Release
+    name: Create Release & Publish
     runs-on: ubuntu-latest
 
     steps:
@@ -22,10 +22,49 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org/'
 
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install dependencies
         run: npm ci
 
       - name: Run semantic-release
+        id: semantic
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Chrome Web Store
+        if: success()
+        run: |
+          npx chrome-webstore-upload-cli upload \
+            --source dist/darkconnect-${{ steps.semantic.outputs.nextReleaseVersion }}-chrome.zip \
+            --extension-id $CHROME_EXTENSION_ID \
+            --client-id $CHROME_CLIENT_ID \
+            --client-secret $CHROME_CLIENT_SECRET \
+            --refresh-token $CHROME_REFRESH_TOKEN \
+            --auto-publish
+        env:
+          CHROME_EXTENSION_ID: ${{ secrets.CHROME_EXTENSION_ID }}
+          CHROME_CLIENT_ID: ${{ secrets.CHROME_CLIENT_ID }}
+          CHROME_CLIENT_SECRET: ${{ secrets.CHROME_CLIENT_SECRET }}
+          CHROME_REFRESH_TOKEN: ${{ secrets.CHROME_REFRESH_TOKEN }}
+
+      - name: Publish to Firefox AMO
+        if: success()
+        run: |
+          npx web-ext sign \
+            --source-dir=dist/darkconnect-firefox \
+            --artifacts-dir=dist \
+            --id=$FIREFOX_EXTENSION_ID \
+            --api-key=$AMO_JWT_ISSUER \
+            --api-secret=$AMO_JWT_SECRET
+        env:
+          FIREFOX_EXTENSION_ID: ${{ secrets.FIREFOX_EXTENSION_ID }}
+          AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+          AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
