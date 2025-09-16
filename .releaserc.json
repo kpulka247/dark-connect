@@ -40,12 +40,10 @@
             {
                 "assets": [
                     {
-                        "path": "dist/darkconnect-*-chrome.zip",
-                        "label": "Dark Connect Chrome"
+                        "path": "dist/darkconnect-*-chrome.zip"
                     },
                     {
-                        "path": "dist/darkconnect-*-firefox.zip",
-                        "label": "Dark Connect Firefox"
+                        "path": "dist/darkconnect-*-firefox.zip"
                     }
                 ]
             }

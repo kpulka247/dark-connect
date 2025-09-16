@@ -61,10 +61,8 @@ jobs:
           npx web-ext sign \
             --source-dir=dist/darkconnect-firefox \
             --artifacts-dir=web-ext-artifacts \
-            --api-key=$AMO_API_KEY \
-            --api-secret=$AMO_API_SECRET \
             --channel=listed \
             --no-input
         env:
-          AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
-          AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+          WEB_EXT_API_KEY: ${{ secrets.AMO_JWT_ISSUER }}
+          WEB_EXT_API_SECRET: ${{ secrets.AMO_JWT_SECRET }}
