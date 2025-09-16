@@ -374,3 +374,19 @@ table[class*="StrengthTable_table_"] {
 table[class*="StrengthTable_table_"] thead tr {
     border-color: var(--border-default) !important;
 }
+
+/* Home Page Training Card */
+
+[class*="Gc5TrainingCard_icon_"],
+div[class*="Gc5CardCalendar_cardCalendarDayTile_"] .icon-activity-cycling,
+div[class*="Gc5CardCalendar_currentDay_"] .icon-activity-cycling {
+    color: var(--text-primary) !important;
+}
+
+[class*="Gc5CardCalendar_cardCalendarDayTile_"] {
+    background-color: var(--background-secondary) !important;
+}
+
+[class*="Gc5CardCalendar_currentDay_"] {
+    background-color: var(--background-soft) !important;
+}
