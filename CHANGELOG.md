@@ -1,3 +1,9 @@
+## [2.2.19](https://github.com/kpulka247/dark-connect/compare/v2.2.18...v2.2.19) (2025-09-20)
+
+### Bug Fixes
+
+* Fix load focus optimal range bar visibility ([877b37a](https://github.com/kpulka247/dark-connect/commit/877b37a5ae062091ccf5d56ab24ec8fbe78f97db))
+
 ## [2.2.18](https://github.com/kpulka247/dark-connect/compare/v2.2.17...v2.2.18) (2025-09-16)
 
 ### Bug Fixes
