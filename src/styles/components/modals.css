@@ -61,9 +61,18 @@ p[class*="HeatAltitudeAcclimationModal_detail_"] {
 }
 
 /* Specific Modal Borders/Backgrounds */
-.modal .modal-load-focus .load-focus-metrics-container .load-focus-metric-row {
+.modal .modal-load-focus .load-focus-metrics-container .load-focus-metric-row,
+[class*="LoadFocusModal_loadFocusChartContainer"] [class*="LoadFocusModal_loadFocusChartItem"] {
     /* Load Focus */
     border-color: var(--border-default) !important;
+}
+
+[class*="LoadFocusModal_loadFocusModalFooterWrapper"] [class*="LoadFocusModal_optimalRangeLegend"] [class*="LoadFocusModal_range"] {
+    border-color: var(--color-white) !important;
+}
+
+div[class*="LoadFocusModal_loadFocusChartItem_"] path[fill="none"][stroke="#6c6c6c"][stroke-dasharray="3 3"] {
+    stroke: var(--color-white) !important;
 }
 
 table[class*="ActivityClassHelpModal_table_"],

@@ -134,9 +134,16 @@ div[class*="RunningLactateThresholdSecondaryStatCard_runningLactateThresholdData
 }
 
 /* Secondary Stat Card Optimal Range */
-div[class*="LoadFocusSecondaryStatCard_legendOptimalRange_"],
 div[class*="SecondaryStatCard_optimalRangeHorizontalBar_"] {
     border-color: var(--color-gray-lighter) !important;
+}
+
+div[class*="LoadFocusSecondaryStatCard_mainContentContainer_"] path[fill="none"][stroke="#6c6c6c"][stroke-dasharray="3 3"] {
+    stroke: var(--color-white) !important;
+}
+
+div[class*="LoadFocusSecondaryStatCard_legendOptimalRange_"] {
+    border-color: var(--color-white) !important;
 }
 
 g[class*="SecondaryStatWeeklyGoalChart_checkMark_"] path[fill="#101010"] {

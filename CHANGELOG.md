@@ -2,7 +2,7 @@
 
 ### Bug Fixes
 
-* Fix mior Garmin Coach page bugs ([9e9e2cc](https://github.com/kpulka247/dark-connect/commit/9e9e2cc96ef2397e370a7c148cfb490a84e6eae7))
+* Fix minor Garmin Coach page bugs ([9e9e2cc](https://github.com/kpulka247/dark-connect/commit/9e9e2cc96ef2397e370a7c148cfb490a84e6eae7))
 
 ## [2.2.17](https://github.com/kpulka247/dark-connect/compare/v2.2.16...v2.2.17) (2025-09-16)
 
