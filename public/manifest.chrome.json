@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Dark Connect",
+  "name": "Dark Connect - Dark Mode for Garmin Connect",
+  "short_name": "Dark Connect",
   "version": "2.2.19",
   "description": "Dark mode for Garmin Connect website that replaces light colors with their dark theme.",
   "permissions": [
