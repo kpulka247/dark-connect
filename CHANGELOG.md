@@ -1,3 +1,9 @@
+## [2.3.0](https://github.com/kpulka247/dark-connect/compare/v2.2.19...v2.3.0) (2025-09-24)
+
+### Features
+
+* rename extension to "Dark Connect - Dark Mode for Garmin Connect" ([b3e3fb1](https://github.com/kpulka247/dark-connect/commit/b3e3fb18368970a3d3257d8e95dfd9cfd2538a11))
+
 ## [2.2.19](https://github.com/kpulka247/dark-connect/compare/v2.2.18...v2.2.19) (2025-09-20)
 
 ### Bug Fixes
