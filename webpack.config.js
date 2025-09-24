@@ -10,6 +10,9 @@ const createConfig = (browser, mode) => {
     const distBaseDir = path.resolve(__dirname, 'dist');
     const browserOutputDir = path.resolve(distBaseDir, `darkconnect-${browser}`);
 
+    const version = process.env.EXTENSION_VERSION || require('./package.json').version;
+    console.log(`Building extension version: ${version} for ${browser}`);
+
     return {
         mode: mode,
         devtool: isProduction ? false : 'cheap-module-source-map',
@@ -66,7 +69,7 @@ const createConfig = (browser, mode) => {
             new RemoveEmptyScriptsPlugin(),
             isProduction && new ZipPlugin({
                 path: distBaseDir,
-                filename: `darkconnect-${require('./package.json').version}-${browser}.zip`,
+                filename: `darkconnect-${version}-${browser}.zip`,
             }),
         ].filter(Boolean),
         optimization: {
