@@ -18,6 +18,13 @@
             }
         ],
         [
+            "@semantic-release/exec",
+            {
+                "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version} && npm run build",
+                "successCmd": "echo \"nextReleaseVersion=${nextRelease.version}\" >> $GITHUB_OUTPUT"
+            }
+        ],
+        [
             "@semantic-release/git",
             {
                 "assets": [
