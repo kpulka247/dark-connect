@@ -275,3 +275,18 @@ div[class*="TrainingStatus_modalHeader_"] h4,
 [class*="PowerGuidanceCreateStrategy_courseLink_"] a {
     color: var(--link-color) !important;
 }
+
+/* Health Status */
+
+[class*="MetricsCardList_cardContainer_"] {
+    border-color: var(--border-default) !important;
+}
+
+[class*="MetricsCardList_cardTitle_"] {
+    color: var(--text-primary) !important;
+}
+
+[class*="NavigationComponent_betaLabel_"] {
+    background-color: var(--background-soft) !important;
+    color: var(--text-primary) !important;
+}
