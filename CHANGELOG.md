@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/kpulka247/dark-connect/compare/v2.3.0...v2.3.1) (2025-10-04)
+
+### Bug Fixes
+
+* Fix health status page ([0b6a043](https://github.com/kpulka247/dark-connect/commit/0b6a0432aa12171ae6be2fd1ddc545ced2ab3566))
+* Fix secondary stat card text color ([7214960](https://github.com/kpulka247/dark-connect/commit/7214960db386ad1591fd1250c6c66793de240629))
+
 ## [2.3.0](https://github.com/kpulka247/dark-connect/compare/v2.2.19...v2.3.0) (2025-09-24)
 
 ### Features
