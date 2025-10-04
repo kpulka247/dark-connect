@@ -1,49 +1,49 @@
 .header,
 header {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .header-nav-menu {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    box-shadow: 0 5px 10px var(--color-shadow-light-10) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  box-shadow: 0 5px 10px var(--color-shadow-light-10) !important;
 }
 
 .undo-section {
-    /* Part of header UI */
-    background-color: var(--background-primary) !important;
+  /* Part of header UI */
+  background-color: var(--background-primary) !important;
 }
 
-.header-nav-item[class^='icon-'],
-.header-nav-item[class*=' icon-'] {
-    color: var(--text-primary) !important;
+.header-nav-item[class^="icon-"],
+.header-nav-item[class*=" icon-"] {
+  color: var(--text-primary) !important;
 }
 
 .header-nav-link:hover {
-    color: var(--text-subtle) !important;
+  color: var(--text-subtle) !important;
 }
 
 .header-nav-item.notifications .notification-item:hover,
 .header-nav-item.notifications .notification-item a:hover,
 .header-nav-item.notifications .notification-item:has(.icon-dismiss:hover) {
-    background: var(--background-secondary) !important;
+  background: var(--background-secondary) !important;
 }
 
 .undo-section button:hover {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 .header-logo img,
 .mobile .header a.logo[title="Garmin Connect"] {
-    /* Header specific image styling */
-    filter: invert(1) grayscale(1) brightness(2);
+  /* Header specific image styling */
+  filter: invert(1) grayscale(1) brightness(2);
 }
 
 /* Header Borders */
 .header-nav-menu-section {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Header-like elements in specific pages */
@@ -51,65 +51,65 @@ div[class*="DailySummaryPageHeader_staticHeaderContainer_"],
 div[class*="TrainingPlanHeader_container_"],
 div[class*="HealthDetailsPageHeader_pageHeader_"],
 div[class*="GroupPageHeader_groupMetadata_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* User options menu */
 menu[class*="UserOptions_userOptionsMenu_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    box-shadow: 0 5px 10px var(--color-shadow-light-10) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  box-shadow: 0 5px 10px var(--color-shadow-light-10) !important;
 }
 
 menu[class*="UserOptions_userOptionsMenu_"] li a {
-    /* Link color within menu */
-    color: var(--link-color) !important;
+  /* Link color within menu */
+  color: var(--link-color) !important;
 }
 
 [class*="UserOptions_userOptionsMenu_"] {
-    /* Text color */
-    color: var(--text-primary) !important;
+  /* Text color */
+  color: var(--text-primary) !important;
 }
 
 /* Border for user options menu items */
-[class*="UserOptions_userOptionsMenu_"]>li:not(:first-child) {
-    border-color: var(--border-default) !important;
+[class*="UserOptions_userOptionsMenu_"] > li:not(:first-child) {
+  border-color: var(--border-default) !important;
 }
 
 /* Daily Summary Header (Calendar Link) */
 [class*="DailySummaryPageHeader_calendar_"] h3 {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 /* Training Plan Header Specific Icon Color */
 i[class*="TrainingPlanHeader_selection_"] {
-    color: var(--color-gray-dark) !important;
+  color: var(--color-gray-dark) !important;
 }
 
 /* Training Plan Title (often in header context) */
 div[class*="TrainingPlanTitle_title_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Device Selection */
 .js-select-device {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 /* Main Sidebar (part of overall layout/navigation) */
 li[class*="MainSidebar_groupBottomBorder_"]:not(:only-child) {
-    border-bottom-color: var(--color-black) !important;
-    /* This is unusual, maybe specific override? */
+  border-bottom-color: var(--color-black) !important;
+  /* This is unusual, maybe specific override? */
 }
 
 li[class*="MenuItem_menuItem_"][class*="MenuItem_openMenuItem_"] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 a[class*="MenuItem_menuItemLinkChild_"][class*="MenuItem_activeChild_"] {
-    background-color: var(--color-gray-medium-dark) !important;
+  background-color: var(--color-gray-medium-dark) !important;
 }
 
 span[class*="MenuItem_menuItemText_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }

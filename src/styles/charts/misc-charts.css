@@ -3,99 +3,97 @@ div[class*="ProgressBar_barWrapper_"],
 div[class*="FitnessAgeFactorModal_bar_"],
 .timeInZonesProgressBarWrapper,
 .bar-complete-wrapper {
-    background: var(--background-medium) !important;
+  background: var(--background-medium) !important;
 }
 
 .timeInZonesProgressBar {
-    border-color: var(--color-gray-medium) !important;
+  border-color: var(--color-gray-medium) !important;
 }
 
 div[class*="ProgressBar_bar_"][style*="background: rgb(0, 0, 0);"],
 /* Black progress bar fill */
 div[class*="ProgressBar_bar_"][style*="background: black"] {
-    background: var(--color-white) !important;
+  background: var(--color-white) !important;
 }
 
 /* Secondary Stat Stacked Bar */
 [class*="SecondaryStatStackedBarChart_stackedBarIndicator_"] {
-    border-color: var(--color-gray-dark) !important;
+  border-color: var(--color-gray-dark) !important;
 }
 
 /* Calories Burned Bar */
 div[class*="Gc5style_caloriesBurnedBarIndicator_"] {
-    background: var(--background-primary) !important;
+  background: var(--background-primary) !important;
 }
-
 
 /* Gauges */
 div[class*="PulseOxGauge_donutCenter_"] {
-    fill: var(--color-gray-dark) !important;
-    stroke: var(--color-gray-dark) !important;
-    background-color: var(--background-primary) !important;
+  fill: var(--color-gray-dark) !important;
+  stroke: var(--color-gray-dark) !important;
+  background-color: var(--background-primary) !important;
 }
 
 div[class*="SleepGauge_donutCenter_"] {
-    background-color: var(--color-transparent);
+  background-color: var(--color-transparent);
 }
 
 div[class*="IntensityMinutesGauge_imValue_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="VO2MaxGaugeChart_value_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="BodyBatteryGauge_gaugeCenter_"] {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="TEGaugeChart_teScore_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Golf Gauge Approach */
 span:has(div[class*="GolfStatsTabApproach_gaugeContainer_"]) {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="GolfStatsTabApproach_noData_"],
 div[class*="GolfStatsTabApproach_candyCane_"] {
-    border-color: var(--color-white) !important;
-    color: var(--text-secondary) !important;
+  border-color: var(--color-white) !important;
+  color: var(--text-secondary) !important;
 }
-
 
 /* Chart Text / Labels */
 div[style*="color: rgb(199, 199, 199);"] {
-    /* Generic light grey text */
-    color: var(--text-primary) !important;
-    /* Remap to white, check context */
+  /* Generic light grey text */
+  color: var(--text-primary) !important;
+  /* Remap to white, check context */
 }
 
 /* Specific Chart Elements */
 div[class*="AcuteTrainingLoadChart_loadRatio_"] {
-    /* Acute Load text */
-    color: var(--text-primary) !important;
+  /* Acute Load text */
+  color: var(--text-primary) !important;
 }
 
 div[class*="SharedModalStyles_acuteTextColor_"] {
-    /* Acute Load text (Shared Modal) */
-    color: var(--text-primary) !important;
+  /* Acute Load text (Shared Modal) */
+  color: var(--text-primary) !important;
 }
 
 div[class*="IntensityMinutesPageGauge_chartLabelPrimary_"] {
-    /* Intensity Minutes text */
-    color: var(--text-primary) !important;
+  /* Intensity Minutes text */
+  color: var(--text-primary) !important;
 }
 
 div[class*="PrimaryBenefitItem_ruler_"] {
-    /* Primary Benefit ruler border */
-    border-color: var(--border-default) !important;
+  /* Primary Benefit ruler border */
+  border-color: var(--border-default) !important;
 }
 
 div[class*="WorkoutBenefit_workoutBenefitContainer_"] {
-    /* Workout Benefit border */
-    border-color: var(--border-default) !important;
+  /* Workout Benefit border */
+  border-color: var(--border-default) !important;
 }

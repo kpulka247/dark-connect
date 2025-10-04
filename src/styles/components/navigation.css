@@ -1,25 +1,25 @@
 /* Tab Navigation */
 .nav-tabs {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
-.nav-tabs>.active>a,
+.nav-tabs > .active > a,
 .nav-tabs li a:hover,
 .nav-tabs li a:focus {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-.nav-tabs>li>a {
-    color: var(--text-secondary) !important;
+.nav-tabs > li > a {
+  color: var(--text-secondary) !important;
 }
 
 ul[class*="NavigationTabs_navigationTabs_"] {
-    background-color: var(--background-soft) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-soft) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="NavigationTabs_tabTitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 li[class*="NavigationTabs_activeTab_"],
@@ -27,21 +27,25 @@ li[class*="NavigationTabs_activeTab_"]:hover,
 li[class*="NavigationTabs_activeTab_"]:focus,
 ul[class*="NavigationTabs_navigationTabs_"] li:hover,
 ul[class*="NavigationTabs_navigationTabs_"] li:focus {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Tabs Component from content.js */
 [class*="Tabs_navTabs_"] {
-    border-bottom-color: var(--border-default) !important;
+  border-bottom-color: var(--border-default) !important;
 }
 
-[class*="Tabs_navTabs_"]>li>[class*="Tabs_tabTitle_"]:hover,
-[class*="Tabs_navTabs_"]>li>[class*="Tabs_tabTitle_"]:focus,
-[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"],
-[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"]:hover,
-[class*="Tabs_navTabs_"]>[class*="Tabs_active_"]>[class*="Tabs_tabTitle_"]:focus {
-    color: var(--text-primary) !important;
+[class*="Tabs_navTabs_"] > li > [class*="Tabs_tabTitle_"]:hover,
+[class*="Tabs_navTabs_"] > li > [class*="Tabs_tabTitle_"]:focus,
+[class*="Tabs_navTabs_"] > [class*="Tabs_active_"] > [class*="Tabs_tabTitle_"],
+[class*="Tabs_navTabs_"]
+  > [class*="Tabs_active_"]
+  > [class*="Tabs_tabTitle_"]:hover,
+[class*="Tabs_navTabs_"]
+  > [class*="Tabs_active_"]
+  > [class*="Tabs_tabTitle_"]:focus {
+  color: var(--text-primary) !important;
 }
 
 /* Breadcrumb Navigation (Event Page) */
@@ -50,8 +54,8 @@ div[class*="BreadcrumbForm_navBar_"],
 div[class*="BreadcrumbForm_footerContainer_"],
 /* Might fit better in footer? */
 div[class*="BreadcrumbForm_mainContainer_"] {
-    color: var(--text-primary) !important;
-    background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 /* Accordion Navigation */
@@ -59,15 +63,16 @@ div[class*="BreadcrumbForm_mainContainer_"] {
 .accordion a:active,
 .accordion a:focus,
 [class*="ReportSelector_accordionItemsDetailList_"] li:hover,
-[class*="ReportSelector_accordionItemsDetailList_"] li[class*="ReportSelector_selected_"] {
-    color: var(--link-color) !important;
-    /* Uses link button style */
+[class*="ReportSelector_accordionItemsDetailList_"]
+  li[class*="ReportSelector_selected_"] {
+  color: var(--link-color) !important;
+  /* Uses link button style */
 }
 
 .accordion-inner a:hover {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 [class*="Accordion_accordionItemContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }

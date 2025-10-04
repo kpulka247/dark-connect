@@ -1,12 +1,12 @@
 .challenge-card {
-    /* Card dimensions */
-    width: 13vw;
-    min-height: 276px !important;
+  /* Card dimensions */
+  width: 13vw;
+  min-height: 276px !important;
 }
 
 div[class*="ChallengeCard_container_"] {
-    /* Card border */
-    border-color: var(--border-default) !important;
+  /* Card border */
+  border-color: var(--border-default) !important;
 }
 
 /* Challenge Creation Steps */
@@ -17,95 +17,96 @@ div[class*="Step2Participant_participantContainer_"],
 div[class*="Step3Duration_datepickersContainer_"],
 /* Datepicker container */
 div[class*="Step4Summary_container_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
 }
 
 label[class*="CreateChallengePageIndex_stepOption_"] {
-    /* Step option border */
-    border-color: var(--border-default) !important;
+  /* Step option border */
+  border-color: var(--border-default) !important;
 }
 
-div[class*="CreateChallengePageIndex_step_"][aria-current='true'] {
-    /* Current step text */
-    color: var(--text-primary) !important;
+div[class*="CreateChallengePageIndex_step_"][aria-current="true"] {
+  /* Current step text */
+  color: var(--text-primary) !important;
 }
 
 /* Step 3 Duration Datepicker */
 div[class*="Step3Duration_datepickers_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="Step3Duration_monthPickerTitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Participant Selection */
 label[class*="ConnectionParticipant_connection_"],
 div[class*="ConnectionParticipant_connection_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
-label[class*="ConnectionParticipant_connection_"][data-dialog='true']:nth-child(2n) {
-    background-color: var(--background-soft) !important;
-    /* Alternating background */
+label[class*="ConnectionParticipant_connection_"][data-dialog="true"]:nth-child(
+    2n
+  ) {
+  background-color: var(--background-soft) !important;
+  /* Alternating background */
 }
 
 /* Step 4 Summary */
 div[class*="Step4Summary_subContainer_"],
 div[class*="Step4Summary_participants_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Challenge Summary (Leaderboard page?) */
 .challenge-summary {
-    background: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Challenge Detail Page */
 [class*="ChallengeDetailPageLeaderboard_tableRow_"][class*="ChallengeDetailPageLeaderboard_highlight_"],
 [class*="ChallengeDetailPageLeaderboard_tableRow_"]:hover {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 [class*="ChallengeDetailPageDesc_container_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="ChallengeDetailPageDesc_desc_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="ChallengeDetailPageCommentSection_container_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="ChallengeAlternateAwards_container_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
-
 
 /* Invite Players Modal */
 [class*="InvitePlayersModal_invitedPlayersSection_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
 img[class*="InviteesView_playerAvatar_"] {
-    /* Avatar border */
-    border-color: var(--border-default) !important;
+  /* Avatar border */
+  border-color: var(--border-default) !important;
 }
 
 /* Badge Challenge Specifics */
 [class*="challengesFeature_badgeChallengeRules_"],
 [class*="challengesFeature_rewardRule_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="BadgeChallenges2_buttonsAndList_"],
 [class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }

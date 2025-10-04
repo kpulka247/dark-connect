@@ -1,35 +1,35 @@
 /* Highcharts Tooltip */
 .highcharts-tooltip span {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .highcharts-tooltip text {
-    /* SVG text color */
-    fill: var(--color-white) !important;
-    color: var(--text-primary) !important;
+  /* SVG text color */
+  fill: var(--color-white) !important;
+  color: var(--text-primary) !important;
 }
 
 .highcharts-label-box[fill="#ffffff"],
 /* Background for default */
 .highcharts-tooltip-box[fill="#ffffff"] {
-    fill: var(--color-gray-dark) !important;
+  fill: var(--color-gray-dark) !important;
 }
 
 .highcharts-label-box:not([fill="#ffffff"]),
 /* Background for others */
 .highcharts-tooltip-box:not([fill="#ffffff"]) {
-    fill: var(--color-gray-darker) !important;
+  fill: var(--color-gray-darker) !important;
 }
 
 /* Specific Highcharts tooltip content */
 .hrv-reports-tooltip-container .hrv-status-date-category {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Recharts Tooltip Wrapper */
 div.recharts-tooltip-wrapper {
-    color: var(--text-primary);
-    /* Background is likely handled by specific tooltips below */
+  color: var(--text-primary);
+  /* Background is likely handled by specific tooltips below */
 }
 
 /* Specific Recharts Tooltips */
@@ -44,46 +44,46 @@ div[class*="FloorsDataReport_tooltip_"],
 div[class*="SleepChart_tooltip_"],
 div[class*="HRVTimelineChart_tooltip_"],
 div[class*="Report_reportChartTooltipWrapper_"] {
-    /* Uses different background */
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Uses different background */
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="HRVTimelineChart_tooltip_"] {
-    /* Remove shadow for this one */
-    box-shadow: none !important;
+  /* Remove shadow for this one */
+  box-shadow: none !important;
 }
 
 div[class*="HrvStatusReportChart_tooltipContainer_"],
 div[class*="BodyBatteryReports_tooltipContainer_"],
 div[class*="SleepScoreReport_tooltipContainer_"],
 div[class*="ActivityHistoryChartAndStats_tooltipContainer_"] {
-    background: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Other Tooltips */
 div[class*="AcclimationTooltip_tooltip_"] {
-    background: var(--background-soft) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-soft) !important;
+  border-color: var(--border-default) !important;
 }
 
 span[class*="IconTooltip_container_"] span {
-    /* Icon Tooltip text (needs fixing?) */
-    color: var(--color-black) !important;
-    /* Original style was black, might need changing */
+  /* Icon Tooltip text (needs fixing?) */
+  color: var(--color-black) !important;
+  /* Original style was black, might need changing */
 }
 
 [class*="DefaultCustomTooltip_tooltipContainer_"],
 [class*="ElevationChart_mainElevationAndDistanceContainer_"] {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 [class*="ElevationChart_elevationAndDistanceItem_"],
 [class*="ElevationChart_sectionLabel_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="ElevationChart_distanceContainer_"] {
-    color: var(--text-secondary) !important;
+  color: var(--text-secondary) !important;
 }

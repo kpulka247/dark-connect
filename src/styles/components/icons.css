@@ -1,14 +1,14 @@
 /* General Icon Colors */
 div[class*="SecondaryStatCard_arrowContainer_"],
 g[fill="#101010"],
-button[class*="ByGroupTable_toggleButton_"]>svg,
+button[class*="ByGroupTable_toggleButton_"] > svg,
 button[type="button"] svg {
-    /* SVG fill override */
-    color: var(--text-primary) !important;
-    fill: var(--color-white) !important;
+  /* SVG fill override */
+  color: var(--text-primary) !important;
+  fill: var(--color-white) !important;
 }
 
-[class*=icon-pointer-],
+[class*="icon-pointer-"],
 [class*="icon-arrow-"],
 [class^="icon-ellipsis"],
 [class*="PowerGuidanceSelectCourse_terrainType_"],
@@ -20,156 +20,175 @@ div[class*="ProfileImage_iconWrapper_"] i,
 svg[data-library="ui-icons"][fill="#101010"],
 [class*="icon-activity-"][class*="PlanCard_selection_"],
 .icon-photos {
-    /* Profile image icon wrapper */
-    color: var(--text-primary) !important;
-    fill: var(--color-white) !important;
-    /* Ensure SVG fill is also white */
+  /* Profile image icon wrapper */
+  color: var(--text-primary) !important;
+  fill: var(--color-white) !important;
+  /* Ensure SVG fill is also white */
 }
 
 /* Specific Icon Colors */
 .icon-remove {
-    color: var(--color-red-remove) !important;
+  color: var(--color-red-remove) !important;
 }
 
 .icon-add-secondary-stats {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
-.page.activity-list .favorite:hover [class^='icon-'] {
-    /* Favorite icon hover */
-    color: var(--text-primary) !important;
+.page.activity-list .favorite:hover [class^="icon-"] {
+  /* Favorite icon hover */
+  color: var(--text-primary) !important;
 }
 
 .page.activity-detail .segments-table .icon-eye.active {
-    /* Active eye icon */
-    color: var(--text-primary) !important;
+  /* Active eye icon */
+  color: var(--text-primary) !important;
 }
 
 .icon-help,
 [class*="HelpIcon_helpIcon_"] svg {
-    color: var(--color-blue-primary) !important;
-    fill: var(--color-blue-primary) !important;
+  color: var(--color-blue-primary) !important;
+  fill: var(--color-blue-primary) !important;
 }
 
 .page-navigation-action:hover,
 .page-navigation-action:focus,
 .page-navigation-action:active {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Icon Backgrounds/Filters */
 div[class*="AltitudeAcclimationSecondaryStatCard_trendIcon_"] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 div[class*="ClimbsSheet_closeSheet_"],
 div[class*="GarminMapLegend_legendIcon_"],
 div[class*="MapProviderContainer__layerControlButton_"],
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthTanitaIcons_"] {
-    filter: invert(1);
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_healthTanitaIcons_"] {
+  filter: invert(1);
 }
 
 div[class*="MapProviderContainer_centerMapIcon_"] {
-    /* Map center icon */
-    filter: invert(1);
-    background-color: var(--color-gray-icon) !important;
-    border-color: var(--color-gray-icon) !important;
+  /* Map center icon */
+  filter: invert(1);
+  background-color: var(--color-gray-icon) !important;
+  border-color: var(--color-gray-icon) !important;
 }
 
 /* Map control item icons */
 .map-controls .player .pause span {
-    /* Pause icon part */
-    background: var(--color-white) !important;
+  /* Pause icon part */
+  background: var(--color-white) !important;
 }
 
 /* Table sort icons */
 .table .sortable-header-row .icon-pointer-up,
 .table .sortable-header-row .icon-pointer-down {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Reorder/Drag handle icons */
 span[class*="ReorderActivityList_dragHandle_"],
 span[class*="ReorderSelectedStats_dragHandle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Workout step icons */
-div[class*="WorkoutStep_stepDeleteIcon_"]>div>button>i,
-div[class*="WorkoutRepeatStep_repeatStepTitleRight_"]>div>button>i,
+div[class*="WorkoutStep_stepDeleteIcon_"] > div > button > i,
+div[class*="WorkoutRepeatStep_repeatStepTitleRight_"] > div > button > i,
 div[class*="WorkoutRepeatStep_grabIcon_"] i,
 div[class*="WorkoutRepeatStep_repeatStepTitleLeft_"] i,
 div[class*="WorkoutStep_dragIcon_"] i {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Jet Lag Trip icons */
 div[class*="JetLagTrip_dropdownMenu_"] i,
 div[class*="JetLagTrip_editButton_"] i {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Golf icons */
 div[class*="GolfScorecardPage_actionButtonsContainer_"] i,
 div[class*="GolfScorecardPage_fairwayDirectionSelector_"] div div i,
 div[class*="ScorecardComponent_holeItem_"] div i {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Map Zoom Icons */
 [class*="MapZoom_zoomInIcon_"] path,
 [class*="MapZoom_zoomOutIcon_"] path {
-    stroke: var(--color-white) !important;
+  stroke: var(--color-white) !important;
 }
 
 /* Icon Hover */
-a:hover [class*=icon]:not([class*="MainSidebar_menuItem_"] a i):not([class*="icon-"]),
-[class*=icon] a:hover,
-[class^=icon]:hover:not([class*="MainSidebar_menuItem_"] a i):not([class*="icon-"]),
+a:hover
+  [class*="icon"]:not([class*="MainSidebar_menuItem_"] a i):not(
+    [class*="icon-"]
+  ),
+[class*="icon"] a:hover,
+[class^="icon"]:hover:not([class*="MainSidebar_menuItem_"] a i):not(
+    [class*="icon-"]
+  ),
 [class*=" icon"]:hover:not([class*="icon-"]),
 [class*="ActivityListItem_buttonDelete_"]:hover,
 [class*="ActivityListItem_buttonEdit_"]:hover,
 [class*="ButtonIcon_btnIcon_"]:not([disabled]):hover {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Ellipsis Menu Icon Hover */
 div[class*="EllipsisMenu_iconWrapper_"]:hover {
-    background: var(--background-soft) !important;
+  background: var(--background-soft) !important;
 }
 
 /* Sortable Table Icon Container */
 div[class*="SortableTable_iconContainer_"] {
-    fill: var(--color-white) !important;
+  fill: var(--color-white) !important;
 }
 
 /* Timeline Activity Icon */
 [class*="TimelineLayerChart_activityIconContainer_"] {
-    box-shadow: 0 0 0 1px var(--color-gray-dark) !important;
+  box-shadow: 0 0 0 1px var(--color-gray-dark) !important;
 }
 
 /* Weight Information Modals Icons */
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="line"],
-[class*="WeightsInformationModals_healthLegendFooter_"] [class*="WeightsInformationModals_chartLegend_"] [class*="WeightsInformationModals_legendFat_"] [class*="WeightsInformationModals_legendBit_"] {
-    background-color: var(--color-white) !important;
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_arrow_"]
+  [class*="line"],
+[class*="WeightsInformationModals_healthLegendFooter_"]
+  [class*="WeightsInformationModals_chartLegend_"]
+  [class*="WeightsInformationModals_legendFat_"]
+  [class*="WeightsInformationModals_legendBit_"] {
+  background-color: var(--color-white) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointUp_"] {
-    /*  Point up */
-    border-bottom-color: var(--color-white) !important;
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_arrow_"]
+  [class*="WeightsInformationModals_pointUp_"] {
+  /*  Point up */
+  border-bottom-color: var(--color-white) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointDown_"] {
-    /* Point down */
-    border-top-color: var(--color-white) !important;
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_arrow_"]
+  [class*="WeightsInformationModals_pointDown_"] {
+  /* Point down */
+  border-top-color: var(--color-white) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointLeft_"] {
-    /* Point left */
-    border-right-color: var(--color-white) !important;
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_arrow_"]
+  [class*="WeightsInformationModals_pointLeft_"] {
+  /* Point left */
+  border-right-color: var(--color-white) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_arrow_"] [class*="WeightsInformationModals_pointRight_"] {
-    /* Point right */
-    border-left-color: var(--color-white) !important;
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_arrow_"]
+  [class*="WeightsInformationModals_pointRight_"] {
+  /* Point right */
+  border-left-color: var(--color-white) !important;
 }

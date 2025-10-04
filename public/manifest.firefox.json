@@ -4,13 +4,9 @@
   "short_name": "Dark Connect",
   "version": "2.3.0",
   "description": "Dark mode for Garmin Connect website that replaces light colors with their dark theme.",
-  "permissions": [
-    "notifications"
-  ],
+  "permissions": ["notifications"],
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
@@ -26,9 +22,7 @@
         "https://connect.garmin.com/support/*",
         "https://connect.garmin.com/status/*"
       ],
-      "css": [
-        "styles/main.css"
-      ]
+      "css": ["styles/main.css"]
     }
   ],
   "action": {

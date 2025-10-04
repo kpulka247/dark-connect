@@ -1,120 +1,120 @@
 .body {
-    color: var(--text-primary) !important;
-    background: var(--background-soft) !important;
+  color: var(--text-primary) !important;
+  background: var(--background-soft) !important;
 }
 
 .page-feature {
-    color: var(--text-secondary) !important;
+  color: var(--text-secondary) !important;
 }
 
 .main-body {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .content {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="Gc5PageWrapper_pageWrapper_"] {
-    background-color: var(--background-deep) !important;
+  background-color: var(--background-deep) !important;
 }
 
 #consent #truste-consent-button,
 #consent #truste-consent-required,
 #consent #truste-show-consent {
-    background-color: var(--background-soft) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-soft) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Newsfeed specific body background (overrides general) */
 .main-body.dashboard,
 .page.newsfeed {
-    background: var(--background-deep) !important;
-    color: var(--text-primary) !important;
+  background: var(--background-deep) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Generic widget/card backgrounds */
 .widget,
 .minimize-main-nav .dailySummaryHeader {
-    background: var(--background-primary);
-    color: var(--text-primary);
+  background: var(--background-primary);
+  color: var(--text-primary);
 }
 
 /* Page wrapper */
 div[class*="PageContainer_container_"] {
-    background: var(--background-deep) !important;
+  background: var(--background-deep) !important;
 }
 
 div[class*="PageContainer_paper_"] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 /* Advanced Reporting Page background */
 div[class*="AdvancedReportingPage_genesisWrapper_"] {
-    background-color: var(--background-deep) !important;
+  background-color: var(--background-deep) !important;
 }
 
 /* Session Ended Page background */
 div[class*="SessionEndedPage_sessionEndedPage__"] footer {
-    background: var(--background-deep);
+  background: var(--background-deep);
 }
 
 /* Generic privacy overlay */
 .privacy-overlay,
 div[class*="CourseCreate_overlay_"] {
-    background-color: var(--background-deep) !important;
+  background-color: var(--background-deep) !important;
 }
 
 /* Generic border applied to many elements */
 .border-wrapper {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 .divider {
-    /* Could also be base.css */
-    border-color: var(--border-default) !important;
+  /* Could also be base.css */
+  border-color: var(--border-default) !important;
 }
 
 /* Page Specific Layouts */
 .page.activity-detail {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .page.activity-detail .activity-charts-container {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Sidebar Navigation Structure (Training, Settings etc.) */
 div[class*="SidebarNavigation_navBar_"] {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="SidebarNavigation_pageContainer_"],
 div[class*="SidebarNavigation_mainContainer_"],
 .page.longForm {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="SidebarNavigation_header_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Specific text elements often found in body content */
 .te-metrics span {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .activity-tracking-disclaimer {
-    /* Very specific, but layout related */
-    width: 120px;
-    font-size: 10px !important;
-    padding: 5px 10px !important;
+  /* Very specific, but layout related */
+  width: 120px;
+  font-size: 10px !important;
+  padding: 5px 10px !important;
 }
 
 /* Generic empty state / info text containers */
@@ -130,53 +130,59 @@ div[class*="NoResults_message2_"],
 div[class*="NoResults_noResultsFoundText_"],
 h4[class*="ErrorState_heading_"],
 .restricted-content-main-info p {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Generic detail text */
 div[class*="Gc5DetailCard_cardDetail_MainText_"],
 div[class*="Gc5DetailCard_cardDetail_SubText_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Generic profile related */
 div[class*="ProfileImage_userWrapper_"],
 div[class*="ProfileHeader_profileHeaderBanner_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-.socialButtons a button[class*="Button_btn_"][class*="Button_primary_"][class*="Button_medium_"][class*="Button_iconButton_"],
+.socialButtons
+  a
+  button[class*="Button_btn_"][class*="Button_primary_"][class*="Button_medium_"][class*="Button_iconButton_"],
 [class*="UserStats_viewMore_"] {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
-.socialButtons a button[class*="Button_btn_"][class*="Button_primary_"][class*="Button_medium_"][class*="Button_iconButton_"]:hover {
-    background-color: var(--background-soft) !important;
+.socialButtons
+  a
+  button[class*="Button_btn_"][class*="Button_primary_"][class*="Button_medium_"][class*="Button_iconButton_"]:hover {
+  background-color: var(--background-soft) !important;
 }
 
 /* Generic banner */
 div[class*="AnchoredBanner_banner_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    /* Added based on similar elements */
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  /* Added based on similar elements */
 }
 
 div[class*="AnchoredBanner_bannerHeader_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="AnchoredBanner_bannerBody_"] {
-    color: var(--text-secondary) !important;
+  color: var(--text-secondary) !important;
 }
 
 /* Cross-sell ad styling */
 div[class*="CrossSellAd_textWrapper_"],
 div[class*="CrossSellAd_imageWrapper_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Specific Y-axis labels with text shadow */
 .page .y-axis-label,
 .widget .y-axis-label {
-    text-shadow: 1px 0 1px var(--color-black-deep), -1px 0 1px var(--color-black-deep), 0 1px 1px var(--color-black-deep), 0 -1px 1px var(--color-black-deep) !important;
+  text-shadow: 1px 0 1px var(--color-black-deep),
+    -1px 0 1px var(--color-black-deep), 0 1px 1px var(--color-black-deep),
+    0 -1px 1px var(--color-black-deep) !important;
 }

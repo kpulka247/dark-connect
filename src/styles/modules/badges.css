@@ -1,58 +1,59 @@
 .page.badges .badge-filters {
-    /* Filter border */
-    border-color: var(--border-default) !important;
+  /* Filter border */
+  border-color: var(--border-default) !important;
 }
 
 .badge-detail.badge-earned,
 .badge-earned .badge-thumbnail .badge-name {
-    /* Earned badge text */
-    color: var(--text-primary);
+  /* Earned badge text */
+  color: var(--text-primary);
 }
 
 .badge-earned-msg a {
-    /* Link in earned message */
-    color: var(--text-primary) !important;
+  /* Link in earned message */
+  color: var(--text-primary) !important;
 }
 
 .badge-detail .badge-status-msg {
-    /* Status message background */
-    background-color: var(--background-primary) !important;
+  /* Status message background */
+  background-color: var(--background-primary) !important;
 }
 
 .page.badges .user-card .card-action-button {
-    /* Button background */
-    background: var(--background-primary) !important;
+  /* Button background */
+  background: var(--background-primary) !important;
 }
 
 .page.badges .user-card .avatar {
-    /* Avatar styling */
-    background: var(--background-primary) !important;
-    box-shadow: 0 0 0 4px var(--color-gray-dark), 0 0 0 5px var(--color-gray-light) !important;
+  /* Avatar styling */
+  background: var(--background-primary) !important;
+  box-shadow: 0 0 0 4px var(--color-gray-dark),
+    0 0 0 5px var(--color-gray-light) !important;
 }
 
 /* Badge Challenge Styles */
 [class*="challengesFeature_badgeChallengeRules_"],
 [class*="challengesFeature_rewardRule_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="BadgeChallenges2_buttonsAndList_"],
 [class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Badge Details */
 .badge-summary .badge-name,
 .badge-criteria,
 .badge-points {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .badge-detail a {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 .badge-detail .badge-earned-msg-list li:first-child,
 .badge-detail .badge-earned-msg-list li {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }

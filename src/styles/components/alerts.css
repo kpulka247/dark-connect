@@ -1,33 +1,33 @@
 div[class*="Alert_info_"],
 div[class*="Alert_alert_"] span a {
-    color: var(--text-primary) !important;
-    /* Text color inside alerts */
+  color: var(--text-primary) !important;
+  /* Text color inside alerts */
 }
 
 div[class*="Alert_success_"],
 div[class*="Alert_warning_"] {
-    color: var(--color-black) !important;
-    /* Text color inside success/warning alerts */
+  color: var(--color-black) !important;
+  /* Text color inside success/warning alerts */
 }
 
 /* Alert background */
 [class*="Alert_info_"] {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 /* LiveTrack Message Bar */
 .msg-bar .msg {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Close */
 [class*="Alert_closeBtn_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Permissions */
 [class*="GdprLimitedFeatureAlert_limitedFeatureAlertText_"] a {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }

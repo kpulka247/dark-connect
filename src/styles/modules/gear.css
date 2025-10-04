@@ -1,21 +1,23 @@
 /* Gear List */
 .gear-list li:hover {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 ul[class*="ActivityGearStatusView_gearList_"] li:hover {
-    /* Activity detail view */
-    background-color: var(--background-secondary) !important;
+  /* Activity detail view */
+  background-color: var(--background-secondary) !important;
 }
 
 /* Gear Icon/Avatar */
 i[class*="GearsTrackingPage_avatarLogo_"] {
-    box-shadow: 0px 0px 0px 3px var(--color-gray-dark), 0px 0px 0px 4px var(--color-gray-light) !important;
-    background-color: var(--background-secondary) !important;
+  box-shadow: 0px 0px 0px 3px var(--color-gray-dark),
+    0px 0px 0px 4px var(--color-gray-light) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 div[class*="ActivityGearList_gearImages_"] i {
-    /* Activity detail view */
-    box-shadow: 0px 0px 0px 3px var(--color-gray-dark), 0px 0px 0px 4px var(--color-gray-light) !important;
-    background-color: var(--background-secondary) !important;
+  /* Activity detail view */
+  box-shadow: 0px 0px 0px 3px var(--color-gray-dark),
+    0px 0px 0px 4px var(--color-gray-light) !important;
+  background-color: var(--background-secondary) !important;
 }

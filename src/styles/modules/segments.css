@@ -1,136 +1,137 @@
 .page.map-segments .detail-profile {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Map Card / Filters */
 .map-card {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .map-card-footer {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 .map-fitness .map-card {
-    /* Fitness map card style */
-    border-color: var(--border-default) !important;
-    opacity: .95 !important;
+  /* Fitness map card style */
+  border-color: var(--border-default) !important;
+  opacity: 0.95 !important;
 }
 
 .map-filter-trigger,
 .map-filter-detail {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .map-filter-detail {
-    /* Filter detail shadow/border */
-    box-shadow: inset 0 0 0 1px var(--color-shadow-dark-15), 0 1px 0 0 var(--color-gray-light) !important;
+  /* Filter detail shadow/border */
+  box-shadow: inset 0 0 0 1px var(--color-shadow-dark-15),
+    0 1px 0 0 var(--color-gray-light) !important;
 }
 
 a[class*="SelectionDropdown_mapFilterTrigger_"],
 a[class*="SelectionDropdown_mapFilterDetail_"] {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-div[class*="SelectionDropdown_mapFilterDetail_"] li [class*="SelectionDropdown_sectionDetails_"] {
-    color: var(--text-primary) !important;
+div[class*="SelectionDropdown_mapFilterDetail_"]
+  li
+  [class*="SelectionDropdown_sectionDetails_"] {
+  color: var(--text-primary) !important;
 }
-
 
 /* Map Controls / Layers */
 .btn-map-zoom {
-    /* Zoom button style */
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  /* Zoom button style */
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .map-layer {
-    /* Layer selector style */
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  /* Layer selector style */
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 span[class*="MapLayersProvider_layerTileStyleLabel_"] {
-    /* Layer label style */
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  /* Layer label style */
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .layer-tile-style.active {
-    /* Active layer style */
-    box-shadow: inset 0 0 0 2px var(--color-gray-dark) !important;
+  /* Active layer style */
+  box-shadow: inset 0 0 0 2px var(--color-gray-dark) !important;
 }
 
 div[class*="MapZoom_zoomButton_"][class*="MapZoom_course_"] {
-    /* Zoom button background/border */
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Zoom button background/border */
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="MapZoom_zoomInIcon_"] path,
 /* Zoom icon stroke */
 [class*="MapZoom_zoomOutIcon_"] path {
-    stroke: var(--color-white) !important;
+  stroke: var(--color-white) !important;
 }
-
 
 /* Map List */
 a[class*="SegmentsListCard_btnMapListToggle_"] {
-    /* Toggle button style */
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  /* Toggle button style */
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .map-list tfoot {
-    /* Footer style */
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
-    box-shadow: 0 -1px 0 0 var(--color-gray-light) !important;
+  /* Footer style */
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 -1px 0 0 var(--color-gray-light) !important;
 }
 
 .map-list tfoot td {
-    /* Footer text */
-    color: var(--text-primary) !important;
+  /* Footer text */
+  color: var(--text-primary) !important;
 }
 
 /* Map Search */
 .map-fitness .map-search button {
-    /* Button style */
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Button style */
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .map-fitness .map-search .icon-search {
-    /* Icon color */
-    color: var(--text-primary) !important;
+  /* Icon color */
+  color: var(--text-primary) !important;
 }
 
 /* Segment Leaderboard */
 div[class*="SegmentLeaderboardView_headerStyle_"] {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="SegmentsList_footer_"] {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Strava Card */
 div[class*="SegmentsListCard_stravaCard_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Virtual Partner */
 [class*="VirtualPartner_sectionHeader_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Privacy Menu */
 [class*="SegmentsPrivacyMenu_editPrivacyLabel_"] {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }

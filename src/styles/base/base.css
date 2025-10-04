@@ -1,16 +1,16 @@
 /* Base element styles */
 hr {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 body {
-    color: var(--text-primary) !important;
-    background-color: var(--background-deep) !important;
+  color: var(--text-primary) !important;
+  background-color: var(--background-deep) !important;
 }
 
 /* Very generic selectors */
-ul>li>a>span[data-value] {
-    color: var(--color-gray-medium);
+ul > li > a > span[data-value] {
+  color: var(--color-gray-medium);
 }
 
 a,
@@ -18,7 +18,7 @@ a p,
 h5,
 h6,
 p {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Default link color for map attributions (overridden from general 'a' rule) */
@@ -26,27 +26,27 @@ p {
 .gm-style .gm-style-cc button,
 .gm-style .gm-style-cc span,
 .leaflet-control-attribution a {
-    color: var(--color-black) !important;
+  color: var(--color-black) !important;
 }
 
 /* Ensure header/nav bottom links inherit color correctly if needed */
 .header-nav-menu-bottom a,
 .header-nav-menu-bottom a:hover {
-    color: inherit !important;
+  color: inherit !important;
 }
 
 /* Generic username link */
 span.username-link {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Generic H3/H2 data bits */
 h3.data-bit a,
 .h2.data-bit {
-    color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 /* Generic body color */
 body {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }

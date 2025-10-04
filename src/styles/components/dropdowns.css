@@ -9,252 +9,259 @@ div[class*="UnifiedDropdown_dropdownMenu_"],
 [class*="Dropdown_fullDropdown_"],
 [class*="Dropdown_dropdown_"],
 [class*="ReportProfileDropdown_dropdownMenu_"] {
-    background: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Dropdown Menu Item States */
-.dropdown-menu>li.active>a:not(:hover),
-.dropdown-menu>li.active.multiple>a:not(:hover) {
-    background-color: var(--background-light) !important;
-    color: var(--text-primary) !important;
+.dropdown-menu > li.active > a:not(:hover),
+.dropdown-menu > li.active.multiple > a:not(:hover) {
+  background-color: var(--background-light) !important;
+  color: var(--text-primary) !important;
 }
 
-.dropdown-menu>li.disabled,
-.dropdown-menu>li.disabled label,
-.dropdown-menu>li.disabled label:hover {
-    color: var(--text-disabled) !important;
+.dropdown-menu > li.disabled,
+.dropdown-menu > li.disabled label,
+.dropdown-menu > li.disabled label:hover {
+  color: var(--text-disabled) !important;
 }
 
 /* Dropdown Menu Content/Text */
-.dropdown-menu>li>label,
+.dropdown-menu > li > label,
 [class*="Menu_menuItems_"],
-.reportImageDropdown .dropdown-menu>li.clearfix>i,
+.reportImageDropdown .dropdown-menu > li.clearfix > i,
 [class*="ShareButton_shareButton_"] {
-    /* Also icons */
-    color: var(--text-primary) !important;
+  /* Also icons */
+  color: var(--text-primary) !important;
 }
 
 [class*="Menu_inlineWrapper_"]:hover {
-    color: var(--color-white) !important;
+  color: var(--color-white) !important;
 }
 
 [class*="Dropdown_dropdownMenu_"] li:not([class*="Dropdown_divider_"]):hover {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 /* Dropdown Dividers */
 .dropdown-menu .divider,
 div[class*="ExercisePicker_divider_"],
 [class*="Menu_divider_"] {
-    background-color: var(--background-light) !important;
-    border-color: var(--border-default) !important;
-    /* Added for consistency */
+  background-color: var(--background-light) !important;
+  border-color: var(--border-default) !important;
+  /* Added for consistency */
 }
 
 [class*="Dropdown_dropdownMenu_"] [class*="Dropdown_divider_"],
-[class*="NewsFeedFilter_feedFilterDetail_"] li[class*="NewsFeedFilter_divider_"] {
-    background-color: var(--background-light) !important;
+[class*="NewsFeedFilter_feedFilterDetail_"]
+  li[class*="NewsFeedFilter_divider_"] {
+  background-color: var(--background-light) !important;
 }
-
 
 /* Specific Dropdown Containers/Triggers */
 div[class*="SelectionDropdown_mapFilterDetail_"],
 button[class*="SelectionDropdown_mapFilterTrigger_"] {
-    background: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    box-shadow: inset 0 0 0 1px var(--color-gray-light) !important;
+  background: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  box-shadow: inset 0 0 0 1px var(--color-gray-light) !important;
 }
 
 .map-filter-trigger,
 .map-filter-detail {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .map-filter-detail {
-    box-shadow: inset 0 0 0 1px var(--color-shadow-dark-15), 0 1px 0 0 var(--color-gray-light) !important;
+  box-shadow: inset 0 0 0 1px var(--color-shadow-dark-15),
+    0 1px 0 0 var(--color-gray-light) !important;
 }
 
 a[class*="SelectionDropdown_mapFilterTrigger_"],
 a[class*="SelectionDropdown_mapFilterDetail_"] {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="NewsFeedFilter_feedFilterTrigger_"],
 div[class*="NewsFeedFilter_feedFilterDetail_"] {
-    background: var(--background-soft) !important;
-    color: var(--text-primary) !important;
+  background: var(--background-soft) !important;
+  color: var(--text-primary) !important;
 }
 
 a[class*="DropDownComponent_trigger_"] {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="DropDownComponent_detail_"] {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
-    box-shadow: inset 0 0 0 1px var(--color-gray-light) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
+  box-shadow: inset 0 0 0 1px var(--color-gray-light) !important;
 }
 
 div[class*="EventSearchFilter_activityListFilters_"] {
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="FilterCourses_dropdownContainer_"] {
-    background-color: rgb(32, 32, 32, 0.95) !important;
-    border-color: var(--border-default) !important;
+  background-color: rgb(32, 32, 32, 0.95) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Chosen Dropdown Styles */
 .chosen-container .chosen-drop {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    box-shadow: 0 1px 0 0 var(--color-gray-light) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  box-shadow: 0 1px 0 0 var(--color-gray-light) !important;
 }
 
 .chosen-container-single .chosen-single {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .chosen-container .chosen-results li.group-result {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
 .chosen-container .chosen-results {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Exercise Picker Dropdown */
 div[class*="ExercisePicker_dropdownContent_"],
 div[class*="ExercisePickerFilter_filterDropdownContent_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
-    box-shadow: 0 1px 0 0 var(--color-gray-light) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
+  box-shadow: 0 1px 0 0 var(--color-gray-light) !important;
 }
 
 button[class*="ExercisePickerFilter_filterDropdownToggle_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 li[class*="ExercisePicker_optionGroup_"] {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="ExercisePicker_exerciseCount_"],
 ul[class*="ExercisePicker_exerciseOptions_"] li,
-div[class*="ExercisePickerFilter_filterDropdown_"] label>span {
-    color: var(--text-primary) !important;
+div[class*="ExercisePickerFilter_filterDropdown_"] label > span {
+  color: var(--text-primary) !important;
 }
 
 /* Report Exercise Picker Dropdown */
 button[class*="ReportExercisePicker_dropdownToggle_"],
 button[class*="PrimaryMusclePicker_dropdownToggle_"] {
-    box-shadow: 0px 2px 0px var(--color-gray-light) !important;
-    border-color: var(--border-default) !important;
+  box-shadow: 0px 2px 0px var(--color-gray-light) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="ReportExercisePicker_dropdownMenu_"],
 div[class*="PrimaryMusclePicker_dropdownMenu_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="ReportExercisePicker_dropdownMenuItem_"]:hover,
 div[class*="PrimaryMusclePicker_dropdownMenuItem_"]:hover {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 [class*="ReportExercisePicker_dropdownMenuItem_"] button {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Menu Component Styles */
 div[class*="Menu_customComponentMenu_"] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
-div[class*="Menu_menuItemsSelected_"]:not(div[class*="Menu_menuItemsSelected_"]:hover) {
-    background-color: var(--background-light) !important;
+div[class*="Menu_menuItemsSelected_"]:not(
+    div[class*="Menu_menuItemsSelected_"]:hover
+  ) {
+  background-color: var(--background-light) !important;
 }
 
 [class*="Menu_smallMenu_"],
 [class*="Menu_menuItemWrapper_"] {
-    background-color: var(--background-light) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-light) !important;
+  border-color: var(--border-default) !important;
 }
 
-[class*="SessionOptions_sessionOptionsContainer_"] [class*="Menu_smallMenu_"]>[class*="Menu_menuItemsSelected_"]:not(:hover) {
-    /* LiveTrack */
-    background-color: var(--background-lighter) !important;
+[class*="SessionOptions_sessionOptionsContainer_"]
+  [class*="Menu_smallMenu_"]
+  > [class*="Menu_menuItemsSelected_"]:not(:hover) {
+  /* LiveTrack */
+  background-color: var(--background-lighter) !important;
 }
-
 
 /* Dropdown Arrow Indicator */
 .dropdown-toggle:after {
-    border-top-color: var(--color-white) !important;
+  border-top-color: var(--color-white) !important;
 }
 
 .caret {
-    /* Table sort uses this too */
-    border-top-color: var(--color-white) !important;
+  /* Table sort uses this too */
+  border-top-color: var(--color-white) !important;
 }
 
 /* Generic Dropdown Text */
 span[class*="CompareFilters_dropdown_"],
 span[class*="Dropdown_dropdownToggle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="Dropdown_dataDiv_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Dropdown Container Borders/Shadows */
 .dropdown-container div span {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="Dropdown_dropdownMenu_"] {
-    box-shadow: 0 2px 5px var(--color-gray-light), inset 0px 0px 0px 1px var(--color-gray-light) !important;
+  box-shadow: 0 2px 5px var(--color-gray-light),
+    inset 0px 0px 0px 1px var(--color-gray-light) !important;
 }
 
 [class*="DropdownStyles_dropdown_"],
 [class*="DropdownStyles_selectionDropdown_"],
 [class*="UnifiedDropdown_dropdownContainer_"][class*="UnifiedDropdown_bottomShadow_"] {
-    box-shadow: 0 2px 0 var(--color-gray-light) !important;
+  box-shadow: 0 2px 0 var(--color-gray-light) !important;
 }
 
 div[class*="Dropdown_fullDropdown_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Unified Dropdown (Advanced Reporting) Specifics */
 [class*="UnifiedDropdown_dropdownContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="UnifiedDropdown_numberSelectedDisplay_"] {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 /* Item Borders */
-[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_grouped_"]:first-child:not([class*="UnifiedDropdown_groupHeader_"]):not([class*="UnifiedDropdown_multiselectCheckboxContainer_"]):not(li),
+[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_grouped_"]:first-child:not(
+    [class*="UnifiedDropdown_groupHeader_"]
+  ):not([class*="UnifiedDropdown_multiselectCheckboxContainer_"]):not(li),
 li[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_ungrouped_"]:first-child {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Autosuggest Menu */
 .autosuggestMenu {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
 }

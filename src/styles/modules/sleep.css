@@ -1,31 +1,31 @@
 /* Sleep Gauge */
 div[class*="SleepGauge_donutCenter_"] {
-    background-color: var(--color-transparent);
-    /* Donut center is transparent */
+  background-color: var(--color-transparent);
+  /* Donut center is transparent */
 }
 
 /* Sleep Score / Factor Cards */
 div[class*="SleepScoreFactorCard_factorCardContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="SleepCoachFactorCard_factorCardContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="SleepPage_sleepScoreTabContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Sleep Stages */
 span[class*="SleepStageStatus_optimalRangeCircle_"] {
-    /* Optimal range marker */
-    border-color: var(--color-white) !important;
+  /* Optimal range marker */
+  border-color: var(--color-white) !important;
 }
 
 div[class*="SleepStageStatus_barTick_"] {
-    /* Bar tick marker */
-    background-color: var(--color-white) !important;
+  /* Bar tick marker */
+  background-color: var(--color-white) !important;
 }
 
 /* Sleep Naps */
@@ -34,61 +34,71 @@ h6[class*="AddNapView_addNap_"],
 [class*="NapsTableView_tableTitle_"],
 div[class*="NapsTable_label_"],
 [class*="NapsTableView_napTip_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Sleep Coach */
 p[class*="SleepCoachFactorModal_feedbackString_"],
 div[class*="SleepCoachFactors_noFactorsText_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Sleep Help */
 [class*="SleepHelp_mainTitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Sleep Coach Graphic */
 div[class*="SleepCoachGraphic_sleepBar_"],
 div[class*="SleepCoachGraphic_legendSleepNeedDot_"] {
-    background-image: repeating-linear-gradient(-45deg, var(--color-blue-sleep), var(--color-blue-sleep) 2px, var(--color-gray-dark) 3px, var(--color-gray-dark) 5px) !important;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-blue-sleep),
+    var(--color-blue-sleep) 2px,
+    var(--color-gray-dark) 3px,
+    var(--color-gray-dark) 5px
+  ) !important;
 }
 
 /* Sleep Chart Specifics */
 path.highcharts-point[fill="rgb(0,0,0)"],
 /* Point fill */
 path.highcharts-point-hover[fill="rgb(25,25,25)"] {
-    /* Hover fill */
-    fill: var(--color-white) !important;
+  /* Hover fill */
+  fill: var(--color-white) !important;
 }
 
 div[class*="SleepChart_tooltip_"] {
-    /* Tooltip background */
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Tooltip background */
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="SleepChartTooltipColumn_tooltipBullet_"][style="background-color: rgb(0, 0, 0);"] {
-    background-color: var(--color-white) !important;
+  background-color: var(--color-white) !important;
 }
 
 div[class*="SleepScoreReport_tooltipContainer_"],
 div[class*="Notes_notes_"] {
-    /* Tooltip background */
-    background: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  /* Tooltip background */
+  background: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Sleep Secondary Stat Card */
 div[class*="SleepSecondaryStatCard_scoreText_"],
 div[class*="SleepSecondaryStatCard_durationValue_"],
 [class*="Gc5SleepChart_xAxisLabel_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Sleep Report Table Link */
 [class*="SleepReportTable_anchor_"],
-div[class*="SleepScoreFactorCard_factorCardContainer_"]:hover div div[class*="SleepScoreFactorCard_sleepStageLabel_"],
-div[class*="SleepCoachFactorCard_factorCardContainer_"]:hover div div[class*="SleepCoachFactorCard_factorCardTitle_"] {
-    color: var(--link-color) !important;
+div[class*="SleepScoreFactorCard_factorCardContainer_"]:hover
+  div
+  div[class*="SleepScoreFactorCard_sleepStageLabel_"],
+div[class*="SleepCoachFactorCard_factorCardContainer_"]:hover
+  div
+  div[class*="SleepCoachFactorCard_factorCardTitle_"] {
+  color: var(--link-color) !important;
 }

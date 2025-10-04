@@ -1,51 +1,51 @@
 .connection-button-dropdown-menu {
-    /* Dropdown background */
-    background: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Dropdown background */
+  background: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="ConnectionList"],
 a[class*="ConnectionList"] {
-    /* List background */
-    background-color: var(--background-primary) !important;
+  /* List background */
+  background-color: var(--background-primary) !important;
 }
 
 div[class*="ConnectionList"]:hover,
 a[class*="ConnectionList"]:hover {
-    /* List background */
-    border-color: var(--color-white) !important;
+  /* List background */
+  border-color: var(--color-white) !important;
 }
 
 div[class*="ConnectionList_itemContainer_"][class*="ConnectionList_card_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="ConnectionList_nameWrapper_"] {
-    /* Name text */
-    color: var(--text-primary) !important;
+  /* Name text */
+  color: var(--text-primary) !important;
 }
 
 li[class*="ConnectionLeaderboard_showMoreBtn"] button {
-    /* Show more button */
-    margin: 0 auto;
-    text-align: center;
-    width: 90%;
-    background-color: var(--color-white) !important;
+  /* Show more button */
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  background-color: var(--color-white) !important;
 }
 
 li[class*="ConnectionLeaderboard_highlight_"],
 li[class*="ConnectionLeaderboard_leaderboardRow_"]:hover,
 li[class*="ConnectionLeaderboard_leaderboardRow_"]:active {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
-div[class*="ConnectionsPage_newsFeedLink_"]>a {
-    /* Newsfeed link color */
-    color: var(--link-color) !important;
+div[class*="ConnectionsPage_newsFeedLink_"] > a {
+  /* Newsfeed link color */
+  color: var(--link-color) !important;
 }
 
 .connections-inline-list .connection:nth-child(2n) {
-    /* Alternating background */
-    background-color: var(--background-secondary) !important;
+  /* Alternating background */
+  background-color: var(--background-secondary) !important;
 }
