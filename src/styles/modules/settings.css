@@ -1,45 +1,44 @@
 /* Navigation Menu */
 [class*="SettingsPage_navMenu_"] li[class*="SettingsPage_active_"],
 ul[class*="SettingsPage_navMenu_"] li:hover {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="SettingsNav_settingsNav_"] a {
-    /* Default link color */
-    color: var(--text-secondary) !important;
+  /* Default link color */
+  color: var(--text-secondary) !important;
 }
 
 div[class*="SettingsNav_settingsNav_"] a[class*="SettingsNav_active_"],
 div[class*="SettingsNav_settingsNav_"] a:hover {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
-
 
 /* Form Control Readonly State */
 div[class*="FormControl_inputWrapper_"]:has(input:read-only),
 div[class*="FormControl_inputWrapper_"]:has(textarea:read-only) {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 /* Device Backups */
 li[class*="DeviceBackupsListItem_listItem_"] {
-    box-shadow: 0px 1px 0px var(--color-gray-light) !important;
+  box-shadow: 0px 1px 0px var(--color-gray-light) !important;
 }
 
 span[class*="DeviceBackupsListItem_deviceDisplayName_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* User Subscription Page */
 div[class*="UserSubscription_featureCard_"],
 div[class*="UserSubscription_card_"],
 label[class*="UserSubscription_miniCard_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 label[class*="UserSubscription_selectCard_"] {
-    /* Selected card border */
-    border-color: var(--color-white) !important;
+  /* Selected card border */
+  border-color: var(--color-white) !important;
 }
 
 p[class*="UserSubscription_paragraph_"],
@@ -49,38 +48,38 @@ p[class*="UserSubscription_subOptions_"],
 p[class*="UserSubscription_subFeature_"],
 span[class*="UserSubscription_subFeature_"],
 p[class*="UserSubscription_darkText_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Profile Header */
 div[class*="ProfileHeader_profileHeaderBanner_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Data Import/Export */
 div[class*="ImportDataPageView_previewComponentWrapper_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="ImportDataPageView_dropzone_"] {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="ImportDataPageView_previewItem_"] {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 /* Home Screen Settings (Homepage module also has these) */
 div[class*="HomeSettings_linkButton_"],
 span[class*="HomeSettings_linkButton_"] {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 h6[class*="HomeSettingsModal_"],
 p[class*="HomeSettingsModal_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Edit Secondary Stats Page */
@@ -90,37 +89,40 @@ div[class*="EditSecondaryStatsPage_title_"],
 div[class*="EditSecondaryStatsPage_modalMainText_"],
 div[class*="EditSecondaryStatsPage_modalText_"],
 div[class*="EditSecondaryStatCard_title_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="EditSecondaryStatCard_editCard__"],
 div[class*="AddAvailableSecondaryStatCard_addCard_"] {
-    border-color: var(--border-default) !important;
-    background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  background: var(--background-primary) !important;
 }
 
 span[class*="ReorderSelectedStats_dragHandle_"],
 div[class*="ReorderSelectedStats_reorderListItem_"] label {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Primary Device Label */
 .primaryDeviceLabel {
-    background-color: var(--background-medium) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-medium) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Device priority */
 [class*="DevicePriorityTabView_verticalAlign_"],
 [class*="PrimaryWearableHelpModal_helpHeader_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Device */
-[class*="Button_btn_"][class*="Button_iconButton_"]:hover:not([class*="Button_isLoading_"]:hover) {
-    background-color: var(--background-secondary) !important;
+[class*="Button_btn_"][class*="Button_iconButton_"]:hover:not(
+    [class*="Button_isLoading_"]:hover
+  ) {
+  background-color: var(--background-secondary) !important;
 }
 
 .device-item .avatar {
-    box-shadow: 0 0 0 3px var(--color-gray-dark), 0 0 0 4px var(--color-gray-light) !important;
+  box-shadow: 0 0 0 3px var(--color-gray-dark),
+    0 0 0 4px var(--color-gray-light) !important;
 }

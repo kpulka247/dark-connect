@@ -1,22 +1,22 @@
 .modal {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--color-gray-dark) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--color-gray-dark) !important;
 }
 
 .modal-header {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .modal-backdrop {
-    /* Background overlay */
-    background-color: var(--background-soft) !important;
+  /* Background overlay */
+  background-color: var(--background-soft) !important;
 }
 
 /* Modal specific content backgrounds */
 div[id="activityPhotosPlaceholder"] .modal {
-    /* Photo modal */
-    background-color: var(--color-black) !important;
+  /* Photo modal */
+  background-color: var(--color-black) !important;
 }
 
 /* Specific Modal Text */
@@ -24,7 +24,7 @@ h6[class*="HomeSettingsModal_"],
 p[class*="HomeSettingsModal_"],
 p[class*="SleepCoachFactorModal_feedbackString_"],
 div[class*="VO2MaxModal_infoContainer_"],
-[class*="SharedModalStyles_chartContainer_"] span[class*='avgValue'],
+[class*="SharedModalStyles_chartContainer_"] span[class*="avgValue"],
 div[class*="SharedModalStyles_value_"],
 div[class*="SharedModalStyles_infoContainer_"] div,
 div[class*="HowItWorksModal_title_"],
@@ -57,85 +57,89 @@ div[class*="ConfirmSaveCourseModal_privacyContainer_"] p,
 div[class*="HelpModal_helpContent_"] p,
 div[class*="HeatAltitudeAcclimationModal_value_"],
 p[class*="HeatAltitudeAcclimationModal_detail_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Specific Modal Borders/Backgrounds */
 .modal .modal-load-focus .load-focus-metrics-container .load-focus-metric-row,
-[class*="LoadFocusModal_loadFocusChartContainer"] [class*="LoadFocusModal_loadFocusChartItem"] {
-    /* Load Focus */
-    border-color: var(--border-default) !important;
+[class*="LoadFocusModal_loadFocusChartContainer"]
+  [class*="LoadFocusModal_loadFocusChartItem"] {
+  /* Load Focus */
+  border-color: var(--border-default) !important;
 }
 
-[class*="LoadFocusModal_loadFocusModalFooterWrapper"] [class*="LoadFocusModal_optimalRangeLegend"] [class*="LoadFocusModal_range"] {
-    border-color: var(--color-white) !important;
+[class*="LoadFocusModal_loadFocusModalFooterWrapper"]
+  [class*="LoadFocusModal_optimalRangeLegend"]
+  [class*="LoadFocusModal_range"] {
+  border-color: var(--color-white) !important;
 }
 
-div[class*="LoadFocusModal_loadFocusChartItem_"] path[fill="none"][stroke="#6c6c6c"][stroke-dasharray="3 3"] {
-    stroke: var(--color-white) !important;
+div[class*="LoadFocusModal_loadFocusChartItem_"]
+  path[fill="none"][stroke="#6c6c6c"][stroke-dasharray="3 3"] {
+  stroke: var(--color-white) !important;
 }
 
 table[class*="ActivityClassHelpModal_table_"],
 table[class*="ActivityClassHelpModal_table_"] th,
 table[class*="ActivityClassHelpModal_table_"] td {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="CalendarSyncCompatDialog_device_"],
 div[class*="CalendarSyncCompatDialog_syncTitle_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Dialog Component */
 div[class*="Dialog_dialog__"] {
-    background-color: var(--background-primary);
-    border-color: var(--border-default);
-    color: var(--text-primary);
+  background-color: var(--background-primary);
+  border-color: var(--border-default);
+  color: var(--text-primary);
 }
 
 div[class*="Dialog_dialogBackdrop_"] {
-    background-color: var(--background-soft) !important;
-    opacity: 0.8 !important;
-    /* Added opacity */
+  background-color: var(--background-soft) !important;
+  opacity: 0.8 !important;
+  /* Added opacity */
 }
 
 [class*="Dialog_dialogHeader_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="Dialog_dialogFooter_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* LiveTrack Modal */
 .modal-curtain {
-    background: var(--background-soft) !important;
-    opacity: 0.8 !important;
+  background: var(--background-soft) !important;
+  opacity: 0.8 !important;
 }
 
 #map-settings .modal {
-    /* Specific border/shadow */
-    border-color: var(--border-default) !important;
-    box-shadow: 0 2px 0 1px var(--color-shadow-dark-50) !important;
+  /* Specific border/shadow */
+  border-color: var(--border-default) !important;
+  box-shadow: 0 2px 0 1px var(--color-shadow-dark-50) !important;
 }
 
 #map-settings .block:not(:last-child) {
-    /* Border inside settings modal */
-    border-color: var(--border-default) !important;
+  /* Border inside settings modal */
+  border-color: var(--border-default) !important;
 }
 
 /* Advanced Reporting Modal */
 [class*="ExpandedCardModal_titleRow_"],
 [class*="ChartFilterModal_sectionLabel_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Nearby Golf Courses Modal */
 [class*="NearbyGolfCoursesModal_courseListItem_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="NearbyGolfCoursesModal_courseListItem_"]:hover {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }

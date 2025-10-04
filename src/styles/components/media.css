@@ -1,138 +1,137 @@
 /* Photo Carousel */
 .photo-carousel .active-photo-container,
 .photo-carousel .inactive-photo-container {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
 
 .photo-carousel .delete-overlay,
 .photo-carousel {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 .edit-carousel-content .delete-photo-icon {
-    /* Edit mode icon */
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Edit mode icon */
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .modal-body .photo-carousel,
 .modal-body .photo-carousel .active-photo-container {
-    background-color: var(--color-black) !important;
-    /* Black background in modal */
+  background-color: var(--color-black) !important;
+  /* Black background in modal */
 }
 
 /* Carousel dots/indicators */
 .photo-carousel .scroll-circle {
-    background: var(--background-light) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-light) !important;
+  border-color: var(--border-default) !important;
 }
 
 .photo-carousel .scroll-circle.active-circle,
 .photo-carousel .scroll-circle:hover {
-    background: var(--color-white) !important;
-    border-color: var(--color-white) !important;
+  background: var(--color-white) !important;
+  border-color: var(--color-white) !important;
 }
 
 /* Carousel text/links */
 .photo-carousel .add-photo-text,
 .photo-carousel .delete-photo,
 .photo-carousel .edit-carousel {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 .edit-carousel-content {
-    /* Edit mode container */
-    background: var(--background-primary) !important;
+  /* Edit mode container */
+  background: var(--background-primary) !important;
 }
 
 /* Generic Carousel (Homepage) */
 span[class*="Carousel_carouselHighlightedDot_"] {
-    background-color: var(--color-white) !important;
+  background-color: var(--color-white) !important;
 }
 
 [class*="Carousel_emptySlide_"] {
-    /* Empty slide background */
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  /* Empty slide background */
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="Carousel_controlButton_"] {
-    /* Control button */
-    background-color: var(--background-light) !important;
-    border-color: var(--border-default) !important;
+  /* Control button */
+  background-color: var(--background-light) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="Carousel_carouselHeader_"] {
-    /* Header text */
-    color: var(--text-primary) !important;
+  /* Header text */
+  color: var(--text-primary) !important;
 }
-
 
 /* Image Slider (similar to carousel) */
 button[class*="ImageSlider_dot_"] {
-    background: var(--background-light) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-light) !important;
+  border-color: var(--border-default) !important;
 }
 
 button[class*="ImageSlider_dot_"][class*="ImageSlider_active_"],
 button[class*="ImageSlider_dot_"]:hover {
-    background: var(--color-white) !important;
-    border-color: var(--color-white) !important;
+  background: var(--color-white) !important;
+  border-color: var(--color-white) !important;
 }
 
 /* Dropzone (File Upload) */
 .dropzone {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .dropzone.dz-clickable * {
-    /* Content inside clickable dropzone */
-    background-color: var(--background-primary);
-    /* Keep consistent background */
+  /* Content inside clickable dropzone */
+  background-color: var(--background-primary);
+  /* Keep consistent background */
 }
 
 div[class*="ImportDataPageView_dropzone_"] {
-    /* Specific dropzone */
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Specific dropzone */
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Image Styling */
 img[class*="CommentLikeSection_profileImage_"] {
-    /* Profile image border */
-    border-color: var(--border-default) !important;
+  /* Profile image border */
+  border-color: var(--border-default) !important;
 }
 
 img[alt="Garmin LiveTrack"],
 li[class*="LocationAutoComplete_suggestion_"] div img,
 [class*="WeightsInformationModals_iconPeopleFemale_"] {
-    filter: invert(1) grayscale(1) brightness(2);
+  filter: invert(1) grayscale(1) brightness(2);
 }
 
 [class*="WeightsInformationModals_healthBodyFatTable_"] tbody tr td img {
-    filter: invert(1) grayscale(1);
+  filter: invert(1) grayscale(1);
 }
 
 img[class*="InviteesView_playerAvatar_"] {
-    /* Avatar border */
-    border-color: var(--border-default) !important;
+  /* Avatar border */
+  border-color: var(--border-default) !important;
 }
 
 img.athleteUserImage {
-    /* LiveTrack avatar border */
-    border-color: var(--border-default) !important;
+  /* LiveTrack avatar border */
+  border-color: var(--border-default) !important;
 }
 
 div[class*="GroupMemberAvatars_groupMembersAvatars_"] img {
-    /* Group avatar border/background */
-    border-color: var(--color-gray-dark) !important;
-    background-color: var(--background-primary) !important;
+  /* Group avatar border/background */
+  border-color: var(--color-gray-dark) !important;
+  background-color: var(--background-primary) !important;
 }
 
 /* Image Select Modal Divider */
 [class*="ImageSelectModal_divider_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }

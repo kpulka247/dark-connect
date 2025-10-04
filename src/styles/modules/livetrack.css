@@ -5,175 +5,176 @@
 .splitsContainer th,
 .expired-msg,
 span[class*="UserOptions_username_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .splitsContainer table td:first-of-type {
-    /* First column slightly dimmer */
-    color: var(--text-secondary) !important;
+  /* First column slightly dimmer */
+  color: var(--text-secondary) !important;
 }
 
 /* Header */
 .header-settings div.select {
-    /* Dropdown text color */
-    color: var(--text-secondary) !important;
+  /* Dropdown text color */
+  color: var(--text-secondary) !important;
 }
 
 menu[class*="UserOptions_userOptionsMenu_"] li div a {
-    /* User options link color */
-    color: var(--text-secondary) !important;
+  /* User options link color */
+  color: var(--text-secondary) !important;
 }
 
 [class*="LivetrackInfoBanner_bannerTitle_"] {
-    /* Banner text */
-    color: var(--text-primary) !important;
+  /* Banner text */
+  color: var(--text-primary) !important;
 }
 
 /* Body */
 #appPlaceholder {
-    /* Main container background */
-    background: var(--background-deep) !important;
+  /* Main container background */
+  background: var(--background-deep) !important;
 }
 
 div[class*="PageContainer_container_"] {
-    /* Page container background */
-    background: var(--background-deep) !important;
+  /* Page container background */
+  background: var(--background-deep) !important;
 }
 
 div[class*="PageContainer_paper_"] {
-    /* Paper background */
-    background-color: var(--background-primary) !important;
+  /* Paper background */
+  background-color: var(--background-primary) !important;
 }
 
 /* Chip Buttons */
 div[class*="Chip_dataTypeButton_"] {
-    background-color: var(--color-black) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--color-black) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="ChartChip_chip_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Modal */
 .modal-curtain {
-    /* Backdrop */
-    background: var(--background-soft) !important;
-    opacity: 0.8 !important;
+  /* Backdrop */
+  background: var(--background-soft) !important;
+  opacity: 0.8 !important;
 }
 
 #map-settings .modal {
-    /* Map settings modal border/shadow */
-    border-color: var(--border-default) !important;
-    box-shadow: 0 2px 0 1px var(--color-shadow-dark-50) !important;
+  /* Map settings modal border/shadow */
+  border-color: var(--border-default) !important;
+  box-shadow: 0 2px 0 1px var(--color-shadow-dark-50) !important;
 }
 
 #map-settings .block:not(:last-child) {
-    /* Settings block border */
-    border-color: var(--border-default) !important;
+  /* Settings block border */
+  border-color: var(--border-default) !important;
 }
 
 .session-unavailable-user-avatar {
-    /* Avatar border */
-    border-color: var(--border-default) !important;
+  /* Avatar border */
+  border-color: var(--border-default) !important;
 }
 
 /* Details Section */
 .athleteDetails {
-    /* Container background/border */
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Container background/border */
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 img.athleteUserImage {
-    /* Avatar image border */
-    border-color: var(--border-default) !important;
+  /* Avatar image border */
+  border-color: var(--border-default) !important;
 }
 
 .athleteDetailsStatus {
-    /* Status background/border */
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Status background/border */
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .athleteDetailsInner .pill-section-title {
-    /* Pill title text */
-    color: var(--text-primary) !important;
+  /* Pill title text */
+  color: var(--text-primary) !important;
 }
 
 div[class*="AthleteDetails_athleteDetailsInfo_"] div strong a {
-    /* Link text */
-    color: var(--link-color) !important;
+  /* Link text */
+  color: var(--link-color) !important;
 }
-
 
 /* Charts */
 path[class="highcharts-axis-line"] {
-    /* Axis line override */
-    stroke: var(--color-gray-dark) !important;
+  /* Axis line override */
+  stroke: var(--color-gray-dark) !important;
 }
 
 g.highcharts-axis.highcharts-xaxis .highcharts-axis-line {
-    /* X-axis line override */
-    stroke: var(--color-gray-light) !important;
+  /* X-axis line override */
+  stroke: var(--color-gray-light) !important;
 }
 
 .chartLegend {
-    /* Legend box */
-    background: var(--background-soft) !important;
-    border-color: var(--color-black-soft) !important;
-    color: var(--text-primary) !important;
+  /* Legend box */
+  background: var(--background-soft) !important;
+  border-color: var(--color-black-soft) !important;
+  color: var(--text-primary) !important;
 }
 
 .highcharts-legend-item-hidden .chartLegend {
-    /* Hidden legend box */
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Hidden legend box */
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Splits Table */
 .splitsContainer table thead {
-    /* Header background */
-    background: var(--background-secondary) !important;
+  /* Header background */
+  background: var(--background-secondary) !important;
 }
 
 /* Notification Bar */
 .msg-bar .msg {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Session Ended Page */
 div[class*="SessionEndedPage_sessionEndedPage__"] footer {
-    background: var(--background-deep);
+  background: var(--background-deep);
 }
 
 [class*="CompletedSession_session_"] {
-    /* Session card border */
-    border-color: var(--border-default) !important;
+  /* Session card border */
+  border-color: var(--border-default) !important;
 }
 
 h2[class*="CompletedSession_title_"] span a {
-    /* Link text */
-    color: var(--link-color) !important;
+  /* Link text */
+  color: var(--link-color) !important;
 }
 
 /* Session Options Menu */
-[class*="SessionOptions_sessionOptionsContainer_"] [class*="Menu_smallMenu_"]>[class*="Menu_menuItemsSelected_"]:not(:hover) {
-    background-color: var(--background-lighter) !important;
-    /* Selected item background */
+[class*="SessionOptions_sessionOptionsContainer_"]
+  [class*="Menu_smallMenu_"]
+  > [class*="Menu_menuItemsSelected_"]:not(:hover) {
+  background-color: var(--background-lighter) !important;
+  /* Selected item background */
 }
 
 [class*="InlineEdit_inline_"] input {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Active Session Banner */
 [class*="ActiveSessionBanner_activeSessionBanner_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 p a[data-sentry-element="Link"] {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }

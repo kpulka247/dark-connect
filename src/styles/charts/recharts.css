@@ -1,99 +1,111 @@
 /* Reference Lines */
 .recharts-reference-line-line,
 .recharts-curve.recharts-tooltip-cursor {
-    stroke: var(--color-white) !important;
-    /* Default reference line */
+  stroke: var(--color-white) !important;
+  /* Default reference line */
 }
 
-g[class="recharts-layer recharts-reference-line"] line[stroke="white"][class="recharts-reference-line-line"] {
-    stroke: var(--color-gray-dark) !important;
-    /* Override white reference line */
+g[class="recharts-layer recharts-reference-line"]
+  line[stroke="white"][class="recharts-reference-line-line"] {
+  stroke: var(--color-gray-dark) !important;
+  /* Override white reference line */
 }
 
 /* Axis */
-.recharts-cartesian-axis-line:not(div[class*="AdvancedReportingChartStyles_mainChart_"] svg.recharts-surface g line.recharts-cartesian-axis-line) {
-    stroke: var(--color-white) !important;
-    /* Default axis line */
+.recharts-cartesian-axis-line:not(
+    div[class*="AdvancedReportingChartStyles_mainChart_"]
+      svg.recharts-surface
+      g
+      line.recharts-cartesian-axis-line
+  ) {
+  stroke: var(--color-white) !important;
+  /* Default axis line */
 }
 
 .recharts-surface g g g text {
-    /* Axis text fill */
-    fill: var(--color-white) !important;
+  /* Axis text fill */
+  fill: var(--color-white) !important;
 }
 
 /* Advanced Reporting Axis text */
-div[class*="AdvancedReportingChartStyles_mainChart_"] svg.recharts-surface g text[fill="#808080"] {
-    fill: var(--color-gray-lighter) !important;
+div[class*="AdvancedReportingChartStyles_mainChart_"]
+  svg.recharts-surface
+  g
+  text[fill="#808080"] {
+  fill: var(--color-gray-lighter) !important;
 }
-
 
 /* Legend */
 .recharts-legend-icon[stroke="#000000"] {
-    /* Legend icon stroke */
-    stroke: var(--color-white) !important;
+  /* Legend icon stroke */
+  stroke: var(--color-white) !important;
 }
 
 text.recharts-text.recharts-label {
-    /* Legend text */
-    fill: var(--color-white) !important;
+  /* Legend text */
+  fill: var(--color-white) !important;
 }
 
 .optimal-range-legend .load-focus-optimal-range {
-    /* Specific legend item border */
-    border-color: var(--color-white) !important;
+  /* Specific legend item border */
+  border-color: var(--color-white) !important;
 }
 
 span[class*="ChartLegend_legendLine_"][style="background: rgb(0, 0, 0);"],
 /* Legend line marker */
 span[class*="ChartLegend_legendBullet_"][style="background: rgb(0, 0, 0);"] {
-    /* Legend bullet marker */
-    background: var(--color-white) !important;
+  /* Legend bullet marker */
+  background: var(--color-white) !important;
 }
-
 
 /* Bars / Sectors */
 g.recharts-layer .recharts-bar-rectangle {
-    stroke: var(--color-gray-dark) !important;
+  stroke: var(--color-gray-dark) !important;
 }
 
-g.recharts-layer .recharts-bar-rectangle path.recharts-rectangle[fill="#d8d8d8"],
-g.highcharts-series-group g.highcharts-columnrange-series path.highcharts-point[fill="#d8d8d8"] {
-    fill: var(--color-gray-lighter) !important;
+g.recharts-layer
+  .recharts-bar-rectangle
+  path.recharts-rectangle[fill="#d8d8d8"],
+g.highcharts-series-group
+  g.highcharts-columnrange-series
+  path.highcharts-point[fill="#d8d8d8"] {
+  fill: var(--color-gray-lighter) !important;
 }
 
 g.recharts-bar .recharts-label-list g circle[fill="#3b3b3b"],
 path.recharts-symbols[fill="#3b3b3b"],
-g.highcharts-markers.highcharts-scatter-series[label*="respiration"] path.highcharts-point[fill="#000000"] {
-    fill: var(--color-white) !important;
+g.highcharts-markers.highcharts-scatter-series[label*="respiration"]
+  path.highcharts-point[fill="#000000"] {
+  fill: var(--color-white) !important;
 }
 
 path[class*="recharts-sector"][stroke="#ffffff"] {
-    /* Sector stroke */
-    stroke: var(--color-gray-dark) !important;
+  /* Sector stroke */
+  stroke: var(--color-gray-dark) !important;
 }
 
 path.recharts-radial-bar-background-sector {
-    /* Radial bar background */
-    fill: var(--color-gray-medium) !important;
+  /* Radial bar background */
+  fill: var(--color-gray-medium) !important;
 }
 
 /* Lines */
 g.recharts-layer.recharts-line path[stroke="black"] {
-    /* Black line stroke override */
-    stroke: var(--color-white) !important;
+  /* Black line stroke override */
+  stroke: var(--color-white) !important;
 }
 
 /* Cartesian grid background */
 .recharts-cartesian-grid-bg[fill="#f4f4f4"] {
-    fill: var(--background-secondary) !important;
+  fill: var(--background-secondary) !important;
 }
 
 .recharts-cartesian-grid-bg[fill="#ffffff"] {
-    fill: var(--background-primary) !important;
+  fill: var(--background-primary) !important;
 }
 
 .recharts-cartesian-grid-vertical line[stroke="#ccc"],
 .recharts-cartesian-grid-horizontal line[stroke="#ccc"] {
-    /* Vertical grid lines */
-    stroke: var(--color-gray-light) !important;
+  /* Vertical grid lines */
+  stroke: var(--color-gray-light) !important;
 }

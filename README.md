@@ -17,15 +17,15 @@
 
 ## Overview
 
-This is a simple browser extension designed to turn the Garmin Connect website into dark mode. Frustrated by the lack of a dark mode feature on Garmin Connect, I created this extension to enhance the browsing experience for users who prefer a darker interface, especially during nighttime use. The extension is lightweight, easy to install, and only affects connect.garmin.com and livetrack.garmin.com pages, leaving all other websites untouched.
+This is a simple browser extension designed to turn the Garmin Connect website into dark mode. Frustrated by the lack of a dark mode feature on Garmin Connect, I created this extension to enhance the browsing experience for users who prefer a darker interface, especially during nighttime use. The extension is lightweight, easy to install, and only affects Garmin Connect domains, leaving all other websites untouched.
 
 ## Features
 
-- 🌙 **Dark mode for Garmin Connect** — Applies a clean, modern dark theme
-- 🎨 **Preserves brand identity** — Original Garmin colors and charts remain intact for visual consistency
-- 🚫 **Scope-limited** — Affects only `connect.garmin.com`, `livetrack.garmin.com`, and `live.garmin.com`
-- ⚡ **Automatic updates** — New versions are published directly via GitHub Actions to Chrome Web Store and Firefox Add-ons
-- 🛠️ **Modular and maintainable styles** — Powered by organized CSS modules with support for variables
+- 🌙 **Dark Mode for Garmin Connect** — Applies a clean, modern dark theme.
+- 🎨 **Preserves brand identity** — Original Garmin colors and charts remain intact for visual consistency.
+- 🚫 **Scope-limited** — Affects only `connect.garmin.com`, `livetrack.garmin.com`, and `live.garmin.com`.
+- ⚡ **Automatic updates** — New versions are published directly via GitHub Actions to Chrome Web Store and Firefox Add-ons.
+- 🛠️ **Modular and maintainable styles** — Powered by organized CSS modules with support for variables.
 
 ## Screenshots
 

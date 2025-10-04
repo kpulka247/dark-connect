@@ -2,76 +2,78 @@
 div[class*="AdvancedReportingGenesis_genesisContainer_"],
 div[class*="AdvancedReportingGenesis_advancedReportingProfileCard_"],
 div[class*="AdvancedReportingGenesis_innerCard_"] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 div[class*="AdvancedReportingPage_genesisWrapper_"] {
-    /* Overall page background */
-    background-color: var(--background-deep) !important;
+  /* Overall page background */
+  background-color: var(--background-deep) !important;
 }
 
 /* Card Component */
 div[class*="AdvancedReportingCard_cardContainer_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="CardContentNormal_chartNameContainer_"],
 [class*="ChartStateMessage_messageTextContainer_"],
 [class*="AdvancedReportingCard_cornerContent_"],
-[class*="CardContentEdit_chartInfo_"] div:not(div[class*="CardContentEdit_chartDetail_"]),
+[class*="CardContentEdit_chartInfo_"]
+  div:not(div[class*="CardContentEdit_chartDetail_"]),
 [class*="ExpandedCardModal_titleRow_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Expandable Menu */
 div[class*="ExpandableMenu_expandableMenuContentContainer_"],
 button[class*="ExpandableMenu_toggleButton_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Chart Result Button */
 button[class*="ChartResult_chartResult_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="ChartResult_chartDataContainer_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
-
 
 /* Dropdowns */
 div[class*="UnifiedDropdown_dropdownMenu_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="UnifiedDropdown_dropdownContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="UnifiedDropdown_numberSelectedDisplay_"] {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
-[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_grouped_"]:first-child:not([class*="UnifiedDropdown_groupHeader_"]):not([class*="UnifiedDropdown_multiselectCheckboxContainer_"]):not(li),
+[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_grouped_"]:first-child:not(
+    [class*="UnifiedDropdown_groupHeader_"]
+  ):not([class*="UnifiedDropdown_multiselectCheckboxContainer_"]):not(li),
 li[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_ungrouped_"]:first-child {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="UnifiedDropdown_dropdownContainer_"][class*="UnifiedDropdown_bottomShadow_"] {
-    box-shadow: 0 2px 0 var(--color-gray-light) !important;
+  box-shadow: 0 2px 0 var(--color-gray-light) !important;
 }
 
 div[class*="DateRangePickerDropdown_dropdownContent_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 /* Chart Menu */
@@ -79,12 +81,12 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 [class*="ChartMenu_chartFilterTitle_"],
 [class*="EmptyState_emptyStateTitle_"],
 [class*="EmptyState_emptyStateSubtitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Chart Filter Modal */
 [class*="ChartFilterModal_sectionLabel_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Header */
@@ -92,10 +94,13 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 [class*="AdvancedReportingHeader_headerTitle_"],
 [class*="AdvancedReportingHeader_headerSubtitle_"],
 [class*="AdvancedReportingHeader_limitWarning_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Recharts Axis Text (specific override) */
-div[class*="AdvancedReportingChartStyles_mainChart_"] svg.recharts-surface g text[fill="#808080"] {
-    fill: var(--color-gray-lighter) !important;
+div[class*="AdvancedReportingChartStyles_mainChart_"]
+  svg.recharts-surface
+  g
+  text[fill="#808080"] {
+  fill: var(--color-gray-lighter) !important;
 }

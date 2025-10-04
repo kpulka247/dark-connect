@@ -1,60 +1,61 @@
 .main-body.dashboard,
 .page.newsfeed {
-    background: var(--background-deep) !important;
-    color: var(--text-primary) !important;
+  background: var(--background-deep) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="NewsFeedFilter_feedFilterTrigger_"],
 div[class*="NewsFeedFilter_feedFilterDetail_"] {
-    background: var(--background-soft) !important;
-    color: var(--text-primary) !important;
+  background: var(--background-soft) !important;
+  color: var(--text-primary) !important;
 }
 
-[class*="NewsFeedFilter_feedFilterDetail_"] li[class*="NewsFeedFilter_divider_"] {
-    /* Filter divider */
-    background-color: var(--background-light) !important;
+[class*="NewsFeedFilter_feedFilterDetail_"]
+  li[class*="NewsFeedFilter_divider_"] {
+  /* Filter divider */
+  background-color: var(--background-light) !important;
 }
 
 [class*="NewsFeedFilter_filterOnlyText_"],
 [class*="NewsFeedSuggestedConnections_seeAllLink_"] {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 [class*="Menu_StandardMenuBtn_"]:hover,
 .dropdown-trigger:hover,
 .inline-edit-select button,
 [class*="ActivityMapView_closeButton_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Comment/Like Section (Shared with Activity) */
 div[class*="CommentLikeSection_divider_"] {
-    background: var(--background-light) !important;
+  background: var(--background-light) !important;
 }
 
 div[class*="CommentLikeSection_socialButtonWrapper_"]:hover {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 div[class*="CommentLikeSection_likeCommentContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="CommentLikeSection_profileImage_"],
 img[class*="CommentLikeSection_profileImage_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* News Feed Connection Card */
 [class*="NewsFeedConnectionCard_cardContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 button[class*="Button_btn_"][class*="Button_secondary_"][class*="Button_small_"][class*="Button_iconButton_"] {
-    color: var(--text-primary) !important;
-    background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 button[class*="Button_btn_"][class*="Button_secondary_"][class*="Button_small_"][class*="Button_iconButton_"]:hover {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }

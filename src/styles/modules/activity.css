@@ -1,107 +1,118 @@
 /* Activity List Page */
 .page.activity-list .list-item {
-    background: var(--background-secondary) !important;
+  background: var(--background-secondary) !important;
 }
 
 .page.activity-list .config-bar ul li {
-    /* Config bar items */
-    background: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
+  /* Config bar items */
+  background: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
 .page.activity-list .config-bar ul {
-    /* Config bar container */
-    background: var(--background-secondary) !important;
+  /* Config bar container */
+  background: var(--background-secondary) !important;
 }
 
 .page.activity-list .metric-config-options ul li {
-    /* Metric options */
-    background: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Metric options */
+  background: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-list .label,
 .page.activity-list .activity-type {
-    color: var(--text-subtle) !important;
+  color: var(--text-subtle) !important;
 }
 
 .page.activity-list .activity-list-filters {
-    /* Filter bar */
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Filter bar */
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-list .filter-label,
 [class*="AdvancedSearch_filterLabel_"] {
-    /* Filter label text */
-    color: var(--text-primary) !important;
+  /* Filter label text */
+  color: var(--text-primary) !important;
 }
 
 .page.activity-list .edit-btn {
-    /* Edit button border */
-    border-color: var(--border-default) !important;
+  /* Edit button border */
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-list .list-preloader {
-    /* Loading overlay */
-    background: var(--background-soft) !important;
-    opacity: 0.8 !important;
+  /* Loading overlay */
+  background: var(--background-soft) !important;
+  opacity: 0.8 !important;
 }
 
-.page.activity-list .favorite:hover [class^='icon-'] {
-    /* Favorite icon hover */
-    color: var(--text-primary) !important;
-    /* Belongs in components/icons? */
+.page.activity-list .favorite:hover [class^="icon-"] {
+  /* Favorite icon hover */
+  color: var(--text-primary) !important;
+  /* Belongs in components/icons? */
 }
 
 [class*="DragDropList_draggableListItem_"] {
-    /* Activity list config */
-    background-color: var(--background-secondary) !important;
-    color: var(--text-subtle) !important;
-    border-color: var(--border-default) !important;
+  /* Activity list config */
+  background-color: var(--background-secondary) !important;
+  color: var(--text-subtle) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="DragDropList_listItem_"] {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-subtle) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-subtle) !important;
 }
 
 [class*="DragDropList_droppable_"] {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 /* Activity List Item Component (Newer Style) */
 [class*="ActivityListItem_listItem_"],
 [class*="ActivityListItem_tabletListItem_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
-    /* Added border */
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
+  /* Added border */
 }
 
 [class*="ActivityListItem_activityDetails_"],
 [class*="ActivityListItem_activityListItemDetails_"],
 [class*="ActivityListItem_activityNameContainer_"],
 div[class*="ActivityListItem_editButtonsVisible_"],
-[class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
-    border-color: var(--border-default) !important;
+[class*="ActivityListItem_hovered_"]:hover
+  [class*="ActivityListItem_metricsContainer_"] {
+  border-color: var(--border-default) !important;
 }
 
-[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityDetails_"],
-[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityListItemDetails_"],
-[class*="ActivityListItem_selected_"] [class*="ActivityListItem_activityNameContainer_"],
-[class*="ActivityListItem_selected_"] div[class*="ActivityListItem_editButtonsVisible_"],
-[class*="ActivityListItem_selected_"] [class*="ActivityListItem_hovered_"]:hover [class*="ActivityListItem_metricsContainer_"] {
-    border-color: var(--color-white) !important;
+[class*="ActivityListItem_selected_"]
+  [class*="ActivityListItem_activityDetails_"],
+[class*="ActivityListItem_selected_"]
+  [class*="ActivityListItem_activityListItemDetails_"],
+[class*="ActivityListItem_selected_"]
+  [class*="ActivityListItem_activityNameContainer_"],
+[class*="ActivityListItem_selected_"]
+  div[class*="ActivityListItem_editButtonsVisible_"],
+[class*="ActivityListItem_selected_"]
+  [class*="ActivityListItem_hovered_"]:hover
+  [class*="ActivityListItem_metricsContainer_"] {
+  border-color: var(--color-white) !important;
 }
 
-div[class*="ActivityListItem_listItem_"]:hover:not(div[class*="ActivityListItem_selected_"]),
-[class*="ActivityListItem_hovered_"]:hover:not([class*="ActivityListItem_selected_"]) {
-    background: var(--background-soft) !important;
+div[class*="ActivityListItem_listItem_"]:hover:not(
+    div[class*="ActivityListItem_selected_"]
+  ),
+[class*="ActivityListItem_hovered_"]:hover:not(
+    [class*="ActivityListItem_selected_"]
+  ) {
+  background: var(--background-soft) !important;
 }
 
 div[class*="ActivityListItem_selected_"] {
-    background-color: var(--background-lighter) !important;
+  background-color: var(--background-lighter) !important;
 }
 
 div[class*="ActivityListItem_selected_"],
@@ -110,224 +121,229 @@ div[class*="ActivityListItem_activityTypeText_"],
 div[class*="ActivityListItem_metricLabel_"],
 span[class*="ActivityListItem_activityDate_"],
 span[class*="ActivityListItem_activityDateYear_"],
-div[class*="ActivityListItem_selected_"] div[class*="ActivityListItem_activityIconContainer_"] i {
-    color: var(--text-primary) !important;
-    /* Text color for selected item */
+div[class*="ActivityListItem_selected_"]
+  div[class*="ActivityListItem_activityIconContainer_"]
+  i {
+  color: var(--text-primary) !important;
+  /* Text color for selected item */
 }
 
 ul[class*="InlineEditDropdown_dropdownContainer_"] {
-    /* Inline edit dropdown */
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Inline edit dropdown */
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="InlineDelete_activityCover_"] {
-    /* Inline delete overlay */
-    background-color: var(--background-primary) !important;
+  /* Inline delete overlay */
+  background-color: var(--background-primary) !important;
 }
 
 span[class*="ReorderActivityList_dragHandle_"] {
-    /* Reorder handle text */
-    color: var(--text-primary) !important;
+  /* Reorder handle text */
+  color: var(--text-primary) !important;
 }
 
 [class*="EditorTable_inputAppend_"] [class*="EditorTable_addOn_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
-    text-shadow: 0 1px 0 var(--color-gray-light) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
+  text-shadow: 0 1px 0 var(--color-gray-light) !important;
 }
-
 
 /* Activity Detail Page */
 .page.activity-detail {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .page.activity-detail .border-bottom {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .activity-charts-container {
-    /* Chart container */
-    color: var(--text-primary) !important;
+  /* Chart container */
+  color: var(--text-primary) !important;
 }
 
 .page.activity-detail .activity-charts-container .btn-customize-charts {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .chart-toggle-options {
-    /* Chart toggle */
-    color: var(--text-primary) !important;
+  /* Chart toggle */
+  color: var(--text-primary) !important;
 }
 
 .page.activity-detail .chart-toggle-options button {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .customize-charts-controls .reorder-widgets-set,
 .page.activity-detail .customize-charts-controls .reorder-widgets-cancel {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .stats h3 {
-    /* Stats header border */
-    border-color: var(--border-default) !important;
+  /* Stats header border */
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .segments-table .icon-eye.active {
-    /* Segment eye icon */
-    color: var(--text-primary) !important;
+  /* Segment eye icon */
+  color: var(--text-primary) !important;
 }
 
-.activity-detail span:not(.course-pt-lap):not([class*="ActivityPhotosCarousel_carouselActions_"] div span):not(.notification-count):not(.edit-gear-tracking span):not(.icon-help) {
-    /* Generic span text */
-    color: var(--text-primary) !important;
+.activity-detail
+  span:not(.course-pt-lap):not(
+    [class*="ActivityPhotosCarousel_carouselActions_"] div span
+  ):not(.notification-count):not(.edit-gear-tracking span):not(.icon-help) {
+  /* Generic span text */
+  color: var(--text-primary) !important;
 }
 
 [class*="Activity_activityTitle_"],
 [class*="ActivityMetaInfo_"] a,
 [class*="ActivityPhotosCarousel_carouselActions_"] div,
 [class*="ActivityPhotosCarousel_carouselActions_"] div span {
-    /* Activity title link style */
-    color: var(--link-color) !important;
+  /* Activity title link style */
+  color: var(--link-color) !important;
 }
 
 .page.activity-detail .weather .map-control-item {
-    /* Weather map control */
-    background: var(--color-overlay-dark-90) !important;
-    border-color: var(--border-default) !important;
+  /* Weather map control */
+  background: var(--color-overlay-dark-90) !important;
+  border-color: var(--border-default) !important;
 }
 
 .activity-map-view-container {
-    /* Map container background */
-    background-color: var(--background-secondary) !important;
+  /* Map container background */
+  background-color: var(--background-secondary) !important;
 }
 
 button[class*="ActivityMapView_closeButton_"] {
-    /* Map close button */
-    background: var(--background-primary) !important;
-    box-shadow: 0 0 2px var(--color-gray-light) !important;
+  /* Map close button */
+  background: var(--background-primary) !important;
+  box-shadow: 0 0 2px var(--color-gray-light) !important;
 }
 
 div[class*="ActivityMapView_mapLayerLegend_"] {
-    /* Map legend */
-    background: var(--background-primary) !important;
+  /* Map legend */
+  background: var(--background-primary) !important;
 }
 
 [class*="ActivityDetailsHeaderDropDown_menuItem_"][class*="ActivityDetailsHeaderDropDown_active_"],
 [class*="InlineEditDropdown_currentDropdownItem_"] {
-    background-color: var(--background-light) !important;
+  background-color: var(--background-light) !important;
 }
 
 /* Swim Specific Styles */
 .page.activity-detail .swim-length {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .swim-rest {
-    background-color: var(--background-medium) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-medium) !important;
+  border-color: var(--border-default) !important;
 }
 
 .page.activity-detail .swim-length .number {
-    background: var(--background-soft) !important;
+  background: var(--background-soft) !important;
 }
 
 .page.activity-detail .swim-length .type,
 .page.activity-detail .swim-length .first.last .type,
 .page.activity-detail .swim-rest .type {
-    color: var(--color-black) !important;
-    /* Original style, seems wrong? */
+  color: var(--color-black) !important;
+  /* Original style, seems wrong? */
 }
 
 [class*="ActivityListItem_iconPencil_"]:hover,
 [class*="ActivityListItem_iconPointerDown_"]:hover {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Activity Comments/Notes */
 .note-container textarea {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    box-shadow: inset 0 3px var(--color-gray-light);
-    border-color: var(--border-default);
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  box-shadow: inset 0 3px var(--color-gray-light);
+  border-color: var(--border-default);
 }
 
 div[class*="CommentLikeSection_likeCommentContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="CommentLikeSection_profileImage_"],
 img[class*="CommentLikeSection_profileImage_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="CommentLikeSection_divider_"] {
-    background: var(--background-light) !important;
+  background: var(--background-light) !important;
 }
 
 div[class*="CommentLikeSection_socialButtonWrapper_"]:hover {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 div[class*="CommentInput_textArea_"] {
-    /* Input background/text */
-    background: var(--background-medium) !important;
-    color: var(--text-primary) !important;
+  /* Input background/text */
+  background: var(--background-medium) !important;
+  color: var(--text-primary) !important;
 }
 
 button[class*="AddComment_container_"],
 button[class*="AddComment_button_"][disabled] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 div[class*="AddComment_editorTextArea_"],
 div[class*="CommentEditor_editorTextField_"] {
-    background: var(--background-medium) !important;
-    color: var(--text-primary) !important;
+  background: var(--background-medium) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="CommentItem_commentBlock_"]:hover {
-    /* Comment hover background */
-    background-color: var(--background-secondary) !important;
+  /* Comment hover background */
+  background-color: var(--background-secondary) !important;
 }
 
 [class*="ActivityPageCommentSection_container_"] {
-    /* Container border */
-    border-color: var(--border-default) !important;
+  /* Container border */
+  border-color: var(--border-default) !important;
 }
-
 
 /* Activity Gear */
 ul[class*="ActivityGearStatusView_gearList_"] li:hover {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 ul[class*="ActivityGearEditModal_gearList_"] li:hover {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 div[class*="ActivityGearList_gearImages_"] i {
-    /* Gear icon styling */
-    box-shadow: 0px 0px 0px 3px var(--color-gray-dark), 0px 0px 0px 4px var(--color-gray-light) !important;
-    background-color: var(--background-secondary) !important;
+  /* Gear icon styling */
+  box-shadow: 0px 0px 0px 3px var(--color-gray-dark),
+    0px 0px 0px 4px var(--color-gray-light) !important;
+  background-color: var(--background-secondary) !important;
 }
 
-[class*="ActivityGearEditModal_gearList_"] [class*="ActivityGearEditModal_gearStatus_"]:after {
-    color: var(--background-primary) !important;
+[class*="ActivityGearEditModal_gearList_"]
+  [class*="ActivityGearEditModal_gearStatus_"]:after {
+  color: var(--background-primary) !important;
 }
 
 /* Activity Laps */
 .lap,
 .lap span:not(:last-child) {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 .lap:nth-child(2n + 1) {
-    /* Alternating background */
-    background: var(--background-secondary) !important;
+  /* Alternating background */
+  background: var(--background-secondary) !important;
 }
 
 /* Activity Photos */
@@ -335,68 +351,70 @@ div[id="activityPhotosPlaceholder"] .modal,
 /* Modal background */
 .modal-body .photo-carousel,
 .modal-body .photo-carousel .active-photo-container {
-    background-color: var(--color-black) !important;
+  background-color: var(--color-black) !important;
 }
 
 [class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"] {
-    background-color: var(--color-overlay-dark-90) !important;
+  background-color: var(--color-overlay-dark-90) !important;
 }
 
-[class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"] [class*="ActivityPhotosDropzone_exceedLimitText_"],
-[class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"] [class*="ActivityPhotosDropzone_dropPhotosText_"] {
-    color: var(--link-color) !important;
+[class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"]
+  [class*="ActivityPhotosDropzone_exceedLimitText_"],
+[class*="ActivityPhotosDropzone_dropzonePhotosOverlay_"]
+  [class*="ActivityPhotosDropzone_dropPhotosText_"] {
+  color: var(--link-color) !important;
 }
 
 div[class*="ActivityPhotoDropdown_dropdownMenu_"] {
-    /* Dropdown background */
-    background: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  /* Dropdown background */
+  background: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="ActivityPhotos_emptyStateContent_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Activity Advanced Search */
 div[class*="AdvancedSearch_advancedSearchContainer_"] {
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Real Time Stamina */
 h4[class*="RealTimeStaminaModal_staminaModalHeader_"],
 p[class*="RealTimeStaminaModal_runRideStaminaContext_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Workout Execution Metrics */
 div[class*="WorkoutExecutionMetrics_wrapper_"] {
-    background: var(--background-secondary) !important;
+  background: var(--background-secondary) !important;
 }
 
 div[class*="WorkoutExecutionMetrics_statsSectionExecutionScore_"] div {
-    background: var(--background-primary) !important;
+  background: var(--background-primary) !important;
 }
 
 p[class*="WorkoutExecutionMetrics_sectionParagraph_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-.page.activity-detail .multisport-nav>li:first-child:after {
-    border-color: var(--border-default) !important;
+.page.activity-detail .multisport-nav > li:first-child:after {
+  border-color: var(--border-default) !important;
 }
 
 /* MoveIQ */
 div[class*="MoveIQModal_moveIqDescription_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Climb Details */
 [class*="Pagination_arrows_"] button,
 [class*="Pagination_dropdown_"] {
-    background-color: var(--background-secondary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="DataBlock_small_"] [class*="DataBlock_dataField_"],
@@ -405,15 +423,15 @@ div[class*="MoveIQModal_moveIqDescription_"] {
 [class*="ActivityClimbTab_bigTextBlock_"],
 [class*="ActivityClimbTab_smallTextBlock_"],
 [class*="ActivityClimbTab_smallTitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="ActivityClimbTab_performanceTitle_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Cycling Dynamics */
 .power-phase,
 .cycling-dynamics .seated-standing {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }

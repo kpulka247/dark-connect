@@ -1,18 +1,18 @@
 /* Generic Borders */
 div[class*="UserStats_statsGroup_"],
 div[class*="ProgressSummary_reportFilter_"],
-div[class*="DayView_dayViewColumn_"]>* {
-    border-color: var(--border-default) !important;
+div[class*="DayView_dayViewColumn_"] > * {
+  border-color: var(--border-default) !important;
 }
 
 /* Generic Text Color Overrides */
 span[style*="color: rgb(16, 16, 16);"] {
-    /* Style override */
-    color: var(--text-primary) !important;
+  /* Style override */
+  color: var(--text-primary) !important;
 }
 
 div[class*="IntensityMinutesPageOneDayView_stats_"][class*="IntensityMinutesPageOneDayView_dataField_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Intensity Minutes */
@@ -20,8 +20,8 @@ div[class*="IntensityMinutesPageOneDayView_vigorousMultiplierBadge_"],
 div[class*="IntensityMinutesPageSevenDaysView_vigorousMultiplierBadge_"],
 div[class*="IntensityMinutesPageFourWeeksView_vigorousMultiplierBadge_"],
 div[class*="IntensityMinutesPageOneYearView_vigorousMultiplierBadge_"] {
-    background-color: var(--background-soft) !important;
-    border-color: var(--color-black-soft) !important;
+  background-color: var(--background-soft) !important;
+  border-color: var(--color-black-soft) !important;
 }
 
 span[class*="IntensityMinutesPageSevenDaysView_dataField_"],
@@ -34,123 +34,126 @@ span[class*="IntensityMinutesPageOneYearView_dataField_"],
 div[class*="IntensityMinutesPageOneYearView_dataField_"],
 span[class*="IntensityMinutesPageOneDayView_dataField_"],
 div[class*="IntensityMinutesPageOneDayView_dataField_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Weight Page Action Buttons */
 div[class*="WeightPage_actionButtonsContainer_"] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthLegendVisceralTable_"] td {
-    border-color: var(--background-primary) !important;
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_healthLegendVisceralTable_"]
+  td {
+  border-color: var(--background-primary) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthRange_"] {
-    color: var(--color-black-deep) !important;
-    background-color: var(--color-white) !important;
+[class*="WeightsInformationModals_healthTanita_"]
+  [class*="WeightsInformationModals_healthRange_"] {
+  color: var(--color-black-deep) !important;
+  background-color: var(--color-white) !important;
 }
 
 /* BP Page Action Buttons */
 div[class*="BPPage_actionButtonsContainer_"] {
-    border-color: var(--border-default) !important;
-    background: var(--background-primary);
+  border-color: var(--border-default) !important;
+  background: var(--background-primary);
 }
 
 /* Androgynous Model Overlay */
 div[class*="AndrogynousModel_overlay_"] {
-    background-color: var(--background-soft) !important;
-    opacity: 0.75 !important;
+  background-color: var(--background-soft) !important;
+  opacity: 0.75 !important;
 }
 
 /* Body Battery */
 div[class*="BodyBatteryFactors_cardContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 span[class*="BodyBatteryFactors_valueBlock_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="BodyBatteryHelpModal_modalH"] h4,
 span[class*="BodyBatteryHelpModal_dataLabel_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="BodyBatteryGauge_gaugeCenter_"] {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="BodyBatterySecondaryStatCard_bodyBatteryValue_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* VO2 Max */
 div[class*="VO2MaxGaugeChart_value_"],
 [class*="PulseOxHelp_mainTitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="VO2MaxModal_infoContainer_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Personal Records */
 h4[class*="PersonalRecordsPageView_helpHeading_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="Tab_prNameLink_"] {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 [class*="PersonalRecordsPageView_header_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 tr[class*="Tab_previousPR_"] td,
 tr[class*="Tab_isNew_"] th,
 [class*="Tab_table_"] [class*="Tab_previousPR_"] th:last-child,
 [class*="Tab_table_"] [class*="Tab_previousPR_"] td:last-child {
-    background-color: var(--background-primary) !important;
-    border-color: var(--color-white) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--color-white) !important;
 }
 
 tr[class*="Tab_isNew_"] td {
-    background-color: var(--background-primary) !important;
-    border-color: var(--color-white) !important;
-    border-bottom-color: var(--border-default) !important;
-    /* Override */
+  background-color: var(--background-primary) !important;
+  border-color: var(--color-white) !important;
+  border-bottom-color: var(--border-default) !important;
+  /* Override */
 }
 
 span[class*="Tab_prNewMarker_"] {
-    background-color: var(--background-medium) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-medium) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Calories */
 h4[class*="CaloriesSummary_title_"],
 span[class*="CaloriesSummary_dataField_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 span[class*="CaloriesPageReportChart_legendItem_"],
 span[class*="CaloriesPageReport_dataField_"],
 div[class*="CaloriesPageReport_tableHeader_"],
 span[class*="CaloriesPageReport_tableData_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 span[class*="TotalCaloriesChart_legendItem_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Lactate Threshold */
 div[class*="RunningLactateThresholdCurrentReport_currentReportWrapper_"] h2,
 div[class*="RunningLactateThresholdCurrentReport_currentReportWrapper_"] p {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 h4[class*="RunningLactateThresholdHelpBody_title_"],
@@ -158,29 +161,29 @@ p[class*="RunningLactateThresholdHelpBody_paragraph_"],
 p[class*="RunningLactateThresholdHelpBody_sectionSummary_"],
 h4[class*="RunningLactateThresholdHelpBody_sectionTitle_"],
 li[class*="RunningLactateThresholdHelpBody_paragraph_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Floors Climbed */
 span[class*="FloorsDataReport_legendLabel_"],
 div[class*="FloorsDataReport_legendLabel_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Movement Report */
 li[class*="MovementReportChart_legendItem_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Fitness Age */
 div[class*="FitnessAgeFactorCard_highPriorityChip_"] {
-    background: var(--background-secondary) !important;
+  background: var(--background-secondary) !important;
 }
 
 div[class*="FitnessAgeFactorModal_vigorousSubtitle_"],
 div[class*="FitnessAgeFactorModal_recommendationTitle_"],
 div[class*="FitnessAgeFactorModal_secondaryTitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Health Snapshot */
@@ -189,17 +192,17 @@ p[class*="HealthSnapshotHelpModal_factorDescription_"],
 p[class*="HealthSnapshotHelpModal_detailsSubtitle_"],
 p[class*="HealthSnapshotHelpModal_detailsParagraph_"],
 div[class*="HealthSnapshotHelpModal_legendItemContent_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="HealthSnapshotList_header_"] {
-    background: var(--background-primary) !important;
+  background: var(--background-primary) !important;
 }
 
 /* Hydration */
 li[class*="HydrationChart_legendItem_"],
 span[class*="HydrationChart_legendItem_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Jet Lag */
@@ -211,55 +214,56 @@ div[class*="JetLagManageTripsPage_jetLagContainer_"],
 div[class*="HelpModal_helpContent_"] p,
 div[class*="JetLagTrip_dropdownMenu_"] i,
 div[class*="JetLagTrip_editButton_"] i {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="ConfirmTrip_itineraryContainer_"] li:first-child,
 li[class*="ConfirmTrip_flightContainer_"],
 div[class*="JetLagTripsList_tripList_"] li:first-child,
 li[class*="JetLagTrip_tripContainer_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* FTP */
 [class*="LatestFTP_staleStateContainer_"] h4,
 [class*="LatestFTP_ftpStaleState_"],
 [class*="LatestFTP_staleStateWatts_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Progress Summary */
 div[class*="ProgressSummary_customizePopover_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
-    box-shadow: 1px 2px 10px var(--color-gray-light) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  box-shadow: 1px 2px 10px var(--color-gray-light) !important;
 }
 
 /* Group Avatars */
 div[class*="GroupMemberAvatars_groupMembersAvatars_"] img {
-    border-color: var(--color-gray-dark) !important;
-    background-color: var(--background-primary) !important;
+  border-color: var(--color-gray-dark) !important;
+  background-color: var(--background-primary) !important;
 }
 
 [class*="GroupItem_groupWrapper_"] img {
-    box-shadow: 0 0 0 4px var(--color-gray-dark), 0 0 0 5px var(--color-gray-light) !important;
+  box-shadow: 0 0 0 4px var(--color-gray-dark),
+    0 0 0 5px var(--color-gray-light) !important;
 }
 
 /* Respiration */
 [class*="RespirationPage_timelineTitle_"],
 [class*="RespirationPage_reportTitle_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Tag */
 div[class*="Tag_tag_"] {
-    background-color: var(--background-medium) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-medium) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Drag and Drop Group */
 [class*="DragDrop_dndGroup_"]:not(:last-of-type) {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Training Header (Generic) */
@@ -267,11 +271,26 @@ div[class*="TrainingHeader_planName_"],
 div[class*="TrainingHeader_planDetail_"],
 div[class*="TrainingStatus_modalHeader_"] h4,
 [class*="TrainingStatusChart_legendText_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Power Guidance */
 [class*="PowerGuidanceCreateStrategy_editValues_"],
 [class*="PowerGuidanceCreateStrategy_courseLink_"] a {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
+}
+
+/* Health Status */
+
+[class*="MetricsCardList_cardContainer_"] {
+  border-color: var(--border-default) !important;
+}
+
+[class*="MetricsCardList_cardTitle_"] {
+  color: var(--text-primary) !important;
+}
+
+[class*="NavigationComponent_betaLabel_"] {
+  background-color: var(--background-soft) !important;
+  color: var(--text-primary) !important;
 }

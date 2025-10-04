@@ -1,81 +1,81 @@
 .page .calendar-wrapper .calendar-view.calendar-year {
-    /* Year view border */
-    border-color: var(--border-default) !important;
+  /* Year view border */
+  border-color: var(--border-default) !important;
 }
 
 .page .calendar-wrapper .calendar-year-key .calendar-data {
-    /* Year key border */
-    border-color: var(--border-default) !important;
+  /* Year key border */
+  border-color: var(--border-default) !important;
 }
 
 .page .calendar-wrapper .calendar-footer {
-    /* Footer border */
-    border-color: var(--border-default) !important;
+  /* Footer border */
+  border-color: var(--border-default) !important;
 }
 
 .page .calendar-wrapper .calendar-sidebar.calendar-sidebar-add {
-    /* Add sidebar background */
-    background: var(--background-primary) !important;
+  /* Add sidebar background */
+  background: var(--background-primary) !important;
 }
 
 .page .calendar-wrapper.show-sidebar-add .calendar-sidebar-add {
-    /* Add sidebar border */
-    border-color: var(--border-default) !important;
+  /* Add sidebar border */
+  border-color: var(--border-default) !important;
 }
 
 /* Calendar Body/Grid */
 .page .calendar-wrapper .calendar-body table {
-    background: var(--background-soft);
-    /* Main background */
-    color: var(--text-primary);
+  background: var(--background-soft);
+  /* Main background */
+  color: var(--text-primary);
 }
 
 .page .calendar-wrapper .calendar-body table {
-    /* Grid background (duplicate, refine) */
-    background: var(--background-light) !important;
+  /* Grid background (duplicate, refine) */
+  background: var(--background-light) !important;
 }
 
 .page .calendar-wrapper .calendar-body table td {
-    /* Cell background */
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
-    /* Cell text */
+  /* Cell background */
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  /* Cell text */
 }
 
 .page .calendar-wrapper .calendar-body table .outside-current-date {
-    /* Outside month cell background */
-    background-color: var(--background-secondary) !important;
+  /* Outside month cell background */
+  background-color: var(--background-secondary) !important;
 }
 
 /* Calendar Item / Day Cell */
 .calendar-item {
-    background-color: var(--background-soft);
-    border-color: var(--border-default) !important;
-    color: var(--text-subtle) !important;
+  background-color: var(--background-soft);
+  border-color: var(--border-default) !important;
+  color: var(--text-subtle) !important;
 }
 
 .current-day {
-    /* Current day border highlight */
-    border-color: var(--color-white) !important;
+  /* Current day border highlight */
+  border-color: var(--color-white) !important;
 }
 
 .calendar-workouts .calendar td:hover:not(.outside-current-date) {
-    /* Hover state */
-    background: var(--background-soft) !important;
+  /* Hover state */
+  background: var(--background-soft) !important;
 }
 
 .calendar-workouts .calendar td:not(.current-day) {
-    /* Non-current day border */
-    border-color: var(--border-default) !important;
+  /* Non-current day border */
+  border-color: var(--border-default) !important;
 }
 
 .calendar-workouts .calendar .outside-current-date {
-    /* Outside month background (workout calendar) */
-    background: var(--background-secondary) !important;
+  /* Outside month background (workout calendar) */
+  background: var(--background-secondary) !important;
 }
 
 /* Calendar Sync Dialog */
 div[class*="CalendarSyncCompatDialog_device_"],
 div[class*="CalendarSyncCompatDialog_syncTitle_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }

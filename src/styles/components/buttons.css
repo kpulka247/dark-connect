@@ -1,22 +1,22 @@
 /* Style override for white background buttons */
 button[style*="background-color: rgb(255, 255, 255);"],
 .btn.btn-reverse {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 /* Pill button group */
 .btn-group-pill,
 [class*="SegmentedButton_segmentedButton"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 .btn-group-pill .btn {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="SegmentedButton_segmentedButton"][class*="SegmentedButton_active"] {
-    background-color: var(--background-light) !important;
+  background-color: var(--background-light) !important;
 }
 
 .page.activity-detail .chart-toggle-options button,
@@ -25,7 +25,7 @@ button[style*="background-color: rgb(255, 255, 255);"],
 .page.activity-detail .activity-charts-container .btn-customize-charts,
 .btn-group-pill .btn,
 [class*="SegmentedButton_segmentedButton_"] {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Specific button borders */
@@ -37,8 +37,8 @@ button[class*="ExercisePicker_dropdownToggle_"],
 button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
 button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
 .find-plan-filters .btn-pill {
-    /* From Plans */
-    border-color: var(--border-default) !important;
+  /* From Plans */
+  border-color: var(--border-default) !important;
 }
 
 /* Navigation buttons / icons */
@@ -46,35 +46,36 @@ div[class*="NavigationComponent_datePickerContainer_"],
 [class*="NavigationDatePicker_datePickerContainer_"],
 div[class*="NavigationComponent_buttonIcon_"],
 div[class*="Report_datePickerContainer_"] {
-    background-color: var(--background-soft) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-soft) !important;
+  color: var(--text-primary) !important;
 }
 
 div[class*="NavigationComponent_buttonIcon_"] i {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Generic Button Components */
 button[class*="PillGroup_pill_"] {
-    background-color: var(--background-primary);
-    color: var(--text-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary);
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 button[class*="PillGroup_active_"] {
-    background: var(--color-blue-primary) !important;
-    border-color: var(--color-blue-primary) !important;
+  background: var(--color-blue-primary) !important;
+  border-color: var(--color-blue-primary) !important;
 }
 
 button[class*="Button_btn_"][class*="Button_btnReverse_"],
 button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:hover,
 button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
-    color: var(--text-primary) !important;
-    background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
-.btn:focus:not([class*=search]) {
-    box-shadow: 0 0 0 2px var(--background-primary), 0 0 0 4px var(--color-blue-primary) !important;
+.btn:focus:not([class*="search"]) {
+  box-shadow: 0 0 0 2px var(--background-primary),
+    0 0 0 4px var(--color-blue-primary) !important;
 }
 
 /* Secondary Button Style */
@@ -82,8 +83,8 @@ div[class*="Button_btn_"][class*="Button_btnSecondary_"],
 [class*="Button_btn_"][class*="Button_secondary_"],
 [class*="Button_btn_"][class*="Button_secondary_"][disabled]:hover,
 [class*="Button_btn_"][class*="Button_secondary_"][disabled]:focus {
-    background-color: var(--background-medium) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-medium) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="Button_btn_"][class*="Button_secondary_"]:hover,
@@ -97,25 +98,25 @@ div[class*="Button_btn_"][class*="Button_btnSecondary_"],
 [class*="NavigationComponent_buttonIcon_"],
 [class*="NavigationDatePicker_buttonIcon_"],
 [class*="WeekPagination_btn_"] {
-    background-color: var(--background-light) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-light) !important;
+  color: var(--text-primary) !important;
 }
 
 .btn.btn-secondary:hover,
 [class*="Report_buttonIcon_"]:hover:not([disabled]),
 [class*="NavigationComponent_buttonIcon_"]:hover:not([disabled]) {
-    background-color: var(--background-medium) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-medium) !important;
+  color: var(--text-primary) !important;
 }
 
 [class*="Report_exportBtn_"]:hover {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Add Comment Button */
 button[class*="AddComment_container_"],
 button[class*="AddComment_button_"][disabled] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 /* Input Append/Prepend Add-on (acts like part of a button/input group) */
@@ -123,74 +124,87 @@ button[class*="AddComment_button_"][disabled] {
 div .add-on,
 .input-prepend .add-on,
 span[class*="BPPage_addOnInput_"] {
-    text-shadow: 0 1px 0 var(--color-black-deep) !important;
-    background-color: var(--background-secondary) !important;
-    border-color: var(--border-default) !important;
-    color: var(--text-primary) !important;
+  text-shadow: 0 1px 0 var(--color-black-deep) !important;
+  background-color: var(--background-secondary) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Chip Buttons */
 div[class*="Components_buttonSelected_"],
 div[class*="Components_dataTypeButton_"]:hover,
 div[class*="Components_dataTypeButton_"]:active {
-    background: var(--background-secondary) !important;
+  background: var(--background-secondary) !important;
 }
 
 [class*="Chip_buttonSelected_"],
 [class*="Chip_dataTypeButton_"]:hover,
 [class*="Chip_dataTypeButton_"]:active,
 [class*="WorkoutsPillsFilter_pill_"][class*="WorkoutsPillsFilter_active_"] {
-    background-color: var(--background-soft) !important;
-    border-color: var(--color-black-soft) !important;
+  background-color: var(--background-soft) !important;
+  border-color: var(--color-black-soft) !important;
 }
 
-[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(:hover),
-[class*="WorkoutsPillsFilter_pill_"]:not([class*="WorkoutsPillsFilter_active_"]) {
-    border-color: var(--border-default) !important;
+[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(
+    :hover
+  ),
+[class*="WorkoutsPillsFilter_pill_"]:not(
+    [class*="WorkoutsPillsFilter_active_"]
+  ) {
+  border-color: var(--border-default) !important;
 }
 
 div[class*="Chip_dataTypeButton_"] {
-    /* LiveTrack */
-    background-color: var(--color-black) !important;
-    color: var(--text-primary) !important;
+  /* LiveTrack */
+  background-color: var(--color-black) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Chip */
 [class*="Chip_chip_"] {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 [class*="Chip_chip_"]:hover {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 [class*="Chip_chip_"][class*="Chip_selected_"] {
-    background-color: var(--background-light) !important;
+  background-color: var(--background-light) !important;
 }
 
 /* Chart Chip */
 [class*="ChartChip_chip_"] {
-    border-color: var(--border-default) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="ChartChip_chip_"]:hover:not([class*="ChartChip_selectedChip_"]) {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 /* Generic Exercise Picker Button Icon */
 button[class*="ExercisePicker_dropdownToggle_"] svg {
-    fill: var(--color-white) !important;
+  fill: var(--color-white) !important;
 }
 
 /* Link Button Style */
-button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(:has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not([class*="InlineEdit_editIcon_"], [class*="InlineEdit_saveIcon_"], [class*="InlineEdit_closeIcon_"], [class*="Notification_close_"], div[class*="ActivityListPage_rightMenu_"] button, [class*="WorkoutCard_workoutCard_"]),
+button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(
+    :has(i[class*="icon-"])
+  ):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not(
+    [class*="InlineEdit_editIcon_"],
+    [class*="InlineEdit_saveIcon_"],
+    [class*="InlineEdit_closeIcon_"],
+    [class*="Notification_close_"],
+    div[class*="ActivityListPage_rightMenu_"] button,
+    [class*="WorkoutCard_workoutCard_"]
+  ),
 .accordion a.active,
 .accordion a:active,
 .accordion a:focus,
 .accordion-inner a:hover,
 .edit-gear-tracking {
-    /* Added based on name */
-    color: var(--link-color);
+  /* Added based on name */
+  color: var(--link-color);
 }
 
 .colored,
@@ -213,16 +227,16 @@ div[class*="DayView_dayViewLabel_"],
 [class*="StrategiesList_RowAnchor_"],
 .page.devices .join-beta,
 [class*="SolarTimeLineChart_dateTextStyle_"] {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 .modal-calendar .delete-item,
 .modal-calendar .remove-calendar-item {
-    color: var(--color-red-remove) !important;
+  color: var(--color-red-remove) !important;
 }
 
 /* General button text color (catch-all for many standard buttons) */
-[class*=icon-]>*,
+[class*="icon-"] > *,
 button[type="button"]:not(:has(> .icon-pencil)),
 button[class*="Button_btn_"],
 [class*="InlineEdit_editIcon_"]:hover,
@@ -230,110 +244,120 @@ button[class*="Button_btn_"],
 [class*="StrategiesList_iconContainer_"] button .icon-sync,
 [class*="StrategiesList_iconContainer_"] button .icon-trash,
 .icon-power-guidance {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-button svg:not([class*="InlineEdit_editIcon_"] svg, [class*="InlineEdit_saveIcon_"] svg, [class*="InlineEdit_closeIcon_"] svg, [class*="MainSidebar_menuItemLink_"] svg) {
-    fill: var(--color-white);
+button
+  svg:not(
+    [class*="InlineEdit_editIcon_"] svg,
+    [class*="InlineEdit_saveIcon_"] svg,
+    [class*="InlineEdit_closeIcon_"] svg,
+    [class*="MainSidebar_menuItemLink_"] svg
+  ) {
+  fill: var(--color-white);
 }
 
 /* Map Buttons */
 .btn-map-zoom {
-    background-color: var(--background-primary) !important;
-    color: var(--text-primary) !important;
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .map-enlarge-btn {
-    background: var(--color-overlay-dark-90) !important;
-    border-color: var(--border-default) !important;
+  background: var(--color-overlay-dark-90) !important;
+  border-color: var(--border-default) !important;
 }
 
 [class*="ButtonIcon_btnMap_"],
 [class*="MapZoom_zoomButton_"][class*="MapZoom_activity_"] {
-    background: var(--color-overlay-dark-90) !important;
-    color: var(--text-primary) !important;
+  background: var(--color-overlay-dark-90) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Course specific buttons */
 button[class*="CourseCard_collapseButton_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--color-gray-dark) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--color-gray-dark) !important;
 }
 
 /* Course map view close button */
 button[class*="ActivityMapView_closeButton_"] {
-    background: var(--background-primary) !important;
-    box-shadow: 0 0 2px var(--color-gray-light) !important;
+  background: var(--background-primary) !important;
+  box-shadow: 0 0 2px var(--color-gray-light) !important;
 }
 
 /* Course select type button */
 button[class*="SelectCourseType_selectCourseTypeButton_"] {
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Plan Filter Buttons */
 .find-plan-filters .btn-pill {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
 .find-plan-filters .btn-pill.filter-active,
 .find-plan-filters .btn-pill:active {
-    background-color: var(--background-soft) !important;
-    border-color: var(--border-default) !important;
-    /* Applied border here */
+  background-color: var(--background-soft) !important;
+  border-color: var(--border-default) !important;
+  /* Applied border here */
 }
 
 /* Chart Result Button (Adv Reporting) */
 button[class*="ChartResult_chartResult_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Expandable Menu Toggle Button (Adv Reporting) */
 button[class*="ExpandableMenu_toggleButton_"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Date Range Picker Button (Adv Reporting) */
 button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
-    background-color: var(--background-soft) !important;
+  background-color: var(--background-soft) !important;
 }
 
 /* Search Button hover states */
-[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not([class*="NavigateToUserLocationButton_loadingStateButton_"]):hover,
-[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not([class*="SearchForUserProvidedLocationData_loadingStateButton_"]):hover {
-    background-color: var(--background-soft) !important;
+[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not(
+    [class*="NavigateToUserLocationButton_loadingStateButton_"]
+  ):hover,
+[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not(
+    [class*="SearchForUserProvidedLocationData_loadingStateButton_"]
+  ):hover {
+  background-color: var(--background-soft) !important;
 }
 
 /* Carousel Control Button */
 [class*="Carousel_controlButton_"] {
-    background-color: var(--background-light) !important;
-    border-color: var(--border-default) !important;
+  background-color: var(--background-light) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Anchored Banner Close Button */
 [class*="AnchoredBanner_bannerCloseBtn_"],
 [class*="PromoCard_cardDismissIcon_"],
 [class*="WhatsNewCard_cardDismissIcon_"] {
-    background-color: var(--background-light) !important;
+  background-color: var(--background-light) !important;
 }
 
 /* Toggle Button switch inner */
 [class*="Toggle_btnSwitchInner_"]:after {
-    background-color: var(--background-lighter) !important;
+  background-color: var(--background-lighter) !important;
 }
 
 [class*="Toggle_toggleDial_"] {
-    background-color: var(--color-white) !important;
+  background-color: var(--color-white) !important;
 }
 
 [class*="Toggle_toggle_"] {
-    outline-color: var(--color-gray-lighter) !important;
+  outline-color: var(--color-gray-lighter) !important;
 }
 
 [class*="Toggle_toggle_"]:has([class*="Toggle_checked_"]) {
-    outline-color: var(--color-blue-primary) !important;
-    background-color: var(--color-blue-primary) !important;
+  outline-color: var(--color-blue-primary) !important;
+  background-color: var(--color-blue-primary) !important;
 }

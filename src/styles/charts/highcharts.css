@@ -4,67 +4,83 @@ path.highcharts-plot-band[fill="#F9F9F9"],
 path.highcharts-plot-band[fill="#f9f9f9"],
 path.highcharts-plot-band[fill="#FAFAFA"],
 path.highcharts-plot-band[fill="#fafafa"] {
-    /* Adjusted original stroke */
-    stroke: var(--color-gray-dark) !important;
+  /* Adjusted original stroke */
+  stroke: var(--color-gray-dark) !important;
 }
 
-div div div .highcharts-root .highcharts-plot-bands-0 .highcharts-plot-band[fill="#f9f9f9"],
-div[class*="PulseOxView_pulseOxChart_"] div div div .highcharts-root g .highcharts-plot-band[fill="#F9F9F9"],
-div[class*="PulseOxView_pulseOxChart_"] div div div .highcharts-root .highcharts-series-group g.highcharts-series.highcharts-series-6.highcharts-column-series.highcharts-tracker path[fill="#FAFAFA"] {
-    fill: var(--color-black-soft) !important;
+div
+  div
+  div
+  .highcharts-root
+  .highcharts-plot-bands-0
+  .highcharts-plot-band[fill="#f9f9f9"],
+div[class*="PulseOxView_pulseOxChart_"]
+  div
+  div
+  div
+  .highcharts-root
+  g
+  .highcharts-plot-band[fill="#F9F9F9"],
+div[class*="PulseOxView_pulseOxChart_"]
+  div
+  div
+  div
+  .highcharts-root
+  .highcharts-series-group
+  g.highcharts-series.highcharts-series-6.highcharts-column-series.highcharts-tracker
+  path[fill="#FAFAFA"] {
+  fill: var(--color-black-soft) !important;
 }
 
 path.highcharts-alternate-grid[fill="#F6F6F6"] {
-    fill: var(--color-gray-medium-dark) !important;
+  fill: var(--color-gray-medium-dark) !important;
 }
 
 .highcharts-grid-line:not([stroke="transparent"]) {
-    stroke: var(--color-gray-light) !important;
+  stroke: var(--color-gray-light) !important;
 }
 
 .highcharts-grid-line:not([stroke="#e6e6e6"]):not([opacity="1"]) {
-    /* More specific grid line */
-    stroke: var(--color-gray-light) !important;
+  /* More specific grid line */
+  stroke: var(--color-gray-light) !important;
 }
 
 g[class="highcharts-plot-bands-0"] path[fill="#d8d8d8"] {
-    /* Specific plot band fill */
-    fill: var(--color-gray-medium) !important;
+  /* Specific plot band fill */
+  fill: var(--color-gray-medium) !important;
 }
 
 .highcharts-plot-band[fill="#e6e9ff"] {
-    /* Specific plot band fill */
-    fill: var(--color-gray-darker) !important;
+  /* Specific plot band fill */
+  fill: var(--color-gray-darker) !important;
 }
-
 
 /* Axis / Ticks */
 .highcharts-tick {
-    stroke: var(--color-black-soft) !important;
+  stroke: var(--color-black-soft) !important;
 }
 
 .highcharts-tick[stroke="#c3c3c3"] {
-    /* Specific tick stroke */
-    stroke: var(--color-gray-light) !important;
+  /* Specific tick stroke */
+  stroke: var(--color-gray-light) !important;
 }
 
 .highcharts-axis-line {
-    stroke: var(--color-white) !important;
-    /* Default axis line */
+  stroke: var(--color-white) !important;
+  /* Default axis line */
 }
 
 path[class="highcharts-axis-line"] {
-    /* LiveTrack axis line */
-    stroke: var(--color-gray-dark) !important;
-    /* Override for LiveTrack */
+  /* LiveTrack axis line */
+  stroke: var(--color-gray-dark) !important;
+  /* Override for LiveTrack */
 }
 
 g.highcharts-axis.highcharts-xaxis .highcharts-axis-line {
-    /* LiveTrack x-axis line */
-    stroke: var(--color-gray-light) !important;
-    /* Specific override for LiveTrack x-axis */
+  /* LiveTrack x-axis line */
+  stroke: var(--color-gray-light) !important;
+  /* Specific override for LiveTrack x-axis */
 }
-
 
 /* Series Colors / Strokes */
 .highcharts-color-0[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]):not([stroke="#544fc5"]),
@@ -76,45 +92,71 @@ g.highcharts-axis.highcharts-xaxis .highcharts-axis-line {
 .highcharts-color-2 path,
 .highcharts-color-3 path,
 g[class="highcharts-series highcharts-series-0 highcharts-columnrange-series highcharts-tracker"] path {
-    stroke: var(--color-gray-dark) !important;
-    /* Default stroke for colored series */
+  stroke: var(--color-gray-dark) !important;
+  /* Default stroke for colored series */
 }
 
-path[class="highcharts-point"]:not([stroke="#ffffff"]):not([stroke="#be5142"]):not([stroke="#75a1cb"]):not([stroke="#24ea59"]):not([stroke="#503dac"]):not([fill="#f98925"]):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path):not(g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover):not(g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"] path.highcharts-point-hover) {
-    stroke: var(--color-white) !important;
-    /* Default point stroke if not colored */
+path[class="highcharts-point"]:not([stroke="#ffffff"]):not(
+    [stroke="#be5142"]
+  ):not([stroke="#75a1cb"]):not([stroke="#24ea59"]):not([stroke="#503dac"]):not(
+    [fill="#f98925"]
+  ):not(
+    g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"]
+      path
+  ):not(
+    g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"]
+      path
+  ):not(
+    g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"]
+      path
+  ):not(
+    g[class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker"]
+      path.highcharts-point-hover
+  ):not(
+    g[class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker"]
+      path.highcharts-point-hover
+  ):not(
+    g[class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker"]
+      path.highcharts-point-hover
+  ) {
+  stroke: var(--color-white) !important;
+  /* Default point stroke if not colored */
 }
 
 .highcharts-graph[stroke="#222"],
 .highcharts-graph[stroke="#222222"],
 .highcharts-graph[stroke="#000000"],
 .highcharts-graph[stroke="rgb(0,0,0)"] {
-    stroke: var(--color-white);
-    /* Override dark strokes */
+  stroke: var(--color-white);
+  /* Override dark strokes */
 }
 
-g[class*="highcharts-series highcharts-series-0 highcharts-line-series"] path[class="highcharts-graph"][stroke="var(--color-gray-dark)"],
-g[class*="highcharts-series highcharts-series-1 highcharts-line-series"] path[class="highcharts-graph"][stroke="var(--color-gray-dark)"],
-g[class*="highcharts-series highcharts-series-2 highcharts-line-series"] path[class="highcharts-graph"][stroke="var(--color-gray-dark)"],
-g[class*="highcharts-series highcharts-series-3 highcharts-line-series"] path[class="highcharts-graph"][stroke="var(--color-gray-dark)"] {
-    stroke: var(--color-white) !important;
-    /* Override specific dark line strokes */
+g[class*="highcharts-series highcharts-series-0 highcharts-line-series"]
+  path[class="highcharts-graph"][stroke="var(--color-gray-dark)"],
+g[class*="highcharts-series highcharts-series-1 highcharts-line-series"]
+  path[class="highcharts-graph"][stroke="var(--color-gray-dark)"],
+g[class*="highcharts-series highcharts-series-2 highcharts-line-series"]
+  path[class="highcharts-graph"][stroke="var(--color-gray-dark)"],
+g[class*="highcharts-series highcharts-series-3 highcharts-line-series"]
+  path[class="highcharts-graph"][stroke="var(--color-gray-dark)"] {
+  stroke: var(--color-white) !important;
+  /* Override specific dark line strokes */
 }
 
 path[stroke="#000000"],
 path[stroke="#3b3b3b"] {
-    stroke: var(--color-white) !important;
+  stroke: var(--color-white) !important;
 }
 
 path[stroke="#ededed"] {
-    /* Specific light stroke override */
-    stroke: var(--color-gray-light) !important;
+  /* Specific light stroke override */
+  stroke: var(--color-gray-light) !important;
 }
 
 path[class*="highcharts-halo"][fill="#f98925"] {
-    /* Halo fill/stroke */
-    fill: var(--color-orange-accent) !important;
-    stroke: var(--color-gray-dark) !important;
+  /* Halo fill/stroke */
+  fill: var(--color-orange-accent) !important;
+  stroke: var(--color-gray-dark) !important;
 }
 
 path.highcharts-point[fill="#f98925"],
@@ -127,8 +169,8 @@ path.highcharts-point[fill="#ed7e00"],
 path.highcharts-point[fill="#bf0f24"],
 path.highcharts-point[fill="#b0e1f7"],
 path.highcharts-point[fill="#cc6300"] {
-    /* Point stroke */
-    stroke: var(--color-gray-dark) !important;
+  /* Point stroke */
+  stroke: var(--color-gray-dark) !important;
 }
 
 /* Column / Bar Strokes */
@@ -146,92 +188,98 @@ g[class="highcharts-series highcharts-series-6 highcharts-column-series highchar
 g[class="highcharts-series highcharts-series-7 highcharts-column-series highcharts-tracker"] path,
 path.highcharts-point-hover:not([fill="transparent"]):not([fill="none"]),
 g.highcharts-series-hover path:not([fill="transparent"]):not([fill="none"]):not([fill="#2caffe"]):not([fill="#0c7cad"], [fill="#11a9ed"], [fill="#73d4ff"], [fill="#72ea24"], [fill="#ff9e0d"], [fill="#ed7e00"], [fill="#bf0f24"], [fill="#b0e1f7"], [fill="#cc6300"]) {
-    /* Column/bar series stroke */
-    stroke: var(--color-gray-dark) !important;
+  /* Column/bar series stroke */
+  stroke: var(--color-gray-dark) !important;
 }
 
 g.highcharts-series-inactive path:not([fill="transparent"]):not([fill="none"]) {
-    stroke: var(--color-gray-dark) !important;
+  stroke: var(--color-gray-dark) !important;
 }
 
 .reports .highcharts-container rect.highcharts-point {
-    /* Specific report column stroke */
-    stroke: #222 !important;
+  /* Specific report column stroke */
+  stroke: #222 !important;
 }
 
 g.highcharts-point path.highcharts-partfill-original[stroke="#ffffff"],
 g.highcharts-series path.highcharts-point[stroke="#ffffff"] {
-    stroke: var(--color-gray-dark) !important;
+  stroke: var(--color-gray-dark) !important;
 }
-
 
 /* Series Fill */
 circle[fill="#000000"],
 path[fill="#000000"],
 path[fill="#222"] {
-    fill: var(--color-white) !important;
-    /* Override black fills */
+  fill: var(--color-white) !important;
+  /* Override black fills */
 }
 
 path[fill="#000"] {
-    /* Another black fill override */
-    fill: var(--color-white) !important;
-    stroke: var(--color-black) !important;
-    /* Keep stroke black */
+  /* Another black fill override */
+  fill: var(--color-white) !important;
+  stroke: var(--color-black) !important;
+  /* Keep stroke black */
 }
 
 path.highcharts-point[fill="rgb(0,0,0)"],
 path.highcharts-point-hover[fill="rgb(25,25,25)"] {
-    fill: var(--color-white) !important;
+  fill: var(--color-white) !important;
 }
 
-.reports .highcharts-container .highcharts-series-0 rect.highcharts-point:not([fill="#6f42f3"]) {
-    /* Report column fill */
-    fill: var(--color-gray-dark) !important;
-    stroke: var(--color-gray-dark) !important;
-    /* Also set stroke */
+.reports
+  .highcharts-container
+  .highcharts-series-0
+  rect.highcharts-point:not([fill="#6f42f3"]) {
+  /* Report column fill */
+  fill: var(--color-gray-dark) !important;
+  stroke: var(--color-gray-dark) !important;
+  /* Also set stroke */
 }
 
 /* Legend */
-g[class^="highcharts-legend-item highcharts-column-series highcharts-color-undefined"] text,
-g[class^="highcharts-legend-item highcharts-spline-series highcharts-color-undefined"] text,
-g[class^="highcharts-legend-item highcharts-line-series highcharts-color-undefined"] text,
-g[class^="highcharts-legend-item highcharts-areaspline-series highcharts-color-undefined"] text {
-    color: var(--text-primary) !important;
-    fill: var(--color-white) !important;
-    /* Legend text color */
+g[class^="highcharts-legend-item highcharts-column-series highcharts-color-undefined"]
+  text,
+g[class^="highcharts-legend-item highcharts-spline-series highcharts-color-undefined"]
+  text,
+g[class^="highcharts-legend-item highcharts-line-series highcharts-color-undefined"]
+  text,
+g[class^="highcharts-legend-item highcharts-areaspline-series highcharts-color-undefined"]
+  text {
+  color: var(--text-primary) !important;
+  fill: var(--color-white) !important;
+  /* Legend text color */
 }
 
 .highcharts-legend-item-hidden .chartLegend {
-    /* LiveTrack hidden legend */
-    background: var(--background-primary) !important;
-    border-color: var(--border-default) !important;
+  /* LiveTrack hidden legend */
+  background: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 /* Tooltip (see components/tooltips.css) */
 
 /* Container / Background */
 .highcharts-container {
-    border: none !important;
-    background-color: var(--color-transparent) !important;
+  border: none !important;
+  background-color: var(--color-transparent) !important;
 }
 
 rect.highcharts-background {
-    fill: var(--color-transparent);
-    stroke: var(--color-transparent);
+  fill: var(--color-transparent);
+  stroke: var(--color-transparent);
 }
 
 rect.highcharts-background[fill="#ffffff"],
 rect.highcharts-plot-background[fill="#ffffff"],
 rect.highcharts-plot-background[fill*="url(#highcharts-"],
 .highcharts-pane[fill="#ffffff"] {
-    fill: var(--color-gray-dark) !important;
-    /* White backgrounds to dark */
+  fill: var(--color-gray-dark) !important;
+  /* White backgrounds to dark */
 }
 
 .highcharts-pane[stroke="#e6e6e6"] {
-    /* Pane stroke */
-    stroke: var(--color-gray-medium) !important;
+  /* Pane stroke */
+  stroke: var(--color-gray-medium) !important;
 }
 
 /* Specific widget backgrounds (make transparent) */
@@ -240,63 +288,63 @@ rect.highcharts-plot-background[fill*="url(#highcharts-"],
 .widget-floorsascended .highcharts-container rect,
 .widget-intensity-minutes .highcharts-container rect,
 .widget-heart-rate .highcharts-container rect {
-    fill: var(--color-transparent) !important;
-    stroke: var(--color-transparent) !important;
+  fill: var(--color-transparent) !important;
+  stroke: var(--color-transparent) !important;
 }
 
 /* Title / Subtitle */
 .highcharts-title * {
-    color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 span[class="highcharts-subtitle"] div div {
-    /* Specific subtitle text */
-    color: var(--text-primary) !important;
+  /* Specific subtitle text */
+  color: var(--text-primary) !important;
 }
 
 /* Plot Lines */
 .highcharts-plot-line {
-    stroke: var(--color-gray-light) !important;
-    /* Default plot line */
+  stroke: var(--color-gray-light) !important;
+  /* Default plot line */
 }
 
 g.highcharts-plot-lines-3 path.highcharts-plot-line[stroke="#222222"] {
-    /* Specific plot line */
-    stroke: var(--color-white) !important;
+  /* Specific plot line */
+  stroke: var(--color-white) !important;
 }
 
 .highcharts-plot-line[stroke="black"],
 .highcharts-plot-line[stroke="#888"] {
-    stroke: var(--color-white) !important;
+  stroke: var(--color-white) !important;
 }
 
 .highcharts-plot-line-label {
-    /* Plot line label text */
-    fill: var(--color-white) !important;
-    color: var(--text-primary) !important;
+  /* Plot line label text */
+  fill: var(--color-white) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Crosshair */
 .highcharts-crosshair,
 .highcharts-crosshair-category {
-    stroke: var(--color-white) !important;
+  stroke: var(--color-white) !important;
 }
 
 /* Gauge / Solid Gauge Specifics */
 circle[class="highcharts-pivot"] {
-    /* Gauge pivot point */
-    fill: var(--color-gray-dark) !important;
-    stroke: var(--color-gray-dark) !important;
+  /* Gauge pivot point */
+  fill: var(--color-gray-dark) !important;
+  stroke: var(--color-gray-dark) !important;
 }
 
 circle[stroke="white"],
 circle[stroke="#ffffff"] {
-    stroke: var(--color-gray-dark) !important;
+  stroke: var(--color-gray-dark) !important;
 }
 
 svg.highcharts-root circle {
-    /* General circle stroke override */
-    stroke: var(--color-gray-dark) !important;
+  /* General circle stroke override */
+  stroke: var(--color-gray-dark) !important;
 }
 
 /* Text / Labels */
@@ -304,23 +352,23 @@ text[style*="color: rgb(51, 51, 51);"],
 div[style*="color: rgb(199, 199, 199);"],
 /* Should likely be #c7c7c7 */
 span[style*="color: rgb(51, 51, 51);"] {
-    fill: var(--color-white) !important;
-    color: var(--text-primary) !important;
+  fill: var(--color-white) !important;
+  color: var(--text-primary) !important;
 }
 
 span[style*="color: rgb(34, 34, 34);"] {
-    /* Another dark text override */
-    color: var(--text-primary) !important;
+  /* Another dark text override */
+  color: var(--text-primary) !important;
 }
 
 text[color="#101010"] {
-    /* Specific text fill override */
-    fill: var(--color-white) !important;
+  /* Specific text fill override */
+  fill: var(--color-white) !important;
 }
 
 /* LiveTrack Chart Legend Box */
 .chartLegend {
-    background: var(--background-soft) !important;
-    border-color: var(--color-black-soft) !important;
-    color: var(--text-primary) !important;
+  background: var(--background-soft) !important;
+  border-color: var(--color-black-soft) !important;
+  color: var(--text-primary) !important;
 }
