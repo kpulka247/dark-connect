@@ -1,4 +1,4 @@
-name: Test Release Workflow
+name: Test Release
 
 on: workflow_dispatch
 
