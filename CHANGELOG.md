@@ -1,3 +1,10 @@
+## [2.3.2](https://github.com/kpulka247/dark-connect/compare/v2.3.1...v2.3.2) (2025-10-06)
+
+### Bug Fixes
+
+* Fix health status page missing elements ([e2e11ba](https://github.com/kpulka247/dark-connect/commit/e2e11bae5c991eaa371d50082b541b731aa8deda))
+* Fix minor bugs ([accae3c](https://github.com/kpulka247/dark-connect/commit/accae3c693ecc34f66f7c6f35a81e287533ff16b))
+
 ## [2.3.1](https://github.com/kpulka247/dark-connect/compare/v2.3.0...v2.3.1) (2025-10-04)
 
 ### Bug Fixes
