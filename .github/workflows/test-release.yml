@@ -1,0 +1,85 @@
+name: Test Release Workflow
+
+on: workflow_dispatch
+
+jobs:
+  test-release:
+    name: Simulate Release & Build
+    runs-on: ubuntu-latest
+    outputs:
+      new_release_version: ${{ steps.semantic_dry_run.outputs.newReleaseVersion }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Simulate Release and Build (Dry Run)
+        id: semantic_dry_run
+        run: |
+          OUTPUT=$(npx semantic-release --dry-run)
+          echo "$OUTPUT"
+          VERSION=$(echo "$OUTPUT" | grep "Published release" | sed -E 's/.*Published release ([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+          if [[ -z "$VERSION" ]]; then
+            echo "No new version would be published."
+            echo "newReleaseVersion=" >> $GITHUB_OUTPUT
+          else
+            echo "newReleaseVersion=${VERSION}" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload build artifacts
+        if: steps.semantic_dry_run.outputs.newReleaseVersion != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-build-artifacts
+          path: dist/
+
+  test-publish-chrome:
+    name: Simulate Publish to Chrome
+    needs: test-release
+    runs-on: ubuntu-latest
+    if: needs.test-release.outputs.new_release_version != ''
+
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: test-build-artifacts
+          path: ./dist
+
+      - name: Simulate Publish Step
+        run: |
+          echo "✅ Successfully downloaded artifacts."
+          echo "ℹ️ Would publish file: dist/darkconnect-${{ needs.test-release.outputs.new_release_version }}-chrome.zip"
+          echo "✅ Chrome publish simulation complete."
+
+  test-publish-firefox:
+    name: Simulate Publish to Firefox
+    needs: test-release
+    runs-on: ubuntu-latest
+    if: needs.test-release.outputs.new_release_version != ''
+
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: test-build-artifacts
+          path: ./dist
+
+      - name: Simulate Publish Step
+        run: |
+          echo "✅ Successfully downloaded artifacts."
+          echo "ℹ️ Would sign and publish from source directory: dist/darkconnect-firefox"
+          echo "✅ Firefox publish simulation complete."
