@@ -286,11 +286,31 @@ div[class*="TrainingStatus_modalHeader_"] h4,
   border-color: var(--border-default) !important;
 }
 
-[class*="MetricsCardList_cardTitle_"] {
+[class*="MetricsCardList_cardTitle_"],
+[class*="HealthStatusSecondaryStatCard_outliersText_"],
+[class*="MetricsCardList_value_"],
+[class*="MetricsModal_feedbackStatusText_"],
+[class*="MetricsModal_longFeedbackText_"] {
   color: var(--text-primary) !important;
 }
 
-[class*="NavigationComponent_betaLabel_"] {
+[class*="NavigationComponent_betaLabel_"],
+[class*="HealthStatusSecondaryStatCard_betaTag_"] {
   background-color: var(--background-soft) !important;
   color: var(--text-primary) !important;
+}
+
+[class*="MetricsCardList_smallGauge_"]
+  [class*="GaugeChart_primaryMetricLabel_"]
+  span {
+  color: var(--background-primary) !important;
+}
+
+[class*="SleepMetricsChart_tooltipContainer_"] {
+  background-color: var(--background-secondary) !important;
+}
+
+[class*="SleepMetricsChart_reportContainer_"]
+  [class*="TooltipTimeline_tooltipBullet_"][style="background-color: rgb(0, 0, 0);"] {
+  background-color: var(--color-white) !important;
 }

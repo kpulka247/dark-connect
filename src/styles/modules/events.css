@@ -32,7 +32,10 @@ div[class*="EventSearchResults_info_"] {
 
 /* Event Modal */
 div[class*="EventModal_eventTitle_"],
+[class*="EventNewModal_eventTitle_"],
 div[class*="EventWeather_detail_"],
-div[class*="EventModal_title_"] {
+div[class*="EventModal_title_"],
+[class*="EventDetailsHeader_verifiedStatus_"],
+[class*="EventDetailsStats_seeEventWebsite_"] {
   color: var(--text-primary) !important;
 }

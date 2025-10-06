@@ -226,7 +226,8 @@ div[class*="DayView_dayViewLabel_"],
 [class*="ImportDataPageView_browse_"],
 [class*="StrategiesList_RowAnchor_"],
 .page.devices .join-beta,
-[class*="SolarTimeLineChart_dateTextStyle_"] {
+[class*="SolarTimeLineChart_dateTextStyle_"],
+[class*="EpochDataReload_openModalButton_"] {
   color: var(--link-color) !important;
 }
 
