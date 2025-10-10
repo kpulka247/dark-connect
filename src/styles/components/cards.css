@@ -87,13 +87,18 @@ div[class*="SleepScoreFactorCard_factorCardContainer_"] {
 
 /* Secondary Stat Cards */
 div[class*="EditSecondaryStatCard_editCard__"],
-div[class*="AddAvailableSecondaryStatCard_addCard_"] {
+div[class*="AddAvailableSecondaryStatCard_addCard_"],
+[class*="DragDropItem_dragDropItem_"] {
   border-color: var(--border-default) !important;
   background: var(--background-primary) !important;
 }
 
 [class*="DragDrop_groupTitle_"] {
   color: var(--text-primary) !important;
+}
+
+[class*="DragDropItem_dragHandle_"] {
+  fill: var(--text-primary) !important;
 }
 
 /* Text within cards */
