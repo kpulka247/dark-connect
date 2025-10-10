@@ -69,9 +69,11 @@ div[class*="AcclimationTooltip_tooltip_"] {
 }
 
 span[class*="IconTooltip_container_"] span {
-  /* Icon Tooltip text (needs fixing?) */
-  color: var(--color-black) !important;
-  /* Original style was black, might need changing */
+  color: var(--text-primary) !important;
+}
+
+[class*="TimelineLayerChart_eventIconContainer_"] {
+  box-shadow: 0 0 0 1px var(--background-primary) !important;
 }
 
 [class*="DefaultCustomTooltip_tooltipContainer_"],
