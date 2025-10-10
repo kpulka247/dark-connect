@@ -1,3 +1,10 @@
+## [2.3.3](https://github.com/kpulka247/dark-connect/compare/v2.3.2...v2.3.3) (2025-10-10)
+
+### Bug Fixes
+
+* Fix edit at a glance cards ([483863e](https://github.com/kpulka247/dark-connect/commit/483863ead45c82b2ba19e6732cd4f4633df2d0a6)), closes [#32](https://github.com/kpulka247/dark-connect/issues/32)
+* Fix timeline tooltip container color ([4c4a391](https://github.com/kpulka247/dark-connect/commit/4c4a3917b19fd2b11a34039c61d03a862fe8e27a))
+
 ## [2.3.2](https://github.com/kpulka247/dark-connect/compare/v2.3.1...v2.3.2) (2025-10-06)
 
 ### Bug Fixes
