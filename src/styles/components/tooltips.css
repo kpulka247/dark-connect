@@ -55,6 +55,7 @@ div[class*="HRVTimelineChart_tooltip_"] {
 }
 
 div[class*="HrvStatusReportChart_tooltipContainer_"],
+[class*="HrvStatusChart_tooltipContainer_"],
 div[class*="BodyBatteryReports_tooltipContainer_"],
 div[class*="SleepScoreReport_tooltipContainer_"],
 div[class*="ActivityHistoryChartAndStats_tooltipContainer_"] {
