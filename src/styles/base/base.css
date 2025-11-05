@@ -17,7 +17,9 @@ a,
 a p,
 h5,
 h6,
-p {
+p,
+[class*="DataBlock_dataField_"],
+[class*="Accordion_detailsContainer_"] {
   color: var(--text-primary) !important;
 }
 
