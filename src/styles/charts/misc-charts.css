@@ -27,6 +27,11 @@ div[class*="Gc5style_caloriesBurnedBarIndicator_"] {
 }
 
 /* Gauges */
+[class*="GaugeChart_primaryMetricLabel_"],
+[class*="GaugeChart_secondaryMetricLabel_"] {
+  color: var(--text-primary) !important;
+}
+
 div[class*="PulseOxGauge_donutCenter_"] {
   fill: var(--color-gray-dark) !important;
   stroke: var(--color-gray-dark) !important;

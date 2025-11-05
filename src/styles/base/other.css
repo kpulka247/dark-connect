@@ -1,7 +1,8 @@
 /* Generic Borders */
 div[class*="UserStats_statsGroup_"],
 div[class*="ProgressSummary_reportFilter_"],
-div[class*="DayView_dayViewColumn_"] > * {
+div[class*="DayView_dayViewColumn_"] > *,
+div[class*="DataBlock_hrLine_"] {
   border-color: var(--border-default) !important;
 }
 
