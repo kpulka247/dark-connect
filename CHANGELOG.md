@@ -1,3 +1,11 @@
+## [2.3.4](https://github.com/kpulka247/dark-connect/compare/v2.3.3...v2.3.4) (2025-11-05)
+
+### Bug Fixes
+
+* Fix global text color issues ([81574a6](https://github.com/kpulka247/dark-connect/commit/81574a64fbf6ea3116aed47344a1d217edacfcc4))
+* Fix HRV tooltip container color ([2d78cad](https://github.com/kpulka247/dark-connect/commit/2d78cad05ff5de0548a6b4ef9d1b6f3ea76c6f89))
+* Fix timeline icon border ([16bf742](https://github.com/kpulka247/dark-connect/commit/16bf7421c7d74da9d04863c08f9da67ebc54630c))
+
 ## [2.3.3](https://github.com/kpulka247/dark-connect/compare/v2.3.2...v2.3.3) (2025-10-10)
 
 ### Bug Fixes
