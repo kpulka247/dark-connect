@@ -149,8 +149,10 @@ div[class*="SortableTable_iconContainer_"] {
   fill: var(--color-white) !important;
 }
 
-/* Timeline Activity Icon */
-[class*="TimelineLayerChart_activityIconContainer_"] {
+/* Timeline Icon */
+[class*="TimelineLayerChart_activityIconContainer_"],
+[class*="TimelineLayerChart_napIconContainer_"],
+[class*="AxisDecoration_eventIconContainer_"] {
   box-shadow: 0 0 0 1px var(--color-gray-dark) !important;
 }
 
