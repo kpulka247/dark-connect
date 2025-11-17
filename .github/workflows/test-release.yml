@@ -7,7 +7,7 @@ jobs:
     name: Simulate Release & Build
     runs-on: ubuntu-latest
     outputs:
-      new_release_version: ${{ steps.get_version_dry_run.outputs.version }}
+      new_release_version: ${{ steps.semantic_dry_run.outputs.new_release_version }}
 
     steps:
       - name: Checkout code
@@ -30,14 +30,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get new version number (Dry Run)
-        if: steps.semantic_dry_run.outputs.new_release_published == 'true'
-        id: get_version_dry_run
-        run: |
-          echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
-
       - name: Upload build artifacts
-        if: steps.get_version_dry_run.outputs.version != ''
+        if: steps.semantic_dry_run.outputs.new_release_version != ''
         uses: actions/upload-artifact@v4
         with:
           name: test-build-artifacts
