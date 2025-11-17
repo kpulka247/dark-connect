@@ -1,7 +1,7 @@
 /* Generic Borders */
 div[class*="UserStats_statsGroup_"],
 div[class*="ProgressSummary_reportFilter_"],
-div[class*="DayView_dayViewColumn_"] > *,
+div[class*="DayView_dayViewColumn_"]>*,
 div[class*="DataBlock_hrLine_"] {
   border-color: var(--border-default) !important;
 }
@@ -44,14 +44,11 @@ div[class*="WeightPage_actionButtonsContainer_"] {
   border-color: var(--border-default) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"]
-  [class*="WeightsInformationModals_healthLegendVisceralTable_"]
-  td {
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthLegendVisceralTable_"] td {
   border-color: var(--background-primary) !important;
 }
 
-[class*="WeightsInformationModals_healthTanita_"]
-  [class*="WeightsInformationModals_healthRange_"] {
+[class*="WeightsInformationModals_healthTanita_"] [class*="WeightsInformationModals_healthRange_"] {
   color: var(--color-black-deep) !important;
   background-color: var(--color-white) !important;
 }
@@ -301,9 +298,7 @@ div[class*="TrainingStatus_modalHeader_"] h4,
   color: var(--text-primary) !important;
 }
 
-[class*="MetricsCardList_smallGauge_"]
-  [class*="GaugeChart_primaryMetricLabel_"]
-  span {
+[class*="MetricsCardList_smallGauge_"] [class*="GaugeChart_primaryMetricLabel_"] span {
   color: var(--background-primary) !important;
 }
 
@@ -311,7 +306,41 @@ div[class*="TrainingStatus_modalHeader_"] h4,
   background-color: var(--background-secondary) !important;
 }
 
-[class*="SleepMetricsChart_reportContainer_"]
-  [class*="TooltipTimeline_tooltipBullet_"][style="background-color: rgb(0, 0, 0);"] {
+[class*="SleepMetricsChart_reportContainer_"] [class*="TooltipTimeline_tooltipBullet_"][style="background-color: rgb(0, 0, 0);"] {
   background-color: var(--color-white) !important;
+}
+
+/* ECG */
+
+[class*="ECGRecordingNoDataView_simpleNoDataView_"] [class*="ECGRecordingNoDataView_title_"] {
+  color: var(--text-primary) !important;
+}
+
+[class*="ECGRecordingList_header_"] {
+  background-color: var(--background-primary) !important;
+}
+
+[class*="ECGFilter_filterType_"],
+[class*="ECGFilter_options_"] {
+  background-color: var(--background-secondary) !important;
+  border-color: var(--color-gray-dark) !important;
+}
+
+[class*="ECGRecordingList_listIcon_"],
+[class*="HealthDetailsPageHeader_toolbarSection_"] i:not([class*="icon-locked"]) {
+  color: var(--text-primary) !important;
+}
+
+.ecg-details [class*="recharts-cartesian-axis-tick-line"][stroke="#000000"][color="#000000"] {
+  stroke: var(--text-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+[class*="ECGRecordingHelpModal_ecgDescription_"],
+ul[class*="ECGRecordingHelpModal_factorsList_"] li {
+  color: var(--text-primary) !important;
+}
+
+ul[class*="ECGRecordingHelpModal_factorsList_"] li::before {
+  background-color: var(--text-primary) !important;
 }
