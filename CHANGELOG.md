@@ -1,3 +1,9 @@
+## [2.4.0](https://github.com/kpulka247/dark-connect/compare/v2.3.4...v2.4.0) (2025-11-17)
+
+### Features
+
+* Add ECG page support ([d62a685](https://github.com/kpulka247/dark-connect/commit/d62a685df7972baa48d035dc009f9a45813a52c4))
+
 ## [2.3.4](https://github.com/kpulka247/dark-connect/compare/v2.3.3...v2.3.4) (2025-11-05)
 
 ### Bug Fixes
