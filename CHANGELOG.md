@@ -1,3 +1,9 @@
+## [2.4.1](https://github.com/kpulka247/dark-connect/compare/v2.4.0...v2.4.1) (2025-11-26)
+
+### Bug Fixes
+
+* Fix Garmin Coach plans ([4a49be3](https://github.com/kpulka247/dark-connect/commit/4a49be34bb580bbff1e798c7720d3bdde2602e10))
+
 ## [2.4.0](https://github.com/kpulka247/dark-connect/compare/v2.3.4...v2.4.0) (2025-11-17)
 
 ### Features
