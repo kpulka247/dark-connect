@@ -19,11 +19,9 @@ div[class*="FindPlanCard_card_"],
 }
 
 .training-plan-preview:after {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    var(--background-primary) 100%
-  ) !important;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      var(--background-primary) 100%) !important;
 }
 
 .find-plan-filters .btn-pill {
@@ -183,6 +181,13 @@ div[class*="HowItWorksModal_content_"] {
   background: var(--background-primary) !important;
 }
 
+.adaptive-plan .plan-schedule-close button:hover,
+[class*="TrainingGoal_trainingGoalStats_"],
+[class*="SetYourGoal_header_"],
+[class*="SetYourGoal_subHeader_"] {
+  color: var(--text-primary) !important;
+}
+
 div[class*="plan-icon plan-icon-reverse"] span,
 .plan-item-title,
 .adaptive-plan .adaptive-plan-status-score,
@@ -231,22 +236,20 @@ div[class*="WorkoutStep_stepEditOpenContent_"] {
 }
 
 div[class*="WorkoutRepeatStep_repeatStepWrapper_"],
-[class*="WorkoutStep_workoutModalStepContainer_"]
-  [class*="WorkoutStep_newWorkoutStepRepeat_"] {
+[class*="WorkoutStep_workoutModalStepContainer_"] [class*="WorkoutStep_newWorkoutStepRepeat_"] {
   /* Repeat Step Background/Border */
   background-color: var(--background-soft) !important;
   border-color: var(--border-default) !important;
 }
 
-[class*="WorkoutStep_newWorkoutStepRepeat_"]
-  [class*="WorkoutStep_newWorkoutStepRepeatHeader_"] {
+[class*="WorkoutStep_newWorkoutStepRepeat_"] [class*="WorkoutStep_newWorkoutStepRepeatHeader_"] {
   background-color: var(--background-soft) !important;
   color: var(--text-primary) !important;
 }
 
 /* Workout Step Text/Icons */
-div[class*="WorkoutStep_stepDeleteIcon_"] > div > button > i,
-div[class*="WorkoutRepeatStep_repeatStepTitleRight_"] > div > button > i,
+div[class*="WorkoutStep_stepDeleteIcon_"]>div>button>i,
+div[class*="WorkoutRepeatStep_repeatStepTitleRight_"]>div>button>i,
 div[class*="WorkoutRepeatStep_grabIcon_"] i,
 div[class*="BenchmarkExerciseDetailsPage_titleText_"],
 div[class*="BenchmarkExerciseDetailsPage_regularText_"],
@@ -322,10 +325,7 @@ div[class*="TrainingReadinessKeyStat_dataField_"] {
 }
 
 .page.reports .ts-hrv-status-chart-container .hrv-baseline-score,
-.page.reports
-  .ts-hrv-status-chart-container
-  .hrv-status-sub-title-container
-  .hrv-status-avg-score {
+.page.reports .ts-hrv-status-chart-container .hrv-status-sub-title-container .hrv-status-avg-score {
   color: var(--text-primary) !important;
 }
 
@@ -360,13 +360,12 @@ div[class*="Setup_header_"],
 div[class*="Setup_details_"],
 [class*="cards_header_"],
 [class*="cards_subHeader_"],
-[class*="cards_infoContainer_"] > label,
+[class*="cards_infoContainer_"]>label,
 [class*="cards_label_"] {
   color: var(--text-primary) !important;
 }
 
-[class*="TimeDurationInput_timeDurationInput_"]
-  [class*="TimeDurationInput_appendedLabel_"] {
+[class*="TimeDurationInput_timeDurationInput_"] [class*="TimeDurationInput_appendedLabel_"] {
   border-color: var(--border-default) !important;
 }
 

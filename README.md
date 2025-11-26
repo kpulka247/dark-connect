@@ -9,7 +9,7 @@
 
 <a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Users"><img src="https://img.shields.io/chrome-web-store/users/nadhhgppikppmjacnkebagbgcibnfnob?logo=Google%20Chrome&logoColor=white&color=goldenrod"></a>
 <a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Rating"><img src="https://img.shields.io/chrome-web-store/rating/nadhhgppikppmjacnkebagbgcibnfnob"></a>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Users"><img src="https://img.shields.io/amo/users/dark-connect?logo=Firefox&logoColor=white&color=goldenrod"></a>
 <a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Rating"><img src="https://img.shields.io/amo/rating/dark-connect"></a>
 
@@ -63,38 +63,40 @@ This project uses Node.js for its build system and leverages Conventional Commit
 Make sure you have:
 
 - [Node.js](https://nodejs.org) (LTS version recommended) installed on your system
+- [pnpm](https://pnpm.io/) (can be installed via `npm install -g pnpm`)
 - [Git](https://git-scm.com/) for version control
 
 Then install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
+
 ### 🔧 How to build the extension
 
-The extension is built using Webpack, managed via npm scripts:
+The extension is built using Webpack, managed via pnpm scripts:
 
 ```bash
 # Build both Chrome and Firefox versions for production (minified, no source maps, with ZIPs)
-npm run build
+pnpm build
 
 # Build both Chrome and Firefox versions for development (unminified, with source maps, no ZIPs)
-npm run dev
+pnpm dev
 ```
 
 - Generates browser-specific unpacked builds in the `dist/darkconnect-chrome/` and `dist/darkconnect-firefox/` directories.
 - Processes css:
-    - Resolves `@import` statements (via `css-loader`).
-    - Minifies CSS in production mode (via `css-minimizer-webpack-plugin`).
-    - Extracts CSS into a single `styles/main.css` file for each browser build.
+  - Resolves `@import` statements (via `css-loader`).
+  - Minifies CSS in production mode (via `css-minimizer-webpack-plugin`).
+  - Extracts CSS into a single `styles/main.css` file for each browser build.
 - Copies necessary files like `manifest.json` (browser-specific), `background.js`, and icons.
-- In production mode (`npm run build`), packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/darkconnect-2.1.0-chrome.zip`, `dist/darkconnect-2.1.0-firefox.zip`).
+- In production mode (`pnpm build`), packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/darkconnect-2.1.0-chrome.zip`, `dist/darkconnect-2.1.0-firefox.zip`).
 
 ### 🧪 Local testing (e.g. in Chrome)
 
 To test the extension locally in a browser:
 
-1. Run `npm run dev` - this will build the extension and watch for file changes
+1. Run `pnpm dev` - this will build the extension and watch for file changes
 2. Open Chrome and navigate to `chrome://extensions`
 3. Enable "Developer mode" (usually a toggle in the top-right corner)
 4. Click "Load unpacked"
@@ -107,25 +109,26 @@ This project uses [semantic-release](https://github.com/semantic-release/semanti
 
 - **How it works:** When commits following the Conventional Commits specification (e.g., `feat: ...`, `fix: ...`, `perf: ...`, commits with `BREAKING CHANGE: ...`) are merged into the `main` branch, a GitHub Actions workflow automatically:
 
-    1. Analyzes the commits since the last release
-    2. Determines the next semantic version number (patch, minor, or major)
-    3. Updates the `version` in `package.json` and `manifest.*.json` files
-    4. Generates/updates the `CHANGELOG.md` file
-    5. Commits these updated files
-    6. Creates a Git tag for the new version (e.g., `v2.1.0`)
-    7. Creates a GitHub Release with changelog notes and attaches .zip assets
-    8. Publishes the new Chrome build directly to the Chrome Web Store
-    9. Publishes the new Firefox build directly to Mozilla Add-ons (AMO) via automated signing/upload
-- **Developers generally do not need to manually bump versions** using `npm version` for standard releases. The automation handles it based on commit messages.
+  1. Analyzes the commits since the last release
+  2. Determines the next semantic version number (patch, minor, or major)
+  3. Updates the `version` in `package.json` and `manifest.*.json` files
+  4. Generates/updates the `CHANGELOG.md` file
+  5. Commits these updated files
+  6. Creates a Git tag for the new version (e.g., `v2.1.0`)
+  7. Creates a GitHub Release with changelog notes and attaches .zip assets
+  8. Publishes the new Chrome build directly to the Chrome Web Store
+  9. Publishes the new Firefox build directly to Mozilla Add-ons (AMO) via automated signing/upload
+
+- **Developers generally do not need to manually bump versions** using `pnpm version` for standard releases. The automation handles it based on commit messages.
 
 ## Development Notes
 
 ### 🗂️ Manifests
 
 - `manifest.chrome.json` / `manifest.firefox.json`: These are the source manifest files located in the root of the project.
-    - They are updated with the correct version number by `semantic-release` during the release process.
-    - The Webpack build process copies the appropriate source manifest (e.g., `manifest.chrome.json`) to `dist/darkconnect-chrome/manifest.json` for each build.
-    - These manifests should reference the single, compiled `styles/main.css` and `background.js`.
+  - They are updated with the correct version number by `semantic-release` during the release process.
+  - The Webpack build process copies the appropriate source manifest (e.g., `manifest.chrome.json`) to `dist/darkconnect-chrome/manifest.json` for each build.
+  - These manifests should reference the single, compiled `styles/main.css` and `background.js`.
 
 ### 🧰 Tools & Scripts
 

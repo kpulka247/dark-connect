@@ -18,7 +18,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version} && npm run build"
+        "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version} && pnpm build"
       }
     ],
     [

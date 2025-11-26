@@ -145,12 +145,8 @@ div[class*="Components_dataTypeButton_"]:active {
   border-color: var(--color-black-soft) !important;
 }
 
-[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(
-    :hover
-  ),
-[class*="WorkoutsPillsFilter_pill_"]:not(
-    [class*="WorkoutsPillsFilter_active_"]
-  ) {
+[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not( :hover),
+[class*="WorkoutsPillsFilter_pill_"]:not([class*="WorkoutsPillsFilter_active_"]) {
   border-color: var(--border-default) !important;
 }
 
@@ -188,16 +184,13 @@ button[class*="ExercisePicker_dropdownToggle_"] svg {
 }
 
 /* Link Button Style */
-button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(
-    :has(i[class*="icon-"])
-  ):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not(
-    [class*="InlineEdit_editIcon_"],
-    [class*="InlineEdit_saveIcon_"],
-    [class*="InlineEdit_closeIcon_"],
-    [class*="Notification_close_"],
-    div[class*="ActivityListPage_rightMenu_"] button,
-    [class*="WorkoutCard_workoutCard_"]
-  ),
+button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not( :has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not([class*="InlineEdit_editIcon_"],
+  [class*="InlineEdit_saveIcon_"],
+  [class*="InlineEdit_closeIcon_"],
+  [class*="Notification_close_"],
+  div[class*="ActivityListPage_rightMenu_"] button,
+  [class*="WorkoutCard_workoutCard_"],
+  .adaptive-plan .plan-schedule-close button),
 .accordion a.active,
 .accordion a:active,
 .accordion a:focus,
@@ -237,7 +230,7 @@ div[class*="DayView_dayViewLabel_"],
 }
 
 /* General button text color (catch-all for many standard buttons) */
-[class*="icon-"] > *,
+[class*="icon-"]>*,
 button[type="button"]:not(:has(> .icon-pencil)),
 button[class*="Button_btn_"],
 [class*="InlineEdit_editIcon_"]:hover,
@@ -248,13 +241,10 @@ button[class*="Button_btn_"],
   color: var(--text-primary) !important;
 }
 
-button
-  svg:not(
-    [class*="InlineEdit_editIcon_"] svg,
-    [class*="InlineEdit_saveIcon_"] svg,
-    [class*="InlineEdit_closeIcon_"] svg,
-    [class*="MainSidebar_menuItemLink_"] svg
-  ) {
+button svg:not([class*="InlineEdit_editIcon_"] svg,
+  [class*="InlineEdit_saveIcon_"] svg,
+  [class*="InlineEdit_closeIcon_"] svg,
+  [class*="MainSidebar_menuItemLink_"] svg) {
   fill: var(--color-white);
 }
 
@@ -323,12 +313,8 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 }
 
 /* Search Button hover states */
-[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not(
-    [class*="NavigateToUserLocationButton_loadingStateButton_"]
-  ):hover,
-[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not(
-    [class*="SearchForUserProvidedLocationData_loadingStateButton_"]
-  ):hover {
+[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not([class*="NavigateToUserLocationButton_loadingStateButton_"]):hover,
+[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not([class*="SearchForUserProvidedLocationData_loadingStateButton_"]):hover {
   background-color: var(--background-soft) !important;
 }
 

@@ -58,8 +58,7 @@ div[class*="FlexInput_flexInputContainer_"] {
   color: var(--text-primary) !important;
 }
 
-div[class*="FilterCourses_inputAppendContainer_"]
-  span[class*="FilterCourses_addOn_"] {
+div[class*="FilterCourses_inputAppendContainer_"] span[class*="FilterCourses_addOn_"] {
   background-color: var(--background-secondary) !important;
   border-color: var(--border-default) !important;
   color: var(--text-primary) !important;
@@ -124,9 +123,7 @@ label[class*="ConnectionParticipant_connection_"] {
   border-color: var(--border-default) !important;
 }
 
-label[class*="ConnectionParticipant_connection_"][data-dialog="true"]:nth-child(
-    2n
-  ) {
+label[class*="ConnectionParticipant_connection_"][data-dialog="true"]:nth-child(2n) {
   background-color: var(--background-soft) !important;
 }
 
@@ -142,6 +139,10 @@ label[class*="Cards_optionsLabel_"],
 label[class*="Cards_options_"],
 label[class*="ConfirmSaveCourseModal_courseNameLabel_"] {
   color: var(--text-primary) !important;
+}
+
+[class*="FlexInput_prependedLabel_"] {
+  border-color: var(--border-default) !important;
 }
 
 /* Textareas */
