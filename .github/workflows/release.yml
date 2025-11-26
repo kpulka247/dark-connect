@@ -13,23 +13,27 @@ jobs:
       new_release_version: ${{ steps.semantic.outputs.new_release_version }}
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: 20
+          cache: "pnpm"
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Create Release and Build
         id: semantic
-        run: npx semantic-release
+        run: pnpm exec semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -53,14 +57,20 @@ jobs:
           name: build-artifacts
           path: ./dist
 
-      - name: Setup Node.js
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: 20
 
       - name: Publish to Chrome Web Store
         run: |
-          npx chrome-webstore-upload-cli upload \
+          pnpm dlx chrome-webstore-upload-cli upload \
             --source dist/darkconnect-${{ needs.release.outputs.new_release_version }}-chrome.zip \
             --extension-id $CHROME_EXTENSION_ID \
             --client-id $CHROME_CLIENT_ID \
@@ -86,14 +96,20 @@ jobs:
           name: build-artifacts
           path: ./dist
 
-      - name: Setup Node.js
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: 20
 
       - name: Publish to Firefox AMO
         run: |
-          npx web-ext sign \
+          pnpm dlx web-ext sign \
             --source-dir=dist/darkconnect-firefox \
             --artifacts-dir=web-ext-artifacts \
             --channel=listed \
