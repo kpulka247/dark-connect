@@ -195,9 +195,15 @@ span[class*="ReorderActivityList_dragHandle_"] {
 .activity-detail
   span:not(.course-pt-lap):not(
     [class*="ActivityPhotosCarousel_carouselActions_"] div span
-  ):not(.notification-count):not(.edit-gear-tracking span):not(.icon-help) {
+  ):not(.notification-count):not(.edit-gear-tracking span):not(.icon-help):not(
+    .mapboxgl-marker span
+  ) {
   /* Generic span text */
   color: var(--text-primary) !important;
+}
+
+.mapboxgl-ctrl-attrib a:hover {
+  color: var(--color-black) !important;
 }
 
 [class*="Activity_activityTitle_"],
@@ -217,6 +223,18 @@ span[class*="ReorderActivityList_dragHandle_"] {
 .activity-map-view-container {
   /* Map container background */
   background-color: var(--background-secondary) !important;
+}
+
+div[id="activityMapBoxViewPlaceholder"] div {
+  border-color: var(--border-default) !important;
+}
+
+.page.activity-detail .weather .wind {
+  border-color: var(--text-primary) !important;
+}
+
+.page.activity-detail .weather .wind:before {
+  border-color: var(--text-primary) transparent transparent transparent !important;
 }
 
 button[class*="ActivityMapView_closeButton_"] {

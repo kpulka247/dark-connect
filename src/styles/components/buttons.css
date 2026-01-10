@@ -145,8 +145,12 @@ div[class*="Components_dataTypeButton_"]:active {
   border-color: var(--color-black-soft) !important;
 }
 
-[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not( :hover),
-[class*="WorkoutsPillsFilter_pill_"]:not([class*="WorkoutsPillsFilter_active_"]) {
+[class*="Chip_dataTypeButton_"]:not([class*="Chip_buttonSelected_"]):not(
+    :hover
+  ),
+[class*="WorkoutsPillsFilter_pill_"]:not(
+    [class*="WorkoutsPillsFilter_active_"]
+  ) {
   border-color: var(--border-default) !important;
 }
 
@@ -184,13 +188,17 @@ button[class*="ExercisePicker_dropdownToggle_"] svg {
 }
 
 /* Link Button Style */
-button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not( :has(i[class*="icon-"])):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not([class*="InlineEdit_editIcon_"],
-  [class*="InlineEdit_saveIcon_"],
-  [class*="InlineEdit_closeIcon_"],
-  [class*="Notification_close_"],
-  div[class*="ActivityListPage_rightMenu_"] button,
-  [class*="WorkoutCard_workoutCard_"],
-  .adaptive-plan .plan-schedule-close button),
+button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(
+    :has(i[class*="icon-"])
+  ):not([class*="dataTypeButton_"]):not(.btn):not([class*="icon-"]):not(
+    [class*="InlineEdit_editIcon_"],
+    [class*="InlineEdit_saveIcon_"],
+    [class*="InlineEdit_closeIcon_"],
+    [class*="Notification_close_"],
+    div[class*="ActivityListPage_rightMenu_"] button,
+    [class*="WorkoutCard_workoutCard_"],
+    .adaptive-plan .plan-schedule-close button
+  ),
 .accordion a.active,
 .accordion a:active,
 .accordion a:focus,
@@ -230,7 +238,7 @@ div[class*="DayView_dayViewLabel_"],
 }
 
 /* General button text color (catch-all for many standard buttons) */
-[class*="icon-"]>*,
+[class*="icon-"] > *,
 button[type="button"]:not(:has(> .icon-pencil)),
 button[class*="Button_btn_"],
 [class*="InlineEdit_editIcon_"]:hover,
@@ -241,10 +249,13 @@ button[class*="Button_btn_"],
   color: var(--text-primary) !important;
 }
 
-button svg:not([class*="InlineEdit_editIcon_"] svg,
-  [class*="InlineEdit_saveIcon_"] svg,
-  [class*="InlineEdit_closeIcon_"] svg,
-  [class*="MainSidebar_menuItemLink_"] svg) {
+button
+  svg:not(
+    [class*="InlineEdit_editIcon_"] svg,
+    [class*="InlineEdit_saveIcon_"] svg,
+    [class*="InlineEdit_closeIcon_"] svg,
+    [class*="MainSidebar_menuItemLink_"] svg
+  ) {
   fill: var(--color-white);
 }
 
@@ -260,9 +271,28 @@ button svg:not([class*="InlineEdit_editIcon_"] svg,
 }
 
 [class*="ButtonIcon_btnMap_"],
-[class*="MapZoom_zoomButton_"][class*="MapZoom_activity_"] {
+[class*="MapZoom_zoomButton_"][class*="MapZoom_activity_"],
+button[class*="MapBoxComponent_fullscreenButton_"]:only-child {
   background: var(--color-overlay-dark-90) !important;
   color: var(--text-primary) !important;
+}
+
+[class*="MapControlsWrapper_toggle2DIcon_"] {
+  background: var(--color-overlay-dark-90) !important;
+  color: var(--text-primary) !important;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%3E%0A%3Cpath%20d%3D%22M4.78418%204.76953C6.72785%204.76953%208.12486%205.95203%208.125%207.63281V7.65332C8.125%208.78774%207.57895%209.68747%205.75977%2011.4375L3.76074%2013.374V13.5195H8.27734V15H1.34668V13.7959L4.625%2010.4482C5.98079%209.07861%206.36133%208.57349%206.36133%207.80566V7.78516C6.36129%206.8652%205.7319%206.20117%204.69434%206.20117C3.63603%206.20121%202.92383%206.90001%202.92383%207.93066L2.91699%207.95801L1.25684%207.95117L1.25%207.93066C1.25%206.06995%202.70215%204.7696%204.78418%204.76953ZM14.1846%205.01855C17.152%205.01855%2018.8817%206.83055%2018.8818%209.95703V9.9707C18.8818%2013.1665%2017.1729%2015%2014.1846%2015H10.4424V5.01855H14.1846ZM12.2275%2013.499H13.9502C15.9351%2013.4989%2017.0624%2012.2399%2017.0625%209.99902V9.98535C17.0625%207.79271%2015.9075%206.51971%2013.9502%206.51953H12.2275V13.499Z%22%20fill%3D%22%23ffffff%22%2F%3E%0A%3C%2Fsvg%3E") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 20px 20px !important;
+}
+
+[class*="MapControlsWrapper_toggle3DIcon_"] {
+  background: var(--color-overlay-dark-90) !important;
+  color: var(--text-primary) !important;
+  background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M4.76367%204.81641C6.81803%204.81643%208.15327%205.8889%208.15332%207.45215V7.46582C8.15332%208.70388%207.26094%209.52724%206.06445%209.77637V9.81152C7.53056%209.94999%208.50571%2010.821%208.50586%2012.2041V12.2188C8.50558%2013.9755%206.99068%2015.1992%204.77734%2015.1992C2.59173%2015.1992%201.15998%2014.0101%201.02832%2012.3018L1.02148%2012.2188H2.72266L2.72949%2012.2939C2.82633%2013.1378%203.60836%2013.7402%204.77734%2013.7402C5.9325%2013.7402%206.70015%2013.0968%206.7002%2012.1699V12.1562C6.7002%2011.1048%205.92521%2010.5234%204.64551%2010.5234H3.46973V9.19531H4.61133C5.71118%209.19531%206.44434%208.57275%206.44434%207.70117V7.6875C6.44434%206.77444%205.82889%206.2344%204.76367%206.23438C3.71224%206.23438%202.98543%206.79517%202.89551%207.6875L2.88867%207.75684H1.22852L1.23535%207.68066C1.38753%205.95133%202.75073%204.81641%204.76367%204.81641ZM14.3652%205.01758C17.3324%205.01774%2019.0614%206.82972%2019.0615%209.95605V9.96973C19.0615%2013.1654%2017.3533%2014.9989%2014.3652%2014.999H10.623V5.01758H14.3652ZM12.4072%2013.498H14.1299C16.1149%2013.4979%2017.2421%2012.239%2017.2422%209.99805V9.98438C17.2422%207.79168%2016.0873%206.51866%2014.1299%206.51855H12.4072V13.498Z%22%20fill%3D%22%23ffffff%22%2F%3E%0A%3C%2Fsvg%3E%0A") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 20px 20px !important;
 }
 
 /* Course specific buttons */
@@ -313,8 +343,12 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
 }
 
 /* Search Button hover states */
-[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not([class*="NavigateToUserLocationButton_loadingStateButton_"]):hover,
-[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not([class*="SearchForUserProvidedLocationData_loadingStateButton_"]):hover {
+[class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not(
+    [class*="NavigateToUserLocationButton_loadingStateButton_"]
+  ):hover,
+[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"]:not(
+    [class*="SearchForUserProvidedLocationData_loadingStateButton_"]
+  ):hover {
   background-color: var(--background-soft) !important;
 }
 

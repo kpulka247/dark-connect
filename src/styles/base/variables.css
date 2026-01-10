@@ -61,4 +61,6 @@
   /* --- Dark Mode Overrides --- */
   --text-default: var(--color-white) !important;
   --icon-default: var(--color-white) !important;
+  --bg-hero: var(--color-gray-dark) !important;
+  --stroke-container: var(--color-gray-medium) !important;
 }
