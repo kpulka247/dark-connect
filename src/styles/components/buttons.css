@@ -230,7 +230,9 @@ div[class*="DayView_dayViewLabel_"],
 [class*="SolarTimeLineChart_dateTextStyle_"],
 [class*="EpochDataReload_openModalButton_"],
 [class*="AllSecondaryStatsPage_editLink_"],
-[class*="AllSecondaryStatsPage_homeLink_"] {
+[class*="AllSecondaryStatsPage_homeLink_"],
+[class*="NavigateBack_backLinkContainer_"],
+[class*="CreateFoodPage_showMoreDataLabel_"] {
   color: var(--link-color) !important;
 }
 
