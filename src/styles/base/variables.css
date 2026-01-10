@@ -63,4 +63,5 @@
   --icon-default: var(--color-white) !important;
   --bg-hero: var(--color-gray-dark) !important;
   --stroke-container: var(--color-gray-medium) !important;
+  --data-viz-neutral-primary: var(--color-white) !important;
 }

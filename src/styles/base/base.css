@@ -20,7 +20,7 @@ h6,
 p,
 [class*="DataBlock_dataField_"],
 [class*="Accordion_detailsContainer_"] {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 /* Default link color for map attributions (overridden from general 'a' rule) */

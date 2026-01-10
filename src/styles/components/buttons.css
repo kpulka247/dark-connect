@@ -228,7 +228,9 @@ div[class*="DayView_dayViewLabel_"],
 [class*="StrategiesList_RowAnchor_"],
 .page.devices .join-beta,
 [class*="SolarTimeLineChart_dateTextStyle_"],
-[class*="EpochDataReload_openModalButton_"] {
+[class*="EpochDataReload_openModalButton_"],
+[class*="AllSecondaryStatsPage_editLink_"],
+[class*="AllSecondaryStatsPage_homeLink_"] {
   color: var(--link-color) !important;
 }
 

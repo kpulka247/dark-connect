@@ -45,3 +45,26 @@ p[class*="HomeSettingsModal_"] {
 [class*="WelcomeGC5Page_welcomeDescription_"] {
   color: var(--text-primary) !important;
 }
+
+/* Promo Card */
+[class*="PromoCard_cardLargeMain_"] {
+  background-color: var(--background-primary) !important;
+}
+
+[class*="PromoCard_cardLargeTitle_"],
+[class*="PromoCard_cardLargeSubtitle_"] {
+  color: var(--text-primary) !important;
+}
+
+[class*="PromoCard_cardWrapperLarge_"] {
+  border-color: var(--border-default) !important;
+}
+
+[class*="PromoCard_cardImageLarge_"] {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 65%,
+      var(--background-primary) 92%
+    ),
+    url("https://connect.garmin.com/images/promos/web/nutrition-promo_3x.jpg") !important;
+}
