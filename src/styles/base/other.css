@@ -317,6 +317,10 @@ div[class*="TrainingStatus_modalHeader_"] h4,
   background-color: var(--color-white) !important;
 }
 
+[class*="SleepMetricsChart_circle_"][style="background-color: rgb(0, 0, 0);"] {
+  background-color: var(--color-white) !important;
+}
+
 /* ECG */
 
 [class*="ECGRecordingNoDataView_simpleNoDataView_"]

@@ -80,7 +80,10 @@ button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
 
 /* Secondary Button Style */
 div[class*="Button_btn_"][class*="Button_btnSecondary_"],
-[class*="Button_btn_"][class*="Button_secondary_"],
+[class*="Button_btn_"][class*="Button_secondary_"]:not(
+    [class*="NavigationComponent_actionButtonsContainer_"]
+      [class*="Button_btn_"][class*="Button_secondary_"]
+  ),
 [class*="Button_btn_"][class*="Button_secondary_"][disabled]:hover,
 [class*="Button_btn_"][class*="Button_secondary_"][disabled]:focus {
   background-color: var(--background-medium) !important;
@@ -198,7 +201,7 @@ button:not(:has(> i[class*="icon-"])):not(:has(> span[class*="icon-"])):not(
     div[class*="ActivityListPage_rightMenu_"] button,
     [class*="WorkoutCard_workoutCard_"],
     .adaptive-plan .plan-schedule-close button
-  ),
+  ):not([class*="DateRangePickerDropdown_dateRangePickerButton_"]),
 .accordion a.active,
 .accordion a:active,
 .accordion a:focus,

@@ -97,10 +97,15 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
   color: var(--text-primary) !important;
 }
 
+[class*="AdvancedReportingHeader_buttonAdjacentMenu_"]
+  [class*="Button_iconButton_"]
+  svg
+  path[fill="#231f20"] {
+  fill: var(--color-white) !important;
+}
+
 /* Recharts Axis Text (specific override) */
-div[class*="AdvancedReportingChartStyles_mainChart_"]
-  svg.recharts-surface
-  g
-  text[fill="#808080"] {
+div[class*="AdvancedReportingChartStyles_mainChart_"],
+svg.recharts-surface g text[fill="#808080"] {
   fill: var(--color-gray-lighter) !important;
 }
