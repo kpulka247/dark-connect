@@ -1,3 +1,17 @@
+## [2.5.0](https://github.com/kpulka247/dark-connect/compare/v2.4.1...v2.5.0) (2026-01-10)
+
+### Features
+
+* Add meal card dark mode compatibility ([fdbf7fe](https://github.com/kpulka247/dark-connect/commit/fdbf7fe134e07c10778716aaa3582e1607ae624b))
+
+### Bug Fixes
+
+* **ci:** Fix release version transfer ([68df0ad](https://github.com/kpulka247/dark-connect/commit/68df0ad29445f58daea2ae88a56c30fcf2701506))
+* Fix activity page and 3D map controls ([f5dca5b](https://github.com/kpulka247/dark-connect/commit/f5dca5b02d038127fa4a112a9696b44c5369ef17)), closes [#39](https://github.com/kpulka247/dark-connect/issues/39)
+* Fix Garmin Coach training page bugs ([979b476](https://github.com/kpulka247/dark-connect/commit/979b476034ec104e92c0e71928a2d91bd67279c6)), closes [#36](https://github.com/kpulka247/dark-connect/issues/36)
+* Fix general minor bugs ([843ecea](https://github.com/kpulka247/dark-connect/commit/843eceaccac69a128c622ee3cf27e491c3fdbb19))
+* Fix homepage ([bb9916a](https://github.com/kpulka247/dark-connect/commit/bb9916a9a26259d8985e91d2661a7ff51cf9ee99))
+
 ## [2.4.1](https://github.com/kpulka247/dark-connect/compare/v2.4.0...v2.4.1) (2025-11-26)
 
 ### Bug Fixes
