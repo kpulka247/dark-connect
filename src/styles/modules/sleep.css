@@ -39,7 +39,8 @@ div[class*="NapsTable_label_"],
 
 /* Sleep Coach */
 p[class*="SleepCoachFactorModal_feedbackString_"],
-div[class*="SleepCoachFactors_noFactorsText_"] {
+div[class*="SleepCoachFactors_noFactorsText_"],
+[class*="SleepCoachFactorModal_cardHeading_"] {
   color: var(--text-primary) !important;
 }
 

@@ -18,7 +18,8 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version} && pnpm build"
+        "prepareCmd": "node ./scripts/update-manifest-version.js ${nextRelease.version} && pnpm build",
+        "successCmd": "echo \"new_release_version=${nextRelease.version}\" >> $GITHUB_OUTPUT"
       }
     ],
     [

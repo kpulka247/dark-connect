@@ -11,6 +11,19 @@ div[class*="BreadcrumbForm_footerContainer_"] {
   background-color: var(--background-secondary) !important;
 }
 
+[class*="SortableTableLayout_tableRowAlternating_"] {
+  background-color: var(--background-secondary) !important;
+}
+
+[class*="SortableTableLayout_tableBodyAlternating_"],
+[class*="SortableTableLayout_tableRow_"] {
+  border-color: var(--border-default) !important;
+}
+
+[class*="Tooltip_tooltip_"] svg[fill^="#000"] {
+  fill: var(--color-white) !important;
+}
+
 /* Event Search */
 tr[class*="EventSearchResults_row_"] {
   /* Row background */

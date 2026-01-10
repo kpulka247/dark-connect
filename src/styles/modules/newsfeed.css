@@ -24,7 +24,8 @@ div[class*="NewsFeedFilter_feedFilterDetail_"] {
 [class*="Menu_StandardMenuBtn_"]:hover,
 .dropdown-trigger:hover,
 .inline-edit-select button,
-[class*="ActivityMapView_closeButton_"] {
+[class*="ActivityMapView_closeButton_"],
+[class*="ActivityCard_activityTitleAndStatusIcons_"] a p {
   color: var(--text-primary) !important;
 }
 

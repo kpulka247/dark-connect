@@ -57,4 +57,18 @@
   --text-subtle: var(--color-gray-subtle);
   --text-disabled: var(--color-gray-disabled);
   --link-color: var(--color-blue-secondary);
+
+  /* --- Dark Mode Overrides --- */
+  --text-default: var(--color-white) !important;
+  --icon-default: var(--color-white) !important;
+  --bg-hero: var(--color-gray-dark) !important;
+  --stroke-container: var(--color-gray-medium) !important;
+  --data-viz-neutral-primary: var(--color-white) !important;
+  --bg-surface-01: var(--color-gray-dark) !important;
+  --fill-subtle: var(--color-gray-medium) !important;
+  --stroke-divider: var(--color-gray-light) !important;
+  --bg-surface-03: var(--color-gray-darker) !important;
+  --menu-fill-menu-hover: var(--color-gray-darker) !important;
+  --color-blue-light-1: var(--color-blue-secondary) !important;
+  --color-gray-25: var(--color-gray-light) !important;
 }

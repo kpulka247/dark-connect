@@ -19,9 +19,11 @@ div[class*="FindPlanCard_card_"],
 }
 
 .training-plan-preview:after {
-  background: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      var(--background-primary) 100%) !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    var(--background-primary) 100%
+  ) !important;
 }
 
 .find-plan-filters .btn-pill {
@@ -184,7 +186,20 @@ div[class*="HowItWorksModal_content_"] {
 .adaptive-plan .plan-schedule-close button:hover,
 [class*="TrainingGoal_trainingGoalStats_"],
 [class*="SetYourGoal_header_"],
-[class*="SetYourGoal_subHeader_"] {
+[class*="SetYourGoal_subHeader_"],
+[class*="CompletedActivitiesCardIconTitle_activityTitleTextName_"],
+[class*="CompletedActivitiesCardDateHeader_dateHeader_"],
+[class*="CompletedActivitiesCardDetails_dataBit_"],
+[class*="CompletedActivitiesCardPlanStarted_planStartedText_"] {
+  color: var(--text-primary) !important;
+}
+
+[class*="Carousel_slide_"] {
+  border-color: var(--border-default) !important;
+  box-shadow: 0px 4px 4px var(--border-default) !important;
+}
+
+[class*="ContentCard_title_"] {
   color: var(--text-primary) !important;
 }
 
@@ -198,6 +213,21 @@ div[class*="plan-icon plan-icon-reverse"] span,
 div[class*="AdaptiveCoachingTrainingPlanDetails_contentContainer_"] {
   /* Details Background */
   background: var(--background-primary) !important;
+}
+
+/* Progress Report */
+
+[class*="ProgressReportPage_contentContainer_"] {
+  background-color: var(--background-primary) !important;
+}
+
+[class*="ProgressReportLabel_title_"],
+[class*="ProgressReportLabel_subTitle_"],
+[class*="PerformanceStats_title_"],
+[class*="StatData_data_"],
+[class*="AcuteLoadChartWrapper_acuteLoadChartContainer_"]
+  div[class^="TrainingStatusChart_helpWrapper"] {
+  color: var(--text-primary) !important;
 }
 
 /* Workouts */
@@ -236,20 +266,22 @@ div[class*="WorkoutStep_stepEditOpenContent_"] {
 }
 
 div[class*="WorkoutRepeatStep_repeatStepWrapper_"],
-[class*="WorkoutStep_workoutModalStepContainer_"] [class*="WorkoutStep_newWorkoutStepRepeat_"] {
+[class*="WorkoutStep_workoutModalStepContainer_"]
+  [class*="WorkoutStep_newWorkoutStepRepeat_"] {
   /* Repeat Step Background/Border */
   background-color: var(--background-soft) !important;
   border-color: var(--border-default) !important;
 }
 
-[class*="WorkoutStep_newWorkoutStepRepeat_"] [class*="WorkoutStep_newWorkoutStepRepeatHeader_"] {
+[class*="WorkoutStep_newWorkoutStepRepeat_"]
+  [class*="WorkoutStep_newWorkoutStepRepeatHeader_"] {
   background-color: var(--background-soft) !important;
   color: var(--text-primary) !important;
 }
 
 /* Workout Step Text/Icons */
-div[class*="WorkoutStep_stepDeleteIcon_"]>div>button>i,
-div[class*="WorkoutRepeatStep_repeatStepTitleRight_"]>div>button>i,
+div[class*="WorkoutStep_stepDeleteIcon_"] > div > button > i,
+div[class*="WorkoutRepeatStep_repeatStepTitleRight_"] > div > button > i,
 div[class*="WorkoutRepeatStep_grabIcon_"] i,
 div[class*="BenchmarkExerciseDetailsPage_titleText_"],
 div[class*="BenchmarkExerciseDetailsPage_regularText_"],
@@ -325,7 +357,10 @@ div[class*="TrainingReadinessKeyStat_dataField_"] {
 }
 
 .page.reports .ts-hrv-status-chart-container .hrv-baseline-score,
-.page.reports .ts-hrv-status-chart-container .hrv-status-sub-title-container .hrv-status-avg-score {
+.page.reports
+  .ts-hrv-status-chart-container
+  .hrv-status-sub-title-container
+  .hrv-status-avg-score {
   color: var(--text-primary) !important;
 }
 
@@ -360,12 +395,13 @@ div[class*="Setup_header_"],
 div[class*="Setup_details_"],
 [class*="cards_header_"],
 [class*="cards_subHeader_"],
-[class*="cards_infoContainer_"]>label,
+[class*="cards_infoContainer_"] > label,
 [class*="cards_label_"] {
   color: var(--text-primary) !important;
 }
 
-[class*="TimeDurationInput_timeDurationInput_"] [class*="TimeDurationInput_appendedLabel_"] {
+[class*="TimeDurationInput_timeDurationInput_"]
+  [class*="TimeDurationInput_appendedLabel_"] {
   border-color: var(--border-default) !important;
 }
 

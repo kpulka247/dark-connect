@@ -13,21 +13,20 @@ ul > li > a > span[data-value] {
   color: var(--color-gray-medium);
 }
 
-a,
+a:not(.mapboxgl-ctrl-attrib a):not(.leaflet-container a),
 a p,
 h5,
 h6,
 p,
 [class*="DataBlock_dataField_"],
 [class*="Accordion_detailsContainer_"] {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 /* Default link color for map attributions (overridden from general 'a' rule) */
 .gm-style .gm-style-cc a,
 .gm-style .gm-style-cc button,
-.gm-style .gm-style-cc span,
-.leaflet-control-attribution a {
+.gm-style .gm-style-cc span {
   color: var(--color-black) !important;
 }
 
