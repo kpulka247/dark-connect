@@ -394,6 +394,10 @@ div[class*="ActivityPhotoDropdown_dropdownMenu_"] {
   border-color: var(--border-default) !important;
 }
 
+[class*="ActivityPhotos_emptyState_"] {
+  color: var(--text-primary) !important;
+}
+
 /* Activity Advanced Search */
 div[class*="AdvancedSearch_advancedSearchContainer_"] {
   background: var(--background-primary) !important;

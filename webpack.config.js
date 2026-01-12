@@ -16,7 +16,10 @@ const createConfig = (browser, mode) => {
     entry: {
       main_styles: "./src/styles/index.css",
       popup_styles: "./src/styles/popup.css",
+      modal_styles: "./src/styles/modal.css",
       background: "./src/background.js",
+      popup: "./src/popup/popup.js",
+      content: "./src/content.js",
     },
     output: {
       path: browserOutputDir,
@@ -39,6 +42,9 @@ const createConfig = (browser, mode) => {
           }
           if (pathData.chunk.name === "popup_styles") {
             return "styles/popup.css";
+          }
+          if (pathData.chunk.name === "modal_styles") {
+            return "styles/modal.css";
           }
           return "styles/[name].css";
         },

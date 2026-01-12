@@ -90,6 +90,13 @@ div[class*="Button_btn_"][class*="Button_btnSecondary_"],
   color: var(--text-primary) !important;
 }
 
+[class*="ReportProfileDropdown_dropdown_"]
+  [class*="Button_secondary_"]
+  svg
+  path[fill="#231f20"] {
+  fill: var(--color-white) !important;
+}
+
 [class*="Button_btn_"][class*="Button_secondary_"]:hover,
 .btn.btn-secondary,
 .btn.btn-secondary[disabled]:hover,

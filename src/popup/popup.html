@@ -14,20 +14,24 @@
         <h1>Dark Connect</h1>
       </header>
       <main>
-        <h2>How to Use</h2>
-        <p>
-          Dark Connect works automatically! Simply install the extension, and it
-          will instantly apply a dark theme to:
-        </p>
+        <div class="settings-box">
+          <div class="theme-switch-wrapper">
+            <input type="radio" id="theme-auto" name="theme" value="auto" />
+            <label for="theme-auto">Auto</label>
+
+            <input type="radio" id="theme-dark" name="theme" value="dark" />
+            <label for="theme-dark">Dark</label>
+
+            <input type="radio" id="theme-light" name="theme" value="light" />
+            <label for="theme-light">Light</label>
+          </div>
+        </div>
+
+        <h2>Settings</h2>
         <ul>
-          <li>connect.garmin.com</li>
-          <li>livetrack.garmin.com</li>
-          <li>live.garmin.com</li>
+          <li><b>Auto:</b> Matches your browser theme.</li>
+          <li><b>Dark / Light:</b> Forces selected mode.</li>
         </ul>
-        <p>
-          No configuration is needed. Enjoy a more comfortable browsing
-          experience!
-        </p>
 
         <hr />
 
@@ -59,5 +63,6 @@
         </p>
       </footer>
     </div>
+    <script src="popup.js"></script>
   </body>
 </html>
