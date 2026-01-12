@@ -1,3 +1,13 @@
+## [2.6.0](https://github.com/kpulka247/dark-connect/compare/v2.5.0...v2.6.0) (2026-01-12)
+
+### Features
+
+* Add theme switcher and update notification modal ([f3411eb](https://github.com/kpulka247/dark-connect/commit/f3411eba4bfd386167085a9e9b2b20ebd0b0f076)), closes [#40](https://github.com/kpulka247/dark-connect/issues/40)
+
+### Bug Fixes
+
+* Fix activity photos text color and profile report button ([0ab38fb](https://github.com/kpulka247/dark-connect/commit/0ab38fb1d8162d5a8a632229cab0f5b275dfb601))
+
 ## [2.5.0](https://github.com/kpulka247/dark-connect/compare/v2.4.1...v2.5.0) (2026-01-10)
 
 ### Features
