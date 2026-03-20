@@ -1,3 +1,10 @@
+## [2.6.1](https://github.com/kpulka247/dark-connect/compare/v2.6.0...v2.6.1) (2026-03-20)
+
+### Bug Fixes
+
+* Fix golf score card ([8de22e2](https://github.com/kpulka247/dark-connect/commit/8de22e2e6da8c51e3837aa3d561f2a238c4a13ec)), closes [#43](https://github.com/kpulka247/dark-connect/issues/43)
+* Fix nutrition food title color ([33a3bb3](https://github.com/kpulka247/dark-connect/commit/33a3bb3e69ae635aebc64bf71d5f368c916c18fa)), closes [#44](https://github.com/kpulka247/dark-connect/issues/44)
+
 ## [2.6.0](https://github.com/kpulka247/dark-connect/compare/v2.5.0...v2.6.0) (2026-01-12)
 
 ### Features
