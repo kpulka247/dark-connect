@@ -100,7 +100,8 @@ div[class*="WorkoutStep_stepDeleteIcon_"] > div > button > i,
 div[class*="WorkoutRepeatStep_repeatStepTitleRight_"] > div > button > i,
 div[class*="WorkoutRepeatStep_grabIcon_"] i,
 div[class*="WorkoutRepeatStep_repeatStepTitleLeft_"] i,
-div[class*="WorkoutStep_dragIcon_"] i {
+div[class*="WorkoutStep_dragIcon_"] i,
+[class*="WorkoutsList_editIcon"] {
   color: var(--text-primary) !important;
 }
 
