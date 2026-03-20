@@ -247,7 +247,8 @@ div[class*="GroupMemberAvatars_groupMembersAvatars_"] img {
 }
 
 [class*="GroupItem_groupWrapper_"] img {
-  box-shadow: 0 0 0 4px var(--color-gray-dark),
+  box-shadow:
+    0 0 0 4px var(--color-gray-dark),
     0 0 0 5px var(--color-gray-light) !important;
 }
 
@@ -365,7 +366,9 @@ ul[class*="ECGRecordingHelpModal_factorsList_"] li::before {
 [class*="CreateMealPage_sectionTitle_"],
 [class*="CreateMealPage_foodInfoLabel_"],
 [class*="CreateMealPage_macroValue_"],
-[class*="CreateMealPage_requiredText_"] {
+[class*="CreateMealPage_requiredText_"],
+[class*="FoodItem_title_"],
+[class*="Tabs_sectionTitle_"] {
   color: var(--text-primary) !important;
 }
 

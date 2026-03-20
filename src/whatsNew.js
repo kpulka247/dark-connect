@@ -1,10 +1,5 @@
 export const RELEASE_NOTES = [
-  "<b>New Theme Switcher:</b> You can now control the theme manually! Click the extension icon to choose:",
-  "⚙️ <b>Auto:</b> Follows your system/browser preferences.",
-  "🌑 <b>Dark:</b> Forces Dark Mode always (Default).",
-  "☀️ <b>Light:</b> Disables Dark Mode for Garmin Connect.",
-  "<b>Default Settings:</b> Dark Connect now enables Dark Mode by default upon installation.",
-  "<b>Bug Fixes:</b> Improved performance and minor style adjustments.",
+  "<b>Bug Fixes:</b> Fixed golf score card and nutrition food title color.",
 ];
 
 export const CHANGELOG_URL =
