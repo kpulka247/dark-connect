@@ -1,3 +1,10 @@
+## [2.6.2](https://github.com/kpulka247/dark-connect/compare/v2.6.1...v2.6.2) (2026-03-21)
+
+### Bug Fixes
+
+* Fix carousel card shadow and workout list icon bugs ([cf63698](https://github.com/kpulka247/dark-connect/commit/cf636981f9c7797dd937afe04add1153f5791305))
+* Fix challange comment title color ([7a258cc](https://github.com/kpulka247/dark-connect/commit/7a258ccbbbd1acbdadea7bf454d478025a933e52))
+
 ## [2.6.1](https://github.com/kpulka247/dark-connect/compare/v2.6.0...v2.6.1) (2026-03-20)
 
 ### Bug Fixes
