@@ -196,7 +196,7 @@ div[class*="HowItWorksModal_content_"] {
 
 [class*="Carousel_slide_"] {
   border-color: var(--border-default) !important;
-  box-shadow: 0px 4px 4px var(--border-default) !important;
+  box-shadow: 0px 4px 4px var(--background-primary) !important;
 }
 
 [class*="ContentCard_title_"] {
@@ -297,7 +297,9 @@ div[class*="WorkoutStep_dragIcon_"] i,
 
 div[class*="WorkoutPageHeader_headerWrapper_"] {
   /* Header Background/Shadow */
-  box-shadow: 9px 0 var(--color-gray-dark), -9px 0 var(--color-gray-dark) !important;
+  box-shadow:
+    9px 0 var(--color-gray-dark),
+    -9px 0 var(--color-gray-dark) !important;
   border-color: var(--border-default) !important;
   background-color: var(--background-primary) !important;
 }

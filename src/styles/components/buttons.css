@@ -74,7 +74,8 @@ button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
 }
 
 .btn:focus:not([class*="search"]) {
-  box-shadow: 0 0 0 2px var(--background-primary),
+  box-shadow:
+    0 0 0 2px var(--background-primary),
     0 0 0 4px var(--color-blue-primary) !important;
 }
 
@@ -82,6 +83,9 @@ button[class*="Button_btn_"][class*="Button_btnReverse_"][disabled]:focus {
 div[class*="Button_btn_"][class*="Button_btnSecondary_"],
 [class*="Button_btn_"][class*="Button_secondary_"]:not(
     [class*="NavigationComponent_actionButtonsContainer_"]
+      [class*="Button_btn_"][class*="Button_secondary_"]
+  ):not(
+    [class*="WorkoutsList_actions_"]
       [class*="Button_btn_"][class*="Button_secondary_"]
   ),
 [class*="Button_btn_"][class*="Button_secondary_"][disabled]:hover,
@@ -159,8 +163,8 @@ div[class*="Components_dataTypeButton_"]:active {
     :hover
   ),
 [class*="WorkoutsPillsFilter_pill_"]:not(
-    [class*="WorkoutsPillsFilter_active_"]
-  ) {
+  [class*="WorkoutsPillsFilter_active_"]
+) {
   border-color: var(--border-default) !important;
 }
 

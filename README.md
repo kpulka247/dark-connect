@@ -108,7 +108,6 @@ To test the extension locally in a browser:
 This project uses [semantic-release](https://github.com/semantic-release/semantic-release) and [Conventional Commits](https://www.conventionalcommits.org/) for automated version management and release publishing.
 
 - **How it works:** When commits following the Conventional Commits specification (e.g., `feat: ...`, `fix: ...`, `perf: ...`, commits with `BREAKING CHANGE: ...`) are merged into the `main` branch, a GitHub Actions workflow automatically:
-
   1. Analyzes the commits since the last release
   2. Determines the next semantic version number (patch, minor, or major)
   3. Updates the `version` in `package.json` and `manifest.*.json` files
@@ -136,6 +135,14 @@ This project uses [semantic-release](https://github.com/semantic-release/semanti
 - `scripts/update-manifest-version.js`: Replaces placeholders in manifests with the current version.
 - `.releaserc.json`: Configures `semantic-release` pipeline.
 - `release.yml`: GitHub Actions workflow to run the release pipeline automatically.
+
+## Contributing
+
+> **Contributions are highly welcome!** 💖 Whether you want to fix a bug, suggest a new feature, or optimize the existing code, your help is appreciated.
+
+If you have ideas on how to make the code faster, cleaner, or more reliable, please feel free to open a Pull Request. 🚀
+
+👉 To get started, please read our **[CONTRIBUTING.md](./CONTRIBUTING.md)** which explains how to set up the project locally, the target branch (`dev`), and the required Pull Request naming conventions.
 
 ## Changelog
 
