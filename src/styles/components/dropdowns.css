@@ -74,7 +74,8 @@ button[class*="SelectionDropdown_mapFilterTrigger_"] {
 }
 
 .map-filter-detail {
-  box-shadow: inset 0 0 0 1px var(--color-shadow-dark-15),
+  box-shadow:
+    inset 0 0 0 1px var(--color-shadow-dark-15),
     0 1px 0 0 var(--color-gray-light) !important;
 }
 
@@ -228,7 +229,8 @@ span[class*="Dropdown_dropdownToggle_"] {
 }
 
 [class*="Dropdown_dropdownMenu_"] {
-  box-shadow: 0 2px 5px var(--color-gray-light),
+  box-shadow:
+    0 2px 5px var(--color-gray-light),
     inset 0px 0px 0px 1px var(--color-gray-light) !important;
 }
 
