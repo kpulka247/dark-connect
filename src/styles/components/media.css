@@ -80,7 +80,8 @@ button[class*="ImageSlider_dot_"]:hover {
 }
 
 /* Dropzone (File Upload) */
-.dropzone {
+.dropzone,
+[class*="PhotosEmptyState_emptyStateContent_"] {
   background-color: var(--background-primary) !important;
   color: var(--text-primary) !important;
   border-color: var(--border-default) !important;

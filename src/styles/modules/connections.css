@@ -6,9 +6,11 @@
 }
 
 div[class*="ConnectionList"],
-a[class*="ConnectionList"] {
+a[class*="ConnectionList"],
+[class*="FollowListItem_container_"] {
   /* List background */
   background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }
 
 div[class*="ConnectionList"]:hover,
@@ -48,4 +50,10 @@ div[class*="ConnectionsPage_newsFeedLink_"] > a {
 .connections-inline-list .connection:nth-child(2n) {
   /* Alternating background */
   background-color: var(--background-secondary) !important;
+}
+
+/* Dropdown */
+[class*="FollowActions_dropdownMenu_"] {
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
 }

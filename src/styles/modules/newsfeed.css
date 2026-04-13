@@ -60,3 +60,30 @@ button[class*="Button_btn_"][class*="Button_secondary_"][class*="Button_small_"]
 button[class*="Button_btn_"][class*="Button_secondary_"][class*="Button_small_"][class*="Button_iconButton_"]:hover {
   background-color: var(--background-soft) !important;
 }
+
+/* Filter Dropdown */
+[class*="NewsFeedFilter_comboboxTrigger_"] {
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
+}
+
+[class*="NewsFeedFilter_comboxBoxMenu_"] {
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 1px 0 0 var(--background-primary) !important;
+}
+
+/* Follower Leaderboard */
+[class*="FollowerLeaderboard_leaderboardRow_"]:hover,
+[class*="FollowerLeaderboard_leaderboardRow_"][data-highlight="true"] {
+  background-color: var(--background-soft) !important;
+}
+
+[class*="FollowerLeaderboard_dropdownMenu_"] {
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+}

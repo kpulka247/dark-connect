@@ -73,4 +73,5 @@
   --color-blue-light-1: var(--color-blue-secondary) !important;
   --color-gray-25: var(--color-gray-light) !important;
   --stroke-selected: var(--color-white) !important;
+  --text-action: var(--link-color) !important;
 }
