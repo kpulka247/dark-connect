@@ -1,3 +1,9 @@
+## [2.6.3](https://github.com/kpulka247/dark-connect/compare/v2.6.2...v2.6.3) (2026-04-13)
+
+### Bug Fixes
+
+* Fix new followers panels and minor bugs ([d603b48](https://github.com/kpulka247/dark-connect/commit/d603b48e5857f6a60726b996e32bdae1bf816137))
+
 ## [2.6.2](https://github.com/kpulka247/dark-connect/compare/v2.6.1...v2.6.2) (2026-03-21)
 
 ### Bug Fixes
