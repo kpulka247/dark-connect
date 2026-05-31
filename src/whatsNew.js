@@ -11,6 +11,7 @@ export const RELEASE_NOTES = [
       "Fixed inline edit hover color and activity edit icon color.",
       "Fixed active photo carousel indicator color.",
       "Fixed segments map/list toggle background color.",
+      "Fixed follower share profile dropdown styling.",
     ],
   },
   {

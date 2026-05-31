@@ -3,6 +3,7 @@
 .connection-button-dropdown-menu,
 ul[class*="Dropdown_dropdownMenu_"],
 div[class*="ActivityPhotoDropdown_dropdownMenu_"],
+div[class*="FollowerShareProfileDropdown_dropdownMenu_"],
 div[class*="ReportImageDropdown_dropdownMenu_"],
 ul[class*="InlineEditDropdown_dropdownContainer_"],
 div[class*="UnifiedDropdown_dropdownMenu_"],
@@ -11,6 +12,11 @@ div[class*="UnifiedDropdown_dropdownMenu_"],
 [class*="ReportProfileDropdown_dropdownMenu_"] {
   background: var(--background-primary) !important;
   color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
+}
+
+div[class*="FollowerShareProfileDropdown_dropdownMenu_"] {
+  background: var(--background-secondary) !important;
   border-color: var(--border-default) !important;
 }
 
