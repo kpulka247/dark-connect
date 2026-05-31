@@ -69,6 +69,11 @@
   --fill-subtle: var(--color-gray-medium) !important;
   --stroke-divider: var(--color-gray-light) !important;
   --bg-surface-03: var(--color-gray-darker) !important;
+  --input-fill-input: var(--color-gray-dark) !important;
+  --input-fill-input-hover: var(--color-gray-dark) !important;
+  --input-stroke-input: var(--border-default) !important;
+  --input-stroke-input-hover: var(--border-default) !important;
+  --checkbox-fill-checkbox-hover: var(--color-gray-dark) !important;
   --menu-fill-menu-hover: var(--color-gray-darker) !important;
   --color-blue-light-1: var(--color-blue-secondary) !important;
   --color-gray-25: var(--color-gray-light) !important;

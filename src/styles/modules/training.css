@@ -310,6 +310,10 @@ div[class*="WorkoutPageHeader_headerWrapper_"] {
   background-color: var(--background-primary) !important;
 }
 
+[class*="WorkoutPageHeader_breadcrumbArrow_"] {
+  color: var(--link-color) !important;
+}
+
 div[class*="WorkoutStep_stepTitleWrapper_"] {
   /* Step Title Background */
   background-color: var(--background-secondary) !important;

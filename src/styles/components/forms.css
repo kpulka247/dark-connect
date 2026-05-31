@@ -47,6 +47,10 @@ label[class*="Cards_checkboxLabel_"] {
   color: var(--text-primary) !important;
 }
 
+div[class*="Checkbox_checkboxContainer_"]:hover {
+  background-color: var(--checkbox-fill-checkbox-hover) !important;
+}
+
 /* Input Wrapper/Container */
 div[class*="TimeDurationInput_timeDurationInput_"] {
   background-color: var(--background-primary) !important;

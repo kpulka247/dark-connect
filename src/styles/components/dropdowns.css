@@ -141,20 +141,44 @@ div[class*="ExercisePickerFilter_filterDropdownContent_"] {
   box-shadow: 0 1px 0 0 var(--color-gray-light) !important;
 }
 
+div[class*="ExercisePicker_dropdownContent_"] input,
+div[class*="ExercisePickerFilter_filterDropdownContent_"] input {
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
+}
+
 button[class*="ExercisePickerFilter_filterDropdownToggle_"] {
   background-color: var(--background-primary) !important;
   border-color: var(--border-default) !important;
 }
 
-li[class*="ExercisePicker_optionGroup_"] {
+div[class*="ExercisePicker_exerciseOptions_"],
+ul[class*="ExercisePicker_exerciseOptions_"],
+div[class*="ExercisePicker_optionGroups_"],
+ul[class*="ExercisePicker_optionGroups_"] {
   background-color: var(--background-secondary) !important;
   color: var(--text-primary) !important;
 }
 
+li[class*="ExercisePicker_optionGroup_"] {
+  background-color: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
+}
+
 div[class*="ExercisePicker_exerciseCount_"],
 ul[class*="ExercisePicker_exerciseOptions_"] li,
-div[class*="ExercisePickerFilter_filterDropdown_"] label > span {
+div[class*="ExercisePickerFilter_filterDropdown_"] label > span,
+div[class*="ExercisePicker_dropdownContent_"] label,
+div[class*="ExercisePicker_dropdownContent_"] span,
+div[class*="ExercisePickerFilter_filterDropdownContent_"] label,
+div[class*="ExercisePickerFilter_filterDropdownContent_"] span {
   color: var(--text-primary) !important;
+}
+
+li[class*="ExercisePicker_optionGroup_"]:hover {
+  background-color: var(--background-primary) !important;
 }
 
 /* Report Exercise Picker Dropdown */
