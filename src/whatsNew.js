@@ -12,6 +12,7 @@ export const RELEASE_NOTES = [
       "Fixed active photo carousel indicator color.",
       "Fixed segments map/list toggle background color.",
       "Fixed follower share profile dropdown styling.",
+      "Fixed shared plan review card section text color.",
     ],
   },
   {

@@ -77,6 +77,7 @@
   --checkbox-fill-checkbox-hover: var(--color-gray-dark) !important;
   --menu-fill-menu-hover: var(--color-gray-darker) !important;
   --color-blue-light-1: var(--color-blue-secondary) !important;
+  --color-darkui-surface-1: var(--color-white) !important;
   --color-gray-25: var(--color-gray-light) !important;
   --stroke-selected: var(--color-white) !important;
   --text-action: var(--link-color) !important;
