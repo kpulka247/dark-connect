@@ -1,17 +1,34 @@
 export const RELEASE_NOTES = [
-  "🐛 <b>Bug Fixes:</b> Fixed event name text color on event details pages.",
-  "🐛 <b>Bug Fixes:</b> Fixed coach plan timeline cards that were missing dark mode styling.",
-  "🐛 <b>Bug Fixes:</b> Fixed gear default activities selection readability.",
-  "🐛 <b>Bug Fixes:</b> Fixed strength training exercise picker readability.",
-  "🐛 <b>Bug Fixes:</b> Fixed course planning controls, legends, point cards and sheet styling.",
-  "🌟 <b>Join Our Community!</b> We welcome contributors to help us fix bugs and build features. Found a bug or have an idea? Open an issue! If you want to contribute code, please read our CONTRIBUTING guidelines on GitHub to learn how to get started. ❤️",
+  {
+    title: "🐛 Bug Fixes",
+    items: [
+      "Fixed event name text color on event details pages.",
+      "Fixed coach plan timeline cards that were missing dark mode styling.",
+      "Fixed gear default activities selection readability.",
+      "Fixed strength training exercise picker readability.",
+      "Fixed course planning controls, legends, point cards and sheet styling.",
+      "Fixed report table date links color.",
+      "Fixed inline edit hover color and activity edit icon color.",
+    ],
+  },
+  {
+    title: "🌟 Join Our Community!",
+    description:
+      "We welcome contributors to help us fix bugs and build features. Found a bug or have an idea? Open an issue! If you want to contribute code, please read our CONTRIBUTING guidelines on GitHub to learn how to get started. ❤️",
+  },
 ];
 
 export const CHANGELOG_URL =
   "https://github.com/kpulka247/dark-connect/blob/main/CHANGELOG.md";
 
 export function createModalHTML(version) {
-  const listItems = RELEASE_NOTES.map((note) => `<li>${note}</li>`).join("");
+  const listItems = RELEASE_NOTES.map((note) => {
+    const details = note.items
+      ? `<ul>${note.items.map((item) => `<li>${item}</li>`).join("")}</ul>`
+      : `<p>${note.description}</p>`;
+
+    return `<li><b>${note.title}</b>${details}</li>`;
+  }).join("");
 
   return `
     <div id="dc-modal-overlay">

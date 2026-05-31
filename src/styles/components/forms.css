@@ -191,6 +191,15 @@ div[class*="CommentInput_textArea_"] {
   background-color: var(--background-primary) !important;
 }
 
+.inline-edit-trigger:hover,
+.inline-edit-trigger:hover *,
+.inline-edit-target:hover,
+.inline-edit-target:hover *,
+.inline-edit-target:hover + .inline-edit-trigger,
+.inline-edit-target:hover + .inline-edit-trigger * {
+  color: var(--text-primary) !important;
+}
+
 /* Section Info Text */
 p[class*="AddCoursePoint_sectionInfoText_"] {
   color: var(--text-primary) !important;

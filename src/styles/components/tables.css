@@ -126,6 +126,10 @@ td[class*="ReportTableComponent_dateOnlyRow_"] {
   background: var(--background-secondary) !important;
 }
 
+td[class*="ReportTableComponent_rowDate_"] a {
+  color: var(--link-color) !important;
+}
+
 tr[class*="WeightsTables_dateOnlyRow_"] {
   background-color: var(--background-secondary) !important;
 }
