@@ -52,3 +52,7 @@ div[class*="EventModal_title_"],
 [class*="EventDetailsStats_seeEventWebsite_"] {
   color: var(--text-primary) !important;
 }
+
+[class*="EventDetailsHeader_eventName_"] {
+  color: var(--text-default) !important;
+}
