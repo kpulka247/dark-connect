@@ -1,3 +1,16 @@
+## [2.6.4](https://github.com/kpulka247/dark-connect/compare/v2.6.3...v2.6.4) (2026-05-31)
+
+### Bug Fixes
+
+* theme activity and report links ([82c0d8d](https://github.com/kpulka247/dark-connect/commit/82c0d8dba6f0876f526999eb406bbee28aaf8e96))
+* theme coach plan timeline cards ([99178c0](https://github.com/kpulka247/dark-connect/commit/99178c0c5b66327d317e4fec8acac23f5e03e8f7)), closes [#50](https://github.com/kpulka247/dark-connect/issues/50)
+* theme course planning controls ([a938e32](https://github.com/kpulka247/dark-connect/commit/a938e324aa3f53ed30bc8ffe353c350552627be2))
+* theme follower share dropdown ([c5cb00f](https://github.com/kpulka247/dark-connect/commit/c5cb00f00a12eddf91c64b5aa5419ee8227149b2))
+* theme gear and workout selectors ([e15983e](https://github.com/kpulka247/dark-connect/commit/e15983ebe70c84ff109de2721f236d409a1e7b41)), closes [#51](https://github.com/kpulka247/dark-connect/issues/51) [#52](https://github.com/kpulka247/dark-connect/issues/52)
+* theme segment toggle and carousel state ([232e6a0](https://github.com/kpulka247/dark-connect/commit/232e6a05587e041a0f429055db53309a9d005fcf))
+* theme shared plan review text ([0aadd8a](https://github.com/kpulka247/dark-connect/commit/0aadd8af26a111d136e97601697632a68edb2137))
+* update event name text color ([b28e659](https://github.com/kpulka247/dark-connect/commit/b28e659cb0f73316b807c47a10af075b08bd25f8)), closes [#49](https://github.com/kpulka247/dark-connect/issues/49)
+
 ## [2.6.3](https://github.com/kpulka247/dark-connect/compare/v2.6.2...v2.6.3) (2026-04-13)
 
 ### Bug Fixes
