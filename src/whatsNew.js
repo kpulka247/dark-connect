@@ -9,6 +9,8 @@ export const RELEASE_NOTES = [
       "Fixed course planning controls, legends, point cards and sheet styling.",
       "Fixed report table date links color.",
       "Fixed inline edit hover color and activity edit icon color.",
+      "Fixed active photo carousel indicator color.",
+      "Fixed segments map/list toggle background color.",
     ],
   },
   {

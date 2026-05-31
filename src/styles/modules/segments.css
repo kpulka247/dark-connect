@@ -79,9 +79,9 @@ div[class*="MapZoom_zoomButton_"][class*="MapZoom_course_"] {
 }
 
 /* Map List */
-a[class*="SegmentsListCard_btnMapListToggle_"] {
+[class*="SegmentsListCard_btnMapListToggle_"] {
   /* Toggle button style */
-  background-color: var(--background-primary) !important;
+  background: var(--background-primary) !important;
   color: var(--text-primary) !important;
 }
 
