@@ -21,3 +21,25 @@ div[class*="ActivityGearList_gearImages_"] i {
     0px 0px 0px 4px var(--color-gray-light) !important;
   background-color: var(--background-secondary) !important;
 }
+
+/* Gear Edit Modal */
+div[class*="ActivityGearEditModal_"] [class*="select"],
+div[class*="ActivityGearEditModal_"] [class*="Select"],
+div[class*="ActivityGearEditModal_"] [class*="menu"],
+div[class*="ActivityGearEditModal_"] [class*="Menu"] {
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
+}
+
+div[class*="ActivityGearEditModal_"] [class*="option"],
+div[class*="ActivityGearEditModal_"] [class*="Option"] {
+  background-color: var(--background-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
+}
+
+div[class*="ActivityGearEditModal_"] [class*="option"]:hover,
+div[class*="ActivityGearEditModal_"] [class*="Option"]:hover {
+  background-color: var(--background-secondary) !important;
+}

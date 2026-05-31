@@ -29,5 +29,5 @@
 <!-- To check a box, replace [ ] with [x]. -->
 
 - [ ] I have read the [CONTRIBUTING.md](./CONTRIBUTING.md).
-- [ ] The **title of this Pull Request** follows the project conventions: it uses a Conventional Commits prefix and its description starts with a capital letter (e.g. `fix: Description`, `feat: Description`).
+- [ ] The **title of this Pull Request** follows Conventional Commits (e.g. `fix: update button color`, `feat: add theme switcher`).
 - [ ] I have run Prettier to format my code (`pnpm dev` or format on save).

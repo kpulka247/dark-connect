@@ -32,21 +32,20 @@ This project uses automated releases based on **Conventional Commits**. While yo
 When your PR is merged, your commits will be squashed into a single commit using your PR title. Our CI/CD pipeline depends on this format to automatically generate changelogs and publish new versions.
 
 **Format for PR Title:**
-`<type>: <Description>`
+`<type>: <description>`
 
 **Allowed types:**
 
-- `fix:` - A bug fix (e.g., `fix: Correct heart rate chart background color in dark mode`)
-- `feat:` - A new feature (e.g., `feat: Add support for new Garmin Connect activity page`)
-- `refactor:` - A code change that neither fixes a bug nor adds a feature (e.g., `refactor: Optimize css variables usage`)
-- `chore:` - Updating build tasks, configurations, etc. (e.g., `chore: Update dependencies`)
-- `docs:` - Documentation only changes (e.g., `docs: Update README with new screenshots`)
+- `fix:` - A bug fix (e.g., `fix: correct heart rate chart background color in dark mode`)
+- `feat:` - A new feature (e.g., `feat: add support for new Garmin Connect activity page`)
+- `refactor:` - A code change that neither fixes a bug nor adds a feature (e.g., `refactor: optimize css variables usage`)
+- `chore:` - Updating build tasks, configurations, etc. (e.g., `chore: update dependencies`)
+- `docs:` - Documentation only changes (e.g., `docs: update README with new screenshots`)
 
-**Important rules for the PR Title:**
+**PR title rules:**
 
-1. The prefix (`fix:`, `feat:`, etc.) must be strictly lowercase.
-2. The description must be in **English**.
-3. **The first letter of the description MUST be capitalized.** (e.g., `fix: Fixed something` - NOT `fix: fixed something`).
+1. Use a lowercase Conventional Commits prefix (`fix:`, `feat:`, etc.).
+2. Write the description in **English** and lowercase sentence text.
 
 ## 🚀 Submitting a Pull Request
 

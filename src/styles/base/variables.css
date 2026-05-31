@@ -61,6 +61,7 @@
   /* --- Dark Mode Overrides --- */
   --text-default: var(--color-white) !important;
   --icon-default: var(--color-white) !important;
+  --active-fill-active-on: var(--color-white) !important;
   --bg-hero: var(--color-gray-dark) !important;
   --stroke-container: var(--color-gray-medium) !important;
   --data-viz-neutral-primary: var(--color-white) !important;
@@ -69,8 +70,14 @@
   --fill-subtle: var(--color-gray-medium) !important;
   --stroke-divider: var(--color-gray-light) !important;
   --bg-surface-03: var(--color-gray-darker) !important;
+  --input-fill-input: var(--color-gray-dark) !important;
+  --input-fill-input-hover: var(--color-gray-dark) !important;
+  --input-stroke-input: var(--border-default) !important;
+  --input-stroke-input-hover: var(--border-default) !important;
+  --checkbox-fill-checkbox-hover: var(--color-gray-dark) !important;
   --menu-fill-menu-hover: var(--color-gray-darker) !important;
   --color-blue-light-1: var(--color-blue-secondary) !important;
+  --color-darkui-surface-1: var(--color-white) !important;
   --color-gray-25: var(--color-gray-light) !important;
   --stroke-selected: var(--color-white) !important;
   --text-action: var(--link-color) !important;

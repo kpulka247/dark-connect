@@ -192,6 +192,11 @@ span[class*="ReorderActivityList_dragHandle_"] {
   color: var(--text-primary) !important;
 }
 
+.body-activity-detail.body-activity-edit .activity-type-icon,
+.body-activity-detail.body-activity-edit .activity-type-icon > * {
+  color: var(--color-gray-lighter) !important;
+}
+
 .activity-detail
   span:not(.course-pt-lap):not(
     [class*="ActivityPhotosCarousel_carouselActions_"] div span
@@ -251,6 +256,11 @@ div[class*="ActivityMapView_mapLayerLegend_"] {
 [class*="ActivityDetailsHeaderDropDown_menuItem_"][class*="ActivityDetailsHeaderDropDown_active_"],
 [class*="InlineEditDropdown_currentDropdownItem_"] {
   background-color: var(--background-light) !important;
+}
+
+button[class*="ActivityDetailsHeaderDropDown_menuItem_"],
+[class*="ActivityDetailsHeaderDropDown_menuItem_"] button {
+  color: var(--text-primary) !important;
 }
 
 /* Swim Specific Styles */

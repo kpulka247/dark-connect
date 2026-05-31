@@ -47,6 +47,10 @@ label[class*="Cards_checkboxLabel_"] {
   color: var(--text-primary) !important;
 }
 
+div[class*="Checkbox_checkboxContainer_"]:hover {
+  background-color: var(--checkbox-fill-checkbox-hover) !important;
+}
+
 /* Input Wrapper/Container */
 div[class*="TimeDurationInput_timeDurationInput_"] {
   background-color: var(--background-primary) !important;
@@ -185,6 +189,15 @@ div[class*="CommentInput_textArea_"] {
 .inline-edit-text-field .inline-edit-editable-text:focus,
 .inline-edit-text-field .inline-edit-editable-text:active {
   background-color: var(--background-primary) !important;
+}
+
+.inline-edit-trigger:hover,
+.inline-edit-trigger:hover *,
+.inline-edit-target:hover,
+.inline-edit-target:hover *,
+.inline-edit-target:hover + .inline-edit-trigger,
+.inline-edit-target:hover + .inline-edit-trigger * {
+  color: var(--text-primary) !important;
 }
 
 /* Section Info Text */
