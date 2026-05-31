@@ -3,7 +3,7 @@
   "configurations": [
     {
       "type": "node-terminal",
-      "name": "Run: dev",
+      "name": "Debug (dev)",
       "request": "launch",
       "command": "pnpm dev",
       "cwd": "${workspaceFolder}"
