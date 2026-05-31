@@ -3,6 +3,7 @@ export const RELEASE_NOTES = [
   "🐛 <b>Bug Fixes:</b> Fixed coach plan timeline cards that were missing dark mode styling.",
   "🐛 <b>Bug Fixes:</b> Fixed gear default activities selection readability.",
   "🐛 <b>Bug Fixes:</b> Fixed strength training exercise picker readability.",
+  "🐛 <b>Bug Fixes:</b> Fixed course planning controls, legends, point cards and sheet styling.",
   "🌟 <b>Join Our Community!</b> We welcome contributors to help us fix bugs and build features. Found a bug or have an idea? Open an issue! If you want to contribute code, please read our CONTRIBUTING guidelines on GitHub to learn how to get started. ❤️",
 ];
 

@@ -81,7 +81,10 @@ div[class*="Course_elevationExpandedChartContainer_"] {
 }
 
 [class*="expandCollapseButton_"] button,
-[class*="VirtualPartner_leanMoreLink_"] {
+[class*="VirtualPartner_leanMoreLink_"],
+[class*="AddCoursePointCoursePlanningRestBreak_addRestBreakIconText_"],
+[class*="AddCoursePointCoursePlanningCutoff_addCutoffDurationIconText_"],
+[class*="RoutingOptions_editBtn_"] {
   color: var(--link-color) !important;
 }
 
@@ -189,6 +192,10 @@ h6[class*="ElevationChart_sectionTitle_"] {
   color: var(--text-primary) !important;
 }
 
+div[class*="_legendIcon_"] {
+  filter: invert(1);
+}
+
 /* Power Guidance */
 .power-guidance-header {
   background: var(--background-primary) !important;
@@ -217,6 +224,37 @@ button[class*="SelectCourseType_selectCourseTypeButton_"] {
 
 /* Routing Options */
 label[class*="RoutingOptions_turnNotificationLabel_"] {
+  color: var(--text-primary) !important;
+}
+
+div[class*="CourseControls_controlDialogOpen_"] {
+  background-color: var(--background-primary) !important;
+  border-color: var(--border-default) !important;
+}
+
+[class*="_legendModal_"][class*="_open_"] {
+  background-color: var(--background-primary) !important;
+}
+
+[class*="_legendModal_"] {
+  box-shadow: 0 0 0 1px var(--border-default) !important;
+}
+
+div[class*="CoursePointCard_cardWrapper_"] {
+  border-color: var(--border-default) !important;
+}
+
+div[class*="VirtualPartner_sheetWrapper_"],
+div[class*="RoutingOptions_sheetWrapper_"] {
+  background-color: var(--background-primary) !important;
+}
+
+[class*="CoursePointCard_pointName_"],
+[class*="VirtualPartner_sheetTitle_"],
+[class*="RoutingOptions_sheetTitle_"],
+[class*="RoutingOptions_title_"],
+[class*="RoutingOptions_optionTitle_"],
+[class*="RoutingOptions_optionSelection_"] {
   color: var(--text-primary) !important;
 }
 
