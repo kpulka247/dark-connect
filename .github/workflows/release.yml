@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: Create Release & Build
+    name: Create release and build
     runs-on: ubuntu-latest
     outputs:
       new_release_version: ${{ steps.semantic.outputs.new_release_version }}
@@ -31,10 +31,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Unit tests
+      - name: Run unit tests
         run: pnpm test
 
-      - name: Create Release and Build
+      - name: Run semantic-release
         id: semantic
         run: pnpm exec semantic-release
         env:
@@ -73,10 +73,9 @@ jobs:
 
       - name: Publish to Chrome Web Store
         run: |
-          pnpm dlx chrome-webstore-upload-cli@4 upload \
+          pnpm dlx chrome-webstore-upload-cli@4 \
             --source dist/darkconnect-${{ needs.release.outputs.new_release_version }}-chrome.zip \
-            --extension-id $CHROME_EXTENSION_ID \
-            --auto-publish
+            --extension-id $CHROME_EXTENSION_ID
         env:
           CHROME_EXTENSION_ID: ${{ secrets.CHROME_EXTENSION_ID }}
           PUBLISHER_ID: ${{ secrets.CHROME_PUBLISHER_ID }}
@@ -85,7 +84,7 @@ jobs:
           REFRESH_TOKEN: ${{ secrets.CHROME_REFRESH_TOKEN }}
 
   publish-firefox:
-    name: Publish to Firefox AMO
+    name: Publish to Firefox Add-ons
     needs: release
     runs-on: ubuntu-latest
     if: needs.release.outputs.new_release_version != ''
@@ -108,7 +107,7 @@ jobs:
         with:
           node-version: 24
 
-      - name: Publish to Firefox AMO
+      - name: Publish to Firefox Add-ons
         run: |
           pnpm dlx web-ext sign \
             --source-dir=dist/darkconnect-firefox \
