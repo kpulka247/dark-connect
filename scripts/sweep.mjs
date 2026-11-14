@@ -10,6 +10,7 @@
 // Reports go to sweep-results/<date>/: report.md, findings.json and a
 // screenshot per page.
 
+import { spawn } from "node:child_process";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -41,18 +42,34 @@ async function launch() {
   return { context, worker };
 }
 
+// Cloudflare's check on the Garmin sign-in page never passes in a browser that
+// Playwright controls, so sign-in happens in the same Chromium started as a
+// plain browser.
 async function login() {
-  const { context } = await launch();
-  const page = context.pages()[0] ?? (await context.newPage());
-  await page.goto("https://connect.garmin.com/signin");
+  const browser = spawn(
+    chromium.executablePath(),
+    [
+      `--user-data-dir=${profileDir}`,
+      "--no-first-run",
+      "--no-default-browser-check",
+      "https://connect.garmin.com/signin",
+    ],
+    { stdio: "ignore" },
+  );
   console.log(
     "Sign in to Garmin Connect in the browser window, then close it.",
   );
-  await new Promise((resolve) => context.on("close", resolve));
+  await new Promise((resolve) => browser.on("exit", resolve));
 }
 
 const isSignInPage = (url) =>
   /sso\.garmin\.com|\/signin/.test(new URL(url).host + new URL(url).pathname);
+
+const isCloudflareCheck = (page) =>
+  page
+    .locator("#challenge-form, iframe[src*='challenges.cloudflare.com']")
+    .count()
+    .then((count) => count > 0);
 
 // Scrolls to the bottom so that lazily loaded cards and charts render.
 async function scrollThrough(page) {
@@ -84,6 +101,7 @@ async function scanPage(context, worker, url, outDir) {
   const page = await context.newPage();
   try {
     await page.goto(url, { waitUntil: "load", timeout: 60_000 });
+    if (await isCloudflareCheck(page)) return { url, error: "cloudflare" };
     if (isSignInPage(page.url())) return { url, error: "signed-out" };
     await page
       .waitForLoadState("networkidle", { timeout: 15_000 })
@@ -198,6 +216,12 @@ async function sweep(filters) {
     console.log(result.error ?? `${result.findings.length} finding(s)`);
     if (result.error === "signed-out") {
       console.error("\nGarmin signed you out. Run pnpm sweep --login first.");
+      break;
+    }
+    if (result.error === "cloudflare") {
+      console.error(
+        "\nCloudflare asked to confirm you are human. Run pnpm sweep --login, open any Garmin Connect page there, pass the check, close the window and run the sweep again.",
+      );
       break;
     }
   }
