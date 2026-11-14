@@ -57,6 +57,8 @@ pnpm sweep sleep hrv                   # only pages whose address contains these
 
 Edit `scripts/sweep-pages.json` to add the pages your account can see, such as Garmin Connect+ features or pages for your devices. Your sign-in stays in `.sweep-profile/`, and both folders are ignored by Git.
 
+`pnpm colors` checks text colors on the same pages. It reads each text color with the theme on and off, and lists text that turned link blue although Garmin did not draw it blue, blue links that lost their blue, and blue text in a shade other than the theme's link blue (`--link-color`). The report goes to `sweep-results/text-colors/report.md`. It accepts the same page filters as `pnpm sweep`.
+
 ### Updating the README and store images
 
 ```bash
