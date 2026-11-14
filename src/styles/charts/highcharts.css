@@ -70,18 +70,6 @@ g[class="highcharts-plot-bands-0"] path[fill="#d8d8d8"] {
   /* Default axis line */
 }
 
-path[class="highcharts-axis-line"] {
-  /* LiveTrack axis line */
-  stroke: var(--color-gray-dark) !important;
-  /* Override for LiveTrack */
-}
-
-g.highcharts-axis.highcharts-xaxis .highcharts-axis-line {
-  /* LiveTrack x-axis line */
-  stroke: var(--color-gray-light) !important;
-  /* Specific override for LiveTrack x-axis */
-}
-
 /* Series Colors / Strokes */
 .highcharts-color-0[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]):not([stroke="#544fc5"]),
 .highcharts-color-1[stroke]:not([stroke=""]):not([stroke="none"]):not([fill="#2caffe"]):not([stroke="#544fc5"]),
@@ -221,11 +209,6 @@ path[fill="#000"] {
   /* Keep stroke black */
 }
 
-path.highcharts-point[fill="rgb(0,0,0)"],
-path.highcharts-point-hover[fill="rgb(25,25,25)"] {
-  fill: var(--color-white) !important;
-}
-
 .reports
   .highcharts-container
   .highcharts-series-0
@@ -248,12 +231,6 @@ g[class^="highcharts-legend-item highcharts-areaspline-series highcharts-color-u
   color: var(--text-primary) !important;
   fill: var(--color-white) !important;
   /* Legend text color */
-}
-
-.highcharts-legend-item-hidden .chartLegend {
-  /* LiveTrack hidden legend */
-  background: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
 }
 
 /* Tooltip (see components/tooltips.css) */
@@ -364,11 +341,4 @@ span[style*="color: rgb(34, 34, 34);"] {
 text[color="#101010"] {
   /* Specific text fill override */
   fill: var(--color-white) !important;
-}
-
-/* LiveTrack Chart Legend Box */
-.chartLegend {
-  background: var(--background-soft) !important;
-  border-color: var(--color-black-soft) !important;
-  color: var(--text-primary) !important;
 }

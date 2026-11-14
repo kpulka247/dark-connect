@@ -77,27 +77,9 @@ span[class*="BodyBatteryFactors_valueBlock_"] {
   color: var(--text-primary) !important;
 }
 
-div[class*="BodyBatteryHelpModal_modalH"] h4,
-span[class*="BodyBatteryHelpModal_dataLabel_"] {
-  color: var(--text-primary) !important;
-}
-
-div[class*="BodyBatteryGauge_gaugeCenter_"] {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
-
-div[class*="BodyBatterySecondaryStatCard_bodyBatteryValue_"] {
-  color: var(--text-primary) !important;
-}
-
 /* VO2 Max */
 div[class*="VO2MaxGaugeChart_value_"],
 [class*="PulseOxHelp_mainTitle_"] {
-  color: var(--text-primary) !important;
-}
-
-div[class*="VO2MaxModal_infoContainer_"] {
   color: var(--text-primary) !important;
 }
 
@@ -120,18 +102,6 @@ tr[class*="Tab_isNew_"] th,
 [class*="Tab_table_"] [class*="Tab_previousPR_"] td:last-child {
   background-color: var(--background-primary) !important;
   border-color: var(--color-white) !important;
-}
-
-tr[class*="Tab_isNew_"] td {
-  background-color: var(--background-primary) !important;
-  border-color: var(--color-white) !important;
-  border-bottom-color: var(--border-default) !important;
-  /* Override */
-}
-
-span[class*="Tab_prNewMarker_"] {
-  background-color: var(--background-medium) !important;
-  color: var(--text-primary) !important;
 }
 
 /* Calories */
@@ -157,14 +127,6 @@ div[class*="RunningLactateThresholdCurrentReport_currentReportWrapper_"] p {
   color: var(--text-primary) !important;
 }
 
-h4[class*="RunningLactateThresholdHelpBody_title_"],
-p[class*="RunningLactateThresholdHelpBody_paragraph_"],
-p[class*="RunningLactateThresholdHelpBody_sectionSummary_"],
-h4[class*="RunningLactateThresholdHelpBody_sectionTitle_"],
-li[class*="RunningLactateThresholdHelpBody_paragraph_"] {
-  color: var(--text-primary) !important;
-}
-
 /* Floors Climbed */
 span[class*="FloorsDataReport_legendLabel_"],
 div[class*="FloorsDataReport_legendLabel_"] {
@@ -179,12 +141,6 @@ li[class*="MovementReportChart_legendItem_"] {
 /* Fitness Age */
 div[class*="FitnessAgeFactorCard_highPriorityChip_"] {
   background: var(--background-secondary) !important;
-}
-
-div[class*="FitnessAgeFactorModal_vigorousSubtitle_"],
-div[class*="FitnessAgeFactorModal_recommendationTitle_"],
-div[class*="FitnessAgeFactorModal_secondaryTitle_"] {
-  color: var(--text-primary) !important;
 }
 
 /* Health Snapshot */
@@ -241,10 +197,6 @@ div[class*="ProgressSummary_customizePopover_"] {
 }
 
 /* Group Avatars */
-div[class*="GroupMemberAvatars_groupMembersAvatars_"] img {
-  border-color: var(--color-gray-dark) !important;
-  background-color: var(--background-primary) !important;
-}
 
 [class*="GroupItem_groupWrapper_"] img {
   box-shadow:

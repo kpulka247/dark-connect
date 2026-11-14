@@ -15,13 +15,6 @@ div[class*="Alert_warning_"] {
   background-color: var(--background-soft) !important;
 }
 
-/* LiveTrack Message Bar */
-.msg-bar .msg {
-  background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-  color: var(--text-primary) !important;
-}
-
 /* Close */
 [class*="Alert_closeBtn_"] {
   color: var(--text-primary) !important;

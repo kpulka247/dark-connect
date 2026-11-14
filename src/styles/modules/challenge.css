@@ -67,10 +67,6 @@ div[class*="Step4Summary_participants_"] {
 }
 
 /* Challenge Detail Page */
-[class*="ChallengeDetailPageLeaderboard_tableRow_"][class*="ChallengeDetailPageLeaderboard_highlight_"],
-[class*="ChallengeDetailPageLeaderboard_tableRow_"]:hover {
-  background-color: var(--background-secondary) !important;
-}
 
 [class*="ChallengeDetailPageDesc_container_"] {
   border-color: var(--border-default) !important;

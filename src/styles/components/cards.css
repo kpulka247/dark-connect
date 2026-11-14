@@ -30,32 +30,6 @@ div[class*="Card_card__"] {
 }
 
 div[class*="Card_container_"] {
-  color: var(--text-primary) !important;
-  background-color: var(--background-primary) !important;
-}
-
-div[class*="CourseCard_cardContainerInner_"],
-div[class*="CourseCardFooter_actionsContainer_"] {
-  background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
-.map-card {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
-
-.map-fitness .map-card {
-  border-color: var(--border-default) !important;
-  opacity: 0.95 !important;
-}
-
-div[class*="SegmentsListCard_stravaCard_"] {
-  background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
-div[class*="Card_container_"] {
   background-color: var(--background-primary) !important;
   color: var(--text-primary) !important;
   border-color: var(--border-default) !important;
@@ -76,15 +50,6 @@ div[class*="Card_card_"] {
   color: var(--text-primary) !important;
 }
 
-.challenge-card {
-  width: 13vw;
-  min-height: 276px !important;
-}
-
-div[class*="SleepScoreFactorCard_factorCardContainer_"] {
-  border-color: var(--border-default) !important;
-}
-
 /* Secondary Stat Cards */
 div[class*="EditSecondaryStatCard_editCard__"],
 div[class*="AddAvailableSecondaryStatCard_addCard_"],
@@ -99,11 +64,6 @@ div[class*="AddAvailableSecondaryStatCard_addCard_"],
 
 [class*="DragDropItem_dragHandle_"] {
   fill: var(--text-primary) !important;
-}
-
-/* Text within cards */
-div.inFocusCard {
-  color: var(--text-primary) !important;
 }
 
 /* Secondary stat text colors */
@@ -194,61 +154,6 @@ h6[class*="LifetimeTotals_statsHeading_"] {
   border-color: var(--border-default) !important;
 }
 
-/* Plan card titles */
-div[class*="PlanCard_headerContainer_"],
-div[class*="PlanCard_title_"] {
-  color: var(--text-primary) !important;
-}
-
-/* Badge Card */
-.page.badges .user-card .card-action-button {
-  background: var(--background-primary) !important;
-}
-
-.page.badges .user-card .avatar {
-  background: var(--background-primary) !important;
-  box-shadow: 0 0 0 4px var(--color-gray-dark),
-    0 0 0 5px var(--color-gray-light) !important;
-}
-
-/* User Subscription Cards */
-label[class*="UserSubscription_selectCard_"] {
-  border-color: var(--color-white) !important;
-}
-
-label[class*="UserSubscription_miniCard_"] {
-  border-color: var(--border-default) !important;
-}
-
-p[class*="UserSubscription_paragraph_"],
-span[class*="UserSubscription_featureCardBodyTitle_"],
-div[class*="UserSubscription_featureCard_"],
-p[class*="UserSubscription_subOptions_"],
-p[class*="UserSubscription_subFeature_"],
-span[class*="UserSubscription_subFeature_"],
-p[class*="UserSubscription_darkText_"] {
-  color: var(--text-primary) !important;
-}
-
-/* Advanced Reporting Cards */
-div[class*="AdvancedReportingGenesis_advancedReportingProfileCard_"],
-div[class*="AdvancedReportingGenesis_innerCard_"],
-div[class*="AdvancedReportingCard_cardContainer_"] {
-  background-color: var(--background-primary) !important;
-}
-
-div[class*="AdvancedReportingCard_cardContainer_"] {
-  border-color: var(--border-default) !important;
-}
-
-[class*="CardContentNormal_chartNameContainer_"],
-[class*="ChartStateMessage_messageTextContainer_"],
-[class*="AdvancedReportingCard_cornerContent_"],
-[class*="CardContentEdit_chartInfo_"]
-  div:not(div[class*="CardContentEdit_chartDetail_"]) {
-  color: var(--text-primary) !important;
-}
-
 /* Activity Card */
 h3[class*="ActivityCard_heading_"],
 a[class*="ActivityCard_card_"]
@@ -258,12 +163,6 @@ a[class*="ActivityCard_card_"]
 
 [class*="ActivityCard_card_"] {
   background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
-/* Badge Challenge Card */
-[class*="BadgeChallenges2_buttonsAndList_"],
-[class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
   border-color: var(--border-default) !important;
 }
 
@@ -278,11 +177,8 @@ div[class*="PromoCard_cardWrapper_"] {
 }
 
 div[class*="PromoCard_cardImage_"][style*="background-image"] {
-  background-image: linear-gradient(
-      to left,
-      transparent 80%,
-      var(--background-secondary) 100%
-    ),
+  background-image:
+    linear-gradient(to left, transparent 80%, var(--background-secondary) 100%),
     url(https://connect.garmin.com/images/promos/ios/persmsg-promo_3x.jpg) !important;
 }
 
@@ -300,11 +196,8 @@ div[class*="PromoCard_cardImage_"][style*="background-image"] {
 }
 
 [class*="PromoCard_cardImageLarge_"] {
-  background-image: linear-gradient(
-      to bottom,
-      transparent 65%,
-      var(--background-primary) 92%
-    ),
+  background-image:
+    linear-gradient(to bottom, transparent 65%, var(--background-primary) 92%),
     url(https://connect.garmin.com/images/promos/web/nutrition-promo_3x.jpg) !important;
 }
 

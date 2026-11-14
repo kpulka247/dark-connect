@@ -55,7 +55,6 @@ div[class*="BreadcrumbForm_footerContainer_"],
 /* Might fit better in footer? */
 div[class*="BreadcrumbForm_mainContainer_"] {
   color: var(--text-primary) !important;
-  background-color: var(--background-primary) !important;
 }
 
 /* Accordion Navigation */
@@ -67,10 +66,6 @@ div[class*="BreadcrumbForm_mainContainer_"] {
   li[class*="ReportSelector_selected_"] {
   color: var(--link-color) !important;
   /* Uses link button style */
-}
-
-.accordion-inner a:hover {
-  color: var(--link-color) !important;
 }
 
 [class*="Accordion_accordionItemContainer_"] {

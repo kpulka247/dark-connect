@@ -13,12 +13,6 @@
   background-color: var(--background-soft) !important;
 }
 
-/* Modal specific content backgrounds */
-div[id="activityPhotosPlaceholder"] .modal {
-  /* Photo modal */
-  background-color: var(--color-black) !important;
-}
-
 /* Specific Modal Text */
 h6[class*="HomeSettingsModal_"],
 p[class*="HomeSettingsModal_"],
@@ -85,11 +79,6 @@ table[class*="ActivityClassHelpModal_table_"] td {
   border-color: var(--border-default) !important;
 }
 
-div[class*="CalendarSyncCompatDialog_device_"],
-div[class*="CalendarSyncCompatDialog_syncTitle_"] {
-  border-color: var(--border-default) !important;
-}
-
 /* Dialog Component */
 div[class*="Dialog_dialog__"] {
   background-color: var(--background-primary);
@@ -110,36 +99,4 @@ div[class*="Dialog_dialogBackdrop_"] {
 [class*="Dialog_dialogFooter_"] {
   background-color: var(--background-secondary) !important;
   border-color: var(--border-default) !important;
-}
-
-/* LiveTrack Modal */
-.modal-curtain {
-  background: var(--background-soft) !important;
-  opacity: 0.8 !important;
-}
-
-#map-settings .modal {
-  /* Specific border/shadow */
-  border-color: var(--border-default) !important;
-  box-shadow: 0 2px 0 1px var(--color-shadow-dark-50) !important;
-}
-
-#map-settings .block:not(:last-child) {
-  /* Border inside settings modal */
-  border-color: var(--border-default) !important;
-}
-
-/* Advanced Reporting Modal */
-[class*="ExpandedCardModal_titleRow_"],
-[class*="ChartFilterModal_sectionLabel_"] {
-  color: var(--text-primary) !important;
-}
-
-/* Nearby Golf Courses Modal */
-[class*="NearbyGolfCoursesModal_courseListItem_"] {
-  border-color: var(--border-default) !important;
-}
-
-[class*="NearbyGolfCoursesModal_courseListItem_"]:hover {
-  background-color: var(--background-secondary) !important;
 }

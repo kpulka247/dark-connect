@@ -46,9 +46,6 @@
 }
 
 /* Generic Carousel (Homepage) */
-span[class*="Carousel_carouselHighlightedDot_"] {
-  background-color: var(--color-white) !important;
-}
 
 [class*="Carousel_emptySlide_"] {
   /* Empty slide background */
@@ -93,18 +90,7 @@ button[class*="ImageSlider_dot_"]:hover {
   /* Keep consistent background */
 }
 
-div[class*="ImportDataPageView_dropzone_"] {
-  /* Specific dropzone */
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
 /* Image Styling */
-img[class*="CommentLikeSection_profileImage_"] {
-  /* Profile image border */
-  border-color: var(--border-default) !important;
-}
 
 img[alt="Garmin LiveTrack"],
 li[class*="LocationAutoComplete_suggestion_"] div img,
@@ -114,16 +100,6 @@ li[class*="LocationAutoComplete_suggestion_"] div img,
 
 [class*="WeightsInformationModals_healthBodyFatTable_"] tbody tr td img {
   filter: invert(1) grayscale(1);
-}
-
-img[class*="InviteesView_playerAvatar_"] {
-  /* Avatar border */
-  border-color: var(--border-default) !important;
-}
-
-img.athleteUserImage {
-  /* LiveTrack avatar border */
-  border-color: var(--border-default) !important;
 }
 
 div[class*="GroupMemberAvatars_groupMembersAvatars_"] img {

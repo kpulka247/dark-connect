@@ -43,11 +43,6 @@ thead tr th {
   color: var(--text-primary) !important;
 }
 
-.splitsContainer table thead {
-  /* LiveTrack splits header */
-  background: var(--background-secondary) !important;
-}
-
 table[class*="EditorTable_table_"] thead {
   color: var(--text-primary) !important;
 }
@@ -75,10 +70,6 @@ div[class*="AthleteDetails_athleteDetailsInnerContent_"]
   background-color: var(--color-gray-medium-dark);
 }
 
-.table-striped tbody > tr:nth-child(odd) > td {
-  background-color: var(--background-secondary) !important;
-}
-
 /* Specific Striped/Alternating Row Backgrounds */
 [class*="CaloriesPageReport_tableContainer_"][data-banded-row="true"]
   table
@@ -100,11 +91,6 @@ div[class*="AthleteDetails_athleteDetailsInnerContent_"]
   color: var(--text-primary) !important;
 }
 
-.metric:nth-child(2n + 1),
-.lap:nth-child(2n + 1) {
-  background: var(--background-secondary) !important;
-}
-
 /* Activity Class Help */
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(1),
 table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(5),
@@ -116,10 +102,6 @@ table[class*="ActivityClassHelpModal_table_"] tbody tr:nth-of-type(8) {
 
 .rounds-table tr.roundsAlternatingRow {
   background-color: var(--background-secondary) !important;
-}
-
-tr[class*="EventSearchResults_row_"] {
-  background: var(--background-secondary) !important;
 }
 
 td[class*="ReportTableComponent_dateOnlyRow_"] {
@@ -171,21 +153,6 @@ tr[class*="ByGroupTable_group1_"] {
 
 /* Specific Table Cell Text Colors */
 tr.rounds td {
-  color: var(--text-primary) !important;
-}
-
-.splitsContainer table td,
-/* LiveTrack Splits */
-.splitsContainer th {
-  color: var(--text-primary) !important;
-}
-
-.splitsContainer table td:first-of-type {
-  /* LiveTrack Splits first column */
-  color: var(--text-secondary) !important;
-}
-
-table[class*="StrengthTable_table_"] {
   color: var(--text-primary) !important;
 }
 

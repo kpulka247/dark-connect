@@ -81,16 +81,6 @@ menu[class*="UserOptions_userOptionsMenu_"] li a {
   color: var(--link-color) !important;
 }
 
-/* Training Plan Header Specific Icon Color */
-i[class*="TrainingPlanHeader_selection_"] {
-  color: var(--color-gray-dark) !important;
-}
-
-/* Training Plan Title (often in header context) */
-div[class*="TrainingPlanTitle_title_"] {
-  color: var(--text-primary) !important;
-}
-
 /* Device Selection */
 .js-select-device {
   text-transform: capitalize;

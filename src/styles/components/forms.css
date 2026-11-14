@@ -39,10 +39,6 @@ label.checkbox {
   /* Original style, seems light */
 }
 
-label.checkbox {
-  color: var(--text-primary) !important;
-}
-
 label[class*="Cards_checkboxLabel_"] {
   color: var(--text-primary) !important;
 }
@@ -57,26 +53,9 @@ div[class*="TimeDurationInput_timeDurationInput_"] {
   border-color: var(--border-default) !important;
 }
 
-div[class*="FlexInput_flexInputContainer_"] {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
-
-div[class*="FilterCourses_inputAppendContainer_"]
-  span[class*="FilterCourses_addOn_"] {
-  background-color: var(--background-secondary) !important;
-  border-color: var(--border-default) !important;
-  color: var(--text-primary) !important;
-}
-
 div[class*="FormControl_inputWrapper_"] a {
   /* Link inside input wrapper */
   color: var(--link-color) !important;
-}
-
-div[class*="FormControl_inputWrapper_"]:has(input:read-only),
-div[class*="FormControl_inputWrapper_"]:has(textarea:read-only) {
-  background-color: var(--background-primary) !important;
 }
 
 /* Form control from Adv Reporting */
@@ -110,31 +89,7 @@ label[class*="FilterModal_label_"] {
   color: var(--text-primary) !important;
 }
 
-label[class*="CreateEditCourseDetails_courseNameLabel_"],
-label[class*="AddCoursePoint_pointNameLabel_"],
-label[class*="MapAdditionalOptionsSelection_optionLabel_"] {
-  color: var(--text-primary) !important;
-}
-
 div[class*="CourseCard_locationFilterLabel_"] {
-  color: var(--text-primary) !important;
-}
-
-label[class*="CreateChallengePageIndex_stepOption_"] {
-  border-color: var(--border-default) !important;
-}
-
-label[class*="ConnectionParticipant_connection_"] {
-  border-color: var(--border-default) !important;
-}
-
-label[class*="ConnectionParticipant_connection_"][data-dialog="true"]:nth-child(
-    2n
-  ) {
-  background-color: var(--background-soft) !important;
-}
-
-.page.activity-list .filter-label {
   color: var(--text-primary) !important;
 }
 
@@ -153,22 +108,9 @@ label[class*="ConfirmSaveCourseModal_courseNameLabel_"] {
 }
 
 /* Textareas */
-.note-container textarea {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-  box-shadow: inset 0 3px var(--color-gray-light);
-  border-color: var(--border-default);
-}
 
 textarea[class*="LogNotes_textArea_"] {
   background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
-
-div[class*="CommentInput_textArea_"],
-div[class*="AddComment_editorTextArea_"],
-div[class*="CommentEditor_editorTextField_"] {
-  background: var(--background-medium) !important;
   color: var(--text-primary) !important;
 }
 
@@ -179,7 +121,6 @@ div[class*="CommentEditor_editorTextField_"] {
 div[class*="CommentInput_textArea_"] {
   /* From Notes section - duplicate */
   background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
   box-shadow: inset 0 3px var(--color-gray-light);
   border-color: var(--border-default);
 }
@@ -197,10 +138,5 @@ div[class*="CommentInput_textArea_"] {
 .inline-edit-target:hover *,
 .inline-edit-target:hover + .inline-edit-trigger,
 .inline-edit-target:hover + .inline-edit-trigger * {
-  color: var(--text-primary) !important;
-}
-
-/* Section Info Text */
-p[class*="AddCoursePoint_sectionInfoText_"] {
   color: var(--text-primary) !important;
 }

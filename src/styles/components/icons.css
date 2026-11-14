@@ -35,16 +35,6 @@ svg[data-library="ui-icons"][fill="#101010"],
   color: var(--link-color) !important;
 }
 
-.page.activity-list .favorite:hover [class^="icon-"] {
-  /* Favorite icon hover */
-  color: var(--text-primary) !important;
-}
-
-.page.activity-detail .segments-table .icon-eye.active {
-  /* Active eye icon */
-  color: var(--text-primary) !important;
-}
-
 .icon-help,
 [class*="HelpIcon_helpIcon_"] svg {
   color: var(--color-blue-primary) !important;
@@ -70,29 +60,10 @@ div[class*="MapProviderContainer__layerControlButton_"],
   filter: invert(1);
 }
 
-div[class*="MapProviderContainer_centerMapIcon_"] {
-  /* Map center icon */
-  filter: invert(1);
-  background-color: var(--color-gray-icon) !important;
-  border-color: var(--color-gray-icon) !important;
-}
-
 /* Map control item icons */
 .map-controls .player .pause span {
   /* Pause icon part */
   background: var(--color-white) !important;
-}
-
-/* Table sort icons */
-.table .sortable-header-row .icon-pointer-up,
-.table .sortable-header-row .icon-pointer-down {
-  color: var(--text-primary) !important;
-}
-
-/* Reorder/Drag handle icons */
-span[class*="ReorderActivityList_dragHandle_"],
-span[class*="ReorderSelectedStats_dragHandle_"] {
-  color: var(--text-primary) !important;
 }
 
 /* Workout step icons */
@@ -109,19 +80,6 @@ div[class*="WorkoutStep_dragIcon_"] i,
 div[class*="JetLagTrip_dropdownMenu_"] i,
 div[class*="JetLagTrip_editButton_"] i {
   color: var(--text-primary) !important;
-}
-
-/* Golf icons */
-div[class*="GolfScorecardPage_actionButtonsContainer_"] i,
-div[class*="GolfScorecardPage_fairwayDirectionSelector_"] div div i,
-div[class*="ScorecardComponent_holeItem_"] div i {
-  color: var(--text-primary) !important;
-}
-
-/* Map Zoom Icons */
-[class*="MapZoom_zoomInIcon_"] path,
-[class*="MapZoom_zoomOutIcon_"] path {
-  stroke: var(--color-white) !important;
 }
 
 /* Icon Hover */
