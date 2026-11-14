@@ -272,6 +272,14 @@ if (!beforeFile || !afterFile) {
   process.exit(2);
 }
 
+const isMinified = (file) => !readFileSync(file, "utf8").trim().includes("\n");
+if (isMinified(beforeFile) !== isMinified(afterFile)) {
+  console.error(
+    "One file is a production build and the other a development build. The minifier rewrites values, so build both the same way, for example with pnpm build.",
+  );
+  process.exit(2);
+}
+
 const { problems, count } = compare(beforeFile, afterFile);
 if (problems.length === 0) {
   console.log(
