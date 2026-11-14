@@ -83,8 +83,7 @@ path[class="leaflet-interactive"][stroke="#000000"] {
 /* Map Attribution */
 .gm-style .gm-style-cc a,
 .gm-style .gm-style-cc button,
-.gm-style .gm-style-cc span,
-.leaflet-control-attribution a {
+.gm-style .gm-style-cc span {
   color: var(--color-black) !important;
   /* Keep default light attribution on dark map */
 }
