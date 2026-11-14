@@ -12,7 +12,7 @@ const SETTLE_MS = 3000;
 
 const PAGES = [
   {
-    url: "https://connect.garmin.com/modern/",
+    url: "https://connect.garmin.com/app/home",
     readme: "screenshot.png",
     store: "screenshot-1-dashboard.png",
     caption: "Garmin Connect, finally in dark mode.",
@@ -26,7 +26,7 @@ const PAGES = [
     hideBanner: "Use Performance Dashboard",
   },
   {
-    url: "https://connect.garmin.com/modern/sleep",
+    url: "https://connect.garmin.com/app/sleep",
     readme: "screenshot-sleep.png",
     store: "screenshot-3-sleep.png",
     caption: "Easy on the eyes, day and night.",
