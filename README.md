@@ -10,161 +10,99 @@
 <a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Users"><img src="https://img.shields.io/chrome-web-store/users/nadhhgppikppmjacnkebagbgcibnfnob?logo=Google%20Chrome&logoColor=white&color=goldenrod"></a>
 <a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Rating"><img src="https://img.shields.io/chrome-web-store/rating/nadhhgppikppmjacnkebagbgcibnfnob"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Users"><img src="https://img.shields.io/amo/users/dark-connect?logo=Firefox&logoColor=white&color=goldenrod"></a>
-<a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Rating"><img src="https://img.shields.io/amo/rating/dark-connect"></a>
+<a href="https://addons.mozilla.org/firefox/addon/dark-connect/" title="Mozilla Add-on Users"><img src="https://img.shields.io/amo/users/dark-connect?logo=Firefox&logoColor=white&color=goldenrod"></a>
+<a href="https://addons.mozilla.org/firefox/addon/dark-connect/" title="Mozilla Add-on Rating"><img src="https://img.shields.io/amo/rating/dark-connect"></a>
 
 </div>
 
 ## Overview
 
-This is a simple browser extension designed to turn the Garmin Connect website into dark mode. Frustrated by the lack of a dark mode feature on Garmin Connect, I created this extension to enhance the browsing experience for users who prefer a darker interface, especially during nighttime use. The extension is lightweight, easy to install, and only affects Garmin Connect domains, leaving all other websites untouched.
+Garmin Connect has no dark mode, so Dark Connect adds one. Every page, chart and pop-up is themed by hand, because Garmin colors many features one by one and a simple "invert the colors" approach breaks its charts and brand colors. The extension only runs on Garmin's sites and leaves the rest of the web alone.
 
 ## Features
 
-- 🌙 **Dark Mode for Garmin Connect** — Applies a clean, modern dark theme.
-- 🎨 **Preserves brand identity** — Original Garmin colors and charts remain intact for visual consistency.
-- 🚫 **Scope-limited** — Affects only `connect.garmin.com`, `livetrack.garmin.com`, and `live.garmin.com`.
-- ⚡ **Automatic updates** — New versions are published directly via GitHub Actions to Chrome Web Store and Firefox Add-ons.
-- 🛠️ **Modular and maintainable styles** — Powered by organized CSS modules with support for variables.
+- 🌙 **Dark Garmin Connect.** Dashboards, activities, health stats, training, courses, challenges and settings, plus LiveTrack.
+- 📊 **Charts that still read right.** Garmin's own chart and zone colors stay, on a dark background.
+- 🌗 **Auto, Dark or Light.** Follow your device's setting, keep Garmin Connect dark, or pause the extension.
+- 🔍 **Scan this page.** Something still white? One click finds it and prepares a report for us.
+- 🔒 **Private.** Dark Connect collects no data and only runs on `connect.garmin.com`, `livetrack.garmin.com` and `live.garmin.com`.
 
 ## Screenshots
 
-Here are some screenshots of the extension in action:
+<div align="center">
+<img src="static/images/screenshot1.png" alt="Garmin Connect dashboard in dark mode" width="68%">
+&nbsp;
+<img src="static/images/screenshot-popup.png" alt="The Dark Connect popup" width="28%">
+</div>
 
-![screenshot1](static/images/screenshot1.png)
+<details>
+<summary>More screenshots</summary>
 
-![screenshot2](static/images/screenshot2.png)
+![Garmin Connect page in dark mode](static/images/screenshot2.png)
 
-![screenshot3](static/images/screenshot3.png)
+![Garmin Connect page in dark mode](static/images/screenshot3.png)
 
-![screenshot4](static/images/screenshot4.png)
+![Garmin Connect page in dark mode](static/images/screenshot4.png)
+
+</details>
 
 ## Installation
 
 <div align="center">
 
 <a href="https://chromewebstore.google.com/detail/dark-connect/nadhhgppikppmjacnkebagbgcibnfnob" title="Chrome Web Store Version"><img src="https://img.shields.io/chrome-web-store/v/nadhhgppikppmjacnkebagbgcibnfnob?style=for-the-badge&logo=google%20chrome&logoColor=white&labelColor=%23252525"></a>
-<a href="https://addons.mozilla.org/pl/firefox/addon/dark-connect/" title="Mozilla Add-on Version"><img src="https://img.shields.io/amo/v/dark-connect?style=for-the-badge&logo=firefox&logoColor=white&labelColor=%23252525&color=red"></a>
+<a href="https://addons.mozilla.org/firefox/addon/dark-connect/" title="Mozilla Add-on Version"><img src="https://img.shields.io/amo/v/dark-connect?style=for-the-badge&logo=firefox&logoColor=white&labelColor=%23252525&color=red"></a>
 
 </div>
 
-To install the extension, click on your browser store and then add the extension to your browser. For 🦁 Brave, 🔴 Opera or 🌀 Microsoft Edge select Chrome Web Store.
+Click your browser's store and add the extension. For 🦁 Brave, 🔴 Opera, or 🌀 Microsoft Edge, use the Chrome Web Store.
 
 ## Usage
 
-Once installed, the extension will immediately apply dark mode to any visit to Garmin Connect website. You don’t need to enable or disable it manually — it works automatically whenever you visit the site. If you have suggestions for improvements or have found any bugs, feel free to report them through the issues form.
+Open Garmin Connect. It is dark straight away. Click the Dark Connect icon in your browser toolbar to choose **Auto**, **Dark** or **Light**.
 
-If part of a page is still light or hard to read, open the Dark Connect popup on that page and click **Scan this page**. It finds the parts the dark theme missed and opens a GitHub issue with the details filled in. You can review the issue before you submit it, and nothing is sent until you do.
+Garmin changes its website often, and some features only appear with a Garmin Connect+ subscription or a particular watch, so a new part can show up white before it is fixed. When you see one:
+
+1. Open the page where it is.
+2. Click the Dark Connect icon and press **Scan this page**.
+3. A GitHub issue opens with the details filled in. Add a screenshot if you can, and submit it.
+
+The report contains the page address without IDs or names, the colors and the page structure, never what is written on the page. Nothing is sent until you submit the issue, and you need a free GitHub account to do it. You can also [open an issue](https://github.com/kpulka247/dark-connect/issues/new/choose) yourself.
 
 ## Development & Build
 
-This project uses Node.js for its build system and leverages Conventional Commits with `semantic-release` for automated versioning, packaging and publishing.
-
-### 🚀 Getting started
-
-Make sure you have:
-
-- [Node.js](https://nodejs.org) (LTS version recommended) installed on your system
-- [pnpm](https://pnpm.io/) (can be installed via `npm install -g pnpm`)
-- [Git](https://git-scm.com/) for version control
-
-Then install dependencies:
+You need [Node.js](https://nodejs.org) 22 or newer, [pnpm](https://pnpm.io/) 11, and [Git](https://git-scm.com/).
 
 ```bash
-pnpm install
+pnpm install       # install dependencies
+pnpm dev           # build both browsers and rebuild on every change
+pnpm build         # production build with ZIPs in dist/
+pnpm test          # unit tests
+pnpm test:e2e      # loads the extension into Chromium on a Garmin page fixture
+pnpm lint          # stylesheet checks
+pnpm format        # format with Prettier
 ```
 
-### 🔧 How to build the extension
+To try it in Chrome, open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked**, and select `dist/darkconnect-chrome/`. In Firefox, open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on**, and select `dist/darkconnect-firefox/manifest.json`. The end-to-end tests need Playwright's Chromium once: `pnpm exec playwright install chromium`.
 
-The extension is built using Webpack, managed via pnpm scripts:
+The styles live in `src/styles/`: shared colors in `base/variables.css`, shared parts such as buttons and modals in `components/`, and one file per Garmin area in `modules/`. [CONTRIBUTING.md](./CONTRIBUTING.md) explains how to fix a missed element, how to prove a style change keeps every color the same, and how to scan many Garmin pages at once with `pnpm sweep`.
 
-```bash
-# Build both Chrome and Firefox versions for production (minified, no source maps, with ZIPs)
-pnpm build
-
-# Build both Chrome and Firefox versions for development (unminified, with source maps, no ZIPs)
-pnpm dev
-```
-
-- Generates browser-specific unpacked builds in the `dist/darkconnect-chrome/` and `dist/darkconnect-firefox/` directories.
-- Processes css:
-  - Resolves `@import` statements (via `css-loader`).
-  - Minifies CSS in production mode (via `css-minimizer-webpack-plugin`).
-  - Extracts CSS into a single `styles/main.css` file for each browser build.
-- Copies necessary files like `manifest.json` (browser-specific), `background.js`, and icons.
-- In production mode (`pnpm build`), packs the builds into `.zip` files located in the `dist/` directory (e.g., `dist/darkconnect-2.1.0-chrome.zip`, `dist/darkconnect-2.1.0-firefox.zip`).
-
-### 🧪 Local testing (e.g. in Chrome)
-
-To test the extension locally in a browser:
-
-1. Run `pnpm dev` - this will build the extension and watch for file changes
-2. Open Chrome and navigate to `chrome://extensions`
-3. Enable "Developer mode" (usually a toggle in the top-right corner)
-4. Click "Load unpacked"
-5. Select the `dist/darkconnect-chrome/` folder generated in step 1
-6. The extension will now appear in your list and function on the relevant Garmin pages
-
-### ✅ Checks and tests
-
-CI runs these on every pull request:
-
-```bash
-pnpm format:check  # Prettier formatting
-pnpm lint          # Stylelint, plus check-css.mjs: fails on rules that a later rule always overrides
-pnpm test          # Unit tests
-pnpm test:e2e      # Builds, then loads the extension in Chromium on a Garmin page fixture
-pnpm lint:firefox  # web-ext lint on the Firefox build (run pnpm build first)
-```
-
-The end-to-end tests need Playwright's Chromium once: `pnpm exec playwright install chromium`.
-
-### 🏷️ Versioning and Releases (Automated)
-
-This project uses [semantic-release](https://github.com/semantic-release/semantic-release) and [Conventional Commits](https://www.conventionalcommits.org/) for automated version management and release publishing.
-
-- **How it works:** When commits following the Conventional Commits specification (e.g., `feat: ...`, `fix: ...`, `perf: ...`, commits with `BREAKING CHANGE: ...`) are merged into the `main` branch, a GitHub Actions workflow automatically:
-  1. Analyzes the commits since the last release
-  2. Determines the next semantic version number (patch, minor, or major)
-  3. Updates the `version` in `package.json` and `manifest.*.json` files
-  4. Generates/updates the `CHANGELOG.md` file
-  5. Commits these updated files
-  6. Creates a Git tag for the new version (e.g., `v2.1.0`)
-  7. Creates a GitHub Release with changelog notes and attaches .zip assets
-  8. Publishes the new Chrome build directly to the Chrome Web Store
-  9. Publishes the new Firefox build directly to Mozilla Add-ons (AMO) via automated signing/upload
-
-- **Developers generally do not need to manually bump versions** using `pnpm version` for standard releases. The automation handles it based on commit messages.
-
-## Development Notes
-
-### 🗂️ Manifests
-
-- `public/manifest.chrome.json` / `public/manifest.firefox.json`: These are the source manifest files.
-  - They are updated with the correct version number by `semantic-release` during the release process.
-  - The Webpack build process copies the appropriate source manifest (e.g., `manifest.chrome.json`) to `dist/darkconnect-chrome/manifest.json` for each build.
-  - These manifests should reference the single, compiled `styles/main.css` and `background.js`.
-
-### 🧰 Tools & Scripts
-
-- `webpack.config.js`: Configures the Webpack build process, handling CSS compilation, minification, file copying, and ZIP packaging.
-- `scripts/update-manifest-version.js`: Sets the release version in both manifests.
-- `scripts/compare-css.mjs`: Compares two builds of a stylesheet and lists every change that could alter a page. Use it to prove that a style refactor changes nothing.
-- `scripts/check-css.mjs`: Fails when a declaration or selector never takes effect because a later rule always overrides it. Part of `pnpm lint`.
-- `scripts/sweep.mjs`: Scans a list of Garmin pages with your own account. See [CONTRIBUTING.md](./CONTRIBUTING.md#-checking-garmin-for-changes).
-- `src/audit/`: The page scan behind the popup's **Scan this page** button.
-- `.releaserc.json`: Configures `semantic-release` pipeline.
-- `.github/workflows/ci.yml`: Runs the checks and tests on pull requests.
-- `.github/workflows/release.yml`: GitHub Actions workflow to run the release pipeline automatically.
+Every merge to `main` is released automatically with [semantic-release](https://github.com/semantic-release/semantic-release): a new version from the commit messages, a changelog entry, a GitHub Release, and uploads to the Chrome Web Store and Firefox Add-ons.
 
 ## Contributing
 
-> **Contributions are highly welcome!** 💖 Whether you want to fix a bug, suggest a new feature, or optimize the existing code, your help is appreciated.
+> **Contributions are highly welcome!** 💖 Fixes for pages that are still light help the most, especially Garmin Connect+ and device-specific pages.
 
-If you have ideas on how to make the code faster, cleaner, or more reliable, please feel free to open a Pull Request. 🚀
+Read **[CONTRIBUTING.md](./CONTRIBUTING.md)** for the project layout, the target branch (`dev`), and the Pull Request naming rules.
 
-👉 To get started, please read our **[CONTRIBUTING.md](./CONTRIBUTING.md)** which explains how to set up the project locally, the target branch (`dev`), and the required Pull Request naming conventions.
+If Dark Connect saves your eyes, you can [buy me a coffee](https://ko-fi.com/Y8Y71ERSZF) ☕.
+
+## License
+
+[GPL-3.0](./LICENSE).
+
+An unofficial project, not affiliated with Garmin. Garmin and Garmin Connect are trademarks of Garmin Ltd. or its subsidiaries.
 
 ## Changelog
 
-Changes for each release are automatically documented in the [CHANGELOG.md](./CHANGELOG.md) file.
+Changes for each release are in [CHANGELOG.md](./CHANGELOG.md).
