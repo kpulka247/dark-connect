@@ -1,3 +1,5 @@
+import { anonymizePage } from "./audit/issue";
+import { findLightTokens, scanPage } from "./audit/scan";
 import { createModalHTML } from "./whatsNew";
 
 const MAIN_STYLE_ID = "dark-connect-style";
@@ -99,3 +101,36 @@ window
       }
     });
   });
+
+function withoutElements(findings) {
+  return findings.map(({ elements, ...finding }) => finding);
+}
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message?.type !== "dark-connect:scan") return;
+
+  if (!document.getElementById(MAIN_STYLE_ID)) {
+    sendResponse({ darkThemeOn: false });
+    return;
+  }
+  sendResponse({
+    darkThemeOn: true,
+    page: anonymizePage(location.href),
+    findings: withoutElements(scanPage()),
+  });
+});
+
+// For maintainers: in the DevTools console, switch the context from "top" to
+// Dark Connect, then run darkConnect.scan() or darkConnect.lightTokens().
+globalThis.darkConnect = {
+  scan() {
+    const findings = scanPage();
+    console.table(withoutElements(findings));
+    return findings;
+  },
+  lightTokens() {
+    const tokens = findLightTokens();
+    console.table(tokens);
+    return tokens;
+  },
+};

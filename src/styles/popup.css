@@ -133,3 +133,39 @@ footer a:hover {
 .theme-switch-wrapper input[type="radio"]:checked + label:hover {
   background-color: #1976d2;
 }
+
+.report {
+  margin: 10px;
+}
+
+.report button {
+  width: 100%;
+  padding: 8px 0;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.report button:hover {
+  background-color: #444;
+}
+
+.report button:disabled {
+  color: #aaa;
+  cursor: progress;
+}
+
+.report p {
+  margin: 8px 0 0;
+  color: #c7c7c7;
+  font-size: 12px;
+}
+
+.report p:empty {
+  display: none;
+}
