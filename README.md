@@ -85,9 +85,9 @@ pnpm format        # format with Prettier
 
 To try it in Chrome, open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked**, and select `dist/darkconnect-chrome/`. In Firefox, open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on**, and select `dist/darkconnect-firefox/manifest.json`. The end-to-end tests need Playwright's Chromium once: `pnpm exec playwright install chromium`.
 
-The styles live in `src/styles/`: shared colors in `base/variables.css`, shared parts such as buttons and modals in `components/`, and one file per Garmin area in `modules/`. [CONTRIBUTING.md](./CONTRIBUTING.md) explains how to fix a missed element, how to prove a style change keeps every color the same, and how to scan many Garmin pages at once with `pnpm sweep`.
+The styles live in `src/styles/`. Shared colors are in `base/variables.css`, shared parts such as buttons and modals are in `components/`, and each Garmin area has its own file in `modules/`. [CONTRIBUTING.md](./CONTRIBUTING.md) explains how to fix a missed element, how to prove a style change keeps every color the same, and how to scan many Garmin pages at once with `pnpm sweep`.
 
-Every merge to `main` is released automatically with [semantic-release](https://github.com/semantic-release/semantic-release): a new version from the commit messages, a changelog entry, a GitHub Release, and uploads to the Chrome Web Store and Firefox Add-ons.
+[semantic-release](https://github.com/semantic-release/semantic-release) releases every merge to `main`. It picks the version from the commit messages, writes the changelog entry and the GitHub Release, and uploads the build to the Chrome Web Store and Firefox Add-ons.
 
 ## Contributing
 
@@ -95,7 +95,7 @@ Every merge to `main` is released automatically with [semantic-release](https://
 
 Read **[CONTRIBUTING.md](./CONTRIBUTING.md)** for the project layout, the target branch (`dev`), and the Pull Request naming rules.
 
-If Dark Connect saves your eyes, you can [buy me a coffee](https://ko-fi.com/Y8Y71ERSZF) ☕.
+If Dark Connect is useful to you, you can [buy me a coffee](https://ko-fi.com/Y8Y71ERSZF) ☕.
 
 ## License
 

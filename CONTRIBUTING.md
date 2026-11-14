@@ -27,28 +27,30 @@ To get the project running locally on your machine:
 
 ## 🎨 Fixing a part the dark theme missed
 
-1. **Find the selector.** Open the page and click **Scan this page** in the popup, or run the scan from DevTools: open the console, change the context menu at the top from `top` to Dark Connect, and run `darkConnect.scan()`. Each row gives a selector, the property to change and its current color. The returned list also holds the matching elements, so you can inspect them.
+1. **Find the selector.** Open the page and click **Scan this page** in the popup, or run the scan from DevTools. To do that, open the console, change the context menu at the top from `top` to Dark Connect, and run `darkConnect.scan()`. Each row gives a selector, the property to change and its current color. The returned list also holds the matching elements, so you can inspect them.
 2. **Check Garmin's own color variables first.** Run `darkConnect.lightTokens()` in the same console. It lists Garmin's CSS variables, such as `--color-darkui-surface-1`, that are still light. Overriding one of them in `src/styles/base/variables.css` fixes every feature that uses it, including ones you cannot see.
 3. **Write the rule.** Garmin's class names look like `FoodItem_title__HT8Dj`, and the part after `__` changes with every Garmin release. Match the stable start instead: `[class*="FoodItem_title_"]`. Put rules for one page in `src/styles/modules/` and rules for shared parts, such as buttons or modals, in `src/styles/components/`. Use the color variables from `variables.css` rather than new color values.
 4. **Check it.** Run `pnpm lint`. It fails if your rule copies or is overridden by an existing rule for the same selector, so search for the selector first and extend that rule instead.
 
 ### Refactoring styles
 
-When you move, merge or remove rules without meaning to change any colors, prove it. Build before and after your change, then compare the two builds:
+When you move, merge or remove rules without meaning to change any colors, prove it. Build before and after your change with `pnpm build`, then compare the two builds:
 
 ```bash
-node scripts/compare-css.mjs before/styles/main.css dist/darkconnect-chrome/styles/main.css
+pnpm build && cp dist/darkconnect-chrome/styles/main.css before.css   # before your change
+pnpm build                                                            # after your change
+node scripts/compare-css.mjs before.css dist/darkconnect-chrome/styles/main.css
 ```
 
 It lists every selector whose value changed, and every pair of conflicting rules whose order changed. The order matters because, when two rules with the same specificity match one element, the later one wins.
 
-### 🔎 Checking Garmin for changes
+### Checking Garmin for changes
 
 Garmin changes its pages without notice. `pnpm sweep` opens a list of Garmin pages with your own account, scans each one and writes a report with screenshots to `sweep-results/<date>/`. Findings that were not in the previous run are marked **New**.
 
 ```bash
 pnpm exec playwright install chromium  # once
-pnpm sweep --login                     # once: sign in, then close the window
+pnpm sweep --login                     # once. Sign in, then close the window
 pnpm sweep                             # every page in scripts/sweep-pages.json
 pnpm sweep sleep hrv                   # only pages whose address contains these words
 ```
