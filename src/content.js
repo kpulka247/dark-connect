@@ -1,6 +1,6 @@
 import { anonymizePage } from "./audit/issue.js";
 import { findLightTokens, scanPage } from "./audit/scan.js";
-import { createModalHTML } from "./whatsNew.js";
+import { createModal } from "./whatsNew.js";
 
 const MAIN_STYLE_ID = "dark-connect-style";
 const MAIN_STYLE_URL = chrome.runtime.getURL("styles/main.css");
@@ -43,10 +43,8 @@ function showWhatsNewModal(version) {
 
   toggleModalCSS(true);
 
-  const modalHTML = createModalHTML(version);
-  document.body.insertAdjacentHTML("beforeend", modalHTML);
-
-  const overlay = document.getElementById("dc-modal-overlay");
+  const overlay = createModal(version);
+  document.body.append(overlay);
 
   requestAnimationFrame(() => {
     overlay.classList.add("dc-visible");

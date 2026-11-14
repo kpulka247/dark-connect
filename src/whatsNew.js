@@ -25,31 +25,68 @@ export const RELEASE_NOTES = [
 export const CHANGELOG_URL =
   "https://github.com/kpulka247/dark-connect/blob/main/CHANGELOG.md";
 
-export function createModalHTML(version) {
-  const listItems = RELEASE_NOTES.map((note) => {
-    const details = note.items
-      ? `<ul>${note.items.map((item) => `<li>${item}</li>`).join("")}</ul>`
-      : `<p>${note.description}</p>`;
+function element(tag, props = {}, ...children) {
+  const node = document.createElement(tag);
+  Object.assign(node, props);
+  node.append(...children);
+  return node;
+}
 
-    return `<li><b>${note.title}</b>${details}</li>`;
-  }).join("");
+// Built with DOM calls instead of an HTML string, so release notes are always
+// inserted as text.
+export function createModal(version) {
+  const notes = RELEASE_NOTES.map((note) =>
+    element(
+      "li",
+      {},
+      element("b", {}, note.title),
+      note.items
+        ? element(
+            "ul",
+            {},
+            ...note.items.map((item) => element("li", {}, item)),
+          )
+        : element("p", {}, note.description),
+    ),
+  );
 
-  return `
-    <div id="dc-modal-overlay">
-      <div id="dc-modal-content">
-        <div class="dc-modal-header">
-          <h2>Dark Connect <span class="dc-version">v${version}</span></h2>
-          <button id="dc-modal-close">✕</button>
-        </div>
-        <div class="dc-modal-body">
-          <h3>✨ What's New?</h3>
-          <ul>${listItems}</ul>
-        </div>
-        <div class="dc-modal-footer">
-          <a href="${CHANGELOG_URL}" target="_blank" class="dc-changelog-btn">Changelog</a>
-          <button id="dc-modal-ok-btn">Got it!</button>
-        </div>
-      </div>
-    </div>
-  `;
+  return element(
+    "div",
+    { id: "dc-modal-overlay" },
+    element(
+      "div",
+      { id: "dc-modal-content" },
+      element(
+        "div",
+        { className: "dc-modal-header" },
+        element(
+          "h2",
+          {},
+          "Dark Connect ",
+          element("span", { className: "dc-version" }, `v${version}`),
+        ),
+        element("button", { id: "dc-modal-close" }, "✕"),
+      ),
+      element(
+        "div",
+        { className: "dc-modal-body" },
+        element("h3", {}, "✨ What's New?"),
+        element("ul", {}, ...notes),
+      ),
+      element(
+        "div",
+        { className: "dc-modal-footer" },
+        element(
+          "a",
+          {
+            href: CHANGELOG_URL,
+            target: "_blank",
+            className: "dc-changelog-btn",
+          },
+          "Changelog",
+        ),
+        element("button", { id: "dc-modal-ok-btn" }, "Got it!"),
+      ),
+    ),
+  );
 }
