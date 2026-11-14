@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 53">
+<defs><mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="310" height="53"><rect width="310" height="53" fill="#fff"/><rect x="21.75" y="23.75" width="23" height="13" fill="#000"/><rect x="46.5" y="26.75" width="23" height="6" fill="#000"/><rect x="69.5" y="26.75" width="23" height="6" fill="#000"/><rect x="219.75" y="32.75" width="23" height="7" fill="#000"/><rect x="268.5" y="23.75" width="23" height="13" fill="#000"/></mask></defs>
+<g fill="none" stroke="#fff" stroke-width="6.6" mask="url(#cut)">
+<circle cx="21.75" cy="30.25" r="18.7"/><circle cx="69.5" cy="30.25" r="18.7"/><circle cx="219.75" cy="30.25" r="18.7"/><circle cx="268.5" cy="30.25" r="18.7"/>
+</g>
+<g fill="none" stroke="#fff" stroke-width="6.6" stroke-linecap="round"><path d="M100.05,48.05V30.25A18.7,18.7 0 0 1 137.45,30.25V48.05"/><path d="M151.55,48.05V30.25A18.7,18.7 0 0 1 188.95,30.25V48.05"/></g>
+<rect x="201.05" y="26.75" width="40.7" height="6" fill="#fff"/>
+<path fill="none" stroke="#fff" stroke-width="6.6" d="M299.25,0V37.95A11,11 0 0 0 310.25,48.95H315"/>
+<rect x="295.95" y="10.75" width="14.05" height="6" fill="#fff"/>
+</svg>
