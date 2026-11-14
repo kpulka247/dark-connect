@@ -1,8 +1,6 @@
 /* Basic Dropdown Menu */
 .dropdown-menu,
-.connection-button-dropdown-menu,
 ul[class*="Dropdown_dropdownMenu_"],
-div[class*="ActivityPhotoDropdown_dropdownMenu_"],
 div[class*="FollowerShareProfileDropdown_dropdownMenu_"],
 div[class*="ReportImageDropdown_dropdownMenu_"],
 ul[class*="InlineEditDropdown_dropdownContainer_"],
@@ -59,9 +57,7 @@ div[class*="ExercisePicker_divider_"],
   /* Added for consistency */
 }
 
-[class*="Dropdown_dropdownMenu_"] [class*="Dropdown_divider_"],
-[class*="NewsFeedFilter_feedFilterDetail_"]
-  li[class*="NewsFeedFilter_divider_"] {
+[class*="Dropdown_dropdownMenu_"] [class*="Dropdown_divider_"] {
   background-color: var(--background-light) !important;
 }
 
@@ -187,7 +183,6 @@ div[class*="Menu_menuItemsSelected_"]:not(
 }
 
 /* Generic Dropdown Text */
-span[class*="CompareFilters_dropdown_"],
 span[class*="Dropdown_dropdownToggle_"] {
   color: var(--text-primary) !important;
 }
@@ -208,8 +203,7 @@ span[class*="Dropdown_dropdownToggle_"] {
 }
 
 [class*="DropdownStyles_dropdown_"],
-[class*="DropdownStyles_selectionDropdown_"],
-[class*="UnifiedDropdown_dropdownContainer_"][class*="UnifiedDropdown_bottomShadow_"] {
+[class*="DropdownStyles_selectionDropdown_"] {
   box-shadow: 0 2px 0 var(--color-gray-light) !important;
 }
 

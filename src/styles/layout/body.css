@@ -36,8 +36,7 @@ div[class*="Gc5PageWrapper_pageWrapper_"] {
 }
 
 /* Generic privacy overlay */
-.privacy-overlay,
-div[class*="CourseCreate_overlay_"] {
+.privacy-overlay {
   background-color: var(--background-deep) !important;
 }
 
@@ -76,10 +75,6 @@ div[class*="SidebarNavigation_mainContainer_"],
 /* Generic empty state / info text containers */
 div[class*="EmptyStateCard_mainText_"],
 div[class*="EmptyStateCard_bodyText_"],
-div[class*="AllSecondaryStatsPage_titleContainer_"],
-div[class*="EditSecondaryStatsPage_title_"],
-div[class*="EditSecondaryStatsPage_modalMainText_"],
-div[class*="EditSecondaryStatsPage_modalText_"],
 div[class*="NoDataState_noDataSubtext_"],
 div[class*="NoResults_message1_"],
 div[class*="NoResults_message2_"],
@@ -96,8 +91,7 @@ div[class*="Gc5DetailCard_cardDetail_SubText_"] {
 }
 
 /* Generic profile related */
-div[class*="ProfileImage_userWrapper_"],
-div[class*="ProfileHeader_profileHeaderBanner_"] {
+div[class*="ProfileImage_userWrapper_"] {
   color: var(--text-primary) !important;
 }
 

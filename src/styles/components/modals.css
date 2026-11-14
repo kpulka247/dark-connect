@@ -14,21 +14,14 @@
 }
 
 /* Specific Modal Text */
-h6[class*="HomeSettingsModal_"],
-p[class*="HomeSettingsModal_"],
-p[class*="SleepCoachFactorModal_feedbackString_"],
 div[class*="VO2MaxModal_infoContainer_"],
 [class*="SharedModalStyles_chartContainer_"] span[class*="avgValue"],
 div[class*="SharedModalStyles_value_"],
 div[class*="SharedModalStyles_infoContainer_"] div,
-div[class*="HowItWorksModal_title_"],
-div[class*="HowItWorksModal_content_"],
 div[class*="FitnessAgeFactorModal_vigorousSubtitle_"],
 div[class*="FitnessAgeFactorModal_recommendationTitle_"],
 div[class*="FitnessAgeFactorModal_secondaryTitle_"],
 div[class*="BodyBatteryHelpModal_modalH"] h4,
-h4[class*="RealTimeStaminaModal_staminaModalHeader_"],
-p[class*="RealTimeStaminaModal_runRideStaminaContext_"],
 div[class*="HRVHelpModal_helpContent_"],
 div[class*="HRVStatusCard_helpContent_"],
 [class*="HrvStatusChartAndStats_statValue_"],
@@ -37,20 +30,13 @@ p[class*="HealthSnapshotHelpModal_factorDescription_"],
 p[class*="HealthSnapshotHelpModal_detailsSubtitle_"],
 p[class*="HealthSnapshotHelpModal_detailsParagraph_"],
 div[class*="HealthSnapshotHelpModal_legendItemContent_"],
-div[class*="TrainingEffectModal_modalHeader_"] h4,
 h4[class*="RunningLactateThresholdHelpBody_title_"],
 p[class*="RunningLactateThresholdHelpBody_paragraph_"],
 p[class*="RunningLactateThresholdHelpBody_sectionSummary_"],
 h4[class*="RunningLactateThresholdHelpBody_sectionTitle_"],
 li[class*="RunningLactateThresholdHelpBody_paragraph_"],
 span[class*="BodyBatteryHelpModal_dataLabel_"],
-div[class*="MoveIQModal_moveIqDescription_"],
-p[class*="ConfirmSaveCourseModal_saveCourseTitle_"],
-label[class*="ConfirmSaveCourseModal_courseNameLabel_"],
-div[class*="ConfirmSaveCourseModal_privacyContainer_"] p,
-div[class*="HelpModal_helpContent_"] p,
-div[class*="HeatAltitudeAcclimationModal_value_"],
-p[class*="HeatAltitudeAcclimationModal_detail_"] {
+div[class*="HelpModal_helpContent_"] p {
   color: var(--text-primary) !important;
 }
 
@@ -73,7 +59,6 @@ div[class*="LoadFocusModal_loadFocusChartItem_"]
   stroke: var(--color-white) !important;
 }
 
-table[class*="ActivityClassHelpModal_table_"],
 table[class*="ActivityClassHelpModal_table_"] th,
 table[class*="ActivityClassHelpModal_table_"] td {
   border-color: var(--border-default) !important;

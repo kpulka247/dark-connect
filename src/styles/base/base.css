@@ -3,10 +3,6 @@ hr {
   border-color: var(--border-default) !important;
 }
 
-body {
-  background-color: var(--background-deep) !important;
-}
-
 /* Very generic selectors */
 ul > li > a > span[data-value] {
   color: var(--color-gray-medium);
@@ -41,5 +37,6 @@ h3.data-bit a,
 
 /* Generic body color */
 body {
+  background-color: var(--background-deep) !important;
   color: var(--text-primary) !important;
 }

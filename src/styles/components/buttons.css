@@ -29,14 +29,7 @@ button[style*="background-color: rgb(255, 255, 255);"],
 }
 
 /* Specific button borders */
-.page.activity-detail .activity-charts-container .btn-customize-charts,
-.page.activity-detail .chart-toggle-options button,
-.page.activity-detail .customize-charts-controls .reorder-widgets-set,
-.page.activity-detail .customize-charts-controls .reorder-widgets-cancel,
-button[class*="ExercisePicker_dropdownToggle_"],
-button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
-button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
-.find-plan-filters .btn-pill {
+button[class*="ExercisePicker_dropdownToggle_"] {
   /* From Plans */
   border-color: var(--border-default) !important;
 }
@@ -218,13 +211,10 @@ button[class*="GroupSettings_advanceToggle_"],
 [class*="GroupItem_labelGroupName_"],
 [class*="GroupItem_navigationComponent_"],
 div[class*="LinkButton_link_"],
-div[class*="CompareFilters_linkWrapper_"],
-span[class*="HomeSettings_linkButton_"],
 button[class*="LinkButton_link_"],
 [class*="BPTables_oneWeekLink_"],
 [class*="BPTables_oneMonthLink_"],
 a[class*="Homepage_sectionButton_"],
-div[class*="HomeSettings_linkButton_"],
 div[class*="DayView_dayViewLabel_"],
 [class*="ImportDataPageView_browse_"],
 [class*="StrategiesList_RowAnchor_"],

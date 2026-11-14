@@ -49,18 +49,11 @@ ul[class*="NavigationTabs_navigationTabs_"] li:focus {
 }
 
 /* Breadcrumb Navigation (Event Page) */
-div[class*="BreadcrumbForm_header_"],
-div[class*="BreadcrumbForm_navBar_"],
-div[class*="BreadcrumbForm_footerContainer_"],
-/* Might fit better in footer? */
-div[class*="BreadcrumbForm_mainContainer_"] {
+div[class*="BreadcrumbForm_footerContainer_"] {
   color: var(--text-primary) !important;
 }
 
 /* Accordion Navigation */
-.accordion a.active,
-.accordion a:active,
-.accordion a:focus,
 [class*="ReportSelector_accordionItemsDetailList_"] li:hover,
 [class*="ReportSelector_accordionItemsDetailList_"]
   li[class*="ReportSelector_selected_"] {

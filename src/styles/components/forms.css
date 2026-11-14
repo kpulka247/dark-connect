@@ -93,13 +93,9 @@ div[class*="CourseCard_locationFilterLabel_"] {
   color: var(--text-primary) !important;
 }
 
-label[class*="AddAvailableSecondaryStatCard_availableCardItem_"],
-div[class*="ReorderSelectedStats_reorderListItem_"] label,
 span[class*="ExercisePickerFilter_filterName_"],
-label[class*="RoutingOptions_turnNotificationLabel_"],
 label[class*="Cards_optionsLabel_"],
-label[class*="Cards_options_"],
-label[class*="ConfirmSaveCourseModal_courseNameLabel_"] {
+label[class*="Cards_options_"] {
   color: var(--text-primary) !important;
 }
 

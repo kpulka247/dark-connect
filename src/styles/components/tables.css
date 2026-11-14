@@ -3,7 +3,6 @@
 .table td,
 .table-row-child.last,
 .table-bordered,
-table[class*="StrengthTable_table_"] thead tr,
 tr[class*="ReportTableComponent_tableRow_"],
 table[class*="Tab_table_"] th,
 table[class*="Tab_table_"] td,
@@ -13,10 +12,7 @@ table[class*="BPTables_bloodPressureTable_"] td,
 table[class*="BPTables_bloodPressureTable_"] th,
 table[class*="CyclingFTPRatings_table_"] tbody th,
 table[class*="CyclingFTPRatings_table_"] tbody td,
-tr[class*="GolfStatsTrends_trendTableRow_"],
-table[class*="EnduranceScoreHelpModal_table_"] tbody td,
-tr[class*="Tab_previousPR_"] td,
-tr[class*="Tab_isNew_"] th {
+table[class*="EnduranceScoreHelpModal_table_"] tbody td {
   border-color: var(--border-default) !important;
 }
 

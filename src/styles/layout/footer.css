@@ -22,7 +22,6 @@ footer {
 }
 
 /* Specific component footers needing border */
-div[class*="CourseListItem_detailsFooter_"],
 div[class*="SecondaryStatCard_secondaryStatFooter_"] {
   border-color: var(--border-default) !important;
 }

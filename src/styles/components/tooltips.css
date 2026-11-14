@@ -41,7 +41,6 @@ div[class*="PulseOxChart_tooltip_"],
 div[class*="EnduranceScoreReportChartView_tooltipText_"],
 div[class*="MovementReportChart_tooltip_"],
 div[class*="FloorsDataReport_tooltip_"],
-div[class*="SleepChart_tooltip_"],
 div[class*="HRVTimelineChart_tooltip_"],
 div[class*="Report_reportChartTooltipWrapper_"] {
   /* Uses different background */
@@ -57,7 +56,6 @@ div[class*="HRVTimelineChart_tooltip_"] {
 div[class*="HrvStatusReportChart_tooltipContainer_"],
 [class*="HrvStatusChart_tooltipContainer_"],
 div[class*="BodyBatteryReports_tooltipContainer_"],
-div[class*="SleepScoreReport_tooltipContainer_"],
 div[class*="ActivityHistoryChartAndStats_tooltipContainer_"] {
   background: var(--background-secondary) !important;
   border-color: var(--border-default) !important;

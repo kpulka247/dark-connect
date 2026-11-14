@@ -28,7 +28,6 @@ div[class*="IntensityMinutesPageOneYearView_vigorousMultiplierBadge_"] {
 span[class*="IntensityMinutesPageSevenDaysView_dataField_"],
 div[class*="IntensityMinutesPageSevenDaysView_dataField_"],
 div[class*="IntensityMinutesPageReportTable_tableHeader_"],
-span[class*="IntensityMinutesPageReportTable_tableData_"],
 span[class*="IntensityMinutesPageFourWeeksView_dataField_"],
 div[class*="IntensityMinutesPageFourWeeksView_dataField_"],
 span[class*="IntensityMinutesPageOneYearView_dataField_"],
@@ -78,7 +77,6 @@ span[class*="BodyBatteryFactors_valueBlock_"] {
 }
 
 /* VO2 Max */
-div[class*="VO2MaxGaugeChart_value_"],
 [class*="PulseOxHelp_mainTitle_"] {
   color: var(--text-primary) !important;
 }
@@ -96,8 +94,6 @@ h4[class*="PersonalRecordsPageView_helpHeading_"] {
   border-color: var(--border-default) !important;
 }
 
-tr[class*="Tab_previousPR_"] td,
-tr[class*="Tab_isNew_"] th,
 [class*="Tab_table_"] [class*="Tab_previousPR_"] th:last-child,
 [class*="Tab_table_"] [class*="Tab_previousPR_"] td:last-child {
   background-color: var(--background-primary) !important;
@@ -112,8 +108,7 @@ span[class*="CaloriesSummary_dataField_"] {
 
 span[class*="CaloriesPageReportChart_legendItem_"],
 span[class*="CaloriesPageReport_dataField_"],
-div[class*="CaloriesPageReport_tableHeader_"],
-span[class*="CaloriesPageReport_tableData_"] {
+div[class*="CaloriesPageReport_tableHeader_"] {
   color: var(--text-primary) !important;
 }
 
@@ -144,11 +139,6 @@ div[class*="FitnessAgeFactorCard_highPriorityChip_"] {
 }
 
 /* Health Snapshot */
-div[class*="HealthSnapshotHelpModal_healthSnapshotDescription_"],
-p[class*="HealthSnapshotHelpModal_factorDescription_"],
-p[class*="HealthSnapshotHelpModal_detailsSubtitle_"],
-p[class*="HealthSnapshotHelpModal_detailsParagraph_"],
-div[class*="HealthSnapshotHelpModal_legendItemContent_"],
 [class*="HealthSnapshotHelpModal_detailsTitle_"] {
   color: var(--text-primary) !important;
 }
@@ -168,10 +158,7 @@ h4[class*="JetLagGenesisPage_title_"],
 div[class*="JetLagGenesisPage_noDataSubtext_"],
 div[class*="JetLagTripSetupPage_jetLagContainer_"],
 div[class*="JetLagTrip_tripDetailsContainer_"] div div,
-div[class*="JetLagManageTripsPage_jetLagContainer_"],
-div[class*="HelpModal_helpContent_"] p,
-div[class*="JetLagTrip_dropdownMenu_"] i,
-div[class*="JetLagTrip_editButton_"] i {
+div[class*="JetLagManageTripsPage_jetLagContainer_"] {
   color: var(--text-primary) !important;
 }
 
