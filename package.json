@@ -18,6 +18,8 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.5.3",
+    "postcss-selector-parser": "^7.1.0",
     "semantic-release": "^24.2.3",
     "webpack": "^5.99.8",
     "webpack-cli": "^6.0.1",

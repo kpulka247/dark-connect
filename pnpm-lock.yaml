@@ -44,6 +44,12 @@ importers:
       mini-css-extract-plugin:
         specifier: ^2.9.2
         version: 2.9.2(webpack@5.99.8)
+      postcss:
+        specifier: ^8.5.3
+        version: 8.5.3
+      postcss-selector-parser:
+        specifier: ^7.1.0
+        version: 7.1.0
       semantic-release:
         specifier: ^24.2.3
         version: 24.2.3
