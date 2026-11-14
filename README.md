@@ -34,11 +34,11 @@ Garmin Connect has no dark mode, so Dark Connect adds one. Every page, chart and
 <details>
 <summary>More screenshots</summary>
 
-![Training Status charts in dark mode with Garmin's own colors](static/images/screenshot2.png)
+![Training Status charts over six months in Garmin's own colors](static/images/screenshot-training.png)
 
-![Running dynamics charts of an activity in dark mode](static/images/screenshot3.png)
+![The Sleep page in dark mode](static/images/screenshot-sleep.png)
 
-![Nearby courses with the map in dark mode](static/images/screenshot4.png)
+![The Body Battery timeline in dark mode](static/images/screenshot-health.png)
 
 </details>
 

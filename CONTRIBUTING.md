@@ -57,6 +57,15 @@ pnpm sweep sleep hrv                   # only pages whose address contains these
 
 Edit `scripts/sweep-pages.json` to add the pages your account can see, such as Garmin Connect+ features or pages for your devices. Your sign-in stays in `.sweep-profile/`, and both folders are ignored by Git.
 
+### Updating the README and store images
+
+```bash
+pnpm graphics      # banner, promo tile, marquee and store icon
+pnpm screenshots   # README screenshots and the captioned store screenshots
+```
+
+`pnpm graphics` draws everything from `scripts/build-graphics.mjs`, `static/brand/connect-wordmark.svg` and the icon in `public/icons/`. It needs the Gill Sans MT font, which comes with Windows. `pnpm screenshots` uses the same sign-in as `pnpm sweep`, so run `pnpm sweep --login` first if Garmin signed you out. Store images go to `static/store/`, and README images go to `static/images/`.
+
 ## 📝 Pull Request Naming Convention (CRITICAL)
 
 This project uses automated releases based on **Conventional Commits**. While you can name your local commits however you like, **the title of your Pull Request MUST follow a specific format and MUST be in English.**
