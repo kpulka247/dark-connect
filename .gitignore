@@ -13,3 +13,6 @@ npm-debug.log
 # Build directories
 dist/
 dist-*/
+# Local Garmin sweep (scripts/sweep.mjs)
+.sweep-profile/
+sweep-results/

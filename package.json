@@ -7,6 +7,7 @@
     "build": "webpack --mode production",
     "test": "node --test test/unit/*.test.js",
     "test:e2e": "webpack --mode development && node --test test/e2e/*.test.js",
+    "sweep": "webpack --mode development && node scripts/sweep.mjs",
     "lint": "stylelint \"src/**/*.css\" && node scripts/check-css.mjs",
     "lint:firefox": "web-ext lint --source-dir dist/darkconnect-firefox",
     "format": "prettier --write .",
