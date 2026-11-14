@@ -25,7 +25,6 @@ function scanActiveTab() {
         tab.id,
         { type: "dark-connect:scan" },
         (reply) => {
-          // No content script on this tab, so it is not a supported Garmin page.
           resolve(chrome.runtime.lastError ? null : reply);
         },
       );

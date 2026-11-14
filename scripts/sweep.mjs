@@ -75,9 +75,7 @@ const scanTabs = (worker) =>
           type: "dark-connect:scan",
         });
         if (reply?.darkThemeOn) return reply;
-      } catch {
-        // Not a Garmin page.
-      }
+      } catch {}
     }
     return null;
   });

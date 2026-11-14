@@ -7,8 +7,6 @@ export const ISSUE_TEMPLATE = "missed-element.yml";
 const MAX_URL_LENGTH = 8000;
 const PERSONAL_SEGMENT_AFTER = new Set(["profile", "connections"]);
 
-// Keeps the page path but hides IDs and user names, so the issue does not
-// point to someone's activity or profile.
 export function anonymizePage(href) {
   const url = new URL(href);
   const segments = url.pathname.split("/");

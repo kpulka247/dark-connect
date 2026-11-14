@@ -118,8 +118,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   });
 });
 
-// For maintainers: in the DevTools console, switch the context from "top" to
-// Dark Connect, then run darkConnect.scan() or darkConnect.lightTokens().
 globalThis.darkConnect = {
   scan() {
     const findings = scanPage();

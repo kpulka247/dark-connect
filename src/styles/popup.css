@@ -196,8 +196,6 @@ footer {
   color: var(--text);
 }
 
-/* Ko-fi link with a steaming cup. The steam plays twice when the popup
-   opens and keeps going while the pointer is on the link. */
 .coffee {
   display: inline-flex;
   align-items: center;

@@ -1,4 +1,3 @@
-// Rules that catch mistakes, not style. Prettier handles formatting.
 export default {
   rules: {
     "block-no-empty": true,

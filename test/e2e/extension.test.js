@@ -23,8 +23,6 @@ before(async () => {
       `--load-extension=${extensionDir}`,
     ],
   });
-  // Serve the fixture for Garmin addresses, so the content script runs on it
-  // without a Garmin account.
   const fixture = await readFile(path.join(here, "fixtures", "garmin.html"));
   await context.route("https://connect.garmin.com/**", (route) =>
     route.fulfill({ contentType: "text/html", body: fixture }),
@@ -66,9 +64,7 @@ const scanGarminTab = () =>
           type: "dark-connect:scan",
         });
         return { tabId: tab.id, reply };
-      } catch {
-        // Not a Garmin page.
-      }
+      } catch {}
     }
     return null;
   });
@@ -228,8 +224,6 @@ test("shows the what's new modal once after an update", async () => {
   });
   assert.ok(logoWidth > 0, "the logo did not load on the Garmin page");
 
-  // On hover the cup turns the same orange as the border. The theme's own
-  // icon rules must not override it.
   await page.hover(".dc-coffee");
   await page.waitForFunction(() => {
     const link = document.querySelector(".dc-coffee");
@@ -242,8 +236,6 @@ test("shows the what's new modal once after an update", async () => {
   );
   await page.mouse.move(0, 0);
 
-  // The release notes scroll inside the modal, so the buttons stay on screen
-  // in a short window.
   await page.setViewportSize({ width: 1280, height: 600 });
   const okBottom = await page.$eval(
     "#dc-modal-ok-btn",

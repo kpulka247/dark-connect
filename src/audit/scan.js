@@ -1,8 +1,3 @@
-// Finds the parts of a Garmin page that the dark theme missed: light surfaces,
-// dark text on a dark background, and light chart shapes. Each finding comes
-// with a selector in the same style as the stylesheets, so it can be pasted
-// into a rule.
-
 const LIGHT = 0.7;
 const DARK_TEXT_CONTRAST = 2;
 const MIN_SURFACE_AREA = 600;
@@ -150,8 +145,6 @@ function createBackgroundResolver(view) {
       view.getComputedStyle(document.documentElement).backgroundColor,
     ) ?? parseColor(view.getComputedStyle(document.body).backgroundColor);
 
-  // Returns the colour behind an element's text, or null when an image is
-  // behind it and the colour cannot be known.
   const resolve = (element) => {
     if (!element || element === document.documentElement) {
       return pageBackground?.a >= 0.5
@@ -273,9 +266,6 @@ function* walk(root) {
   }
 }
 
-// Lists Garmin's own colour variables that are still light after the dark
-// theme is applied. Overriding one of them in variables.css fixes every
-// feature that uses it.
 export function findLightTokens() {
   const names = new Set();
   for (const sheet of document.styleSheets) {

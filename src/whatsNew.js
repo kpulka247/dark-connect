@@ -1,6 +1,5 @@
 import { KOFI_URL, createCoffeeIcon } from "./ui/coffee.js";
 
-// Shown once after each update. Write for people who just use Garmin Connect.
 export const RELEASE_NOTES = [
   {
     title: "New",
