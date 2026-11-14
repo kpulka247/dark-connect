@@ -219,18 +219,20 @@ footer {
   border-color: var(--coffee);
 }
 
-.coffee-icon {
+.coffee-cup {
+  flex-shrink: 0;
   width: 15px;
-  height: 16px;
+  height: 13px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
   overflow: visible;
+  transition: color 0.2s ease;
 }
 
-.coffee:hover .coffee-icon {
+.coffee:hover .coffee-cup {
   color: var(--coffee);
 }
 

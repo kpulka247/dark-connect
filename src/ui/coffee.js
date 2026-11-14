@@ -4,11 +4,13 @@
 export const KOFI_URL = "https://ko-fi.com/Y8Y71ERSZF";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
-const STEAM = ["M9 2.5c-1 1.2 1 2.3 0 3.5", "M13 2.5c-1 1.2 1 2.3 0 3.5"];
+// The view box holds only the cup and saucer, so the icon centers on the
+// text like any other icon. The steam is drawn above it, outside the box.
+const STEAM = ["M7 -4c-1 1.1 1 2.1 0 3.2", "M10.5 -4c-1 1.1 1 2.1 0 3.2"];
 const CUP = [
-  "M4.5 9h11v4.5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z",
-  "M15.5 10.5h1.25a2.75 2.75 0 0 1 0 5.5H15",
-  "M3.5 21.5h14",
+  "M3 2.5h11v4.5a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5z",
+  "M14 4h1.25a2.5 2.5 0 0 1 0 5H14",
+  "M2 15h13",
 ];
 
 function path(d, className) {
@@ -18,10 +20,12 @@ function path(d, className) {
   return node;
 }
 
+// Keep "icon" out of the class name: the dark theme forces any [class*="icon"]
+// inside a hovered link to white, which would override the cup's color.
 export function createCoffeeIcon() {
   const svg = document.createElementNS(SVG_NS, "svg");
-  svg.setAttribute("class", "coffee-icon");
-  svg.setAttribute("viewBox", "0 0 22 23");
+  svg.setAttribute("class", "coffee-cup");
+  svg.setAttribute("viewBox", "0 0 19 16");
   svg.setAttribute("aria-hidden", "true");
   svg.append(
     ...STEAM.map((d) => path(d, "coffee-steam")),

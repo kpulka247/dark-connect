@@ -94,7 +94,7 @@
 }
 
 #dc-modal-overlay #dc-modal-close {
-  align-self: flex-start;
+  align-self: center;
   width: 28px;
   height: 28px;
   margin: 0;
@@ -233,18 +233,20 @@
   border-color: var(--dc-coffee);
 }
 
-#dc-modal-overlay .coffee-icon {
+#dc-modal-overlay .coffee-cup {
+  flex-shrink: 0;
   width: 15px;
-  height: 16px;
+  height: 13px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
   overflow: visible;
+  transition: color 0.2s ease;
 }
 
-#dc-modal-overlay .dc-coffee:hover .coffee-icon {
+#dc-modal-overlay .dc-coffee:hover .coffee-cup {
   color: var(--dc-coffee);
 }
 

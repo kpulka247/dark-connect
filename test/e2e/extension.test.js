@@ -228,6 +228,20 @@ test("shows the what's new modal once after an update", async () => {
   });
   assert.ok(logoWidth > 0, "the logo did not load on the Garmin page");
 
+  // On hover the cup turns the same orange as the border. The theme's own
+  // icon rules must not override it.
+  await page.hover(".dc-coffee");
+  await page.waitForFunction(() => {
+    const link = document.querySelector(".dc-coffee");
+    return getComputedStyle(link).borderTopColor === "rgb(249, 137, 37)";
+  });
+  await page.waitForTimeout(250);
+  assert.equal(
+    await page.$eval(".dc-coffee svg", (svg) => getComputedStyle(svg).color),
+    "rgb(249, 137, 37)",
+  );
+  await page.mouse.move(0, 0);
+
   // The release notes scroll inside the modal, so the buttons stay on screen
   // in a short window.
   await page.setViewportSize({ width: 1280, height: 600 });
