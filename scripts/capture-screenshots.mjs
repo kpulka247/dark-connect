@@ -26,15 +26,15 @@ const PAGES = [
     hideBanner: "Use Performance Dashboard",
   },
   {
-    url: "https://connect.garmin.com/app/sleep",
-    readme: "screenshot-sleep.png",
-    store: "screenshot-3-sleep.png",
+    url: "https://connect.garmin.com/app/hrv-status",
+    readme: "screenshot-hrv.png",
+    store: "screenshot-3-hrv.png",
     caption: "Easy on the eyes, day and night.",
   },
   {
-    url: "https://connect.garmin.com/app/body-battery",
-    readme: "screenshot-health.png",
-    store: "screenshot-4-health.png",
+    url: "https://connect.garmin.com/app/training-readiness",
+    readme: "screenshot-readiness.png",
+    store: "screenshot-4-readiness.png",
     caption: "Every page and stat, themed by hand.",
   },
 ];

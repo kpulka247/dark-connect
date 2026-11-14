@@ -36,9 +36,9 @@ Garmin Connect has no dark mode, so Dark Connect adds one. Every page, chart and
 
 ![Training Status charts over six months in Garmin's own colors](static/images/screenshot-training.png)
 
-![The Sleep page in dark mode](static/images/screenshot-sleep.png)
+![The HRV Status gauge and nightly timeline in dark mode](static/images/screenshot-hrv.png)
 
-![The Body Battery timeline in dark mode](static/images/screenshot-health.png)
+![The Training Readiness score and its factors in dark mode](static/images/screenshot-readiness.png)
 
 </details>
 
