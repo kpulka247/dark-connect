@@ -17,12 +17,8 @@
 }
 
 .page-sidebar .leaderboard li.highlight {
-  /* Sidebar highlight padding/background */
-  background-color: var(--color-white);
-  /* Original style - likely overridden */
   padding: 10px 0;
   background: var(--background-secondary) !important;
-  /* Ensure override */
 }
 
 .widget .leaderboard li.active {

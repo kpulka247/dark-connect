@@ -1,0 +1,26 @@
+// Rules that catch mistakes, not style. Prettier handles formatting.
+export default {
+  rules: {
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "declaration-block-no-duplicate-custom-properties": true,
+    "declaration-block-no-duplicate-properties": [
+      true,
+      { ignore: ["consecutive-duplicates-with-different-syntaxes"] },
+    ],
+    "declaration-block-no-shorthand-property-overrides": true,
+    "function-calc-no-unspaced-operator": true,
+    "keyframe-declaration-no-important": true,
+    "named-grid-areas-no-invalid": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "no-invalid-double-slash-comments": true,
+    "no-invalid-position-at-import-rule": true,
+    "property-no-unknown": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "selector-type-no-unknown": [true, { ignore: ["custom-elements"] }],
+    "string-no-newline": true,
+    "unit-no-unknown": true,
+  },
+};
