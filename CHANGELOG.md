@@ -1,3 +1,16 @@
+## [2.7.0](https://github.com/kpulka247/dark-connect/compare/v2.6.4...v2.7.0) (2026-11-14)
+
+### Features
+
+* redesign the popup and the what's new window ([6dc9561](https://github.com/kpulka247/dark-connect/commit/6dc9561fc417ede6e9eccd4e590d4a56f776398e))
+* scan the open page for parts the dark theme missed ([ff41700](https://github.com/kpulka247/dark-connect/commit/ff4170041b1b8f8c58cb8e4110861ce256edf9ec))
+
+### Bug Fixes
+
+* **firefox:** declare that the extension collects no data ([ff4e6e2](https://github.com/kpulka247/dark-connect/commit/ff4e6e2503dc7fda7c1553d2940c10e75fcf6825))
+* keep the what's new buttons on screen in short windows ([5304875](https://github.com/kpulka247/dark-connect/commit/5304875fdc2ab2fd1b4fcca3ec2237acc06561ae))
+* **popup:** declare the utf-8 charset correctly ([726c911](https://github.com/kpulka247/dark-connect/commit/726c9117f29062e4848e87e98cdce04237595c5b))
+
 ## [2.6.4](https://github.com/kpulka247/dark-connect/compare/v2.6.3...v2.6.4) (2026-05-31)
 
 ### Bug Fixes
