@@ -54,6 +54,8 @@ To install the extension, click on your browser store and then add the extension
 
 Once installed, the extension will immediately apply dark mode to any visit to Garmin Connect website. You don’t need to enable or disable it manually — it works automatically whenever you visit the site. If you have suggestions for improvements or have found any bugs, feel free to report them through the issues form.
 
+If part of a page is still light or hard to read, open the Dark Connect popup on that page and click **Scan this page**. It finds the parts the dark theme missed and opens a GitHub issue with the details filled in. You can review the issue before you submit it, and nothing is sent until you do.
+
 ## Development & Build
 
 This project uses Node.js for its build system and leverages Conventional Commits with `semantic-release` for automated versioning, packaging and publishing.
@@ -103,6 +105,20 @@ To test the extension locally in a browser:
 5. Select the `dist/darkconnect-chrome/` folder generated in step 1
 6. The extension will now appear in your list and function on the relevant Garmin pages
 
+### ✅ Checks and tests
+
+CI runs these on every pull request:
+
+```bash
+pnpm format:check  # Prettier formatting
+pnpm lint          # Stylelint, plus check-css.mjs: fails on rules that a later rule always overrides
+pnpm test          # Unit tests
+pnpm test:e2e      # Builds, then loads the extension in Chromium on a Garmin page fixture
+pnpm lint:firefox  # web-ext lint on the Firefox build (run pnpm build first)
+```
+
+The end-to-end tests need Playwright's Chromium once: `pnpm exec playwright install chromium`.
+
 ### 🏷️ Versioning and Releases (Automated)
 
 This project uses [semantic-release](https://github.com/semantic-release/semantic-release) and [Conventional Commits](https://www.conventionalcommits.org/) for automated version management and release publishing.
@@ -124,7 +140,7 @@ This project uses [semantic-release](https://github.com/semantic-release/semanti
 
 ### 🗂️ Manifests
 
-- `manifest.chrome.json` / `manifest.firefox.json`: These are the source manifest files located in the root of the project.
+- `public/manifest.chrome.json` / `public/manifest.firefox.json`: These are the source manifest files.
   - They are updated with the correct version number by `semantic-release` during the release process.
   - The Webpack build process copies the appropriate source manifest (e.g., `manifest.chrome.json`) to `dist/darkconnect-chrome/manifest.json` for each build.
   - These manifests should reference the single, compiled `styles/main.css` and `background.js`.
@@ -132,9 +148,14 @@ This project uses [semantic-release](https://github.com/semantic-release/semanti
 ### 🧰 Tools & Scripts
 
 - `webpack.config.js`: Configures the Webpack build process, handling CSS compilation, minification, file copying, and ZIP packaging.
-- `scripts/update-manifest-version.js`: Replaces placeholders in manifests with the current version.
+- `scripts/update-manifest-version.js`: Sets the release version in both manifests.
+- `scripts/compare-css.mjs`: Compares two builds of a stylesheet and lists every change that could alter a page. Use it to prove that a style refactor changes nothing.
+- `scripts/check-css.mjs`: Fails when a declaration or selector never takes effect because a later rule always overrides it. Part of `pnpm lint`.
+- `scripts/sweep.mjs`: Scans a list of Garmin pages with your own account. See [CONTRIBUTING.md](./CONTRIBUTING.md#-checking-garmin-for-changes).
+- `src/audit/`: The page scan behind the popup's **Scan this page** button.
 - `.releaserc.json`: Configures `semantic-release` pipeline.
-- `release.yml`: GitHub Actions workflow to run the release pipeline automatically.
+- `.github/workflows/ci.yml`: Runs the checks and tests on pull requests.
+- `.github/workflows/release.yml`: GitHub Actions workflow to run the release pipeline automatically.
 
 ## Contributing
 
