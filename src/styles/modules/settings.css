@@ -123,6 +123,7 @@ div[class*="ReorderSelectedStats_reorderListItem_"] label {
 }
 
 .device-item .avatar {
-  box-shadow: 0 0 0 3px var(--color-gray-dark),
+  box-shadow:
+    0 0 0 3px var(--color-gray-dark),
     0 0 0 4px var(--color-gray-light) !important;
 }

@@ -4,7 +4,7 @@ const path = require("path");
 const newVersion = process.argv[2];
 if (!newVersion) {
   console.error(
-    "❌ No version provided! Usage: node update-manifest-version.js <version>"
+    "❌ No version provided! Usage: node update-manifest-version.js <version>",
   );
   process.exit(1);
 }

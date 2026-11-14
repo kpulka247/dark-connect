@@ -92,11 +92,11 @@ chrome.storage.local.get(
 
     if (result.showUpdateModal) {
       showWhatsNewModal(
-        result.updateVersion || chrome.runtime.getManifest().version
+        result.updateVersion || chrome.runtime.getManifest().version,
       );
       chrome.storage.local.set({ showUpdateModal: false });
     }
-  }
+  },
 );
 
 chrome.storage.onChanged.addListener((changes, area) => {

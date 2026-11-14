@@ -197,9 +197,7 @@ function caseVariantConflicts(variants) {
   }
   const problems = [];
   for (const entries of groups.values()) {
-    const signatures = new Set(
-      entries.map((e) => `${e.value}|${e.important}`),
-    );
+    const signatures = new Set(entries.map((e) => `${e.value}|${e.important}`));
     if (entries.length > 1 && signatures.size > 1) {
       problems.push(
         `Selectors that differ only by letter case set different values:\n    ${entries.map(describe).join("\n    ")}`,
@@ -276,7 +274,9 @@ if (!beforeFile || !afterFile) {
 
 const { problems, count } = compare(beforeFile, afterFile);
 if (problems.length === 0) {
-  console.log(`No visible changes. Compared ${count} selector and property pairs.`);
+  console.log(
+    `No visible changes. Compared ${count} selector and property pairs.`,
+  );
 } else {
   console.log(problems.join("\n\n"));
   console.log(`\n${problems.length} difference(s) found.`);

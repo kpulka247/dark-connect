@@ -13,11 +13,11 @@ g[class="recharts-layer recharts-reference-line"]
 
 /* Axis */
 .recharts-cartesian-axis-line:not(
-    div[class*="AdvancedReportingChartStyles_mainChart_"]
-      svg.recharts-surface
-      g
-      line.recharts-cartesian-axis-line
-  ) {
+  div[class*="AdvancedReportingChartStyles_mainChart_"]
+    svg.recharts-surface
+    g
+    line.recharts-cartesian-axis-line
+) {
   stroke: var(--color-white) !important;
   /* Default axis line */
 }
