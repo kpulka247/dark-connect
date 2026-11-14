@@ -1,6 +1,6 @@
 <div align="center">
 
-![banner](static/images/banner.png)
+<img src="static/images/banner.png" alt="Dark Connect banner" width="440">
 
 <a href="https://github.com/kpulka247/dark-connect/actions" title="GitHub Actions Workflow Status"><img src="https://img.shields.io/github/actions/workflow/status/kpulka247/dark-connect/release.yml"></a>
 <a title="Chrome Web Store Size"><img src="https://img.shields.io/chrome-web-store/size/nadhhgppikppmjacnkebagbgcibnfnob"></a>
@@ -29,20 +29,16 @@ Garmin Connect has no dark mode, so Dark Connect adds one. Every page, chart and
 
 ## Screenshots
 
-<div align="center">
-<img src="static/images/screenshot1.png" alt="Garmin Connect dashboard in dark mode" width="68%">
-&nbsp;
-<img src="static/images/screenshot-popup.png" alt="The Dark Connect popup" width="28%">
-</div>
+![The Dark Connect popup over the Garmin Connect dashboard in dark mode](static/images/screenshot.png)
 
 <details>
 <summary>More screenshots</summary>
 
-![Garmin Connect page in dark mode](static/images/screenshot2.png)
+![Training Status charts in dark mode with Garmin's own colors](static/images/screenshot2.png)
 
-![Garmin Connect page in dark mode](static/images/screenshot3.png)
+![Running dynamics charts of an activity in dark mode](static/images/screenshot3.png)
 
-![Garmin Connect page in dark mode](static/images/screenshot4.png)
+![Nearby courses with the map in dark mode](static/images/screenshot4.png)
 
 </details>
 
