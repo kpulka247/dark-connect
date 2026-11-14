@@ -1,4 +1,4 @@
-import { FINDING_KINDS } from "./scan";
+import { FINDING_KINDS } from "./scan.js";
 
 export const ISSUE_URL = "https://github.com/kpulka247/dark-connect/issues/new";
 export const ISSUE_TEMPLATE = "missed-element.yml";

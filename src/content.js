@@ -1,6 +1,6 @@
-import { anonymizePage } from "./audit/issue";
-import { findLightTokens, scanPage } from "./audit/scan";
-import { createModalHTML } from "./whatsNew";
+import { anonymizePage } from "./audit/issue.js";
+import { findLightTokens, scanPage } from "./audit/scan.js";
+import { createModalHTML } from "./whatsNew.js";
 
 const MAIN_STYLE_ID = "dark-connect-style";
 const MAIN_STYLE_URL = chrome.runtime.getURL("styles/main.css");

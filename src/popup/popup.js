@@ -1,4 +1,4 @@
-import { buildIssueUrl } from "../audit/issue";
+import { buildIssueUrl } from "../audit/issue.js";
 
 function browserName() {
   const agent = navigator.userAgent;

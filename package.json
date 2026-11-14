@@ -1,6 +1,7 @@
 {
   "name": "dark-connect",
   "version": "2.6.4",
+  "type": "module",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
