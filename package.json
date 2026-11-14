@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
+    "test": "node --test test/unit/*.test.js",
+    "test:e2e": "webpack --mode development && node --test test/e2e/*.test.js",
+    "lint": "stylelint \"src/**/*.css\" && node scripts/check-css.mjs",
+    "lint:firefox": "web-ext lint --source-dir dist/darkconnect-firefox",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "lint": "stylelint \"src/**/*.css\" && node scripts/check-css.mjs"
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -21,11 +24,13 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "mini-css-extract-plugin": "^2.9.2",
+    "playwright": "1.65.0",
     "postcss": "^8.5.3",
     "postcss-selector-parser": "^7.1.0",
     "prettier": "3.6.2",
     "semantic-release": "^24.2.3",
     "stylelint": "16.23.1",
+    "web-ext": "8.10.0",
     "webpack": "^5.99.8",
     "webpack-cli": "^6.0.1",
     "webpack-remove-empty-scripts": "^1.0.4",

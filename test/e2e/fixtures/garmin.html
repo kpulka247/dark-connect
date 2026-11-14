@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Garmin page fixture</title>
+  </head>
+  <body style="margin: 0">
+    <!-- Missed by the stylesheet: a light card with a Garmin module class -->
+    <div
+      id="food-card"
+      class="FoodItem_card__AbC12"
+      style="background: #ffffff; width: 300px; height: 80px"
+    >
+      <span class="FoodItem_title__HT8Dj" style="color: #1a1a1a">Oatmeal</span>
+    </div>
+
+    <!-- Handled by the stylesheet, so the scan must not report it -->
+    <div
+      id="handled"
+      class="ActivityListItem_listItem__Zz9_x"
+      style="background: #ffffff; width: 300px; height: 80px"
+    >
+      Run
+    </div>
+
+    <!-- A plain class name -->
+    <div
+      class="legacy-panel"
+      style="background: #f4f4f4; width: 200px; height: 60px"
+    >
+      <p>Panel</p>
+    </div>
+
+    <!-- No class: the selector falls back to the nearest ancestor with one -->
+    <section class="Wrapper_box__q-1_Z">
+      <div>
+        <div style="background: #fafafa; width: 120px; height: 40px"></div>
+      </div>
+    </section>
+
+    <!-- A small white toggle knob is intentional and ignored -->
+    <div
+      class="Toggle_knob__abcde"
+      style="background: #fff; width: 12px; height: 12px"
+    ></div>
+
+    <!-- A chart with a light plot area and a dark label -->
+    <div style="background: #252525">
+      <svg width="400" height="200">
+        <rect class="plot-bg" width="400" height="150" fill="#eeeeee"></rect>
+        <text x="10" y="180" fill="#111111">Mon</text>
+      </svg>
+    </div>
+  </body>
+</html>
