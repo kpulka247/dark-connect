@@ -32,10 +32,11 @@ const PAGES = [
     caption: "Easy on the eyes, day and night.",
   },
   {
-    url: "https://connect.garmin.com/app/training-readiness",
-    readme: "screenshot-readiness.png",
-    store: "screenshot-4-readiness.png",
+    url: "https://connect.garmin.com/app/challenge",
+    readme: "screenshot-challenges.png",
+    store: "screenshot-4-challenges.png",
     caption: "Every page and stat, themed by hand.",
+    hideBanner: "Get access to exclusive badge challenges",
   },
 ];
 const POPUPS = {
