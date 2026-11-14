@@ -1,10 +1,10 @@
-name: Test Release
+name: Release dry run
 
 on: workflow_dispatch
 
 jobs:
   test-release:
-    name: Simulate Release & Build
+    name: Simulate release and build
     runs-on: ubuntu-latest
     outputs:
       new_release_version: ${{ steps.semantic_dry_run.outputs.new_release_version }}
@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Simulate Release and Build (Dry Run)
+      - name: Run semantic-release in dry-run mode
         id: semantic_dry_run
         run: pnpm exec semantic-release --dry-run
         env:
@@ -42,38 +42,38 @@ jobs:
           path: dist/
 
   test-publish-chrome:
-    name: Simulate Publish to Chrome
+    name: Simulate publishing to Chrome Web Store
     needs: test-release
     runs-on: ubuntu-latest
     if: needs.test-release.outputs.new_release_version != ''
 
     steps:
-      - name: Download artifacts
+      - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           name: test-build-artifacts
           path: ./dist
 
-      - name: Simulate Publish Step
+      - name: Show what would be published
         run: |
           echo "✅ Successfully downloaded artifacts."
           echo "ℹ️ Would publish file: dist/darkconnect-${{ needs.test-release.outputs.new_release_version }}-chrome.zip"
           echo "✅ Chrome publish simulation complete."
 
   test-publish-firefox:
-    name: Simulate Publish to Firefox
+    name: Simulate publishing to Firefox Add-ons
     needs: test-release
     runs-on: ubuntu-latest
     if: needs.test-release.outputs.new_release_version != ''
 
     steps:
-      - name: Download artifacts
+      - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           name: test-build-artifacts
           path: ./dist
 
-      - name: Simulate Publish Step
+      - name: Show what would be published
         run: |
           echo "✅ Successfully downloaded artifacts."
           echo "ℹ️ Would sign and publish from source directory: dist/darkconnect-firefox"

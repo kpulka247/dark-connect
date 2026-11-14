@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    name: Test & Lint
+    name: Test and lint
     runs-on: ubuntu-latest
 
     steps:
@@ -42,14 +42,14 @@ jobs:
       - name: Lint stylesheets
         run: pnpm lint
 
-      - name: Unit tests
+      - name: Run unit tests
         run: pnpm test
 
-      - name: End-to-end tests
+      - name: Run end-to-end tests
         run: pnpm test:e2e
 
-      - name: Production build
+      - name: Build for production
         run: pnpm build
 
-      - name: Lint Firefox build
+      - name: Lint the Firefox build
         run: pnpm lint:firefox
