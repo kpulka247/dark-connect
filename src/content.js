@@ -6,49 +6,34 @@ const MAIN_STYLE_URL = chrome.runtime.getURL("styles/main.css");
 const MODAL_STYLE_ID = "dark-connect-modal-style";
 const MODAL_STYLE_URL = chrome.runtime.getURL("styles/modal.css");
 
+function setStylesheet(id, url, enabled) {
+  const existingLink = document.getElementById(id);
+  if (!enabled) {
+    existingLink?.remove();
+    return;
+  }
+  if (existingLink) return;
+
+  const link = document.createElement("link");
+  link.id = id;
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  link.href = url;
+  document.head.appendChild(link);
+}
+
 function updateTheme(themeSetting) {
-  const existingLink = document.getElementById(MAIN_STYLE_ID);
-
   let userPrefersDark = true;
-
   if (themeSetting === "light") {
     userPrefersDark = false;
   } else if (themeSetting === "auto") {
     userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
-
-  if (userPrefersDark) {
-    if (!existingLink) {
-      const link = document.createElement("link");
-      link.id = MAIN_STYLE_ID;
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = MAIN_STYLE_URL;
-      document.head.appendChild(link);
-    }
-  } else {
-    if (existingLink) {
-      existingLink.remove();
-    }
-  }
+  setStylesheet(MAIN_STYLE_ID, MAIN_STYLE_URL, userPrefersDark);
 }
 
 function toggleModalCSS(enable) {
-  const existingLink = document.getElementById(MODAL_STYLE_ID);
-  if (enable) {
-    if (!existingLink) {
-      const link = document.createElement("link");
-      link.id = MODAL_STYLE_ID;
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = MODAL_STYLE_URL;
-      document.head.appendChild(link);
-    }
-  } else {
-    if (existingLink) {
-      existingLink.remove();
-    }
-  }
+  setStylesheet(MODAL_STYLE_ID, MODAL_STYLE_URL, enable);
 }
 
 function showWhatsNewModal(version) {
