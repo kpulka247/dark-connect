@@ -73,10 +73,9 @@ jobs:
 
       - name: Publish to Chrome Web Store
         run: |
-          pnpm dlx chrome-webstore-upload-cli@4 upload \
+          pnpm dlx chrome-webstore-upload-cli@4 \
             --source dist/darkconnect-${{ needs.release.outputs.new_release_version }}-chrome.zip \
-            --extension-id $CHROME_EXTENSION_ID \
-            --auto-publish
+            --extension-id $CHROME_EXTENSION_ID
         env:
           CHROME_EXTENSION_ID: ${{ secrets.CHROME_EXTENSION_ID }}
           PUBLISHER_ID: ${{ secrets.CHROME_PUBLISHER_ID }}
