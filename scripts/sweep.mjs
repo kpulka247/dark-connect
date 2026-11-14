@@ -74,11 +74,21 @@ const isCloudflareCheck = (page) =>
 // Scrolls to the bottom so that lazily loaded cards and charts render.
 async function scrollThrough(page) {
   await page.evaluate(async () => {
-    for (let y = 0; y < document.body.scrollHeight; y += innerHeight / 2) {
-      scrollTo(0, y);
-      await new Promise((resolve) => setTimeout(resolve, 150));
+    const scrollers = [
+      document.scrollingElement,
+      ...[...document.querySelectorAll("*")].filter(
+        (element) =>
+          element.scrollHeight > element.clientHeight + 50 &&
+          /auto|scroll/.test(getComputedStyle(element).overflowY),
+      ),
+    ];
+    for (const scroller of scrollers) {
+      for (let y = 0; y < scroller.scrollHeight; y += innerHeight / 2) {
+        scroller.scrollTop = y;
+        await new Promise((resolve) => setTimeout(resolve, 150));
+      }
+      scroller.scrollTop = 0;
     }
-    scrollTo(0, 0);
   });
 }
 
