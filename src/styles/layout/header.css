@@ -48,7 +48,6 @@ header {
 
 /* Header-like elements in specific pages */
 div[class*="DailySummaryPageHeader_staticHeaderContainer_"],
-div[class*="TrainingPlanHeader_container_"],
 div[class*="HealthDetailsPageHeader_pageHeader_"],
 div[class*="GroupPageHeader_groupMetadata_"] {
   border-color: var(--border-default) !important;
@@ -79,16 +78,6 @@ menu[class*="UserOptions_userOptionsMenu_"] li a {
 /* Daily Summary Header (Calendar Link) */
 [class*="DailySummaryPageHeader_calendar_"] h3 {
   color: var(--link-color) !important;
-}
-
-/* Training Plan Header Specific Icon Color */
-i[class*="TrainingPlanHeader_selection_"] {
-  color: var(--color-gray-dark) !important;
-}
-
-/* Training Plan Title (often in header context) */
-div[class*="TrainingPlanTitle_title_"] {
-  color: var(--text-primary) !important;
 }
 
 /* Device Selection */

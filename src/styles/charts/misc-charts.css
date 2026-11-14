@@ -38,10 +38,6 @@ div[class*="PulseOxGauge_donutCenter_"] {
   background-color: var(--background-primary) !important;
 }
 
-div[class*="SleepGauge_donutCenter_"] {
-  background-color: var(--color-transparent);
-}
-
 div[class*="IntensityMinutesGauge_imValue_"] {
   color: var(--text-primary) !important;
 }
@@ -55,21 +51,6 @@ div[class*="BodyBatteryGauge_gaugeCenter_"] {
   color: var(--text-primary) !important;
 }
 
-div[class*="TEGaugeChart_teScore_"] {
-  color: var(--text-primary) !important;
-}
-
-/* Golf Gauge Approach */
-span:has(div[class*="GolfStatsTabApproach_gaugeContainer_"]) {
-  color: var(--text-primary) !important;
-}
-
-div[class*="GolfStatsTabApproach_noData_"],
-div[class*="GolfStatsTabApproach_candyCane_"] {
-  border-color: var(--color-white) !important;
-  color: var(--text-secondary) !important;
-}
-
 /* Chart Text / Labels */
 div[style*="color: rgb(199, 199, 199);"] {
   /* Generic light grey text */
@@ -78,10 +59,6 @@ div[style*="color: rgb(199, 199, 199);"] {
 }
 
 /* Specific Chart Elements */
-div[class*="AcuteTrainingLoadChart_loadRatio_"] {
-  /* Acute Load text */
-  color: var(--text-primary) !important;
-}
 
 div[class*="SharedModalStyles_acuteTextColor_"] {
   /* Acute Load text (Shared Modal) */

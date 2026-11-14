@@ -27,19 +27,9 @@
 .page.badges .user-card .avatar {
   /* Avatar styling */
   background: var(--background-primary) !important;
-  box-shadow: 0 0 0 4px var(--color-gray-dark),
+  box-shadow:
+    0 0 0 4px var(--color-gray-dark),
     0 0 0 5px var(--color-gray-light) !important;
-}
-
-/* Badge Challenge Styles */
-[class*="challengesFeature_badgeChallengeRules_"],
-[class*="challengesFeature_rewardRule_"] {
-  color: var(--text-primary) !important;
-}
-
-[class*="BadgeChallenges2_buttonsAndList_"],
-[class*="BadgeChallengeCard2_badgeChallengeContainer_"] {
-  border-color: var(--border-default) !important;
 }
 
 /* Badge Details */

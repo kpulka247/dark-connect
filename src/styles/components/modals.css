@@ -13,28 +13,15 @@
   background-color: var(--background-soft) !important;
 }
 
-/* Modal specific content backgrounds */
-div[id="activityPhotosPlaceholder"] .modal {
-  /* Photo modal */
-  background-color: var(--color-black) !important;
-}
-
 /* Specific Modal Text */
-h6[class*="HomeSettingsModal_"],
-p[class*="HomeSettingsModal_"],
-p[class*="SleepCoachFactorModal_feedbackString_"],
 div[class*="VO2MaxModal_infoContainer_"],
 [class*="SharedModalStyles_chartContainer_"] span[class*="avgValue"],
 div[class*="SharedModalStyles_value_"],
 div[class*="SharedModalStyles_infoContainer_"] div,
-div[class*="HowItWorksModal_title_"],
-div[class*="HowItWorksModal_content_"],
 div[class*="FitnessAgeFactorModal_vigorousSubtitle_"],
 div[class*="FitnessAgeFactorModal_recommendationTitle_"],
 div[class*="FitnessAgeFactorModal_secondaryTitle_"],
 div[class*="BodyBatteryHelpModal_modalH"] h4,
-h4[class*="RealTimeStaminaModal_staminaModalHeader_"],
-p[class*="RealTimeStaminaModal_runRideStaminaContext_"],
 div[class*="HRVHelpModal_helpContent_"],
 div[class*="HRVStatusCard_helpContent_"],
 [class*="HrvStatusChartAndStats_statValue_"],
@@ -43,20 +30,13 @@ p[class*="HealthSnapshotHelpModal_factorDescription_"],
 p[class*="HealthSnapshotHelpModal_detailsSubtitle_"],
 p[class*="HealthSnapshotHelpModal_detailsParagraph_"],
 div[class*="HealthSnapshotHelpModal_legendItemContent_"],
-div[class*="TrainingEffectModal_modalHeader_"] h4,
 h4[class*="RunningLactateThresholdHelpBody_title_"],
 p[class*="RunningLactateThresholdHelpBody_paragraph_"],
 p[class*="RunningLactateThresholdHelpBody_sectionSummary_"],
 h4[class*="RunningLactateThresholdHelpBody_sectionTitle_"],
 li[class*="RunningLactateThresholdHelpBody_paragraph_"],
 span[class*="BodyBatteryHelpModal_dataLabel_"],
-div[class*="MoveIQModal_moveIqDescription_"],
-p[class*="ConfirmSaveCourseModal_saveCourseTitle_"],
-label[class*="ConfirmSaveCourseModal_courseNameLabel_"],
-div[class*="ConfirmSaveCourseModal_privacyContainer_"] p,
-div[class*="HelpModal_helpContent_"] p,
-div[class*="HeatAltitudeAcclimationModal_value_"],
-p[class*="HeatAltitudeAcclimationModal_detail_"] {
+div[class*="HelpModal_helpContent_"] p {
   color: var(--text-primary) !important;
 }
 
@@ -79,14 +59,8 @@ div[class*="LoadFocusModal_loadFocusChartItem_"]
   stroke: var(--color-white) !important;
 }
 
-table[class*="ActivityClassHelpModal_table_"],
 table[class*="ActivityClassHelpModal_table_"] th,
 table[class*="ActivityClassHelpModal_table_"] td {
-  border-color: var(--border-default) !important;
-}
-
-div[class*="CalendarSyncCompatDialog_device_"],
-div[class*="CalendarSyncCompatDialog_syncTitle_"] {
   border-color: var(--border-default) !important;
 }
 
@@ -110,36 +84,4 @@ div[class*="Dialog_dialogBackdrop_"] {
 [class*="Dialog_dialogFooter_"] {
   background-color: var(--background-secondary) !important;
   border-color: var(--border-default) !important;
-}
-
-/* LiveTrack Modal */
-.modal-curtain {
-  background: var(--background-soft) !important;
-  opacity: 0.8 !important;
-}
-
-#map-settings .modal {
-  /* Specific border/shadow */
-  border-color: var(--border-default) !important;
-  box-shadow: 0 2px 0 1px var(--color-shadow-dark-50) !important;
-}
-
-#map-settings .block:not(:last-child) {
-  /* Border inside settings modal */
-  border-color: var(--border-default) !important;
-}
-
-/* Advanced Reporting Modal */
-[class*="ExpandedCardModal_titleRow_"],
-[class*="ChartFilterModal_sectionLabel_"] {
-  color: var(--text-primary) !important;
-}
-
-/* Nearby Golf Courses Modal */
-[class*="NearbyGolfCoursesModal_courseListItem_"] {
-  border-color: var(--border-default) !important;
-}
-
-[class*="NearbyGolfCoursesModal_courseListItem_"]:hover {
-  background-color: var(--background-secondary) !important;
 }

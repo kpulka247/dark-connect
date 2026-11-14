@@ -14,10 +14,6 @@
 
 **Steps to test:**
 
-1.
-2.
-3.
-
 <!-- To check a box below, replace [ ] with [x]. -->
 
 - [ ] Checked in **Google Chrome**
@@ -30,4 +26,5 @@
 
 - [ ] I have read the [CONTRIBUTING.md](./CONTRIBUTING.md).
 - [ ] The **title of this Pull Request** follows Conventional Commits (e.g. `fix: update button color`, `feat: add theme switcher`).
+- [ ] `pnpm lint`, `pnpm test` and `pnpm test:e2e` pass.
 - [ ] I have run Prettier to format my code (`pnpm dev` or format on save).

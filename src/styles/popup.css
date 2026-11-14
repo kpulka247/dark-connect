@@ -1,134 +1,283 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
-  margin: 0;
-  padding: 15px;
-  width: 320px;
-  background-color: #252525;
-  color: #ffffff;
-  font-size: 14px;
+:root {
+  --bg: #1a1a1a;
+  --surface: #252525;
+  --control: #333333;
+  --line: #333333;
+  --text: #ffffff;
+  --muted: #9e9e9e;
+  --blue: #1976d2;
+  --blue-hover: #1565c0;
+  --coffee: #f98925;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font:
+    14px/1.4 -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 header {
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #555555;
-}
-
-main p {
-  margin: 0;
-}
-
-main p.kofi {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  gap: 12px;
+  padding: 16px 16px 4px;
 }
 
 .logo {
   width: 32px;
   height: 32px;
-  margin-right: 10px;
+  border-radius: 8px;
 }
 
 h1 {
-  font-size: 18px;
   margin: 0;
-  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
 }
 
-h2 {
-  font-size: 16px;
-  color: #ffffff;
-  margin: 10px 0;
-}
-
-p,
-ul {
-  margin: 10px;
-}
-
-ul {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-li {
-  margin-bottom: 4px;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background-color: #555555;
-  margin: 20px 0;
-}
-
-footer {
-  padding-top: 10px;
-  margin-top: 10px;
-  border-top: 1px solid #555555;
-  text-align: center;
+.tagline {
+  margin: 1px 0 0;
   font-size: 12px;
+  color: var(--muted);
 }
 
-footer a {
-  color: #6c6c6c;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.settings-box {
-  margin-bottom: 20px;
-}
-
-.theme-switch-wrapper {
+main {
   display: flex;
-  background: #333;
-  border-radius: 8px;
-  padding: 4px;
-  margin: 10px;
-  border: 1px solid #555;
-  gap: 4px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 16px;
 }
 
-.theme-switch-wrapper input[type="radio"] {
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.hint,
+.status {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.status:empty {
   display: none;
 }
 
-.theme-switch-wrapper label {
-  flex: 1;
-  padding: 8px 0;
-  cursor: pointer;
-  text-align: center;
+.segmented {
+  display: flex;
+  padding: 3px;
+  gap: 2px;
+  border-radius: 9px;
+  background: var(--bg);
+}
+
+.segmented input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.segmented label {
+  padding: 4px 10px;
   border-radius: 6px;
-  color: #aaa;
-  font-size: 13px;
-  transition: all 0.2s ease;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
-.theme-switch-wrapper input[type="radio"]:checked + label {
-  background-color: #1976d2;
+.segmented label:hover {
+  color: var(--text);
+}
+
+.segmented input:checked + label {
+  background: var(--blue);
   color: #fff;
-  font-weight: bold;
 }
 
-.theme-switch-wrapper label:hover {
-  background-color: #444;
+.segmented input:focus-visible + label {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.primary {
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--blue);
   color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.theme-switch-wrapper input[type="radio"]:checked + label:hover {
-  background-color: #1976d2;
+.primary:hover {
+  background: var(--blue-hover);
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.primary:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.secondary-link {
+  align-self: center;
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.secondary-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 16px 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+.coffee {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 11px 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.coffee:hover {
+  color: var(--text);
+  border-color: var(--coffee);
+}
+
+.coffee-cup {
+  flex-shrink: 0;
+  width: 15px;
+  height: 13px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  overflow: visible;
+  transition: color 0.2s ease;
+}
+
+.coffee:hover .coffee-cup {
+  color: var(--coffee);
+}
+
+.coffee-steam {
+  animation: steam 1.6s ease-out 2;
+}
+
+.coffee-steam + .coffee-steam {
+  animation-delay: 0.5s;
+}
+
+.coffee:hover .coffee-steam {
+  animation-name: steam-loop;
+  animation-iteration-count: infinite;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes steam-loop {
+  0% {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coffee-steam,
+  .coffee:hover .coffee-steam {
+    animation: none;
+  }
 }

@@ -70,24 +70,3 @@ input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="time"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
-
-/* Challenge Duration Pickers */
-div[class*="Step3Duration_datepickersContainer_"] {
-  background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-  color: var(--text-primary) !important;
-}
-
-div[class*="Step3Duration_datepickers_"] {
-  color: var(--text-primary) !important;
-}
-
-div[class*="Step3Duration_monthPickerTitle_"] {
-  color: var(--text-primary) !important;
-}
-
-/* Date Range Picker (Adv Reporting) */
-div[class*="DateRangePickerDropdown_dropdownContent_"] {
-  background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}

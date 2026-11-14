@@ -3,11 +3,6 @@ hr {
   border-color: var(--border-default) !important;
 }
 
-body {
-  color: var(--text-primary) !important;
-  background-color: var(--background-deep) !important;
-}
-
 /* Very generic selectors */
 ul > li > a > span[data-value] {
   color: var(--color-gray-medium);
@@ -21,13 +16,6 @@ p,
 [class*="DataBlock_dataField_"],
 [class*="Accordion_detailsContainer_"] {
   color: var(--text-primary);
-}
-
-/* Default link color for map attributions (overridden from general 'a' rule) */
-.gm-style .gm-style-cc a,
-.gm-style .gm-style-cc button,
-.gm-style .gm-style-cc span {
-  color: var(--color-black) !important;
 }
 
 /* Ensure header/nav bottom links inherit color correctly if needed */
@@ -49,5 +37,6 @@ h3.data-bit a,
 
 /* Generic body color */
 body {
+  background-color: var(--background-deep) !important;
   color: var(--text-primary) !important;
 }

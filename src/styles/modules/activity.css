@@ -298,23 +298,6 @@ button[class*="ActivityDetailsHeaderDropDown_menuItem_"],
   border-color: var(--border-default);
 }
 
-div[class*="CommentLikeSection_likeCommentContainer_"] {
-  border-color: var(--border-default) !important;
-}
-
-div[class*="CommentLikeSection_profileImage_"],
-img[class*="CommentLikeSection_profileImage_"] {
-  border-color: var(--border-default) !important;
-}
-
-div[class*="CommentLikeSection_divider_"] {
-  background: var(--background-light) !important;
-}
-
-div[class*="CommentLikeSection_socialButtonWrapper_"]:hover {
-  background-color: var(--background-soft) !important;
-}
-
 div[class*="CommentInput_textArea_"] {
   /* Input background/text */
   background: var(--background-medium) !important;
@@ -343,19 +326,8 @@ div[class*="CommentItem_commentBlock_"]:hover {
 }
 
 /* Activity Gear */
-ul[class*="ActivityGearStatusView_gearList_"] li:hover {
-  background-color: var(--background-secondary) !important;
-}
 
 ul[class*="ActivityGearEditModal_gearList_"] li:hover {
-  background-color: var(--background-secondary) !important;
-}
-
-div[class*="ActivityGearList_gearImages_"] i {
-  /* Gear icon styling */
-  box-shadow:
-    0px 0px 0px 3px var(--color-gray-dark),
-    0px 0px 0px 4px var(--color-gray-light) !important;
   background-color: var(--background-secondary) !important;
 }
 

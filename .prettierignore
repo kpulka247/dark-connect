@@ -1,0 +1,5 @@
+CHANGELOG.md
+pnpm-lock.yaml
+dist/
+# Rewritten by scripts/update-manifest-version.js on every release.
+public/manifest.*.json

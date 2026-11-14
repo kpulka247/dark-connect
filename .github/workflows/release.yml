@@ -19,7 +19,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 11
           run_install: false
 
       - name: Install Node.js
@@ -30,6 +30,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Unit tests
+        run: pnpm test
 
       - name: Create Release and Build
         id: semantic
@@ -60,7 +63,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 11
           run_install: false
 
       - name: Install Node.js
@@ -70,12 +73,13 @@ jobs:
 
       - name: Publish to Chrome Web Store
         run: |
-          pnpm dlx chrome-webstore-upload-cli upload \
+          pnpm dlx chrome-webstore-upload-cli@4 upload \
             --source dist/darkconnect-${{ needs.release.outputs.new_release_version }}-chrome.zip \
             --extension-id $CHROME_EXTENSION_ID \
             --auto-publish
         env:
           CHROME_EXTENSION_ID: ${{ secrets.CHROME_EXTENSION_ID }}
+          PUBLISHER_ID: ${{ secrets.CHROME_PUBLISHER_ID }}
           CLIENT_ID: ${{ secrets.CHROME_CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CHROME_CLIENT_SECRET }}
           REFRESH_TOKEN: ${{ secrets.CHROME_REFRESH_TOKEN }}
@@ -96,7 +100,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 11
           run_install: false
 
       - name: Install Node.js

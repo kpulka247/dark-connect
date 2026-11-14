@@ -1,0 +1,50 @@
+name: Something is still light or unreadable
+description: A part of a Garmin page that the dark theme missed.
+labels: ["missed element"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The fastest way to fill this in is the **Scan this page** button in the Dark Connect popup. It fills in the fields below for the page you are on.
+
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The Garmin page address. IDs and user names can be left out.
+      placeholder: connect.garmin.com/modern/activity/:id
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What looks wrong
+      description: Add a screenshot if you can. You can paste it here.
+      placeholder: The food list in the nutrition log has a white background.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: Does the page need something special?
+      description: Some Garmin pages only appear with a subscription or a particular device.
+      multiple: true
+      options:
+        - No, every account has it
+        - Garmin Connect+ subscription
+        - A particular device (please name it below)
+        - I don't know
+
+  - type: textarea
+    id: scan
+    attributes:
+      label: Scan results
+      description: Filled in by the popup scan. Each row is an element the dark theme missed and the selector that matches it.
+
+  - type: input
+    id: version
+    attributes:
+      label: Dark Connect version and browser
+      placeholder: 2.6.4 on Chrome

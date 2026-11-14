@@ -1,32 +1,25 @@
-const fs = require("fs-extra");
-const path = require("path");
+// Sets the version in both browser manifests. semantic-release runs this
+// before the build: node scripts/update-manifest-version.js <version>
+import { readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const newVersion = process.argv[2];
-if (!newVersion) {
-  console.error(
-    "❌ No version provided! Usage: node update-manifest-version.js <version>"
-  );
+const publicDir = path.join(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "..",
+  "public",
+);
+
+const version = process.argv[2];
+if (!version) {
+  console.error("Usage: node scripts/update-manifest-version.js <version>");
   process.exit(1);
 }
 
-const manifestFiles = [
-  path.join(__dirname, "..", "public", "manifest.chrome.json"),
-  path.join(__dirname, "..", "public", "manifest.firefox.json"),
-];
-
-console.log(`🔧 Updating manifests to version: ${newVersion}`);
-
-async function updateManifests() {
-  for (const filePath of manifestFiles) {
-    try {
-      const manifest = await fs.readJson(filePath);
-      manifest.version = newVersion;
-      await fs.writeJson(filePath, manifest, { spaces: 2 });
-      console.log(`✅ Updated: ${path.basename(filePath)}`);
-    } catch (err) {
-      console.error(`❌ Error updating ${filePath}:`, err);
-    }
-  }
+for (const browser of ["chrome", "firefox"]) {
+  const file = path.join(publicDir, `manifest.${browser}.json`);
+  const manifest = JSON.parse(readFileSync(file, "utf8"));
+  manifest.version = version;
+  writeFileSync(file, `${JSON.stringify(manifest, null, 2)}\n`);
+  console.log(`Updated ${path.basename(file)} to ${version}`);
 }
-
-updateManifests();

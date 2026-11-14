@@ -2,11 +2,6 @@ footer {
   background: var(--background-primary);
 }
 
-/* Specific page footer background */
-div[class*="SessionEndedPage_sessionEndedPage__"] footer {
-  background: var(--background-deep);
-}
-
 /* Widget Footer */
 .widget-footer {
   border-color: var(--border-default) !important;
@@ -26,19 +21,7 @@ div[class*="SessionEndedPage_sessionEndedPage__"] footer {
   color: var(--text-primary);
 }
 
-[class*="Dialog_dialogFooter_"] {
-  /* From content.js */
-  background-color: var(--background-secondary) !important;
-  border-color: var(--border-default) !important;
-}
-
-/* Map card footer */
-.map-card-footer {
-  border-color: var(--border-default) !important;
-}
-
 /* Specific component footers needing border */
-div[class*="CourseListItem_detailsFooter_"],
 div[class*="SecondaryStatCard_secondaryStatFooter_"] {
   border-color: var(--border-default) !important;
 }

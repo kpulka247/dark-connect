@@ -1,22 +1,30 @@
-const path = require("path");
-const CopyPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const ZipPlugin = require("zip-webpack-plugin");
-const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
+import { readFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import CopyPlugin from "copy-webpack-plugin";
+import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import RemoveEmptyScriptsPlugin from "webpack-remove-empty-scripts";
+import ZipPlugin from "zip-webpack-plugin";
+
+const root = path.dirname(fileURLToPath(import.meta.url));
+const { version } = JSON.parse(
+  readFileSync(path.join(root, "package.json"), "utf8"),
+);
 
 const createConfig = (browser, mode) => {
   const isProduction = mode === "production";
-  const distBaseDir = path.resolve(__dirname, "dist");
+  const distBaseDir = path.resolve(root, "dist");
   const browserOutputDir = path.resolve(distBaseDir, `darkconnect-${browser}`);
 
   return {
-    mode: mode,
+    name: browser,
+    mode,
     devtool: isProduction ? false : "cheap-module-source-map",
     entry: {
-      main_styles: "./src/styles/index.css",
-      popup_styles: "./src/styles/popup.css",
-      modal_styles: "./src/styles/modal.css",
+      "styles/main": "./src/styles/index.css",
+      "styles/popup": "./src/styles/popup.css",
+      "styles/modal": "./src/styles/modal.css",
       background: "./src/background.js",
       popup: "./src/popup/popup.js",
       content: "./src/content.js",
@@ -35,44 +43,23 @@ const createConfig = (browser, mode) => {
       ],
     },
     plugins: [
-      new MiniCssExtractPlugin({
-        filename: (pathData) => {
-          if (pathData.chunk.name === "main_styles") {
-            return "styles/main.css";
-          }
-          if (pathData.chunk.name === "popup_styles") {
-            return "styles/popup.css";
-          }
-          if (pathData.chunk.name === "modal_styles") {
-            return "styles/modal.css";
-          }
-          return "styles/[name].css";
-        },
-      }),
+      new MiniCssExtractPlugin({ filename: "[name].css" }),
       new CopyPlugin({
         patterns: [
+          { from: `public/manifest.${browser}.json`, to: "manifest.json" },
           {
-            from: `public/manifest.${browser}.json`,
-            to: "manifest.json",
-          },
-          {
-            from: path.resolve(__dirname, "public/icons"),
+            from: path.resolve(root, "public/icons"),
             to: path.join(browserOutputDir, "icons"),
             noErrorOnMissing: true,
           },
-          {
-            from: "src/popup/popup.html",
-            to: "popup.html",
-          },
+          { from: "src/popup/popup.html", to: "popup.html" },
         ],
       }),
       new RemoveEmptyScriptsPlugin(),
       isProduction &&
         new ZipPlugin({
           path: distBaseDir,
-          filename: `darkconnect-${
-            require("./package.json").version
-          }-${browser}.zip`,
+          filename: `darkconnect-${version}-${browser}.zip`,
         }),
     ].filter(Boolean),
     optimization: {
@@ -82,16 +69,8 @@ const createConfig = (browser, mode) => {
   };
 };
 
-// --- Main export ---
-module.exports = (env, argv) => {
+export default (env, argv) => {
   const mode = argv.mode || "development";
   console.log(`Webpack mode: ${mode}`);
-
-  const chromeConfig = createConfig("chrome", mode);
-  chromeConfig.name = "chrome";
-
-  const firefoxConfig = createConfig("firefox", mode);
-  firefoxConfig.name = "firefox";
-
-  return [chromeConfig, firefoxConfig];
+  return [createConfig("chrome", mode), createConfig("firefox", mode)];
 };

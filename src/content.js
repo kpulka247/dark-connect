@@ -1,4 +1,6 @@
-import { createModalHTML } from "./whatsNew";
+import { anonymizePage } from "./audit/issue.js";
+import { findLightTokens, scanPage } from "./audit/scan.js";
+import { createModal } from "./whatsNew.js";
 
 const MAIN_STYLE_ID = "dark-connect-style";
 const MAIN_STYLE_URL = chrome.runtime.getURL("styles/main.css");
@@ -6,49 +8,34 @@ const MAIN_STYLE_URL = chrome.runtime.getURL("styles/main.css");
 const MODAL_STYLE_ID = "dark-connect-modal-style";
 const MODAL_STYLE_URL = chrome.runtime.getURL("styles/modal.css");
 
+function setStylesheet(id, url, enabled) {
+  const existingLink = document.getElementById(id);
+  if (!enabled) {
+    existingLink?.remove();
+    return;
+  }
+  if (existingLink) return;
+
+  const link = document.createElement("link");
+  link.id = id;
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  link.href = url;
+  document.head.appendChild(link);
+}
+
 function updateTheme(themeSetting) {
-  const existingLink = document.getElementById(MAIN_STYLE_ID);
-
   let userPrefersDark = true;
-
   if (themeSetting === "light") {
     userPrefersDark = false;
   } else if (themeSetting === "auto") {
     userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
-
-  if (userPrefersDark) {
-    if (!existingLink) {
-      const link = document.createElement("link");
-      link.id = MAIN_STYLE_ID;
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = MAIN_STYLE_URL;
-      document.head.appendChild(link);
-    }
-  } else {
-    if (existingLink) {
-      existingLink.remove();
-    }
-  }
+  setStylesheet(MAIN_STYLE_ID, MAIN_STYLE_URL, userPrefersDark);
 }
 
 function toggleModalCSS(enable) {
-  const existingLink = document.getElementById(MODAL_STYLE_ID);
-  if (enable) {
-    if (!existingLink) {
-      const link = document.createElement("link");
-      link.id = MODAL_STYLE_ID;
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = MODAL_STYLE_URL;
-      document.head.appendChild(link);
-    }
-  } else {
-    if (existingLink) {
-      existingLink.remove();
-    }
-  }
+  setStylesheet(MODAL_STYLE_ID, MODAL_STYLE_URL, enable);
 }
 
 function showWhatsNewModal(version) {
@@ -56,10 +43,8 @@ function showWhatsNewModal(version) {
 
   toggleModalCSS(true);
 
-  const modalHTML = createModalHTML(version);
-  document.body.insertAdjacentHTML("beforeend", modalHTML);
-
-  const overlay = document.getElementById("dc-modal-overlay");
+  const overlay = createModal(version);
+  document.body.append(overlay);
 
   requestAnimationFrame(() => {
     overlay.classList.add("dc-visible");
@@ -92,11 +77,11 @@ chrome.storage.local.get(
 
     if (result.showUpdateModal) {
       showWhatsNewModal(
-        result.updateVersion || chrome.runtime.getManifest().version
+        result.updateVersion || chrome.runtime.getManifest().version,
       );
       chrome.storage.local.set({ showUpdateModal: false });
     }
-  }
+  },
 );
 
 chrome.storage.onChanged.addListener((changes, area) => {
@@ -114,3 +99,34 @@ window
       }
     });
   });
+
+function withoutElements(findings) {
+  return findings.map(({ elements, ...finding }) => finding);
+}
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message?.type !== "dark-connect:scan") return;
+
+  if (!document.getElementById(MAIN_STYLE_ID)) {
+    sendResponse({ darkThemeOn: false });
+    return;
+  }
+  sendResponse({
+    darkThemeOn: true,
+    page: anonymizePage(location.href),
+    findings: withoutElements(scanPage()),
+  });
+});
+
+globalThis.darkConnect = {
+  scan() {
+    const findings = scanPage();
+    console.table(withoutElements(findings));
+    return findings;
+  },
+  lightTokens() {
+    const tokens = findLightTokens();
+    console.table(tokens);
+    return tokens;
+  },
+};

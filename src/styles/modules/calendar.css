@@ -30,11 +30,6 @@
   color: var(--text-primary);
 }
 
-.page .calendar-wrapper .calendar-body table {
-  /* Grid background (duplicate, refine) */
-  background: var(--background-light) !important;
-}
-
 .page .calendar-wrapper .calendar-body table td {
   /* Cell background */
   background-color: var(--background-primary) !important;

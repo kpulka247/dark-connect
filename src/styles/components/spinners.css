@@ -34,10 +34,3 @@
   background: var(--spinner-base) !important;
   opacity: 0.35 !important;
 }
-
-/* Specific Preloader (Activity List) */
-.page.activity-list .list-preloader {
-  background: var(--background-soft) !important;
-  opacity: 0.8 !important;
-  /* Consistent with modal backdrop */
-}

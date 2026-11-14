@@ -1,8 +1,6 @@
 /* Basic Dropdown Menu */
 .dropdown-menu,
-.connection-button-dropdown-menu,
 ul[class*="Dropdown_dropdownMenu_"],
-div[class*="ActivityPhotoDropdown_dropdownMenu_"],
 div[class*="FollowerShareProfileDropdown_dropdownMenu_"],
 div[class*="ReportImageDropdown_dropdownMenu_"],
 ul[class*="InlineEditDropdown_dropdownContainer_"],
@@ -59,9 +57,7 @@ div[class*="ExercisePicker_divider_"],
   /* Added for consistency */
 }
 
-[class*="Dropdown_dropdownMenu_"] [class*="Dropdown_divider_"],
-[class*="NewsFeedFilter_feedFilterDetail_"]
-  li[class*="NewsFeedFilter_divider_"] {
+[class*="Dropdown_dropdownMenu_"] [class*="Dropdown_divider_"] {
   background-color: var(--background-light) !important;
 }
 
@@ -71,51 +67,6 @@ button[class*="SelectionDropdown_mapFilterTrigger_"] {
   background: var(--background-primary) !important;
   color: var(--text-primary) !important;
   box-shadow: inset 0 0 0 1px var(--color-gray-light) !important;
-}
-
-.map-filter-trigger,
-.map-filter-detail {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
-
-.map-filter-detail {
-  box-shadow:
-    inset 0 0 0 1px var(--color-shadow-dark-15),
-    0 1px 0 0 var(--color-gray-light) !important;
-}
-
-a[class*="SelectionDropdown_mapFilterTrigger_"],
-a[class*="SelectionDropdown_mapFilterDetail_"] {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
-
-div[class*="NewsFeedFilter_feedFilterTrigger_"],
-div[class*="NewsFeedFilter_feedFilterDetail_"] {
-  background: var(--background-soft) !important;
-  color: var(--text-primary) !important;
-}
-
-a[class*="DropDownComponent_trigger_"] {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
-
-div[class*="DropDownComponent_detail_"] {
-  background-color: var(--background-secondary) !important;
-  color: var(--text-primary) !important;
-  box-shadow: inset 0 0 0 1px var(--color-gray-light) !important;
-}
-
-div[class*="EventSearchFilter_activityListFilters_"] {
-  background: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
-div[class*="FilterCourses_dropdownContainer_"] {
-  background-color: rgb(32, 32, 32, 0.95) !important;
-  border-color: var(--border-default) !important;
 }
 
 /* Chosen Dropdown Styles */
@@ -226,25 +177,12 @@ div[class*="Menu_menuItemsSelected_"]:not(
   border-color: var(--border-default) !important;
 }
 
-[class*="SessionOptions_sessionOptionsContainer_"]
-  [class*="Menu_smallMenu_"]
-  > [class*="Menu_menuItemsSelected_"]:not(:hover) {
-  /* LiveTrack */
-  background-color: var(--background-lighter) !important;
-}
-
 /* Dropdown Arrow Indicator */
 .dropdown-toggle:after {
   border-top-color: var(--color-white) !important;
 }
 
-.caret {
-  /* Table sort uses this too */
-  border-top-color: var(--color-white) !important;
-}
-
 /* Generic Dropdown Text */
-span[class*="CompareFilters_dropdown_"],
 span[class*="Dropdown_dropdownToggle_"] {
   color: var(--text-primary) !important;
 }
@@ -265,29 +203,11 @@ span[class*="Dropdown_dropdownToggle_"] {
 }
 
 [class*="DropdownStyles_dropdown_"],
-[class*="DropdownStyles_selectionDropdown_"],
-[class*="UnifiedDropdown_dropdownContainer_"][class*="UnifiedDropdown_bottomShadow_"] {
+[class*="DropdownStyles_selectionDropdown_"] {
   box-shadow: 0 2px 0 var(--color-gray-light) !important;
 }
 
 div[class*="Dropdown_fullDropdown_"] {
-  border-color: var(--border-default) !important;
-}
-
-/* Unified Dropdown (Advanced Reporting) Specifics */
-[class*="UnifiedDropdown_dropdownContainer_"] {
-  border-color: var(--border-default) !important;
-}
-
-[class*="UnifiedDropdown_numberSelectedDisplay_"] {
-  background-color: var(--background-soft) !important;
-}
-
-/* Item Borders */
-[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_grouped_"]:first-child:not(
-    [class*="UnifiedDropdown_groupHeader_"]
-  ):not([class*="UnifiedDropdown_multiselectCheckboxContainer_"]):not(li),
-li[class*="UnifiedDropdown_dropdownItem_"][class*="UnifiedDropdown_ungrouped_"]:first-child {
   border-color: var(--border-default) !important;
 }
 

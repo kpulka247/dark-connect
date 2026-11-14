@@ -29,14 +29,7 @@ button[style*="background-color: rgb(255, 255, 255);"],
 }
 
 /* Specific button borders */
-.page.activity-detail .activity-charts-container .btn-customize-charts,
-.page.activity-detail .chart-toggle-options button,
-.page.activity-detail .customize-charts-controls .reorder-widgets-set,
-.page.activity-detail .customize-charts-controls .reorder-widgets-cancel,
-button[class*="ExercisePicker_dropdownToggle_"],
-button[class*="NavigateToUserLocationButton_goToUserLocationButton_"],
-button[class*="SearchForUserProvidedLocationData_locationFilterSubmit_"],
-.find-plan-filters .btn-pill {
+button[class*="ExercisePicker_dropdownToggle_"] {
   /* From Plans */
   border-color: var(--border-default) !important;
 }
@@ -127,12 +120,6 @@ div[class*="Button_btn_"][class*="Button_btnSecondary_"],
   color: var(--text-primary) !important;
 }
 
-/* Add Comment Button */
-button[class*="AddComment_container_"],
-button[class*="AddComment_button_"][disabled] {
-  background-color: var(--background-primary) !important;
-}
-
 /* Input Append/Prepend Add-on (acts like part of a button/input group) */
 .input-append .add-on,
 div .add-on,
@@ -166,12 +153,6 @@ div[class*="Components_dataTypeButton_"]:active {
   [class*="WorkoutsPillsFilter_active_"]
 ) {
   border-color: var(--border-default) !important;
-}
-
-div[class*="Chip_dataTypeButton_"] {
-  /* LiveTrack */
-  background-color: var(--color-black) !important;
-  color: var(--text-primary) !important;
 }
 
 /* Chip */
@@ -230,13 +211,10 @@ button[class*="GroupSettings_advanceToggle_"],
 [class*="GroupItem_labelGroupName_"],
 [class*="GroupItem_navigationComponent_"],
 div[class*="LinkButton_link_"],
-div[class*="CompareFilters_linkWrapper_"],
-span[class*="HomeSettings_linkButton_"],
 button[class*="LinkButton_link_"],
 [class*="BPTables_oneWeekLink_"],
 [class*="BPTables_oneMonthLink_"],
 a[class*="Homepage_sectionButton_"],
-div[class*="HomeSettings_linkButton_"],
 div[class*="DayView_dayViewLabel_"],
 [class*="ImportDataPageView_browse_"],
 [class*="StrategiesList_RowAnchor_"],
@@ -278,10 +256,6 @@ button
 }
 
 /* Map Buttons */
-.btn-map-zoom {
-  background-color: var(--background-primary) !important;
-  color: var(--text-primary) !important;
-}
 
 .map-enlarge-btn {
   background: var(--color-overlay-dark-90) !important;
@@ -313,53 +287,6 @@ button[class*="MapBoxComponent_fullscreenButton_"]:only-child {
   background-size: 20px 20px !important;
 }
 
-/* Course specific buttons */
-button[class*="CourseCard_collapseButton_"] {
-  background-color: var(--background-primary) !important;
-  border-color: var(--color-gray-dark) !important;
-}
-
-/* Course map view close button */
-button[class*="ActivityMapView_closeButton_"] {
-  background: var(--background-primary) !important;
-  box-shadow: 0 0 2px var(--color-gray-light) !important;
-}
-
-/* Course select type button */
-button[class*="SelectCourseType_selectCourseTypeButton_"] {
-  background: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
-/* Plan Filter Buttons */
-.find-plan-filters .btn-pill {
-  background-color: var(--background-secondary) !important;
-}
-
-.find-plan-filters .btn-pill.filter-active,
-.find-plan-filters .btn-pill:active {
-  background-color: var(--background-soft) !important;
-  border-color: var(--border-default) !important;
-  /* Applied border here */
-}
-
-/* Chart Result Button (Adv Reporting) */
-button[class*="ChartResult_chartResult_"] {
-  background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
-/* Expandable Menu Toggle Button (Adv Reporting) */
-button[class*="ExpandableMenu_toggleButton_"] {
-  background-color: var(--background-primary) !important;
-  border-color: var(--border-default) !important;
-}
-
-/* Date Range Picker Button (Adv Reporting) */
-button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
-  background-color: var(--background-soft) !important;
-}
-
 /* Search Button hover states */
 [class*="NavigateToUserLocationButton_goToUserLocationButton_"]:not(
     [class*="NavigateToUserLocationButton_loadingStateButton_"]
@@ -368,12 +295,6 @@ button[class*="DateRangePickerDropdown_dateRangePickerButton_"] {
     [class*="SearchForUserProvidedLocationData_loadingStateButton_"]
   ):hover {
   background-color: var(--background-soft) !important;
-}
-
-/* Carousel Control Button */
-[class*="Carousel_controlButton_"] {
-  background-color: var(--background-light) !important;
-  border-color: var(--border-default) !important;
 }
 
 /* Anchored Banner Close Button */
