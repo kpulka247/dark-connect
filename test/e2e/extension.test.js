@@ -151,6 +151,36 @@ test("popup opens a prefilled GitHub issue", async () => {
   assert.doesNotMatch(opened.searchParams.get("scan"), /Oatmeal/);
 });
 
+test("popup shows the version, theme hint and Ko-fi link", async () => {
+  const popup = await context.newPage();
+  await popup.goto(`chrome-extension://${extensionId}/popup.html`);
+  await popup.waitForFunction(
+    () => document.getElementById("theme-hint").textContent !== "",
+  );
+  const version = await worker.evaluate(
+    () => chrome.runtime.getManifest().version,
+  );
+  assert.equal(await popup.textContent("#version"), `v${version}`);
+  assert.equal(
+    await popup.textContent("#theme-hint"),
+    "Garmin Connect is always dark.",
+  );
+  await popup.click('label[for="theme-auto"]');
+  assert.match(await popup.textContent("#theme-hint"), /Follows your device/);
+  assert.equal(
+    await worker.evaluate(
+      async () => (await chrome.storage.local.get("theme")).theme,
+    ),
+    "auto",
+  );
+  assert.equal(
+    await popup.getAttribute("#coffee", "href"),
+    "https://ko-fi.com/Y8Y71ERSZF",
+  );
+  assert.equal(await popup.locator("#coffee .coffee-steam").count(), 2);
+  await popup.close();
+});
+
 test("popup explains when the tab is not a Garmin page", async () => {
   const popup = await context.newPage();
   await popup.goto(`chrome-extension://${extensionId}/popup.html`);
@@ -160,7 +190,7 @@ test("popup explains when the tab is not a Garmin page", async () => {
   );
   assert.match(
     await popup.textContent("#report-status"),
-    /Open a Garmin Connect page first/,
+    /isn't a Garmin Connect page/,
   );
   await popup.close();
 });
@@ -172,9 +202,9 @@ test("shows the what's new modal once after an update", async () => {
   const page = await openGarminPage();
   await page.waitForSelector("#dc-modal-overlay.dc-visible");
 
-  assert.equal(await page.textContent(".dc-version"), "v9.9.9");
+  assert.equal(await page.textContent(".dc-version"), "Dark Connect v9.9.9");
   const firstNote = RELEASE_NOTES[0];
-  const titles = await page.$$eval(".dc-modal-body > ul > li > b", (els) =>
+  const titles = await page.$$eval(".dc-section h3", (els) =>
     els.map((el) => el.textContent),
   );
   assert.deepEqual(
@@ -182,12 +212,21 @@ test("shows the what's new modal once after an update", async () => {
     RELEASE_NOTES.map((note) => note.title),
   );
   if (firstNote.items) {
-    const items = await page.$$eval(
-      ".dc-modal-body > ul > li:first-child li",
-      (els) => els.map((el) => el.textContent),
+    const items = await page.$$eval(".dc-section:first-child li", (els) =>
+      els.map((el) => el.textContent),
     );
     assert.deepEqual(items, firstNote.items);
   }
+
+  assert.equal(
+    await page.getAttribute(".dc-coffee", "href"),
+    "https://ko-fi.com/Y8Y71ERSZF",
+  );
+  const logoWidth = await page.$eval(".dc-logo", async (img) => {
+    await img.decode().catch(() => {});
+    return img.naturalWidth;
+  });
+  assert.ok(logoWidth > 0, "the logo did not load on the Garmin page");
 
   // The release notes scroll inside the modal, so the buttons stay on screen
   // in a short window.

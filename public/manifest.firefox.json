@@ -36,7 +36,8 @@
     {
       "resources": [
         "styles/main.css",
-        "styles/modal.css"
+        "styles/modal.css",
+        "icons/icon48.png"
       ],
       "matches": [
         "*://*.garmin.com/*"

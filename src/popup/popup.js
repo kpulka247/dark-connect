@@ -1,4 +1,11 @@
 import { buildIssueUrl } from "../audit/issue.js";
+import { KOFI_URL, createCoffeeIcon } from "../ui/coffee.js";
+
+const THEME_HINTS = {
+  auto: "Follows your device: dark when your system is dark.",
+  dark: "Garmin Connect is always dark.",
+  light: "Dark Connect is paused. Garmin Connect looks as usual.",
+};
 
 function browserName() {
   const agent = navigator.userAgent;
@@ -35,11 +42,11 @@ async function reportPage(button, status) {
 
   if (!result) {
     status.textContent =
-      "Open a Garmin Connect page first, or reload the page if it was open before the extension updated.";
+      "This isn't a Garmin Connect page. Open the page with the problem and try again. If it is open, reload it first.";
     return;
   }
   if (!result.darkThemeOn) {
-    status.textContent = "Switch the theme to Dark, then scan again.";
+    status.textContent = "Choose Dark above, then scan again.";
     return;
   }
 
@@ -56,22 +63,32 @@ async function reportPage(button, status) {
 document.addEventListener("DOMContentLoaded", () => {
   const radios = document.querySelectorAll('input[name="theme"]');
 
+  const hint = document.getElementById("theme-hint");
+  const showTheme = (theme) => {
+    const radio = document.getElementById(`theme-${theme}`);
+    if (radio) radio.checked = true;
+    hint.textContent = THEME_HINTS[theme] ?? "";
+  };
+
   chrome.storage.local.get(["theme"], (result) => {
-    const currentTheme = result.theme || "dark";
-    const radioToCheck = document.getElementById(`theme-${currentTheme}`);
-    if (radioToCheck) {
-      radioToCheck.checked = true;
-    }
+    showTheme(result.theme || "dark");
   });
 
   radios.forEach((radio) => {
     radio.addEventListener("change", (event) => {
       if (event.target.checked) {
-        const selectedTheme = event.target.value;
-        chrome.storage.local.set({ theme: selectedTheme });
+        showTheme(event.target.value);
+        chrome.storage.local.set({ theme: event.target.value });
       }
     });
   });
+
+  document.getElementById("version").textContent =
+    `v${chrome.runtime.getManifest().version}`;
+
+  const coffee = document.getElementById("coffee");
+  coffee.href = KOFI_URL;
+  coffee.prepend(createCoffeeIcon());
 
   const button = document.getElementById("report-page");
   const status = document.getElementById("report-status");

@@ -3,78 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dark Connect Info</title>
-    <link rel="stylesheet" href="../styles/popup.css" />
+    <title>Dark Connect</title>
+    <link rel="stylesheet" href="styles/popup.css" />
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <img src="../icons/icon48.png" alt="Dark Connect Logo" class="logo" />
+    <header>
+      <img src="icons/icon48.png" alt="" class="logo" />
+      <div>
         <h1>Dark Connect</h1>
-      </header>
-      <main>
-        <div class="settings-box">
-          <div class="theme-switch-wrapper">
+        <p class="tagline">Dark mode for Garmin Connect</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="card-head">
+          <span class="card-title">Theme</span>
+          <div class="segmented" role="radiogroup" aria-label="Theme">
             <input type="radio" id="theme-auto" name="theme" value="auto" />
             <label for="theme-auto">Auto</label>
-
             <input type="radio" id="theme-dark" name="theme" value="dark" />
             <label for="theme-dark">Dark</label>
-
             <input type="radio" id="theme-light" name="theme" value="light" />
             <label for="theme-light">Light</label>
           </div>
         </div>
+        <p class="hint" id="theme-hint"></p>
+      </section>
 
-        <h2>Settings</h2>
-        <ul>
-          <li><b>Auto:</b> Matches your browser theme.</li>
-          <li><b>Dark / Light:</b> Forces selected mode.</li>
-        </ul>
-
-        <hr />
-
-        <h2>Something still light?</h2>
-        <p>
-          Scan the open Garmin page for parts the dark theme missed. The results
-          open as a GitHub issue that you can review before you submit it.
+      <section class="card">
+        <span class="card-title">Something still white?</span>
+        <p class="hint">
+          Open the Garmin page where you see it, then scan. You can check the
+          report on GitHub before you send it.
         </p>
-        <div class="report">
-          <button type="button" id="report-page">Scan this page</button>
-          <p id="report-status" role="status"></p>
-        </div>
+        <button type="button" class="primary" id="report-page">
+          Scan this page
+        </button>
+        <p class="status" id="report-status" role="status"></p>
+        <a
+          class="secondary-link"
+          href="https://github.com/kpulka247/dark-connect/issues/new/choose"
+          target="_blank"
+          >Or describe the problem yourself</a
+        >
+      </section>
+    </main>
 
-        <hr />
-
-        <h2>Support the Developer</h2>
-        <p>
-          If you find Dark Connect useful, please consider supporting its
-          development. Your contribution helps keep the extension updated and
-          ad-free!
-        </p>
-        <p class="kofi">
-          <a href="https://ko-fi.com/Y8Y71ERSZF" target="_blank">
-            <img
-              height="36"
-              style="border: 0px; height: 36px"
-              src="https://storage.ko-fi.com/cdn/kofi1.png?v=6"
-              border="0"
-              alt="Buy Me a Coffee at ko-fi.com"
-            />
-          </a>
-        </p>
-      </main>
-      <footer>
-        <p>
-          <a
-            href="https://github.com/kpulka247/dark-connect/issues"
-            target="_blank"
-            >Report an issue</a
-          >
-        </p>
-      </footer>
-    </div>
+    <footer>
+      <div class="footer-links">
+        <span id="version"></span>
+        <a
+          href="https://github.com/kpulka247/dark-connect/releases"
+          target="_blank"
+          >What's new</a
+        >
+      </div>
+      <a class="coffee" id="coffee" target="_blank">Buy me a coffee</a>
+    </footer>
     <script src="popup.js"></script>
   </body>
 </html>

@@ -1,33 +1,37 @@
+import { KOFI_URL, createCoffeeIcon } from "./ui/coffee.js";
+
+// Shown once after each update. Write for people who just use Garmin Connect.
 export const RELEASE_NOTES = [
   {
-    title: "🐛 Bug Fixes",
+    title: "New",
     items: [
-      "Fixed event name text color on event details pages.",
-      "Fixed coach plan timeline cards that were missing dark mode styling.",
-      "Fixed gear default activities selection readability.",
-      "Fixed strength training exercise picker readability.",
-      "Fixed course planning controls, legends, point cards and sheet styling.",
-      "Fixed report table date links color.",
-      "Fixed inline edit hover color and activity edit icon color.",
-      "Fixed active photo carousel indicator color.",
-      "Fixed segments map/list toggle background color.",
-      "Fixed follower share profile dropdown styling.",
-      "Fixed shared plan review card section text color.",
+      "Scan this page: if something on Garmin Connect is still white or hard to read, the extension can now find it for you and prepare a report.",
+      "A cleaner, more compact menu and update window.",
     ],
   },
   {
-    title: "🌟 Join Our Community!",
-    description:
-      "We welcome contributors to help us fix bugs and build features. Found a bug or have an idea? Open an issue! If you want to contribute code, please read our CONTRIBUTING guidelines on GitHub to learn how to get started. ❤️",
+    title: "Fixed",
+    items: [
+      "The buttons in this window no longer disappear below the screen on smaller displays.",
+      "Firefox now shows that Dark Connect collects no data.",
+      "Cleanup behind the scenes so fixes reach you faster. The colors you see stay the same.",
+    ],
   },
 ];
 
+export const TIP =
+  "Spot something still white? Open that page, click the Dark Connect icon in your browser toolbar and press Scan this page.";
+
 export const CHANGELOG_URL =
-  "https://github.com/kpulka247/dark-connect/blob/main/CHANGELOG.md";
+  "https://github.com/kpulka247/dark-connect/releases";
 
 function element(tag, props = {}, ...children) {
   const node = document.createElement(tag);
-  Object.assign(node, props);
+  for (const [key, value] of Object.entries(props)) {
+    if (key === "role" || key.startsWith("aria-"))
+      node.setAttribute(key, value);
+    else node[key] = value;
+  }
   node.append(...children);
   return node;
 }
@@ -35,57 +39,79 @@ function element(tag, props = {}, ...children) {
 // Built with DOM calls instead of an HTML string, so release notes are always
 // inserted as text.
 export function createModal(version) {
-  const notes = RELEASE_NOTES.map((note) =>
+  const sections = RELEASE_NOTES.map((note) =>
     element(
-      "li",
-      {},
-      element("b", {}, note.title),
-      note.items
-        ? element(
-            "ul",
-            {},
-            ...note.items.map((item) => element("li", {}, item)),
-          )
-        : element("p", {}, note.description),
+      "section",
+      { className: "dc-section" },
+      element("h3", {}, note.title),
+      element("ul", {}, ...note.items.map((item) => element("li", {}, item))),
     ),
   );
+
+  const coffee = element(
+    "a",
+    { className: "dc-coffee", href: KOFI_URL, target: "_blank" },
+    "Buy me a coffee",
+  );
+  coffee.prepend(createCoffeeIcon());
+
+  const logo = element("img", {
+    className: "dc-logo",
+    src: chrome.runtime.getURL("icons/icon48.png"),
+    alt: "",
+  });
 
   return element(
     "div",
     { id: "dc-modal-overlay" },
     element(
       "div",
-      { id: "dc-modal-content" },
+      {
+        id: "dc-modal-content",
+        role: "dialog",
+        "aria-modal": "true",
+        "aria-label": "What's new in Dark Connect",
+      },
       element(
         "div",
         { className: "dc-modal-header" },
+        logo,
         element(
-          "h2",
-          {},
-          "Dark Connect ",
-          element("span", { className: "dc-version" }, `v${version}`),
+          "div",
+          { className: "dc-heading" },
+          element("h2", {}, "What's new"),
+          element(
+            "span",
+            { className: "dc-version" },
+            `Dark Connect v${version}`,
+          ),
         ),
-        element("button", { id: "dc-modal-close" }, "✕"),
+        element("button", { id: "dc-modal-close", "aria-label": "Close" }, "×"),
       ),
       element(
         "div",
         { className: "dc-modal-body" },
-        element("h3", {}, "✨ What's New?"),
-        element("ul", {}, ...notes),
+        ...sections,
+        element("p", { className: "dc-tip" }, TIP),
       ),
       element(
         "div",
         { className: "dc-modal-footer" },
+        coffee,
         element(
-          "a",
-          {
-            href: CHANGELOG_URL,
-            target: "_blank",
-            className: "dc-changelog-btn",
-          },
-          "Changelog",
+          "div",
+          { className: "dc-actions" },
+          element(
+            "a",
+            {
+              className: "dc-changelog-btn",
+              href: CHANGELOG_URL,
+              target: "_blank",
+            },
+            "All changes",
+          ),
+          element("button", { id: "dc-modal-ok-btn" }, "Got it"),
         ),
-        element("button", { id: "dc-modal-ok-btn" }, "Got it!"),
       ),
     ),
   );
