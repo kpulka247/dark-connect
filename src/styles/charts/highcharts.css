@@ -1,10 +1,7 @@
 /* Plot Bands / Grid */
 .highcharts-plot-band,
-path.highcharts-plot-band[fill="#F9F9F9"],
-path.highcharts-plot-band[fill="#f9f9f9"],
-path.highcharts-plot-band[fill="#FAFAFA"],
-path.highcharts-plot-band[fill="#fafafa"] {
-  /* Adjusted original stroke */
+path.highcharts-plot-band[fill="#f9f9f9" i],
+path.highcharts-plot-band[fill="#fafafa" i] {
   stroke: var(--color-gray-dark) !important;
 }
 
