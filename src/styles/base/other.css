@@ -272,6 +272,14 @@ div[class*="TrainingStatus_modalHeader_"] h4,
   background-color: var(--background-primary) !important;
 }
 
+div[class*="ECGFilter_wrapper_"] > button {
+  border-color: var(--color-gray-light) !important;
+}
+
+p[class*="ActiveGoalsGenesisTabView_goalDescription_"] {
+  color: var(--color-black) !important;
+}
+
 [class*="ECGFilter_filterType_"],
 [class*="ECGFilter_options_"] {
   background-color: var(--background-secondary) !important;

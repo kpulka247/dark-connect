@@ -8,10 +8,13 @@
     "test": "node --test test/unit/*.test.js",
     "test:e2e": "webpack --mode development && node --test test/e2e/*.test.js",
     "sweep": "webpack --mode development && node scripts/sweep.mjs",
+    "colors": "webpack --mode development && node scripts/audit-colors.mjs",
     "lint": "stylelint \"src/**/*.css\" && node scripts/check-css.mjs",
     "lint:firefox": "web-ext lint --source-dir dist/darkconnect-firefox",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "graphics": "node scripts/build-graphics.mjs",
+    "screenshots": "webpack --mode development && node scripts/capture-screenshots.mjs"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -30,6 +33,7 @@
     "postcss-selector-parser": "^7.1.0",
     "prettier": "3.6.2",
     "semantic-release": "^24.2.3",
+    "sharp": "^0.34.5",
     "stylelint": "16.23.1",
     "web-ext": "8.10.0",
     "webpack": "^5.99.8",

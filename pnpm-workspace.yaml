@@ -1,2 +1,3 @@
 allowBuilds:
+  sharp: false
   spawn-sync: false

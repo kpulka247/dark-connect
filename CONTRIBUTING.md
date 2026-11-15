@@ -57,6 +57,23 @@ pnpm sweep sleep hrv                   # only pages whose address contains these
 
 Edit `scripts/sweep-pages.json` to add the pages your account can see, such as Garmin Connect+ features or pages for your devices. Your sign-in stays in `.sweep-profile/`, and both folders are ignored by Git.
 
+`pnpm colors` checks that the theme colors Garmin's design consistently. On the same pages, it reads every text, background, and border color with the theme on and off. The report in `sweep-results/colors/report.md` has three parts:
+
+- **Link colors.** Text that turned link blue although Garmin did not draw it blue, blue links that lost their blue, and blue text in a shade other than `--link-color`.
+- **Inconsistent shades.** For each Garmin color, the themed color that most selectors get is the theme's rule. The report lists every element that gets a visibly different shade, with a suggested rule.
+- **The theme's color rules.** The full table of Garmin colors and the shades they become.
+
+When a difference is on purpose, such as a white underline on the active tab, add its selector to `scripts/color-exceptions.json` with the reason. Then run `node scripts/audit-colors.mjs --report` to rebuild the report from the last run without opening Garmin again. `pnpm colors` accepts the same page filters as `pnpm sweep`.
+
+### Updating the README and store images
+
+```bash
+pnpm graphics      # banner, promo tile, marquee and store icon
+pnpm screenshots   # README screenshots and the captioned store screenshots
+```
+
+`pnpm graphics` draws everything from `scripts/build-graphics.mjs`, `static/brand/connect-wordmark.svg` and the icon in `public/icons/`. It needs the Gill Sans MT font, which comes with Windows. `pnpm screenshots` uses the same sign-in as `pnpm sweep`, so run `pnpm sweep --login` first if Garmin signed you out. Store images go to `static/store/`, and README images go to `static/images/`.
+
 ## 📝 Pull Request Naming Convention (CRITICAL)
 
 This project uses automated releases based on **Conventional Commits**. While you can name your local commits however you like, **the title of your Pull Request MUST follow a specific format and MUST be in English.**

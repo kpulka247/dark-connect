@@ -224,7 +224,16 @@ div[class*="DayView_dayViewLabel_"],
 [class*="AllSecondaryStatsPage_editLink_"],
 [class*="AllSecondaryStatsPage_homeLink_"],
 [class*="NavigateBack_backLinkContainer_"],
-[class*="CreateFoodPage_showMoreDataLabel_"] {
+[class*="CreateFoodPage_showMoreDataLabel_"],
+div[class*="ImportDataMenu_menuItem_"] > a,
+div[class*="UserProfileMenu_menuItem_"] > a,
+section[class*="DeviceStatus_sectionHeader_"] > a,
+a[class*="DataRefreshingBanner_refreshDataLink_"],
+div[class*="UtilityBanner_body_"] > a,
+a[class*="FriendsPageFollowersTab_settingsLink_"],
+a[class*="SelectionDropdown_sectionItemLink_"],
+div[class*="WorkoutsList_workoutName_"] > a,
+[class*="MapFilterProvider_mapFilterDetail_"] li.active > a {
   color: var(--link-color) !important;
 }
 
@@ -241,8 +250,20 @@ button[class*="Button_btn_"],
 [class*="PowerGuidanceCreateStrategy_headerMenu_"] div div button .icon-gear,
 [class*="StrategiesList_iconContainer_"] button .icon-sync,
 [class*="StrategiesList_iconContainer_"] button .icon-trash,
-.icon-power-guidance {
+.icon-power-guidance,
+button[class*="CourseListItem_sendToDeviceButton_"],
+button[class*="Badge_badge_"],
+button[class*="FilterChip_filterChip_"] {
   color: var(--text-primary) !important;
+}
+
+button[class*="ActivityListItem_activityTypeButton_"] {
+  color: var(--text-secondary) !important;
+}
+
+button[type="button"][class*="LinkButton_link_"],
+button[type="button"][class*="ReportSelector_accordionItemSummary_"][class*="ReportSelector_selected_"] {
+  color: var(--link-color) !important;
 }
 
 button
