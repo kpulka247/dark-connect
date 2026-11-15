@@ -1,3 +1,10 @@
+## [2.7.1](https://github.com/kpulka247/dark-connect/compare/v2.7.0...v2.7.1) (2026-11-15)
+
+### Bug Fixes
+
+* keep Garmin's grey text grey and restore two lost colors ([6b43838](https://github.com/kpulka247/dark-connect/commit/6b43838465710a57f89416d2562819ec4ae30471))
+* keep link blue only on text that Garmin draws as a link ([4eb063b](https://github.com/kpulka247/dark-connect/commit/4eb063b587286d0c72b5d31ababc90e3d889ebee))
+
 ## [2.7.0](https://github.com/kpulka247/dark-connect/compare/v2.6.4...v2.7.0) (2026-11-14)
 
 ### Features
