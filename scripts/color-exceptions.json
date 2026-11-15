@@ -1,0 +1,132 @@
+[
+  {
+    "selector": "div[class*=\"Tabs_tabTitle_\"]",
+    "property": "border-color",
+    "reason": "The active tab's underline turns white."
+  },
+  {
+    "selector": "div[class*=\"Tabs_tabTitle_\"].undefined",
+    "property": "border-color",
+    "reason": "The active tab's underline turns white."
+  },
+  {
+    "selector": "td.calendar-data.current-day",
+    "property": "border-color",
+    "reason": "Today's date has a white outline."
+  },
+  {
+    "selector": "li.active > a",
+    "property": "color",
+    "reason": "The active tab's text turns white."
+  },
+  {
+    "selector": "button.close",
+    "property": "color",
+    "reason": "Close buttons are white."
+  },
+  {
+    "selector": "div.page-feature[class*=\"NewsFeedPageContainer_pageTitle_\"]",
+    "property": "color",
+    "reason": "Page labels use the theme's .page-feature grey."
+  },
+  {
+    "selector": "h1.page-feature[class*=\"PulseOxPage_pageFeatureHeaderTitle_\"]",
+    "property": "color",
+    "reason": "Page labels use the theme's .page-feature grey."
+  },
+  {
+    "selector": "div.pull-left",
+    "property": "color",
+    "reason": "The Pulse Ox Acclimation page label uses the theme's .page-feature grey."
+  },
+  {
+    "selector": "div[class*=\"SecondaryStatCard_emptyStateIconContainer_\"]",
+    "property": "background-color",
+    "reason": "Uses the theme's recessed --background-secondary."
+  },
+  {
+    "selector": "div[class*=\"FitnessAgeFactorCard_highPriorityChip_\"]",
+    "property": "background-color",
+    "reason": "Uses the theme's recessed --background-secondary."
+  },
+  {
+    "selector": "div[class*=\"FitnessAgeGraphic_xAxisDot_\"][class*=\"FitnessAgeGraphic_achievableAgeDot_\"]",
+    "property": "border-color",
+    "reason": "The ring takes the background color, so the dot looks cut out, as in Garmin's design."
+  },
+  {
+    "selector": "div[class*=\"FitnessAgeGraphic_xAxisDot_\"][class*=\"FitnessAgeGraphic_fitnessAgeDot_\"]",
+    "property": "border-color",
+    "reason": "The ring takes the background color, so the dot looks cut out, as in Garmin's design."
+  },
+  {
+    "selector": "div[class*=\"FitnessAgeGraphic_xAxisDot_\"][class*=\"FitnessAgeGraphic_realAgeDot_\"]",
+    "property": "border-color",
+    "reason": "The ring takes the background color, so the dot looks cut out, as in Garmin's design."
+  },
+  {
+    "selector": "div[class*=\"CommentEditor_editorTextField_\"][class*=\"CommentInput_textArea_\"]",
+    "property": "background-color",
+    "reason": "The comment field is lighter than the card, so it reads as an input."
+  },
+  {
+    "selector": "span[class*=\"FilterChip_removeButton_\"]",
+    "property": "background-color",
+    "reason": "Garmin's light close circle stays visible on the dark chip."
+  },
+  {
+    "selector": "button[class*=\"UtilityBanner_closeBtn_\"]",
+    "property": "background-color",
+    "reason": "Garmin's light close circle stays visible on the grey banner."
+  },
+  {
+    "selector": "div[class*=\"CourseCard_cardContainer_\"] > button",
+    "property": "border-color",
+    "reason": "The card's own border already outlines it."
+  },
+  {
+    "selector": "div[class*=\"ActiveGoalsGenesisTabView_goalSelection_\"] > h3",
+    "property": "color",
+    "reason": "Text on Garmin's green goal tiles keeps Garmin's black."
+  },
+  {
+    "selector": "p[class*=\"ActiveGoalsGenesisTabView_goalDescription_\"]",
+    "property": "color",
+    "reason": "Text on Garmin's green goal tiles keeps Garmin's black."
+  },
+  {
+    "selector": "div[class*=\"ActivityListItem_metricLabel_\"]",
+    "property": "color",
+    "reason": "An explicit theme rule makes this text white."
+  },
+  {
+    "selector": "span[class*=\"ActivityListItem_activityDateYear_\"]",
+    "property": "color",
+    "reason": "An explicit theme rule makes this text white."
+  },
+  {
+    "selector": "div[class*=\"Gc5DetailCard_cardDetail_SubText_\"]",
+    "property": "color",
+    "reason": "An explicit theme rule makes this text white."
+  },
+  {
+    "selector": "div[class*=\"EventSearchResults_month_\"]",
+    "property": "color",
+    "reason": "An explicit theme rule makes this text white."
+  },
+  {
+    "selector": "div[class*=\"EventSearchResults_day_\"]",
+    "property": "color",
+    "reason": "An explicit theme rule makes this text white."
+  },
+  {
+    "selector": "td.fine-print",
+    "property": "color",
+    "reason": "An explicit theme rule (.map-list tfoot td) makes the segment list footer white."
+  },
+  {
+    "selector": "td.fine-print > span",
+    "property": "color",
+    "reason": "An explicit theme rule (.map-list tfoot td) makes the segment list footer white."
+  }
+]

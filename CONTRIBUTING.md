@@ -57,7 +57,13 @@ pnpm sweep sleep hrv                   # only pages whose address contains these
 
 Edit `scripts/sweep-pages.json` to add the pages your account can see, such as Garmin Connect+ features or pages for your devices. Your sign-in stays in `.sweep-profile/`, and both folders are ignored by Git.
 
-`pnpm colors` checks text colors on the same pages. It reads each text color with the theme on and off, and lists text that turned link blue although Garmin did not draw it blue, blue links that lost their blue, and blue text in a shade other than the theme's link blue (`--link-color`). The report goes to `sweep-results/text-colors/report.md`. It accepts the same page filters as `pnpm sweep`.
+`pnpm colors` checks that the theme colors Garmin's design consistently. On the same pages, it reads every text, background, and border color with the theme on and off. The report in `sweep-results/colors/report.md` has three parts:
+
+- **Link colors.** Text that turned link blue although Garmin did not draw it blue, blue links that lost their blue, and blue text in a shade other than `--link-color`.
+- **Inconsistent shades.** For each Garmin color, the themed color that most selectors get is the theme's rule. The report lists every element that gets a visibly different shade, with a suggested rule.
+- **The theme's color rules.** The full table of Garmin colors and the shades they become.
+
+When a difference is on purpose, such as a white underline on the active tab, add its selector to `scripts/color-exceptions.json` with the reason. Then run `node scripts/audit-colors.mjs --report` to rebuild the report from the last run without opening Garmin again. `pnpm colors` accepts the same page filters as `pnpm sweep`.
 
 ### Updating the README and store images
 
