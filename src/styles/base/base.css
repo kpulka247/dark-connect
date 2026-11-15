@@ -18,6 +18,14 @@ p,
   color: var(--text-primary);
 }
 
+div[class*="UserProfileMenu_menuItemGray_"] > a,
+a.truste_cursor_pointer,
+div[class*="AnchoredBanner_bannerBody_"] > p,
+p[class*="DataRefreshingBanner_refreshDataDescription_"],
+a[class*="OwnerHeader_name_"] {
+  color: var(--text-secondary) !important;
+}
+
 /* Ensure header/nav bottom links inherit color correctly if needed */
 .header-nav-menu-bottom a,
 .header-nav-menu-bottom a:hover {
