@@ -2,18 +2,12 @@ import { KOFI_URL, createCoffeeIcon } from "./ui/coffee.js";
 
 export const RELEASE_NOTES = [
   {
-    title: "New",
-    items: [
-      "Scan this page: if something on Garmin Connect is still white or hard to read, the extension can now find it for you and prepare a report.",
-      "A cleaner, more compact menu and update window.",
-    ],
-  },
-  {
     title: "Fixed",
     items: [
-      "The buttons in this window no longer disappear below the screen on smaller displays.",
-      "Firefox now shows that Dark Connect collects no data.",
-      "Cleanup behind the scenes so fixes reach you faster. The colors you see stay the same.",
+      "Links are blue again where Garmin shows them as links, such as the profile and sync menus, Reports and banners.",
+      "Text that is not a link no longer turns blue, such as badge names, filters and Send to Device.",
+      "Grey labels, such as Terms of Use and banner texts, stay grey like the rest of Garmin's secondary text.",
+      "The ECG filters have their border back, and goal tiles show their text in one color.",
     ],
   },
 ];
