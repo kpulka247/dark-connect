@@ -1,3 +1,9 @@
+## [2.8.0](https://github.com/kpulka247/dark-connect/compare/v2.7.1...v2.8.0) (2026-11-18)
+
+### Features
+
+* **firefox:** support Firefox for Android ([5037928](https://github.com/kpulka247/dark-connect/commit/5037928c1feae7bcc85a462abdbeb59c8141f9ef))
+
 ## [2.7.1](https://github.com/kpulka247/dark-connect/compare/v2.7.0...v2.7.1) (2026-11-15)
 
 ### Bug Fixes
