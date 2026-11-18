@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener((details) => {
       updateVersion: version,
     });
 
-    chrome.notifications.create({
+    chrome.notifications?.create({
       type: "basic",
       iconUrl: "icons/icon128.png",
       title: "Dark Connect",
@@ -19,7 +19,7 @@ chrome.runtime.onInstalled.addListener((details) => {
   }
 });
 
-chrome.notifications.onClicked.addListener(() => {
+chrome.notifications?.onClicked.addListener(() => {
   chrome.tabs.create({
     url: "https://github.com/kpulka247/dark-connect/blob/main/CHANGELOG.md",
   });
