@@ -1,4 +1,4 @@
-export const KOFI_URL = "https://ko-fi.com/Y8Y71ERSZF";
+export const KOFI_URL = "https://ko-fi.com/kpulka";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const STEAM = ["M7 -4c-1 1.1 1 2.1 0 3.2", "M10.5 -4c-1 1.1 1 2.1 0 3.2"];

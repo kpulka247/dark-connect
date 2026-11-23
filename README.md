@@ -91,7 +91,7 @@ The styles live in `src/styles/`. Shared colors are in `base/variables.css`, sha
 
 Read **[CONTRIBUTING.md](./CONTRIBUTING.md)** for the project layout, the target branch (`dev`), and the Pull Request naming rules.
 
-If Dark Connect is useful to you, you can [buy me a coffee](https://ko-fi.com/Y8Y71ERSZF) ☕.
+If Dark Connect is useful to you, you can [buy me a coffee](https://ko-fi.com/kpulka) ☕.
 
 ## License
 

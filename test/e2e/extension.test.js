@@ -171,7 +171,7 @@ test("popup shows the version, theme hint and Ko-fi link", async () => {
   );
   assert.equal(
     await popup.getAttribute("#coffee", "href"),
-    "https://ko-fi.com/Y8Y71ERSZF",
+    "https://ko-fi.com/kpulka",
   );
   assert.equal(await popup.locator("#coffee .coffee-steam").count(), 2);
   await popup.close();
@@ -216,7 +216,7 @@ test("shows the what's new modal once after an update", async () => {
 
   assert.equal(
     await page.getAttribute(".dc-coffee", "href"),
-    "https://ko-fi.com/Y8Y71ERSZF",
+    "https://ko-fi.com/kpulka",
   );
   const logoWidth = await page.$eval(".dc-logo", async (img) => {
     await img.decode().catch(() => {});
