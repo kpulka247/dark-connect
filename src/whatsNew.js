@@ -2,12 +2,15 @@ import { KOFI_URL, createCoffeeIcon } from "./ui/coffee.js";
 
 export const RELEASE_NOTES = [
   {
+    title: "New",
+    items: ["Dark Connect now works in Firefox for Android."],
+  },
+  {
     title: "Fixed",
     items: [
-      "Links are blue again where Garmin shows them as links, such as the profile and sync menus, Reports and banners.",
-      "Text that is not a link no longer turns blue, such as badge names, filters and Send to Device.",
-      "Grey labels, such as Terms of Use and banner texts, stay grey like the rest of Garmin's secondary text.",
-      "The ECG filters have their border back, and goal tiles show their text in one color.",
+      "The average value on activity charts, such as heart rate and respiration rate, is easy to read again. It no longer sits on a light grey box.",
+      "Chart labels on activities are sharp white with a dark outline, instead of a white glow that made them look bold.",
+      "The activity map no longer has a light border.",
     ],
   },
 ];
