@@ -27,6 +27,11 @@ g[class="recharts-layer recharts-reference-line"]
   fill: var(--color-white) !important;
 }
 
+/* Activity chart labels draw their outline in this color */
+[class*="BaseChart_tick_"] {
+  --inverse-text-default-inverse: var(--background-deep);
+}
+
 /* Advanced Reporting Axis text */
 div[class*="AdvancedReportingChartStyles_mainChart_"]
   svg.recharts-surface
