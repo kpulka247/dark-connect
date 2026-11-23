@@ -1,3 +1,10 @@
+## [2.8.1](https://github.com/kpulka247/dark-connect/compare/v2.8.0...v2.8.1) (2026-11-23)
+
+### Bug Fixes
+
+* **charts:** give activity chart labels a dark outline ([f467026](https://github.com/kpulka247/dark-connect/commit/f467026c3153369570d721acac9125d2d373aeb2)), closes [#f4f4f4](https://github.com/kpulka247/dark-connect/issues/f4f4f4)
+* **styles:** override --bg-background-void in dark mode ([c57f186](https://github.com/kpulka247/dark-connect/commit/c57f1863f37473f556ffcf4c4e60e27b95a43f81)), closes [#61](https://github.com/kpulka247/dark-connect/issues/61)
+
 ## [2.8.0](https://github.com/kpulka247/dark-connect/compare/v2.7.1...v2.8.0) (2026-11-18)
 
 ### Features
